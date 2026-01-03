@@ -8,18 +8,11 @@ https://vcp2.myplaytv.com/tvfanb/tvfanb/playlist.m3u8
 #EXTINF:-1 tvg-id="Vive.ve",Vive (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://odysee.com/
 https://cloud.odysee.live/content/fed20cff907550b0c7d83991fb3630e2a9f90454/master.m3u8
-#EXTINF:-1 tvg-id="BTATV.ve",BTA TV (720p)
-https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
-#EXTINF:-1 tvg-id="Canal21Tachira.ve",Canal 21 Táchira (360p)
-https://stmv2.voxtvhd.com.br/canal21/canal21/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalDiplomatico.ve",Canal Diplomático (720p) [Not 24/7]
-https://vcp.myplaytv.com/canaldiplomatico/canaldiplomatico/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalNubehTV.ve",Canal Nubeh TV (720p)
-https://vcp.myplaytv.com/nubehtv/nubehtv/playlist.m3u8
-#EXTINF:-1 tvg-id="CantinaTV.ve",Cantina TV (1080p)
-https://vcp.myplaytv.com/cantinatv/cantinatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CatatumboTV.ve",Catatumbo TV (406p)
 https://cloud.fastchannel.es/manifiest/hls/prog9/catatumbotv.m3u8
+#EXTINF:-1 tvg-id="BTATV.ve",BTA TV (720p)
+https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
+
 #EXTINF:-1 tvg-id="ChivacoaTVInternacional.ve",Chivacoa TV Internacional (720p) [Not 24/7]
 https://glb.bozztv.com/glb/ssh101/1234chivacoa/index.m3u8
 #EXTINF:-1 tvg-id="eSportsMaxTV.ve",eSports Max (480p) [Not 24/7]
