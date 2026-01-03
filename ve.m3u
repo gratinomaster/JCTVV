@@ -5,30 +5,9 @@ https://venevision.akamaized.net/hls/live/2098814/VENEVISION/master.m3u8
 https://vod2live.univtec.com/manifest/4c41c0d8-e2e4-43cc-bd43-79afe715e1b3.m3u8
 #EXTINF:-1 tvg-id="TVFANB.ve",TV FANB (720p)
 https://vcp2.myplaytv.com/tvfanb/tvfanb/playlist.m3u8
-#EXTINF:-1 tvg-id="TVes.ve",TVes (1080p) [Not 24/7]
-https://ls.tves.gob.ve/hls/tves.m3u8
-#EXTINF:-1 tvg-id="ValeTV.ve",Vale TV (480p) [Not 24/7]
-https://cloud.fastchannel.es/manifiest/hls/valetv/valetv_480p.m3u8
-#EXTINF:-1 tvg-id="ValeTV.ve",Vale TV (480p) [Not 24/7]
-https://vcp2.myplaytv.com/valetv/valetv/playlist.m3u8
-#EXTINF:-1 tvg-id="VePlus.ve",Ve Plus (720p) [Geo-blocked]
-https://veplus.akamaized.net/hls/live/2101013/VEPLUS/master.m3u8
-#EXTINF:-1 tvg-id="VePlus.ve",Ve Plus (480p) [Not 24/7]
-http://190.122.96.187:8888/http/006
 #EXTINF:-1 tvg-id="Vive.ve",Vive (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://odysee.com/
 https://cloud.odysee.live/content/fed20cff907550b0c7d83991fb3630e2a9f90454/master.m3u8
-#EXTINF:-1 tvg-id="AguacateTV.ve",Aguacate TV (1080p)
-https://streamtv.intervenhosting.net:3040/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="AnzoateguiTV.ve",Anzoátegui TV (360p)
-https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8
-#EXTINF:-1 tvg-id="AudazTV.ve",Audaz TV (432p)
-https://cloud2.streaminglivehd.com:1936/8264/8264/playlist.m3u8
-#EXTINF:-1 tvg-id="AvilaTV.ve",Ávila TV (Caracas) (1080p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://odysee.com/
-https://cloud.odysee.live/content/9fc00ad00fd8b0f08ab11f2324c82ffd713c3cb6/master.m3u8
-#EXTINF:-1 tvg-id="BarinasTV.ve",Barinas TV (720p) [Not 24/7]
-https://vcp13.myplaytv.com/barinastv/barinastv/playlist.m3u8
 #EXTINF:-1 tvg-id="BTATV.ve",BTA TV (720p)
 https://cloud.fastchannel.es/manifiest/hls/prog9/btatv.m3u8
 #EXTINF:-1 tvg-id="Canal21Tachira.ve",Canal 21 Táchira (360p)
