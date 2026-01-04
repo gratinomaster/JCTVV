@@ -1,23 +1,26 @@
 #EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz"
 
 
-
-
-#EXTM3U
-#EXTINF:-1 group-title="Argentina" tvg-chno="1005" tvg-id="VillaGesell.Av3y104.ar" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (Av. 3 y 104)
+#EXTINF:-1 group-title="Argentina" tvg-chno="1005" tvg-id="" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (Av. 3 y 104)
 http://cam104y3.gesell.com.ar/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1007" tvg-id="VillaGesell.LaPinocha.ar" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (La Pinocha)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1007" tvg-id="" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (La Pinocha)
 http://camlapinocha.gesell.com.ar/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1006" tvg-id="VillaGesell.BsAsPlaya.ar" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (Buenos Aires y Playa)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1006" tvg-id="" tvg-logo="https://i.imgur.com/r7q9o9X.png" , Camaras de Villa Gesell (Buenos Aires y Playa)
 http://cambsasyplaya.gesell.com.ar/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1004" tvg-id="BahiaBlanca.ar" tvg-logo="https://i.imgur.com/HbV9HoX.png", Norte | Bahía Blanca | Argentina
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1004" tvg-id="" tvg-logo="https://i.imgur.com/HbV9HoX.png", Norte | Bahía Blanca | Argentina
 http://icecast.hostingbahia.com.ar:8002/live?28344
+
 #EXTINF:-1 group-title="Argentina" tvg-chno="1009" tvg-id="AmericaTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/diqoDMIusahTvokV.png", America TV | Argentina - TDA 2.1
 https://prepublish.f.qaotic.net/a07/americahls-100056/Playlist.m3u8
+
 #EXTINF:-1 group-title="Argentina" tvg-chno="1010" tvg-id="AmericaTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/diqoDMIusahTvokV.png", America TV | Argentina - TDA 2.1
 https://prepublish.f.qaotic.net/a07/americahls-100056/Playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1013" tvg-id="Canal4Posadas.ar" tvg-logo="https://i.imgur.com/2Y5s4yO.png", América Canal 4 Posadas | AR
-http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8?PlaylistM3UCL
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1013" tvg-id="AmericaCanal4Posadas.ar" tvg-logo="https://i.imgur.com/2Y5s4yO.png", América Canal 4 Posadas | AR
+http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-chno="1008" tvg-id="ElGarageTV.ar" tvg-logo="https://i.imgur.com/v8Y3p0S.png", GARAGE TV
 https://stream1.sersat.com/hls/garagetv.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-chno="1037" tvg-id="13Max.ar" tvg-logo="http://i.imgur.com/oSApjUM.png", 13 Max HD
@@ -26,83 +29,118 @@ http://coninfo.net:1935/13maxhd/chunklist_...
 https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS
 #EXTINF:-1 group-title="Argentina" tvg-chno="1034" tvg-id="Canal.Telefé.(Argentina).ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/IZeVtHxrcaOlzblx.png", Telefe (VPN) 2
 https://telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS?.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1035" tvg-id="Telefe.Jujuy.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/IZeVtHxrcaOlzblx.png", Telefe Canal 7 Jujuy
+#EXTINF:-1 group-title="Argentina" tvg-chno="1035" tvg-id="TelefeJujuy.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/IZeVtHxrcaOlzblx.png", Telefe Canal 7 Jujuy
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1040" tvg-id="ElGarageTV.ar" tvg-logo="https://i.imgur.com/v8Y3p0S.png", EL GARAGE TV - VER TV ABIERTA ONLINE
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1040" tvg-id="ElGarage.ar" tvg-logo="https://i.imgur.com/v8Y3p0S.png", EL GARAGE TV - VER TV ABIERTA ONLINE
 https://stream1.sersat.com/hls/garagetv.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-chno="1051" tvg-id="Canal.13.de.Argentina.(El.Trece).ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/WMZkemWKleKUxhKo.png", El Trece - TDA 13.1
 https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-chno="1052" tvg-id="Canal.13.de.Argentina.(El.Trece).ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/WMZkemWKleKUxhKo.png", El Trece - TDA 13.1
 https://livetrx01.vodgc.net/eltrecetv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1083" tvg-id="UNIFE 25.1 - TDA 25.1" tvg-logo="http://tvabierta.weebly.com/uploads/5/1/3/4/51344345/unife.png" , UNIFE 25.1 - TDA 25.1
+#EXTINF:-1 group-title="Argentina" tvg-chno="1083" tvg-id="Unife.ar" tvg-logo="http://tvabierta.weebly.com/uploads/5/1/3/4/51344345/unife.png" , UNIFE 25.1 - TDA 25.1
 https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/mono.m3u8
+
 #EXTINF:-1 group-title="Argentina" tvg-chno="1092" tvg-id="NetTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/BHmDCapmuSleLUUM.png" , NET TV 27.2 - TDA 27.2
 https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream1/playlist.m3u8
+
 #EXTINF:-1 group-title="Argentina" tvg-chno="1093" tvg-id="NetTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/BHmDCapmuSleLUUM.png" , NET TV 27.2 - TDA 27.2
 https://unlimited1-buenosaires.dps.live/nettv/nettv.smil/nettv/livestream1/chunks.m3u8
+
 #EXTINF:-1 group-title="Argentina" tvg-chno="1094" tvg-id="NetTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/BHmDCapmuSleLUUM.png" , NET TV 27.2 - TDA 27.2
 https://unlimited1-buenosaires.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1095" tvg-id="NET TV" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/BHmDCapmuSleLUUM.png" , NET TV | Argentina - TDA 27.2
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1095" tvg-id="NetTV.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/BHmDCapmuSleLUUM.png" , NET TV | Argentina - TDA 27.2
 https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream2/chunks.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1096" tvg-id="NETTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV HD
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1096" tvg-id="NetTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV HD
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1097" tvg-id="NETTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV SD1
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1097" tvg-id="NetTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV SD1
 https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream3/chunks.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1098" tvg-id="NETTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV FHD
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1098" tvg-id="NetTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV FHD
 https://pantera1-100gb-cl-movistar.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1100" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Net TV (Argentina)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1100" tvg-id="NetTV.ar" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Net TV (Argentina)
 https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream1/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1131" tvg-id="N/A" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/d800ee1a28bbee6769de24c5c050c40c.webp" , Canal Once - TDA 24.3
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1131" tvg-id="CanalOnce.ar" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/d800ee1a28bbee6769de24c5c050c40c.webp" , Canal Once - TDA 24.3
 https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1099" tvg-id="NETTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV SD2
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1099" tvg-id="NetTV.ar" tvg-logo="https://www.lyngsat-logo.com/logo/tv/nn/net-tv-ar.png" , Net TV SD2
 https://pantera1-100gb-cl-movistar.dps.live/nettv/nettv.smil/nettv/livestream2/chunks.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1132" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal 5ATV (Argentina)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1132" tvg-id="" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal 5ATV (Argentina)
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1134" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Chaco DX (Argentina)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1134" tvg-id="" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Chaco DX (Argentina)
 http://arcast.net:1935/mp/mp/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1136" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Previsora TV (Argentina)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1136" tvg-id="" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Previsora TV (Argentina)
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1138" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , 5TV (Corrientes) (480p)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1138" tvg-id="Canal5Corrientes.ar" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , 5TV (Corrientes) (480p)
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8?checkedby:iptvcat.com
-#EXTINF:-1 group-title="Argentina" tvg-chno="1139" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , 5TV Corrientes
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1139" tvg-id="Canal5Corrientes.ar" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , 5TV Corrientes
 http://www.coninfo.net:1935/tvcinco/live1/chunklist_w1546509083.m3u8?checkedby:iptvcat.com
-#EXTINF:-1 group-title="Argentina" tvg-chno="1141" tvg-id="249" tvg-logo="https://www.m3u.cl/logo/249_5TV.png" , 5TV | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1141" tvg-id="Canal5Corrientes.ar" tvg-logo="https://www.m3u.cl/logo/249_5TV.png" , 5TV | AR
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1137" tvg-id="N/A" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Vertv (Argentina)
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1137" tvg-id="" tvg-logo="https://fonts.gstatic.com/s/i/productlogos/lens_camera/v1/192px.svg" , Canal Vertv (Argentina)
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1143" tvg-id="224" tvg-logo="https://www.m3u.cl/logo/224_Cadena_103.png" , Cadena 103 | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1143" tvg-id="" tvg-logo="https://www.m3u.cl/logo/224_Cadena_103.png" , Cadena 103 | AR
 http://arcast.net:1935/cadena103/cadena103/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1146" tvg-id="227" tvg-logo="https://www.m3u.cl/logo/227_Canal_13_La_Rioja.jpg" , Canal 13 La Rioja | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1146" tvg-id="Canal13LaRioja.ar" tvg-logo="https://www.m3u.cl/logo/227_Canal_13_La_Rioja.jpg" , Canal 13 La Rioja | AR
 http://arcast.net:1935/mp/mp/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1153" tvg-id="243" tvg-logo="https://www.m3u.cl/logo/243_Power.png" , Power | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1153" tvg-id="" tvg-logo="https://www.m3u.cl/logo/243_Power.png" , Power | AR
 https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1156" tvg-id="814" tvg-logo="https://www.m3u.cl/logo/814_TeleNord.jpg" , TeleNord | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1156" tvg-id="" tvg-logo="https://www.m3u.cl/logo/814_TeleNord.jpg" , TeleNord | AR
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1147" tvg-id="230" tvg-logo="https://www.m3u.cl/logo/230_Canal_22_Buenos_Aires.jpg" , Canal 22 Buenos Aires | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1147" tvg-id="" tvg-logo="https://www.m3u.cl/logo/230_Canal_22_Buenos_Aires.jpg" , Canal 22 Buenos Aires | AR
 https://5f700d5b2c46f.streamlock.net:443/canal22/canal22/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1154" tvg-id="210" tvg-logo="https://www.m3u.cl/logo/210_Radiocanal_San_Francisco.png" , Radiocanal San Francisco | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1154" tvg-id="" tvg-logo="https://www.m3u.cl/logo/210_Radiocanal_San_Francisco.png" , Radiocanal San Francisco | AR
 http://204.199.3.2/.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1157" tvg-id="248" tvg-logo="https://www.m3u.cl/logo/248_Uni_Teve.png" , Uni Teve | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1157" tvg-id="Uniteve.ar" tvg-logo="https://www.m3u.cl/logo/248_Uni_Teve.png" , Uni Teve | AR
 https://vivo.solumedia.com:19360/uniteve/uniteve.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1158" tvg-id="1003" tvg-logo="https://www.m3u.cl/logo/1003_Sublime_Gracia_TV.png" , Sublime Gracia TV | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1158" tvg-id="" tvg-logo="https://www.m3u.cl/logo/1003_Sublime_Gracia_TV.png" , Sublime Gracia TV | AR
 https://5f700d5b2c46f.streamlock.net:443/sublime/sublime/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1148" tvg-id="Undefined" tvg-logo="https://mediakit.perfil.com/img/canal-e-logo.png" , CANAL E - PERFIL TV
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1148" tvg-id="CanalE.ar" tvg-logo="https://mediakit.perfil.com/img/canal-e-logo.png" , CANAL E - PERFIL TV
 https://unlimited1-buenosaires.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1162" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNFmRVSlvVv4Tka8ROzgBwd-CvTJt7toogM5_hCN9lKMzsvgaCUK_Ux0YZ0V8&s" , Canal 22 Buenos Aires | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1162" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNFmRVSlvVv4Tka8ROzgBwd-CvTJt7toogM5_hCN9lKMzsvgaCUK_Ux0YZ0V8&s" , Canal 22 Buenos Aires | AR
 https://5f700d5b2c46f.streamlock.net:443/canal22/canal22/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1164" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxWNiOWkSJPs_dcwU__8_HqXl__fhQ26F3bkGDj7SKw18OYA_6KtaF8MSyA&s" , Canal 13 La Rioja | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1164" tvg-id="Canal13LaRioja.ar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxWNiOWkSJPs_dcwU__8_HqXl__fhQ26F3bkGDj7SKw18OYA_6KtaF8MSyA&s" , Canal 13 La Rioja | AR
 http://arcast.net:1935/mp/mp/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1166" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi28SxLtwNFD7k8t_3CEetAoECVdkQ3FPyOJZs4mPnO5_zR1E6ViQnfQmfgmA&s" , 5TV | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1166" tvg-id="Canal5Corrientes.ar" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi28SxLtwNFD7k8t_3CEetAoECVdkQ3FPyOJZs4mPnO5_zR1E6ViQnfQmfgmA&s" , 5TV | AR
 http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1160" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK71DmXuk4eVi9eAbhm_QGOsLggZvEXNejkzCMlrjoQBb543TCr6mgWfWPTg&s" , Canal 6 Posadas | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1160" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK71DmXuk4eVi9eAbhm_QGOsLggZvEXNejkzCMlrjoQBb543TCr6mgWfWPTg&s" , Canal 6 Posadas | AR
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1161" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3J7Yo43guS5rImHc8UM-ZkXo5HWBmzMIaBedUMon-x_sqBAMQ01HwDcqREg&s" , Canal 21 TV | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1161" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3J7Yo43guS5rImHc8UM-ZkXo5HWBmzMIaBedUMon-x_sqBAMQ01HwDcqREg&s" , Canal 21 TV | AR
 https://iptv.ixfo.com.ar:30443/c21tv/hd/c21tv/playlist.m3u8?PlaylistM3UCL
-#EXTINF:-1 group-title="Argentina" tvg-chno="1168" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqJ5EK_82Gq2Q1NadxFoqLtZOCPtvcn5Ba55nRrs1y21x7Xtmb3YTakmElg&s" , Sublime Gracia TV | AR
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1168" tvg-id="" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBqJ5EK_82Gq2Q1NadxFoqLtZOCPtvcn5Ba55nRrs1y21x7Xtmb3YTakmElg&s" , Sublime Gracia TV | AR
 https://5f700d5b2c46f.streamlock.net:443/sublime/sublime/playlist.m3u8?PlaylistM3UCL
+
 #EXTINF:-1 group-title="Mundo" tvg-chno="1175" tvg-id="DWEspanol.de" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/dqwySDXgxIyxUgou.png" , Deutsche Welle
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1185" tvg-id="Enlace" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/lpFYCmeqvmhnlTYx.png" , Enlace
+
+#EXTINF:-1 group-title="Argentina" tvg-chno="1185" tvg-id="Enlace.ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/lpFYCmeqvmhnlTYx.png" , Enlace
 https://livecdn.enlace.plus/enlace/smil:enlace-fhd.smil/playlist.m3u8
 
 
