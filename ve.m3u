@@ -1,13 +1,4 @@
-#EXTM3U x-tvg-url="https://github.com/globetvapp/epg/raw/refs/heads/main/Caribbean/caribbean1.xml"
 
-#EXTINF:-1 tvg-id="TeleHaiti" tvg-logo="https://i.imgur.com/u7FvX2v.png",Tele Haiti
-https://vcp1.myplaytv.com/telehaiti/telehaiti/playlist.m3u8
-
-#EXTINF:-1 tvg-id="Teleport" tvg-logo="https://i.imgur.com/8Qp1X1l.png",Teleport Haiti
-https://vcp1.myplaytv.com/teleport/teleport/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ZNS" tvg-logo="https://i.imgur.com/0v3Bv3G.png",ZNS Network
-https://cloudvideo.servers10.com:8081/8064/index.m3u8
 
 
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/globetvapp/epg/main/Venezuela/venezuela1.xml"
