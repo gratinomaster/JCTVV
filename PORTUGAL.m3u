@@ -26,3 +26,35 @@ http://xxip25.top:8080/Alan/Alan1234/78526
 
 #EXTINF:-1 tvg-id="ZapViva.pt" tvg-name="PT: ZAP VIVA FHD" group-title="Portugal",PT: ZAP VIVA FHD
 http://xxip25.top:8080/Alan/Alan1234/164853
+
+#EXTM3U url-tvg="https://timbiriche.me/epg/brazil.xml.gz"
+
+#EXTINF:-1 tvg-id="Globo SP" tvg-name="GLOBO SP" group-title="BRASIL", GLOBO SP HD
+http://xxip25.top:8080/Alan/Alan1234/164943
+
+#EXTINF:-1 tvg-id="Globo Minas" tvg-name="GLOBO MINAS" group-title="BRASIL", GLOBO MINAS HD
+http://xxip25.top:8080/Alan/Alan1234/164944
+
+#EXTINF:-1 tvg-id="SBT" tvg-name="SBT" group-title="BRASIL", SBT HD
+http://xxip25.top:8080/Alan/Alan1234/20978
+
+#EXTINF:-1 tvg-id="Record TV" tvg-name="RECORD" group-title="BRASIL", RECORD TV HD
+http://xxip25.top:8080/Alan/Alan1234/164945
+
+#EXTINF:-1 tvg-id="Band" tvg-name="BAND" group-title="BRASIL", BAND HD
+http://xxip25.top:8080/Alan/Alan1234/164946
+
+#EXTINF:-1 tvg-id="GloboNews" tvg-name="GLOBONEWS" group-title="NOTICIAS", GLOBONEWS HD
+http://xxip25.top:8080/Alan/Alan1234/164947
+
+#EXTINF:-1 tvg-id="CNN Brasil" tvg-name="CNN BRASIL" group-title="NOTICIAS", CNN BRASIL
+http://xxip25.top:8080/Alan/Alan1234/164948
+
+#EXTINF:-1 tvg-id="SporTV" tvg-name="SPORTV" group-title="ESPORTES", SPORTV HD
+http://xxip25.top:8080/Alan/Alan1234/164949
+
+#EXTINF:-1 tvg-id="ESPN" tvg-name="ESPN" group-title="ESPORTES", ESPN HD
+http://xxip25.top:8080/Alan/Alan1234/164950
+
+#EXTINF:-1 tvg-id="Premiere Clubes" tvg-name="PREMIERE" group-title="ESPORTES", PREMIERE HD
+http://xxip25.top:8080/Alan/Alan1234/164951
