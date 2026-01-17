@@ -23,8 +23,8 @@ https://prepublish.f.qaotic.net/a07/americahls-100056/Playlist.m3u8
 http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8
 #EXTINF:-1 group-title="Argentina" tvg-chno="1008" tvg-id="ElGarageTV.ar" tvg-logo="https://i.imgur.com/v8Y3p0S.png", GARAGE TV
 https://stream1.sersat.com/hls/garagetv.m3u8
-#EXTINF:-1 group-title="Argentina" tvg-chno="1037" tvg-id="13Max.ar" tvg-logo="http://i.imgur.com/oSApjUM.png", 13 Max HD
-http://coninfo.net:1935/13maxhd/chunklist_...
+#EXTINF:-1 tvg-id="Telefe.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/cc/Telefe_%28nuevo_logo%29.png" group-title="Internacionales",Telefe
+http://190.95.60.228:8500/play/a031
 #EXTINF:-1 group-title="Argentina" tvg-chno="1033" tvg-id="Canal.Telefé.(Argentina).ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/IZeVtHxrcaOlzblx.png", Telefe (VPN) - TDA 11.1
 https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS
 #EXTINF:-1 group-title="Argentina" tvg-chno="1034" tvg-id="Canal.Telefé.(Argentina).ar" tvg-logo="https://files.manuscdn.com/user_upload_by_module/session_file/310419663029739824/IZeVtHxrcaOlzblx.png", Telefe (VPN) 2
