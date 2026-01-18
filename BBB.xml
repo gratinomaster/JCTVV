@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="BBB Live EPG">
+<tv generator-info-name="BBB EPG">
 
   <!-- ===== CANAIS ===== -->
   <channel id="Acompanhe a casa"><display-name>Acompanhe a Casa</display-name></channel>
@@ -10,38 +10,30 @@
   <channel id="Sala Sonho de Ser Milionário"><display-name>Sala Sonho de Ser Milionário</display-name></channel>
   <channel id="Banheiro SUPER CIMED"><display-name>Banheiro SUPER CIMED</display-name></channel>
 
-  <!-- ===== TEMPLATE 24H (REPLICADO EM TODOS OS CANAIS) ===== -->
-
-  <!-- 00:00 às 06:00 -->
-  <programme start="20260118000000 -0300" stop="20260118010000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118010000 -0300" stop="20260118020000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118020000 -0300" stop="20260118030000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118030000 -0300" stop="20260118040000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118040000 -0300" stop="20260118050000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118050000 -0300" stop="20260118060000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-
-  <!-- 06:00 às 12:00 -->
-  <programme start="20260118060000 -0300" stop="20260118070000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118070000 -0300" stop="20260118080000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118080000 -0300" stop="20260118090000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118090000 -0300" stop="20260118100000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118100000 -0300" stop="20260118110000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118110000 -0300" stop="20260118120000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-
-  <!-- 12:00 às 18:00 -->
-  <programme start="20260118120000 -0300" stop="20260118130000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118130000 -0300" stop="20260118140000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118140000 -0300" stop="20260118150000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118150000 -0300" stop="20260118160000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118160000 -0300" stop="20260118170000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118170000 -0300" stop="20260118180000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-
-  <!-- 18:00 às 24:00 -->
-  <programme start="20260118180000 -0300" stop="20260118190000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118190000 -0300" stop="20260118200000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118200000 -0300" stop="20260118210000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118210000 -0300" stop="20260118220000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118220000 -0300" stop="20260118230000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
-  <programme start="20260118230000 -0300" stop="20260119000000 -0300" channel="{CHANNEL}"><title>{TITLE}</title></programme>
+  <!-- ===== 24H – ACOMPANHE A CASA (exemplo completo) ===== -->
+  <programme start="20260118000000 -0300" stop="20260118010000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118010000 -0300" stop="20260118020000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118020000 -0300" stop="20260118030000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118030000 -0300" stop="20260118040000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118040000 -0300" stop="20260118050000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118050000 -0300" stop="20260118060000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118060000 -0300" stop="20260118070000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118070000 -0300" stop="20260118080000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118080000 -0300" stop="20260118090000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118090000 -0300" stop="20260118100000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118100000 -0300" stop="20260118110000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118110000 -0300" stop="20260118120000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118120000 -0300" stop="20260118130000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118130000 -0300" stop="20260118140000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118140000 -0300" stop="20260118150000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118150000 -0300" stop="20260118160000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118160000 -0300" stop="20260118170000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118170000 -0300" stop="20260118180000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118180000 -0300" stop="20260118190000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118190000 -0300" stop="20260118200000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118200000 -0300" stop="20260118210000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118210000 -0300" stop="20260118220000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118220000 -0300" stop="20260118230000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
+  <programme start="20260118230000 -0300" stop="20260119000000 -0300" channel="Acompanhe a casa"><title>Acompanhe a Casa – Ao Vivo</title></programme>
 
 </tv>
