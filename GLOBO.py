@@ -57,11 +57,11 @@ def extract_globoplay_data(url):
         play_button = driver.find_element(By.CSS_SELECTOR, "button.poster__play-wrapper")
         if play_button:
             play_button.click()
-            time.sleep(15)
+            time.sleep(20)
     except Exception as e:
         print("Erro ao clicar no botão de reprodução:", e)
 
-    time.sleep(55)  # Espera a página carregar
+    time.sleep(60)  # Espera a página carregar
     title = driver.title
     log_entries = driver.execute_script("return window.performance.getEntriesByType('resource');")
     m3u8_url = None
