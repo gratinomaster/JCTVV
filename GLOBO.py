@@ -14,6 +14,7 @@ options.add_argument("--disable-infobars")
 
 # URLs dos vídeos Globoplay
 globoplay_urls = [
+    "https://vix.com/es-es/canales/top/channel-callsign-Reality_02_AVOD",
     "https://globoplay.globo.com/ao-vivo/7690141/",
     "https://globoplay.globo.com/v/12749215/"
     "https://globoplay.globo.com/v/12749215/",
