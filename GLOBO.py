@@ -15,6 +15,7 @@ options.add_argument("--disable-infobars")
 
 # URLs dos vídeos Globoplay
 globoplay_urls = [
+    "https://globoplay.globo.com/ao-vivo/7813173/",
     "https://g1.globo.com/go/goias/ao-vivo/policia-civil-realiza-coletiva-de-imprensa-sobre-o-caso-da-corretora-de-imoveis-encontrada-morta.ghtml",
     "https://globoplay.globo.com/ao-vivo/10865071/",
     "https://g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas-ao-vivo.ghtml",
