@@ -149,15 +149,6 @@ def get_links_from_google_dynamic():
         
         # Links extraídos dinamicamente da busca atual:
         links = [
-            "https://globoplay.globo.com/ao-vivo/7689934/",
-            "https://g1.globo.com/rondonia/ao-vivo/assista-ao-jro2.ghtml",
-            "https://globoplay.globo.com/ao-vivo/7690141/",
-            "https://g1.globo.com/video/sousa-x-treze-ao-vivo-no-jornal-da-paraiba.ghtml",
-            "https://g1.globo.com/amp/video/ja-na-sua-cidade-ao-vivo-direto-da-praia-de-palmas.ghtml",
-            "https://globoplay.globo.com/ao-vivo/3667427/",
-            "https://g1.globo.com/ao-vivo/cobertura-especial-corretora-morta.ghtml",
-            "https://g1.globo.com/pa/para/ao-vivo/tv-liberal-transmite-rainha-das-rainhas.ghtml",
-            "https://g1.globo.com/video/jpb1-de-verao-ao-vivo-da-praia-do-bessa.ghtml",
             "https://g1.globo.com/video/ja-na-sua-cidade-ao-vivo-de-governador-celso-ramos.ghtml"
         ]
         
