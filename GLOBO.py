@@ -34,7 +34,7 @@ globoplay_urls = [
     "https://globoplay.globo.com/v/4064559/",  # G1 ao vivo - Transmissão ao vivo
     "https://globoplay.globo.com/v/5472979/",
     "https://globoplay.globo.com/v/2135579/",  # G1 RS - Telejornais da RBS TV
-    "https://globoplay.globo.com/ao-vivo/5472979/",
+    "https://globoplay.globo.com/v/5472979/", #BONI
     "https://globoplay.globo.com/v/6120663/",  # G1 RS - Jornal da EPTV 1ª Edição - Ribeirão Preto
     "https://globoplay.globo.com/v/2145544/",  # G1 SC - Telejornais da NSC TV
     "https://globoplay.globo.com/ao-vivo/10865071/",
