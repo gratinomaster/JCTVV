@@ -19,7 +19,6 @@ globoplay_urls = [
     "https://globoplay.globo.com/ao-vivo/7690141/",
     "https://globoplay.globo.com/ao-vivo/7813173/",
     "https://g1.globo.com/go/goias/ao-vivo/policia-civil-realiza-coletiva-de-imprensa-sobre-o-caso-da-corretora-de-imoveis-encontrada-morta.ghtml",
-    "https://globoplay.globo.com/ao-vivo/10865071/",
     "https://g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas-ao-vivo.ghtml",
     "https://globoplay.globo.com/ao-vivo/14164032",
     "https://globoplay.globo.com/ao-vivo/2134039/",
@@ -38,6 +37,7 @@ globoplay_urls = [
     "https://globoplay.globo.com/ao-vivo/5472979/",
     "https://globoplay.globo.com/v/6120663/",  # G1 RS - Jornal da EPTV 1ª Edição - Ribeirão Preto
     "https://globoplay.globo.com/v/2145544/",  # G1 SC - Telejornais da NSC TV
+    "https://globoplay.globo.com/ao-vivo/10865071/",
     "https://globoplay.globo.com/v/4039160/",  # G1 CE - TV Verdes Mares ao vivo
     "https://globoplay.globo.com/v/6329086/",  # Globo Esporte BA - Travessia Itaparica-Salvador ao vivo
     "https://globoplay.globo.com/v/11999480/",  # G1 ES - Jornal Regional ao vivo
