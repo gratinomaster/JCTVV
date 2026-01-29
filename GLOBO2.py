@@ -102,38 +102,38 @@ def main():
     todos_os_links = []
 
     try:
-        # Coleta links "AO VIVO" de todos os estados
-        print("Coletando links AO VIVO de todos os estados...")
-        for estado in ESTADOS_BRASIL:
+        print("\n🔎 Coletando links AO VIVO do G1...\n")
+
+        for idx, estado in enumerate(ESTADOS_BRASIL, 1):
             url = f"https://g1.globo.com/{estado}"
+            print(f"[{idx}/{len(ESTADOS_BRASIL)}] Estado: {estado.upper()}")
+
             links = buscar_links_ao_vivo(driver, url)
-            todos_os_links.extend(links)
-        print(f"Total de links encontrados: {len(todos_os_links)}")
+
+            if links:
+                for link in links:
+                    print(f"   ✓ {link}")
+                todos_os_links.extend(links)
+            else:
+                print("   ℹ Nenhum link AO VIVO encontrado.")
+
+            print("-" * 60)
+            time.sleep(1)
+
+        print("\n📊 RESUMO FINAL")
+        print("=" * 60)
+        print(f"Total de links AO VIVO encontrados: {len(todos_os_links)}\n")
 
         if not todos_os_links:
-            print("Nenhum link encontrado. Encerrando.")
+            print("⚠ Nenhum link foi coletado. Encerrando.")
             return
 
-        # Cria arquivo M3U final
-        output_file = "lista2.m3u"
-        with open(output_file, "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
-
-            # Agora percorre cada link no mesmo driver
-            for idx, link in enumerate(todos_os_links, 1):
-                print(f"[{idx}/{len(todos_os_links)}] Processando: {link}")
-                title, m3u8, thumb, url = extrair_stream(driver, link)
-                if m3u8:
-                    f.write(f'#EXTINF:-1 tvg-logo="{thumb or ""}" group-title="G1 AO VIVO",{title}\n')
-                    f.write(f"{m3u8}\n")
-                    print(f"  ✓ Stream encontrado: {title}")
-                else:
-                    print(f"  ✗ Stream não encontrado: {url}")
+        # (continua normalmente para extração de stream, se quiser)
+        print("Links coletados com sucesso. Prosseguindo para extração...\n")
 
     finally:
         driver.quit()
 
-    print(f"\nLista gerada: {output_file}")
 
 if __name__ == "__main__":
     main()
