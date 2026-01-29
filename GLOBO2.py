@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """
-Script para buscar links "AO VIVO" no G1 Globo para todos os estados brasileiros
-e gerar um arquivo M3U (.m3u) diretamente com os streams .m3u8.
-Usa Selenium para lidar com conteúdo carregado via JavaScript.
+Script otimizado para buscar links "AO VIVO" no G1 Globo e gerar lista M3U (.m3u)
+Usa apenas um driver do Chrome para extrair todos os links e seus streams .m3u8
 """
 
 import time
-import concurrent.futures
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -15,15 +13,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-# Lista de todos os estados brasileiros com suas abreviações
+# Lista de todos os estados brasileiros
 ESTADOS_BRASIL = [
-    "ac", "al", "ap", "am", "ba", "ce", "df", "es", "go", "ma",
-    "mt", "ms", "mg", "pa", "pb", "pr", "pe", "pi", "rj", "rn",
-    "rs", "ro", "rr", "sc", "sp", "se", "to"
+    "ac","al","ap","am","ba","ce","df","es","go","ma",
+    "mt","ms","mg","pa","pb","pr","pe","pi","rj","rn",
+    "rs","ro","rr","sc","sp","se","to"
 ]
 
 def criar_driver(headless=True):
-    """Cria o driver do Chrome"""
     chrome_options = Options()
     if headless:
         chrome_options.add_argument("--headless")
@@ -57,23 +54,19 @@ def buscar_links_ao_vivo(driver, url):
                     links_encontrados.append(href)
             except:
                 continue
-
     except Exception as e:
         print(f"Erro ao acessar {url}: {e}")
-
     return links_encontrados
 
-def extract_stream_data(url):
-    """Processa a URL para encontrar o stream m3u8"""
-    driver = criar_driver()
+def extrair_stream(driver, url):
+    """Usa o driver já aberto para extrair .m3u8, thumbnail e título"""
     m3u8_url = None
     thumbnail_url = None
     title = "Sem Título"
 
     try:
         driver.get(url)
-        time.sleep(10)  # espera a página carregar
-
+        time.sleep(5)  # espera página carregar
         title = driver.title
 
         # Tenta disparar o player
@@ -88,7 +81,7 @@ def extract_stream_data(url):
             except:
                 continue
 
-        # Captura m3u8 dos logs de rede
+        # Captura recursos carregados
         resources = driver.execute_script("return window.performance.getEntriesByType('resource');")
         for entry in resources:
             name = entry['name']
@@ -101,8 +94,7 @@ def extract_stream_data(url):
 
     except Exception as e:
         print(f"Erro em {url}: {e}")
-    finally:
-        driver.quit()
+
     return title, m3u8_url, thumbnail_url, url
 
 def main():
@@ -111,35 +103,35 @@ def main():
 
     try:
         # Coleta links "AO VIVO" de todos os estados
+        print("Coletando links AO VIVO de todos os estados...")
         for estado in ESTADOS_BRASIL:
             url = f"https://g1.globo.com/{estado}"
             links = buscar_links_ao_vivo(driver, url)
             todos_os_links.extend(links)
+        print(f"Total de links encontrados: {len(todos_os_links)}")
+
+        if not todos_os_links:
+            print("Nenhum link encontrado. Encerrando.")
+            return
+
+        # Cria arquivo M3U final
+        output_file = "lista2.m3u"
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+
+            # Agora percorre cada link no mesmo driver
+            for idx, link in enumerate(todos_os_links, 1):
+                print(f"[{idx}/{len(todos_os_links)}] Processando: {link}")
+                title, m3u8, thumb, url = extrair_stream(driver, link)
+                if m3u8:
+                    f.write(f'#EXTINF:-1 tvg-logo="{thumb or ""}" group-title="G1 AO VIVO",{title}\n')
+                    f.write(f"{m3u8}\n")
+                    print(f"  ✓ Stream encontrado: {title}")
+                else:
+                    print(f"  ✗ Stream não encontrado: {url}")
+
     finally:
         driver.quit()
-
-    if not todos_os_links:
-        print("Nenhum link 'AO VIVO' encontrado.")
-        return
-
-    # Cria arquivo M3U final
-    output_file = "lista2.m3u"
-    with open(output_file, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-
-        with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
-            futures = {executor.submit(extract_stream_data, url): url for url in todos_os_links}
-            for future in concurrent.futures.as_completed(futures):
-                try:
-                    title, m3u8, thumb, url = future.result()
-                    if m3u8:
-                        f.write(f'#EXTINF:-1 tvg-logo="{thumb or ""}" group-title="G1 AO VIVO",{title}\n')
-                        f.write(f"{m3u8}\n")
-                        print(f"OK: {title}")
-                    else:
-                        print(f"Stream não encontrado: {url}")
-                except Exception as e:
-                    print(f"Erro: {e}")
 
     print(f"\nLista gerada: {output_file}")
 
