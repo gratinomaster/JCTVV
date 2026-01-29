@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 """
 Script para buscar links "AO VIVO" no G1 Globo para todos os estados brasileiros
-Usando requests + BeautifulSoup (sem Selenium)
+Usando Selenium para lidar com conteúdo carregado via JavaScript
 """
 
-import requests
-from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 
 # Lista de todos os estados brasileiros com suas abreviações
@@ -15,35 +20,48 @@ ESTADOS_BRASIL = [
     "rs", "ro", "rr", "sc", "sp", "se", "to"
 ]
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-}
+def criar_driver():
+    """Cria o driver do Chrome em modo headless"""
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  # roda em segundo plano
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--window-size=1920,1080")
+    
+    service = Service()  # Assumindo que o ChromeDriver está no PATH
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    return driver
 
-def buscar_links_ao_vivo(url):
+def buscar_links_ao_vivo(driver, url):
+    """Busca links 'AO VIVO' em uma página do G1 usando Selenium"""
     links_encontrados = []
 
     try:
         print(f"  Acessando: {url}")
-        response = requests.get(url, headers=HEADERS, timeout=10)
-        response.raise_for_status()
+        driver.get(url)
 
-        soup = BeautifulSoup(response.text, "html.parser")
+        # Espera até que pelo menos um elemento "AO VIVO" apareça
+        try:
+            WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.CLASS_NAME, "bstn-aovivo-label"))
+            )
+        except TimeoutException:
+            print("  ℹ Nenhum conteúdo AO VIVO carregou nesta página.")
+            return links_encontrados
 
-        # Busca todos os <span> com a classe bstn-aovivo-label
-        for span in soup.find_all("span", class_="bstn-aovivo-label"):
-            parent_a = span.find_parent("a", href=True)
-            if parent_a:
-                href = parent_a["href"]
-                if href.startswith("/"):
-                    href = "https://g1.globo.com" + href
+        # Encontra todos os spans com a classe "bstn-aovivo-label"
+        spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
+        for span in spans:
+            try:
+                parent_a = span.find_element(By.XPATH, "./ancestor::a[@href]")
+                href = parent_a.get_attribute("href")
                 if href not in links_encontrados:
                     links_encontrados.append(href)
                     print(f"    ✓ Encontrado: {href}")
+            except:
+                continue
 
-        if not links_encontrados:
-            print("  ℹ Nenhum link 'AO VIVO' encontrado nesta página")
-
-    except requests.RequestException as e:
+    except Exception as e:
         print(f"  ✗ Erro ao acessar {url}: {e}")
 
     return links_encontrados
@@ -51,52 +69,44 @@ def buscar_links_ao_vivo(url):
 def salvar_resultados(dados):
     """Salva os resultados em um arquivo de texto"""
     nome_arquivo = "linksaovivo.txt"
-
-    try:
-        with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
-            arquivo.write("=" * 70 + "\n")
-            arquivo.write("LINKS AO VIVO - G1 GLOBO\n")
-            arquivo.write("=" * 70 + "\n\n")
-
-            if not dados:
-                arquivo.write("Nenhum link 'AO VIVO' foi encontrado.\n")
-            else:
-                total_links = sum(len(links) for links in dados.values())
-                arquivo.write(f"Total de links encontrados: {total_links}\n")
-                arquivo.write(f"Estados com conteúdo AO VIVO: {len(dados)}\n\n")
-
-                for estado, links in sorted(dados.items()):
-                    arquivo.write(f"\n{'─' * 70}\n")
-                    arquivo.write(f"ESTADO: {estado}\n")
-                    arquivo.write(f"{'─' * 70}\n")
-
-                    for idx, link in enumerate(links, 1):
-                        arquivo.write(f"{idx}. {link}\n")
-
-        print(f"✓ Arquivo '{nome_arquivo}' criado com sucesso!")
-
-    except Exception as e:
-        print(f"✗ Erro ao salvar arquivo: {e}")
+    with open(nome_arquivo, "w", encoding="utf-8") as arquivo:
+        arquivo.write("=" * 70 + "\n")
+        arquivo.write("LINKS AO VIVO - G1 GLOBO\n")
+        arquivo.write("=" * 70 + "\n\n")
+        if not dados:
+            arquivo.write("Nenhum link 'AO VIVO' foi encontrado.\n")
+        else:
+            total_links = sum(len(links) for links in dados.values())
+            arquivo.write(f"Total de links encontrados: {total_links}\n")
+            arquivo.write(f"Estados com conteúdo AO VIVO: {len(dados)}\n\n")
+            for estado, links in sorted(dados.items()):
+                arquivo.write(f"\n{'─' * 70}\n")
+                arquivo.write(f"ESTADO: {estado}\n")
+                arquivo.write(f"{'─' * 70}\n")
+                for idx, link in enumerate(links, 1):
+                    arquivo.write(f"{idx}. {link}\n")
+    print(f"✓ Arquivo '{nome_arquivo}' criado com sucesso!")
 
 def main():
     print("=" * 60)
-    print("BUSCADOR DE LINKS AO VIVO - G1 GLOBO")
+    print("BUSCADOR DE LINKS AO VIVO - G1 GLOBO (Selenium)")
     print("=" * 60)
     print(f"Total de estados a processar: {len(ESTADOS_BRASIL)}\n")
 
+    driver = criar_driver()
     todos_os_links = {}
 
-    for idx, estado in enumerate(ESTADOS_BRASIL, 1):
-        url = f"https://g1.globo.com/{estado}"
-        print(f"[{idx}/{len(ESTADOS_BRASIL)}] Estado: {estado.upper()}")
-
-        links = buscar_links_ao_vivo(url)
-
-        if links:
-            todos_os_links[estado.upper()] = links
-
-        time.sleep(1)  # pausa para evitar muitas requisições seguidas
-        print()
+    try:
+        for idx, estado in enumerate(ESTADOS_BRASIL, 1):
+            url = f"https://g1.globo.com/{estado}"
+            print(f"[{idx}/{len(ESTADOS_BRASIL)}] Estado: {estado.upper()}")
+            links = buscar_links_ao_vivo(driver, url)
+            if links:
+                todos_os_links[estado.upper()] = links
+            time.sleep(1)
+            print()
+    finally:
+        driver.quit()
 
     salvar_resultados(todos_os_links)
 
@@ -106,6 +116,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 import time
 import concurrent.futures
