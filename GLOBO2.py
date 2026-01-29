@@ -20,10 +20,6 @@ HEADERS = {
 }
 
 def buscar_links_ao_vivo(url):
-    """
-    Busca por links contendo 'AO VIVO' na página
-    Retorna uma lista com os links encontrados
-    """
     links_encontrados = []
 
     try:
@@ -33,17 +29,13 @@ def buscar_links_ao_vivo(url):
 
         soup = BeautifulSoup(response.text, "html.parser")
 
-        # Busca todos os links da página
-        for a in soup.find_all("a", href=True):
-            texto = a.get_text(strip=True).upper()
-
-            if "AO VIVO" in texto:
-                href = a["href"]
-
-                # Corrige links relativos
+        # Busca todos os <span> com a classe bstn-aovivo-label
+        for span in soup.find_all("span", class_="bstn-aovivo-label"):
+            parent_a = span.find_parent("a", href=True)
+            if parent_a:
+                href = parent_a["href"]
                 if href.startswith("/"):
                     href = "https://g1.globo.com" + href
-
                 if href not in links_encontrados:
                     links_encontrados.append(href)
                     print(f"    ✓ Encontrado: {href}")
