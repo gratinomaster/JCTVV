@@ -5,19 +5,16 @@
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/canales-internacionales/ClicMexico.png" group-title="🌍 Canales Internacionales",✔️ Azteca Clic (Mexico)
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=5398
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=4827
 
-✔️Azteca_Internacional_(Mexico) - otteravision server 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/canales-internacionales/AztecaInternacional.png" group-title="🌍 Canales Internacionales",✔️ Azteca Internacional (Mexico)
-https://azt-mun.otteravision.com/azt/mun/mun_360p.m3u8
+https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
+https://azt-mun.otteravision.com/azt/mun/mun_360p.m3u8
 https://azt-mun.otteravision.com/azt/mun/mun_540p.m3u8
 https://azt-mun.otteravision.com/azt/mun/mun_480p.m3u8
-https://azt-mun.otteravision.com/azt/mun/mun_1080p.m3u8
 
-✔️Azteca_Internacional_(Mexico) - ottera server 
+
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/CINECITY2023/cinecity/refs/heads/cinecity.net/logos/canales-internacionales/AztecaInternacional.png" group-title="🌍 Canales Internacionales",✔️ Azteca Internacional (2) (Mexico)
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=5397
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
