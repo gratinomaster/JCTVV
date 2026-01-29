@@ -1,139 +1,147 @@
-#!/usr/bin/env python3
-"""
-Script otimizado para buscar links "AO VIVO" no G1 Globo e gerar lista M3U (.m3u)
-Usa apenas um driver do Chrome para extrair todos os links e seus streams .m3u8
-"""
-
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
 
-# Lista de todos os estados brasileiros
 ESTADOS_BRASIL = [
     "ac","al","ap","am","ba","ce","df","es","go","ma",
     "mt","ms","mg","pa","pb","pr","pe","pi","rj","rn",
     "rs","ro","rr","sc","sp","se","to"
 ]
 
-def criar_driver(headless=True):
-    chrome_options = Options()
-    if headless:
-        chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
-    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-    service = Service()
-    driver = webdriver.Chrome(service=service, options=chrome_options)
+def criar_driver():
+    options = Options()
+
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--autoplay-policy=no-user-gesture-required")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+
+    options.add_argument(
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+
+    driver = webdriver.Chrome(service=Service(), options=options)
+
+    # Ativa Network (CDP)
+    driver.execute_cdp_cmd("Network.enable", {})
+
     return driver
 
+
 def buscar_links_ao_vivo(driver, url):
-    """Busca links 'AO VIVO' em uma página do G1"""
-    links_encontrados = []
-    try:
-        driver.get(url)
+    links = []
+    driver.get(url)
+    time.sleep(3)
+
+    spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
+    for span in spans:
         try:
-            WebDriverWait(driver, 5).until(
-                EC.presence_of_element_located((By.CLASS_NAME, "bstn-aovivo-label"))
-            )
-        except TimeoutException:
-            return links_encontrados
+            a = span.find_element(By.XPATH, "./ancestor::a[@href]")
+            href = a.get_attribute("href")
+            if "/ao-vivo/" in href:
+                links.append(href)
+        except:
+            pass
 
-        spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
-        for span in spans:
-            try:
-                parent_a = span.find_element(By.XPATH, "./ancestor::a[@href]")
-                href = parent_a.get_attribute("href")
-                if href not in links_encontrados:
-                    links_encontrados.append(href)
-            except:
-                continue
-    except Exception as e:
-        print(f"Erro ao acessar {url}: {e}")
-    return links_encontrados
+    return list(set(links))
 
-def extrair_stream(driver, url):
-    """Usa o driver já aberto para extrair .m3u8, thumbnail e título"""
-    m3u8_url = None
-    thumbnail_url = None
-    title = "Sem Título"
+def clicar_play(driver):
+    seletores = [
+        "button.poster__play-wrapper",
+        ".play-button",
+        "[aria-label='Play']",
+        ".video-player__play-button"
+    ]
+    for s in seletores:
+        try:
+            btn = driver.find_element(By.CSS_SELECTOR, s)
+            if btn.is_displayed():
+                btn.click()
+                return True
+        except:
+            pass
+    return False
 
-    try:
-        driver.get(url)
-        time.sleep(5)  # espera página carregar
-        title = driver.title
+def capturar_m3u8(driver, tempo=20):
+    """
+    Escuta o tráfego de rede e captura .m3u8
+    """
+    encontrados = set()
+    inicio = time.time()
 
-        # Tenta disparar o player
-        play_selectors = ["button.poster__play-wrapper", ".play-button", "[aria-label='Play']", ".video-player__play-button"]
-        for selector in play_selectors:
-            try:
-                btn = driver.find_element(By.CSS_SELECTOR, selector)
-                if btn.is_displayed():
-                    btn.click()
-                    time.sleep(5)
-                    break
-            except:
-                continue
+    while time.time() - inicio < tempo:
+        logs = driver.execute_cdp_cmd("Network.getResponseBody", {})
+        time.sleep(1)
 
-        # Captura recursos carregados
-        resources = driver.execute_script("return window.performance.getEntriesByType('resource');")
-        for entry in resources:
-            name = entry['name']
-            if ".m3u8" in name and not m3u8_url:
-                if any(x in name for x in ["playlist.m3u8", "master.m3u8", "index.m3u8"]):
-                    m3u8_url = name
-            if (".jpg" in name or ".png" in name) and not thumbnail_url:
-                if any(x in name for x in ["thumb", "poster", "logo"]):
-                    thumbnail_url = name
+        # Lê todas as requests registradas
+        entries = driver.execute_script(
+            "return performance.getEntriesByType('resource')"
+        )
 
-    except Exception as e:
-        print(f"Erro em {url}: {e}")
+        for e in entries:
+            url = e.get("name", "")
+            if ".m3u8" in url:
+                encontrados.add(url)
 
-    return title, m3u8_url, thumbnail_url, url
+        if encontrados:
+            break
+
+    return list(encontrados)
 
 def main():
     driver = criar_driver()
-    todos_os_links = []
+    links_ao_vivo = []
 
     try:
-        print("\n🔎 Coletando links AO VIVO do G1...\n")
-
-        for idx, estado in enumerate(ESTADOS_BRASIL, 1):
+        print("\n🔎 COLETANDO LINKS AO VIVO\n")
+        for estado in ESTADOS_BRASIL:
             url = f"https://g1.globo.com/{estado}"
-            print(f"[{idx}/{len(ESTADOS_BRASIL)}] Estado: {estado.upper()}")
-
             links = buscar_links_ao_vivo(driver, url)
-
             if links:
-                for link in links:
-                    print(f"   ✓ {link}")
-                todos_os_links.extend(links)
-            else:
-                print("   ℹ Nenhum link AO VIVO encontrado.")
+                print(f"{estado.upper()}:")
+                for l in links:
+                    print(f"  ✓ {l}")
+                links_ao_vivo.extend(links)
 
-            print("-" * 60)
-            time.sleep(1)
-
-        print("\n📊 RESUMO FINAL")
-        print("=" * 60)
-        print(f"Total de links AO VIVO encontrados: {len(todos_os_links)}\n")
-
-        if not todos_os_links:
-            print("⚠ Nenhum link foi coletado. Encerrando.")
+        if not links_ao_vivo:
+            print("Nenhum link AO VIVO encontrado.")
             return
 
-        # (continua normalmente para extração de stream, se quiser)
-        print("Links coletados com sucesso. Prosseguindo para extração...\n")
+        print("\n🎥 EXTRAINDO STREAMS (.m3u8)\n")
+
+        with open("lista2.m3u", "w", encoding="utf-8") as f:
+            f.write("#EXTM3U\n")
+
+            for link in links_ao_vivo:
+                print(f"\n➡ Abrindo: {link}")
+                driver.get(link)
+                time.sleep(5)
+
+                clicar_play(driver)
+                time.sleep(5)
+
+                m3u8s = capturar_m3u8(driver)
+
+                if m3u8s:
+                    m3u8 = m3u8s[0]
+                    titulo = driver.title
+                    f.write(f"#EXTINF:-1,{titulo}\n")
+                    f.write(f"{m3u8}\n")
+                    print(f"   ✅ M3U8 encontrado")
+                else:
+                    print("   ❌ Nenhum M3U8 capturado")
 
     finally:
         driver.quit()
 
+    print("\n✅ Arquivo gerado: lista2.m3u")
 
 if __name__ == "__main__":
     main()
