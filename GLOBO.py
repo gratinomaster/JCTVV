@@ -74,7 +74,7 @@ def extract_globoplay_data(url):
     m3u8_url = None
     thumbnail_url = None
     for entry in log_entries:
-        if ".m3u8" in entry['name']:
+        if "playlist.m3u8" in entry['name']:
             m3u8_url = entry['name']
         if ".jpg" in entry['name'] and not thumbnail_url:
             thumbnail_url = entry['name']
