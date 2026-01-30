@@ -97,14 +97,22 @@ def capturar_streams(driver, tempo=40):
             try:
                 msg = json.loads(entry["message"])["message"]
 
-                if msg.get("method") == "Network.responseReceived":
-                    url = msg["params"]["response"]["url"]
+                if msg.get("method") != "Network.responseReceived":
+                    continue
 
-                    if ".m3u8" in url and not m3u8_url:
-                        m3u8_url = url
+                url = msg["params"]["response"]["url"].lower()
 
-                    if ".jpg" in url and not thumbnail_url:
-                        thumbnail_url = url
+                # ===== M3U8 =====
+                if ".m3u8" in url and not m3u8_url:
+                    m3u8_url = msg["params"]["response"]["url"]
+
+                # ===== THUMBNAIL (SOMENTE GLOBO) =====
+                if (
+                    not thumbnail_url
+                    and (url.endswith(".jpg") or url.endswith(".jpeg"))
+                    and "video.glbimg.com" in url
+                ):
+                    thumbnail_url = msg["params"]["response"]["url"]
 
             except:
                 pass
@@ -115,6 +123,7 @@ def capturar_streams(driver, tempo=40):
         time.sleep(1)
 
     return m3u8_url, thumbnail_url
+
 
 # =========================
 # MAIN
