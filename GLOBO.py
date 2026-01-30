@@ -13,7 +13,7 @@ options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
 
-# URLs dos vídeos Globoplay
+# URLs dos vídeos Globoplay e G1 ao vivo
 globoplay_urls = [
     "https://globoplay.globo.com/ao-vivo/7689934/",
     "https://globoplay.globo.com/ao-vivo/7690141/",
@@ -58,27 +58,62 @@ globoplay_urls = [
 ]
 
 def extract_globoplay_data(url):
+    """
+    Extrai dados de vídeos do Globoplay e G1 ao vivo.
+    
+    Funciona com:
+    - URLs do Globoplay (globoplay.globo.com)
+    - URLs do G1 ao vivo (g1.globo.com/...ao-vivo/...)
+    
+    Args:
+        url (str): URL do vídeo ou transmissão ao vivo
+        
+    Returns:
+        tuple: (título, url_m3u8, url_thumbnail)
+    """
     driver = webdriver.Chrome(options=options)
     driver.get(url)
+    
     try:
-        play_button = driver.find_element(By.CSS_SELECTOR, "button.poster__play-wrapper")
-        if play_button:
-            play_button.click()
-            time.sleep(20)
+        # Tentar clicar no botão de play (funciona para Globoplay)
+        # Se não existir, o script continua normalmente (para G1 ao vivo)
+        try:
+            play_button = driver.find_element(By.CSS_SELECTOR, "button.poster__play-wrapper")
+            if play_button:
+                play_button.click()
+                time.sleep(20)
+                print(f"Botão de play clicado para: {url}")
+        except Exception as e:
+            # G1 ao vivo não tem botão de play, o vídeo começa automaticamente
+            print(f"Botão de play não encontrado (esperado para G1 ao vivo): {e}")
     except Exception as e:
-        print("Erro ao clicar no botão de reprodução:", e)
+        print(f"Erro ao processar botão de reprodução: {e}")
 
-    time.sleep(60)  # Espera a página carregar
+    # Aguardar o carregamento da página e do stream
+    time.sleep(60)
+    
     title = driver.title
+    
+    # Extrair recursos carregados pela página
     log_entries = driver.execute_script("return window.performance.getEntriesByType('resource');")
+    
     m3u8_url = None
     thumbnail_url = None
+    
+    # Procurar por URLs de playlist (m3u8)
     for entry in log_entries:
-        if "playlist.m3u8" in entry['name']:
+        # Buscar por playlist.m3u8 ou qualquer URL contendo m3u8
+        if ".m3u8" in entry['name'] or (entry['name'].endswith('.m3u8') and 'egcdn-live' in entry['name']):
             m3u8_url = entry['name']
+            print(f"M3U8 encontrado: {m3u8_url[:80]}...")
+            break
+        
+        # Buscar por imagens de thumbnail
         if ".jpg" in entry['name'] and not thumbnail_url:
             thumbnail_url = entry['name']
+    
     driver.quit()
+    
     return title, m3u8_url, thumbnail_url
 
 with open("lista1.m3u", "w") as output_file:
@@ -92,9 +127,10 @@ with open("lista1.m3u", "w") as output_file:
                     thumbnail_url = thumbnail_url if thumbnail_url else ""
                     output_file.write(f'#EXTINF:-1 tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO", {title}\n')
                     output_file.write(f"{m3u8_url}\n")
-                    print(f"Processado com sucesso: {url}")
+                    print(f"✓ Processado com sucesso: {url}")
                 else:
-                    print(f"M3U8 não encontrado para {url}")
+                    print(f"✗ M3U8 não encontrado para {url}")
             except Exception as e:
-                print(f"Erro ao processar {url}: {e}")
+                print(f"✗ Erro ao processar {url}: {e}")
 
+print("\n✓ Arquivo 'lista1.m3u' gerado com sucesso!")
