@@ -6,7 +6,9 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-# Estados do Brasil
+# =========================
+# ESTADOS DO BRASIL
+# =========================
 ESTADOS_BRASIL = [
     "ac","al","ap","am","ba","ce","df","es","go","ma",
     "mt","ms","mg","pa","pb","pr","pe","pi","rj","rn",
@@ -14,7 +16,7 @@ ESTADOS_BRASIL = [
 ]
 
 # =========================
-# DRIVER (GitHub Actions OK)
+# DRIVER (GITHUB ACTIONS OK)
 # =========================
 def criar_driver():
     options = Options()
@@ -31,11 +33,10 @@ def criar_driver():
         "Chrome/120.0.0.0 Safari/537.36"
     )
 
-    # ATIVA LOG DE PERFORMANCE (CRÍTICO)
+    # LOG DE PERFORMANCE (CRÍTICO)
     options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
-    driver = webdriver.Chrome(service=Service(), options=options)
-    return driver
+    return webdriver.Chrome(service=Service(), options=options)
 
 # =========================
 # BUSCA LINKS AO VIVO
@@ -46,12 +47,12 @@ def buscar_links_ao_vivo(driver, url):
     time.sleep(3)
 
     spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
+
     for span in spans:
         try:
             a = span.find_element(By.XPATH, "./ancestor::a[@href]")
             href = a.get_attribute("href")
 
-            # Filtra links ruins (#v/)
             if "/ao-vivo/" in href and href.endswith(".ghtml"):
                 links.append(href)
         except:
@@ -60,7 +61,7 @@ def buscar_links_ao_vivo(driver, url):
     return list(set(links))
 
 # =========================
-# CLICA PLAY (se existir)
+# CLICA PLAY (SE EXISTIR)
 # =========================
 def clicar_play(driver):
     seletores = [
@@ -69,6 +70,7 @@ def clicar_play(driver):
         "[aria-label='Play']",
         ".video-player__play-button"
     ]
+
     for s in seletores:
         try:
             btn = driver.find_element(By.CSS_SELECTOR, s)
@@ -77,13 +79,15 @@ def clicar_play(driver):
                 return True
         except:
             pass
+
     return False
 
 # =========================
-# CAPTURA M3U8 (CORRETO)
+# CAPTURA M3U8 + THUMBNAIL
 # =========================
-def capturar_m3u8(driver, tempo=40):
-    encontrados = set()
+def capturar_streams(driver, tempo=40):
+    m3u8_url = None
+    thumbnail_url = None
     inicio = time.time()
 
     while time.time() - inicio < tempo:
@@ -92,19 +96,25 @@ def capturar_m3u8(driver, tempo=40):
         for entry in logs:
             try:
                 msg = json.loads(entry["message"])["message"]
+
                 if msg.get("method") == "Network.responseReceived":
                     url = msg["params"]["response"]["url"]
-                    if ".m3u8" in url:
-                        encontrados.add(url)
+
+                    if ".m3u8" in url and not m3u8_url:
+                        m3u8_url = url
+
+                    if ".jpg" in url and not thumbnail_url:
+                        thumbnail_url = url
+
             except:
                 pass
 
-        if encontrados:
+        if m3u8_url:
             break
 
         time.sleep(1)
 
-    return list(encontrados)
+    return m3u8_url, thumbnail_url
 
 # =========================
 # MAIN
@@ -143,13 +153,21 @@ def main():
                 clicar_play(driver)
                 time.sleep(6)
 
-                m3u8s = capturar_m3u8(driver)
+                m3u8, thumbnail_url = capturar_streams(driver)
 
-                if m3u8s:
-                    m3u8 = m3u8s[0]
+                if m3u8:
                     titulo = driver.title.strip()
-                    f.write(f"#EXTINF:-1,{titulo}\n")
+
+                    extinf = '#EXTINF:-1 group-title="GLOBO AO VIVO"'
+
+                    if thumbnail_url:
+                        extinf += f' tvg-logo="{thumbnail_url}"'
+
+                    extinf += f',{titulo}\n'
+
+                    f.write(extinf)
                     f.write(f"{m3u8}\n")
+
                     print("   ✅ M3U8 encontrado")
                 else:
                     print("   ❌ Nenhum M3U8 capturado")
