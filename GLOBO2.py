@@ -16,7 +16,7 @@ ESTADOS_BRASIL = [
 ]
 
 # =========================
-# DRIVER (GITHUB ACTIONS OK)
+# DRIVER
 # =========================
 def criar_driver():
     options = Options()
@@ -33,17 +33,24 @@ def criar_driver():
         "Chrome/120.0.0.0 Safari/537.36"
     )
 
-    # LOG DE PERFORMANCE (CRÍTICO)
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    # Reduz logs para evitar travamentos
+    # options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
-    return webdriver.Chrome(service=Service(), options=options)
+    driver = webdriver.Chrome(service=Service(), options=options)
+    driver.set_page_load_timeout(300)  # Timeout maior para páginas lentas
+    return driver
 
 # =========================
 # BUSCA LINKS AO VIVO
 # =========================
 def buscar_links_ao_vivo(driver, url):
     links = []
-    driver.get(url)
+    try:
+        driver.get(url)
+    except Exception as e:
+        print(f"⚠ Não foi possível abrir {url}: {e}")
+        return links
+
     time.sleep(3)
 
     spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
@@ -91,12 +98,14 @@ def capturar_streams(driver, tempo=40):
     inicio = time.time()
 
     while time.time() - inicio < tempo:
-        logs = driver.get_log("performance")
+        try:
+            logs = driver.get_log("performance")
+        except:
+            logs = []
 
         for entry in logs:
             try:
                 msg = json.loads(entry["message"])["message"]
-
                 if msg.get("method") != "Network.responseReceived":
                     continue
 
@@ -144,6 +153,8 @@ def main():
                 for l in links:
                     print(f"  ✓ {l}")
                 links_ao_vivo.extend(links)
+            else:
+                print(f"{estado.upper()}: Nenhum link encontrado ou página lenta.")
 
         if not links_ao_vivo:
             print("\n⚠ Nenhum link AO VIVO encontrado.")
@@ -156,8 +167,12 @@ def main():
 
             for link in links_ao_vivo:
                 print(f"\n➡ Abrindo: {link}")
-                driver.get(link)
-                time.sleep(6)
+                try:
+                    driver.get(link)
+                    time.sleep(6)
+                except Exception as e:
+                    print(f"⚠ Não foi possível abrir {link}: {e}")
+                    continue
 
                 clicar_play(driver)
                 time.sleep(6)
@@ -166,7 +181,6 @@ def main():
 
                 if m3u8:
                     titulo = driver.title.strip()
-
                     extinf = '#EXTINF:-1 group-title="GLOBO AO VIVO"'
 
                     if thumbnail_url:
@@ -185,6 +199,7 @@ def main():
         driver.quit()
 
     print("\n✅ Arquivo gerado: lista2.m3u")
+
 
 # =========================
 # EXECUÇÃO
