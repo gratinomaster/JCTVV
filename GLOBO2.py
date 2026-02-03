@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 import time
 import json
-from selenium import webdriver
+from seleniumwire import webdriver  # Importa do selenium-wire
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 # =========================
 # ESTADOS DO BRASIL
 # =========================
 ESTADOS_BRASIL = [
-    "ac","al","ap","am","ba","ce","df","es","go","ma",
-    "mt","ms","mg","pa","pb","pr","pe","pi","rj","rn",
-    "rs","ro","rr","sc","sp","se","to"
+    "ac", "al", "ap", "am", "ba", "ce", "df", "es", "go", "ma",
+    "mt", "ms", "mg", "pa", "pb", "pr", "pe", "pi", "rj", "rn",
+    "rs", "ro", "rr", "sc", "sp", "se", "to"
 ]
 
 # =========================
@@ -32,12 +34,20 @@ def criar_driver():
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     )
+    
+    # Opções do Selenium-Wire
+    seleniumwire_options = {
+        'disable_encoding': True,  # Desativa a decodificação automática de respostas
+        'ignore_http_methods': ['OPTIONS', 'HEAD'] # Ignora requisições desnecessárias
+    }
 
-    # Reduz logs para evitar travamentos
-    # options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-
-    driver = webdriver.Chrome(service=Service(), options=options)
-    driver.set_page_load_timeout(300)  # Timeout maior para páginas lentas
+    # Usa o webdriver do selenium-wire
+    driver = webdriver.Chrome(
+        service=Service( ), 
+        options=options, 
+        seleniumwire_options=seleniumwire_options
+    )
+    driver.set_page_load_timeout(60)
     return driver
 
 # =========================
@@ -47,85 +57,90 @@ def buscar_links_ao_vivo(driver, url):
     links = []
     try:
         driver.get(url)
+        # Espera um pouco para os elementos da página carregarem
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
     except Exception as e:
         print(f"⚠ Não foi possível abrir {url}: {e}")
         return links
-
-    time.sleep(3)
 
     spans = driver.find_elements(By.CLASS_NAME, "bstn-aovivo-label")
 
     for span in spans:
         try:
+            # Sobe na árvore DOM para encontrar o link pai
             a = span.find_element(By.XPATH, "./ancestor::a[@href]")
             href = a.get_attribute("href")
 
             if "/ao-vivo/" in href and href.endswith(".ghtml"):
                 links.append(href)
         except:
+            # Ignora spans que não estão dentro de um link
             pass
 
-    return list(set(links))
+    return list(set(links)) # Retorna apenas links únicos
 
 # =========================
 # CLICA PLAY (SE EXISTIR)
 # =========================
 def clicar_play(driver):
+    # Seletores CSS para diferentes botões de play
     seletores = [
         "button.poster__play-wrapper",
         ".play-button",
         "[aria-label='Play']",
-        ".video-player__play-button"
+        ".video-player__play-button",
+        ".vjs-big-play-button" # Seletor comum em players de vídeo
     ]
 
-    for s in seletores:
+    for seletor in seletores:
         try:
-            btn = driver.find_element(By.CSS_SELECTOR, s)
-            if btn.is_displayed():
-                btn.click()
-                return True
+            # Espera até 10 segundos para o botão ser clicável
+            wait = WebDriverWait(driver, 10)
+            btn = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, seletor)))
+            
+            # Usa JavaScript para clicar, é mais robusto
+            driver.execute_script("arguments[0].click();", btn)
+            print("   ✓ Botão de play clicado.")
+            return True
         except:
+            # Continua para o próximo seletor se este falhar
             pass
-
+    
+    print("   - Nenhum botão de play encontrado ou clicável.")
     return False
 
 # =========================
 # CAPTURA M3U8 + THUMBNAIL
 # =========================
-def capturar_streams(driver, tempo=40):
+def capturar_streams(driver, tempo_max_espera=30):
     m3u8_url = None
     thumbnail_url = None
     inicio = time.time()
 
-    while time.time() - inicio < tempo:
-        try:
-            logs = driver.get_log("performance")
-        except:
-            logs = []
-
-        for entry in logs:
-            try:
-                msg = json.loads(entry["message"])["message"]
-                if msg.get("method") != "Network.responseReceived":
-                    continue
-
-                url = msg["params"]["response"]["url"].lower()
+    print("   ... Aguardando captura do stream .m3u8")
+    while time.time() - inicio < tempo_max_espera:
+        # Itera sobre as requisições capturadas pelo Selenium-Wire
+        for request in driver.requests:
+            if request.response:
+                url = request.url.lower()
 
                 # ===== M3U8 =====
                 if ".m3u8" in url and not m3u8_url:
-                    m3u8_url = msg["params"]["response"]["url"]
+                    m3u8_url = request.url # Salva a URL original com case correto
+                    print(f"   ✓ Stream M3U8 encontrado: {m3u8_url}")
 
                 # ===== THUMBNAIL (SOMENTE GLOBO) =====
                 if (
                     not thumbnail_url
+                    and ("video.glbimg.com" in url)
                     and (url.endswith(".jpg") or url.endswith(".jpeg"))
-                    and "video.glbimg.com" in url
                 ):
-                    thumbnail_url = msg["params"]["response"]["url"]
+                    thumbnail_url = request.url
+                    print(f"   ✓ Thumbnail encontrado: {thumbnail_url}")
 
-            except:
-                pass
-
+        # Se já encontrou o m3u8, pode sair do loop
         if m3u8_url:
             break
 
@@ -140,65 +155,82 @@ def capturar_streams(driver, tempo=40):
 def main():
     driver = criar_driver()
     links_ao_vivo = []
+    resultados = []
 
     try:
-        print("\n🔎 COLETANDO LINKS AO VIVO\n")
+        print("\n🔎 COLETANDO LINKS AO VIVO DOS PORTAIS G1\n")
 
         for estado in ESTADOS_BRASIL:
             url = f"https://g1.globo.com/{estado}"
-            links = buscar_links_ao_vivo(driver, url)
+            links = buscar_links_ao_vivo(driver, url )
 
             if links:
-                print(f"{estado.upper()}:")
-                for l in links:
-                    print(f"  ✓ {l}")
+                print(f"  {estado.upper()}: {len(links)} link(s) encontrado(s).")
                 links_ao_vivo.extend(links)
             else:
-                print(f"{estado.upper()}: Nenhum link encontrado ou página lenta.")
+                print(f"  {estado.upper()}: Nenhum link 'AO VIVO' encontrado.")
+        
+        # Remove duplicados de toda a lista
+        links_ao_vivo = sorted(list(set(links_ao_vivo)))
 
         if not links_ao_vivo:
-            print("\n⚠ Nenhum link AO VIVO encontrado.")
+            print("\n⚠ Nenhum link 'AO VIVO' encontrado em nenhum estado.")
             return
 
-        print("\n🎥 EXTRAINDO STREAMS (.m3u8)\n")
+        print(f"\n🎥 EXTRAINDO STREAMS (.m3u8) DE {len(links_ao_vivo)} LINKS\n")
 
-        with open("lista2.m3u", "w", encoding="utf-8") as f:
-            f.write("#EXTM3U\n")
+        for link in links_ao_vivo:
+            print(f"➡ Abrindo: {link}")
+            
+            # Limpa as requisições anteriores antes de carregar uma nova página
+            del driver.requests
 
-            for link in links_ao_vivo:
-                print(f"\n➡ Abrindo: {link}")
-                try:
-                    driver.get(link)
-                    time.sleep(6)
-                except Exception as e:
-                    print(f"⚠ Não foi possível abrir {link}: {e}")
-                    continue
+            try:
+                driver.get(link)
+                # Espera o player de vídeo carregar
+                WebDriverWait(driver, 15).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "div[id*='video'], div[class*='video']"))
+                )
+            except Exception as e:
+                print(f"  ⚠ Não foi possível abrir ou encontrar player em {link}: {e}")
+                continue
 
-                clicar_play(driver)
-                time.sleep(6)
+            clicar_play(driver)
+            
+            m3u8, thumbnail = capturar_streams(driver)
 
-                m3u8, thumbnail_url = capturar_streams(driver)
-
-                if m3u8:
-                    titulo = driver.title.strip()
-                    extinf = '#EXTINF:-1 group-title="GLOBO AO VIVO"'
-
-                    if thumbnail_url:
-                        extinf += f' tvg-logo="{thumbnail_url}"'
-
-                    extinf += f',{titulo}\n'
-
-                    f.write(extinf)
-                    f.write(f"{m3u8}\n")
-
-                    print("   ✅ M3U8 encontrado")
-                else:
-                    print("   ❌ Nenhum M3U8 capturado")
+            if m3u8:
+                titulo = driver.title.split(" | ")[0].strip() # Limpa o título
+                print(f"   ✅ SUCESSO! Título: {titulo}")
+                resultados.append({
+                    "titulo": titulo,
+                    "m3u8": m3u8,
+                    "thumbnail": thumbnail,
+                    "grupo": "GLOBO AO VIVO"
+                })
+            else:
+                print("   ❌ Falha ao capturar o stream M3U8.")
 
     finally:
         driver.quit()
 
-    print("\n✅ Arquivo gerado: lista2.m3u")
+    if not resultados:
+        print("\nNenhum stream foi extraído com sucesso.")
+        return
+
+    # Gera o arquivo .m3u no final
+    with open("lista_canais.m3u", "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for item in resultados:
+            extinf = f'#EXTINF:-1 group-title="{item["grupo"]}"'
+            if item["thumbnail"]:
+                extinf += f' tvg-logo="{item["thumbnail"]}"'
+            
+            extinf += f',{item["titulo"]}\n'
+            f.write(extinf)
+            f.write(f'{item["m3u8"]}\n')
+
+    print(f"\n✅ Arquivo gerado com sucesso: lista_canais.m3u ({len(resultados)} canais)")
 
 
 # =========================
