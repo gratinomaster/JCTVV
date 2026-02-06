@@ -2,7 +2,7 @@ name: Baixando GLOBO
 
 on:
   schedule:
-    - cron: '*/45 * * * *'  # Schedule to run every 30 minutes
+    - cron: '0 */6 * * *'  # Executa a cada 6 horas
   pull_request:
     branches:
       - main
@@ -27,9 +27,8 @@ jobs:
 
     - name: Instalando dependências
       run: |
-        # Install required Python dependencies
         python3 -m pip install --upgrade pip
-        python3 -m pip install selenium-wire streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown requests streamlink beautifulsoup4 selenium yt_dlp playwright
+        python3 -m pip install selenium-wire streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown playwright
 
     - name: Verificar versão do Python
       run: |
@@ -37,7 +36,7 @@ jobs:
 
     - name: Rodar script GLOBO.py
       run: |
-        python3 GLOBO2.py
+        python3 GLOBO3.py
 
     - name: Adicionar Mudanças ao Controle de Versão
       run: |
