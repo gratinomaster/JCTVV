@@ -16,6 +16,15 @@ import json
 import time
 from datetime import datetime
 
+import time
+import json
+from seleniumwire import webdriver  # Importa do selenium-wire
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
     """
     Extrai todos os links de canais ao vivo do Globoplay usando Selenium
