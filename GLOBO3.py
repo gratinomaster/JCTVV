@@ -40,11 +40,13 @@ def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Acessando: {url}")
     
     # Configurar opções do Chrome
-    chrome_options = Options()
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920,1080")
+# Configurações do Chrome
+    options = Options()
+    options.add_argument("--headless")  # Executa sem interface gráfica
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--window-size=1280,720")
+    options.add_argument("--disable-infobars")
     # chrome_options.add_argument("--headless")  # Descomente para modo headless
     
     # Inicializar o driver
