@@ -3,19 +3,22 @@
 """
 Script para extrair links de canais ao vivo do Globoplay
 Acessa https://globoplay.globo.com/agora-na-tv/ e extrai todos os links dos canais
-Versão 2: Usando requests com JavaScript rendering
 """
 
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import json
 import time
 from datetime import datetime
-import re
 
-def extrair_links_globoplay_requests(url="https://globoplay.globo.com/agora-na-tv/"):
+def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
     """
-    Extrai todos os links de canais ao vivo do Globoplay usando requests
+    Extrai todos os links de canais ao vivo do Globoplay usando Selenium
     
     Args:
         url (str): URL da página do Globoplay
@@ -27,53 +30,68 @@ def extrair_links_globoplay_requests(url="https://globoplay.globo.com/agora-na-t
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Iniciando extração de links do Globoplay...")
     print(f"[{datetime.now().strftime('%H:%M:%S')}] Acessando: {url}")
     
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-    }
+    # Configurar opções do Chrome
+    chrome_options = Options()
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
+    chrome_options.add_argument("--window-size=1920,1080")
+    # chrome_options.add_argument("--headless")  # Descomente para modo headless
+    
+    # Inicializar o driver
+    driver = webdriver.Chrome(options=chrome_options)
     
     try:
-        # Fazer requisição
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Fazendo requisição HTTP...")
-        response = requests.get(url, headers=headers, timeout=10)
-        response.raise_for_status()
+        # Acessar a página
+        driver.get(url)
         
-        # Parse HTML
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Analisando HTML...")
-        soup = BeautifulSoup(response.content, 'html.parser')
+        # Aguardar o carregamento da página
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Aguardando carregamento da página...")
+        time.sleep(3)
         
-        # Encontrar todos os links que contêm "/ao-vivo/"
-        links = []
+        # Executar JavaScript para extrair os links
+        script = """
+        const links = [];
+        const elements = document.querySelectorAll('a[href*="/ao-vivo/"]');
         
-        # Procurar por links em tags <a>
-        for a_tag in soup.find_all('a', href=True):
-            href = a_tag.get('href', '')
-            text = a_tag.get_text(strip=True)
-            
-            # Verificar se é um link de canal ao vivo
-            if '/ao-vivo/' in href and text and 'associacao' not in href:
-                links.append({
-                    'titulo': text,
-                    'url': href
-                })
+        elements.forEach(el => {
+          const href = el.getAttribute('href');
+          const text = el.textContent.trim();
+          if (href && text && href.includes('/ao-vivo/')) {
+            links.push({
+              titulo: text,
+              url: href
+            });
+          }
+        });
         
-        # Remover duplicatas mantendo ordem
-        seen = set()
-        unique_links = []
-        for link in links:
-            if link['url'] not in seen:
-                seen.add(link['url'])
-                unique_links.append(link)
+        // Remover duplicatas
+        const uniqueLinks = [];
+        const seen = new Set();
+        links.forEach(link => {
+          if (!seen.has(link.url)) {
+            seen.add(link.url);
+            uniqueLinks.push(link);
+          }
+        });
         
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Total de links encontrados: {len(unique_links)}")
+        return uniqueLinks;
+        """
         
-        return unique_links
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Executando extração de links via JavaScript...")
+        links = driver.execute_script(script)
         
-    except requests.exceptions.RequestException as e:
-        print(f"[{datetime.now().strftime('%H:%M:%S')}] Erro na requisição: {str(e)}")
-        return []
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Total de links encontrados: {len(links)}")
+        
+        return links
+        
     except Exception as e:
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Erro ao extrair links: {str(e)}")
         return []
+        
+    finally:
+        driver.quit()
+        print(f"[{datetime.now().strftime('%H:%M:%S')}] Driver fechado")
 
 
 def processar_links(links):
@@ -103,9 +121,6 @@ def processar_links(links):
         
         # Remover espaços múltiplos
         titulo = ' '.join(titulo.split())
-        
-        # Remover caracteres especiais desnecessários
-        titulo = re.sub(r'\s+', ' ', titulo)
         
         links_processados.append({
             'titulo': titulo,
@@ -172,11 +187,11 @@ def main():
     """Função principal"""
     
     print("\n" + "=" * 80)
-    print("EXTRATOR DE CANAIS AO VIVO - GLOBOPLAY (v2)")
+    print("EXTRATOR DE CANAIS AO VIVO - GLOBOPLAY")
     print("=" * 80 + "\n")
     
     # Extrair links
-    links_brutos = extrair_links_globoplay_requests()
+    links_brutos = extrair_links_globoplay()
     
     if not links_brutos:
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Nenhum link foi encontrado!")
