@@ -75,6 +75,18 @@ def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Driver fechado")
 
 
+def capitalizar_nome(nome):
+    """
+    Capitaliza apenas a primeira letra de cada frase, mantendo preposições minúsculas.
+    """
+    palavras = nome.split(' ')
+    minusculas = {"a", "e", "de", "do", "da", "em", "no", "na"}
+    resultado = [p.capitalize() if p not in minusculas else p for p in palavras]
+    if resultado:
+        resultado[0] = resultado[0].capitalize()
+    return ' '.join(resultado)
+
+
 def normalizar_nome_canal(canal):
     """
     Ajusta nomes para apresentação
@@ -92,8 +104,8 @@ def normalizar_nome_canal(canal):
         "cbn-sp": "CBN SP",
         "cbn-rj": "CBN RJ",
     }
-
-    return mapa.get(canal, canal.replace('-', ' ').title())
+    nome = mapa.get(canal, canal.replace('-', ' '))
+    return capitalizar_nome(nome)
 
 
 def processar_links(links):
