@@ -15,6 +15,7 @@ options.add_argument("--disable-infobars")
 
 # URLs dos vídeos Globoplay e G1 ao vivo
 globoplay_urls = [
+    "https://globoplay.globo.com/v/4613774/",
     "https://globoplay.globo.com/ao-vivo/7689934/",
     "https://globoplay.globo.com/ao-vivo/7690141/",
     "https://globoplay.globo.com/ao-vivo/7813173/",
