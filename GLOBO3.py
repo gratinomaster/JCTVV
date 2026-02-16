@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Script para extrair links de canais ao vivo do Globoplay
-(extraindo o nome do canal pela URL, sem poluição de texto)
+(extraindo o nome do canal pela URL ou pelo texto visível, preservando acentos)
 """
 
 from selenium import webdriver
@@ -38,6 +38,7 @@ def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
 
         elements.forEach(el => {
             const href = el.getAttribute('href');
+            const texto = el.innerText.trim();  // texto visível do link
             if (!href) return;
 
             const partes = href.split('/').filter(Boolean);
@@ -45,7 +46,8 @@ def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
 
             results.push({
                 canal: canal,
-                url: href
+                url: href,
+                titulo: texto || null
             });
         });
 
@@ -75,21 +77,9 @@ def extrair_links_globoplay(url="https://globoplay.globo.com/agora-na-tv/"):
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Driver fechado")
 
 
-def capitalizar_nome(nome):
-    """
-    Capitaliza apenas a primeira letra de cada frase, mantendo preposições minúsculas.
-    """
-    palavras = nome.split(' ')
-    minusculas = {"a", "e", "de", "do", "da", "em", "no", "na"}
-    resultado = [p.capitalize() if p not in minusculas else p for p in palavras]
-    if resultado:
-        resultado[0] = resultado[0].capitalize()
-    return ' '.join(resultado)
-
-
 def normalizar_nome_canal(canal):
     """
-    Ajusta nomes para apresentação
+    Ajusta nomes para apresentação de canais especiais
     """
     mapa = {
         "sportv": "SporTV",
@@ -104,8 +94,7 @@ def normalizar_nome_canal(canal):
         "cbn-sp": "CBN SP",
         "cbn-rj": "CBN RJ",
     }
-    nome = mapa.get(canal, canal.replace('-', ' '))
-    return capitalizar_nome(nome)
+    return mapa.get(canal, canal.replace('-', ' ').title())
 
 
 def processar_links(links):
@@ -119,7 +108,11 @@ def processar_links(links):
         if url.startswith('/'):
             url = 'https://globoplay.globo.com' + url
 
-        titulo = normalizar_nome_canal(link['canal'])
+        # Usa o texto visível do site se existir; senão, normaliza pelo slug
+        if link.get('titulo'):
+            titulo = link['titulo']
+        else:
+            titulo = normalizar_nome_canal(link['canal'])
 
         processados.append({
             'titulo': titulo,
