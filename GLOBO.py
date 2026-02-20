@@ -19,7 +19,6 @@ globoplay_urls = [
     "https://globoplay.globo.com/ao-vivo/7689934/",
     "https://globoplay.globo.com/ao-vivo/7690141/",
     "https://globoplay.globo.com/ao-vivo/7813173/",
-    "https://g1.globo.com/go/goias/ao-vivo/policia-civil-realiza-coletiva-de-imprensa-sobre-o-caso-da-corretora-de-imoveis-encontrada-morta.ghtml",
     "https://g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas-ao-vivo.ghtml",
     "https://globoplay.globo.com/ao-vivo/14164032",
     "https://globoplay.globo.com/ao-vivo/2134039/",
