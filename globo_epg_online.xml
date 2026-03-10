@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<tv generator-info-name="Globo EPG - Merged">
+<?xml version="1.0" encoding="utf-8"?>
+<tv generator-info-name="@limaalef - Criado em 2026-03-09 23:30:08" generator-info-url="http://limaalef.com">
   <channel id="bis">
     <display-name lang="pt">bis</display-name>
   </channel>
@@ -132,7 +132,7 @@
   </programme>
   <programme start="20260309023714 -0300" stop="20260309030459 -0300" channel="bis">
     <title lang="pt">Música Sertaneja Do Brasil</title>
-    <desc lang="pt">Em formato intimista, novos artistas do sertanejo cantam clássicos com músicos consagrados do gênero. Nesse episódio, Renato Teixeira faz uma participação especial e canta "Amora".</desc>
+    <desc lang="pt">Em formato intimista, novos artistas do sertanejo cantam clássicos com músicos consagrados do gênero. Nesse episódio, Renato Teixeira faz uma participação especial e canta &quot;Amora&quot;.</desc>
     <length units="minutes">27</length>
     <episode-num system="xmltv_ns">.11.</episode-num>
     <rating system="Brazil">
@@ -179,7 +179,7 @@
   <programme start="20260309070100 -0300" stop="20260309075636 -0300" channel="bis">
     <title lang="pt">Palco Eletrônico</title>
     <sub-title lang="pt">Any Mello</sub-title>
-    <desc lang="pt">Confira a transmissão ao vivo do festival "Lollapalooza 2025" nos dias 28, 29 e 30 de março, diretamente do Autódromo de Interlagos/SP, no Multishow.</desc>
+    <desc lang="pt">Confira a transmissão ao vivo do festival &quot;Lollapalooza 2025&quot; nos dias 28, 29 e 30 de março, diretamente do Autódromo de Interlagos/SP, no Multishow.</desc>
     <length units="minutes">55</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -197,7 +197,7 @@
   <programme start="20260309085820 -0300" stop="20260309092353 -0300" channel="bis">
     <title lang="pt">Replay: Da Lama Ao Caos</title>
     <sub-title lang="pt">Mago de Tarso + Luana Flores e Percutindo</sub-title>
-    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Mago de Tarso, Luana Flores e Percutindo apresentam as suas versões de “Antene-se” e "Lixo do Mangue".</desc>
+    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Mago de Tarso, Luana Flores e Percutindo apresentam as suas versões de “Antene-se” e &quot;Lixo do Mangue&quot;.</desc>
     <length units="minutes">25</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -418,7 +418,7 @@ VR 90’
   <programme start="20260309160756 -0300" stop="20260309164552 -0300" channel="bis">
     <title lang="pt">Palco Principal</title>
     <sub-title lang="pt">Dead Fish - 20 Anos De Zero E Um</sub-title>
-    <desc lang="pt">Confira a exibição do conteúdo "Dead Fish - 20 Anos de Zero e Um", no canal Bis.</desc>
+    <desc lang="pt">Confira a exibição do conteúdo &quot;Dead Fish - 20 Anos de Zero e Um&quot;, no canal Bis.</desc>
     <length units="minutes">37</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -445,7 +445,7 @@ VR 90’
   <programme start="20260309180922 -0300" stop="20260309183415 -0300" channel="bis">
     <title lang="pt">Replay: Da Lama Ao Caos</title>
     <sub-title lang="pt">Mago de Tarso + Luana Flores e Percutindo</sub-title>
-    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Mago de Tarso, Luana Flores e Percutindo apresentam as suas versões de “Antene-se” e "Lixo do Mangue".</desc>
+    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Mago de Tarso, Luana Flores e Percutindo apresentam as suas versões de “Antene-se” e &quot;Lixo do Mangue&quot;.</desc>
     <length units="minutes">24</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -689,7 +689,7 @@ VR 90’
   <programme start="20260310040456 -0300" stop="20260310043232 -0300" channel="bis">
     <title lang="pt">Aquecimento Lollapalooza.</title>
     <sub-title lang="pt">Muse: Drones World Tour</sub-title>
-    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum "Drones", de 2015. O setlist inclui músicas do disco e hits como "Uprising" e "Starlight".</desc>
+    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum &quot;Drones&quot;, de 2015. O setlist inclui músicas do disco e hits como &quot;Uprising&quot; e &quot;Starlight&quot;.</desc>
     <length units="minutes">27</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -915,7 +915,7 @@ VR 90’
   <programme start="20260310095200 -0300" stop="20260310102859 -0300" channel="bis">
     <title lang="pt">Palco Principal</title>
     <sub-title lang="pt">Dead Fish - 20 Anos De Zero E Um</sub-title>
-    <desc lang="pt">Confira a exibição do conteúdo "Dead Fish - 20 Anos de Zero e Um", no canal Bis.</desc>
+    <desc lang="pt">Confira a exibição do conteúdo &quot;Dead Fish - 20 Anos de Zero e Um&quot;, no canal Bis.</desc>
     <length units="minutes">36</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -1204,7 +1204,7 @@ VR 90’
   <programme start="20260310193100 -0300" stop="20260310195959 -0300" channel="bis">
     <title lang="pt">Depois Daquele Álbum</title>
     <sub-title lang="pt">Mariana Aydar</sub-title>
-    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca "Olho de peixe", de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
+    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca &quot;Olho de peixe&quot;, de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
     <length units="minutes">28</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -1375,7 +1375,7 @@ VR 90’
   <programme start="20260311013100 -0300" stop="20260311015759 -0300" channel="bis">
     <title lang="pt">Depois Daquele Álbum</title>
     <sub-title lang="pt">Mariana Aydar</sub-title>
-    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca "Olho de peixe", de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
+    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca &quot;Olho de peixe&quot;, de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -1501,7 +1501,7 @@ VR 90’
   <programme start="20260311072700 -0300" stop="20260311075359 -0300" channel="bis">
     <title lang="pt">Depois Daquele Álbum</title>
     <sub-title lang="pt">Mariana Aydar</sub-title>
-    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca "Olho de peixe", de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
+    <desc lang="pt">A cada episódio um artista convidado toca seu álbum preferido de algum outro músico. Nesse episódio, Mariana Aydar toca &quot;Olho de peixe&quot;, de Lenine e Suzano. Ela comenta as músicas e contam o quanto o álbum a influenciou.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -1726,7 +1726,7 @@ VR 90’
   <programme start="20260311173200 -0300" stop="20260311175859 -0300" channel="bis">
     <title lang="pt">Aquecimento Lollapalooza.</title>
     <sub-title lang="pt">Muse: Drones World Tour</sub-title>
-    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum "Drones", de 2015. O setlist inclui músicas do disco e hits como "Uprising" e "Starlight".</desc>
+    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum &quot;Drones&quot;, de 2015. O setlist inclui músicas do disco e hits como &quot;Uprising&quot; e &quot;Starlight&quot;.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -1806,7 +1806,7 @@ VR 90’
   </programme>
   <programme start="20260311190200 -0300" stop="20260311193059 -0300" channel="bis">
     <title lang="pt">Na Voz Delas</title>
-    <desc lang="pt">Jovens cantoras interpretam músicas nacionais e internacionais de artistas que marcaram estilos musicais de determinadas épocas. No programa de hoje sucessos como "Material Girl", "Lamento Sertanejo" e "Louie Louie".</desc>
+    <desc lang="pt">Jovens cantoras interpretam músicas nacionais e internacionais de artistas que marcaram estilos musicais de determinadas épocas. No programa de hoje sucessos como &quot;Material Girl&quot;, &quot;Lamento Sertanejo&quot; e &quot;Louie Louie&quot;.</desc>
     <length units="minutes">28</length>
     <episode-num system="xmltv_ns">.10.</episode-num>
     <rating system="Brazil">
@@ -2067,7 +2067,7 @@ VR 90’
   </programme>
   <programme start="20260312070000 -0300" stop="20260312072659 -0300" channel="bis">
     <title lang="pt">Na Voz Delas</title>
-    <desc lang="pt">Jovens cantoras interpretam músicas nacionais e internacionais de artistas que marcaram estilos musicais de determinadas épocas. No programa de hoje sucessos como "Material Girl", "Lamento Sertanejo" e "Louie Louie".</desc>
+    <desc lang="pt">Jovens cantoras interpretam músicas nacionais e internacionais de artistas que marcaram estilos musicais de determinadas épocas. No programa de hoje sucessos como &quot;Material Girl&quot;, &quot;Lamento Sertanejo&quot; e &quot;Louie Louie&quot;.</desc>
     <length units="minutes">26</length>
     <episode-num system="xmltv_ns">.10.</episode-num>
     <rating system="Brazil">
@@ -2126,7 +2126,7 @@ superação, determinação e talento.</desc>
   <programme start="20260312113500 -0300" stop="20260312120059 -0300" channel="bis">
     <title lang="pt">Aquecimento Lollapalooza.</title>
     <sub-title lang="pt">Muse: Drones World Tour</sub-title>
-    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum "Drones", de 2015. O setlist inclui músicas do disco e hits como "Uprising" e "Starlight".</desc>
+    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum &quot;Drones&quot;, de 2015. O setlist inclui músicas do disco e hits como &quot;Uprising&quot; e &quot;Starlight&quot;.</desc>
     <length units="minutes">25</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -2247,7 +2247,7 @@ sobre sua jornada da Paraíba até os palcos de São Paulo num único plano sequ
   <programme start="20260312205800 -0300" stop="20260312212959 -0300" channel="bis">
     <title lang="pt">Afrofluxo: O Som Da Música Pre</title>
     <sub-title lang="pt">Pop Negro do Novo Milênio</sub-title>
-    <desc lang="pt">Neste episódio, o álbum "Afropop Brasileiro" de Margareth Menezes é ponto de partida para
+    <desc lang="pt">Neste episódio, o álbum &quot;Afropop Brasileiro&quot; de Margareth Menezes é ponto de partida para
 pensar a formação de uma estética Pop negra, a partir do protagonismo feminino.</desc>
     <length units="minutes">31</length>
     <rating system="Brazil">
@@ -2280,7 +2280,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260312233300 -0300" stop="20260312235959 -0300" channel="bis">
     <title lang="pt">Aquecimento Lollapalooza.</title>
     <sub-title lang="pt">Muse: Drones World Tour</sub-title>
-    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum "Drones", de 2015. O setlist inclui músicas do disco e hits como "Uprising" e "Starlight".</desc>
+    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum &quot;Drones&quot;, de 2015. O setlist inclui músicas do disco e hits como &quot;Uprising&quot; e &quot;Starlight&quot;.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -2289,7 +2289,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260313000000 -0300" stop="20260313005359 -0300" channel="bis">
     <title lang="pt">Arquivo Musical</title>
     <sub-title lang="pt">Ele Era Assim: Ary Barroso</sub-title>
-    <desc lang="pt">Ary Barroso foi um dos maiores compositores da música brasileira com seus sucessos reconhecidos por todo o planeta. Sua história é construída por meio de arquivos de áudio do próprio Ary, entremeando relatos de seu neto, releitura de suas composições por jovens talentos da MPB e a participação especial de Ney Matogrosso interpretando Camisa Amarela". Outras pérolas são os depoimentos intimistas de Tom Jobim e Elizeth Cardozo e curiosidades do Ary narrador esportivo e cronista da cidade.</desc>
+    <desc lang="pt">Ary Barroso foi um dos maiores compositores da música brasileira com seus sucessos reconhecidos por todo o planeta. Sua história é construída por meio de arquivos de áudio do próprio Ary, entremeando relatos de seu neto, releitura de suas composições por jovens talentos da MPB e a participação especial de Ney Matogrosso interpretando Camisa Amarela&quot;. Outras pérolas são os depoimentos intimistas de Tom Jobim e Elizeth Cardozo e curiosidades do Ary narrador esportivo e cronista da cidade.</desc>
     <length units="minutes">53</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -2337,7 +2337,7 @@ sobre sua jornada da Paraíba até os palcos de São Paulo num único plano sequ
   <programme start="20260313024100 -0300" stop="20260313031059 -0300" channel="bis">
     <title lang="pt">Afrofluxo: O Som Da Música Pre</title>
     <sub-title lang="pt">Pop Negro do Novo Milênio</sub-title>
-    <desc lang="pt">Neste episódio, o álbum "Afropop Brasileiro" de Margareth Menezes é ponto de partida para
+    <desc lang="pt">Neste episódio, o álbum &quot;Afropop Brasileiro&quot; de Margareth Menezes é ponto de partida para
 pensar a formação de uma estética Pop negra, a partir do protagonismo feminino.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
@@ -2436,7 +2436,7 @@ sobre sua jornada da Paraíba até os palcos de São Paulo num único plano sequ
   <programme start="20260313084600 -0300" stop="20260313091559 -0300" channel="bis">
     <title lang="pt">Afrofluxo: O Som Da Música Pre</title>
     <sub-title lang="pt">Pop Negro do Novo Milênio</sub-title>
-    <desc lang="pt">Neste episódio, o álbum "Afropop Brasileiro" de Margareth Menezes é ponto de partida para
+    <desc lang="pt">Neste episódio, o álbum &quot;Afropop Brasileiro&quot; de Margareth Menezes é ponto de partida para
 pensar a formação de uma estética Pop negra, a partir do protagonismo feminino.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
@@ -2540,7 +2540,7 @@ sobre sua jornada da Paraíba até os palcos de São Paulo num único plano sequ
   <programme start="20260313180200 -0300" stop="20260313183159 -0300" channel="bis">
     <title lang="pt">Afrofluxo: O Som Da Música Pre</title>
     <sub-title lang="pt">Pop Negro do Novo Milênio</sub-title>
-    <desc lang="pt">Neste episódio, o álbum "Afropop Brasileiro" de Margareth Menezes é ponto de partida para
+    <desc lang="pt">Neste episódio, o álbum &quot;Afropop Brasileiro&quot; de Margareth Menezes é ponto de partida para
 pensar a formação de uma estética Pop negra, a partir do protagonismo feminino.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
@@ -2592,7 +2592,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260313210000 -0300" stop="20260313212759 -0300" channel="bis">
     <title lang="pt">Replay: Da Lama Ao Caos</title>
     <sub-title lang="pt">Louise França</sub-title>
-    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Louise França, filha de Chico, apresenta a sua versão de "Risoflora".</desc>
+    <desc lang="pt">Nesse episódio de Replay – Da Lama Ao Caos, Louise França, filha de Chico, apresenta a sua versão de &quot;Risoflora&quot;.</desc>
     <length units="minutes">27</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -2696,7 +2696,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260309054423 -0300" stop="20260309060012 -0300" channel="canal-brasil">
     <title lang="pt">Curta Na Tela</title>
     <sub-title lang="pt">Brasil</sub-title>
-    <desc lang="pt">Gravado em comemoração aos 50 anos de João Gilberto, o disco "Brasil" dá origem ao curta-metragem homônimo. Caetano Veloso, Gilberto Gil e Maria Bethânia se juntam ao grande nome da Bossa Nova nas gravações.</desc>
+    <desc lang="pt">Gravado em comemoração aos 50 anos de João Gilberto, o disco &quot;Brasil&quot; dá origem ao curta-metragem homônimo. Caetano Veloso, Gilberto Gil e Maria Bethânia se juntam ao grande nome da Bossa Nova nas gravações.</desc>
     <length units="minutes">15</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -2723,7 +2723,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260309084958 -0300" stop="20260309100526 -0300" channel="canal-brasil">
     <title lang="pt">Filme</title>
     <sub-title lang="pt">Onde A Terra Acaba</sub-title>
-    <desc lang="pt">O filme faz um retrato de Mário Peixoto, diretor de "Limite" (1931), uma das obras mais importantes do Cinema Brasileiro. O público confere trechos do inacabado "Onde a Terra Acaba", que seria o segundo longa do cineasta.</desc>
+    <desc lang="pt">O filme faz um retrato de Mário Peixoto, diretor de &quot;Limite&quot; (1931), uma das obras mais importantes do Cinema Brasileiro. O público confere trechos do inacabado &quot;Onde a Terra Acaba&quot;, que seria o segundo longa do cineasta.</desc>
     <length units="minutes">75</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -3042,7 +3042,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260310141500 -0300" stop="20260310142959 -0300" channel="canal-brasil">
     <title lang="pt">Esquinas – Revista Piauí</title>
     <sub-title lang="pt">O Campeão</sub-title>
-    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do "Novo Jornalismo".</desc>
+    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do &quot;Novo Jornalismo&quot;.</desc>
     <length units="minutes">14</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3227,8 +3227,8 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   </programme>
   <programme start="20260311071500 -0300" stop="20260311072959 -0300" channel="canal-brasil">
     <title lang="pt">Esquinas – Revista Piauí</title>
-    <sub-title lang="pt">"B" Identifica Número De "A"</sub-title>
-    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do "Novo Jornalismo".</desc>
+    <sub-title lang="pt">&quot;B&quot; Identifica Número De &quot;A&quot;</sub-title>
+    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do &quot;Novo Jornalismo&quot;.</desc>
     <length units="minutes">14</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3367,7 +3367,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260311194500 -0300" stop="20260311195959 -0300" channel="canal-brasil">
     <title lang="pt">Esquinas – Revista Piauí</title>
     <sub-title lang="pt">Ensaio Geral</sub-title>
-    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do "Novo Jornalismo".</desc>
+    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do &quot;Novo Jornalismo&quot;.</desc>
     <length units="minutes">14</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3543,7 +3543,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260312141500 -0300" stop="20260312142959 -0300" channel="canal-brasil">
     <title lang="pt">Esquinas – Revista Piauí</title>
     <sub-title lang="pt">Simioterapia</sub-title>
-    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do "Novo Jornalismo".</desc>
+    <desc lang="pt">Série de reportagens documentais inspiradas na seção homônima da Revista Piauí. Personagens e eventos peculiares são colhidos pelos quatro cantos do país, com uma abordagem inovadora que segue os padrões do &quot;Novo Jornalismo&quot;.</desc>
     <length units="minutes">14</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3651,7 +3651,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260313063000 -0300" stop="20260313064959 -0300" channel="canal-brasil">
     <title lang="pt">Curta Na Tela</title>
     <sub-title lang="pt">A Passagem Do Cometa</sub-title>
-    <desc lang="pt">É fevereiro de 1986, última vez em que o cometa Halley, que "visita” a Terra a cada 75 anos, pôde ser visto. Numa clínica clandestina de abortos, algumas mulheres estão reunidas.</desc>
+    <desc lang="pt">É fevereiro de 1986, última vez em que o cometa Halley, que &quot;visita” a Terra a cada 75 anos, pôde ser visto. Numa clínica clandestina de abortos, algumas mulheres estão reunidas.</desc>
     <length units="minutes">19</length>
     <rating system="Brazil">
       <value>[14]</value>
@@ -3711,7 +3711,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260313133000 -0300" stop="20260313135559 -0300" channel="canal-brasil">
     <title lang="pt">Curta Na Tela</title>
     <sub-title lang="pt">Macaléia</sub-title>
-    <desc lang="pt">Hélio Oiticica e Jards Macalé são dois artistas inventivos que conviveram no Rio de Janeiro nos anos 1970, quando Hélio criou a "Macaléia", obra penetrável em homenagem ao amigo.</desc>
+    <desc lang="pt">Hélio Oiticica e Jards Macalé são dois artistas inventivos que conviveram no Rio de Janeiro nos anos 1970, quando Hélio criou a &quot;Macaléia&quot;, obra penetrável em homenagem ao amigo.</desc>
     <length units="minutes">25</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3774,7 +3774,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260313203500 -0300" stop="20260313215959 -0300" channel="canal-brasil">
     <title lang="pt">Maratona Petra Costa - Olmo e a Gaivota</title>
     <sub-title lang="pt">Olmo E A Gaivota</sub-title>
-    <desc lang="pt">Olívia é uma atriz que está ensaiando a peça "A Gaivota", de Tchekov, quando descobre que está grávida. Enquanto a produção avança, o bebê dentro dela cresce e um acidente a afasta da montagem.</desc>
+    <desc lang="pt">Olívia é uma atriz que está ensaiando a peça &quot;A Gaivota&quot;, de Tchekov, quando descobre que está grávida. Enquanto a produção avança, o bebê dentro dela cresce e um acidente a afasta da montagem.</desc>
     <length units="minutes">84</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -3819,7 +3819,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260309003218 -0300" stop="20260309005823 -0300" channel="canal-off">
     <title lang="pt">Parque Do Italo</title>
     <sub-title lang="pt">The Déque</sub-title>
-    <desc lang="pt">Como se não bastasse o cabelo platinado, a gangue decide tatuar o rosto de Ítalo na nuca. Só que Jackson não sabe que elas são temporárias. A galera leva ele pra um estúdio de verdade pra ver até onde isso vai dar. Em seguida, partem para montar o "The Deck" no meio do mar. Guerra de cotonete, surfe e Formosa’s Next Top Model são parte da brincadeira. Pra quem é ligado no 220v, 1 dia de farra não é suficiente: Italo decide bater o recorde mundial de mais ondas surfadas em 1 hora.</desc>
+    <desc lang="pt">Como se não bastasse o cabelo platinado, a gangue decide tatuar o rosto de Ítalo na nuca. Só que Jackson não sabe que elas são temporárias. A galera leva ele pra um estúdio de verdade pra ver até onde isso vai dar. Em seguida, partem para montar o &quot;The Deck&quot; no meio do mar. Guerra de cotonete, surfe e Formosa’s Next Top Model são parte da brincadeira. Pra quem é ligado no 220v, 1 dia de farra não é suficiente: Italo decide bater o recorde mundial de mais ondas surfadas em 1 hora.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -4008,7 +4008,7 @@ pensar a formação de uma estética Pop negra, a partir do protagonismo feminin
   <programme start="20260309104527 -0300" stop="20260309111217 -0300" channel="canal-off">
     <title lang="pt">Parque Do Italo</title>
     <sub-title lang="pt">The Déque</sub-title>
-    <desc lang="pt">Como se não bastasse o cabelo platinado, a gangue decide tatuar o rosto de Ítalo na nuca. Só que Jackson não sabe que elas são temporárias. A galera leva ele pra um estúdio de verdade pra ver até onde isso vai dar. Em seguida, partem para montar o "The Deck" no meio do mar. Guerra de cotonete, surfe e Formosa’s Next Top Model são parte da brincadeira. Pra quem é ligado no 220v, 1 dia de farra não é suficiente: Italo decide bater o recorde mundial de mais ondas surfadas em 1 hora.</desc>
+    <desc lang="pt">Como se não bastasse o cabelo platinado, a gangue decide tatuar o rosto de Ítalo na nuca. Só que Jackson não sabe que elas são temporárias. A galera leva ele pra um estúdio de verdade pra ver até onde isso vai dar. Em seguida, partem para montar o &quot;The Deck&quot; no meio do mar. Guerra de cotonete, surfe e Formosa’s Next Top Model são parte da brincadeira. Pra quem é ligado no 220v, 1 dia de farra não é suficiente: Italo decide bater o recorde mundial de mais ondas surfadas em 1 hora.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -5578,7 +5578,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">143</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309072850 -0300" stop="20260309092938 -0300" channel="combate">
     <title lang="pt">VT - Grand Slam de Judô: Linz, Áustria</title>
@@ -5586,7 +5586,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">120</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309092940 -0300" stop="20260309101327 -0300" channel="combate">
     <title lang="pt">Sessão Combate: Acesso Total Judô - Ippon Tokio</title>
@@ -5644,7 +5644,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">139</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310022845 -0300" stop="20260310052752 -0300" channel="combate">
     <title lang="pt">MMA Reprise: Jungle Fight 144</title>
@@ -5658,7 +5658,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">FMS possui destaque no cenário mundial das lutas ao promover duelo de boxe entre influenciadores, com grandes shows de música no evento. Grandes nomes já passaram no evento como o influenciador digital Whindersson Nunes e o tetracampeão mundial de boxe Acelino “Popó” Freitas.</desc>
     <length units="minutes">71</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310080000 -0300" stop="20260310103959 -0300" channel="combate">
     <title lang="pt">Muay Thai Reprise: Attack Fight 35</title>
@@ -5687,7 +5687,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">149</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310152000 -0300" stop="20260310181959 -0300" channel="combate">
     <title lang="pt">UFC BJJ</title>
@@ -5736,7 +5736,7 @@ no Chile, e a outros lugares incríveis na Terra do Fogo, que marcaram sua vida 
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">149</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311034500 -0300" stop="20260311064459 -0300" channel="combate">
     <title lang="pt">UFC BJJ</title>
@@ -9461,7 +9461,7 @@ internacionais na preservação desses ecossistemas ameaçados.</desc>
   <programme start="20260309133203 -0300" stop="20260309134832 -0300" channel="futura">
     <title lang="pt">Territórios</title>
     <sub-title lang="pt">Simba</sub-title>
-    <desc lang="pt">"Eu me chamo Simba, sou artista plástico, carioca, de 21 anos e trago no meu trabalho a força de criar imagens, personagens e símbolos figurativos de sentimentos que viver nessa cidade me traz."</desc>
+    <desc lang="pt">&quot;Eu me chamo Simba, sou artista plástico, carioca, de 21 anos e trago no meu trabalho a força de criar imagens, personagens e símbolos figurativos de sentimentos que viver nessa cidade me traz.&quot;</desc>
     <length units="minutes">16</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -9732,7 +9732,7 @@ internacionais na preservação desses ecossistemas ameaçados.</desc>
   <programme start="20260310021451 -0300" stop="20260310024457 -0300" channel="futura">
     <title lang="pt">A(U)tores</title>
     <sub-title lang="pt">Mario de Andrade por Hugo Germano</sub-title>
-    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo "Macunaíma", agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
+    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo &quot;Macunaíma&quot;, agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -10160,7 +10160,7 @@ internacionais na preservação desses ecossistemas ameaçados.</desc>
   <programme start="20260310153000 -0300" stop="20260310155959 -0300" channel="futura">
     <title lang="pt">A(U)tores</title>
     <sub-title lang="pt">Mario de Andrade por Hugo Germano</sub-title>
-    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo "Macunaíma", agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
+    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo &quot;Macunaíma&quot;, agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -10563,7 +10563,7 @@ internacionais na preservação desses ecossistemas ameaçados.</desc>
   <programme start="20260311073000 -0300" stop="20260311073959 -0300" channel="futura">
     <title lang="pt">Contos Do Iéti</title>
     <sub-title lang="pt">Um rato chamado Julian</sub-title>
-    <desc lang="pt">Nina está jogando Damas e Leon está brincando de "Que horas são, Seu Lobo?". Seria mais divertido se todos lessem uma história juntos, não é?</desc>
+    <desc lang="pt">Nina está jogando Damas e Leon está brincando de &quot;Que horas são, Seu Lobo?&quot;. Seria mais divertido se todos lessem uma história juntos, não é?</desc>
     <length units="minutes">9</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -11037,7 +11037,7 @@ podem ser fundamentais para uma cidade mais sustentável.</desc>
   <programme start="20260312010000 -0300" stop="20260312012959 -0300" channel="futura">
     <title lang="pt">A(U)tores</title>
     <sub-title lang="pt">Mario de Andrade por Hugo Germano</sub-title>
-    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo "Macunaíma", agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
+    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo &quot;Macunaíma&quot;, agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -11207,7 +11207,7 @@ podem ser fundamentais para uma cidade mais sustentável.</desc>
   <programme start="20260312072500 -0300" stop="20260312072959 -0300" channel="futura">
     <title lang="pt">Contos Do Iéti</title>
     <sub-title lang="pt">Um rato chamado Julian</sub-title>
-    <desc lang="pt">Nina está jogando Damas e Leon está brincando de "Que horas são, Seu Lobo?". Seria mais divertido se todos lessem uma história juntos, não é?</desc>
+    <desc lang="pt">Nina está jogando Damas e Leon está brincando de &quot;Que horas são, Seu Lobo?&quot;. Seria mais divertido se todos lessem uma história juntos, não é?</desc>
     <length units="minutes">4</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -11359,7 +11359,7 @@ podem ser fundamentais para uma cidade mais sustentável.</desc>
   <programme start="20260312103000 -0300" stop="20260312105959 -0300" channel="futura">
     <title lang="pt">A(U)tores</title>
     <sub-title lang="pt">Mario de Andrade por Hugo Germano</sub-title>
-    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo "Macunaíma", agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
+    <desc lang="pt">O ator Hugo Germano se destacou pela crítica e público em sua atuação no espetáculo &quot;Macunaíma&quot;, agora fala sobre sua adaptação e a obra de Mário de Andrade.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -12288,7 +12288,7 @@ as comunidades locais, proporcionando uma forma sustentável de produção alime
 </desc>
     <length units="minutes">112</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309011114 -0300" stop="20260309031906 -0300" channel="ge-tv">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Maringá x Minas</title>
@@ -12296,7 +12296,7 @@ as comunidades locais, proporcionando uma forma sustentável de produção alime
 </desc>
     <length units="minutes">127</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309031909 -0300" stop="20260309035143 -0300" channel="ge-tv">
     <title lang="pt">Sem Bloqueio</title>
@@ -12320,7 +12320,7 @@ as comunidades locais, proporcionando uma forma sustentável de produção alime
 </desc>
     <length units="minutes">116</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309083812 -0300" stop="20260309103156 -0300" channel="ge-tv">
     <title lang="pt">VT - Copa do Brasil: Figueirense x Azuriz</title>
@@ -12328,7 +12328,7 @@ as comunidades locais, proporcionando uma forma sustentável de produção alime
 </desc>
     <length units="minutes">113</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309103158 -0300" stop="20260309122453 -0300" channel="ge-tv">
     <title lang="pt">Copa Libertadores De Futebol: Botafogo x Nacional Potosí (Bol)</title>
@@ -12342,7 +12342,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">186</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309153113 -0300" stop="20260309165953 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Brasileirão</title>
@@ -12373,7 +12373,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">A Copa Feminina de Vôlei está no ar, no sportv você assiste todos os detalhes desse jogão. Tá no vôlei, tá no sportv!</desc>
     <length units="minutes">118</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309214416 -0300" stop="20260309235208 -0300" channel="ge-tv">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Maringá x Minas</title>
@@ -12381,21 +12381,21 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">127</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309235210 -0300" stop="20260310060441 -0300" channel="ge-tv">
     <title lang="pt">VT - NFL: Los Angeles Rams x Seattle Seahwaks</title>
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">372</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309235210 -0300" stop="20260310060441 -0300" channel="ge-tv">
     <title lang="pt">VT - NFL: Los Angeles Rams x Seattle Seahwaks</title>
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">372</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310060446 -0300" stop="20260310065959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Estaduais 7</title>
@@ -12408,7 +12408,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">129</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310091000 -0300" stop="20260310094459 -0300" channel="ge-tv">
     <title lang="pt">Sem Bloqueio: :Seleção Bate Record De Vitórias, Mas Deixa Escapar O Título Da Vnl</title>
@@ -12436,7 +12436,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">A Copa Feminina de Vôlei está no ar, no sportv você assiste todos os detalhes desse jogão. Tá no vôlei, tá no sportv!</desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310122000 -0300" stop="20260310130459 -0300" channel="ge-tv">
     <title lang="pt">Sem Bloqueio: :Seleção Bate Record De Vitórias, Mas Deixa Escapar O Título Da Vnl</title>
@@ -12461,7 +12461,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">114</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310170000 -0300" stop="20260310175959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Brasileirão</title>
@@ -12482,7 +12482,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">119</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310213000 -0300" stop="20260310232959 -0300" channel="ge-tv">
     <title lang="pt">VT - Copa do Brasil: Desportiva Ferroviária x Sport</title>
@@ -12490,7 +12490,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">119</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310233000 -0300" stop="20260311012959 -0300" channel="ge-tv">
     <title lang="pt">Copa Libertadores De Futebol: Nacional Potosí(BOL) x Botafogo-RJ</title>
@@ -12512,7 +12512,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">109</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311032000 -0300" stop="20260311051959 -0300" channel="ge-tv">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Maringá x Minas</title>
@@ -12520,7 +12520,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311052000 -0300" stop="20260311065959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Estaduais 7</title>
@@ -12540,7 +12540,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">184</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311110500 -0300" stop="20260311121459 -0300" channel="ge-tv">
     <title lang="pt">VT - SLS - Mundial de Skate Street: Masculina</title>
@@ -12549,7 +12549,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">69</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311121500 -0300" stop="20260311132459 -0300" channel="ge-tv">
     <title lang="pt">VT - SLS - Mundial de Skate Street: Masculina</title>
@@ -12558,7 +12558,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">69</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311132500 -0300" stop="20260311143459 -0300" channel="ge-tv">
     <title lang="pt">VT - SLS - Mundial de Skate Street: Feminina</title>
@@ -12567,7 +12567,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">69</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311143500 -0300" stop="20260311163459 -0300" channel="ge-tv">
     <title lang="pt">Campeonato Estadual De Futebol: Cruzeiro x América-MG</title>
@@ -12624,7 +12624,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">179</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312050000 -0300" stop="20260312065959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Estaduais 7</title>
@@ -12651,7 +12651,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">119</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312115500 -0300" stop="20260312134959 -0300" channel="ge-tv">
     <title lang="pt">VT - Copa do Brasil: Fortaleza x Maguary</title>
@@ -12659,7 +12659,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">114</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312135000 -0300" stop="20260312141959 -0300" channel="ge-tv">
     <title lang="pt">Sem Bloqueio</title>
@@ -12697,7 +12697,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">A Copa Feminina de Vôlei está no ar, no sportv você assiste todos os detalhes desse jogão. Tá no vôlei, tá no sportv!</desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312173000 -0300" stop="20260312180959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Brasileirão Feminino</title>
@@ -12739,7 +12739,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">104</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312224000 -0300" stop="20260313002459 -0300" channel="ge-tv">
     <title lang="pt">VT - Superliga de Vôlei Masculino: Campinas x São José</title>
@@ -12747,7 +12747,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
 </desc>
     <length units="minutes">104</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313002500 -0300" stop="20260313015959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Estaduais 7</title>
@@ -12760,7 +12760,7 @@ Clubes da América do Sul entram em campo em busca da glória eterna. É a emoç
     <desc lang="pt">Prepare-se para a energia contagiante da NFL. Equipes duelam em jogadas rápidas e estratégicas, onde velocidade, força e precisão se encontram.</desc>
     <length units="minutes">179</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313050000 -0300" stop="20260313065959 -0300" channel="ge-tv">
     <title lang="pt">Giro da Rodada: Estaduais 7</title>
@@ -16600,7 +16600,7 @@ Brisa e Azanuki, incomodados com Zeca e Íris, planejam uma travessura. Leocádi
   <programme start="20260312062530 -0300" stop="20260312063659 -0300" channel="gloob">
     <title lang="pt">Alvinnn!!! E Os Esquilos</title>
     <sub-title lang="pt">Senhor Conserta-Tudo</sub-title>
-    <desc lang="pt">Simon fica cansado de todo mundo pedindo para ele consertar tudo e decide se fazer de burro até que alguém finalmente diga "obrigado". </desc>
+    <desc lang="pt">Simon fica cansado de todo mundo pedindo para ele consertar tudo e decide se fazer de burro até que alguém finalmente diga &quot;obrigado&quot;. </desc>
     <length units="minutes">11</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -16888,7 +16888,7 @@ Brisa e Azanuki, incomodados com Zeca e Íris, planejam uma travessura. Leocádi
   <programme start="20260312163230 -0300" stop="20260312164359 -0300" channel="gloob">
     <title lang="pt">Alvinnn!!! E Os Esquilos</title>
     <sub-title lang="pt">Senhor Conserta-Tudo</sub-title>
-    <desc lang="pt">Simon fica cansado de todo mundo pedindo para ele consertar tudo e decide se fazer de burro até que alguém finalmente diga "obrigado". </desc>
+    <desc lang="pt">Simon fica cansado de todo mundo pedindo para ele consertar tudo e decide se fazer de burro até que alguém finalmente diga &quot;obrigado&quot;. </desc>
     <length units="minutes">11</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -17141,7 +17141,7 @@ Brisa e Azanuki, incomodados com Zeca e Íris, planejam uma travessura. Leocádi
   <programme start="20260313022300 -0300" stop="20260313024529 -0300" channel="gloob">
     <title lang="pt">Miraculous – As Aventuras De L</title>
     <sub-title lang="pt">Ikari Iozen</sub-title>
-    <desc lang="pt">A mãe de Kyoko é akumatizada e se torna Ikari Iozen. Armada com seu bokken, ela quer punir Kyoko por desobedecê-la, e trancá-la para sempre na armadura gigante que forma seu corpo. Ladybug vai salvar sua "animiga"?</desc>
+    <desc lang="pt">A mãe de Kyoko é akumatizada e se torna Ikari Iozen. Armada com seu bokken, ela quer punir Kyoko por desobedecê-la, e trancá-la para sempre na armadura gigante que forma seu corpo. Ladybug vai salvar sua &quot;animiga&quot;?</desc>
     <length units="minutes">22</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -24784,7 +24784,7 @@ segredo: está fingindo ser cozinheiro profissional. Será que ele engana os jur
   <programme start="20260309043127 -0300" stop="20260309045853 -0300" channel="gnt">
     <title lang="pt">Morar</title>
     <sub-title lang="pt">Em Afuá</sub-title>
-    <desc lang="pt">Nesta semana, o Morar viaja até a cidade de Afuá na Ilha de Marajó, no norte do Brasil. Na "Veneza Marajoara" os moradores se deslocam apenas de barco e bicicletas, pois os carros são proibidos e grande parte da população mora em palafitas. Entre outras residências interessantes da cidade, o programa revela, na rua em frente à pista de pouso da cidade, uma casa se destaca pela altura: 9 metros que fazem da casa verde um mirante para a cidade. Nela vivem Rose e sua filha Clara, uma adolescente que ganhou um quarto especialmente para praticar ballet clássico.</desc>
+    <desc lang="pt">Nesta semana, o Morar viaja até a cidade de Afuá na Ilha de Marajó, no norte do Brasil. Na &quot;Veneza Marajoara&quot; os moradores se deslocam apenas de barco e bicicletas, pois os carros são proibidos e grande parte da população mora em palafitas. Entre outras residências interessantes da cidade, o programa revela, na rua em frente à pista de pouso da cidade, uma casa se destaca pela altura: 9 metros que fazem da casa verde um mirante para a cidade. Nela vivem Rose e sua filha Clara, uma adolescente que ganhou um quarto especialmente para praticar ballet clássico.</desc>
     <length units="minutes">27</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -24793,7 +24793,7 @@ segredo: está fingindo ser cozinheiro profissional. Será que ele engana os jur
   <programme start="20260309045857 -0300" stop="20260309052704 -0300" channel="gnt">
     <title lang="pt">Morar</title>
     <sub-title lang="pt">No Pantanal</sub-title>
-    <desc lang="pt">Nesta semana, o morar releva como é viver na região do Pantanal, que atravessa pelo menos dois estados brasileiros. o Morar visita a região do Pantanal sul mato-grossense e encontra moradores de fazendas, chácaras e casas nas cidades de Aquidauana e Miranda, também conhecidas como "portais do Pantanal".</desc>
+    <desc lang="pt">Nesta semana, o morar releva como é viver na região do Pantanal, que atravessa pelo menos dois estados brasileiros. o Morar visita a região do Pantanal sul mato-grossense e encontra moradores de fazendas, chácaras e casas nas cidades de Aquidauana e Miranda, também conhecidas como &quot;portais do Pantanal&quot;.</desc>
     <length units="minutes">28</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -25447,7 +25447,7 @@ segredo: está fingindo ser cozinheiro profissional. Será que ele engana os jur
   </programme>
   <programme start="20260311091100 -0300" stop="20260311100459 -0300" channel="gnt">
     <title lang="pt">Food Truck - A Batalha</title>
-    <sub-title lang="pt">"Pra Não Dizer Que Não Falei Das Flores"</sub-title>
+    <sub-title lang="pt">&quot;Pra Não Dizer Que Não Falei Das Flores&quot;</sub-title>
     <desc lang="pt">Nessa batalha em São Roque, Paulo e Fabiana vão aprender o valor da amizade. Afinal, diz o ditado, “amigos amigos, negócios à parte”, certo? Mais ou menos! Pois os amigos vão se enfrentar na capital da alcachofra, e mostrar a Marcio e Adolpho que flor nem sempre é “pavê”, mas pode ser “pacomê” também.
 </desc>
     <length units="minutes">53</length>
@@ -25674,7 +25674,7 @@ segredo: está fingindo ser cozinheiro profissional. Será que ele engana os jur
   </programme>
   <programme start="20260312052600 -0300" stop="20260312061859 -0300" channel="gnt">
     <title lang="pt">Food Truck - A Batalha</title>
-    <sub-title lang="pt">"Pra Não Dizer Que Não Falei Das Flores"</sub-title>
+    <sub-title lang="pt">&quot;Pra Não Dizer Que Não Falei Das Flores&quot;</sub-title>
     <desc lang="pt">Nessa batalha em São Roque, Paulo e Fabiana vão aprender o valor da amizade. Afinal, diz o ditado, “amigos amigos, negócios à parte”, certo? Mais ou menos! Pois os amigos vão se enfrentar na capital da alcachofra, e mostrar a Marcio e Adolpho que flor nem sempre é “pavê”, mas pode ser “pacomê” também.
 </desc>
     <length units="minutes">52</length>
@@ -25825,7 +25825,7 @@ segredo: está fingindo ser cozinheiro profissional. Será que ele engana os jur
   <programme start="20260312174800 -0300" stop="20260312182859 -0300" channel="gnt">
     <title lang="pt">Que Marravilha!</title>
     <sub-title lang="pt">Feijoada de Feijão Verde e Frutos do Mar</sub-title>
-    <desc lang="pt">No episódio de hoje, Claude e seu fiel escudeiro Batista recebem o vídeo denuncia do Felipe que é notoriamente um "chato pra comer". Felipe não come nenhum frutos do mar, não come feijão, não come nenhum tipo de verdura , e se pudesse, só comeria fast food. Claude terá que usar seus dotes culinários para criar um prato especialmente para o denunciado,Felipe, enfrentar suas chatices alimentares.</desc>
+    <desc lang="pt">No episódio de hoje, Claude e seu fiel escudeiro Batista recebem o vídeo denuncia do Felipe que é notoriamente um &quot;chato pra comer&quot;. Felipe não come nenhum frutos do mar, não come feijão, não come nenhum tipo de verdura , e se pudesse, só comeria fast food. Claude terá que usar seus dotes culinários para criar um prato especialmente para o denunciado,Felipe, enfrentar suas chatices alimentares.</desc>
     <length units="minutes">40</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -28467,12 +28467,12 @@ cozinheiro profissional. Será que ele vai enganar os jurados?</desc>
   <programme start="20260309192039 -0300" stop="20260309210258 -0300" channel="megapix">
     <title lang="pt">Especial Aventuras </title>
     <sub-title lang="pt">A História Sem Fim</sub-title>
-    <desc lang="pt">Bastian é um menino sonhador que um dia encontra um antigo livro chamado "A História Sem Fim". Ao abri-lo, ele é magicamente transportado para o mundo de fantasia.</desc>
+    <desc lang="pt">Bastian é um menino sonhador que um dia encontra um antigo livro chamado &quot;A História Sem Fim&quot;. Ao abri-lo, ele é magicamente transportado para o mundo de fantasia.</desc>
     <length units="minutes">102</length>
     <rating system="Brazil">
       <value>[10]</value>
     </rating>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309210304 -0300" stop="20260309231003 -0300" channel="megapix">
     <title lang="pt">Especial Aventuras </title>
@@ -28482,7 +28482,7 @@ cozinheiro profissional. Será que ele vai enganar os jurados?</desc>
     <rating system="Brazil">
       <value>[12]</value>
     </rating>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309231009 -0300" stop="20260310005540 -0300" channel="megapix">
     <title lang="pt">Especial Aventuras </title>
@@ -28492,7 +28492,7 @@ cozinheiro profissional. Será que ele vai enganar os jurados?</desc>
     <rating system="Brazil">
       <value>[10]</value>
     </rating>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309231009 -0300" stop="20260310005540 -0300" channel="megapix">
     <title lang="pt">Especial Aventuras </title>
@@ -28502,7 +28502,7 @@ cozinheiro profissional. Será que ele vai enganar os jurados?</desc>
     <rating system="Brazil">
       <value>[10]</value>
     </rating>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310005545 -0300" stop="20260310024431 -0300" channel="megapix">
     <title lang="pt">Instinto Predador</title>
@@ -28649,7 +28649,7 @@ cozinheiro profissional. Será que ele vai enganar os jurados?</desc>
   </programme>
   <programme start="20260311071000 -0300" stop="20260311085459 -0300" channel="megapix">
     <title lang="pt">A História Sem Fim</title>
-    <desc lang="pt">Bastian é um menino sonhador que um dia encontra um antigo livro chamado "A História Sem Fim". Ao abri-lo, ele é magicamente transportado para o mundo de fantasia.</desc>
+    <desc lang="pt">Bastian é um menino sonhador que um dia encontra um antigo livro chamado &quot;A História Sem Fim&quot;. Ao abri-lo, ele é magicamente transportado para o mundo de fantasia.</desc>
     <length units="minutes">104</length>
     <rating system="Brazil">
       <value>[10]</value>
@@ -29667,8 +29667,8 @@ finaliza sua viagem em um relaxante Spa.</desc>
   <programme start="20260310105900 -0300" stop="20260310112659 -0300" channel="modo-viagem">
     <title lang="pt">A Vida É Uma Passagem</title>
     <sub-title lang="pt">Tailandia 1 - Bangkok</sub-title>
-    <desc lang="pt">"No primeiro episódio da Tailândia, Anne Bueno visita sua capital, Bangkok, passando pelo Palácio de Bangkok, 
-pelo Templo do Buda Reclinado, pelo Templo Wat Traimit e muito mais."</desc>
+    <desc lang="pt">&quot;No primeiro episódio da Tailândia, Anne Bueno visita sua capital, Bangkok, passando pelo Palácio de Bangkok, 
+pelo Templo do Buda Reclinado, pelo Templo Wat Traimit e muito mais.&quot;</desc>
     <length units="minutes">27</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -29677,8 +29677,8 @@ pelo Templo do Buda Reclinado, pelo Templo Wat Traimit e muito mais."</desc>
   <programme start="20260310112700 -0300" stop="20260310115159 -0300" channel="modo-viagem">
     <title lang="pt">A Vida É Uma Passagem</title>
     <sub-title lang="pt">Tailandia 2 - Chiang Mai</sub-title>
-    <desc lang="pt">"No segundo episódio da Tailândia, Anne Bueno te leva para Chiang Mai, região conhecida por sua natureza e 
-belíssimos templos, onde também visita um Santuário de Elefantes."</desc>
+    <desc lang="pt">&quot;No segundo episódio da Tailândia, Anne Bueno te leva para Chiang Mai, região conhecida por sua natureza e 
+belíssimos templos, onde também visita um Santuário de Elefantes.&quot;</desc>
     <length units="minutes">24</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -31389,8 +31389,8 @@ o Vale do Jequitinhonha e os cafés que crescem, ao lado de uma fauna bem preser
   <programme start="20260313231200 -0300" stop="20260313234159 -0300" channel="modo-viagem">
     <title lang="pt">A Vida É Uma Passagem</title>
     <sub-title lang="pt">Tailandia 3 - Chiang Mai</sub-title>
-    <desc lang="pt">"No terceiro episódio da Tailândia, Anne Bueno continua em Chiang Mai, onde te leva para um tour 
-gastronômico, te dá dica de hospedagem, além de contar muitas curiosidades locais."</desc>
+    <desc lang="pt">&quot;No terceiro episódio da Tailândia, Anne Bueno continua em Chiang Mai, onde te leva para um tour 
+gastronômico, te dá dica de hospedagem, além de contar muitas curiosidades locais.&quot;</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -31519,7 +31519,7 @@ gastronômico, te dá dica de hospedagem, além de contar muitas curiosidades lo
   <programme start="20260309060158 -0300" stop="20260309062948 -0300" channel="multishow">
     <title lang="pt">Chaves</title>
     <sub-title lang="pt">Os Espíritos Zombeteiros – Parte 3</sub-title>
-    <desc lang="pt">O mistério dos pratos que desaparecem continua. Dona Clotilde cisma que isso é obra dos "espíritos zombeteiros" e decide tomar uma atitude para resolver o problema.
+    <desc lang="pt">O mistério dos pratos que desaparecem continua. Dona Clotilde cisma que isso é obra dos &quot;espíritos zombeteiros&quot; e decide tomar uma atitude para resolver o problema.
 </desc>
     <length units="minutes">27</length>
     <rating system="Brazil">
@@ -32148,7 +32148,7 @@ PROGRAMA EXIBIDO EM 09/03/2026</desc>
   <programme start="20260310145900 -0300" stop="20260310152559 -0300" channel="multishow">
     <title lang="pt">Tô de Graça</title>
     <sub-title lang="pt">Água mole, Pedra dura</sub-title>
-    <desc lang="pt">Um exame de sangue obriga Moreira a levar uma vida mais "saudável", com isso, ele retoma sua virilidade, mas o que parece bom aos olhos de Graça, pode trazer muita dor de cabeça.</desc>
+    <desc lang="pt">Um exame de sangue obriga Moreira a levar uma vida mais &quot;saudável&quot;, com isso, ele retoma sua virilidade, mas o que parece bom aos olhos de Graça, pode trazer muita dor de cabeça.</desc>
     <length units="minutes">26</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -33735,7 +33735,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313133200 -0300" stop="20260313140259 -0300" channel="multishow">
     <title lang="pt">A Vila</title>
     <sub-title lang="pt">É Verdade Esse Bilhete</sub-title>
-    <desc lang="pt">Seu Lupércio obriga os moradores a participarem de um "bolão", mas Rique e Violeta ficam com o dinheiro e não realizam a aposta. Os números são sorteados e os moradores acham que estão ricos.</desc>
+    <desc lang="pt">Seu Lupércio obriga os moradores a participarem de um &quot;bolão&quot;, mas Rique e Violeta ficam com o dinheiro e não realizam a aposta. Os números são sorteados e os moradores acham que estão ricos.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -33879,7 +33879,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313184500 -0300" stop="20260313191459 -0300" channel="multishow">
     <title lang="pt">Aquecimento Lollapalooza</title>
     <sub-title lang="pt">Muse: Drones World Tour</sub-title>
-    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum "Drones", de 2015. O setlist inclui músicas do disco e hits como "Uprising" e "Starlight".</desc>
+    <desc lang="pt">Show da banda de rock britânica Muse. O filme inclui performances registradas na Alemanha, Itália e Holanda, ao longo da turnê mundial de divulgação do álbum &quot;Drones&quot;, de 2015. O setlist inclui músicas do disco e hits como &quot;Uprising&quot; e &quot;Starlight&quot;.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -33966,7 +33966,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309003131 -0300" stop="20260309022428 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: Cruzeiro x Atlético-MG</title>
@@ -33975,7 +33975,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">112</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309022431 -0300" stop="20260309032256 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Gaúcho: Internacional x Grêmio</title>
@@ -33984,7 +33984,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309032259 -0300" stop="20260309042037 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Vasco</title>
@@ -33993,7 +33993,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309042039 -0300" stop="20260309051706 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Madureira x Flamengo</title>
@@ -34002,7 +34002,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">56</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309051709 -0300" stop="20260309061534 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: Atlético-MG x América-MG</title>
@@ -34011,7 +34011,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309061536 -0300" stop="20260309062749 -0300" channel="premiere">
     <title lang="pt">Giro da Rodada: Estaduais 10</title>
@@ -34026,7 +34026,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">111</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309081905 -0300" stop="20260309091713 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Vasco</title>
@@ -34035,7 +34035,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309091716 -0300" stop="20260309101644 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: São Paulo x Grêmio</title>
@@ -34044,7 +34044,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309101646 -0300" stop="20260309112543 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Cruzeiro x Corinthians</title>
@@ -34052,7 +34052,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">68</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309111446 -0300" stop="20260309121241 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: América-MG x Atlético-MG</title>
@@ -34061,7 +34061,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309121244 -0300" stop="20260309131009 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Bragantino x Athletico-PR</title>
@@ -34070,7 +34070,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309131011 -0300" stop="20260309140855 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Grêmio x Botafogo</title>
@@ -34079,7 +34079,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309140857 -0300" stop="20260309150715 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Santos x São Paulo</title>
@@ -34088,7 +34088,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309150718 -0300" stop="20260309160610 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Remo x Internacional</title>
@@ -34097,7 +34097,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309160611 -0300" stop="20260309170349 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Vasco</title>
@@ -34106,7 +34106,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309170352 -0300" stop="20260309180205 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Cruzeiro x Corinthians</title>
@@ -34114,7 +34114,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309180207 -0300" stop="20260309190044 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Grêmio x Atlético-MG</title>
@@ -34123,7 +34123,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309190046 -0300" stop="20260309195739 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Athletico-PR x Santos</title>
@@ -34131,7 +34131,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">56</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309195742 -0300" stop="20260309200640 -0300" channel="premiere">
     <title lang="pt">1/1 GIRO DA RODADA: ATLÉTICO MINEIRO x AMÉRICA MINEIRO</title>
@@ -34167,7 +34167,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309232027 -0300" stop="20260310002010 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: São Paulo x Grêmio</title>
@@ -34176,7 +34176,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309234908 -0300" stop="20260310004800 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Remo x Internacional</title>
@@ -34185,7 +34185,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309234908 -0300" stop="20260310004800 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Remo x Internacional</title>
@@ -34194,7 +34194,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310004802 -0300" stop="20260310014600 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Cruzeiro x Corinthians</title>
@@ -34202,7 +34202,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310014601 -0300" stop="20260310024424 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Palmeiras x Fluminense</title>
@@ -34211,7 +34211,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310024428 -0300" stop="20260310034226 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Vasco x Fluminense</title>
@@ -34220,7 +34220,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310034228 -0300" stop="20260310044120 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Grêmio x Atlético-MG</title>
@@ -34229,7 +34229,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310044122 -0300" stop="20260310050551 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Santos x Vasco</title>
@@ -34238,7 +34238,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">24</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310060000 -0300" stop="20260310065959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Cruzeiro x Corinthians</title>
@@ -34246,7 +34246,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310070000 -0300" stop="20260310075959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: América-MG x Atlético-MG</title>
@@ -34255,7 +34255,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310080000 -0300" stop="20260310085959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Bragantino x Athletico-PR</title>
@@ -34264,7 +34264,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310090000 -0300" stop="20260310095959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Palmeiras x Fluminense</title>
@@ -34273,7 +34273,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310100000 -0300" stop="20260310105959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Chapecoense x Coritiba</title>
@@ -34281,7 +34281,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310110000 -0300" stop="20260310115959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Mirassol x Cruzeiro</title>
@@ -34289,7 +34289,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310120000 -0300" stop="20260310125959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Grêmio x Botafogo</title>
@@ -34298,7 +34298,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310130000 -0300" stop="20260310135959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Santos x São Paulo</title>
@@ -34307,7 +34307,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310140000 -0300" stop="20260310145959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Cruzeiro x Corinthians</title>
@@ -34315,7 +34315,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310150000 -0300" stop="20260310155959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Grêmio x Botafogo</title>
@@ -34324,7 +34324,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310160000 -0300" stop="20260310165959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: Cruzeiro x Atlético-MG</title>
@@ -34333,7 +34333,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310170000 -0300" stop="20260310172959 -0300" channel="premiere">
     <title lang="pt">Giro da Rodada: Estaduais 10</title>
@@ -34348,7 +34348,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310183000 -0300" stop="20260310205959 -0300" channel="premiere">
     <title lang="pt">Copa do Brasil: Portuguesa-SP x Avaí-SC - ao vivo</title>
@@ -34371,7 +34371,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310234000 -0300" stop="20260311003959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: América-MG x Atlético-MG</title>
@@ -34380,7 +34380,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311004000 -0300" stop="20260311013959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Flamengo</title>
@@ -34389,7 +34389,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311014000 -0300" stop="20260311023959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Remo x Internacional</title>
@@ -34398,7 +34398,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311024000 -0300" stop="20260311025959 -0300" channel="premiere">
     <title lang="pt">Giro da Rodada: Estaduais 10</title>
@@ -34413,7 +34413,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311040000 -0300" stop="20260311045959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Madureira x Flamengo</title>
@@ -34422,7 +34422,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311050000 -0300" stop="20260311055959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Mineiro: Cruzeiro x Atlético-MG</title>
@@ -34431,7 +34431,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311060000 -0300" stop="20260311065959 -0300" channel="premiere">
     <title lang="pt">VT - Brasileirão: Santos x Vasco</title>
@@ -34440,7 +34440,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311070000 -0300" stop="20260311075959 -0300" channel="premiere">
     <title lang="pt">VT - Campeonato Carioca: Madureira x Flamengo</title>
@@ -34449,7 +34449,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311180000 -0300" stop="20260311182959 -0300" channel="premiere">
     <title lang="pt">Pré- Hora: Atlético-MG x Internacional - ao vivo</title>
@@ -34495,7 +34495,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260308235600 -0300" stop="20260309002559 -0300" channel="receitas-fast">
     <title lang="pt">Cozinha Prática</title>
     <sub-title lang="pt">Vinhos Resgatados</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -34677,7 +34677,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260309114500 -0300" stop="20260309121459 -0300" channel="receitas-fast">
     <title lang="pt">Cozinha Prática</title>
     <sub-title lang="pt">Sobre A Madeira</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -34784,7 +34784,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260309173000 -0300" stop="20260309175959 -0300" channel="receitas-fast">
     <title lang="pt">Cozinha Prática</title>
     <sub-title lang="pt">Sobre A Madeira</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -34889,7 +34889,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260309232800 -0300" stop="20260309235859 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Biodinâmica</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -35003,7 +35003,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260310052900 -0300" stop="20260310055959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Biodinâmica</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -35118,7 +35118,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260310113100 -0300" stop="20260310120159 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Biodinâmica</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -35223,7 +35223,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260310172900 -0300" stop="20260310175959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Biodinâmica</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -35329,7 +35329,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260310232200 -0300" stop="20260310234859 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Ep05</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">26</length>
     <episode-num system="xmltv_ns">..</episode-num>
     <rating system="Brazil">
@@ -35453,7 +35453,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260311053300 -0300" stop="20260311055959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Ep05</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">26</length>
     <episode-num system="xmltv_ns">..</episode-num>
     <rating system="Brazil">
@@ -35569,7 +35569,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260311114400 -0300" stop="20260311121059 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Ep05</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">26</length>
     <episode-num system="xmltv_ns">..</episode-num>
     <rating system="Brazil">
@@ -35676,7 +35676,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260311173300 -0300" stop="20260311175959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Ep05</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">26</length>
     <episode-num system="xmltv_ns">..</episode-num>
     <rating system="Brazil">
@@ -35785,7 +35785,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260311232500 -0300" stop="20260311235459 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Só Se For A Dois</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -35911,7 +35911,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260312053000 -0300" stop="20260312055959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Só Se For A Dois</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36028,7 +36028,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260312113500 -0300" stop="20260312120459 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Só Se For A Dois</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36136,7 +36136,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260312173000 -0300" stop="20260312175959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Só Se For A Dois</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36242,7 +36242,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260312232300 -0300" stop="20260312235459 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Vinhos Coloridos</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">31</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36368,7 +36368,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313053000 -0300" stop="20260313055959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Vinhos Coloridos</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">29</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36483,7 +36483,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313113300 -0300" stop="20260313120459 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Vinhos Coloridos</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">31</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36589,7 +36589,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313172800 -0300" stop="20260313175959 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Vinhos Coloridos</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">31</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36695,7 +36695,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   <programme start="20260313232200 -0300" stop="20260313235259 -0300" channel="receitas-fast">
     <title lang="pt">Um Brinde Ao Vinho</title>
     <sub-title lang="pt">Vinhos Brasileiros</sub-title>
-    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão "de mulher para mulher" sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
+    <desc lang="pt">Vinho Delas é um programa sobre vinhos que apresenta uma visão &quot;de mulher para mulher&quot; sobre o tema. Através do olhar, do paladar e da sensibilidade da sommelier Cecília Aldaz, vamos conhecer as profissionais que trabalham na América do Sul, as chefs que estão conquistando novos espaços e as enólogas e produtoras que estão produzindo vinhos cada vez mais emocionantes.</desc>
     <length units="minutes">30</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -36725,7 +36725,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309010932 -0300" stop="20260309020855 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Gaúcho: Internacional x Grêmio</title>
@@ -36734,7 +36734,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309020859 -0300" stop="20260309030627 -0300" channel="sportv">
     <title lang="pt">VT - Amistoso Futebol Feminino: México x Brasil - Cidade Do México</title>
@@ -36742,7 +36742,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309030630 -0300" stop="20260309040444 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Flamengo</title>
@@ -36751,7 +36751,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309040447 -0300" stop="20260309050252 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Gaúcho: Internacional x Grêmio</title>
@@ -36760,7 +36760,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">58</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309050254 -0300" stop="20260309051355 -0300" channel="sportv">
     <title lang="pt">GIRO DA RODADA: GRÊMIO x INTERNACIONAL</title>
@@ -36858,7 +36858,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Quer reviver aquele jogo inesquecível? Saber o que seu ídolo sentiu na hora do gol decisivo? O Baú do Esporte traz diariamente os grandes momentos e personagens que marcaram a história esportiva do Brasil e do mundo.</desc>
     <length units="minutes">16</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309163948 -0300" stop="20260309170157 -0300" channel="sportv">
     <title lang="pt">Giro da Rodada: Copa Do Brasil - Segunda Fase</title>
@@ -36957,7 +36957,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310035808 -0300" stop="20260310045552 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Gaúcho: Internacional x Grêmio</title>
@@ -36966,7 +36966,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">57</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310045556 -0300" stop="20260310055219 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Taça Rio - Botafogo x Bangu</title>
@@ -36975,7 +36975,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">56</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310060000 -0300" stop="20260310065959 -0300" channel="sportv">
     <title lang="pt">VT - Amistoso Futebol Feminino: México x Brasil - Cidade Do México</title>
@@ -36983,7 +36983,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310070000 -0300" stop="20260310082959 -0300" channel="sportv">
     <title lang="pt">Troca de Passes</title>
@@ -37037,7 +37037,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Quer reviver aquele jogo inesquecível? Saber o que seu ídolo sentiu na hora do gol decisivo? O Baú do Esporte traz diariamente os grandes momentos e personagens que marcaram a história esportiva do Brasil e do mundo.</desc>
     <length units="minutes">29</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310170000 -0300" stop="20260310182959 -0300" channel="sportv">
     <title lang="pt">Tá Na Área - ao vivo</title>
@@ -37080,7 +37080,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311020000 -0300" stop="20260311025959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Ponte Preta-SP x Guarany-RS</title>
@@ -37088,7 +37088,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311030000 -0300" stop="20260311035959 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Gaúcho: Internacional x Grêmio</title>
@@ -37097,7 +37097,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311040000 -0300" stop="20260311045959 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Flamengo</title>
@@ -37106,7 +37106,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311050000 -0300" stop="20260311055959 -0300" channel="sportv">
     <title lang="pt">VT - Amistoso Futebol Feminino: México x Brasil - Cidade Do México</title>
@@ -37114,7 +37114,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311060000 -0300" stop="20260311065959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Portuguesa-SP x Avaí-SC</title>
@@ -37122,7 +37122,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311070000 -0300" stop="20260311082959 -0300" channel="sportv">
     <title lang="pt">Troca de Passes</title>
@@ -37198,7 +37198,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311223000 -0300" stop="20260311231459 -0300" channel="sportv">
     <title lang="pt">Sessão sportv: Artilheiros - Reinaldo</title>
@@ -37230,7 +37230,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312013000 -0300" stop="20260312022959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Portuguesa-SP x Avaí-SC</title>
@@ -37238,7 +37238,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312023000 -0300" stop="20260312025959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Flamengo x Cruzeiro</title>
@@ -37247,7 +37247,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312030000 -0300" stop="20260312032959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Bahia x Vitória</title>
@@ -37256,7 +37256,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312033000 -0300" stop="20260312042959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Ponte Preta-SP x Guarany-RS</title>
@@ -37264,7 +37264,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312043000 -0300" stop="20260312052959 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Taça Rio - Botafogo x Bangu</title>
@@ -37273,7 +37273,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312053000 -0300" stop="20260312062959 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Flamengo</title>
@@ -37282,7 +37282,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312063000 -0300" stop="20260312065959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Atlético-MG x Internacional</title>
@@ -37290,7 +37290,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312070000 -0300" stop="20260312082959 -0300" channel="sportv">
     <title lang="pt">Troca de Passes</title>
@@ -37346,7 +37346,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312203000 -0300" stop="20260312211459 -0300" channel="sportv">
     <title lang="pt">Sessão sportv: Artilheiros - Romário</title>
@@ -37385,7 +37385,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313020000 -0300" stop="20260313025959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Barra-SC x América-MG</title>
@@ -37393,7 +37393,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313030000 -0300" stop="20260313032959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Atlético-MG x Internacional</title>
@@ -37401,7 +37401,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313033000 -0300" stop="20260313035959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Flamengo x Cruzeiro</title>
@@ -37410,7 +37410,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313040000 -0300" stop="20260313042959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Bahia x Vitória</title>
@@ -37419,7 +37419,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313043000 -0300" stop="20260313052959 -0300" channel="sportv">
     <title lang="pt">VT - Campeonato Carioca: Fluminense x Flamengo</title>
@@ -37428,7 +37428,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313053000 -0300" stop="20260313055959 -0300" channel="sportv">
     <title lang="pt">VT - Brasileirão: Grêmio x Bragantino</title>
@@ -37437,7 +37437,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313060000 -0300" stop="20260313065959 -0300" channel="sportv">
     <title lang="pt">VT - Copa do Brasil: Vila Nova-GO x Operário-MS</title>
@@ -37445,7 +37445,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">59</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313070000 -0300" stop="20260313082959 -0300" channel="sportv">
     <title lang="pt">Troca de Passes</title>
@@ -37501,7 +37501,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">29</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313170000 -0300" stop="20260313182959 -0300" channel="sportv">
     <title lang="pt">Tá Na Área - ao vivo</title>
@@ -37540,7 +37540,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">116</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309011213 -0300" stop="20260309030905 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Cruzeiro x Praia Clube</title>
@@ -37549,7 +37549,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">116</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309030909 -0300" stop="20260309032227 -0300" channel="sportv-2">
     <title lang="pt">1/1 ABRE ASPAS: ANA PATRÍCIA, JOGADORA DO VÔLEI DE PRAIA</title>
@@ -37609,7 +37609,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">120</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309122720 -0300" stop="20260309142601 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Campinas x Goiás</title>
@@ -37618,7 +37618,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">118</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309142607 -0300" stop="20260309165943 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino</title>
@@ -37627,7 +37627,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">153</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309165947 -0300" stop="20260309194347 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Osasco x Fluminense</title>
@@ -37635,7 +37635,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">164</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309194352 -0300" stop="20260309213945 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Minas x Sesc RJ Flamengo</title>
@@ -37643,7 +37643,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">115</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309213948 -0300" stop="20260309233405 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Cruzeiro x Praia Clube</title>
@@ -37652,7 +37652,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">114</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309233408 -0300" stop="20260310020525 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Cruzeiro x Campinas</title>
@@ -37661,7 +37661,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">151</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309233408 -0300" stop="20260310020525 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Cruzeiro x Campinas</title>
@@ -37670,7 +37670,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">151</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310020529 -0300" stop="20260310045013 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Osasco x Fluminense</title>
@@ -37678,7 +37678,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">164</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310045018 -0300" stop="20260310051746 -0300" channel="sportv-2">
     <title lang="pt">Faixa Olímpica: Flame Catchers - Torino 2006</title>
@@ -37711,7 +37711,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Neste episódio do Vozes, do Baú do Esporte, o narrador Luis Roberto relembra a emocionante campanha da seleção masculina de vôlei na Olimpíada Rio 2016. O time do técnico Bernardinho começou a competição no sufoco, mas melhorou o desempenho na fase eliminatória e conseguiu a medalha de ouro. E foi entre um ponto e outro do Wallace, destaque da equipe, que surgiu o bordão mais famoso do narrador, o ''Sabe de Quem?''. Luis Roberto conta detalhes dessa história e fala também sobre a evolução da narração esportiva no Brasil.</desc>
     <length units="minutes">39</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310120000 -0300" stop="20260310135959 -0300" channel="sportv-2">
     <title lang="pt">VT - Copa Brasil de Vôlei Masculino: Cruzeiro x Campinas</title>
@@ -37720,7 +37720,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310140000 -0300" stop="20260310155959 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Osasco x Fluminense</title>
@@ -37728,7 +37728,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310160000 -0300" stop="20260310180959 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Minas x Sesc RJ Flamengo</title>
@@ -37736,7 +37736,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">129</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310181000 -0300" stop="20260310183959 -0300" channel="sportv-2">
     <title lang="pt">Sessão sportv: Galeria SporTV</title>
@@ -37758,7 +37758,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310230000 -0300" stop="20260310232959 -0300" channel="sportv-2">
     <title lang="pt">Sessão sportv: Hortência E Paula - Rivais</title>
@@ -37821,7 +37821,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311230000 -0300" stop="20260312005959 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Masculino: Suzano x Campinas</title>
@@ -37829,7 +37829,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">119</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312044500 -0300" stop="20260312095959 -0300" channel="sportv-2">
     <title lang="pt">Jogos Paralímpicos De Inverno Milano Cortina 2026™: Para Esqui Alpino - ao vivo</title>
@@ -37851,7 +37851,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">89</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312230000 -0300" stop="20260313002959 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Mackenzie x Brasília</title>
@@ -37859,7 +37859,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">89</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313003000 -0300" stop="20260313025959 -0300" channel="sportv-2">
     <title lang="pt">VT - Superliga de Vôlei Feminino: Paulistano Barueri x Tijuca</title>
@@ -37867,7 +37867,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">149</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260313044500 -0300" stop="20260313055959 -0300" channel="sportv-2">
     <title lang="pt">Jogos Paralímpicos De Inverno Milano Cortina 2026™: Para Esqui Alpino - ao vivo</title>
@@ -37935,7 +37935,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">118</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309052944 -0300" stop="20260309072453 -0300" channel="sportv-3">
     <title lang="pt">VT - Grand Slam de Judô: Tashkent, Uzbequistão</title>
@@ -37943,7 +37943,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Veja as grandes estrelas internacionais do Judô aqui no sportv!</desc>
     <length units="minutes">115</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260309072455 -0300" stop="20260309075203 -0300" channel="sportv-3">
     <title lang="pt">Especial sportv: Especial Gabriel Bortoleto</title>
@@ -38051,13 +38051,13 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <category lang="en">sports (general)</category>
   </programme>
   <programme start="20260309232634 -0300" stop="20260310020611 -0300" channel="sportv-3">
-    <title lang="pt">Faixa Combate: Acelino "Popó" Freitas x José Pelé Landy</title>
+    <title lang="pt">Faixa Combate: Acelino &quot;Popó&quot; Freitas x José Pelé Landy</title>
     <desc lang="pt">A organização possui destaque no cenário mundial das lutas ao promover duelo de boxe entre influenciadores, com grandes shows de música no evento. Grandes nomes já passaram no evento como o influenciador digital Whindersson Nunes e o tetracampeão mundial de boxe Acelino “Popó” Freitas.</desc>
     <length units="minutes">159</length>
     <category lang="en">sports (general)</category>
   </programme>
   <programme start="20260309232634 -0300" stop="20260310020611 -0300" channel="sportv-3">
-    <title lang="pt">Faixa Combate: Acelino "Popó" Freitas x José Pelé Landy</title>
+    <title lang="pt">Faixa Combate: Acelino &quot;Popó&quot; Freitas x José Pelé Landy</title>
     <desc lang="pt">A organização possui destaque no cenário mundial das lutas ao promover duelo de boxe entre influenciadores, com grandes shows de música no evento. Grandes nomes já passaram no evento como o influenciador digital Whindersson Nunes e o tetracampeão mundial de boxe Acelino “Popó” Freitas.</desc>
     <length units="minutes">159</length>
     <category lang="en">sports (general)</category>
@@ -38074,7 +38074,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">118</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310042950 -0300" stop="20260310064810 -0300" channel="sportv-3">
     <title lang="pt">VT - Grand Prix de Judô: Linz, Aústria</title>
@@ -38082,7 +38082,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">As grandes estrelas do Judô estão aqui no sportv! Acompanhe o Grand Prix de Judô</desc>
     <length units="minutes">138</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310064000 -0300" stop="20260310074459 -0300" channel="sportv-3">
     <title lang="pt">Faixa Olímpica: Lendas Das Lutas - Episódio Único</title>
@@ -38103,7 +38103,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Alguns dos maiores nomes do tênis brasileiro estão na disputa do Aberto de Tênis do Rio de Janeiro e você confere todas as emoções da competição aqui na tela do seu Canal Campeão. SporTV: Somos Todos Campeões!</desc>
     <length units="minutes">119</length>
     <category lang="en">tennis/squash</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310113000 -0300" stop="20260310122959 -0300" channel="sportv-3">
     <title lang="pt">Faixa Olímpica: Clássicas – Tênis Feminino Rio 2016</title>
@@ -38138,7 +38138,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">As maiores atletas da Ginástica se encontram na Copa do mundo de Ginástica e você acompanha aqui no sportv!</desc>
     <length units="minutes">139</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260310165000 -0300" stop="20260310174959 -0300" channel="sportv-3">
     <title lang="pt">Faixa Olímpica: The Z Team - Ginástica Com Margarita Mamun</title>
@@ -38219,7 +38219,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Veja as grandes estrelas internacionais do Judô aqui no sportv!</desc>
     <length units="minutes">149</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311080000 -0300" stop="20260311085959 -0300" channel="sportv-3">
     <title lang="pt">Na Ponta Dos Dedos</title>
@@ -38248,7 +38248,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">As maiores atletas da Ginástica se encontram na Copa do mundo de Ginástica e você acompanha aqui no sportv!</desc>
     <length units="minutes">239</length>
     <category lang="en">team sports</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311160000 -0300" stop="20260311172959 -0300" channel="sportv-3">
     <title lang="pt">Mundial De Skate: Park Feminino - São Paulo</title>
@@ -38291,7 +38291,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Veja as grandes estrelas internacionais do Judô aqui no sportv!</desc>
     <length units="minutes">159</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260311220000 -0300" stop="20260312003959 -0300" channel="sportv-3">
     <title lang="pt">VT - Grand Slam de Judô: Paris, França</title>
@@ -38299,7 +38299,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Veja as grandes estrelas internacionais do Judô aqui no sportv!</desc>
     <length units="minutes">159</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312004000 -0300" stop="20260312034459 -0300" channel="sportv-3">
     <title lang="pt">Faixa Combate: Fms Fight Night 8</title>
@@ -38319,7 +38319,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
 </desc>
     <length units="minutes">149</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312090000 -0300" stop="20260312114459 -0300" channel="sportv-3">
     <title lang="pt">Faixa Combate: Mac 14</title>
@@ -38344,7 +38344,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <title lang="pt">VT - Campeonato Saudita</title>
     <length units="minutes">134</length>
     <category lang="en">football/soccer</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312180000 -0300" stop="20260312182959 -0300" channel="sportv-3">
     <title lang="pt">Faixa Olímpica: Experiência De Mestre: Bob Burnquist</title>
@@ -38367,7 +38367,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
     <desc lang="pt">Veja as grandes estrelas internacionais do Judô aqui no sportv!</desc>
     <length units="minutes">124</length>
     <category lang="en">sports (general)</category>
-    <previously-shown />
+    <previously-shown/>
   </programme>
   <programme start="20260312210500 -0300" stop="20260312213459 -0300" channel="sportv-3">
     <title lang="pt">Sessão sportv: Fome De Luta 1 - Jéssica Andrade</title>
@@ -39122,7 +39122,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260310022536 -0300" stop="20260310040033 -0300" channel="telecine-action">
     <title lang="pt">Jogos Mortais VI</title>
-    <desc lang="pt">Após a morte do agente Strahm, Hoffman dá continuidade aos seus sádicos jogos. No entanto, o aprendiz de Jigsaw passa a executar uma nova abordagem em seus cruéis "ensinamentos".</desc>
+    <desc lang="pt">Após a morte do agente Strahm, Hoffman dá continuidade aos seus sádicos jogos. No entanto, o aprendiz de Jigsaw passa a executar uma nova abordagem em seus cruéis &quot;ensinamentos&quot;.</desc>
     <length units="minutes">94</length>
     <rating system="Brazil">
       <value>[18]</value>
@@ -39425,7 +39425,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260312235500 -0300" stop="20260313014459 -0300" channel="telecine-action">
     <title lang="pt">Vingança Fatal (2014)</title>
-    <desc lang="pt">John "Falcon" Chapman, ex-fuzileiro naval , viaja ao Brasil atrás dos agressores de sua irmã. Buscando por justiça, ele se vê dentro de um um submundo de drogas, prostituição e corrupção.</desc>
+    <desc lang="pt">John &quot;Falcon&quot; Chapman, ex-fuzileiro naval , viaja ao Brasil atrás dos agressores de sua irmã. Buscando por justiça, ele se vê dentro de um um submundo de drogas, prostituição e corrupção.</desc>
     <length units="minutes">109</length>
     <rating system="Brazil">
       <value>[16]</value>
@@ -39433,7 +39433,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260312235500 -0300" stop="20260313014459 -0300" channel="telecine-action">
     <title lang="pt">Vingança Fatal (2014)</title>
-    <desc lang="pt">John "Falcon" Chapman, ex-fuzileiro naval , viaja ao Brasil atrás dos agressores de sua irmã. Buscando por justiça, ele se vê dentro de um um submundo de drogas, prostituição e corrupção.</desc>
+    <desc lang="pt">John &quot;Falcon&quot; Chapman, ex-fuzileiro naval , viaja ao Brasil atrás dos agressores de sua irmã. Buscando por justiça, ele se vê dentro de um um submundo de drogas, prostituição e corrupção.</desc>
     <length units="minutes">109</length>
     <rating system="Brazil">
       <value>[16]</value>
@@ -39516,7 +39516,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260313201000 -0300" stop="20260313215959 -0300" channel="telecine-action">
     <title lang="pt">O Lutador (2006)</title>
-    <desc lang="pt">O boxeador George "Iceman" Chambers cai em uma cilada e acaba sendo preso por tráfico de drogas. Conhecido por seus golpes nos ringues, ele terá que aplicá-los também dentro da prisão para sair vivo.</desc>
+    <desc lang="pt">O boxeador George &quot;Iceman&quot; Chambers cai em uma cilada e acaba sendo preso por tráfico de drogas. Conhecido por seus golpes nos ringues, ele terá que aplicá-los também dentro da prisão para sair vivo.</desc>
     <length units="minutes">109</length>
     <rating system="Brazil">
       <value>[16]</value>
@@ -39584,7 +39584,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260309114113 -0300" stop="20260309133049 -0300" channel="telecine-cult">
     <title lang="pt">O Mágico de Oz</title>
-    <desc lang="pt">Dorothy vê seus sonhos se realizarem quando um tornado a leva para "além do arco-íris". Ao lado de novos amigos, ela tenta encontrar o Mago Oz.</desc>
+    <desc lang="pt">Dorothy vê seus sonhos se realizarem quando um tornado a leva para &quot;além do arco-íris&quot;. Ao lado de novos amigos, ela tenta encontrar o Mago Oz.</desc>
     <length units="minutes">109</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -40864,8 +40864,8 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260310085000 -0300" stop="20260310103459 -0300" channel="telecine-pipoca">
     <title lang="pt">O Expresso Polar</title>
-    <desc lang="pt">"Um garoto embarca numa jornada mágica ao Polo Norte e descobre que a maravilha da vida permanece viva para quem nunca deixa de acreditar.
-"</desc>
+    <desc lang="pt">&quot;Um garoto embarca numa jornada mágica ao Polo Norte e descobre que a maravilha da vida permanece viva para quem nunca deixa de acreditar.
+&quot;</desc>
     <length units="minutes">104</length>
     <rating system="Brazil">
       <value>[L]</value>
@@ -41283,7 +41283,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260309013622 -0300" stop="20260309041552 -0300" channel="telecine-premium">
     <title lang="pt">O Traidor</title>
-    <desc lang="pt">Saindo do Brasil e de volta à Itália, o mafioso Tommaso Buscetta se torna informante da polícia em um esquema para desmontar a máfia, ficando conhecido como "traidor".</desc>
+    <desc lang="pt">Saindo do Brasil e de volta à Itália, o mafioso Tommaso Buscetta se torna informante da polícia em um esquema para desmontar a máfia, ficando conhecido como &quot;traidor&quot;.</desc>
     <length units="minutes">159</length>
     <rating system="Brazil">
       <value>[16]</value>
@@ -41471,7 +41471,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260310220000 -0300" stop="20260310233959 -0300" channel="telecine-premium">
     <title lang="pt">O Porão da Rua do Grito</title>
-    <desc lang="pt">Inspirado em "João e Maria", dois irmãos órfãos vivem com a sua avó debilitada em um velho casarão , onde passam a ser assombrados pelos fantasmas que habitam a casa.</desc>
+    <desc lang="pt">Inspirado em &quot;João e Maria&quot;, dois irmãos órfãos vivem com a sua avó debilitada em um velho casarão , onde passam a ser assombrados pelos fantasmas que habitam a casa.</desc>
     <length units="minutes">99</length>
     <rating system="Brazil">
       <value>[18]</value>
@@ -41635,7 +41635,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260312102500 -0300" stop="20260312124959 -0300" channel="telecine-premium">
     <title lang="pt">Megalópolis</title>
-    <desc lang="pt">Um arquiteto visionário tenta reconstruir "Nova Roma" como um centro utópico, enfrentando corrupção, conflito político e dilemas éticos.</desc>
+    <desc lang="pt">Um arquiteto visionário tenta reconstruir &quot;Nova Roma&quot; como um centro utópico, enfrentando corrupção, conflito político e dilemas éticos.</desc>
     <length units="minutes">144</length>
     <rating system="Brazil">
       <value>[16]</value>
@@ -42012,7 +42012,7 @@ PROGRAMA EXIBIDO EM 12/03/2026</desc>
   </programme>
   <programme start="20260310200000 -0300" stop="20260310215959 -0300" channel="telecine-touch">
     <title lang="pt">Eu Só Posso Imaginar</title>
-    <desc lang="pt">Com uma trajetória difícil, Bart Millard vira vocalista da banda MercyMe e compõe "I Can Only Imagine", canção que trata da relação com o pai, de sucesso mundial.</desc>
+    <desc lang="pt">Com uma trajetória difícil, Bart Millard vira vocalista da banda MercyMe e compõe &quot;I Can Only Imagine&quot;, canção que trata da relação com o pai, de sucesso mundial.</desc>
     <length units="minutes">119</length>
     <rating system="Brazil">
       <value>[12]</value>
@@ -45629,467 +45629,5 @@ governo federal e usá-la na realização de uma obra para o tratamento do esgot
     <rating system="Brazil">
       <value>[14]</value>
     </rating>
-  </programme>
-  <channel id="eptv-campinas">
-    <display-name>EPTV Campinas</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="eptv-campinas">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-globo-al">
-    <display-name>TV Globo Alagoas</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-globo-al">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-globo-ba">
-    <display-name>TV Bahia</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-globo-ba">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-globo-rr">
-    <display-name>TV Rural</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-globo-rr">
-    <title>Globo</title>
-  </programme>
-  <channel id="eptv-ribeirao">
-    <display-name>EPTV Ribeirão Preto</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="eptv-ribeirao">
-    <title>Globo</title>
-  </programme>
-  <channel id="eptv-ribeirao-2">
-    <display-name>EPTV 2ª Edição</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="eptv-ribeirao-2">
-    <title>Globo</title>
-  </programme>
-  <channel id="rbs-porto-alegre">
-    <display-name>RBS TV Porto Alegre</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="rbs-porto-alegre">
-    <title>Globo</title>
-  </programme>
-  <channel id="g1-rs">
-    <display-name>G1 RS</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="g1-rs">
-    <title>Globo</title>
-  </programme>
-  <channel id="nsc-tv">
-    <display-name>NSC TV</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="nsc-tv">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-vanguarda">
-    <display-name>TV Vanguarda</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-vanguarda">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-verdes-mares">
-    <display-name>TV Verdes Mares</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-verdes-mares">
-    <title>Globo</title>
-  </programme>
-  <channel id="globo-esporte-ba">
-    <display-name>Globo Esporte BA</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="globo-esporte-ba">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-gazeta-es">
-    <display-name>TV Gazeta ES</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-gazeta-es">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-gazeta-al">
-    <display-name>TV Gazeta Alagoas</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-gazeta-al">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-integracao">
-    <display-name>TV Integração</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-integracao">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-pantanal">
-    <display-name>TV Pantanal</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-pantanal">
-    <title>Globo</title>
-  </programme>
-  <channel id="rede-amazonica">
-    <display-name>Rede Amazônica</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="rede-amazonica">
-    <title>Globo</title>
-  </programme>
-  <channel id="tv-liberal">
-    <display-name>TV Liberal</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="tv-liberal">
-    <title>Globo</title>
-  </programme>
-  <channel id="cbn-sp">
-    <display-name>CBN São Paulo</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="cbn-sp">
-    <title>CBN</title>
-  </programme>
-  <channel id="cbn-rio">
-    <display-name>CBN Rio</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="cbn-rio">
-    <title>CBN</title>
-  </programme>
-  <channel id="gr2">
-    <display-name>GR2 Petrolina</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="gr2">
-    <title>Globo</title>
-  </programme>
-  <channel id="bdap">
-    <display-name>BDAP</display-name>
-  </channel>
-  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="bdap">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031007000000 -0300" stop="2026031104000000 -0300" channel="bdap">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="bdap">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031107000000 -0300" stop="2026031204000000 -0300" channel="bdap">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="bdap">
-    <title>Globo</title>
-  </programme>
-  <programme start="2026031207000000 -0300" stop="2026031304000000 -0300" channel="bdap">
-    <title>Globo</title>
   </programme>
 </tv>
