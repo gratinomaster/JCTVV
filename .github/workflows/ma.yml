@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          modifique GLOBO.py para que os canais já saiam com epg configurados, pois agora não tem epg nenhum, o .py deve gerar os canais com os epgs corretos
+          modifique GLOBO.py para que os canais já saiam com epg configurados, pois agora não tem epg nenhum, o .py deve gerar os canais com os epgs corretos, preciso de epg que funciona e os canais devem receber tvg-id corretos
           "
 
       - name: Save result
