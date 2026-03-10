@@ -1,33 +1,91 @@
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/epg.xml"
 
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="1176" tvg-id="Telesur.ve" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/TLSUR.png?raw=true" , TeleSUR
+#EXTINF:-1 group-title="Mundo" tvg-chno="1" tvg-id="Telesur.ve" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/telesur.png" , TeleSUR
 https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/chunklist.m3u8
 
-#EXTINF:-1 group-title="Mundo" tvg-chno="1177" tvg-id="São.Paulo/SP..NHK.World.Premium.br" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/NHKWJ.png?raw=true" , NHK World Japan
+#EXTINF:-1 group-title="Mundo" tvg-chno="2" tvg-id="NHK.World.Japan" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/nhk.png" , NHK World Japan
 https://cdn.nhkworld.jp/www11/nhkworld-tv/bmcc-live/es/playlist.m3u8
 
-#EXTINF:-1 group-title="Mundo" tvg-chno="1178" tvg-id="GaliciaTVAmerica.es" tvg-logo="https://static.flow.com.ar/images/729/CH_LOGO/350/500/0/0/778293230765.png" , Galicia TV America
-https://crtvg-america.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="1179" tvg-id="Undefined" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/EITBB.png?raw=true" , Etb Basque
-https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8
-
-#EXTINF:-1 group-title="Undefined" tvg-chno="1180" tvg-id="Undefined" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/RTPIN.png?raw=true" , RTP Internacional
-https://streaming-live.rtp.pt/liverepeater/rtpi.smil/.m3u8
-
-#EXTINF:-1 group-title="Undefined" tvg-chno="1181" tvg-id="Undefined" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/BOTV.png?raw=true" , Bolivia TV
-https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="1182" tvg-id="TV Perú Internacional" tvg-logo="https://github.com/masterentertainment/listas/blob/main/logos/TVPEI.png?raw=true" , TV Perú Internacional
+#EXTINF:-1 group-title="Mundo" tvg-chno="3" tvg-id="TVPeruInternacional" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvperu.png" , TV Perú Internacional
 https://cdnhd.iblups.com/hls/ee2450c81e554f4cae0e6292106993c2.m3u8
 
-#EXTINF:-1 tvg-chno="13" tvg-id="LaChaineParlementaire.fr" tvg-logo="https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Images/LCP.png" group-title="Info", La Chaine Parlementaire/Public Sénat
-https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/lcp/lcp-dm.m3u8
+#EXTINF:-1 group-title="Mundo" tvg-chno="4" tvg-id="RTPEspanol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/rtp.png" , RTP Internacional
+https://streaming-live.rtp.pt/liverepeater/rtpi.smil/.m3u8
 
-#EXTINF:-1 tvg-chno="15" tvg-id="BFMTV.fr" tvg-logo="https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Images/BFM%20TV.png" group-title="Info", BFM TV
+#EXTINF:-1 group-title="Mundo" tvg-chno="5" tvg-id="TVCG" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvcg.png" , TVCG Montenegro
+https://m Live.tvmcg.me/TVCG1.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="6" tvg-id="France24" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/france24.png" , France 24 Español
+https://static.france24.com/live/F24_ES_HI_HLS/live_ios.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="7" tvg-id="DWEspañol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/dw.png" , DW Español
+https://dwstream3-lh.akamaihd.net/i/dwstream3_pub_1@400812/index_1_av-p.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="8" tvg-id="TRTWorld" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/trtworld.png" , TRT World
+https://trtworld.live.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="9" tvg-id="CGTNEspañol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cgtn.png" , CGTN Español
+https://live.cgtn.com/1000/prog_index.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="10" tvg-id="AlJazeera" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/aljazeera.png" , Al Jazeera Español
+https://live-hls-web-aja.getaj.net/AJA/index.m3u8
+
+#EXTINF:-1 group-title="Mundo" tvg-chno="11" tvg-id="Euronews" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/euronews.png" , Euronews Español
+https://euronews-espanol-en-brx.secure2.footprint.net/egress/bhost/euronews-español/live.m3u8
+
+#EXTINF:-1 group-title="Info" tvg-chno="12" tvg-id="BBCWorldNews" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/bbc.png" , BBC World News
+https://vs-hls-uk-rrd-1.live.es.hlscall.com/live/uk/bbc_world_news_ci.m3u8
+
+#EXTINF:-1 group-title="Info" tvg-chno="13" tvg-id="CNNInternacional" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cnn.png" , CNN Internacional
+https://cnn-cnn-i-espn-euronews-esp-get.secure2.footprint.net/egress/bhost/cnn-int/live.m3u8
+
+#EXTINF:-1 group-title="Info" tvg-chno="14" tvg-id="FranceInfo" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/franceinfo.png" , France Info
+https://static.franceinfo.fr/live/finfo_hls/playlist.m3u8
+
+#EXTINF:-1 group-title="Info" tvg-chno="15" tvg-id="BFMTV" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/bfmtv.png" , BFM TV
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?start=LIVE&end=END
 
-#EXTINF:-1 tvg-chno="16" tvg-id="CNews.fr" tvg-logo="https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Images/CNews.png" group-title="TNT", CNews
+#EXTINF:-1 group-title="Info" tvg-chno="16" tvg-id="CNews" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cnews.png" , CNews
 https://raw.githubusercontent.com/LeBazarDeBryan/XTVZ_/main/Stream/Live/CNews.m3u8
 
+#EXTINF:-1 group-title="Info" tvg-chno="17" tvg-id="LCP" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/lcp.png" , LCP/Public Sénat
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/lcp/lcp-dm.m3u8
 
+#EXTINF:-1 group-title="Europa" tvg-chno="18" tvg-id="ETB" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/etb.png" , ETB Basque
+https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8
+
+#EXTINF:-1 group-title="Europa" tvg-chno="19" tvg-id="GaliciaTV" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/galicia.png" , Galicia TV America
+https://crtvg-america.flumotion.cloud/playlist.m3u8
+
+#EXTINF:-1 group-title="Europa" tvg-chno="20" tvg-id="RaiWorld" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/rai.png" , Rai Italia
+https://streamcdnf1-4b3f46f6c0e6e6e9d71a-4f6dc09c9c0c9fa6c00c9a1f98e2d0aa.msvdn.net/r RaiWorldITW/c5bdfghjknopqrstu/playlist.m3u8
+
+#EXTINF:-1 group-title="Europa" tvg-chno="21" tvg-id="TVEInternacional" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tve.png" , TVE Internacional
+https://rtve-ivhls-rrd.flumotion.net/rtve/int/playlist.m3u8
+
+#EXTINF:-1 group-title="Europa" tvg-chno="22" tvg-id="TV5Monde" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tv5monde.png" , TV5Monde Español
+https://slive.tv5monde.com/tv5monde_espagne_all/playlist.m3u8
+
+#EXTINF:-1 group-title="America Latina" tvg-chno="23" tvg-id="BoliviaTV" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/boliviatv.png" , Bolivia TV
+https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8
+
+#EXTINF:-1 group-title="America Latina" tvg-chno="24" tvg-id="TVNChile" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvn.png" , TVN Chile
+https://mdstrm.com/live-stream-playlist/57d7d125618f6b7618b70df7.m3u8
+
+#EXTINF:-1 group-title="America Latina" tvg-chno="25" tvg-id="Telemundo" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/telemundo.png" , Telemundo Internacional
+https://streamcdnf1-4b3f46f6c0e6e6e9d71a-4f6dc09c9c0c9fa6c00c9a1f98e2d0aa.msvdn.net/r/telemundotv/playlist.m3u8
+
+#EXTINF:-1 group-title="Deportes" tvg-chno="26" tvg-id="ESPN" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/espn.png" , ESPN Internacional
+https://playout-api.xumo.com/v2/playout/9cb12ba9-769b-4711-a4e1-1a3c5a919046/all/master.m3u8
+
+#EXTINF:-1 group-title="Deportes" tvg-chno="27" tvg-id="FoxSports" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/foxsports.png" , Fox Sports
+https://playout-api.xumo.com/v2/playout/9cb12ba9-769b-4711-a4e1-1a3c5a919046/all/master.m3u8
+
+#EXTINF:-1 group-title="Musica" tvg-chno="28" tvg-id="MTV" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/mtv.png" , MTV Live
+https://playout-api.xumo.com/v2/playout/9cb12ba9-769b-4711-a4e1-1a3c5a919046/all/master.m3u8
+
+#EXTINF:-1 group-title="Musica" tvg-chno="29" tvg-id="Vmusic" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/vmusic.png" , VMusic
+https://vmusicfm.tulive.com.ar/vmusic/live/playlist.m3u8
+
+#EXTINF:-1 group-title="Naturaleza" tvg-chno="30" tvg-id="AnimalPlanet" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/animalplanet.png" , Animal Planet
+https://playout-api.xumo.com/v2/playout/9cb12ba9-769b-4711-a4e1-1a3c5a919046/all/master.m3u8
