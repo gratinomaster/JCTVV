@@ -4,13 +4,49 @@ from selenium.webdriver.common.by import By
 import time
 import concurrent.futures
 
-# Configurações do Chrome
 options = Options()
-options.add_argument("--headless")  # Executa sem interface gráfica
+options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-gpu")
 options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
+
+EPG_URL = "https://epg.iptv-canaistv.com/globochannels.xml"
+
+CHANNEL_TVG_IDS = {
+    "globoplay.globo.com/v/4613774": "Globo",
+    "globoplay.globo.com/ao-vivo/7689934": "GloboSP",
+    "globoplay.globo.com/ao-vivo/7690141": "GloboRJ",
+    "globoplay.globo.com/ao-vivo/7813174": "GloboBH",
+    "g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas": "EPTV1Campinas",
+    "globoplay.globo.com/ao-vivo/14164032": "GloboBahia",
+    "globoplay.globo.com/ao-vivo/2134039": "GloboNordeste",
+    "g1.globo.com/rr/roraima": "RedeAmazonicaRR",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/bom-dia-cidade": "BomDiaCidadeRibeirao",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv1": "EPTV1Ribeirao",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv-2": "EPTV2Ribeirao",
+    "g1.globo.com/pe/petrolina-regiao/ao-vivo/gr2": "GR2Petrolina",
+    "g1.globo.com/ap/ao-vivo/bdap": "BDAP",
+    "globoplay.globo.com/v/2135579": "G1RS",
+    "globoplay.globo.com/v/6120663": "JornalEPTVRS",
+    "globoplay.globo.com/v/2145544": "G1SC",
+    "globoplay.globo.com/v/4039160": "TVVerdesMares",
+    "globoplay.globo.com/v/6329086": "GloboEsporteBA",
+    "globoplay.globo.com/v/11999480": "G1ES",
+    "g1.globo.com/al/alagoas/ao-vivo/assista-aos-telejornais-da-tv-gazeta": "TVGazetaAlagoas",
+    "globoplay.globo.com/v/4218681": "G1TrianguloMineiro",
+    "globoplay.globo.com/v/3065772": "G1MS",
+    "g1.globo.com/am/amazonas/ao-vivo/assista-aos-telejornais-da-rede-amazonica": "RedeAmazonicaAM",
+    "globoplay.globo.com/v/2168377": "TVLiberal",
+    "globoplay.globo.com/v/10747444": "CBNSP",
+    "globoplay.globo.com/v/10740500": "CBNRJ",
+}
+
+def get_tvg_id(url):
+    for key, tvg_id in CHANNEL_TVG_IDS.items():
+        if key in url:
+            return tvg_id
+    return "Globo" + str(hash(url))[:4]
 
 
 # URLs dos vídeos Globoplay e G1 ao vivo
@@ -116,11 +152,7 @@ def extract_globoplay_data(url):
     
     return title, m3u8_url, thumbnail_url
 
-# URL do EPG para canais brasileiros
-EPG_URL = "http://i.ontvbr.me/EPG"
-
 with open("lista1.m3u", "w") as output_file:
-    # Escrever o cabeçalho com a URL do EPG
     output_file.write(f'#EXTM3U x-tvg-url="{EPG_URL}"\n')
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
@@ -131,7 +163,8 @@ with open("lista1.m3u", "w") as output_file:
                 title, m3u8_url, thumbnail_url = future.result()
                 if m3u8_url:
                     thumbnail_url = thumbnail_url if thumbnail_url else ""
-                    output_file.write(f'#EXTINF:-1 tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO", {title}\n')
+                    tvg_id = get_tvg_id(url)
+                    output_file.write(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_id}" tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO", {title}\n')
                     output_file.write(f"{m3u8_url}\n")
                     print(f"✓ Processado com sucesso: {url}")
                 else:
