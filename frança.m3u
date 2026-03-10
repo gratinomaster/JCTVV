@@ -1,20 +1,22 @@
-#EXTINF:-1 tvg-id="TF1.fr" group-title="FRANÇA",TF1 HD 720p
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-fr.xml.gz"
+
+#EXTINF:-1 tvg-id="TF1.fr" tvg-logo="https://iptv-epg.org/logos/France/TF1.fr.png" group-title="FRANÇA",TF1 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/tf1hd/browser-dash/tf1hd.mpd
 
-#EXTINF:-1 tvg-id="France2.fr" group-title="FRANÇA",France2 HD 720p
+#EXTINF:-1 tvg-id="France2.fr" tvg-logo="https://iptv-epg.org/logos/France/France2.fr.png" group-title="FRANÇA",France2 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/france2hd/browser-dash/france2hd.mpd
 
-#EXTINF:-1 tvg-id="France3.fr" group-title="FRANÇA",France3 HD 720p
+#EXTINF:-1 tvg-id="France3.fr" tvg-logo="https://iptv-epg.org/logos/France/France3.fr.png" group-title="FRANÇA",France3 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/france3hd/browser-dash/france3hd.mpd
 
-#EXTINF:-1 tvg-id="France4.fr" group-title="FRANÇA",France4 HD 720p
+#EXTINF:-1 tvg-id="France4.fr" tvg-logo="https://iptv-epg.org/logos/France/France4.fr.png" group-title="FRANÇA",France4 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/france4hd/browser-dash/france4hd.mpd
 
-#EXTINF:-1 tvg-id="France5.fr" group-title="FRANÇA",France5 HD 720p
+#EXTINF:-1 tvg-id="France5.fr" tvg-logo="https://iptv-epg.org/logos/France/France5.fr.png" group-title="FRANÇA",France5 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-dash/france5hd.mpd
 
-#EXTINF:-1 tvg-id="m6.fr" group-title="FRANÇA",M6 HD 720p
+#EXTINF:-1 tvg-id="M6.fr" tvg-logo="https://iptv-epg.org/logos/France/M6.fr.png" group-title="FRANÇA",M6 HD 720p
 https://viamotionhsi.netplus.ch/live/eds/m6hd/browser-dash/m6hd.mpd
 
-#EXTINF:-1 group-title="FRANÇA" tvg-id="Undefined" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoI_x4V25aomija2HgQL56Gxvs_N_rGVcoAWLKPX-m_ZQf9BKJcRL-82Xc9vk&s",France 24 Français
+#EXTINF:-1 tvg-id="France24.fr" tvg-logo="https://iptv-epg.org/logos/France/France24.fr.png" group-title="FRANÇA",France 24 Français
 https://static.france24.com/live/F24_FR_LO_HLS/live_ios.m3u8
