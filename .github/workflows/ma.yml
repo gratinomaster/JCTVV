@@ -32,8 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          SALVE NO ARQUIVO lista2.m3u
-          ESCREVA 10 FRASES FAMOSAS DO MARCOS MION
+          corrija o GLOBO3.py para que gere apenas os links no arquivo que já esta configurado
           "
 
       - name: Save result
