@@ -1,1 +1,60 @@
+name: IPTV List Fixer
 
+on:
+  workflow_dispatch:
+
+jobs:
+  opencode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg curl wget
+
+      - name: Install OpenCode
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+
+      - name: Add OpenCode to PATH
+        run: |
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      - name: Verify installation
+        run: |
+          opencode --version
+
+      - name: Download IPTV list
+        run: |
+          wget -O lista.m3u https://github.com/gratinomaster/JCTV/raw/refs/heads/main/lista2.m3u
+
+      - name: Run OpenCode Prompt
+        run: |
+          opencode run "
+          https://github.com/gratinomaster/JCTV/raw/refs/heads/main/lista2.m3u
+          faça a versão dessa lista corrigida, alguns canais estão sem epg,
+          encontre epg para 99 por cento e teste para ver se o epg ainda é valido ou é antigo,
+          só pode ter virgula na linha que começa com # quando estiver antes do nome do canal,
+          adcione logo aos canais que não tiverem, sempre logos em .jpg,
+          não adcione tvg-id ficticio,
+          teste links com ffmpeg,
+          não remova nenhum canal,
+          verifique se xml ou xml.gz possuem dados reais e programação atualizada
+          "
+
+      - name: Save result
+        run: |
+          ls -la
+
+      - name: Commit result (optional)
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Updated IPTV list" || echo "No changes"
+          git push
