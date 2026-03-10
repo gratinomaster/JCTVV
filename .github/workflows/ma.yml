@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          salve dentro de lista2.m3u algo que poderei assistir do globo.com
+          salve dentro de lista2.m3u os sites que estejam transmitindo tv iraniana, ao vivo, tv irib, ja que parece que desligaram o sinal de internet no país
           "
 
       - name: Save result
