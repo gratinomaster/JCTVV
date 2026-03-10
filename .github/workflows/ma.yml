@@ -29,14 +29,10 @@ jobs:
         run: |
           opencode --version
 
-      - name: Download IPTV list
-        run: |
-          wget -O lista.m3u https://github.com/gratinomaster/JCTV/raw/refs/heads/main/lista2.m3u
-
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          VEJA O QUE DEVO COMPRAR HOJE NA B3, DOLAR, ETS E SALVE NO ARQUIVO LISTA2.M3U
+          VEJA O QUE DEVO COMPRAR HOJE NA B3, DOLAR, ETS E SALVE NO ARQUIVO lista2.m3u
           "
 
       - name: Save result
