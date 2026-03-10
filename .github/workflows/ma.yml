@@ -36,15 +36,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          https://github.com/gratinomaster/JCTV/raw/refs/heads/main/lista2.m3u
-          faça a versão dessa lista corrigida, alguns canais estão sem epg,
-          encontre epg para 99 por cento e teste para ver se o epg ainda é valido ou é antigo,
-          só pode ter virgula na linha que começa com # quando estiver antes do nome do canal,
-          adcione logo aos canais que não tiverem, sempre logos em .jpg,
-          não adcione tvg-id ficticio,
-          teste links com ffmpeg,
-          não remova nenhum canal,
-          verifique se xml ou xml.gz possuem dados reais e programação atualizada
+          VEJA O QUE DEVO COMPRAR HOJE NA B3, DOLAR, ETS E SALVE NO ARQUIVO LISTA2.M3U
           "
 
       - name: Save result
