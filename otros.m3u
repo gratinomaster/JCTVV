@@ -1,32 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/epg.xml"
 
-#EXTINF:-1 group-title="Mundo" tvg-chno="1" tvg-id="Telesur.ve" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/telesur.png" , TeleSUR
-https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/chunklist.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="2" tvg-id="NHK.World.Japan" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/nhk.png" , NHK World Japan
-https://cdn.nhkworld.jp/www11/nhkworld-tv/bmcc-live/es/playlist.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="3" tvg-id="TVPeruInternacional" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvperu.png" , TV Perú Internacional
-https://cdnhd.iblups.com/hls/ee2450c81e554f4cae0e6292106993c2.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="4" tvg-id="RTPEspanol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/rtp.png" , RTP Internacional
-https://streaming-live.rtp.pt/liverepeater/rtpi.smil/.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="5" tvg-id="TVCG" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvcg.png" , TVCG Montenegro
-https://m Live.tvmcg.me/TVCG1.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="6" tvg-id="France24" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/france24.png" , France 24 Español
-https://static.france24.com/live/F24_ES_HI_HLS/live_ios.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="7" tvg-id="DWEspañol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/dw.png" , DW Español
-https://dwstream3-lh.akamaihd.net/i/dwstream3_pub_1@400812/index_1_av-p.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="8" tvg-id="TRTWorld" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/trtworld.png" , TRT World
-https://trtworld.live.m3u8
-
-#EXTINF:-1 group-title="Mundo" tvg-chno="9" tvg-id="CGTNEspañol" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cgtn.png" , CGTN Español
-https://live.cgtn.com/1000/prog_index.m3u8
-
 #EXTINF:-1 group-title="Mundo" tvg-chno="10" tvg-id="AlJazeera" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/aljazeera.png" , Al Jazeera Español
 https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 
