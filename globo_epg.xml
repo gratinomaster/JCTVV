@@ -1,0 +1,2640 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv generator-info-name="Globo EPG Generator">
+  <channel id="TVGlobo">
+    <display-name>TV Globo</display-name>
+  </channel>
+  <channel id="EPTV1Campinas">
+    <display-name>EPTV 1ª Edição</display-name>
+  </channel>
+  <channel id="TVAlagoas">
+    <display-name>TV Alagoas</display-name>
+  </channel>
+  <channel id="TVBahia">
+    <display-name>TV Bahia</display-name>
+  </channel>
+  <channel id="TVRural">
+    <display-name>TV Rural</display-name>
+  </channel>
+  <channel id="BomDiaCidadeRP">
+    <display-name>Bom Dia Cidade RP</display-name>
+  </channel>
+  <channel id="EPTV1Ribeirao">
+    <display-name>EPTV 1ª Edição RP</display-name>
+  </channel>
+  <channel id="EPTV2Ribeirao">
+    <display-name>EPTV 2ª Edição</display-name>
+  </channel>
+  <channel id="RBSPortoAlegre">
+    <display-name>RBS TV</display-name>
+  </channel>
+  <channel id="G1RS">
+    <display-name>G1 RS</display-name>
+  </channel>
+  <channel id="NSCTV">
+    <display-name>NSC TV</display-name>
+  </channel>
+  <channel id="TVVerdesMares">
+    <display-name>TV Verdes Mares</display-name>
+  </channel>
+  <channel id="GloboEsporteBA">
+    <display-name>Globo Esporte BA</display-name>
+  </channel>
+  <channel id="TVGazetaES">
+    <display-name>TV Gazeta ES</display-name>
+  </channel>
+  <channel id="TVGazetaAlagoas">
+    <display-name>TV Gazeta Alagoas</display-name>
+  </channel>
+  <channel id="TVIntegração">
+    <display-name>TV Integração</display-name>
+  </channel>
+  <channel id="TVPantanal">
+    <display-name>TV Pantanal</display-name>
+  </channel>
+  <channel id="RedeAmazonica">
+    <display-name>Rede Amazônica</display-name>
+  </channel>
+  <channel id="TVLiberal">
+    <display-name>TV Liberal</display-name>
+  </channel>
+  <channel id="CBNSaoPaulo">
+    <display-name>CBN São Paulo</display-name>
+  </channel>
+  <channel id="CBNRio">
+    <display-name>CBN Rio</display-name>
+  </channel>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVGlobo">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVGlobo">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVGlobo">
+    <title>Vídeo Show</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVGlobo">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVGlobo">
+    <title>Globonews</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVGlobo">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVGlobo">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVGlobo">
+    <title>SBT Brasil</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVGlobo">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021300000 -0300" channel="TVGlobo">
+    <title>Novela das 8</title>
+  </programme>
+  <programme start="2026031021300000 -0300" stop="2026031022000000 -0300" channel="TVGlobo">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVGlobo">
+    <title>Big Brother Brasil</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031001000000 -0300" channel="TVGlobo">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031001000000 -0300" stop="2026031004000000 -0300" channel="TVGlobo">
+    <title>Passarela</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVGlobo">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVGlobo">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVGlobo">
+    <title>Vídeo Show</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVGlobo">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVGlobo">
+    <title>Globonews</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVGlobo">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVGlobo">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVGlobo">
+    <title>SBT Brasil</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVGlobo">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121300000 -0300" channel="TVGlobo">
+    <title>Novela das 8</title>
+  </programme>
+  <programme start="2026031121300000 -0300" stop="2026031122000000 -0300" channel="TVGlobo">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVGlobo">
+    <title>Big Brother Brasil</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031101000000 -0300" channel="TVGlobo">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031101000000 -0300" stop="2026031104000000 -0300" channel="TVGlobo">
+    <title>Passarela</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVGlobo">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVGlobo">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVGlobo">
+    <title>Vídeo Show</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVGlobo">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVGlobo">
+    <title>Globonews</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVGlobo">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVGlobo">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVGlobo">
+    <title>SBT Brasil</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVGlobo">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221300000 -0300" channel="TVGlobo">
+    <title>Novela das 8</title>
+  </programme>
+  <programme start="2026031221300000 -0300" stop="2026031222000000 -0300" channel="TVGlobo">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVGlobo">
+    <title>Big Brother Brasil</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031201000000 -0300" channel="TVGlobo">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031201000000 -0300" stop="2026031204000000 -0300" channel="TVGlobo">
+    <title>Passarela</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="EPTV1Campinas">
+    <title>Bom Dia Campinas</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="EPTV1Campinas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="EPTV1Campinas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="EPTV1Campinas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="EPTV1Campinas">
+    <title>Bom Dia Campinas</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="EPTV1Campinas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="EPTV1Campinas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="EPTV1Campinas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="EPTV1Campinas">
+    <title>Bom Dia Campinas</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="EPTV1Campinas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="EPTV1Campinas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="EPTV1Campinas">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="EPTV1Campinas">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="EPTV1Campinas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="EPTV1Campinas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVAlagoas">
+    <title>Bom Dia Alagoas</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVAlagoas">
+    <title>Mais Alagoas</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVAlagoas">
+    <title>Jornal Alagoas</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVAlagoas">
+    <title>Bom Dia Alagoas</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVAlagoas">
+    <title>Mais Alagoas</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVAlagoas">
+    <title>Jornal Alagoas</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVAlagoas">
+    <title>Bom Dia Alagoas</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVAlagoas">
+    <title>Mais Alagoas</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVAlagoas">
+    <title>ABTV</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVAlagoas">
+    <title>TV Alagoas</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVAlagoas">
+    <title>Jornal Alagoas</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVBahia">
+    <title>Bom Dia Bahia</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVBahia">
+    <title>Mais Bahia</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVBahia">
+    <title>Balanço Geral BA</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVBahia">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVBahia">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVBahia">
+    <title>Bahia.PB</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVBahia">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVBahia">
+    <title>TV Bahia</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVBahia">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVBahia">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVBahia">
+    <title>Bom Dia Bahia</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVBahia">
+    <title>Mais Bahia</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVBahia">
+    <title>Balanço Geral BA</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVBahia">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVBahia">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVBahia">
+    <title>Bahia.PB</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVBahia">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVBahia">
+    <title>TV Bahia</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVBahia">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVBahia">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVBahia">
+    <title>Bom Dia Bahia</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVBahia">
+    <title>Mais Bahia</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVBahia">
+    <title>Balanço Geral BA</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVBahia">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVBahia">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVBahia">
+    <title>Bahia.PB</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVBahia">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVBahia">
+    <title>TV Bahia</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVBahia">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVBahia">
+    <title>Jornal da Bahia</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVBahia">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVRural">
+    <title>Bom Dia RR</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVRural">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVRural">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVRural">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVRural">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVRural">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVRural">
+    <title>Jornal RR</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVRural">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVRural">
+    <title>Bom Dia RR</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVRural">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVRural">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVRural">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVRural">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVRural">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVRural">
+    <title>Jornal RR</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVRural">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVRural">
+    <title>Bom Dia RR</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVRural">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVRural">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVRural">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVRural">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVRural">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVRural">
+    <title>TV Rural</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVRural">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVRural">
+    <title>Jornal RR</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVRural">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="BomDiaCidadeRP">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="BomDiaCidadeRP">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="BomDiaCidadeRP">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Cidade</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="BomDiaCidadeRP">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="BomDiaCidadeRP">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="BomDiaCidadeRP">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Cidade</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="BomDiaCidadeRP">
+    <title>Bom Dia Cidade</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="BomDiaCidadeRP">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="BomDiaCidadeRP">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="BomDiaCidadeRP">
+    <title>Cidade</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="BomDiaCidadeRP">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal Cidade</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="BomDiaCidadeRP">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="EPTV1Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="EPTV1Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="EPTV1Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="EPTV1Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="EPTV1Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="EPTV1Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="EPTV1Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="EPTV1Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="EPTV1Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV 1</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="EPTV1Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="EPTV1Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="EPTV1Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="EPTV1Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="EPTV1Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="EPTV2Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV 2</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="EPTV2Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="EPTV2Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="EPTV2Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="EPTV2Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV 2</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="EPTV2Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="EPTV2Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="EPTV2Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="EPTV2Ribeirao">
+    <title>Bom Dia RP</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV 2</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="EPTV2Ribeirao">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="EPTV2Ribeirao">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="EPTV2Ribeirao">
+    <title>EPTV</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="EPTV2Ribeirao">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal EPTV</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="EPTV2Ribeirao">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="RBSPortoAlegre">
+    <title>Bom Dia Rio Grande</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Hoje</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Programa</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Hoje RS</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="RBSPortoAlegre">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="RBSPortoAlegre">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="RBSPortoAlegre">
+    <title>Esporte</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS TV</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="RBSPortoAlegre">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornalismo RBS</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="RBSPortoAlegre">
+    <title>Bom Dia Rio Grande</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Hoje</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Programa</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Hoje RS</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="RBSPortoAlegre">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="RBSPortoAlegre">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="RBSPortoAlegre">
+    <title>Esporte</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS TV</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="RBSPortoAlegre">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornalismo RBS</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="RBSPortoAlegre">
+    <title>Bom Dia Rio Grande</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Hoje</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS Programa</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Hoje RS</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="RBSPortoAlegre">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="RBSPortoAlegre">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="RBSPortoAlegre">
+    <title>Esporte</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="RBSPortoAlegre">
+    <title>RBS TV</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="RBSPortoAlegre">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornalismo RBS</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="RBSPortoAlegre">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="G1RS">
+    <title>Bom Dia RS</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="G1RS">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="G1RS">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="G1RS">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="G1RS">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="G1RS">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="G1RS">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="G1RS">
+    <title>Bom Dia RS</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="G1RS">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="G1RS">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="G1RS">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="G1RS">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="G1RS">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="G1RS">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="G1RS">
+    <title>Bom Dia RS</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="G1RS">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="G1RS">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="G1RS">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="G1RS">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="G1RS">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="G1RS">
+    <title>G1 RS</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="G1RS">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="NSCTV">
+    <title>Bom Dia SC</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="NSCTV">
+    <title>SC no Ar</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="NSCTV">
+    <title>NSC</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="NSCTV">
+    <title>Jornal Hoje SC</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="NSCTV">
+    <title>TN</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="NSCTV">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="NSCTV">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="NSCTV">
+    <title>Patrulha</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="NSCTV">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="NSCTV">
+    <title>NSC TV</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="NSCTV">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="NSCTV">
+    <title>Jornal da NSC</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="NSCTV">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="NSCTV">
+    <title>Bom Dia SC</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="NSCTV">
+    <title>SC no Ar</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="NSCTV">
+    <title>NSC</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="NSCTV">
+    <title>Jornal Hoje SC</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="NSCTV">
+    <title>TN</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="NSCTV">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="NSCTV">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="NSCTV">
+    <title>Patrulha</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="NSCTV">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="NSCTV">
+    <title>NSC TV</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="NSCTV">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="NSCTV">
+    <title>Jornal da NSC</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="NSCTV">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="NSCTV">
+    <title>Bom Dia SC</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="NSCTV">
+    <title>SC no Ar</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="NSCTV">
+    <title>NSC</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="NSCTV">
+    <title>Jornal Hoje SC</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="NSCTV">
+    <title>TN</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="NSCTV">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="NSCTV">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="NSCTV">
+    <title>Patrulha</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="NSCTV">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="NSCTV">
+    <title>NSC TV</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="NSCTV">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="NSCTV">
+    <title>Jornal da NSC</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="NSCTV">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVVerdesMares">
+    <title>Bom Dia Verdes Mares</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVVerdesMares">
+    <title>Mais Verdes Mares</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVVerdesMares">
+    <title>Balanço Geral</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVVerdesMares">
+    <title>TVM</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVVerdesMares">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVVerdesMares">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVVerdesMares">
+    <title>DE</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVVerdesMares">
+    <title>Verdes Mares</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVVerdesMares">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Verdes Mares</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVVerdesMares">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVVerdesMares">
+    <title>Bom Dia Verdes Mares</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVVerdesMares">
+    <title>Mais Verdes Mares</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVVerdesMares">
+    <title>Balanço Geral</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVVerdesMares">
+    <title>TVM</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVVerdesMares">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVVerdesMares">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVVerdesMares">
+    <title>DE</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVVerdesMares">
+    <title>Verdes Mares</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVVerdesMares">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Verdes Mares</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVVerdesMares">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVVerdesMares">
+    <title>Bom Dia Verdes Mares</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVVerdesMares">
+    <title>Mais Verdes Mares</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVVerdesMares">
+    <title>Balanço Geral</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVVerdesMares">
+    <title>TVM</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVVerdesMares">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVVerdesMares">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVVerdesMares">
+    <title>DE</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVVerdesMares">
+    <title>Verdes Mares</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVVerdesMares">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVVerdesMares">
+    <title>Jornal Verdes Mares</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVVerdesMares">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="GloboEsporteBA">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="GloboEsporteBA">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="GloboEsporteBA">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="GloboEsporteBA">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="GloboEsporteBA">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="GloboEsporteBA">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="GloboEsporteBA">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="GloboEsporteBA">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="GloboEsporteBA">
+    <title>Bom Dia Brasil</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="GloboEsporteBA">
+    <title>Mais Você</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="GloboEsporteBA">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="GloboEsporteBA">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="GloboEsporteBA">
+    <title>Globo Esporte</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="GloboEsporteBA">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVGazetaES">
+    <title>Bom Dia ES</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVGazetaES">
+    <title>Mais ES</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVGazetaES">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVGazetaES">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVGazetaES">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVGazetaES">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVGazetaES">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVGazetaES">
+    <title>Jornal ES</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVGazetaES">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVGazetaES">
+    <title>Bom Dia ES</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVGazetaES">
+    <title>Mais ES</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVGazetaES">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVGazetaES">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVGazetaES">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVGazetaES">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVGazetaES">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVGazetaES">
+    <title>Jornal ES</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVGazetaES">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVGazetaES">
+    <title>Bom Dia ES</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVGazetaES">
+    <title>Mais ES</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVGazetaES">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVGazetaES">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVGazetaES">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVGazetaES">
+    <title>TVGazeta</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVGazetaES">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVGazetaES">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVGazetaES">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVGazetaES">
+    <title>Jornal ES</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVGazetaES">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVGazetaAlagoas">
+    <title>Bom Dia Gazeta</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVGazetaAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVGazetaAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVGazetaAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Gazeta</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVGazetaAlagoas">
+    <title>Bom Dia Gazeta</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVGazetaAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVGazetaAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVGazetaAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Gazeta</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVGazetaAlagoas">
+    <title>Bom Dia Gazeta</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVGazetaAlagoas">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVGazetaAlagoas">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVGazetaAlagoas">
+    <title>TV Gazeta</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVGazetaAlagoas">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal Gazeta</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVGazetaAlagoas">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVIntegração">
+    <title>Bom Dia MG</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVIntegração">
+    <title>Mais Minas</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVIntegração">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVIntegração">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVIntegração">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVIntegração">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVIntegração">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVIntegração">
+    <title>Jornal Integração</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVIntegração">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVIntegração">
+    <title>Bom Dia MG</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVIntegração">
+    <title>Mais Minas</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVIntegração">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVIntegração">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVIntegração">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVIntegração">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVIntegração">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVIntegração">
+    <title>Jornal Integração</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVIntegração">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVIntegração">
+    <title>Bom Dia MG</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVIntegração">
+    <title>Mais Minas</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVIntegração">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVIntegração">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVIntegração">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVIntegração">
+    <title>Integração</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVIntegração">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVIntegração">
+    <title>TV Integração</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVIntegração">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVIntegração">
+    <title>Jornal Integração</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVIntegração">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVPantanal">
+    <title>Bom Dia MS</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVPantanal">
+    <title>Mais MS</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVPantanal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVPantanal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVPantanal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVPantanal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVPantanal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVPantanal">
+    <title>Jornal MS</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVPantanal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVPantanal">
+    <title>Bom Dia MS</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVPantanal">
+    <title>Mais MS</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVPantanal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVPantanal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVPantanal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVPantanal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVPantanal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVPantanal">
+    <title>Jornal MS</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVPantanal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVPantanal">
+    <title>Bom Dia MS</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVPantanal">
+    <title>Mais MS</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVPantanal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVPantanal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVPantanal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVPantanal">
+    <title>Pantanal</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVPantanal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVPantanal">
+    <title>TV Pantanal</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVPantanal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVPantanal">
+    <title>Jornal MS</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVPantanal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="RedeAmazonica">
+    <title>Bom Dia Amazonas</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="RedeAmazonica">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="RedeAmazonica">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="RedeAmazonica">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Amazonas</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="RedeAmazonica">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="RedeAmazonica">
+    <title>Bom Dia Amazonas</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="RedeAmazonica">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="RedeAmazonica">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="RedeAmazonica">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Amazonas</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="RedeAmazonica">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="RedeAmazonica">
+    <title>Bom Dia Amazonas</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="RedeAmazonica">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="RedeAmazonica">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="RedeAmazonica">
+    <title>Amazonia</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="RedeAmazonica">
+    <title>Rede Amazônica</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="RedeAmazonica">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="RedeAmazonica">
+    <title>Jornal Amazonas</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="RedeAmazonica">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVLiberal">
+    <title>Bom Dia Pará</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVLiberal">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVLiberal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVLiberal">
+    <title>TLC</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVLiberal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVLiberal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVLiberal">
+    <title>Brasil</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVLiberal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVLiberal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVLiberal">
+    <title>Jornal Liberal</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVLiberal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVLiberal">
+    <title>Bom Dia Pará</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVLiberal">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVLiberal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVLiberal">
+    <title>TLC</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVLiberal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVLiberal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVLiberal">
+    <title>Brasil</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVLiberal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVLiberal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVLiberal">
+    <title>Jornal Liberal</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVLiberal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVLiberal">
+    <title>Bom Dia Pará</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVLiberal">
+    <title>Rural</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVLiberal">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVLiberal">
+    <title>TLC</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVLiberal">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVLiberal">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVLiberal">
+    <title>Brasil</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVLiberal">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVLiberal">
+    <title>TV Liberal</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVLiberal">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVLiberal">
+    <title>Jornal Liberal</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVLiberal">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031006000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031006000000 -0300" stop="2026031007000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031008000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031008000000 -0300" stop="2026031009000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031010000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031010000000 -0300" stop="2026031011000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031014000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031014000000 -0300" stop="2026031015000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031016000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031016000000 -0300" stop="2026031017000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031018000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031018000000 -0300" stop="2026031019000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031023000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031023000000 -0300" stop="2026031104000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031106000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031106000000 -0300" stop="2026031107000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031108000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031108000000 -0300" stop="2026031109000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031110000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031110000000 -0300" stop="2026031111000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031114000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031114000000 -0300" stop="2026031115000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031116000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031116000000 -0300" stop="2026031117000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031118000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031118000000 -0300" stop="2026031119000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031123000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031123000000 -0300" stop="2026031204000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031206000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031206000000 -0300" stop="2026031207000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031208000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031208000000 -0300" stop="2026031209000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031210000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031210000000 -0300" stop="2026031211000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031214000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031214000000 -0300" stop="2026031215000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031216000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031216000000 -0300" stop="2026031217000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031218000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031218000000 -0300" stop="2026031219000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031223000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031223000000 -0300" stop="2026031304000000 -0300" channel="CBNSaoPaulo">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031006000000 -0300" channel="CBNRio">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031006000000 -0300" stop="2026031007000000 -0300" channel="CBNRio">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031008000000 -0300" channel="CBNRio">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031008000000 -0300" stop="2026031009000000 -0300" channel="CBNRio">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031010000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031010000000 -0300" stop="2026031011000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031014000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031014000000 -0300" stop="2026031015000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031016000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031016000000 -0300" stop="2026031017000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031018000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031018000000 -0300" stop="2026031019000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031023000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031023000000 -0300" stop="2026031104000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031106000000 -0300" channel="CBNRio">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031106000000 -0300" stop="2026031107000000 -0300" channel="CBNRio">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031108000000 -0300" channel="CBNRio">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031108000000 -0300" stop="2026031109000000 -0300" channel="CBNRio">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031110000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031110000000 -0300" stop="2026031111000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031114000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031114000000 -0300" stop="2026031115000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031116000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031116000000 -0300" stop="2026031117000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031118000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031118000000 -0300" stop="2026031119000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031123000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031123000000 -0300" stop="2026031204000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031206000000 -0300" channel="CBNRio">
+    <title>CBN Noite</title>
+  </programme>
+  <programme start="2026031206000000 -0300" stop="2026031207000000 -0300" channel="CBNRio">
+    <title>CBN Madrugada</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031208000000 -0300" channel="CBNRio">
+    <title>CBN Prime</title>
+  </programme>
+  <programme start="2026031208000000 -0300" stop="2026031209000000 -0300" channel="CBNRio">
+    <title>CBN Exec</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031210000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031210000000 -0300" stop="2026031211000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031214000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031214000000 -0300" stop="2026031215000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031216000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031216000000 -0300" stop="2026031217000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031218000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031218000000 -0300" stop="2026031219000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031223000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+  <programme start="2026031223000000 -0300" stop="2026031304000000 -0300" channel="CBNRio">
+    <title>CBN</title>
+  </programme>
+</tv>
