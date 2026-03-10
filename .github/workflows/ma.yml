@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          melhore a lista frança.m3u, nao quero nada ficticio e sem testar
+          melhore a lista cuba.m3u, nao quero nada ficticio e sem testar
           "
 
       - name: Save result
