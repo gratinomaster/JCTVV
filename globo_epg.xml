@@ -33,6 +33,9 @@
   <channel id="NSCTV">
     <display-name>NSC TV</display-name>
   </channel>
+  <channel id="TVVanguarda">
+    <display-name>TV Vanguarda</display-name>
+  </channel>
   <channel id="TVVerdesMares">
     <display-name>TV Verdes Mares</display-name>
   </channel>
@@ -1249,7 +1252,7 @@
     <title>SC no Ar</title>
   </programme>
   <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="NSCTV">
-    <title> NSC</title>
+    <title>NSC</title>
   </programme>
   <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="NSCTV">
     <title>Jornal Hoje SC</title>
@@ -1288,7 +1291,7 @@
     <title>SC no Ar</title>
   </programme>
   <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="NSCTV">
-    <title> NSC</title>
+    <title>NSC</title>
   </programme>
   <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="NSCTV">
     <title>Jornal Hoje SC</title>
@@ -1327,7 +1330,7 @@
     <title>SC no Ar</title>
   </programme>
   <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="NSCTV">
-    <title> NSC</title>
+    <title>NSC</title>
   </programme>
   <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="NSCTV">
     <title>Jornal Hoje SC</title>
@@ -1357,6 +1360,123 @@
     <title>Jornal da NSC</title>
   </programme>
   <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="NSCTV">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVVanguarda">
+    <title>Bom Dia Diário</title>
+  </programme>
+  <programme start="2026031007000000 -0300" stop="2026031009000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031009000000 -0300" stop="2026031011000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031011000000 -0300" stop="2026031012000000 -0300" channel="TVVanguarda">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031012000000 -0300" stop="2026031013000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031013000000 -0300" stop="2026031015000000 -0300" channel="TVVanguarda">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031015000000 -0300" stop="2026031017000000 -0300" channel="TVVanguarda">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031017000000 -0300" stop="2026031019000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031019000000 -0300" stop="2026031020000000 -0300" channel="TVVanguarda">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031020000000 -0300" stop="2026031021000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031021000000 -0300" stop="2026031022000000 -0300" channel="TVVanguarda">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031022000000 -0300" stop="2026031100000000 -0300" channel="TVVanguarda">
+    <title>Jornal Vanguarda</title>
+  </programme>
+  <programme start="2026031000000000 -0300" stop="2026031004000000 -0300" channel="TVVanguarda">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031105000000 -0300" stop="2026031107000000 -0300" channel="TVVanguarda">
+    <title>Bom Dia Diário</title>
+  </programme>
+  <programme start="2026031107000000 -0300" stop="2026031109000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031109000000 -0300" stop="2026031111000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031111000000 -0300" stop="2026031112000000 -0300" channel="TVVanguarda">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031112000000 -0300" stop="2026031113000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031113000000 -0300" stop="2026031115000000 -0300" channel="TVVanguarda">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031115000000 -0300" stop="2026031117000000 -0300" channel="TVVanguarda">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031117000000 -0300" stop="2026031119000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031119000000 -0300" stop="2026031120000000 -0300" channel="TVVanguarda">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031120000000 -0300" stop="2026031121000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031121000000 -0300" stop="2026031122000000 -0300" channel="TVVanguarda">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031122000000 -0300" stop="2026031200000000 -0300" channel="TVVanguarda">
+    <title>Jornal Vanguarda</title>
+  </programme>
+  <programme start="2026031100000000 -0300" stop="2026031104000000 -0300" channel="TVVanguarda">
+    <title>Jornal da Globo</title>
+  </programme>
+  <programme start="2026031205000000 -0300" stop="2026031207000000 -0300" channel="TVVanguarda">
+    <title>Bom Dia Diário</title>
+  </programme>
+  <programme start="2026031207000000 -0300" stop="2026031209000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031209000000 -0300" stop="2026031211000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031211000000 -0300" stop="2026031212000000 -0300" channel="TVVanguarda">
+    <title>Jornal Hoje</title>
+  </programme>
+  <programme start="2026031212000000 -0300" stop="2026031213000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031213000000 -0300" stop="2026031215000000 -0300" channel="TVVanguarda">
+    <title>Novela</title>
+  </programme>
+  <programme start="2026031215000000 -0300" stop="2026031217000000 -0300" channel="TVVanguarda">
+    <title>Vale a Pena Ver de Novo</title>
+  </programme>
+  <programme start="2026031217000000 -0300" stop="2026031219000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031219000000 -0300" stop="2026031220000000 -0300" channel="TVVanguarda">
+    <title>Jornal Nacional</title>
+  </programme>
+  <programme start="2026031220000000 -0300" stop="2026031221000000 -0300" channel="TVVanguarda">
+    <title>Vanguarda</title>
+  </programme>
+  <programme start="2026031221000000 -0300" stop="2026031222000000 -0300" channel="TVVanguarda">
+    <title>Globo Rural</title>
+  </programme>
+  <programme start="2026031222000000 -0300" stop="2026031300000000 -0300" channel="TVVanguarda">
+    <title>Jornal Vanguarda</title>
+  </programme>
+  <programme start="2026031200000000 -0300" stop="2026031204000000 -0300" channel="TVVanguarda">
     <title>Jornal da Globo</title>
   </programme>
   <programme start="2026031005000000 -0300" stop="2026031007000000 -0300" channel="TVVerdesMares">

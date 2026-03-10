@@ -7,6 +7,8 @@ from datetime import datetime, timedelta
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
+import json
+
 options = Options()
 options.add_argument("--headless")
 options.add_argument("--no-sandbox")
@@ -15,12 +17,22 @@ options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
 LOCAL_EPG_FILE = "globo_epg.xml"
+LOCAL_PROGRAMS_FILE = "globo_programs.json"
 
 CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/4613774": "TVGlobo",
     "globoplay.globo.com/ao-vivo/7689934": "TVGlobo",
     "globoplay.globo.com/ao-vivo/7690141": "TVGlobo",
     "globoplay.globo.com/ao-vivo/7813174": "TVGlobo",
+    "globoplay.globo.com/ao-vivo/7813173": "TVGlobo",
+    "globoplay.globo.com/v/12749215": "TVGlobo",
+    "globoplay.globo.com/v/1328766": "TVGlobo",
+    "globoplay.globo.com/v/1467373": "TVGlobo",
+    "globoplay.globo.com/v/4064559": "TVGlobo",
+    "globoplay.globo.com/v/5472979": "TVGlobo",
+    "globoplay.globo.com/v/992055": "TVGlobo",
+    "globoplay.globo.com/v/602497": "TVGlobo",
+    "globoplay.globo.com/v/8713568": "TVGlobo",
     "g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas": "EPTV1Campinas",
     "globoplay.globo.com/ao-vivo/14164032": "TVAlagoas",
     "globoplay.globo.com/ao-vivo/2134039": "TVBahia",
@@ -33,466 +45,49 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/2135579": "RBSPortoAlegre",
     "globoplay.globo.com/v/6120663": "G1RS",
     "globoplay.globo.com/v/2145544": "NSCTV",
+    "globoplay.globo.com/ao-vivo/10865071": "TVVanguarda",
     "globoplay.globo.com/v/4039160": "TVVerdesMares",
     "globoplay.globo.com/v/6329086": "GloboEsporteBA",
     "globoplay.globo.com/v/11999480": "TVGazetaES",
     "g1.globo.com/al/alagoas/ao-vivo/assista-aos-telejornais-da-tv-gazeta": "TVGazetaAlagoas",
+    "globoplay.globo.com/ao-vivo/3667427": "TVIntegração",
     "globoplay.globo.com/v/4218681": "TVIntegração",
+    "globoplay.globo.com/v/12945385": "TVIntegração",
     "globoplay.globo.com/v/3065772": "TVPantanal",
     "g1.globo.com/am/amazonas/ao-vivo/assista-aos-telejornais-da-rede-amazonica": "RedeAmazonica",
+    "globoplay.globo.com/v/2923579": "RedeAmazonica",
+    "globoplay.globo.com/v/2923546": "RedeAmazonica",
     "globoplay.globo.com/v/2168377": "TVLiberal",
     "globoplay.globo.com/v/10747444": "CBNSaoPaulo",
     "globoplay.globo.com/v/10740500": "CBNRio",
 }
 
-CHANNEL_PROGRAMS = {
-    "TVGlobo": {
-        "name": "TV Globo",
-        "programs": [
-            ("05:00", "Bom Dia Brasil"),
-            ("07:00", "Mais Você"),
-            ("09:00", "Vídeo Show"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Globonews"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "SBT Brasil"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "Novela das 8"),
-            ("21:30", "Globo Rural"),
-            ("22:00", "Big Brother Brasil"),
-            ("00:00", "Jornal da Globo"),
-            ("01:00", "Passarela"),
-        ]
-    },
-    "TVBahia": {
-        "name": "TV Bahia",
-        "programs": [
-            ("05:00", "Bom Dia Bahia"),
-            ("07:00", "Mais Bahia"),
-            ("09:00", "Balanço Geral BA"),
-            ("11:00", "Jornal da Bahia"),
-            ("12:00", "Jornal da Bahia"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Bahia.PB"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Bahia"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal da Bahia"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVVerdesMares": {
-        "name": "TV Verdes Mares",
-        "programs": [
-            ("05:00", "Bom Dia Verdes Mares"),
-            ("07:00", "Mais Verdes Mares"),
-            ("09:00", "Balanço Geral"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "TVM"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "DE"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "Verdes Mares"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Verdes Mares"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "NSCTV": {
-        "name": "NSC TV",
-        "programs": [
-            ("05:00", "Bom Dia SC"),
-            ("07:00", "SC no Ar"),
-            ("09:00", " NSC"),
-            ("11:00", "Jornal Hoje SC"),
-            ("12:00", "TN"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Patrulha"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "NSC TV"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal da NSC"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "RBSPortoAlegre": {
-        "name": "RBS TV",
-        "programs": [
-            ("05:00", "Bom Dia Rio Grande"),
-            ("07:00", "RBS Hoje"),
-            ("09:00", "RBS Programa"),
-            ("11:00", "Jornal Hoje RS"),
-            ("12:00", "RBS"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Esporte"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "RBS TV"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornalismo RBS"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "EPTV1Campinas": {
-        "name": "EPTV 1ª Edição",
-        "programs": [
-            ("05:00", "Bom Dia Campinas"),
-            ("07:00", "EPTV 1"),
-            ("09:00", "Cidade"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "EPTV"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Cidade"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "EPTV"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal EPTV"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVLiberal": {
-        "name": "TV Liberal",
-        "programs": [
-            ("05:00", "Bom Dia Pará"),
-            ("07:00", "Rural"),
-            ("09:00", "TV Liberal"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "TLC"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Brasil"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Liberal"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Liberal"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "RedeAmazonica": {
-        "name": "Rede Amazônica",
-        "programs": [
-            ("05:00", "Bom Dia Amazonas"),
-            ("07:00", "Rede Amazônica"),
-            ("09:00", "Amazonia"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Rede Amazônica"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Amazonia"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "Rede Amazônica"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Amazonas"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "CBNSaoPaulo": {
-        "name": "CBN São Paulo",
-        "programs": [
-            ("05:00", "CBN Noite"),
-            ("06:00", "CBN Madrugada"),
-            ("07:00", "CBN Prime"),
-            ("08:00", "CBN Exec"),
-            ("09:00", "CBN"),
-            ("10:00", "CBN"),
-            ("11:00", "CBN"),
-            ("12:00", "CBN"),
-            ("13:00", "CBN"),
-            ("14:00", "CBN"),
-            ("15:00", "CBN"),
-            ("16:00", "CBN"),
-            ("17:00", "CBN"),
-            ("18:00", "CBN"),
-            ("19:00", "CBN"),
-            ("20:00", "CBN"),
-            ("21:00", "CBN"),
-            ("22:00", "CBN"),
-            ("23:00", "CBN"),
-        ]
-    },
-    "CBNRio": {
-        "name": "CBN Rio",
-        "programs": [
-            ("05:00", "CBN Noite"),
-            ("06:00", "CBN Madrugada"),
-            ("07:00", "CBN Prime"),
-            ("08:00", "CBN Exec"),
-            ("09:00", "CBN"),
-            ("10:00", "CBN"),
-            ("11:00", "CBN"),
-            ("12:00", "CBN"),
-            ("13:00", "CBN"),
-            ("14:00", "CBN"),
-            ("15:00", "CBN"),
-            ("16:00", "CBN"),
-            ("17:00", "CBN"),
-            ("18:00", "CBN"),
-            ("19:00", "CBN"),
-            ("20:00", "CBN"),
-            ("21:00", "CBN"),
-            ("22:00", "CBN"),
-            ("23:00", "CBN"),
-        ]
-    },
-    "TVAlagoas": {
-        "name": "TV Alagoas",
-        "programs": [
-            ("05:00", "Bom Dia Alagoas"),
-            ("07:00", "Mais Alagoas"),
-            ("09:00", "TV Alagoas"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "ABTV"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "ABTV"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Alagoas"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Alagoas"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVGazetaES": {
-        "name": "TV Gazeta ES",
-        "programs": [
-            ("05:00", "Bom Dia ES"),
-            ("07:00", "Mais ES"),
-            ("09:00", "TV Gazeta"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "TVGazeta"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "TVGazeta"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Gazeta"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal ES"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVGazetaAlagoas": {
-        "name": "TV Gazeta Alagoas",
-        "programs": [
-            ("05:00", "Bom Dia Gazeta"),
-            ("07:00", "TV Gazeta"),
-            ("09:00", "TV Gazeta"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "TV Gazeta"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "TV Gazeta"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Gazeta"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Gazeta"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVIntegração": {
-        "name": "TV Integração",
-        "programs": [
-            ("05:00", "Bom Dia MG"),
-            ("07:00", "Mais Minas"),
-            ("09:00", "TV Integração"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Integração"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Integração"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Integração"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Integração"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVPantanal": {
-        "name": "TV Pantanal",
-        "programs": [
-            ("05:00", "Bom Dia MS"),
-            ("07:00", "Mais MS"),
-            ("09:00", "TV Pantanal"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Pantanal"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Pantanal"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Pantanal"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal MS"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "TVRural": {
-        "name": "TV Rural",
-        "programs": [
-            ("05:00", "Bom Dia RR"),
-            ("07:00", "TV Rural"),
-            ("09:00", "TV Rural"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Rural"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Rural"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "TV Rural"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal RR"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "BDAP": {
-        "name": "BDAP",
-        "programs": [
-            ("05:00", "Bom Dia AP"),
-            ("07:00", "BDAP"),
-            ("09:00", "BDAP"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "BDAP"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "BDAP"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "BDAP"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal AP"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "GR2Petrolina": {
-        "name": "GR2 Petrolina",
-        "programs": [
-            ("05:00", "Bom Dia PE"),
-            ("07:00", "GR2"),
-            ("09:00", "GR2"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "GR2"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "GR2"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "GR2"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal PE"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "GloboEsporteBA": {
-        "name": "Globo Esporte BA",
-        "programs": [
-            ("05:00", "Bom Dia Brasil"),
-            ("07:00", "Mais Você"),
-            ("09:00", "Globo Esporte"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Globo Esporte"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Globo Esporte"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "Globo Esporte"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Globo Esporte"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "G1RS": {
-        "name": "G1 RS",
-        "programs": [
-            ("05:00", "Bom Dia RS"),
-            ("07:00", "G1 RS"),
-            ("09:00", "G1 RS"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "G1 RS"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "G1 RS"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "G1 RS"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "G1 RS"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "BomDiaCidadeRP": {
-        "name": "Bom Dia Cidade RP",
-        "programs": [
-            ("05:00", "Bom Dia Cidade"),
-            ("07:00", "Bom Dia Cidade"),
-            ("09:00", "Cidade"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "Cidade"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "Cidade"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "Cidade"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal Cidade"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "EPTV1Ribeirao": {
-        "name": "EPTV 1ª Edição RP",
-        "programs": [
-            ("05:00", "Bom Dia RP"),
-            ("07:00", "EPTV 1"),
-            ("09:00", "EPTV"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "EPTV"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "EPTV"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "EPTV"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal EPTV"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-    "EPTV2Ribeirao": {
-        "name": "EPTV 2ª Edição",
-        "programs": [
-            ("05:00", "Bom Dia RP"),
-            ("07:00", "EPTV 2"),
-            ("09:00", "EPTV"),
-            ("11:00", "Jornal Hoje"),
-            ("12:00", "EPTV"),
-            ("13:00", "Novela"),
-            ("15:00", "Vale a Pena Ver de Novo"),
-            ("17:00", "EPTV"),
-            ("19:00", "Jornal Nacional"),
-            ("20:00", "EPTV"),
-            ("21:00", "Globo Rural"),
-            ("22:00", "Jornal EPTV"),
-            ("00:00", "Jornal da Globo"),
-        ]
-    },
-}
-
 DEFAULT_PROGRAM = {
     "name": "Programação Globo",
     "programs": [
-        ("05:00", "Globo"),
-        ("07:00", "Globo"),
-        ("09:00", "Globo"),
-        ("11:00", "Jornal Hoje"),
-        ("12:00", "Globo"),
-        ("13:00", "Novela"),
-        ("15:00", "Vale a Pena Ver de Novo"),
-        ("17:00", "Globo"),
-        ("19:00", "Jornal Nacional"),
-        ("20:00", "Novela das 8"),
-        ("21:00", "Globo Rural"),
-        ("22:00", "Globo"),
-        ("00:00", "Jornal da Globo"),
+        ["05:00", "Globo"],
+        ["07:00", "Globo"],
+        ["09:00", "Globo"],
+        ["11:00", "Jornal Hoje"],
+        ["12:00", "Globo"],
+        ["13:00", "Novela"],
+        ["15:00", "Vale a Pena Ver de Novo"],
+        ["17:00", "Globo"],
+        ["19:00", "Jornal Nacional"],
+        ["20:00", "Novela das 8"],
+        ["21:00", "Globo Rural"],
+        ["22:00", "Globo"],
+        ["00:00", "Jornal da Globo"],
     ]
 }
+
+def load_channel_programs():
+    try:
+        with open(LOCAL_PROGRAMS_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Arquivo {LOCAL_PROGRAMS_FILE} não encontrado. Usando programa padrão.")
+        return {}
 
 def get_tvg_id(url):
     for key, tvg_id in CHANNEL_TVG_IDS.items():
@@ -512,6 +107,8 @@ def generate_epg_xml():
         if tvg_id not in channel_data:
             channel_data[tvg_id] = True
     
+    CHANNEL_PROGRAMS = load_channel_programs()
+    
     for tvg_id in channel_data.keys():
         channel_elem = ET.SubElement(root, 'channel')
         channel_elem.set('id', tvg_id)
@@ -528,7 +125,9 @@ def generate_epg_xml():
             current_date = base_date + timedelta(days=day_offset)
             date_str = current_date.strftime("%Y%m%d")
             
-            for i, (time_str, title) in enumerate(programs_list):
+            for i, prog in enumerate(programs_list):
+                time_str = prog[0]
+                title = prog[1]
                 start_time = f"{date_str}{time_str.replace(':', '')}0000 -0300"
                 
                 if i + 1 < len(programs_list):
