@@ -1,5 +1,22 @@
 #EXTM3U
-#EXTINF:-1 group-title="GLOBO AO VIVO" tvg-logo="https://s02.video.glbimg.com/x720/2923579.jpg",AO VIVO: Assista ao JAP1 desta terça (10)
-https://vodstreaming01.video.globo.com/h/05024928224027200761959349282241472952605535lQnSMSXmz7u6snPg3--SKw/k/ads/r240_1080/l/v0/44/b8/1b/14392036_1b92d66f70b99545d7dc1afb2baf35da63885ac3/14392036-f3xd6zg-manifest.ism/14392036.m3u8
-#EXTINF:-1 group-title="GLOBO AO VIVO" tvg-logo="https://s02.video.glbimg.com/x720/2168377.jpg",AO VIVO: Assista aos telejornais da TV Liberal
-https://live-as-02-22.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJVUyIsImRvbWFpbiI6ImxpdmUtYXMtMDItMjIudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzczMTgxMjUwLCJpYXQiOjE3NzMxNTk2NTAsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiIiwicGF0aCI6Ii9saXZlL2YoYk1pbj0zMTM5ODQpL3R2bGliZXJhbC9wbGF5bGlzdC5tM3U4In0.xNtSV_C89hV8xwc_qG4ABIE3GJVZbtx9EQ9dGEolWRBena7YqJoPVdyR_xI0FmdNPxK6sIPKmwDh9xjGTqhzNbXQ0-orwChFepb-hyE3hFi3KEtuWSUWQj48l4PqGgsv_5RKa3pTL5Z1clo3XHpEiJc8KQVID4pjDeocxaRM6veeu1vb5wWWxE0XKBu71H45iYYdkXKZKMR1M94AU9k7pYkJLtroFDfsvWhBqIz-U5Y3smkQH1AHFEzHy4cwGR56pPt5MAqFg0pw6lf9nh5K9g9Ig0t7aBah5LB09yutbS3VfuLn9589JveyinmsgdEN_OKj8KFXZmmBGkwQSbhlgw/live/f(bMin=313984)/tvliberal/playlist.m3u8
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",ITUB4 - Itaú
+#Ações mais recomendadas para março 2026 (InfoMoney, Valor, BTG Pactual)
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",AXIA3 - Axia
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",JBSS3 - JBS
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",PSSA3 - Porto
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",HYPE3 - Hypera
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",CMIG4 - Cemig
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",IGTI11 - Iguatemi
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",B3SA3 - B3
+#EXTINF:-1 group-title="AÇÕES B3" tvg-logo="https://www.b3.com.br/images/logo.png",ITSA4 - Itaúsa
+#EXTINF:-1 group-title="DÓLAR" tvg-logo="https://www.bcb.gov.br/images/dolar.png",USD/BRL - Projeção R$ 5,42
+#Projeção Focus março 2026: R$ 5,42 para fim de 2026
+#EXTINF:-1 group-title="ETFS" tvg-logo="https://www.b3.com.br/images/logo.png",BOVA11 - ETF Ibovespa
+#EXTINF:-1 group-title="ETFS" tvg-logo="https://www.b3.com.br/images/logo.png",XPLG11 - ETF Light
+#EXTINF:-1 group-title="ETFS" tvg-logo="https://www.b3.com.br/images/logo.png",SMAL11 - ETF Small Caps
+#EXTINF:-1 group-title="ETFS" tvg-logo="https://www.b3.com.br/images/logo.png",IVVB11 - ETF S&P 500
+#EXTINF:-1 group-title="ETFS" tvg-logo="https://www.b3.com.br/images/logo.png",BDRX11 - ETF Global
+#EXTINF:-1 group-title="CENÁRIO" tvg-logo="https://www.b3.com.br/images/logo.png",CENÁRIO MARÇO 2026
+#Ibovespa: alta de 17% YTD, expectativa de corte na Selic
+#Projeção Ibovespa 2026: 196 mil pontos (XP)
+#Atenção: tensão EUA-Irã eleva volatilidade no curto prazo
