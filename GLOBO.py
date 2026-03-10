@@ -116,7 +116,13 @@ def extract_globoplay_data(url):
     
     return title, m3u8_url, thumbnail_url
 
+# URL do EPG para canais brasileiros
+EPG_URL = "http://i.ontvbr.me/EPG"
+
 with open("lista1.m3u", "w") as output_file:
+    # Escrever o cabeçalho com a URL do EPG
+    output_file.write(f'#EXTM3U x-tvg-url="{EPG_URL}"\n')
+    
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         future_to_url = {executor.submit(extract_globoplay_data, url): url for url in globoplay_urls}
         for future in concurrent.futures.as_completed(future_to_url):
