@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          consegue acessar meus outros repositorios?
+          melhore a lista outros.m3u
           "
 
       - name: Save result
