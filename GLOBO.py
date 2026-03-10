@@ -9,6 +9,7 @@ import json
 import urllib.request
 import gzip
 import shutil
+import os
 
 options = Options()
 options.add_argument("--headless")
@@ -18,9 +19,34 @@ options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
 LOCAL_EPG_FILE = "globo_epg.xml"
-LOCAL_PROGRAMS_FILE = "globo_programs.json"
+LOCAL_EPG_REGIONAL_FILE = "globo_epg_regional.xml"
 EPG_ONLINE_URL = "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml"
 EPG_ONLINE_FILE = "globo_epg_online.xml"
+
+NATIONAL_CHANNELS = [
+    "tv-globo", "globonews", "gnt", "multishow", "gloob", "gloobinho", "ge-tv",
+    "bis", "canal-brasil", "canal-off", "combate", "premiere", "sportv",
+    "sportv-2", "sportv-3", "megapix", "telecine-action", "telecine-cult",
+    "telecine-fun", "telecine-pipoca", "telecine-premium", "telecine-touch",
+    "universal", "studio-universal", "futura", "usa", "dpa-fast", "malhacao-fast",
+    "receitas-fast", "modo-viagem", "globoplay-novelas"
+]
+
+REGIONAL_EPG_URLS = {
+    "eptv-campinas": "https://redeglobo.globo.com/sp/eptv/campinas/programacao/",
+    "eptv-ribeirao": "https://redeglobo.globo.com/sp/eptv/ribeirao-preto/programacao/",
+    "rbs-porto-alegre": "https://redeglobo.globo.com/rs/rbstvrs/programacao/",
+    "nsc-tv": "https://redeglobo.globo.com/sc/nsctv/programacao/",
+    "tv-verdes-mares": "https://redeglobo.globo.com/ce/tvverdesmares/programacao/",
+    "tv-globo-ba": "https://redeglobo.globo.com/ba/tvbahia/programacao/",
+    "tv-globo-al": "https://redeglobo.globo.com/al/tvgazetaal/programacao/",
+    "rede-amazonica": "https://redeglobo.globo.com/am/redeamazonica/programacao/",
+    "tv-liberal": "https://redeglobo.globo.com/pa/tvliberal/programacao/",
+    "tv-gazeta-es": "https://redeglobo.globo.com/es/tvgazetaes/programacao/",
+    "tv-integracao": "https://redeglobo.globo.com/mg/tvintegracao/programacao/",
+    "tv-vanguarda": "https://redeglobo.globo.com/sp/tvvanguarda/programacao/",
+    "tv-pantanal": "https://redeglobo.globo.com/ms/tvpantanal/programacao/",
+}
 
 CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/4613774": "tv-globo",
@@ -65,380 +91,36 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/10740500": "cbn-rio",
 }
 
-REGIONAL_CHANNELS = {
-    "eptv-campinas": {
-        "name": "EPTV Campinas",
-        "programs": [
-            ["05:00", "Copa Neoenergia"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Jornal da Globo"],
-            ["14:00", "Novela"],
-            ["16:00", "Vale a Pena Ver de Novo"],
-            ["18:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Hora 1"],
-        ]
-    },
-    "tv-globo-al": {
-        "name": "TV Globo Alagoas",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-globo-ba": {
-        "name": "TV Bahia",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Bahia No Ar"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Bahia No Ar"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-globo-rr": {
-        "name": "TV Rural",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "eptv-ribeirao": {
-        "name": "EPTV Ribeirão Preto",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Bom Dia Cidade"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "eptv-ribeirao-2": {
-        "name": "EPTV 2ª Edição",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "rbs-porto-alegre": {
-        "name": "RBS TV Porto Alegre",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "g1-rs": {
-        "name": "G1 RS",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "nsc-tv": {
-        "name": "NSC TV",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-vanguarda": {
-        "name": "TV Vanguarda",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-verdes-mares": {
-        "name": "TV Verdes Mares",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "globo-esporte-ba": {
-        "name": "Globo Esporte BA",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Bahia No Ar"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-gazeta-es": {
-        "name": "TV Gazeta ES",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-gazeta-al": {
-        "name": "TV Gazeta Alagoas",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-integracao": {
-        "name": "TV Integração",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-pantanal": {
-        "name": "TV Pantanal",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "rede-amazonica": {
-        "name": "Rede Amazônica",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "tv-liberal": {
-        "name": "TV Liberal",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "cbn-sp": {
-        "name": "CBN São Paulo",
-        "programs": [
-            ["05:00", "CBN no Ar"],
-            ["08:00", "CBN Entrevista"],
-            ["09:00", "CBN Dinheiro"],
-            ["10:00", "CBN Tecnologia"],
-            ["11:00", "CBN No Caminho"],
-            ["12:00", "CBN Esportes"],
-            ["13:00", "CBN No Ar"],
-            ["16:00", "CBN Dinheiro"],
-            ["18:00", "CBN Brasil"],
-            ["19:00", "CBN No Ar"],
-            ["22:00", "CBN Late Night"],
-        ]
-    },
-    "cbn-rio": {
-        "name": "CBN Rio",
-        "programs": [
-            ["05:00", "CBN no Ar"],
-            ["08:00", "CBN Rio"],
-            ["09:00", "CBN Dinheiro"],
-            ["10:00", "CBN Tecnologia"],
-            ["11:00", "CBN No Caminho"],
-            ["12:00", "CBN Esportes"],
-            ["13:00", "CBN No Ar"],
-            ["16:00", "CBN Dinheiro"],
-            ["18:00", "CBN Brasil"],
-            ["19:00", "CBN No Ar"],
-            ["22:00", "CBN Late Night"],
-        ]
-    },
-    "gr2": {
-        "name": "GR2 Petrolina",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
-    "bdap": {
-        "name": "BDAP",
-        "programs": [
-            ["05:00", "Globo"],
-            ["07:00", "Globo"],
-            ["09:00", "Globo"],
-            ["11:00", "Jornal Hoje"],
-            ["12:00", "Globo"],
-            ["13:00", "Novela"],
-            ["15:00", "Vale a Pena Ver de Novo"],
-            ["17:00", "Globo"],
-            ["19:00", "Jornal Nacional"],
-            ["20:00", "Novela das 8"],
-            ["21:00", "Globo Rural"],
-            ["22:00", "Jornal da Globo"],
-        ]
-    },
+CHANNEL_NAMES = {
+    "tv-globo": "TV Globo",
+    "globonews": "GloboNews",
+    "gnt": "GNT",
+    "multishow": "Multishow",
+    "gloob": "Gloob",
+    "gloobinho": "Gloobinho",
+    "ge-tv": "GE TV",
+    "eptv-campinas": "EPTV Campinas",
+    "eptv-ribeirao": "EPTV Ribeirão Preto",
+    "eptv-ribeirao-2": "EPTV 2ª Edição",
+    "rbs-porto-alegre": "RBS TV Porto Alegre",
+    "g1-rs": "G1 RS",
+    "nsc-tv": "NSC TV",
+    "tv-vanguarda": "TV Vanguarda",
+    "tv-verdes-mares": "TV Verdes Mares",
+    "globo-esporte-ba": "Globo Esporte BA",
+    "tv-gazeta-es": "TV Gazeta ES",
+    "tv-gazeta-al": "TV Gazeta Alagoas",
+    "tv-globo-al": "TV Globo Alagoas",
+    "tv-globo-ba": "TV Bahia",
+    "tv-globo-rr": "TV Rural",
+    "tv-integracao": "TV Integração",
+    "tv-pantanal": "TV Pantanal",
+    "rede-amazonica": "Rede Amazônica",
+    "tv-liberal": "TV Liberal",
+    "cbn-sp": "CBN São Paulo",
+    "cbn-rio": "CBN Rio",
+    "gr2": "GR2 Petrolina",
+    "bdap": "BDAP",
 }
 
 ONLINE_EPG_CHANNELS = [
@@ -466,108 +148,88 @@ def get_tvg_id(url):
             return tvg_id
     return "tv-globo"
 
-def generate_regional_epg():
+def generate_regional_epg_file(regional_epg_file=None):
+    import os
     root = ET.Element('tv')
     root.set('generator-info-name', 'Globo EPG Generator - Regional')
+    root.set('generated-date', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     
-    base_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    if regional_epg_file and os.path.exists(regional_epg_file):
+        try:
+            tree = ET.parse(regional_epg_file)
+            regional_root = tree.getroot()
+            for child in regional_root:
+                root.append(child)
+            print(f"✓ EPG regional de {regional_epg_file} mesclado")
+        except Exception as e:
+            print(f"✗ Erro ao processar EPG regional: {e}")
     
-    for tvg_id, program_info in REGIONAL_CHANNELS.items():
-        channel_elem = ET.SubElement(root, 'channel')
-        channel_elem.set('id', tvg_id)
+    for tvg_id, channel_name in CHANNEL_NAMES.items():
+        if tvg_id in NATIONAL_CHANNELS:
+            continue
         
-        display_name = ET.SubElement(channel_elem, 'display-name')
-        display_name.text = program_info['name']
+        found = False
+        for channel in root.findall('channel'):
+            if channel.get('id') == tvg_id:
+                found = True
+                break
         
-        programs_list = program_info['programs']
-        
-        for day_offset in range(3):
-            current_date = base_date + timedelta(days=day_offset)
-            date_str = current_date.strftime("%Y%m%d")
+        if not found:
+            channel_elem = ET.SubElement(root, 'channel')
+            channel_elem.set('id', tvg_id)
             
-            for i, prog in enumerate(programs_list):
-                time_str = prog[0]
-                title = prog[1]
-                start_time = f"{date_str}{time_str.replace(':', '')}0000 -0300"
-                
-                if i + 1 < len(programs_list):
-                    end_time_str = programs_list[i + 1][0]
-                else:
-                    end_time_str = "04:00"
-                
-                end_date = current_date
-                if int(time_str.replace(':', '')) > int(end_time_str.replace(':', '')):
-                    end_date = current_date + timedelta(days=1)
-                
-                end_time = f"{end_date.strftime('%Y%m%d')}{end_time_str.replace(':', '')}0000 -0300"
-                
-                prog_elem = ET.SubElement(root, 'programme')
-                prog_elem.set('start', start_time)
-                prog_elem.set('stop', end_time)
-                prog_elem.set('channel', tvg_id)
-                
-                title_elem = ET.SubElement(prog_elem, 'title')
-                title_elem.text = title
+            display_name = ET.SubElement(channel_elem, 'display-name')
+            display_name.text = channel_name
     
-    return root
+    output_file = regional_epg_file if regional_epg_file else LOCAL_EPG_REGIONAL_FILE
+    tree = ET.ElementTree(root)
+    ET.indent(tree, space="  ")
+    tree.write(output_file, encoding='UTF-8', xml_declaration=True)
+    print(f"✓ Arquivo EPG regional gerado: {output_file}")
+    
+    return output_file
 
 def merge_epg_files():
     root = ET.Element('tv')
     root.set('generator-info-name', 'Globo EPG - Merged')
+    root.set('generated-date', datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     
-    try:
-        if download_online_epg():
-            try:
-                tree = ET.parse(EPG_ONLINE_FILE)
-                online_root = tree.getroot()
-                for child in online_root:
-                    root.append(child)
-                print("✓ EPG online mesclado")
-            except Exception as e:
-                print(f"✗ Erro ao mesclar EPG online: {e}")
-    except Exception as e:
-        print(f"✗ Erro ao processar EPG online: {e}")
+    if download_online_epg():
+        try:
+            tree = ET.parse(EPG_ONLINE_FILE)
+            online_root = tree.getroot()
+            for child in online_root:
+                root.append(child)
+            print("✓ EPG online (limaalef) mesclado")
+        except Exception as e:
+            print(f"✗ Erro ao mesclar EPG online: {e}")
     
-    base_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    if os.path.exists(LOCAL_EPG_REGIONAL_FILE):
+        try:
+            tree = ET.parse(LOCAL_EPG_REGIONAL_FILE)
+            regional_root = tree.getroot()
+            for child in regional_root:
+                root.append(child)
+            print("✓ EPG regional mesclado")
+        except Exception as e:
+            print(f"✗ Erro ao mesclar EPG regional: {e}")
     
-    for tvg_id, program_info in REGIONAL_CHANNELS.items():
-        channel_elem = ET.SubElement(root, 'channel')
-        channel_elem.set('id', tvg_id)
+    for tvg_id, channel_name in CHANNEL_NAMES.items():
+        if tvg_id in NATIONAL_CHANNELS:
+            continue
         
-        display_name = ET.SubElement(channel_elem, 'display-name')
-        display_name.text = program_info['name']
+        found = False
+        for channel in root.findall('channel'):
+            if channel.get('id') == tvg_id:
+                found = True
+                break
         
-        programs_list = program_info['programs']
-        
-        for day_offset in range(3):
-            current_date = base_date + timedelta(days=day_offset)
-            date_str = current_date.strftime("%Y%m%d")
+        if not found:
+            channel_elem = ET.SubElement(root, 'channel')
+            channel_elem.set('id', tvg_id)
             
-            for i, prog in enumerate(programs_list):
-                time_str = prog[0]
-                title = prog[1]
-                start_time = f"{date_str}{time_str.replace(':', '')}0000 -0300"
-                
-                if i + 1 < len(programs_list):
-                    end_time_str = programs_list[i + 1][0]
-                else:
-                    end_time_str = "04:00"
-                
-                end_date = current_date
-                if int(time_str.replace(':', '')) > int(end_time_str.replace(':', '')):
-                    end_date = current_date + timedelta(days=1)
-                
-                end_time = f"{end_date.strftime('%Y%m%d')}{end_time_str.replace(':', '')}0000 -0300"
-                
-                prog_elem = ET.SubElement(root, 'programme')
-                prog_elem.set('start', start_time)
-                prog_elem.set('stop', end_time)
-                prog_elem.set('channel', tvg_id)
-                
-                title_elem = ET.SubElement(prog_elem, 'title')
-                title_elem.text = title
-    
-    print("✓ EPG regional mesclado")
+            display_name = ET.SubElement(channel_elem, 'display-name')
+            display_name.text = channel_name
     
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
