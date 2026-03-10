@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          corrija o GLOBO3.py para que gere apenas os links no arquivo que já esta configurado
+          consegue acessar meus outros repositorios?
           "
 
       - name: Save result
