@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          diga quais arquivos .yaml devem ser executar quais .py para que o epg da lista lista1.m3u funcione corretamente, e preciso do link publico do epg, dentro do .m3u não link local, para que em qualquer lugar o epg seja usado
+          diga quais arquivos .yaml devem ser executar quais .py para que o epg da lista lista1.m3u funcione corretamente, e preciso do link publico do epg, dentro do .m3u não link local, para que em qualquer lugar o epg seja usado, faça todas as modificações necessarias para que funcione corretamente, meu usuario chama gratinomaster e meu repositorio chama JCTV
           "
 
       - name: Save result
