@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
 import concurrent.futures
+import os
 
 options = Options()
 options.add_argument("--headless")
@@ -11,42 +12,53 @@ options.add_argument("--disable-gpu")
 options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
-EPG_URL = "https://raw.githubusercontent.com/limaalef/braziltvepg/main/globo.xml"
+LOCAL_EPG_FILE = "globo_epg_regional.xml"
+NATIONAL_EPG_FILE = "epg-br.xml"
 
 CHANNEL_TVG_IDS = {
-    "globoplay.globo.com/v/4613774": "tv-globo",
-    "globoplay.globo.com/ao-vivo/7689934": "tv-globo",
-    "globoplay.globo.com/ao-vivo/7690141": "tv-globo",
-    "globoplay.globo.com/ao-vivo/7813174": "tv-globo",
-    "g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas": "tv-globo",
-    "globoplay.globo.com/ao-vivo/14164032": "tv-globo",
-    "globoplay.globo.com/ao-vivo/2134039": "tv-globo",
-    "g1.globo.com/rr/roraima": "tv-globo",
-    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/bom-dia-cidade": "tv-globo",
-    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv1": "tv-globo",
-    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv-2": "tv-globo",
-    "g1.globo.com/pe/petrolina-regiao/ao-vivo/gr2": "tv-globo",
-    "g1.globo.com/ap/ao-vivo/bdap": "tv-globo",
-    "globoplay.globo.com/v/2135579": "tv-globo",
-    "globoplay.globo.com/v/6120663": "tv-globo",
-    "globoplay.globo.com/v/2145544": "tv-globo",
-    "globoplay.globo.com/v/4039160": "tv-globo",
-    "globoplay.globo.com/v/6329086": "tv-globo",
-    "globoplay.globo.com/v/11999480": "tv-globo",
-    "g1.globo.com/al/alagoas/ao-vivo/assista-aos-telejornais-da-tv-gazeta": "tv-globo",
-    "globoplay.globo.com/v/4218681": "tv-globo",
-    "globoplay.globo.com/v/3065772": "tv-globo",
-    "g1.globo.com/am/amazonas/ao-vivo/assista-aos-telejornais-da-rede-amazonica": "tv-globo",
-    "globoplay.globo.com/v/2168377": "tv-globo",
+    "globoplay.globo.com/v/4613774": "GloboSP.br",
+    "globoplay.globo.com/ao-vivo/7689934": "GloboSP.br",
+    "globoplay.globo.com/ao-vivo/7690141": "GloboSP.br",
+    "globoplay.globo.com/ao-vivo/7813174": "GloboSP.br",
+    "g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas": "eptv-campinas",
+    "globoplay.globo.com/ao-vivo/14164032": "tv-globo-al",
+    "globoplay.globo.com/ao-vivo/2134039": "GloboSP.br",
+    "g1.globo.com/rr/roraima": "rede-amazonica",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/bom-dia-cidade": "eptv-ribeirao",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv1": "eptv-ribeirao",
+    "g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv-2": "eptv-ribeirao",
+    "g1.globo.com/pe/petrolina-regiao/ao-vivo/gr2": "tv-globo-pe",
+    "g1.globo.com/ap/ao-vivo/bdap": "tv-globo-ap",
+    "globoplay.globo.com/v/2135579": "rbs-tv",
+    "globoplay.globo.com/v/6120663": "eptv-ribeirao",
+    "globoplay.globo.com/v/2145544": "nsc-tv",
+    "globoplay.globo.com/v/4039160": "tv-verdes-mares",
+    "globoplay.globo.com/v/6329086": "tv-globo-ba",
+    "globoplay.globo.com/v/11999480": "tv-gazeta-es",
+    "g1.globo.com/al/alagoas/ao-vivo/assista-aos-telejornais-da-tv-gazeta": "tv-globo-al",
+    "globoplay.globo.com/v/4218681": "tv-integracao",
+    "globoplay.globo.com/v/3065772": "tv-pantanal",
+    "g1.globo.com/am/amazonas/ao-vivo/assista-aos-telejornais-da-rede-amazonica": "rede-amazonica",
+    "globoplay.globo.com/v/2168377": "tv-liberal",
+    "globoplay.globo.com/v/10747444": "cbn-sp",
+    "globoplay.globo.com/v/10740500": "cbn-rj",
     "globoplay.globo.com/v/10747444": "globonews",
     "globoplay.globo.com/v/10740500": "globonews",
 }
+
+def get_epg_url():
+    epg_url = ""
+    if os.path.exists(LOCAL_EPG_FILE):
+        epg_url = LOCAL_EPG_FILE
+    elif os.path.exists(NATIONAL_EPG_FILE):
+        epg_url = NATIONAL_EPG_FILE
+    return epg_url
 
 def get_tvg_id(url):
     for key, tvg_id in CHANNEL_TVG_IDS.items():
         if key in url:
             return tvg_id
-    return "tv-globo"
+    return "GloboSP.br"
 
 
 # URLs dos vídeos Globoplay e G1 ao vivo
@@ -153,7 +165,11 @@ def extract_globoplay_data(url):
     return title, m3u8_url, thumbnail_url
 
 with open("lista1.m3u", "w") as output_file:
-    output_file.write(f'#EXTM3U x-tvg-url="{EPG_URL}"\n')
+    epg_url = get_epg_url()
+    if epg_url:
+        output_file.write(f'#EXTM3U x-tvg-url="{epg_url}"\n')
+    else:
+        output_file.write('#EXTM3U\n')
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         future_to_url = {executor.submit(extract_globoplay_data, url): url for url in globoplay_urls}
