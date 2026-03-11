@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          globo_epg_generator.yaml corrija este ate ser executado sem nenhum erro
+          veja os erros que tem no epg do arquivo lista1.m3u e corrija o globo.py e o que mais for necessário para que o epg esteja corretissimo e funcione no meu tivimate
           "
 
       - name: Save result
