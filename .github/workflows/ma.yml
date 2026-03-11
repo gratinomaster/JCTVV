@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          lista1.m3u canal sportv está com o tvg-id errado, faça tudo o que for ncessário para que use o epg correto atualizado
+          diga quais arquivos .yaml devem ser executar quais .py para que o epg da lista lista1.m3u funcione corretamente, e preciso do link publico do epg, dentro do .m3u não link local, para que em qualquer lugar o epg seja usado
           "
 
       - name: Save result
