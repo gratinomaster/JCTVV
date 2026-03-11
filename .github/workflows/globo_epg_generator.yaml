@@ -1,0 +1,27 @@
+name: Run Globo EPG Generator
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"   # executa a cada 6 horas
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Globo EPG Generator
+        run: |
+          python globo_epg_generator.py
