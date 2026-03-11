@@ -9,7 +9,7 @@ import gzip
 import os
 import time
 
-LOCAL_EPG_REGIONAL_FILE = "globo_epg_regional.xml"
+LOCAL_EPG_FILE = "globo_epg_online.xml"
 
 REGIONAL_CHANNELS = {
     "eptv-campinas": {
@@ -76,6 +76,41 @@ REGIONAL_CHANNELS = {
         "name": "TV Pantanal",
         "url": "https://redeglobo.globo.com/ms/tvpantanal/",
         "programacao_url": "https://redeglobo.globo.com/ms/tvpantanal/programacao/"
+    },
+    "GloboSP.br": {
+        "name": "Globo Sao Paulo",
+        "url": "https://redeglobo.globo.com/sp/",
+        "programacao_url": "https://redeglobo.globo.com/sp/programacao/"
+    },
+    "globo-rj": {
+        "name": "Globo Rio de Janeiro",
+        "url": "https://redeglobo.globo.com/rj/",
+        "programacao_url": "https://redeglobo.globo.com/rj/programacao/"
+    },
+    "rbs-tv": {
+        "name": "RBS TV Porto Alegre",
+        "url": "https://redeglobo.globo.com/rs/rbstvrs/",
+        "programacao_url": "https://redeglobo.globo.com/rs/rbstvrs/programacao/"
+    },
+    "tv-globo-pe": {
+        "name": "TV Globo Pernambuco",
+        "url": "https://redeglobo.globo.com/pe/tvglobo/",
+        "programacao_url": "https://redeglobo.globo.com/pe/tvglobo/programacao/"
+    },
+    "cbn-sp": {
+        "name": "CBN Sao Paulo",
+        "url": "https://redeglobo.globo.com/sp/cbn/",
+        "programacao_url": "https://redeglobo.globo.com/sp/cbn/programacao/"
+    },
+    "cbn-rj": {
+        "name": "CBN Rio de Janeiro",
+        "url": "https://redeglobo.globo.com/rj/cbn/",
+        "programacao_url": "https://redeglobo.globo.com/rj/cbn/programacao/"
+    },
+    "sportv": {
+        "name": "SporTV",
+        "url": "https://globoplay.globo.com/sportv/",
+        "programacao_url": "https://globoplay.globo.com/sportv/"
     },
 }
 
@@ -240,8 +275,8 @@ def get_generic_programation(channel_name):
     
     if 'CBN' in channel_name:
         return [
-            ["05:00", "CBN no Ar:00", ""],
-            ["08CBN Entrevista"],
+            ["05:00", "CBN no Ar"],
+            ["08:00", "CBN Entrevista"],
             ["09:00", "CBN Dinheiro"],
             ["10:00", "CBN Tecnologia"],
             ["11:00", "CBN No Caminho"],
@@ -376,7 +411,7 @@ def main():
             }
     
     print("\n[2] Gerando arquivo EPG XML...")
-    generate_epg_xml(programs, LOCAL_EPG_REGIONAL_FILE)
+    generate_epg_xml(programs, LOCAL_EPG_FILE)
     
     print("\n[3] Verificando EPG nacional (iptv-epg.org)...")
     local_xml = parse_epg_br()
@@ -387,7 +422,7 @@ def main():
     print("Concluído!")
     print("=" * 60)
     print(f"\nArquivos gerados:")
-    print(f"  - EPG Regional: {LOCAL_EPG_REGIONAL_FILE}")
+    print(f"  - EPG Regional: {LOCAL_EPG_FILE}")
     if local_xml:
         print(f"  - EPG Nacional:  {local_xml}")
     print(f"\nExecute GLOBO.py para gerar a lista M3U com EPG configurado!")
