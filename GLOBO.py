@@ -19,7 +19,7 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/4613774": "GloboSP.br",
     "globoplay.globo.com/ao-vivo/7689934": "GloboSP.br",
     "globoplay.globo.com/ao-vivo/7690141": "GloboSP.br",
-    "globoplay.globo.com/ao-vivo/7813174": "GloboSP.br",
+    "globoplay.globo.com/ao-vivo/7813173": "GloboSP.br",
     "g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas": "eptv-campinas",
     "globoplay.globo.com/ao-vivo/14164032": "tv-globo-al",
     "globoplay.globo.com/ao-vivo/2134039": "GloboSP.br",
@@ -44,6 +44,19 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/10740500": "cbn-rj",
     "globoplay.globo.com/v/10747444": "globonews",
     "globoplay.globo.com/v/10740500": "globonews",
+    "g1.globo.com/rj": "globo-rj",
+    "g1.globo.com/rj/rio-de-janeiro": "globo-rj",
+    "globoplay.globo.com/v/1328766": "globo-rj",
+    "globoplay.globo.com/v/1467373": "globo-rj",
+    "globoplay.globo.com/v/4064559": "nsc-tv",
+    "globoplay.globo.com/v/5472979": "tv-globo-pe",
+    "globoplay.globo.com/v/10865071": "tv-vanguarda",
+    "globoplay.globo.com/v/3667427": "tv-integracao",
+    "globoplay.globo.com/v/12945385": "tv-integracao",
+    "globoplay.globo.com/v/2923579": "rede-amazonica",
+    "globoplay.globo.com/v/2923546": "rede-amazonica",
+    "globoplay.globo.com/v/992055": "globo-rj",
+    "globoplay.globo.com/v/602497": "globo-rj",
 }
 
 def get_epg_url():
