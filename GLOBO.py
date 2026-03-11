@@ -12,8 +12,8 @@ options.add_argument("--disable-gpu")
 options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
-LOCAL_EPG_FILE = "globo_epg_regional.xml"
-NATIONAL_EPG_FILE = "epg-br.xml"
+LOCAL_EPG_FILE = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/globo_epg_regional.xml"
+NATIONAL_EPG_FILE = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/globo_epg-br.xml"
 
 CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/4613774": "GloboSP.br",
