@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          veja os erros que tem no epg do arquivo lista1.m3u e corrija o globo.py e o que mais for necessário para que o epg esteja corretissimo e funcione no meu tivimate
+          lista1.m3u canal sportv está com o tvg-id errado, faça tudo o que for ncessário para que use o epg correto atualizado
           "
 
       - name: Save result
