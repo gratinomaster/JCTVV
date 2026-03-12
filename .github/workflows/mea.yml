@@ -23,7 +23,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          o epg da lista1.m3u não esta funcionando, corrija tudo para que funcione corretamente, e o sportv tem que ter o tvg-id correto
+          o epg da lista1.m3u não esta funcionando, corrija tudo para que funcione corretamente, e o sportv tem que ter o tvg-id correto, tera que modificar GLOBO.py e GLOBOEPG.py
           EOF
           )
 
