@@ -1,0 +1,5 @@
+Criado o arquivo `.github/workflows/globo_epg.yml` que:
+- Executa a cada 6 horas (via cron) ou manualmente (workflow_dispatch)
+- Instala Python 3.12 e as dependências necessárias (`requests`, `lxml`)
+- Executa o script `globo_epg_generator.py`
+- Gera o arquivo `globo_epg.xml`
