@@ -12,7 +12,7 @@ options.add_argument("--disable-gpu")
 options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
 
-EPG_FILE = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz"
+EPG_FILES = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz,https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml"
 
 CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/4613774": "globo_sp",
@@ -56,11 +56,12 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/2923546": "globo_am",
     "globoplay.globo.com/v/992055": "globo_rj",
     "globoplay.globo.com/v/602497": "globo_rj",
+    "globoplay.globo.com/v/8713568": "sportv",
 }
 
 
 def get_epg_url():
-    return EPG_FILE
+    return EPG_FILES
 
 
 def get_tvg_id(url):
