@@ -23,7 +23,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          escreva no arquivo IRIB.m3u informações sobre o brasil
+          o epg da lista1.m3u não esta funcionando, corrija tudo para que funcione corretamente, e o sportv tem que ter o tvg-id correto
           EOF
           )
 
