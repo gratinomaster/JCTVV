@@ -1,6 +1,11 @@
-name: LIST
+name: Baixando GLOBO
 
 on:
+schedule:
+- cron: '0 */6 * * *'  # Executa a cada 6 horas
+pull_request:
+branches:
+- main
 workflow_dispatch:
 
 permissions:
