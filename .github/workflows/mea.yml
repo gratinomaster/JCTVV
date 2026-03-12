@@ -20,7 +20,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          modifique tudo o que for necessário para que lista1.m3u tenha o epg correto e funcionando, é para modificar GLOBO.py e GLOBOEPG.py
+          escreva no arquivo IRIB.m3u informações sobre o brasil
           EOF
           )
 
