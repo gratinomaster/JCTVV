@@ -1,49 +1,30 @@
-name: Resposta Direta OpenCode
+name: Run OpenCode
 
 on:
-  schedule:
-    - cron: '0 13 * * *' # Executa às 10h da manhã (Horário de Brasília)
   workflow_dispatch:
-
-permissions:
-  contents: write
+  push:
 
 jobs:
-  consultar_opencode:
+  opencode:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Configurar Git
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-
-      - name: Instalar OpenCode
+      - name: Install OpenCode
         run: |
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Obter resposta do OpenCode
+      - name: Ask OpenCode
         run: |
-          opencode run "corrija corretamente o GLOBO.py para que use corretamente https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz"
+          PERGUNTA=$(cat << 'EOF'
+          diga qual dia é hoje e quem é o presidente do brasil
+          EOF
+          )
 
-      - name: Exibir resposta no log
-        run: |
-          if [ -f resposta_opencode.txt ]; then
-            cat resposta_opencode.txt
-          else
-            echo "Erro: O arquivo de resposta não foi gerado."
-            exit 1
-          fi
-
-      - name: Commit das mudanças
-        run: |
-          git add resposta_opencode.txt
-          git commit -m "Atualizar resposta do OpenCode" || echo "Sem alterações"
-
-      - name: Push para o repositório
-        run: |
-          git push
+          echo "Pergunta: $PERGUNTA"
+          echo ""
+          echo "Resposta do OpenCode:"
+          opencode run "$PERGUNTA"
