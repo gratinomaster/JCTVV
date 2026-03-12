@@ -1,15 +1,10 @@
-name: Baixando GLOBO
+name: Run Globo EPG Generator
 
 on:
-  schedule:
-    - cron: '0 */6 * * *'  # Executa a cada 6 horas
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"   # executa a cada 6 horas
 
-permissions:
-  contents: write
 
 jobs:
   opencode:
