@@ -3,21 +3,27 @@ name: Resposta Direta OpenCode
 on:
   schedule:
     - cron: '0 13 * * *' # Executa às 10h da manhã (Horário de Brasília)
-  workflow_dispatch:
+  workflow_dispatch: # Permite execução manual
 
 jobs:
   consultar_opencode:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Install OpenCode
         run: |
+          # Instalação via curl
           curl -fsSL https://opencode.ai/install | bash
+          # Adiciona ao GITHUB_PATH para que os próximos steps reconheçam o comando 'opencode'
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
       - name: Obter Resposta do OpenCode
         run: |
+          # Importante: Garantir que o PATH atualizado seja usado neste shell
           export PATH="$HOME/.opencode/bin:$PATH"
-          # O comando abaixo solicita a resposta direta para a IA
+          
           opencode run "Acesse os dados de mercado de hoje e responda diretamente: 
           1. Quais as 3 melhores ações para comprar na B3 hoje? 
           2. Qual a cotação exata do Dólar agora? 
@@ -25,6 +31,10 @@ jobs:
           Formate a resposta como um relatório de mercado." > RESPOSTA_MERCADO.txt
 
       - name: Exibir Resposta no Log
-        run: cat RESPOSTA_MERCADO.txt
-        
-      
+        run: |
+          if [ -f RESPOSTA_MERCADO.txt ]; then
+            cat RESPOSTA_MERCADO.txt
+          else
+            echo "Erro: O arquivo de resposta não foi gerado."
+            exit 1
+          fi
