@@ -1,7 +1,13 @@
-#EXTM3U
-#EXTINF:-1 tvg-name="IRIB TV1" tvg-logo="https://tv1.ir/images/logo.png" group-title="Iran",IRIB TV1 (شبکه یک)
+#EXTM3U x-tvg-url="https://www.tvg-guide.xml"
+
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB TV1 (شبکه یک)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/IRIBTV1.svg/289px-IRIBTV1.svg.png" group-title="Iran | General",IRIB TV1 - شبکه یک (FHD)
+https://live20.bozztv.com/dvrfl05/gin-irib1/index.m3u8
+
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB TV1 (شبکه یک)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/IRIBTV1.svg/289px-IRIBTV1.svg.png" group-title="Iran | General",IRIB TV1 - شبکه یک (Lenz)
+https://lenz.splus.ir/PLTV/88888888/224/3221226637/index.m3u8
+
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB TV1 (شبکه یک)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/IRIBTV1.svg/289px-IRIBTV1.svg.png" group-title="Iran | General",IRIB TV1 - شبکه یک (SD)
+https://sdm.telewebion.com/live/tv1/playlist.m3u8
+
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB TV1 (شبکه یک)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/IRIBTV1.svg/289px-IRIBTV1.svg.png" group-title="Iran | General",IRIB TV1 - شبکه یک (720p)
 https://sdw.telewebion.com/live/tv1/tv1_dvr-720p/index.m3u8
-#EXTINF:-1 tvg-name="IRIB TV2" tvg-logo="https://tv2.ir/images/logo.png" group-title="Iran",IRIB TV2 (شبکه دو)
-https://sdw.telewebion.com/live/tv2/tv2_dvr-576p/index.m3u8
-#EXTINF:-1 tvg-name="IRIB TV3" tvg-logo="https://tv3.ir/images/logo.png" group-title="Iran",IRIB TV3 (شبکه سه)
-https://sdw.telewebion.com/live/tv3/tv3_dvr-576p/index.m3u8
