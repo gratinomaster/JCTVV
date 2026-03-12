@@ -25,9 +25,7 @@ jobs:
           export PATH="$HOME/.opencode/bin:$PATH"
           
           opencode run "Acesse os dados de mercado de hoje e responda diretamente: 
-          1. Quais as 3 melhores ações para comprar na B3 hoje? 
-          2. Qual a cotação exata do Dólar agora? 
-          3. Qual o preço do Bitcoin em Reais agora?
+          Como está goll54? goll2? comprar ou vender?
           Formate a resposta como um relatório de mercado." > RESPOSTA_MERCADO.txt
 
       - name: Exibir Resposta no Log
