@@ -1,58 +1,30 @@
-name: Run Globo EPG Generator
+name: Resposta Direta OpenCode
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"   # executa a cada 6 horas
-
+    - cron: '0 13 * * *' # Executa às 10h da manhã (Horário de Brasília)
+  workflow_dispatch:
 
 jobs:
-  opencode:
+  consultar_opencode:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg curl wget python3-pip
-
       - name: Install OpenCode
         run: |
-          # Nota: Certifique-se de que este endpoint de instalação é o correto para a ferramenta que você usa
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Verify installation
-        run: |
-          # Adicionamos o source ou path direto para garantir que o binário seja encontrado
-          export PATH="$HOME/.opencode/bin:$PATH"
-          opencode --version || echo "OpenCode instalado"
-
-      - name: Run OpenCode Prompt
+      - name: Obter Resposta do OpenCode
         run: |
           export PATH="$HOME/.opencode/bin:$PATH"
-          opencode run "faça um script chamado GLOBOEPG.py que gere GLOBOEPG.xml.gz com o EPG completo de todas as regiões da Globo usando https://redeglobo.globo.com/sao-paulo/programacao/ como referência. O script deve extrair automaticamente todas as regiões e gerar também um arquivo tvg-ids.txt com os tvg-ids para uso em playlists IPTV. Deve conter 5 dias de programação para todas as regiões e não deve ter nada fixo no código, pois sempre que rodar deve extrair tudo novamente."
+          # O comando abaixo solicita a resposta direta para a IA
+          opencode run "Acesse os dados de mercado de hoje e responda diretamente: 
+          1. Quais as 3 melhores ações para comprar na B3 hoje? 
+          2. Qual a cotação exata do Dólar agora? 
+          3. Qual o preço do Bitcoin em Reais agora?
+          Formate a resposta como um relatório de mercado." > RESPOSTA_MERCADO.txt
 
-      - name: Execute Generated Script
-        run: |
-          # Após o OpenCode criar o script, precisamos executá-lo para gerar os arquivos XML e TXT
-          if [ -f GLOBOEPG.py ]; then
-            python3 GLOBOEPG.py
-          else
-            echo "Erro: Script GLOBOEPG.py não foi gerado."
-            exit 1
-          fi
-
-      - name: Commit and Push results
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add GLOBOEPG.py GLOBOEPG.xml.gz tvg-ids.txt
-          git commit -m "Update EPG Data: $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
-          git push
+      - name: Exibir Resposta no Log
+        run: cat RESPOSTA_MERCADO.txt
+        
+      
