@@ -34,3 +34,18 @@ jobs:
             echo "Erro: O arquivo de resposta não foi gerado."
             exit 1
           fi
+
+  
+      - name: Adicionar Mudanças ao Controle de Versão
+        run: |
+          git add -A
+          git status
+  
+      - name: Garantir alterações mais recentes do repositório remoto
+        run: |
+          git pull origin main || echo "Erro ao fazer pull, pode ser que já tenha as últimas alterações."
+  
+      - name: Commit e Push
+        run: |
+          git commit -m "Atualizar lista baixada" || echo "Nenhuma mudança para commitar."
+          git push origin main || echo "Erro ao fazer push. Pode ser necessário revisar conflitos."          
