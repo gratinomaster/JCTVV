@@ -53,6 +53,38 @@
     <display-name>Globo Mato Grosso</display-name>
     <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
   </channel>
+  <channel id="globo_sc">
+    <display-name>Globo Santa Catarina</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="globo_rs">
+    <display-name>Globo Rio Grande do Sul</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="globo_pa">
+    <display-name>Globo Pará</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="globo_am">
+    <display-name>Globo Amazonas</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="globo_al">
+    <display-name>Globo Alagoas</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="sportv">
+    <display-name>Globo SporTV</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="cbn_sp">
+    <display-name>Globo CBN São Paulo</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
+  <channel id="cbn_rj">
+    <display-name>Globo CBN Rio de Janeiro</display-name>
+    <icon>https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png</icon>
+  </channel>
   <programme channel="globo_sp" start="20260312T000000 -0300" end="20260312T020000 -0300">
     <title lang="pt-BR">Hora Um</title>
     <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
@@ -5609,5 +5641,2753 @@
     <title lang="pt-BR">Comédia Na Madruga II</title>
     <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
     <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T020000 -0300" end="20260312T043000 -0300">
+    <title lang="pt-BR">Bom Dia Santa Catarina</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Douglas Márcio e Eveline Poncio, exibe as primeiras notícias do dia em Santa Catarina.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T043000 -0300" end="20260312T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T053000 -0300" end="20260312T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T063500 -0300" end="20260312T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T074500 -0300" end="20260312T090000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">Jornal apresentado por Raphael Faraco e Laine Valgas, exibe as principais notícias do estado.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T090000 -0300" end="20260312T092500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">Programa traz as principais notícias do esporte em Santa Catarina e no país, com apresentação de Fernanda Moro.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T092500 -0300" end="20260312T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T104500 -0300" end="20260312T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T113000 -0300" end="20260312T130000 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Vidas Passadas</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T130000 -0300" end="20260312T131000 -0300">
+    <title lang="pt-BR">Redação NSC</title>
+    <desc lang="pt-BR">Boletim com as principais notícias do estado. </desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T131000 -0300" end="20260312T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T142500 -0300" end="20260312T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T151000 -0300" end="20260312T154000 -0300">
+    <title lang="pt-BR">NSC Notícias</title>
+    <desc lang="pt-BR">As principais notícias do estado, com apresentação de Fabian Londero.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T154000 -0300" end="20260312T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T163000 -0300" end="20260312T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T172000 -0300" end="20260312T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T182500 -0300" end="20260312T192500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T192500 -0300" end="20260312T201500 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T201500 -0300" end="20260312T210000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T210000 -0300" end="20260312T212500 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T212500 -0300" end="20260312T224500 -0300">
+    <title lang="pt-BR">Corujão I - L.O.C.A.</title>
+    <desc lang="pt-BR">Três mulheres se conhecem em uma reunião da Liga das Obsessivas Compulsivas por Amor e resolvem se juntar para uma grande vingança.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260312T224500 -0300" end="20260313T000000 -0300">
+    <title lang="pt-BR">Corujão II - Muito Gelo E Dois Dedos D&apos;água</title>
+    <desc lang="pt-BR">Roberta e Suzana são irmãs e nutrem um desejo de vingança em relação à avó, que as atormentava com conceitos rígidos sobre etiqueta e educação.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T020000 -0300" end="20260313T043000 -0300">
+    <title lang="pt-BR">Bom Dia Santa Catarina</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Douglas Márcio e Eveline Poncio, exibe as primeiras notícias do dia em Santa Catarina.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T043000 -0300" end="20260313T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T053000 -0300" end="20260313T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T063500 -0300" end="20260313T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T074500 -0300" end="20260313T090000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">Jornal apresentado por Raphael Faraco e Laine Valgas, exibe as principais notícias do estado.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T090000 -0300" end="20260313T092500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">Programa traz as principais notícias do esporte em Santa Catarina e no país, com apresentação de Fernanda Moro.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T092500 -0300" end="20260313T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T104500 -0300" end="20260313T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T113000 -0300" end="20260313T130500 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Saneamento Básico - O Filme</title>
+    <desc lang="pt-BR">Moradores de pequena vila planejam realizar vídeo para pegar a quantia oferecida pelo governo e usá-la na realização de uma obra para o tratamento do esgoto.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T130500 -0300" end="20260313T131500 -0300">
+    <title lang="pt-BR">Redação NSC</title>
+    <desc lang="pt-BR">Boletim com as principais notícias do estado. </desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T131500 -0300" end="20260313T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T142500 -0300" end="20260313T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T151000 -0300" end="20260313T154000 -0300">
+    <title lang="pt-BR">NSC Notícias</title>
+    <desc lang="pt-BR">As principais notícias do estado, com apresentação de Fabian Londero.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T154000 -0300" end="20260313T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T163000 -0300" end="20260313T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T172000 -0300" end="20260313T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T182500 -0300" end="20260313T190000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T190000 -0300" end="20260313T195000 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T195000 -0300" end="20260313T204000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T204000 -0300" end="20260313T212500 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T212500 -0300" end="20260313T215000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T215000 -0300" end="20260313T230500 -0300">
+    <title lang="pt-BR">Corujão I - De Pernas Pro Ar</title>
+    <desc lang="pt-BR">Mulher workaholic decide virar sócia de uma sex shop depois de ser demitida. </desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260313T230500 -0300" end="20260314T004500 -0300">
+    <title lang="pt-BR">Corujão II - Quincas Berro D&apos;água</title>
+    <desc lang="pt-BR">Quincas Berro D&apos;água é encontrado morto em sua cama. Inconformados com sua morte, seus melhores amigos roubam o corpo e o levam para uma última noite de farra.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T000000 -0300" end="20260314T012000 -0300">
+    <title lang="pt-BR">Corujão III - Loop</title>
+    <desc lang="pt-BR">Quando a namorada morre, Daniel fica obcecado em encontrar um jeito de voltar no tempo. Ele descobre uma maneira e acaba preso em um looping de acontecimentos.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T012000 -0300" end="20260314T021000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T021000 -0300" end="20260314T031000 -0300">
+    <title lang="pt-BR">Bom Dia Sábado</title>
+    <desc lang="pt-BR">Telejornal com notícias de todo o Brasil, além de muita prestação de serviço e previsão do tempo. Apresentação de Sabina Simonato e Marcelo Pereira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T031000 -0300" end="20260314T035000 -0300">
+    <title lang="pt-BR">Pequenas Empresas &amp;amp; Grandes Negócios</title>
+    <desc lang="pt-BR">Novidades e informação para quem quer investir e empreender no Brasil.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T035000 -0300" end="20260314T070500 -0300">
+    <title lang="pt-BR">É de Casa</title>
+    <desc lang="pt-BR">Maria Beltrão, Rita Batista, Thiago Oliveira e Talitha Morete comandam programa de variedades das manhãs de sábado, ao vivo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T070500 -0300" end="20260314T082000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">Jornal apresentado por Raphael Faraco e Laine Valgas, exibe as principais notícias do estado.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T082000 -0300" end="20260314T084500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">Programa traz as principais notícias do esporte em Santa Catarina e no país, com apresentação de Fernanda Moro.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T084500 -0300" end="20260314T093000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T093000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T100000 -0300" end="20260314T113500 -0300">
+    <title lang="pt-BR">Sessão De Sábado - O Último Mestre Do Ar</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T113500 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Caldeirão Com Mion</title>
+    <desc lang="pt-BR">Apresentado por Marcos Mion, a nova versão do &apos;Caldeirão&apos; traz alguns quadros já conhecidos do público e atrações inéditas.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T140000 -0300" end="20260314T144500 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T144500 -0300" end="20260314T150500 -0300">
+    <title lang="pt-BR">NSC Notícias</title>
+    <desc lang="pt-BR">As principais notícias do estado, com apresentação de Fabian Londero.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T150500 -0300" end="20260314T155000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T155000 -0300" end="20260314T164000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T164000 -0300" end="20260314T174500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T174500 -0300" end="20260314T181000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T181000 -0300" end="20260314T192500 -0300">
+    <title lang="pt-BR">Altas Horas</title>
+    <desc lang="pt-BR">Serginho Groisman comanda a atração, que abre espaço para boa música, encontros inesperados e entrevistas com personalidades.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T192500 -0300" end="20260314T213000 -0300">
+    <title lang="pt-BR">Supercine - A Teoria De Tudo</title>
+    <desc lang="pt-BR">Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico fez descobertas importantes e a descoberta de uma doença degenerativa.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T213000 -0300" end="20260314T221000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_sc" start="20260314T221000 -0300" end="20260314T235000 -0300">
+    <title lang="pt-BR">Corujão I - Dois Mais Dois</title>
+    <desc lang="pt-BR">O casamento morno de Diogo e Emília é virado de cabeça pra baixo quando eles descobrem que os melhores amigos, Ricardo e Bettina, têm um relacionamento aberto</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T000000 -0300" end="20260315T012000 -0300">
+    <title lang="pt-BR">Corujão II - Pegando Fogo</title>
+    <desc lang="pt-BR">Adam já foi um dos mais respeitados chefes de cozinha em Paris. Ele parte para Londres disposto a recomeçar a carreira e conta com a ajuda de Tony.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T012000 -0300" end="20260315T020500 -0300">
+    <title lang="pt-BR">Via Brasil</title>
+    <desc lang="pt-BR">Apresentado por Luciano Cabral, o programa viaja a lugares do país para mostrar folclore, artesanato, arquitetura, receitas, música e esportes de aventura.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T020500 -0300" end="20260315T025500 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T025500 -0300" end="20260315T032500 -0300">
+    <title lang="pt-BR">Nossa Santa Catarina</title>
+    <desc lang="pt-BR">Programa mostra a diversidade, tradições, cultura, beleza, costumes, os lugares do estado com apresentação de Marina  Dalcastagne.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T032500 -0300" end="20260315T035500 -0300">
+    <title lang="pt-BR">Auto Esporte</title>
+    <desc lang="pt-BR">As principais notícias sobre o universo dos automóveis.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T035500 -0300" end="20260315T052000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T052000 -0300" end="20260315T061500 -0300">
+    <title lang="pt-BR">Viver Sertanejo</title>
+    <desc lang="pt-BR">Com “causos”, momentos emocionantes e risadas, Daniel e convidados compartilham histórias de como a música serve de pano de fundo para muitos brasileiros.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T061500 -0300" end="20260315T073000 -0300">
+    <title lang="pt-BR">Esporte Espetacular</title>
+    <desc lang="pt-BR">Além de transmitir partidas e campeonatos ao vivo, o programa semanal apresenta os destaques do mundo esportivo, entrevistas e reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T073000 -0300" end="20260315T092000 -0300">
+    <title lang="pt-BR">Temperatura Máxima - Cruella</title>
+    <desc lang="pt-BR">A jovem vigarista Estella chama a atenção de uma baronesa. A relação delas desencadeia um curso de eventos que fazem Estella se tornar Cruella.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T092000 -0300" end="20260315T095000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T095000 -0300" end="20260315T110500 -0300">
+    <title lang="pt-BR">Em Família Com Eliana</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T110500 -0300" end="20260315T111500 -0300">
+    <title lang="pt-BR">Bora Pro Jogo</title>
+    <desc lang="pt-BR">No Bora pro Jogo, Tiago Medeiros abre a transmissão na beira do campo e convida o torcedor para curtir as novidades do Futebol na Globo com muita interatividade</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T111500 -0300" end="20260315T133500 -0300">
+    <title lang="pt-BR">Futebol</title>
+    <desc lang="pt-BR">Siga ao vivo o Brasileirão, a Libertadores, a Copa do Brasil e mais.</desc>
+    <category lang="pt-BR">Esporte</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T133500 -0300" end="20260315T145000 -0300">
+    <title lang="pt-BR">Domingão Com Huck</title>
+    <desc lang="pt-BR">Entretenimento, diversão, emoção e novas descobertas nos quadros ‘Show dos famosos’ e ‘Quem quer ser um milionário?’ e em matérias especiais pelo país.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T145000 -0300" end="20260315T153500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T153500 -0300" end="20260315T163000 -0300">
+    <title lang="pt-BR">Fantástico</title>
+    <desc lang="pt-BR">Reportagens especiais e as notícias mais importantes da semana, com apresentação de Maju Coutinho e Poliana Abritta. </desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T163000 -0300" end="20260315T193000 -0300">
+    <title lang="pt-BR">Oscar 2026</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T193000 -0300" end="20260315T201500 -0300">
+    <title lang="pt-BR">Fórmula 1 - Compacto</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T201500 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">Domingo Maior - Mestre Dos Mares: O Lado Mais Distante Do Mundo</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T220000 -0300" end="20260315T224000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_sc" start="20260315T224000 -0300" end="20260315T233000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga II</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T020000 -0300" end="20260312T043000 -0300">
+    <title lang="pt-BR">Bom Dia Rio Grande</title>
+    <desc lang="pt-BR">O Bom Dia Rio Grande traz as principais notícias da madrugada, a previsão do tempo, as condições do trânsito e muita informação.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T043000 -0300" end="20260312T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T053000 -0300" end="20260312T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T063500 -0300" end="20260312T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T074500 -0300" end="20260312T090000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">O Jornal do Almoço reúne assuntos diversos como cultura, variedades, noticiário factual, musicais, entrevistas ao vivo e comentários. 
+
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T090000 -0300" end="20260312T092500 -0300">
+    <title lang="pt-BR">Globo Esporte RS</title>
+    <desc lang="pt-BR">O Globo Esporte RS mostra tudo sobre a dupla Gre-Nal, além das principais informações do esporte no Rio Grande do Sul.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T092500 -0300" end="20260312T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T104500 -0300" end="20260312T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T113000 -0300" end="20260312T131000 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Vidas Passadas</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T131000 -0300" end="20260312T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T142500 -0300" end="20260312T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T151000 -0300" end="20260312T154000 -0300">
+    <title lang="pt-BR">RBS Notícias</title>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T154000 -0300" end="20260312T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T163000 -0300" end="20260312T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T172000 -0300" end="20260312T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T182500 -0300" end="20260312T192500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T192500 -0300" end="20260312T201500 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T201500 -0300" end="20260312T210000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T210000 -0300" end="20260312T212500 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T212500 -0300" end="20260312T224500 -0300">
+    <title lang="pt-BR">Corujão I - L.O.C.A.</title>
+    <desc lang="pt-BR">Três mulheres se conhecem em uma reunião da Liga das Obsessivas Compulsivas por Amor e resolvem se juntar para uma grande vingança.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260312T224500 -0300" end="20260313T000000 -0300">
+    <title lang="pt-BR">Corujão II - Muito Gelo E Dois Dedos D&apos;água</title>
+    <desc lang="pt-BR">Roberta e Suzana são irmãs e nutrem um desejo de vingança em relação à avó, que as atormentava com conceitos rígidos sobre etiqueta e educação.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T020000 -0300" end="20260313T043000 -0300">
+    <title lang="pt-BR">Bom Dia Rio Grande</title>
+    <desc lang="pt-BR">O Bom Dia Rio Grande traz as principais notícias da madrugada, a previsão do tempo, as condições do trânsito e muita informação.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T043000 -0300" end="20260313T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T053000 -0300" end="20260313T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T063500 -0300" end="20260313T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T074500 -0300" end="20260313T090000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">O Jornal do Almoço reúne assuntos diversos como cultura, variedades, noticiário factual, musicais, entrevistas ao vivo e comentários. 
+
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T090000 -0300" end="20260313T092500 -0300">
+    <title lang="pt-BR">Globo Esporte RS</title>
+    <desc lang="pt-BR">O Globo Esporte RS mostra tudo sobre a dupla Gre-Nal, além das principais informações do esporte no Rio Grande do Sul.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T092500 -0300" end="20260313T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T104500 -0300" end="20260313T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T113000 -0300" end="20260313T131500 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Saneamento Básico - O Filme</title>
+    <desc lang="pt-BR">Moradores de pequena vila planejam realizar vídeo para pegar a quantia oferecida pelo governo e usá-la na realização de uma obra para o tratamento do esgoto.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T131500 -0300" end="20260313T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T142500 -0300" end="20260313T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T151000 -0300" end="20260313T154000 -0300">
+    <title lang="pt-BR">RBS Notícias</title>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T154000 -0300" end="20260313T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T163000 -0300" end="20260313T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T172000 -0300" end="20260313T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T182500 -0300" end="20260313T190000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T190000 -0300" end="20260313T195000 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T195000 -0300" end="20260313T204000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T204000 -0300" end="20260313T212500 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T212500 -0300" end="20260313T215000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T215000 -0300" end="20260313T230500 -0300">
+    <title lang="pt-BR">Corujão I - De Pernas Pro Ar</title>
+    <desc lang="pt-BR">Mulher workaholic decide virar sócia de uma sex shop depois de ser demitida. </desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260313T230500 -0300" end="20260314T004500 -0300">
+    <title lang="pt-BR">Corujão II - Quincas Berro D&apos;água</title>
+    <desc lang="pt-BR">Quincas Berro D&apos;água é encontrado morto em sua cama. Inconformados com sua morte, seus melhores amigos roubam o corpo e o levam para uma última noite de farra.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T000000 -0300" end="20260314T012000 -0300">
+    <title lang="pt-BR">Corujão III - Loop</title>
+    <desc lang="pt-BR">Quando a namorada morre, Daniel fica obcecado em encontrar um jeito de voltar no tempo. Ele descobre uma maneira e acaba preso em um looping de acontecimentos.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T012000 -0300" end="20260314T021000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T021000 -0300" end="20260314T031000 -0300">
+    <title lang="pt-BR">Bom Dia Sábado</title>
+    <desc lang="pt-BR">Telejornal com notícias de todo o Brasil, além de muita prestação de serviço e previsão do tempo. Apresentação de Sabina Simonato e Marcelo Pereira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T031000 -0300" end="20260314T035000 -0300">
+    <title lang="pt-BR">Pequenas Empresas &amp;amp; Grandes Negócios</title>
+    <desc lang="pt-BR">Novidades e informação para quem quer investir e empreender no Brasil.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T035000 -0300" end="20260314T070500 -0300">
+    <title lang="pt-BR">É de Casa</title>
+    <desc lang="pt-BR">Maria Beltrão, Rita Batista, Thiago Oliveira e Talitha Morete comandam programa de variedades das manhãs de sábado, ao vivo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T070500 -0300" end="20260314T082000 -0300">
+    <title lang="pt-BR">Jornal do Almoço</title>
+    <desc lang="pt-BR">O Jornal do Almoço reúne assuntos diversos como cultura, variedades, noticiário factual, musicais, entrevistas ao vivo e comentários. 
+
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T082000 -0300" end="20260314T084500 -0300">
+    <title lang="pt-BR">Globo Esporte RS</title>
+    <desc lang="pt-BR">O Globo Esporte RS mostra tudo sobre a dupla Gre-Nal, além das principais informações do esporte no Rio Grande do Sul.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T084500 -0300" end="20260314T093000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T093000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T100000 -0300" end="20260314T113500 -0300">
+    <title lang="pt-BR">Sessão De Sábado - O Último Mestre Do Ar</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T113500 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Caldeirão Com Mion</title>
+    <desc lang="pt-BR">Apresentado por Marcos Mion, a nova versão do &apos;Caldeirão&apos; traz alguns quadros já conhecidos do público e atrações inéditas.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T140000 -0300" end="20260314T144500 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T144500 -0300" end="20260314T150500 -0300">
+    <title lang="pt-BR">RBS Notícias</title>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T150500 -0300" end="20260314T155000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T155000 -0300" end="20260314T164000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T164000 -0300" end="20260314T174500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T174500 -0300" end="20260314T181000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T181000 -0300" end="20260314T192500 -0300">
+    <title lang="pt-BR">Altas Horas</title>
+    <desc lang="pt-BR">Serginho Groisman comanda a atração, que abre espaço para boa música, encontros inesperados e entrevistas com personalidades.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T192500 -0300" end="20260314T213000 -0300">
+    <title lang="pt-BR">Supercine - A Teoria De Tudo</title>
+    <desc lang="pt-BR">Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico fez descobertas importantes e a descoberta de uma doença degenerativa.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T213000 -0300" end="20260314T221000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_rs" start="20260314T221000 -0300" end="20260314T235000 -0300">
+    <title lang="pt-BR">Corujão I - Dois Mais Dois</title>
+    <desc lang="pt-BR">O casamento morno de Diogo e Emília é virado de cabeça pra baixo quando eles descobrem que os melhores amigos, Ricardo e Bettina, têm um relacionamento aberto</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T000000 -0300" end="20260315T012000 -0300">
+    <title lang="pt-BR">Corujão II - Pegando Fogo</title>
+    <desc lang="pt-BR">Adam já foi um dos mais respeitados chefes de cozinha em Paris. Ele parte para Londres disposto a recomeçar a carreira e conta com a ajuda de Tony.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T012000 -0300" end="20260315T020500 -0300">
+    <title lang="pt-BR">Santa Missa</title>
+    <desc lang="pt-BR">Padre Marcelo Rossi celebra todos os domingos missa para todo o Brasil. Mais antigo programa da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T020500 -0300" end="20260315T025500 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T025500 -0300" end="20260315T032500 -0300">
+    <title lang="pt-BR">Galpão Crioulo</title>
+    <desc lang="pt-BR">Neto Fagundes comanda o programa Galpão Crioulo que valoriza a cultura e a música regionalista gaúcha nas manhãs do fim de semana.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T032500 -0300" end="20260315T035500 -0300">
+    <title lang="pt-BR">Auto Esporte</title>
+    <desc lang="pt-BR">As principais notícias sobre o universo dos automóveis.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T035500 -0300" end="20260315T052000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T052000 -0300" end="20260315T061500 -0300">
+    <title lang="pt-BR">Viver Sertanejo</title>
+    <desc lang="pt-BR">Com “causos”, momentos emocionantes e risadas, Daniel e convidados compartilham histórias de como a música serve de pano de fundo para muitos brasileiros.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T061500 -0300" end="20260315T073000 -0300">
+    <title lang="pt-BR">Esporte Espetacular</title>
+    <desc lang="pt-BR">Além de transmitir partidas e campeonatos ao vivo, o programa semanal apresenta os destaques do mundo esportivo, entrevistas e reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T073000 -0300" end="20260315T092000 -0300">
+    <title lang="pt-BR">Temperatura Máxima - Cruella</title>
+    <desc lang="pt-BR">A jovem vigarista Estella chama a atenção de uma baronesa. A relação delas desencadeia um curso de eventos que fazem Estella se tornar Cruella.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T092000 -0300" end="20260315T095000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T095000 -0300" end="20260315T110500 -0300">
+    <title lang="pt-BR">Em Família Com Eliana</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T110500 -0300" end="20260315T111500 -0300">
+    <title lang="pt-BR">Bora Pro Jogo</title>
+    <desc lang="pt-BR">No Bora pro Jogo, Tiago Medeiros abre a transmissão na beira do campo e convida o torcedor para curtir as novidades do Futebol na Globo com muita interatividade</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T111500 -0300" end="20260315T133500 -0300">
+    <title lang="pt-BR">Futebol: Internacional x Bahia</title>
+    <desc lang="pt-BR">Siga ao vivo o Brasileirão, a Libertadores, a Copa do Brasil e mais.</desc>
+    <category lang="pt-BR">Esporte</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T133500 -0300" end="20260315T145000 -0300">
+    <title lang="pt-BR">Domingão Com Huck</title>
+    <desc lang="pt-BR">Entretenimento, diversão, emoção e novas descobertas nos quadros ‘Show dos famosos’ e ‘Quem quer ser um milionário?’ e em matérias especiais pelo país.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T145000 -0300" end="20260315T153500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T153500 -0300" end="20260315T163000 -0300">
+    <title lang="pt-BR">Fantástico</title>
+    <desc lang="pt-BR">Reportagens especiais e as notícias mais importantes da semana, com apresentação de Maju Coutinho e Poliana Abritta. </desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T163000 -0300" end="20260315T193000 -0300">
+    <title lang="pt-BR">Oscar 2026</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T193000 -0300" end="20260315T201500 -0300">
+    <title lang="pt-BR">Fórmula 1 - Compacto</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T201500 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">Domingo Maior - Mestre Dos Mares: O Lado Mais Distante Do Mundo</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T220000 -0300" end="20260315T224000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_rs" start="20260315T224000 -0300" end="20260315T233000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga II</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T020000 -0300" end="20260312T043000 -0300">
+    <title lang="pt-BR">Bom Dia Pará</title>
+    <desc lang="pt-BR">Jornalismo dinâmico e comprometido com os interesses dos paraenses. De segunda a sexta, a partir das 6h da manhã.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T043000 -0300" end="20260312T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T053000 -0300" end="20260312T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T063500 -0300" end="20260312T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T074500 -0300" end="20260312T090000 -0300">
+    <title lang="pt-BR">JL1 - Jornal Liberal 1ª Edição</title>
+    <desc lang="pt-BR">O JL1 fala sobre a realidade de nossa região, no ato da notícia, com entradas de repórteres ao vivo, demonstrando agilidade e dinamismo da equipe de jornalismo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T090000 -0300" end="20260312T092500 -0300">
+    <title lang="pt-BR">Globo Esporte </title>
+    <desc lang="pt-BR">Conquistas, lances geniais, gols decisivos, histórias de superação e toda a emoção do esporte você encontra aqui. Depois do Jornal Liberal 1ªEdição, no GE Pará.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T092500 -0300" end="20260312T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T104500 -0300" end="20260312T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T113000 -0300" end="20260312T131000 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Vidas Passadas</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T131000 -0300" end="20260312T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T142500 -0300" end="20260312T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T151000 -0300" end="20260312T154000 -0300">
+    <title lang="pt-BR">JL2 - Jornal Liberal 2ª Edição</title>
+    <desc lang="pt-BR">Mesmo depois de um dia intenso e agitado, o paraense faz questão de ficar bem informado, de segunda a sábado o Jornal Liberal 2ª edição é a partir das 19:20h
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T154000 -0300" end="20260312T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T163000 -0300" end="20260312T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T172000 -0300" end="20260312T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T182500 -0300" end="20260312T192500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T192500 -0300" end="20260312T201500 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T201500 -0300" end="20260312T210000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T210000 -0300" end="20260312T212500 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T212500 -0300" end="20260312T224500 -0300">
+    <title lang="pt-BR">Corujão I - L.O.C.A.</title>
+    <desc lang="pt-BR">Três mulheres se conhecem em uma reunião da Liga das Obsessivas Compulsivas por Amor e resolvem se juntar para uma grande vingança.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260312T224500 -0300" end="20260313T000000 -0300">
+    <title lang="pt-BR">Corujão II - Muito Gelo E Dois Dedos D&apos;água</title>
+    <desc lang="pt-BR">Roberta e Suzana são irmãs e nutrem um desejo de vingança em relação à avó, que as atormentava com conceitos rígidos sobre etiqueta e educação.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T020000 -0300" end="20260313T043000 -0300">
+    <title lang="pt-BR">Bom Dia Pará</title>
+    <desc lang="pt-BR">Jornalismo dinâmico e comprometido com os interesses dos paraenses. De segunda a sexta, a partir das 6h da manhã.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T043000 -0300" end="20260313T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T053000 -0300" end="20260313T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T063500 -0300" end="20260313T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T074500 -0300" end="20260313T090000 -0300">
+    <title lang="pt-BR">JL1 - Jornal Liberal 1ª Edição</title>
+    <desc lang="pt-BR">O JL1 fala sobre a realidade de nossa região, no ato da notícia, com entradas de repórteres ao vivo, demonstrando agilidade e dinamismo da equipe de jornalismo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T090000 -0300" end="20260313T092500 -0300">
+    <title lang="pt-BR">Globo Esporte </title>
+    <desc lang="pt-BR">Conquistas, lances geniais, gols decisivos, histórias de superação e toda a emoção do esporte você encontra aqui. Depois do Jornal Liberal 1ªEdição, no GE Pará.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T092500 -0300" end="20260313T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T104500 -0300" end="20260313T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T113000 -0300" end="20260313T131500 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Saneamento Básico - O Filme</title>
+    <desc lang="pt-BR">Moradores de pequena vila planejam realizar vídeo para pegar a quantia oferecida pelo governo e usá-la na realização de uma obra para o tratamento do esgoto.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T131500 -0300" end="20260313T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T142500 -0300" end="20260313T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T151000 -0300" end="20260313T154000 -0300">
+    <title lang="pt-BR">JL2 - Jornal Liberal 2ª Edição</title>
+    <desc lang="pt-BR">Mesmo depois de um dia intenso e agitado, o paraense faz questão de ficar bem informado, de segunda a sábado o Jornal Liberal 2ª edição é a partir das 19:20h
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T154000 -0300" end="20260313T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T163000 -0300" end="20260313T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T172000 -0300" end="20260313T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T182500 -0300" end="20260313T190000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T190000 -0300" end="20260313T195000 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T195000 -0300" end="20260313T204000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T204000 -0300" end="20260313T212500 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T212500 -0300" end="20260313T215000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T215000 -0300" end="20260313T230500 -0300">
+    <title lang="pt-BR">Corujão I - De Pernas Pro Ar</title>
+    <desc lang="pt-BR">Mulher workaholic decide virar sócia de uma sex shop depois de ser demitida. </desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260313T230500 -0300" end="20260314T004500 -0300">
+    <title lang="pt-BR">Corujão II - Quincas Berro D&apos;água</title>
+    <desc lang="pt-BR">Quincas Berro D&apos;água é encontrado morto em sua cama. Inconformados com sua morte, seus melhores amigos roubam o corpo e o levam para uma última noite de farra.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T000000 -0300" end="20260314T012000 -0300">
+    <title lang="pt-BR">Corujão III - Loop</title>
+    <desc lang="pt-BR">Quando a namorada morre, Daniel fica obcecado em encontrar um jeito de voltar no tempo. Ele descobre uma maneira e acaba preso em um looping de acontecimentos.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T012000 -0300" end="20260314T021000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T021000 -0300" end="20260314T031000 -0300">
+    <title lang="pt-BR">Bom Dia Sábado</title>
+    <desc lang="pt-BR">Telejornal com notícias de todo o Brasil, além de muita prestação de serviço e previsão do tempo. Apresentação de Sabina Simonato e Marcelo Pereira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T031000 -0300" end="20260314T035000 -0300">
+    <title lang="pt-BR">Pequenas Empresas &amp;amp; Grandes Negócios</title>
+    <desc lang="pt-BR">Novidades e informação para quem quer investir e empreender no Brasil.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T035000 -0300" end="20260314T070500 -0300">
+    <title lang="pt-BR">É de Casa</title>
+    <desc lang="pt-BR">Maria Beltrão, Rita Batista, Thiago Oliveira e Talitha Morete comandam programa de variedades das manhãs de sábado, ao vivo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T070500 -0300" end="20260314T082000 -0300">
+    <title lang="pt-BR">JL1 - Jornal Liberal 1ª Edição</title>
+    <desc lang="pt-BR">O JL1 fala sobre a realidade de nossa região, no ato da notícia, com entradas de repórteres ao vivo, demonstrando agilidade e dinamismo da equipe de jornalismo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T082000 -0300" end="20260314T084500 -0300">
+    <title lang="pt-BR">Globo Esporte </title>
+    <desc lang="pt-BR">Conquistas, lances geniais, gols decisivos, histórias de superação e toda a emoção do esporte você encontra aqui. Depois do Jornal Liberal 1ªEdição, no GE Pará.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T084500 -0300" end="20260314T093000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T093000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T100000 -0300" end="20260314T113500 -0300">
+    <title lang="pt-BR">Sessão De Sábado - O Último Mestre Do Ar</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T113500 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Caldeirão Com Mion</title>
+    <desc lang="pt-BR">Apresentado por Marcos Mion, a nova versão do &apos;Caldeirão&apos; traz alguns quadros já conhecidos do público e atrações inéditas.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T140000 -0300" end="20260314T144500 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T144500 -0300" end="20260314T150500 -0300">
+    <title lang="pt-BR">JL2 - Jornal Liberal 2ª Edição</title>
+    <desc lang="pt-BR">Mesmo depois de um dia intenso e agitado, o paraense faz questão de ficar bem informado, de segunda a sábado o Jornal Liberal 2ª edição é a partir das 19:20h
+</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T150500 -0300" end="20260314T155000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T155000 -0300" end="20260314T164000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T164000 -0300" end="20260314T174500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T174500 -0300" end="20260314T181000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T181000 -0300" end="20260314T192500 -0300">
+    <title lang="pt-BR">Altas Horas</title>
+    <desc lang="pt-BR">Serginho Groisman comanda a atração, que abre espaço para boa música, encontros inesperados e entrevistas com personalidades.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T192500 -0300" end="20260314T213000 -0300">
+    <title lang="pt-BR">Supercine - A Teoria De Tudo</title>
+    <desc lang="pt-BR">Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico fez descobertas importantes e a descoberta de uma doença degenerativa.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T213000 -0300" end="20260314T221000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_pa" start="20260314T221000 -0300" end="20260314T235000 -0300">
+    <title lang="pt-BR">Corujão I - Dois Mais Dois</title>
+    <desc lang="pt-BR">O casamento morno de Diogo e Emília é virado de cabeça pra baixo quando eles descobrem que os melhores amigos, Ricardo e Bettina, têm um relacionamento aberto</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T000000 -0300" end="20260315T012000 -0300">
+    <title lang="pt-BR">Corujão II - Pegando Fogo</title>
+    <desc lang="pt-BR">Adam já foi um dos mais respeitados chefes de cozinha em Paris. Ele parte para Londres disposto a recomeçar a carreira e conta com a ajuda de Tony.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T012000 -0300" end="20260315T020500 -0300">
+    <title lang="pt-BR">Santa Missa</title>
+    <desc lang="pt-BR">Padre Marcelo Rossi celebra todos os domingos missa para todo o Brasil. Mais antigo programa da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T020500 -0300" end="20260315T025500 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T025500 -0300" end="20260315T032500 -0300">
+    <title lang="pt-BR">Liberal Comunidade</title>
+    <desc lang="pt-BR">Reportagens especiais que abordam temas de interesse coletivo, questões de utilidade pública, direitos e deveres dos paraenses.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T032500 -0300" end="20260315T035500 -0300">
+    <title lang="pt-BR">Auto Esporte</title>
+    <desc lang="pt-BR">As principais notícias sobre o universo dos automóveis.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T035500 -0300" end="20260315T052000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T052000 -0300" end="20260315T061500 -0300">
+    <title lang="pt-BR">Viver Sertanejo</title>
+    <desc lang="pt-BR">Com “causos”, momentos emocionantes e risadas, Daniel e convidados compartilham histórias de como a música serve de pano de fundo para muitos brasileiros.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T061500 -0300" end="20260315T073000 -0300">
+    <title lang="pt-BR">Esporte Espetacular</title>
+    <desc lang="pt-BR">Além de transmitir partidas e campeonatos ao vivo, o programa semanal apresenta os destaques do mundo esportivo, entrevistas e reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T073000 -0300" end="20260315T092000 -0300">
+    <title lang="pt-BR">Temperatura Máxima - Cruella</title>
+    <desc lang="pt-BR">A jovem vigarista Estella chama a atenção de uma baronesa. A relação delas desencadeia um curso de eventos que fazem Estella se tornar Cruella.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T092000 -0300" end="20260315T095000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T095000 -0300" end="20260315T110500 -0300">
+    <title lang="pt-BR">Em Família Com Eliana</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T110500 -0300" end="20260315T111500 -0300">
+    <title lang="pt-BR">Bora Pro Jogo</title>
+    <desc lang="pt-BR">No Bora pro Jogo, Tiago Medeiros abre a transmissão na beira do campo e convida o torcedor para curtir as novidades do Futebol na Globo com muita interatividade</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T111500 -0300" end="20260315T133500 -0300">
+    <title lang="pt-BR">Futebol</title>
+    <desc lang="pt-BR">Siga ao vivo o Brasileirão, a Libertadores, a Copa do Brasil e mais.</desc>
+    <category lang="pt-BR">Esporte</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T133500 -0300" end="20260315T145000 -0300">
+    <title lang="pt-BR">Domingão Com Huck</title>
+    <desc lang="pt-BR">Entretenimento, diversão, emoção e novas descobertas nos quadros ‘Show dos famosos’ e ‘Quem quer ser um milionário?’ e em matérias especiais pelo país.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T145000 -0300" end="20260315T153500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T153500 -0300" end="20260315T163000 -0300">
+    <title lang="pt-BR">Fantástico</title>
+    <desc lang="pt-BR">Reportagens especiais e as notícias mais importantes da semana, com apresentação de Maju Coutinho e Poliana Abritta. </desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T163000 -0300" end="20260315T193000 -0300">
+    <title lang="pt-BR">Oscar 2026</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T193000 -0300" end="20260315T201500 -0300">
+    <title lang="pt-BR">Fórmula 1 - Compacto</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T201500 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">Domingo Maior - Mestre Dos Mares: O Lado Mais Distante Do Mundo</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T220000 -0300" end="20260315T224000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_pa" start="20260315T224000 -0300" end="20260315T233000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga II</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">Hora 1</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T020000 -0300" end="20260312T040000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T040000 -0300" end="20260312T060000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T060000 -0300" end="20260312T080000 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T080000 -0300" end="20260312T100000 -0300">
+    <title lang="pt-BR">Encontro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T100000 -0300" end="20260312T120000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T120000 -0300" end="20260312T140000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T140000 -0300" end="20260312T160000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T160000 -0300" end="20260312T180000 -0300">
+    <title lang="pt-BR">Novela</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T180000 -0300" end="20260312T200000 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T200000 -0300" end="20260312T220000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260312T220000 -0300" end="20260313T000000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T020000 -0300" end="20260313T040000 -0300">
+    <title lang="pt-BR">Novela das 20h</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T040000 -0300" end="20260313T060000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T060000 -0300" end="20260313T080000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T080000 -0300" end="20260313T100000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Hora 1</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T020000 -0300" end="20260313T040000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T040000 -0300" end="20260313T060000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T060000 -0300" end="20260313T080000 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T080000 -0300" end="20260313T100000 -0300">
+    <title lang="pt-BR">Encontro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T100000 -0300" end="20260313T120000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T120000 -0300" end="20260313T140000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T140000 -0300" end="20260313T160000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T160000 -0300" end="20260313T180000 -0300">
+    <title lang="pt-BR">Novela</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T180000 -0300" end="20260313T200000 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T200000 -0300" end="20260313T220000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260313T220000 -0300" end="20260314T000000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T000000 -0300" end="20260314T020000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T020000 -0300" end="20260314T040000 -0300">
+    <title lang="pt-BR">Novela das 20h</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T040000 -0300" end="20260314T060000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T060000 -0300" end="20260314T080000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T080000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T000000 -0300" end="20260314T020000 -0300">
+    <title lang="pt-BR">Hora 1</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T020000 -0300" end="20260314T040000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T040000 -0300" end="20260314T060000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T060000 -0300" end="20260314T080000 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T080000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Encontro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T100000 -0300" end="20260314T120000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T120000 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T140000 -0300" end="20260314T160000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T160000 -0300" end="20260314T180000 -0300">
+    <title lang="pt-BR">Novela</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T180000 -0300" end="20260314T200000 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T200000 -0300" end="20260314T220000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260314T220000 -0300" end="20260315T000000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T000000 -0300" end="20260315T020000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T020000 -0300" end="20260315T040000 -0300">
+    <title lang="pt-BR">Novela das 20h</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T040000 -0300" end="20260315T060000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T060000 -0300" end="20260315T080000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T080000 -0300" end="20260315T100000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T000000 -0300" end="20260315T020000 -0300">
+    <title lang="pt-BR">Hora 1</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T020000 -0300" end="20260315T040000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T040000 -0300" end="20260315T060000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T060000 -0300" end="20260315T080000 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T080000 -0300" end="20260315T100000 -0300">
+    <title lang="pt-BR">Encontro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T100000 -0300" end="20260315T120000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T120000 -0300" end="20260315T140000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T140000 -0300" end="20260315T160000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T160000 -0300" end="20260315T180000 -0300">
+    <title lang="pt-BR">Novela</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T180000 -0300" end="20260315T200000 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T200000 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260315T220000 -0300" end="20260316T000000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T000000 -0300" end="20260316T020000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T020000 -0300" end="20260316T040000 -0300">
+    <title lang="pt-BR">Novela das 20h</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T040000 -0300" end="20260316T060000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T060000 -0300" end="20260316T080000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T080000 -0300" end="20260316T100000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T000000 -0300" end="20260316T020000 -0300">
+    <title lang="pt-BR">Hora 1</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T020000 -0300" end="20260316T040000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T040000 -0300" end="20260316T060000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T060000 -0300" end="20260316T080000 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T080000 -0300" end="20260316T100000 -0300">
+    <title lang="pt-BR">Encontro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T100000 -0300" end="20260316T120000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T120000 -0300" end="20260316T140000 -0300">
+    <title lang="pt-BR">Bom Dia Cidade</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T140000 -0300" end="20260316T160000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T160000 -0300" end="20260316T180000 -0300">
+    <title lang="pt-BR">Novela</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T180000 -0300" end="20260316T200000 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T200000 -0300" end="20260316T220000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260316T220000 -0300" end="20260317T000000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260317T000000 -0300" end="20260317T020000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260317T020000 -0300" end="20260317T040000 -0300">
+    <title lang="pt-BR">Novela das 20h</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260317T040000 -0300" end="20260317T060000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260317T060000 -0300" end="20260317T080000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_am" start="20260317T080000 -0300" end="20260317T100000 -0300">
+    <title lang="pt-BR">Globo</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T020000 -0300" end="20260312T043000 -0300">
+    <title lang="pt-BR">Bom Dia São Paulo</title>
+    <desc lang="pt-BR">As primeiras notícias locais das manhãs e repercussões sobre os fatos mais importantes do dia estão no Bom Dia SP, que traz ainda orientações de trânsito.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T043000 -0300" end="20260312T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T053000 -0300" end="20260312T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T063500 -0300" end="20260312T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T074500 -0300" end="20260312T090000 -0300">
+    <title lang="pt-BR">SP1</title>
+    <desc lang="pt-BR">Alan Severiano mostra o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T090000 -0300" end="20260312T092500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">O Globo Esporte atualiza o noticiário esportivo do dia.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T092500 -0300" end="20260312T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T104500 -0300" end="20260312T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T113000 -0300" end="20260312T130000 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Vidas Passadas</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T130000 -0300" end="20260312T131000 -0300">
+    <title lang="pt-BR">Boletim SP2</title>
+    <desc lang="pt-BR">Boletim com as principais notícias de São Paulo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T131000 -0300" end="20260312T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T142500 -0300" end="20260312T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T151000 -0300" end="20260312T154000 -0300">
+    <title lang="pt-BR">SP2</title>
+    <desc lang="pt-BR">Telejornal que traz as notícias locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T154000 -0300" end="20260312T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T163000 -0300" end="20260312T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T172000 -0300" end="20260312T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T182500 -0300" end="20260312T192500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T192500 -0300" end="20260312T201500 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T201500 -0300" end="20260312T210000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T210000 -0300" end="20260312T212500 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T212500 -0300" end="20260312T224500 -0300">
+    <title lang="pt-BR">Corujão I - L.O.C.A.</title>
+    <desc lang="pt-BR">Três mulheres se conhecem em uma reunião da Liga das Obsessivas Compulsivas por Amor e resolvem se juntar para uma grande vingança.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260312T224500 -0300" end="20260313T000000 -0300">
+    <title lang="pt-BR">Corujão II - Muito Gelo E Dois Dedos D&apos;água</title>
+    <desc lang="pt-BR">Roberta e Suzana são irmãs e nutrem um desejo de vingança em relação à avó, que as atormentava com conceitos rígidos sobre etiqueta e educação.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">Hora Um</title>
+    <desc lang="pt-BR">Os assuntos mais importantes do Brasil e do mundo, com apresentação de Tiago Scheuer.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T020000 -0300" end="20260313T043000 -0300">
+    <title lang="pt-BR">Bom Dia São Paulo</title>
+    <desc lang="pt-BR">As primeiras notícias locais das manhãs e repercussões sobre os fatos mais importantes do dia estão no Bom Dia SP, que traz ainda orientações de trânsito.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T043000 -0300" end="20260313T053000 -0300">
+    <title lang="pt-BR">Bom Dia Brasil</title>
+    <desc lang="pt-BR">O telejornal, com apresentação de Ana Paula Araújo, exibe as primeiras notícias do dia no Brasil e no mundo e repercute os fatos mais relevantes.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T053000 -0300" end="20260313T063500 -0300">
+    <title lang="pt-BR">Encontro Com Patrícia Poeta</title>
+    <desc lang="pt-BR">Patrícia Poeta comanda o programa que mistura comportamento, prestação de serviço, informação, música, entretenimento e muita diversão.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T063500 -0300" end="20260313T074500 -0300">
+    <title lang="pt-BR">Mais Você</title>
+    <desc lang="pt-BR">Ana Maria Braga apresenta assuntos de interesse da família, como economia popular e saúde, além das delícias da culinária.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T074500 -0300" end="20260313T090000 -0300">
+    <title lang="pt-BR">SP1</title>
+    <desc lang="pt-BR">Alan Severiano mostra o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T090000 -0300" end="20260313T092500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">O Globo Esporte atualiza o noticiário esportivo do dia.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T092500 -0300" end="20260313T104500 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T104500 -0300" end="20260313T113000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T113000 -0300" end="20260313T130500 -0300">
+    <title lang="pt-BR">Sessão da Tarde - Saneamento Básico - O Filme</title>
+    <desc lang="pt-BR">Moradores de pequena vila planejam realizar vídeo para pegar a quantia oferecida pelo governo e usá-la na realização de uma obra para o tratamento do esgoto.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T130500 -0300" end="20260313T131500 -0300">
+    <title lang="pt-BR">Boletim SP2</title>
+    <desc lang="pt-BR">Boletim com as principais notícias de São Paulo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T131500 -0300" end="20260313T142500 -0300">
+    <title lang="pt-BR">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+    <desc lang="pt-BR">A história retrata o universo dos novos-ricos e da decadente elite paulista, retratados na tensão entre a emergente Maria do Carmo e a socialite falida Laurinha</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T142500 -0300" end="20260313T151000 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T151000 -0300" end="20260313T154000 -0300">
+    <title lang="pt-BR">SP2</title>
+    <desc lang="pt-BR">Telejornal que traz as notícias locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T154000 -0300" end="20260313T163000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T163000 -0300" end="20260313T172000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T172000 -0300" end="20260313T182500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T182500 -0300" end="20260313T190000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T190000 -0300" end="20260313T195000 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T195000 -0300" end="20260313T204000 -0300">
+    <title lang="pt-BR">Jornal da Globo</title>
+    <desc lang="pt-BR">As notícias do dia com a análise de comentaristas, espaço para a crônica e opinião.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T204000 -0300" end="20260313T212500 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T212500 -0300" end="20260313T215000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T215000 -0300" end="20260313T230500 -0300">
+    <title lang="pt-BR">Corujão I - De Pernas Pro Ar</title>
+    <desc lang="pt-BR">Mulher workaholic decide virar sócia de uma sex shop depois de ser demitida. </desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260313T230500 -0300" end="20260314T004500 -0300">
+    <title lang="pt-BR">Corujão II - Quincas Berro D&apos;água</title>
+    <desc lang="pt-BR">Quincas Berro D&apos;água é encontrado morto em sua cama. Inconformados com sua morte, seus melhores amigos roubam o corpo e o levam para uma última noite de farra.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T000000 -0300" end="20260314T012000 -0300">
+    <title lang="pt-BR">Corujão III - Loop</title>
+    <desc lang="pt-BR">Quando a namorada morre, Daniel fica obcecado em encontrar um jeito de voltar no tempo. Ele descobre uma maneira e acaba preso em um looping de acontecimentos.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T012000 -0300" end="20260314T021000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T021000 -0300" end="20260314T031000 -0300">
+    <title lang="pt-BR">Bom Dia Sábado</title>
+    <desc lang="pt-BR">Telejornal com notícias de todo o Brasil, além de muita prestação de serviço e previsão do tempo. Apresentação de Sabina Simonato e Marcelo Pereira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T031000 -0300" end="20260314T035000 -0300">
+    <title lang="pt-BR">Pequenas Empresas &amp;amp; Grandes Negócios</title>
+    <desc lang="pt-BR">Novidades e informação para quem quer investir e empreender no Brasil.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T035000 -0300" end="20260314T070500 -0300">
+    <title lang="pt-BR">É de Casa</title>
+    <desc lang="pt-BR">Maria Beltrão, Rita Batista, Thiago Oliveira e Talitha Morete comandam programa de variedades das manhãs de sábado, ao vivo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T070500 -0300" end="20260314T082000 -0300">
+    <title lang="pt-BR">SP1</title>
+    <desc lang="pt-BR">Alan Severiano mostra o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T082000 -0300" end="20260314T084500 -0300">
+    <title lang="pt-BR">Globo Esporte</title>
+    <desc lang="pt-BR">O Globo Esporte atualiza o noticiário esportivo do dia.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T084500 -0300" end="20260314T093000 -0300">
+    <title lang="pt-BR">Jornal Hoje</title>
+    <desc lang="pt-BR">Os destaques do dia no Brasil e no mundo, com apresentação de Roberto Kovalick.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T093000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">Edição Especial - Terra Nostra</title>
+    <desc lang="pt-BR">Os jovens italianos Matteo e Giuliana se apaixonam em um navio imigrante. Ao aportarem no Brasil, são separados e passam a lutar para permanecerem juntos.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T100000 -0300" end="20260314T104000 -0300">
+    <title lang="pt-BR">Paulistar</title>
+    <desc lang="pt-BR">A atração semanal fará um mergulho na cultura, gastronomia, arte e, principalmente, nas histórias de vida, mostrando a riqueza e diversidade da Grande SP.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T104000 -0300" end="20260314T113500 -0300">
+    <title lang="pt-BR">O Melhor da Escolinha</title>
+    <desc lang="pt-BR">Os episódios mais marcantes das duas temporadas da nova ‘Escolinha do Professor Raimundo’.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T113500 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Caldeirão Com Mion</title>
+    <desc lang="pt-BR">Apresentado por Marcos Mion, a nova versão do &apos;Caldeirão&apos; traz alguns quadros já conhecidos do público e atrações inéditas.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T140000 -0300" end="20260314T144500 -0300">
+    <title lang="pt-BR">Êta Mundo Melhor!</title>
+    <desc lang="pt-BR">Nas novas aventuras, Candinho enfrenta uma nova saga: a procura pelo filho perdido. Novela criada e escrita por Walcyr Carrasco e Mauro Wilson.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T144500 -0300" end="20260314T150500 -0300">
+    <title lang="pt-BR">SP2</title>
+    <desc lang="pt-BR">Telejornal que traz as notícias locais, mostrando o que acontece na sua região, com prestação de serviço, boletins de trânsito e a previsão do tempo.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T150500 -0300" end="20260314T155000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T155000 -0300" end="20260314T164000 -0300">
+    <title lang="pt-BR">Jornal Nacional</title>
+    <desc lang="pt-BR">Renata Vasconcellos e César Tralli apresentam o principal telejornal da Globo, com notícias do Brasil e do mundo, denúncias, investigações e séries especiais.</desc>
+    <category lang="pt-BR">Jornalismo</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T164000 -0300" end="20260314T174500 -0300">
+    <title lang="pt-BR">Três Graças</title>
+    <desc lang="pt-BR">Gerluce, a mãe Lígia e a filha Joélly dividem o mesmo destino: a gravidez solo na adolescência. Novela de Aguinaldo Silva, Virgílio Silva e Zé Dassilva.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T174500 -0300" end="20260314T181000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T181000 -0300" end="20260314T192500 -0300">
+    <title lang="pt-BR">Altas Horas</title>
+    <desc lang="pt-BR">Serginho Groisman comanda a atração, que abre espaço para boa música, encontros inesperados e entrevistas com personalidades.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T192500 -0300" end="20260314T213000 -0300">
+    <title lang="pt-BR">Supercine - A Teoria De Tudo</title>
+    <desc lang="pt-BR">Baseado na biografia de Stephen Hawking, o filme mostra como o jovem astrofísico fez descobertas importantes e a descoberta de uma doença degenerativa.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T213000 -0300" end="20260314T221000 -0300">
+    <title lang="pt-BR">Coração Acelerado</title>
+    <desc lang="pt-BR">Agrado Garcia é uma cantora e compositora talentosa que batalha para conquistar uma carreira de sucesso no universo da música sertaneja.</desc>
+    <category lang="pt-BR">Novela</category>
+  </programme>
+  <programme channel="globo_al" start="20260314T221000 -0300" end="20260314T235000 -0300">
+    <title lang="pt-BR">Corujão I - Dois Mais Dois</title>
+    <desc lang="pt-BR">O casamento morno de Diogo e Emília é virado de cabeça pra baixo quando eles descobrem que os melhores amigos, Ricardo e Bettina, têm um relacionamento aberto</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T000000 -0300" end="20260315T012000 -0300">
+    <title lang="pt-BR">Corujão II - Pegando Fogo</title>
+    <desc lang="pt-BR">Adam já foi um dos mais respeitados chefes de cozinha em Paris. Ele parte para Londres disposto a recomeçar a carreira e conta com a ajuda de Tony.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T012000 -0300" end="20260315T020500 -0300">
+    <title lang="pt-BR">Santa Missa</title>
+    <desc lang="pt-BR">Padre Marcelo Rossi celebra todos os domingos missa para todo o Brasil. Mais antigo programa da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T020500 -0300" end="20260315T025500 -0300">
+    <title lang="pt-BR">Globo Repórter</title>
+    <desc lang="pt-BR">Com apresentação de William Bonner e Sandra Annenberg, o ‘Globo Repórter’ é o jornalístico documental que vai ao ar nas noites de sexta-feira.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T025500 -0300" end="20260315T032500 -0300">
+    <title lang="pt-BR">Antena Paulista</title>
+    <desc lang="pt-BR">Programa exibe reportagens, análises e histórias sobre temas relacionados ao estado de São Paulo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T032500 -0300" end="20260315T035500 -0300">
+    <title lang="pt-BR">Auto Esporte</title>
+    <desc lang="pt-BR">As principais notícias sobre o universo dos automóveis.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T035500 -0300" end="20260315T052000 -0300">
+    <title lang="pt-BR">Globo Rural</title>
+    <desc lang="pt-BR">As principais notícias do agronegócio, os índices do setor, informações sobre a vida no campo, além de reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T052000 -0300" end="20260315T061500 -0300">
+    <title lang="pt-BR">Viver Sertanejo</title>
+    <desc lang="pt-BR">Com “causos”, momentos emocionantes e risadas, Daniel e convidados compartilham histórias de como a música serve de pano de fundo para muitos brasileiros.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T061500 -0300" end="20260315T073000 -0300">
+    <title lang="pt-BR">Esporte Espetacular</title>
+    <desc lang="pt-BR">Além de transmitir partidas e campeonatos ao vivo, o programa semanal apresenta os destaques do mundo esportivo, entrevistas e reportagens especiais.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T073000 -0300" end="20260315T092000 -0300">
+    <title lang="pt-BR">Temperatura Máxima - Cruella</title>
+    <desc lang="pt-BR">A jovem vigarista Estella chama a atenção de uma baronesa. A relação delas desencadeia um curso de eventos que fazem Estella se tornar Cruella.</desc>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T092000 -0300" end="20260315T095000 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T095000 -0300" end="20260315T110500 -0300">
+    <title lang="pt-BR">Em Família Com Eliana</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T110500 -0300" end="20260315T111500 -0300">
+    <title lang="pt-BR">Bora Pro Jogo</title>
+    <desc lang="pt-BR">No Bora pro Jogo, Tiago Medeiros abre a transmissão na beira do campo e convida o torcedor para curtir as novidades do Futebol na Globo com muita interatividade</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T111500 -0300" end="20260315T133500 -0300">
+    <title lang="pt-BR">Campeonato Brasileiro</title>
+    <desc lang="pt-BR">Santos x Corinthians</desc>
+    <category lang="pt-BR">Esporte</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T133500 -0300" end="20260315T145000 -0300">
+    <title lang="pt-BR">Domingão Com Huck</title>
+    <desc lang="pt-BR">Entretenimento, diversão, emoção e novas descobertas nos quadros ‘Show dos famosos’ e ‘Quem quer ser um milionário?’ e em matérias especiais pelo país.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T145000 -0300" end="20260315T153500 -0300">
+    <title lang="pt-BR">Big Brother Brasil 26</title>
+    <desc lang="pt-BR">Tadeu Schmidt comanda os participantes da 26ª edição do reality show da Globo.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T153500 -0300" end="20260315T163000 -0300">
+    <title lang="pt-BR">Fantástico</title>
+    <desc lang="pt-BR">Reportagens especiais e as notícias mais importantes da semana, com apresentação de Maju Coutinho e Poliana Abritta. </desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T163000 -0300" end="20260315T193000 -0300">
+    <title lang="pt-BR">Oscar 2026</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T193000 -0300" end="20260315T201500 -0300">
+    <title lang="pt-BR">Fórmula 1 - Compacto</title>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T201500 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">Domingo Maior - Mestre Dos Mares: O Lado Mais Distante Do Mundo</title>
+    <category lang="pt-BR">Filme</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T220000 -0300" end="20260315T224000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga I</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="globo_al" start="20260315T224000 -0300" end="20260315T233000 -0300">
+    <title lang="pt-BR">Comédia Na Madruga II</title>
+    <desc lang="pt-BR">Exibição dos melhores momentos do Vai Que Cola.</desc>
+    <category lang="pt-BR">Programa</category>
+  </programme>
+  <programme channel="sportv" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T020000 -0300" end="20260312T040000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T040000 -0300" end="20260312T060000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T060000 -0300" end="20260312T080000 -0300">
+    <title lang="pt-BR">Troca de Passes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T080000 -0300" end="20260312T100000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T100000 -0300" end="20260312T120000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T120000 -0300" end="20260312T140000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T140000 -0300" end="20260312T160000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T160000 -0300" end="20260312T180000 -0300">
+    <title lang="pt-BR">Seleção sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T180000 -0300" end="20260312T200000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260312T200000 -0300" end="20260312T220000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T020000 -0300" end="20260313T040000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T040000 -0300" end="20260313T060000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T060000 -0300" end="20260313T080000 -0300">
+    <title lang="pt-BR">Troca de Passes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T080000 -0300" end="20260313T100000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T100000 -0300" end="20260313T120000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T120000 -0300" end="20260313T140000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T140000 -0300" end="20260313T160000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T160000 -0300" end="20260313T180000 -0300">
+    <title lang="pt-BR">Seleção sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T180000 -0300" end="20260313T200000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260313T200000 -0300" end="20260313T220000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T000000 -0300" end="20260314T020000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T020000 -0300" end="20260314T040000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T040000 -0300" end="20260314T060000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T060000 -0300" end="20260314T080000 -0300">
+    <title lang="pt-BR">Troca de Passes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T080000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T100000 -0300" end="20260314T120000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T120000 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T140000 -0300" end="20260314T160000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T160000 -0300" end="20260314T180000 -0300">
+    <title lang="pt-BR">Seleção sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T180000 -0300" end="20260314T200000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260314T200000 -0300" end="20260314T220000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T000000 -0300" end="20260315T020000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T020000 -0300" end="20260315T040000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T040000 -0300" end="20260315T060000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T060000 -0300" end="20260315T080000 -0300">
+    <title lang="pt-BR">Troca de Passes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T080000 -0300" end="20260315T100000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T100000 -0300" end="20260315T120000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T120000 -0300" end="20260315T140000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T140000 -0300" end="20260315T160000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T160000 -0300" end="20260315T180000 -0300">
+    <title lang="pt-BR">Seleção sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T180000 -0300" end="20260315T200000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260315T200000 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T000000 -0300" end="20260316T020000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T020000 -0300" end="20260316T040000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T040000 -0300" end="20260316T060000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T060000 -0300" end="20260316T080000 -0300">
+    <title lang="pt-BR">Troca de Passes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T080000 -0300" end="20260316T100000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T100000 -0300" end="20260316T120000 -0300">
+    <title lang="pt-BR">Redação sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T120000 -0300" end="20260316T140000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T140000 -0300" end="20260316T160000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T160000 -0300" end="20260316T180000 -0300">
+    <title lang="pt-BR">Seleção sportv</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T180000 -0300" end="20260316T200000 -0300">
+    <title lang="pt-BR">Tá na Área</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="sportv" start="20260316T200000 -0300" end="20260316T220000 -0300">
+    <title lang="pt-BR">sportv News</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T020000 -0300" end="20260312T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T040000 -0300" end="20260312T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T060000 -0300" end="20260312T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T080000 -0300" end="20260312T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T100000 -0300" end="20260312T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T120000 -0300" end="20260312T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T140000 -0300" end="20260312T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T160000 -0300" end="20260312T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T180000 -0300" end="20260312T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260312T200000 -0300" end="20260312T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T020000 -0300" end="20260313T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T040000 -0300" end="20260313T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T060000 -0300" end="20260313T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T080000 -0300" end="20260313T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T100000 -0300" end="20260313T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T120000 -0300" end="20260313T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T140000 -0300" end="20260313T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T160000 -0300" end="20260313T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T180000 -0300" end="20260313T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260313T200000 -0300" end="20260313T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T000000 -0300" end="20260314T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T020000 -0300" end="20260314T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T040000 -0300" end="20260314T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T060000 -0300" end="20260314T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T080000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T100000 -0300" end="20260314T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T120000 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T140000 -0300" end="20260314T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T160000 -0300" end="20260314T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T180000 -0300" end="20260314T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260314T200000 -0300" end="20260314T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T000000 -0300" end="20260315T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T020000 -0300" end="20260315T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T040000 -0300" end="20260315T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T060000 -0300" end="20260315T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T080000 -0300" end="20260315T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T100000 -0300" end="20260315T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T120000 -0300" end="20260315T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T140000 -0300" end="20260315T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T160000 -0300" end="20260315T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T180000 -0300" end="20260315T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260315T200000 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T000000 -0300" end="20260316T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T020000 -0300" end="20260316T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T040000 -0300" end="20260316T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T060000 -0300" end="20260316T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T080000 -0300" end="20260316T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T100000 -0300" end="20260316T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T120000 -0300" end="20260316T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T140000 -0300" end="20260316T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T160000 -0300" end="20260316T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T180000 -0300" end="20260316T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_sp" start="20260316T200000 -0300" end="20260316T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T000000 -0300" end="20260312T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T020000 -0300" end="20260312T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T040000 -0300" end="20260312T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T060000 -0300" end="20260312T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T080000 -0300" end="20260312T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T100000 -0300" end="20260312T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T120000 -0300" end="20260312T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T140000 -0300" end="20260312T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T160000 -0300" end="20260312T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T180000 -0300" end="20260312T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260312T200000 -0300" end="20260312T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T000000 -0300" end="20260313T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T020000 -0300" end="20260313T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T040000 -0300" end="20260313T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T060000 -0300" end="20260313T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T080000 -0300" end="20260313T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T100000 -0300" end="20260313T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T120000 -0300" end="20260313T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T140000 -0300" end="20260313T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T160000 -0300" end="20260313T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T180000 -0300" end="20260313T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260313T200000 -0300" end="20260313T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T000000 -0300" end="20260314T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T020000 -0300" end="20260314T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T040000 -0300" end="20260314T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T060000 -0300" end="20260314T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T080000 -0300" end="20260314T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T100000 -0300" end="20260314T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T120000 -0300" end="20260314T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T140000 -0300" end="20260314T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T160000 -0300" end="20260314T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T180000 -0300" end="20260314T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260314T200000 -0300" end="20260314T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T000000 -0300" end="20260315T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T020000 -0300" end="20260315T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T040000 -0300" end="20260315T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T060000 -0300" end="20260315T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T080000 -0300" end="20260315T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T100000 -0300" end="20260315T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T120000 -0300" end="20260315T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T140000 -0300" end="20260315T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T160000 -0300" end="20260315T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T180000 -0300" end="20260315T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260315T200000 -0300" end="20260315T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T000000 -0300" end="20260316T020000 -0300">
+    <title lang="pt-BR">CBN no Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T020000 -0300" end="20260316T040000 -0300">
+    <title lang="pt-BR">CBN Entrevista</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T040000 -0300" end="20260316T060000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T060000 -0300" end="20260316T080000 -0300">
+    <title lang="pt-BR">CBN Tecnologia</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T080000 -0300" end="20260316T100000 -0300">
+    <title lang="pt-BR">CBN No Caminho</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T100000 -0300" end="20260316T120000 -0300">
+    <title lang="pt-BR">CBN Esportes</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T120000 -0300" end="20260316T140000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T140000 -0300" end="20260316T160000 -0300">
+    <title lang="pt-BR">CBN Dinheiro</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T160000 -0300" end="20260316T180000 -0300">
+    <title lang="pt-BR">CBN Brasil</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T180000 -0300" end="20260316T200000 -0300">
+    <title lang="pt-BR">CBN No Ar</title>
+    <category lang="pt-BR">program</category>
+  </programme>
+  <programme channel="cbn_rj" start="20260316T200000 -0300" end="20260316T220000 -0300">
+    <title lang="pt-BR">CBN Late Night</title>
+    <category lang="pt-BR">program</category>
   </programme>
 </tv>
