@@ -28,7 +28,7 @@ jobs:
 
       - name: Obter resposta do OpenCode
         run: |
-          opencode run "FAÇA UM .YML QUE VAI CONSEGUIR EXECUTAR CORRETAMENTE O GLOBOEPG.PY" > resposta_opencode.txt
+          opencode run "corrija corretamente o GLOBO.py para que use corretamente https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz"
 
       - name: Exibir resposta no log
         run: |
