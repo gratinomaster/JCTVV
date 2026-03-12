@@ -20,7 +20,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          diga qual dia é hoje e quem é o presidente do brasil
+          modifique tudo o que for necessário para que lista1.m3u tenha o epg correto e funcionando
           EOF
           )
 
