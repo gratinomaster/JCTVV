@@ -23,7 +23,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          adcione tv integração no GLOBOEPG.py
+          adcione tv integração no GLOBOEPG.py não quero programação generica, o proprio py deve encontrar todos os programas de todas as regiões
           EOF
           )
 
