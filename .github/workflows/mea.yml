@@ -8,6 +8,9 @@ jobs:
   opencode:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -28,3 +31,12 @@ jobs:
           echo ""
           echo "Resposta do OpenCode:"
           opencode run "$PERGUNTA"
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add IRIB.m3u || true
+          git commit -m "Arquivo IRIB.m3u gerado pelo OpenCode" || echo "Nada para commit"
+          git push
