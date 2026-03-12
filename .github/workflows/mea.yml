@@ -23,7 +23,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          o epg da lista1.m3u não esta funcionando, corrija tudo para que funcione corretamente, e o sportv tem que ter o tvg-id correto, tera que modificar GLOBO.py e GLOBOEPG.py
+          o epg da lista1.m3u não esta funcionando, corrija tudo para que funcione corretamente, e o sportv tem que ter o tvg-id correto, tera que modificar GLOBO.py e GLOBOEPG.py, cbn sp e cbn rj devem ter os epgs corretos, com os guias corretos, teste para ver se o epg vai funcionar com a lista1.m3u, acho que está sendo gerado de forma incorreta
           EOF
           )
 
