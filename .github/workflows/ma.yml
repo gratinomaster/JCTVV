@@ -24,9 +24,7 @@ jobs:
           # Importante: Garantir que o PATH atualizado seja usado neste shell
           export PATH="$HOME/.opencode/bin:$PATH"
           
-          opencode run "Acesse os dados de mercado de hoje e responda diretamente: 
-          Como está goll54? goll2? comprar ou vender?
-          Formate a resposta como um relatório de mercado." > RESPOSTA_MERCADO.txt
+          opencode run "FAÇA UM .YML QUE VAI CONSEGUIR EXECUTAR CORRETAMENTE O GLOBOEPG.PY" > RESPOSTA_MERCADO.txt
 
       - name: Exibir Resposta no Log
         run: |
