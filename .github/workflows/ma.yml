@@ -32,7 +32,7 @@ jobs:
       - name: Run OpenCode Prompt
         run: |
           opencode run "
-          diga quais arquivos .yaml devem ser executar quais .py para que o epg da lista lista1.m3u funcione corretamente, e preciso do link publico do epg, dentro do .m3u não link local, para que em qualquer lugar o epg seja usado, faça todas as modificações necessarias para que funcione corretamente, meu usuario chama gratinomaster e meu repositorio chama JCTV
+          faça GLOBOEPG.py que vai conseguir gerar o GLOBOEPG.xml.gz com o epg completo de todas as regiões https://redeglobo.globo.com/sao-paulo/programacao/ e faça um .txt com os tvg-ids que irei usar nas minhas playlists, deve contar 5 dias de programação de todas regiões e nada fixo no codigo, ja que sempre ao ser executado vai extrair tudo
           "
 
       - name: Save result
