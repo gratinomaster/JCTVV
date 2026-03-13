@@ -1,8 +1,4 @@
-# TVG IDs para playlists IPTV - Rede Globo
-# Gerado em: 2026-03-12 17:47:54
-#
-# Formato: tvg-id,tvg-name,tvg-logo,group-title
-
+# TVG IDs - Rede Globo
 globo_sp,"Globo São Paulo",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_rj,"Globo Rio de Janeiro",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_df,"Globo Distrito Federal",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
@@ -12,7 +8,6 @@ globo_pe,"Globo Pernambuco",https://s.glbimg.com/og/rg/static/img/redeglobo/logo
 globo_ba,"Globo Bahia",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_pb,"Globo Paraíba",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_es,"Globo Espírito Santo",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
-globo_mg,"Globo Minas Gerais",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_ce,"Globo Ceará",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_ms,"Globo Mato Grosso do Sul",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_mt,"Globo Mato Grosso",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
@@ -21,6 +16,6 @@ globo_rs,"Globo Rio Grande do Sul",https://s.glbimg.com/og/rg/static/img/redeglo
 globo_pa,"Globo Pará",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_am,"Globo Amazonas",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
 globo_al,"Globo Alagoas",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
-globo_sportv,"Globo SporTV",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
-globo_cbn_sp,"Globo CBN São Paulo",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
-globo_cbn_rj,"Globo CBN Rio de Janeiro",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
+sportv,"Globo SporTV",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
+cbn_sp,"Globo CBN São Paulo",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
+cbn_rj,"Globo CBN Rio de Janeiro",https://s.glbimg.com/og/rg/static/img/redeglobo/logo-60x60.png,Globo
