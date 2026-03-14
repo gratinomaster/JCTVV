@@ -25,8 +25,8 @@ jobs:
         run: |
           cat << 'EOF' > prompt.txt
           faça codigo python que vai conseguir fazer o que vou falar abaixo
-          acesse https://g1.globo.com/sp/sao-paulo/ultimas-noticias/ 
-          e https://www.aparatchi.com/iran-live-tv/farsi-irib-tv/irib-namayesh
+          acesse 
+          https://g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv1.ghtml https://g1.globo.com/sp/campinas-regiao/ao-vivo/veja-o-eptv-2-campinas-ao-vivo.ghtml https://g1.globo.com/sp/piracicaba-regiao/ao-vivo/eptv-2-piracicaba-ao-vivo.ghtml https://g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv-2-ribeirao-e-franca-ao-vivo.ghtml
           use crawl4ai
           encontre o stream do video
           gere lista3.m3u no formato #extinf com group-title="NEWS WORLD"
