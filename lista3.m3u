@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="FoxNewsVideo1" tvg-name="Fox News Video 1" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/e2c170ed-1046-44c1-bb1e-b2705d4322d6/d8c83fbd-0c1c-46b8-8676-40af6ade5d08/1280x720/match/400/225/image.jpg",Fox News On Demand
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/694940094001/e2c170ed-1046-44c1-bb1e-b2705d4322d6/10s/master.m3u8?fastly_token=NmFhNWYxNWJfM2EyMDI5YWI5OTRlNzVlMTkwNzU0ZTc3NDk4MGM5ODEwZGY0NDVmZDQ0OGNkNjdjZDljNjdiODIxZTg4N2NiZA%3D%3D
-#EXTINF:-1 tvg-id="FoxNewsVideo2" tvg-name="Fox News Video 2" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/177344ef-2cc0-4ad6-af9e-020625d75f98/b5d47400-b514-47ea-ada3-1c91c338ac29/1280x720/match/400/225/image.jpg",Fox News On Demand
-https://manifest.prod.boltdns.net/manifest/v1/hls/v4/clear/694940094001/177344ef-2cc0-4ad6-af9e-020625d75f98/10s/master.m3u8?fastly_token=NmFhNWVmYWNfMjZiMDk5OWQ3YzlkZDkwMDFkM2QyOTlhZWNkYjgwMDUwMTA4MDZiYjk4MzBlYjFkZTI5MjY4YzA2YjNlMjNmNQ%3D%3D
+#EXTINF:-1 group-title="NEWS WORLD",IRIB TV2
+https://gg.hls2.xyz/live/irib-tv2/playlist.m3u8
+#EXTINF:-1 group-title="NEWS WORLD",IRIB Namayesh
+https://gg.hls2.xyz/live/irib-namayesh/playlist.m3u8
