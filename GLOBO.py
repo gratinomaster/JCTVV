@@ -1,16 +1,24 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 import concurrent.futures
-import os
+import re
+import json
 
 options = Options()
-options.add_argument("--headless")
+options.add_argument("--headless=new")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-gpu")
 options.add_argument("--window-size=1280,720")
 options.add_argument("--disable-infobars")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-extensions")
+options.add_argument("--disable-logging")
+options.add_argument("--log-level=3")
 
 EPG_FILES = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz,https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml"
 
@@ -41,8 +49,6 @@ CHANNEL_TVG_IDS = {
     "globoplay.globo.com/v/2168377": "globo_pa",
     "globoplay.globo.com/v/10747444": "cbn_sp",
     "globoplay.globo.com/v/10740500": "cbn_rj",
-    "globoplay.globo.com/v/10747444": "globonews",
-    "globoplay.globo.com/v/10740500": "globonews",
     "g1.globo.com/rj": "globo_rj",
     "g1.globo.com/rj/rio-de-janeiro": "globo_rj",
     "globoplay.globo.com/v/1328766": "globo_rj",
@@ -91,7 +97,6 @@ globoplay_urls = [
     "https://globoplay.globo.com/v/4064559/",
     "https://globoplay.globo.com/v/5472979/",
     "https://globoplay.globo.com/v/2135579/",
-    "https://globoplay.globo.com/v/5472979/",
     "https://globoplay.globo.com/v/6120663/",
     "https://globoplay.globo.com/v/2145544/",
     "https://globoplay.globo.com/ao-vivo/10865071/",
@@ -116,58 +121,118 @@ globoplay_urls = [
 
 
 def extract_globoplay_data(url):
-    driver = webdriver.Chrome(options=options)
-    driver.get(url)
-
+    driver = None
     try:
+        driver = webdriver.Chrome(options=options)
+        driver.get(url)
+
+        wait = WebDriverWait(driver, 15)
+
         try:
-            play_button = driver.find_element(
-                By.CSS_SELECTOR, "button.poster__play-wrapper"
+            play_button = wait.until(
+                EC.presence_of_element_located(
+                    (
+                        By.CSS_SELECTOR,
+                        "button.poster__play-wrapper, .play-button, [data-testid='play-button']",
+                    )
+                )
             )
             if play_button:
-                play_button.click()
-                time.sleep(20)
+                driver.execute_script("arguments[0].click();", play_button)
                 print(f"Botão de play clicado para: {url}")
+                time.sleep(5)
         except Exception as e:
-            print(f"Botão de play não encontrado (esperado para G1 ao vivo): {e}")
+            print(
+                f"Botão de play não encontrado (pode ser ao vivo ou vídeo sob demanda): {e}"
+            )
+
+        time.sleep(10)
+
+        title = driver.title
+
+        m3u8_url = None
+        thumbnail_url = None
+
+        network_logs = driver.get_log("performance")
+        for log_entry in network_logs:
+            try:
+                log_data = json.loads(log_entry["message"])
+                if (
+                    log_data.get("message", {}).get("method")
+                    == "Network.requestWillBeSent"
+                ):
+                    request_url = (
+                        log_data.get("message", {})
+                        .get("params", {})
+                        .get("request", {})
+                        .get("url", "")
+                    )
+                    if ".m3u8" in request_url and "globo" in request_url.lower():
+                        m3u8_url = request_url
+                        print(f"M3U8 encontrado: {m3u8_url[:80]}...")
+                        break
+            except:
+                continue
+
+        if not m3u8_url:
+            log_entries = driver.execute_script("""
+                return window.performance.getEntriesByType('resource')
+                    .map(e => e.name);
+            """)
+            for entry in log_entries:
+                if ".m3u8" in entry:
+                    m3u8_url = entry
+                    print(f"M3U8 encontrado (fallback): {m3u8_url[:80]}...")
+                    break
+
+        if not m3u8_url:
+            page_source = driver.page_source
+            m3u8_match = re.search(
+                r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', page_source
+            )
+            if m3u8_match:
+                m3u8_url = m3u8_match.group(0)
+                print(f"M3U8 encontrado (regex): {m3u8_url[:80]}...")
+
+        thumbnails = driver.execute_script("""
+            return window.performance.getEntriesByType('resource')
+                .filter(e => e.name.match(/\\.(jpg|jpeg|png|webp)/))
+                .map(e => e.name);
+        """)
+        if thumbnails:
+            thumbnail_url = thumbnails[0]
+
+        if not thumbnail_url:
+            logo_elem = driver.find_elements(
+                By.CSS_SELECTOR, "img.player-logo, .logo img, [class*='logo'] img"
+            )
+            if logo_elem:
+                thumbnail_url = logo_elem[0].get_attribute("src")
+
     except Exception as e:
-        print(f"Erro ao processar botão de reprodução: {e}")
+        print(f"Erro ao processar {url}: {e}")
+    finally:
+        if driver:
+            try:
+                driver.quit()
+            except:
+                pass
 
-    time.sleep(60)
-
-    title = driver.title
-
-    log_entries = driver.execute_script(
-        "return window.performance.getEntriesByType('resource');"
+    return (
+        title if "title" in locals() else url,
+        m3u8_url if "m3u8_url" in locals() else None,
+        thumbnail_url if "thumbnail_url" in locals() else None,
     )
 
-    m3u8_url = None
-    thumbnail_url = None
 
-    for entry in log_entries:
-        if ".m3u8" in entry["name"] or (
-            entry["name"].endswith(".m3u8") and "egcdn-live" in entry["name"]
-        ):
-            m3u8_url = entry["name"]
-            print(f"M3U8 encontrado: {m3u8_url[:80]}...")
-            break
-
-        if ".jpg" in entry["name"] and not thumbnail_url:
-            thumbnail_url = entry["name"]
-
-    driver.quit()
-
-    return title, m3u8_url, thumbnail_url
-
-
-with open("lista1.m3u", "w") as output_file:
+with open("lista1.m3u", "w", encoding="utf-8") as output_file:
     epg_url = get_epg_url()
     if epg_url:
         output_file.write(f'#EXTM3U x-tvg-url="{epg_url}"\n')
     else:
         output_file.write("#EXTM3U\n")
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         future_to_url = {
             executor.submit(extract_globoplay_data, url): url for url in globoplay_urls
         }
@@ -176,10 +241,10 @@ with open("lista1.m3u", "w") as output_file:
             try:
                 title, m3u8_url, thumbnail_url = future.result()
                 if m3u8_url:
-                    thumbnail_url = thumbnail_url if thumbnail_url else ""
+                    thumbnail_str = thumbnail_url if thumbnail_url else ""
                     tvg_id = get_tvg_id(url)
                     output_file.write(
-                        f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_id}" tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO", {title}\n'
+                        f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{tvg_id}" tvg-logo="{thumbnail_str}" group-title="GLOBO AO VIVO", {title}\n'
                     )
                     output_file.write(f"{m3u8_url}\n")
                     print(f"✓ Processado com sucesso: {url}")
