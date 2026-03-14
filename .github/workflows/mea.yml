@@ -28,11 +28,9 @@ jobs:
           use crawl4ai
           encontre o stream do video
           crie lista3.m3u no formato IPTV
-
-          exemplo:
-          #EXTM3U
-          #EXTINF:-1 group-title="NEWS WORLD",Fox News
-          LINK_DO_STREAM
+          encontre o link m3u8 completo com token
+          gere lista3.m3u no formato #extinf com group-title="NEWS WORLD"
+          
           EOF
 
       - name: Run OpenCode
