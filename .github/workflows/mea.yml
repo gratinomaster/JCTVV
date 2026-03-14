@@ -25,8 +25,8 @@ jobs:
         run: |
           cat << 'EOF' > prompt.txt
           faça codigo python que vai conseguir fazer o que vou falar abaixo
-          acesse https://www.imvbox.com/en/watch-iranian-persian-farsi-live-tv/iribtv2
-          https://www.aparatchi.com/iran-live-tv/farsi-irib-tv/irib-namayesh
+          acesse https://g1.globo.com/sp/sao-paulo/ultimas-noticias/ 
+          e https://www.aparatchi.com/iran-live-tv/farsi-irib-tv/irib-namayesh
           use crawl4ai
           encontre o stream do video
           gere lista3.m3u no formato #extinf com group-title="NEWS WORLD"
