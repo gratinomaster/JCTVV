@@ -1,5 +1,3 @@
 #EXTM3U
-#EXTINF:-1 group-title="NEWS WORLD",IRIB TV2
-https://gg.hls2.xyz/live/irib-tv2/playlist.m3u8
-#EXTINF:-1 group-title="NEWS WORLD",IRIB Namayesh
+#EXTINF:-1 group-title="NEWS WORLD",IRIB Stream 1
 https://gg.hls2.xyz/live/irib-namayesh/playlist.m3u8
