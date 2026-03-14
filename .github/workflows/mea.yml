@@ -24,6 +24,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
+          faça codigo python que vai conseguir fazer o que vou falar abaixo
           acesse https://www.foxnews.com/video/5614615980001
           use crawl4ai
           encontre o stream do video
