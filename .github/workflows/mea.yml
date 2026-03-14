@@ -2,7 +2,8 @@ name: Run OpenCode
 
 on:
   workflow_dispatch:
-  push:
+  schedule:
+    - cron: "0 */6 * * *"   # roda a cada 6 horas (opcional)
 
 jobs:
   opencode:
@@ -20,23 +21,41 @@ jobs:
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Ask OpenCode
+      - name: Create prompt
         run: |
-          PERGUNTA=$(cat << 'EOF'
-          acesse https://www.foxnews.com/video/5614615980001 e use crawl4ai crie lista3.m3u no estilo #extinf, o link precisa ter o token, quero group-title="NEWS WORLD"
+          cat << 'EOF' > prompt.txt
+          acesse https://www.foxnews.com/video/5614615980001
+          use crawl4ai
+          encontre o stream do video
+          crie lista3.m3u no formato IPTV
+
+          exemplo:
+          #EXTM3U
+          #EXTINF:-1 group-title="NEWS WORLD",Fox News
+          LINK_DO_STREAM
           EOF
-          )
 
-          echo "Pergunta: $PERGUNTA"
-          echo ""
-          echo "Resposta do OpenCode:"
-          opencode run "$PERGUNTA"
+      - name: Run OpenCode
+        run: |
+          echo "Executando OpenCode..."
+          opencode run "$(cat prompt.txt)"
 
-      - name: Commit changes
+      - name: Check generated file
+        run: |
+          if [ -f lista3.m3u ]; then
+            echo "Arquivo criado:"
+            cat lista3.m3u
+          else
+            echo "lista3.m3u não foi criado"
+          fi
+
+      - name: Commit playlist
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add IRIB.m3u || true
-          git commit -m "Arquivo IRIB.m3u gerado pelo OpenCode" || echo "Nada para commit"
+          git add lista3.m3u || true
+
+          git commit -m "Atualização automática da playlist" || echo "Nada para commit"
+
           git push
