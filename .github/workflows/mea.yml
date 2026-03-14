@@ -23,7 +23,7 @@ jobs:
       - name: Ask OpenCode
         run: |
           PERGUNTA=$(cat << 'EOF'
-          adcione tv integração no GLOBOEPG.py não quero programação generica, o proprio py deve encontrar todos os programas de todas as regiões
+          acesse https://www.foxnews.com/video/5614615980001 e use crawl4ai crie lista3.m3u no estilo #extinf, o link precisa ter o token, quero group-title="NEWS WORLD"
           EOF
           )
 
