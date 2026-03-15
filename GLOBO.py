@@ -1,148 +1,117 @@
-import json
-import time
-import concurrent.futures
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import concurrent.futures
+import json
+import time
 
-# ------------------------
-# CONFIGURAÇÃO
-# ------------------------
+# Configuração do Chrome
+options = Options()
+options.add_argument("--headless=new")
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")
+options.add_argument("--window-size=1280,720")
 
-MAX_THREADS = 4
-OUTPUT_FILE = "globoplay_playlist.m3u"
+# ativar logs de rede
+options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
-seed_urls = [
-    "https://globoplay.globo.com/ao-vivo/",
-    "https://g1.globo.com/ao-vivo/",
-    "https://globoplay.globo.com/"
+# URLs
+globoplay_urls = [
+    "https://globoplay.globo.com/v/4613774/",
+    "https://globoplay.globo.com/ao-vivo/7689934/",
+    "https://globoplay.globo.com/ao-vivo/7690141/",
+    "https://globoplay.globo.com/ao-vivo/7813173/",
+    "https://g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas-ao-vivo.ghtml",
 ]
 
-# ------------------------
-# CHROME CONFIG
-# ------------------------
+def extract_stream(url):
 
-def create_driver():
-
-    chrome_options = Options()
-
-    chrome_options.add_argument("--headless=new")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox")
-
-    chrome_options.set_capability(
-        "goog:loggingPrefs",
-        {"performance": "ALL"}
-    )
-
-    driver = webdriver.Chrome(options=chrome_options)
-
-    return driver
-
-
-# ------------------------
-# CAPTURA STREAM
-# ------------------------
-
-def capture_stream(url):
-
-    driver = create_driver()
+    driver = webdriver.Chrome(options=options)
 
     try:
 
         driver.get(url)
 
-        time.sleep(10)
+        wait = WebDriverWait(driver, 20)
 
-        logs = driver.get_log("performance")
+        # tentar clicar play
+        try:
+            play = wait.until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "button"))
+            )
+            play.click()
+        except:
+            pass
 
-        stream_url = None
-        thumbnail = None
-
-        for entry in logs:
-
-            message = json.loads(entry["message"])["message"]
-
-            if message["method"] == "Network.responseReceived":
-
-                response = message["params"]["response"]
-                res_url = response["url"]
-
-                if ".m3u8" in res_url:
-                    stream_url = res_url
-
-                if ".jpg" in res_url and thumbnail is None:
-                    thumbnail = res_url
+        time.sleep(12)
 
         title = driver.title
 
-        return {
-            "title": title,
-            "stream": stream_url,
-            "thumb": thumbnail
-        }
+        m3u8 = None
+        thumbnail = None
+
+        logs = driver.get_log("performance")
+
+        for entry in logs:
+
+            log = json.loads(entry["message"])["message"]
+
+            if log["method"] == "Network.responseReceived":
+
+                response = log["params"]["response"]
+
+                url_response = response["url"]
+
+                if ".m3u8" in url_response:
+                    m3u8 = url_response
+
+                if ".jpg" in url_response and thumbnail is None:
+                    thumbnail = url_response
+
+        return title, m3u8, thumbnail
 
     except Exception as e:
-
-        print("Erro:", url, e)
-
-        return None
+        print("Erro:", e)
+        return None, None, None
 
     finally:
-
         driver.quit()
 
 
-# ------------------------
-# GERADOR M3U
-# ------------------------
+def generate_playlist():
 
-def generate_m3u(results):
+    with open("globoplay_lista.m3u", "w", encoding="utf-8") as file:
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        file.write("#EXTM3U\n")
 
-        f.write("#EXTM3U\n")
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
 
-        for item in results:
+            futures = {executor.submit(extract_stream, url): url for url in globoplay_urls}
 
-            if not item:
-                continue
+            for future in concurrent.futures.as_completed(futures):
 
-            if not item["stream"]:
-                continue
+                url = futures[future]
 
-            thumb = item["thumb"] if item["thumb"] else ""
+                title, m3u8, thumb = future.result()
 
-            f.write(
-                f'#EXTINF:-1 tvg-logo="{thumb}" group-title="Globo",{item["title"]}\n'
-            )
+                if m3u8:
 
-            f.write(item["stream"] + "\n")
+                    thumb = thumb if thumb else ""
 
+                    file.write(
+                        f'#EXTINF:-1 tvg-logo="{thumb}" group-title="GLOBO",{title}\n'
+                    )
 
-# ------------------------
-# EXECUÇÃO
-# ------------------------
+                    file.write(f"{m3u8}\n")
 
-def run():
+                    print("OK:", url)
 
-    results = []
+                else:
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
-
-        futures = [executor.submit(capture_stream, url) for url in seed_urls]
-
-        for future in concurrent.futures.as_completed(futures):
-
-            data = future.result()
-
-            if data:
-                print("Encontrado:", data["title"])
-                results.append(data)
-
-    generate_m3u(results)
-
-    print("Playlist criada:", OUTPUT_FILE)
+                    print("Stream não encontrado:", url)
 
 
 if __name__ == "__main__":
-    run()
+    generate_playlist()
