@@ -74,7 +74,7 @@ def extract_stream(url):
 
 def generate_playlist():
 
-    with open("lista5.M3U", "w", encoding="utf-8") as file:
+    with open("lista5.m3u", "w", encoding="utf-8") as file:
 
         file.write("#EXTM3U\n")
 
@@ -253,8 +253,8 @@ def search_google_images(query):
     return None
 
 # Configuração dos arquivos de entrada e saída
-input_file = "lista5.M3U"
-output_file = "lista5.M3U"
+input_file = "lista5.m3u"
+output_file = "lista5.m3u"
 
 # Executa o processamento
 process_m3u_file(input_file, output_file)
