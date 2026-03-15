@@ -13,42 +13,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repositório
-      uses: actions/checkout@v4
+      - name: Checkout do Repositório
+        uses: actions/checkout@v4
 
-    - name: Configurar Git
-      run: |
-        git config --global user.email "action@github.com"
-        git config --global user.name "GitHub Action"
+      - name: Configurar Git
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
 
-    - name: Deletar Log
-      run: |
-        rm -rf ./log.txt
+      - name: Deletar log antigo
+        run: |
+          rm -f log.txt
 
-    - name: Instalando dependências
-      run: |
-        # Install required Python dependencies
-        python3 -m pip install --upgrade pip
-        python3 -m pip install crawl4ai streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown requests streamlink beautifulsoup4 selenium yt_dlp playwright
+      - name: Instalar dependências Python
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install crawl4ai playwright requests beautifulsoup4 lxml python-dateutil pytz gdown streamlink yt-dlp
 
-    - name: Verificar versão do Python
-      run: |
-        python3 --version
+      - name: Instalar browsers do Playwright
+        run: |
+          playwright install chromium
 
-    - name: Rodar script GLOBO.py
-      run: |
-        python3 stream_finder.py
+      - name: Verificar versão do Python
+        run: |
+          python3 --version
 
-    - name: Adicionar Mudanças ao Controle de Versão
-      run: |
-        git add -A
-        git status
+      - name: Rodar script Python
+        run: |
+          python3 stream_finder.py
 
-    - name: Garantir alterações mais recentes do repositório remoto
-      run: |
-        git pull origin main || echo "Erro ao fazer pull, pode ser que já tenha as últimas alterações."
+      - name: Adicionar mudanças ao Git
+        run: |
+          git add -A
+          git status
 
-    - name: Commit e Push
-      run: |
-        git commit -m "Atualizar lista baixada" || echo "Nenhuma mudança para commitar."
-        git push origin main || echo "Erro ao fazer push. Pode ser necessário revisar conflitos."
+      - name: Garantir alterações mais recentes do repositório remoto
+        run: |
+          git pull origin main || echo "Erro ao fazer pull, pode ser que já tenha as últimas alterações."
+
+      - name: Commit e Push automático
+        run: |
+          git commit -m "Atualizar lista baixada" || echo "Nenhuma mudança para commitar."
+          git push origin main || echo "Erro ao fazer push. Pode ser necessário revisar conflitos."
