@@ -17,7 +17,6 @@ options.add_argument("--window-size=1280,720")
 # ativar logs de rede
 options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
-# URLs
 globoplay_urls = [
     "https://www.foxnews.com/video/5614615980001",
 ]
@@ -27,7 +26,6 @@ def extract_stream(url):
     driver = webdriver.Chrome(options=options)
 
     try:
-
         driver.get(url)
 
         wait = WebDriverWait(driver, 20)
@@ -45,32 +43,30 @@ def extract_stream(url):
 
         title = driver.title
 
-        m3u8 = None
+        m3u8_list = []
         thumbnail = None
 
         logs = driver.get_log("performance")
 
         for entry in logs:
-
             log = json.loads(entry["message"])["message"]
 
             if log["method"] == "Network.responseReceived":
 
                 response = log["params"]["response"]
-
                 url_response = response["url"]
 
                 if ".m3u8" in url_response:
-                    m3u8 = url_response
+                    m3u8_list.append(url_response)
 
                 if ".jpg" in url_response and thumbnail is None:
                     thumbnail = url_response
 
-        return title, m3u8, thumbnail
+        return title, m3u8_list, thumbnail
 
     except Exception as e:
         print("Erro:", e)
-        return None, None, None
+        return None, [], None
 
     finally:
         driver.quit()
@@ -90,22 +86,25 @@ def generate_playlist():
 
                 url = futures[future]
 
-                title, m3u8, thumb = future.result()
+                title, m3u8_list, thumb = future.result()
 
-                if m3u8:
+                if m3u8_list:
 
                     thumb = thumb if thumb else ""
 
-                    file.write(
-                        f'#EXTINF:-1 tvg-logo="{thumb}" group-title="GLOBO",{title}\n'
-                    )
+                    for m3u8 in m3u8_list:
 
-                    file.write(f"{m3u8}\n")
+                        file.write(
+                            f'#EXTINF:-1 tvg-logo="{thumb}" group-title="GLOBO",{title}\n'
+                        )
+
+                        file.write(f"{m3u8}\n")
+
+                        print("M3U8 encontrado:", m3u8)
 
                     print("OK:", url)
 
                 else:
-
                     print("Stream não encontrado:", url)
 
 
