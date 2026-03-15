@@ -28,7 +28,7 @@ jobs:
       - name: Instalar dependências Python
         run: |
           python3 -m pip install --upgrade pip
-          pip install crawl4ai playwright requests beautifulsoup4 lxml python-dateutil pytz gdown streamlink yt-dlp
+          pip install selenium crawl4ai playwright requests beautifulsoup4 lxml python-dateutil pytz gdown streamlink yt-dlp
 
       - name: Instalar browsers do Playwright
         run: |
