@@ -1,1 +1,52 @@
-https://archive.org/details/gravacoes_08032026
+name: Fix GLOBO.py
+
+on:
+  workflow_dispatch:
+
+jobs:
+  opencode:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install OpenCode
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      - name: Create prompt
+        run: |
+          cat << 'EOF' > prompt.txt
+          existe um arquivo chamado GLOBO.py neste diretório.
+
+          faça o seguinte:
+
+          1 leia o conteúdo do arquivo GLOBO.py
+          2 corrija erros de sintaxe e problemas de código
+          3 mantenha a funcionalidade original
+          4 NÃO crie arquivos novos
+
+          salve o resultado sobrescrevendo o arquivo original:
+
+          GLOBO.py
+          EOF
+
+      - name: Run OpenCode
+        run: |
+          opencode run "$(cat prompt.txt)"
+
+      - name: Commit corrected file
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add GLOBO.py
+
+          git commit -m "Correção automática de GLOBO.py" || echo "Nada para commit"
+
+          git push
