@@ -19,6 +19,7 @@ options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
 globoplay_urls = [
     "https://www.foxnews.com/video/5614615980001",
+    "https://www.foxnews.com/video/5614626175001",
 ]
 
 def extract_stream(url):
@@ -117,3 +118,55 @@ def generate_playlist():
 
 if __name__ == "__main__":
     generate_playlist()
+
+
+import subprocess
+
+arquivo = "lista5.m3u"
+
+def testar_url(url):
+    try:
+        resultado = subprocess.run(
+            ["curl", "-Is", "--max-time", "10", url],
+            capture_output=True,
+            text=True
+        )
+        if "200" in resultado.stdout:
+            return True
+    except:
+        pass
+    return False
+
+
+with open(arquivo, "r", encoding="utf-8") as f:
+    linhas = f.readlines()
+
+saida = []
+saida.append("#EXTM3U\n")
+
+i = 0
+while i < len(linhas):
+    linha = linhas[i].strip()
+
+    if linha.startswith("#EXTINF"):
+        info = linha
+        url = linhas[i+1].strip()
+
+        print(f"Testando: {url}")
+
+        if testar_url(url):
+            print("OK\n")
+            saida.append(info + "\n")
+            saida.append(url + "\n")
+        else:
+            print("OFFLINE\n")
+
+        i += 2
+    else:
+        i += 1
+
+
+with open(arquivo, "w", encoding="utf-8") as f:
+    f.writelines(saida)
+
+print("Lista atualizada!")
