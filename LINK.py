@@ -56,7 +56,7 @@ def extract_stream(url):
                 response = log["params"]["response"]
                 url_response = response["url"]
 
-                if ".m3u8" in url_response:
+                if "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=" in url_response:
                     m3u8_list.append(url_response)
 
                 if ".jpg" in url_response and thumbnail is None:
