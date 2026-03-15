@@ -95,7 +95,7 @@ def generate_playlist():
                     for m3u8 in m3u8_list:
 
                         file.write(
-                            f'#EXTINF:-1 tvg-logo="{thumb}" group-title="GLOBO",{title}\n'
+                            f'#EXTINF:-1 tvg-logo="{thumb}" group-title="NEWS WORLD",{title}\n'
                         )
 
                         file.write(f"{m3u8}\n")
