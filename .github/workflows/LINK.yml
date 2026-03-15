@@ -40,7 +40,7 @@ jobs:
 
       - name: Rodar script Python
         run: |
-          python3 stream_finder.py
+          python3 LINK.py
 
       - name: Adicionar mudanças ao Git
         run: |
