@@ -1,4 +1,4 @@
-name: Fix GLOBO.py
+name: Fix stream_finder.py
 
 on:
   workflow_dispatch:
@@ -26,14 +26,14 @@ jobs:
 
           faça o seguinte:
 
-          1 leia o conteúdo do arquivo GLOBO.py
+          1 leia o conteúdo do arquivo stream_finder.py
           2 corrija erros de sintaxe e problemas de código
           3 mantenha a funcionalidade original
           4 NÃO crie arquivos novos
 
           salve o resultado sobrescrevendo o arquivo original:
 
-          GLOBO.py
+          stream_finder.py
           EOF
 
       - name: Run OpenCode
