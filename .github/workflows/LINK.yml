@@ -1,4 +1,4 @@
-name: Baixando GLOBO
+name: LINK
 
 on:
   schedule:
@@ -37,7 +37,7 @@ jobs:
 
     - name: Rodar script GLOBO.py
       run: |
-        python3 GLOBO.py
+        python3 stream_finder.py
 
     - name: Adicionar Mudanças ao Controle de Versão
       run: |
