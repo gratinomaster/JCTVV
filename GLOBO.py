@@ -1,111 +1,112 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import concurrent.futures
-import time
+import requests
+import re
+import json
 
-# Configurações do Chrome
-options = Options()
-options.add_argument("--headless=new")
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-gpu")
-options.add_argument("--window-size=1280,720")
-options.add_argument("--disable-infobars")
+OUTPUT = "globo_playlist.m3u"
 
-# URLs dos vídeos Globoplay
-globoplay_urls = [
-    "https://www.imvbox.com/en/watch-iranian-persian-farsi-live-tv/iribtv3",
-    "https://www.aparatchi.com/iran-live-tv/farsi-irib-tv/irib1-live",
-    "https://farsiland.com/tv1-irib-live/",
-    "https://icanlive.tv/live/16259/irib1.html"
+headers = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+urls = [
+    "https://globoplay.globo.com/v/4613774/",
+    "https://globoplay.globo.com/ao-vivo/7689934/",
+    "https://globoplay.globo.com/ao-vivo/7690141/",
+    "https://g1.globo.com/sp/campinas-regiao/ao-vivo/eptv-1-campinas-ao-vivo.ghtml"
 ]
 
 
-def extract_globoplay_data(url):
-    driver = None
+def extract_video_id(html):
+
+    patterns = [
+        r'"videoId":"(\d+)"',
+        r'data-video-id="(\d+)"',
+        r'"id":"(\d+)"'
+    ]
+
+    for p in patterns:
+        match = re.search(p, html)
+        if match:
+            return match.group(1)
+
+    return None
+
+
+def get_stream(video_id):
+
+    api = f"https://playback.video.globo.com/v2/video-session"
+
+    payload = {
+        "player_type": "desktop",
+        "video_id": video_id,
+        "quality": "max"
+    }
+
+    r = requests.post(api, json=payload, headers=headers)
+
+    data = r.json()
+
     try:
-        driver = webdriver.Chrome(options=options)
-        driver.get(url)
+        m3u8 = data["sources"][0]["url"]
+        thumb = data["sources"][0]["thumbUri"]
+        return m3u8, thumb
+    except:
+        return None, None
 
-        wait = WebDriverWait(driver, 20)
 
-        # tenta clicar no botão play se existir
-        try:
-            play_button = wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "button.poster__play-wrapper"))
+def process_url(url):
+
+    print("Processando:", url)
+
+    html = requests.get(url, headers=headers).text
+
+    video_id = extract_video_id(html)
+
+    if not video_id:
+        print("Video ID não encontrado")
+        return None
+
+    m3u8, thumb = get_stream(video_id)
+
+    if not m3u8:
+        print("Stream não encontrado")
+        return None
+
+    title_match = re.search("<title>(.*?)</title>", html)
+
+    title = title_match.group(1) if title_match else "Globo"
+
+    return {
+        "title": title,
+        "stream": m3u8,
+        "thumb": thumb
+    }
+
+
+def generate_playlist(data):
+
+    with open(OUTPUT, "w", encoding="utf-8") as f:
+
+        f.write("#EXTM3U\n")
+
+        for item in data:
+
+            f.write(
+                f'#EXTINF:-1 tvg-logo="{item["thumb"]}" group-title="Globo",{item["title"]}\n'
             )
-            play_button.click()
-        except:
-            pass
 
-        # aguarda o player carregar
-        time.sleep(10)
-
-        title = driver.title
-
-        # captura requisições da página
-        log_entries = driver.execute_script(
-            "return window.performance.getEntriesByType('resource');"
-        )
-
-        m3u8_url = None
-        thumbnail_url = None
-
-        for entry in log_entries:
-            name = entry.get("name", "")
-
-            if ".m3u8" in name and not m3u8_url:
-                m3u8_url = name
-
-            if ".jpg" in name and not thumbnail_url:
-                thumbnail_url = name
-
-        return title, m3u8_url, thumbnail_url
-
-    except Exception as e:
-        print(f"Erro ao processar {url}: {e}")
-        return None, None, None
-
-    finally:
-        if driver:
-            driver.quit()
+            f.write(item["stream"] + "\n")
 
 
-def generate_m3u():
-    with open("lista1.m3u", "w", encoding="utf-8") as output_file:
-        output_file.write("#EXTM3U\n")
+results = []
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-            futures = {
-                executor.submit(extract_globoplay_data, url): url
-                for url in globoplay_urls
-            }
+for u in urls:
 
-            for future in concurrent.futures.as_completed(futures):
-                url = futures[future]
+    data = process_url(u)
 
-                try:
-                    title, m3u8_url, thumbnail_url = future.result()
+    if data:
+        results.append(data)
 
-                    if m3u8_url:
-                        thumbnail_url = thumbnail_url or ""
+generate_playlist(results)
 
-                        output_file.write(
-                            f'#EXTINF:-1 tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
-                        )
-                        output_file.write(f"{m3u8_url}\n")
-
-                        print(f"Processado: {url}")
-
-                    else:
-                        print(f"M3U8 não encontrado: {url}")
-
-                except Exception as e:
-                    print(f"Erro ao finalizar {url}: {e}")
-
-
-# Executa
-if __name__ == "__main__":
-    generate_m3u()
+print("Playlist criada:", OUTPUT)
