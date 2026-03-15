@@ -3,7 +3,7 @@ name: Run OpenCode
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */8 * * *"
 
 jobs:
   opencode:
@@ -24,35 +24,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          crie um arquivo chamado stream_finder.py em python
-
-          o script deve:
-
-          usar crawl4ai
-
-          acessar os sites:
-
-          https://cbn.globo.com/ao-vivo/video/cbn-sp/
-          https://g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv1.ghtml
-          https://g1.globo.com/sp/campinas-regiao/ao-vivo/veja-o-eptv-2-campinas-ao-vivo.ghtml
-          https://g1.globo.com/sp/piracicaba-regiao/ao-vivo/eptv-2-piracicaba-ao-vivo.ghtml
-          https://g1.globo.com/sp/ribeirao-preto-franca/ao-vivo/eptv-2-ribeirao-e-franca-ao-vivo.ghtml
-
-          o script deve:
-
-          1 acessar cada página
-          2 encontrar o stream de vídeo (m3u8)
-          3 gerar um arquivo chamado lista3.m3u
-          tem que ter tvg-logo
-
-          formato da playlist:
-
-          #EXTM3U
-          #EXTINF:-1 group-title="NEWS WORLD",NOME DO CANAL
-          URL_DO_STREAM
-
-          salvar lista3.m3u no diretório atual
-          salvar também o arquivo python stream_finder.py
+          corrija o lista5.m3u para que todos os canais tenham epg valido, atualizado
           EOF
 
       - name: Run OpenCode
@@ -65,11 +37,11 @@ jobs:
           echo "Arquivos no diretório:"
           ls -la
 
-          if [ -f lista3.m3u ]; then
+          if [ -f lista5.m3u ]; then
             echo "Playlist criada:"
-            cat lista3.m3u
+            cat lista5.m3u
           else
-            echo "lista3.m3u não foi criado"
+            echo "lista5.m3u não foi criado"
           fi
 
       - name: Commit files
@@ -77,8 +49,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add *.py lista3.m3u prompt.txt || true
-
+          git add . || true
           git commit -m "Atualização automática da playlist" || echo "Nada para commit"
-
-          git push
+          git push origin HEAD || echo "Falha ao dar push"
