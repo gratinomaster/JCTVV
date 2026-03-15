@@ -112,19 +112,43 @@ if __name__ == "__main__":
     generate_playlist()
 
 import requests
-import re
+import time
 
 arquivo_m3u = "globoplay_lista.m3u"
-timeout = 8
+timeout = 10
+espera = 6
 
-def canal_online(url):
+
+def pegar_segmentos(m3u8_url):
     try:
-        r = requests.get(url, stream=True, timeout=timeout)
-        if r.status_code == 200:
-            return True
+        r = requests.get(m3u8_url, timeout=timeout)
+        if r.status_code != 200:
+            return None
+
+        linhas = r.text.splitlines()
+
+        if "#EXT-X-ENDLIST" in r.text:
+            return None  # VOD
+
+        segmentos = [l for l in linhas if l.endswith(".ts") or l.endswith(".m4s")]
+        return segmentos[-5:]  # últimos segmentos
+
     except:
-        pass
-    return False
+        return None
+
+
+def stream_ao_vivo(url):
+    seg1 = pegar_segmentos(url)
+    if not seg1:
+        return False
+
+    time.sleep(espera)
+
+    seg2 = pegar_segmentos(url)
+    if not seg2:
+        return False
+
+    return seg1 != seg2  # mudou = live
 
 
 def testar_lista():
@@ -139,16 +163,16 @@ def testar_lista():
 
         if linha.startswith("#EXTINF"):
             info = linha
-            url = linhas[i+1].strip() if i+1 < len(linhas) else ""
+            url = linhas[i + 1].strip()
 
             print("Testando:", url)
 
-            if canal_online(url):
-                print("ONLINE")
+            if stream_ao_vivo(url):
+                print("AO VIVO ✅")
                 nova_lista.append(info + "\n")
                 nova_lista.append(url + "\n")
             else:
-                print("OFFLINE")
+                print("SEM TRANSMISSÃO ❌")
 
             i += 2
         else:
@@ -159,7 +183,7 @@ def testar_lista():
     with open(arquivo_m3u, "w", encoding="utf-8") as f:
         f.writelines(nova_lista)
 
-    print("\nLista atualizada. Apenas canais online foram mantidos.")
+    print("\nLista atualizada: apenas canais AO VIVO mantidos.")
 
 
 if __name__ == "__main__":
