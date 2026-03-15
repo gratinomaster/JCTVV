@@ -56,6 +56,10 @@ def extract_stream(url):
                 response = log["params"]["response"]
                 url_response = response["url"]
 
+                # IGNORAR chartbeat
+                if url_response.startswith("https://ping.chartbeat.net/ping"):
+                    continue
+
                 if ".m3u8" in url_response:
                     m3u8_list.append(url_response)
 
@@ -94,10 +98,13 @@ def generate_playlist():
 
                     for m3u8 in m3u8_list:
 
+                        # segurança extra (caso passe pelo filtro)
+                        if m3u8.startswith("https://ping.chartbeat.net/ping"):
+                            continue
+
                         file.write(
                             f'#EXTINF:-1 tvg-logo="{thumb}" group-title="NEWS WORLD",{title}\n'
                         )
-
                         file.write(f"{m3u8}\n")
 
                         print("M3U8 encontrado:", m3u8)
@@ -110,30 +117,3 @@ def generate_playlist():
 
 if __name__ == "__main__":
     generate_playlist()
-
-import time
-
-def check_url(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/58.0.3029.110 Safari/537.36 Firefox/89.0"
-    }
-    try:
-        start_time = time.time()
-        response = requests.get(url, headers=headers, timeout=30, stream=True)  # Stream permite ler parcialmente
-        elapsed_time = time.time() - start_time
-
-        # Se o status não for 200, ou se demorar menos de 25 segundos, considerar offline
-        if response.status_code == 200 and elapsed_time >= 25:
-            logger.info("URL OK: %s (tempo: %.2f s)", url, elapsed_time)
-            return True
-        else:
-            logger.warning(
-                "URL Offline ou muito rápido: %s (status: %d, tempo: %.2f s)",
-                url, response.status_code, elapsed_time
-            )
-            return False
-    except requests.exceptions.RequestException as e:
-        logger.error("Request Error %s: %s", url, str(e))
-        return False
