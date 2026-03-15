@@ -29,7 +29,7 @@ jobs:
       run: |
         # Install required Python dependencies
         python3 -m pip install --upgrade pip
-        python3 -m pip install streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown requests streamlink beautifulsoup4 selenium yt_dlp playwright
+        python3 -m pip install crawl4ai streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown requests streamlink beautifulsoup4 selenium yt_dlp playwright
 
     - name: Verificar versão do Python
       run: |
