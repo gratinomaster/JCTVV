@@ -67,7 +67,7 @@ CHANNEL_TVG_IDS = {
 
 
 def get_epg_url():
-    return EPG_FILES
+    return EPG_FILES.split(",")
 
 
 def get_tvg_id(url):
@@ -122,6 +122,9 @@ globoplay_urls = [
 
 def extract_globoplay_data(url):
     driver = None
+    title = None
+    m3u8_url = None
+    thumbnail_url = None
     try:
         driver = webdriver.Chrome(options=options)
         driver.get(url)
@@ -219,16 +222,16 @@ def extract_globoplay_data(url):
                 pass
 
     return (
-        title if "title" in locals() else url,
-        m3u8_url if "m3u8_url" in locals() else None,
-        thumbnail_url if "thumbnail_url" in locals() else None,
+        title if title else url,
+        m3u8_url,
+        thumbnail_url,
     )
 
 
 with open("lista1.m3u", "w", encoding="utf-8") as output_file:
-    epg_url = get_epg_url()
-    if epg_url:
-        output_file.write(f'#EXTM3U x-tvg-url="{epg_url}"\n')
+    epg_urls = get_epg_url()
+    if epg_urls:
+        output_file.write(f'#EXTM3U x-tvg-url="{",".join(epg_urls)}"\n')
     else:
         output_file.write("#EXTM3U\n")
 
