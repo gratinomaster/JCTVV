@@ -110,3 +110,57 @@ def generate_playlist():
 
 if __name__ == "__main__":
     generate_playlist()
+
+import requests
+import re
+
+arquivo_m3u = "globoplay_lista.m3u"
+timeout = 8
+
+def canal_online(url):
+    try:
+        r = requests.get(url, stream=True, timeout=timeout)
+        if r.status_code == 200:
+            return True
+    except:
+        pass
+    return False
+
+
+def testar_lista():
+    with open(arquivo_m3u, "r", encoding="utf-8", errors="ignore") as f:
+        linhas = f.readlines()
+
+    nova_lista = []
+    i = 0
+
+    while i < len(linhas):
+        linha = linhas[i].strip()
+
+        if linha.startswith("#EXTINF"):
+            info = linha
+            url = linhas[i+1].strip() if i+1 < len(linhas) else ""
+
+            print("Testando:", url)
+
+            if canal_online(url):
+                print("ONLINE")
+                nova_lista.append(info + "\n")
+                nova_lista.append(url + "\n")
+            else:
+                print("OFFLINE")
+
+            i += 2
+        else:
+            if linha.startswith("#EXTM3U"):
+                nova_lista.append(linha + "\n")
+            i += 1
+
+    with open(arquivo_m3u, "w", encoding="utf-8") as f:
+        f.writelines(nova_lista)
+
+    print("\nLista atualizada. Apenas canais online foram mantidos.")
+
+
+if __name__ == "__main__":
+    testar_lista()
