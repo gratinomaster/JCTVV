@@ -28,7 +28,7 @@ jobs:
     - name: Instalando dependências
       run: |
         python3 -m pip install --upgrade pip
-        python3 -m pip install selenium-wire streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown playwright
+        python3 -m pip install crawl4ai selenium-wire streamlink selenium requests beautifulsoup4 lxml python-dateutil yt-dlp youtube-dl pytz gdown playwright
 
     - name: Verificar versão do Python
       run: |
