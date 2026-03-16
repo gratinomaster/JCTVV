@@ -22,6 +22,7 @@ jobs:
       - name: Run OpenCode
         run: |
           opencode run "LEIA https://timesbrasil.com.br/ https://www.cnnbrasil.com.br/money/ https://valor.globo.com/ https://investnews.com.br/ https://www.bloomberglinea.com.br/ e crie um arquivo INVEST.txt com um resumo consolidado das principais notícias de todos os sites."
+          opencode run "Adcione no final uma análise sobre o que comprar e vender HOJE"
 
       - name: Commit INVEST.txt
         run: |
