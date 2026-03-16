@@ -20,6 +20,9 @@ options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 globoplay_urls = [
     "https://www.foxnews.com/video/5614615980001",
     "https://www.foxnews.com/video/5614626175001",
+    "https://abcnews.com/Live",
+    "https://www.cbsnews.com/live/",
+    "https://www.nbcnews.com/watch"
 ]
 
 def extract_stream(url):
