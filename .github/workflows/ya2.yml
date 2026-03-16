@@ -22,7 +22,8 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          ANALISE O SENTIMENTO DAS NOTICIAS DO GLOBO.COM
+          LEIA https://timesbrasil.com.br/%20https://www.cnnbrasil.com.br/money/%20https://valor.globo.com/%20https://investnews.com.br/%20https://www.bloomberglinea.com.br/
+          E ME DIGA O QUE COMPRAR HOJE
 
           EOF
 
