@@ -34,9 +34,9 @@ jobs:
       run: |
         python3 --version
 
-    - name: Rodar script GLOBO.py
+    - name: Rodar script stream_finder.py
       run: |
-        python3 GLOBO3.py
+        python3 stream_finder.py
 
     - name: Adicionar Mudanças ao Controle de Versão
       run: |
