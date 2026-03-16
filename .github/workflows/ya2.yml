@@ -22,18 +22,8 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          existe um arquivo chamado GLOBO.py neste diretório.
+          ANALISE O SENTIMENTO DAS NOTICIAS DO GLOBO.COM
 
-          faça o seguinte:
-
-          1 leia o conteúdo do arquivo stream_finder.py
-          2 corrija erros de sintaxe e problemas de código
-          3 mantenha a funcionalidade original
-          4 NÃO crie arquivos novos
-
-          salve o resultado sobrescrevendo o arquivo original:
-
-          stream_finder.py
           EOF
 
       - name: Run OpenCode
