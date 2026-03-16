@@ -2,7 +2,7 @@ name: Baixando GLOBO
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Executa a cada 6 horas
+    - cron: '0 */3 * * *'  # Executa a cada 6 horas
   pull_request:
     branches:
       - main
