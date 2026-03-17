@@ -1,76 +1,751 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-es.xml.gz,https://iptv-epg.org/files/epg-gb.xml.gz,https://iptv-epg.org/files/epg-fr.xml.gz,https://iptv-epg.org/files/epg-de.xml.gz,https://iptv-epg.org/files/epg-it.xml.gz,https://iptv-epg.org/files/epg-bo.xml.gz,https://iptv-epg.org/files/epg-cl.xml.gz,https://iptv-epg.org/files/epg-br.xml.gz"
+#EXTM3U
+#EXTM3U url-tvg="https://tinyurl.com/wmitv777"
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Campinas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40248.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Campinas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42983.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Campinas FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68057.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Campinas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42952.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Central" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Central
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75169.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Central HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Central HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108346.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Ribeirão" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Ribeirão
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40514.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Ribeirão FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Ribeirão FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42999.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV Ribeirão HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Ribeirão HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38640.m3u8
+#EXTINF:-1 tvg-id="EPTVSuldeMinas.br" tvg-name="EPTV Sul de Minas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Sul de Minas
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73063.m3u8
+#EXTINF:-1 tvg-id="EPTVSuldeMinas.br" tvg-name="EPTV Sul de Minas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Sul de Minas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73061.m3u8
+#EXTINF:-1 tvg-id="EPTVSuldeMinas.br" tvg-name="EPTV Sul de Minas FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Sul de Minas FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68078.m3u8
+#EXTINF:-1 tvg-id="EPTVSuldeMinas.br" tvg-name="EPTV Sul de Minas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Sul de Minas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73062.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="EPTV São Carlos" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV São Carlos
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42955.m3u8
+#EXTINF:-1 tvg-id="RedeAmazonica.br" tvg-name="Globo Amazonas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Amazonas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64649.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="Globo Anhanguera" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Anhanguera
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38966.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo Belem FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Belem FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72892.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo Belem HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Belem HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72893.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Belo Horizonte" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Belo Horizonte
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72891.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Belo Horizonte FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Belo Horizonte FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72814.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Belo Horizonte HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Belo Horizonte HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72815.m3u8
+#EXTINF:-1 tvg-id="TVGloboBrasilia.br" tvg-name="Globo Brasília" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Brasília
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37095.m3u8
+#EXTINF:-1 tvg-id="TVGloboBrasilia.br" tvg-name="Globo Brasília FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Brasília FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64592.m3u8
+#EXTINF:-1 tvg-id="TVGloboBrasilia.br" tvg-name="Globo Brasília FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Brasília FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91291.m3u8
+#EXTINF:-1 tvg-id="TVGloboBrasilia.br" tvg-name="Globo Brasília HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Brasília HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40513.m3u8
+#EXTINF:-1 tvg-id="GLOBO BRASILIA" tvg-name="Globo Brasília [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Brasília [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215396.m3u8
+#EXTINF:-1 tvg-id="GLOBO CE  4K]" tvg-name="Globo CE [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo CE [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215393.m3u8
+#EXTINF:-1 tvg-id="eptv.campinas.br" tvg-name="Globo Campinas H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Campinas H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62821.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Ceará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Ceará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/71675.m3u8
+#EXTINF:-1 tvg-id="tv.ceara.br" tvg-name="Globo Ceará FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Ceará FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/116823.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Centro América Cuaibá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Centro América Cuaibá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91288.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Centro América FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Centro América FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68056.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Cuaibá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Cuaibá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91266.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Cuiabá FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Cuiabá FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/106018.m3u8
+#EXTINF:-1 tvg-id="GLOBO CUIABA  [4K]" tvg-name="Globo Cuiabá [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Cuiabá [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215392.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Goiânia" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Goiânia
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/71664.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo Goiânia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Goiânia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64651.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Inter TV Grande Minas  FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Inter TV Grande Minas  FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68077.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Joaçaba FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Joaçaba FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100614.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Joaçaba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Joaçaba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100615.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Juazeiro Bahia FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Juazeiro Bahia FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/80365.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Juazeiro Bahia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Juazeiro Bahia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/80364.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Legendada" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Legendada
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100616.m3u8
+#EXTINF:-1 tvg-id="globo.minas.br" tvg-name="Globo Minas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40250.m3u8
+#EXTINF:-1 tvg-id="globo.minas.br" tvg-name="Globo Minas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/41515.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Minas FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68058.m3u8
+#EXTINF:-1 tvg-id="globo.minas.br" tvg-name="Globo Minas FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91293.m3u8
+#EXTINF:-1 tvg-id="globo.minas.br" tvg-name="Globo Minas H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62820.m3u8
+#EXTINF:-1 tvg-id="globo.minas.br" tvg-name="Globo Minas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Minas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40251.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Montes Claros MG FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Montes Claros MG FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100612.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Montes Claros MG HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Montes Claros MG HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100613.m3u8
+#EXTINF:-1 tvg-id="nsc.blumenau.br" tvg-name="Globo NSC Blumenau FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC Blumenau FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91296.m3u8
+#EXTINF:-1 tvg-id="nsc.chapeco.br" tvg-name="Globo NSC Chapecó FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC Chapecó FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91298.m3u8
+#EXTINF:-1 tvg-id="nsc.criciuma.br" tvg-name="Globo NSC Criciúma FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC Criciúma FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91299.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo NSC Florianópolis FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC Florianópolis FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68060.m3u8
+#EXTINF:-1 tvg-id="nsc.joinville.br" tvg-name="Globo NSC Joinville FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC Joinville FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91300.m3u8
+#EXTINF:-1 tvg-id="nsc.blumenau.br" tvg-name="Globo NSC TV Blumenau" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC TV Blumenau
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91283.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo NSC TV Blumenau FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC TV Blumenau FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68079.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo NSC TV Santa Catarina HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC TV Santa Catarina HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/65270.m3u8
+#EXTINF:-1 tvg-id="GLOBO NSCTV" tvg-name="Globo NSC TV [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo NSC TV [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215395.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Nacional FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nacional FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91289.m3u8
+#EXTINF:-1 tvg-id="globo.natal.br" tvg-name="Globo Natal" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Natal
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91281.m3u8
+#EXTINF:-1 tvg-id="globo.natal.br" tvg-name="Globo Natal FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Natal FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/93586.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37092.m3u8
+#EXTINF:-1 tvg-id="globo.nordeste.br" tvg-name="Globo Nordeste 2 FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste 2 FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68047.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42984.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68059.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91295.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62819.m3u8
+#EXTINF:-1 tvg-id="TVGloboNordeste.br" tvg-name="Globo Nordeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Nordeste HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38971.m3u8
+#EXTINF:-1 tvg-id="rpc.paranavai.br" tvg-name="Globo Paraná HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Paraná HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/51309.m3u8
+#EXTINF:-1 tvg-id="GLOBO RJ " tvg-name="Globo RJ [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo RJ [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215394.m3u8
+#EXTINF:-1 tvg-id="rpc.foz.do.iguacu.br" tvg-name="Globo RPC Foz FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo RPC Foz FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91303.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo RPC Parana HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo RPC Parana HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63695.m3u8
+#EXTINF:-1 tvg-id="globo.recife.br" tvg-name="Globo Recife HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Recife HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64653.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Rede Amazonica" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rede Amazonica
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63414.m3u8
+#EXTINF:-1 tvg-id="eptv.ribeirao.preto.br" tvg-name="Globo Ribeirão Preto H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Ribeirão Preto H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62815.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37091.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio 2 FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio 2 FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68049.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38425.m3u8
+#EXTINF:-1 tvg-id="globo.rj.br" tvg-name="Globo Rio FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68070.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91302.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62857.m3u8
+#EXTINF:-1 tvg-id="globo.rj.br" tvg-name="Globo Rio HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/36968.m3u8
+#EXTINF:-1 tvg-id="globo.rio.br" tvg-name="Globo Rio Interior FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio Interior FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91263.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Rio Interior HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio Interior HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91264.m3u8
+#EXTINF:-1 tvg-id="intertv.planicie.br" tvg-name="Globo Rio Planicie HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Rio Planicie HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/105957.m3u8
+#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="Globo SP" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37090.m3u8
+#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="Globo SP FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38424.m3u8
+#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="Globo SP FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68050.m3u8
+#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="Globo SP H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62855.m3u8
+#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="Globo SP HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37361.m3u8
+#EXTINF:-1 tvg-id="GLOBO SP " tvg-name="Globo SP [4K]" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo SP [4K]
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215397.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Salvador" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Salvador
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72888.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo Salvador FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Salvador FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72890.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo Santos HD DUAL AUDIO" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo Santos HD DUAL AUDIO
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91290.m3u8
+#EXTINF:-1 tvg-id="globo.amazonas.br" tvg-name="Globo TV Amazônica" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Amazônica
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63631.m3u8
+#EXTINF:-1 tvg-id="globo.amazonas.br" tvg-name="Globo TV Amazônica HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Amazônica HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/51310.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="Globo TV Anhanguera" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Anhanguera
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42962.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="Globo TV Anhanguera FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Anhanguera FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42986.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="Globo TV Anhanguera HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Anhanguera HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38967.m3u8
+#EXTINF:-1 tvg-id="tv.asa.branca.br" tvg-name="Globo TV Asa Branca" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Asa Branca
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73098.m3u8
+#EXTINF:-1 tvg-id="tv.asa.branca.br" tvg-name="Globo TV Asa Branca FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Asa Branca FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73096.m3u8
+#EXTINF:-1 tvg-id="tv.asa.branca.br" tvg-name="Globo TV Asa Branca FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Asa Branca FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91308.m3u8
+#EXTINF:-1 tvg-id="tv.asa.branca.br" tvg-name="Globo TV Asa Branca HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Asa Branca HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73097.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Belem FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Belem FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68069.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Brasilia FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Brasilia FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68076.m3u8
+#EXTINF:-1 tvg-id="tv.cabo.branco.br" tvg-name="Globo TV Cabo Branco FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Cabo Branco FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52544.m3u8
+#EXTINF:-1 tvg-id="tv.cabo.branco.br" tvg-name="Globo TV Cabo Branco HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Cabo Branco HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52545.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.cuiaba.br" tvg-name="Globo TV Centro América Cuiabá" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Cuiabá
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75486.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.cuiaba.br" tvg-name="Globo TV Centro América Cuiabá FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Cuiabá FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75488.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.cuiaba.br" tvg-name="Globo TV Centro América Cuiabá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Cuiabá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107569.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.br" tvg-name="Globo TV Centro América Norte HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Norte HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107567.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.br" tvg-name="Globo TV Centro América Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Sul HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107568.m3u8
+#EXTINF:-1 tvg-id="tv.centro.america.tangara.da.serra.br" tvg-name="Globo TV Centro América Tangará da Serra HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Centro América Tangará da Serra HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107566.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Clube Piaui" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Clube Piaui
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73038.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Clube Piaui FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Clube Piaui FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73037.m3u8
+#EXTINF:-1 tvg-id="globo.sao.paulo.br" tvg-name="Globo TV Clube Piaui HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Clube Piaui HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/65269.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV Diário Mogi das Cruzes" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Diário Mogi das Cruzes
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73450.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV Diário Mogi das Cruzes FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Diário Mogi das Cruzes FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73448.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV Diário Mogi das Cruzes HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Diário Mogi das Cruzes HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73449.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Gazeta FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Gazeta FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68075.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Integração Araxa" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Araxa
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73066.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Integração Araxa FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Araxa FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73064.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Integração Araxa HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Araxa HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73065.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.br" tvg-name="Globo TV Integração Divinópolis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Divinópolis FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82747.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.br" tvg-name="Globo TV Integração Divinópolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Divinópolis HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82746.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo TV Integração Juiz de Fora" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Juiz de Fora
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73069.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo TV Integração Juiz de Fora FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Juiz de Fora FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73067.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo TV Integração Juiz de Fora HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Juiz de Fora HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73068.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberaba.br" tvg-name="Globo TV Integração Uberaba" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberaba
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74961.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberaba.br" tvg-name="Globo TV Integração Uberaba FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberaba FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74962.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberaba.br" tvg-name="Globo TV Integração Uberaba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberaba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75484.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberlandia.br" tvg-name="Globo TV Integração Uberlandia" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberlandia
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73230.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberlandia.br" tvg-name="Globo TV Integração Uberlandia FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberlandia FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73232.m3u8
+#EXTINF:-1 tvg-id="tv.integracao.uberlandia.br" tvg-name="Globo TV Integração Uberlandia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Integração Uberlandia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73231.m3u8
+#EXTINF:-1 tvg-id="globo.belem.liberal.br" tvg-name="Globo TV Liberal Belem" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Liberal Belem
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42964.m3u8
+#EXTINF:-1 tvg-id="globo.belem.liberal.br" tvg-name="Globo TV Liberal Belem FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Liberal Belem FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63640.m3u8
+#EXTINF:-1 tvg-id="globo.belem.liberal.br" tvg-name="Globo TV Liberal Belem HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Liberal Belem HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63654.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Liberal FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Liberal FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68064.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="Globo TV Mirante Bolsas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Mirante Bolsas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107572.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.cocais.br" tvg-name="Globo TV Mirante Cocais" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Mirante Cocais
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74963.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.cocais.br" tvg-name="Globo TV Mirante Cocais HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Mirante Cocais HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75483.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Mirante FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Mirante FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68065.m3u8
+#EXTINF:-1 tvg-id="tv.morena.br" tvg-name="Globo TV Morena Campo Grande" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena Campo Grande
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42992.m3u8
+#EXTINF:-1 tvg-id="tv.morena.br" tvg-name="Globo TV Morena Campo Grande FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena Campo Grande FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42991.m3u8
+#EXTINF:-1 tvg-id="tv.morena.corumba.br" tvg-name="Globo TV Morena Campo Grande HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena Campo Grande HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63655.m3u8
+#EXTINF:-1 tvg-id="tv.morena.corumba.br" tvg-name="Globo TV Morena Corumbá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena Corumbá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107565.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Morena FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68066.m3u8
+#EXTINF:-1 tvg-id="tv.morena.br" tvg-name="Globo TV Morena FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91312.m3u8
+#EXTINF:-1 tvg-id="tv.morena.ponta.pora.br" tvg-name="Globo TV Morena Ponta Porã HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Morena Ponta Porã HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107564.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV Petrolina PE" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Petrolina PE
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107581.m3u8
+#EXTINF:-1 tvg-id="tv.rio.sul.br" tvg-name="Globo TV Rio Sul" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Rio Sul
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52549.m3u8
+#EXTINF:-1 tvg-id="tv.rio.sul.br" tvg-name="Globo TV Rio Sul FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Rio Sul FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52547.m3u8
+#EXTINF:-1 tvg-id="tv.rio.sul.br" tvg-name="Globo TV Rio Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Rio Sul HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52548.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Globo TV Sergipe" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Sergipe
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42908.m3u8
+#EXTINF:-1 tvg-id="tv.sergipe.br" tvg-name="Globo TV Sergipe FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Sergipe FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42981.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Sergipe FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Sergipe FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68071.m3u8
+#EXTINF:-1 tvg-id="tv.sergipe.br" tvg-name="Globo TV Sergipe HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Sergipe HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42982.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV TEM Itapetininga" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM Itapetininga
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73227.m3u8
+#EXTINF:-1 tvg-id="tv.tem.itapetininga.br" tvg-name="Globo TV TEM Itapetininga HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM Itapetininga HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73228.m3u8
+#EXTINF:-1 tvg-id="tv.tem.sorocaba.br" tvg-name="Globo TV TEM Sorocaba FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM Sorocaba FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75475.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV TEM São José do Rio Preto" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM São José do Rio Preto
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40516.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV TEM São José do Rio Preto FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM São José do Rio Preto FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75161.m3u8
+#EXTINF:-1 tvg-id="Globo TV TEM São José do Rio Preto HD" tvg-name="Globo TV TEM São José do Rio Preto HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV TEM São José do Rio Preto HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215355.m3u8
+#EXTINF:-1 tvg-id="tv.tem.sorocaba.br" tvg-name="Globo TV Tem Sorocaba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tem Sorocaba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75476.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Tem São José do Rio Preto" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tem São José do Rio Preto
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40515.m3u8
+#EXTINF:-1 tvg-id="tv.tribuna.br" tvg-name="Globo TV Tribuna FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tribuna FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75162.m3u8
+#EXTINF:-1 tvg-id="globo.tribuna.br" tvg-name="Globo TV Tribuna Santos" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tribuna Santos
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42966.m3u8
+#EXTINF:-1 tvg-id="tv.tribuna.br" tvg-name="Globo TV Tribuna Santos FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tribuna Santos FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75164.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="Globo TV Tribuna Santos HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Tribuna Santos HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75477.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV Vanguarda S. J. dos Campos" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vanguarda S. J. dos Campos
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42967.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV Vanguarda S. J. dos Campos FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vanguarda S. J. dos Campos FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74667.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV Vanguarda S. J. dos Campos HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vanguarda S. J. dos Campos HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74666.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV Vanguarda Taubate" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vanguarda Taubate
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73221.m3u8
+#EXTINF:-1 tvg-id="globo.vanguarda.br" tvg-name="Globo TV Vanguarda Taubate FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vanguarda Taubate FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73223.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Verdes Mares FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Verdes Mares FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68067.m3u8
+#EXTINF:-1 tvg-id="GLOBO TV VITORIA DA CONQUISTA  HD" tvg-name="Globo TV Vitória da Conquista HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Globo TV Vitória da Conquista HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215139.m3u8
+#EXTINF:-1 tvg-id="inter.alto.litoral.br" tvg-name="Inter TV Alto Litoral FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Alto Litoral FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52593.m3u8
+#EXTINF:-1 tvg-id="inter.alto.litoral.br" tvg-name="Inter TV Alto Litoral HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Alto Litoral HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52592.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Inter TV Cabugi Natal" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Cabugi Natal
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63405.m3u8
+#EXTINF:-1 tvg-id="intertv.cabugi.br" tvg-name="Inter TV Cabugi Natal FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Cabugi Natal FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74954.m3u8
+#EXTINF:-1 tvg-id="intertv.cabugi.br" tvg-name="Inter TV Cabugi Natal HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Cabugi Natal HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74953.m3u8
+#EXTINF:-1 tvg-id="intertv.costa.branca.br" tvg-name="Inter TV Costa Branca HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Costa Branca HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108415.m3u8
+#EXTINF:-1 tvg-id="InterTVGrandeMinas.br" tvg-name="Inter TV Grande Minas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Grande Minas
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52575.m3u8
+#EXTINF:-1 tvg-id="InterTVGrandeMinas.br" tvg-name="Inter TV Grande Minas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Grande Minas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52577.m3u8
+#EXTINF:-1 tvg-id="InterTVGrandeMinas.br" tvg-name="Inter TV Grande Minas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Grande Minas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52576.m3u8
+#EXTINF:-1 tvg-id="intertv.planicie.br" tvg-name="Inter TV Planície HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Planície HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108413.m3u8
+#EXTINF:-1 tvg-id="InterTVSerraPlusMar.br" tvg-name="Inter TV Serra Mar" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Serra Mar
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52572.m3u8
+#EXTINF:-1 tvg-id="InterTVSerraPlusMar.br" tvg-name="Inter TV Serra Mar FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Serra Mar FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52574.m3u8
+#EXTINF:-1 tvg-id="InterTVSerraPlusMar.br" tvg-name="Inter TV Serra Mar HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV Serra Mar HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52573.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Inter TV dos Vales" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV dos Vales
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52578.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Inter TV dos Vales FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV dos Vales FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52590.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Inter TV dos Vales FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV dos Vales FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68072.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="Inter TV dos Vales HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Inter TV dos Vales HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52587.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="InterTV Cabo Frio HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",InterTV Cabo Frio HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64591.m3u8
+#EXTINF:-1 tvg-id="NSCTVBlumenau.br" tvg-name="NSC TV Blumenau" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52571.m3u8
+#EXTINF:-1 tvg-id="NSCTVBlumenau.br" tvg-name="NSC TV Blumenau FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52569.m3u8
+#EXTINF:-1 tvg-id="NSCTVBlumenau.br" tvg-name="NSC TV Blumenau HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52570.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="NSC TV Centro Oeste" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73088.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="NSC TV Centro Oeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73087.m3u8
+#EXTINF:-1 tvg-id="NSCTVChapeco.br" tvg-name="NSC TV Chapecó" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42971.m3u8
+#EXTINF:-1 tvg-id="NSCTVChapeco.br" tvg-name="NSC TV Chapecó FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42969.m3u8
+#EXTINF:-1 tvg-id="NSCTVChapeco.br" tvg-name="NSC TV Chapecó HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42970.m3u8
+#EXTINF:-1 tvg-id="NSCTVCriciuma.br" tvg-name="NSC TV Criciúma" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73085.m3u8
+#EXTINF:-1 tvg-id="NSCTVCriciuma.br" tvg-name="NSC TV Criciúma FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73070.m3u8
+#EXTINF:-1 tvg-id="NSCTVCriciuma.br" tvg-name="NSC TV Criciúma HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73071.m3u8
+#EXTINF:-1 tvg-id="NSCTVFlorianopolis.br" tvg-name="NSC TV Florianópolis" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38641.m3u8
+#EXTINF:-1 tvg-id="NSCTVFlorianopolis.br" tvg-name="NSC TV Florianópolis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42985.m3u8
+#EXTINF:-1 tvg-id="NSCTVFlorianopolis.br" tvg-name="NSC TV Florianópolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42958.m3u8
+#EXTINF:-1 tvg-id="NSCTVJoinville.br" tvg-name="NSC TV Joinville" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52540.m3u8
+#EXTINF:-1 tvg-id="NSCTVJoinville.br" tvg-name="NSC TV Joinville FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52538.m3u8
+#EXTINF:-1 tvg-id="NSCTVJoinville.br" tvg-name="NSC TV Joinville HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52539.m3u8
+#EXTINF:-1 tvg-id="rbs.br" tvg-name="RBS 4K" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS 4K
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100611.m3u8
+#EXTINF:-1 tvg-id="rbs.santa.cruz.do.sul.br" tvg-name="RBS Santa Cruz HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS Santa Cruz HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107580.m3u8
+#EXTINF:-1 tvg-id="globo.rbs.poa.br" tvg-name="RBS TV Bagé HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Bagé HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108372.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="RBS TV Caxias do Sul" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52568.m3u8
+#EXTINF:-1 tvg-id="rbs.caxias.do.sul.br" tvg-name="RBS TV Caxias do Sul FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52566.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="RBS TV Caxias do Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52567.m3u8
+#EXTINF:-1 tvg-id="rbs.cruz.alta.br" tvg-name="RBS TV Cruz Alta HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Cruz Alta HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108373.m3u8
+#EXTINF:-1 tvg-id="globo.rbs.poa.br" tvg-name="RBS TV Erechim HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Erechim HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108374.m3u8
+#EXTINF:-1 tvg-id="rbs.br" tvg-name="RBS TV FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91301.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="RBS TV Passo Fundo" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74965.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="RBS TV Passo Fundo FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74966.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="RBS TV Passo Fundo HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75231.m3u8
+#EXTINF:-1 tvg-id="rbs.br" tvg-name="RBS TV Pelotas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52543.m3u8
+#EXTINF:-1 tvg-id="rbs.br" tvg-name="RBS TV Pelotas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52541.m3u8
+#EXTINF:-1 tvg-id="rbs.br" tvg-name="RBS TV Pelotas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52542.m3u8
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="RBS TV Porto Alegre" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42959.m3u8
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="RBS TV Porto Alegre - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68048.m3u8
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="RBS TV Porto Alegre FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/51215.m3u8
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="RBS TV Porto Alegre H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62816.m3u8
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="RBS TV Porto Alegre HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40252.m3u8
+#EXTINF:-1 tvg-id="rbs.rio.grande.br" tvg-name="RBS TV Rio Grande HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Rio Grande HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108375.m3u8
+#EXTINF:-1 tvg-id="RBSTVSantaMaria.br" tvg-name="RBS TV Santa Maria" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73102.m3u8
+#EXTINF:-1 tvg-id="RBSTVSantaMaria.br" tvg-name="RBS TV Santa Maria FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73099.m3u8
+#EXTINF:-1 tvg-id="RBSTVSantaMaria.br" tvg-name="RBS TV Santa Maria HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73101.m3u8
+#EXTINF:-1 tvg-id="globo.rbs.poa.br" tvg-name="RBS TV Santa Rosa HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Rosa HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108377.m3u8
+#EXTINF:-1 tvg-id="rbs.uruguaiana.br" tvg-name="RBS TV Uruguaiana HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Uruguaiana HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108380.m3u8
+#EXTINF:-1 tvg-id="globo.rbs.poa.br" tvg-name="RBS TV dos Vales HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV dos Vales HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108376.m3u8
+#EXTINF:-1 tvg-id="rpc.cascavel.br" tvg-name="RPC Cascavel" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Cascavel
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74967.m3u8
+#EXTINF:-1 tvg-id="rpc.cascavel.br" tvg-name="RPC Cascavel FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Cascavel FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74968.m3u8
+#EXTINF:-1 tvg-id="rpc.cascavel.br" tvg-name="RPC Cascavel HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Cascavel HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75482.m3u8
+#EXTINF:-1 tvg-id="RPCTVCuritiba.br" tvg-name="RPC Curitiba" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Curitiba
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37366.m3u8
+#EXTINF:-1 tvg-id="RPCTVCuritiba.br" tvg-name="RPC Curitiba FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Curitiba FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38381.m3u8
+#EXTINF:-1 tvg-id="RPCTVCuritiba.br" tvg-name="RPC Curitiba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Curitiba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42961.m3u8
+#EXTINF:-1 tvg-id="RPCTVFozdoIguacu.br" tvg-name="RPC Foz do Iguaçu" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Foz do Iguaçu
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42972.m3u8
+#EXTINF:-1 tvg-id="RPCTVFozdoIguacu.br" tvg-name="RPC Foz do Iguaçu FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Foz do Iguaçu FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42973.m3u8
+#EXTINF:-1 tvg-id="RPCTVFozdoIguacu.br" tvg-name="RPC Foz do Iguaçu HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Foz do Iguaçu HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42974.m3u8
+#EXTINF:-1 tvg-id="rpc.curitiba.br" tvg-name="RPC Guarapuava HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Guarapuava HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108391.m3u8
+#EXTINF:-1 tvg-id="rpc.londrina.br" tvg-name="RPC Londrina HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Londrina HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107582.m3u8
+#EXTINF:-1 tvg-id="RPCTVMaringa.br" tvg-name="RPC Maringá" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Maringá
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63273.m3u8
+#EXTINF:-1 tvg-id="RPCTVMaringa.br" tvg-name="RPC Maringá FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Maringá FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63275.m3u8
+#EXTINF:-1 tvg-id="RPCTVMaringa.br" tvg-name="RPC Maringá FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Maringá FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91305.m3u8
+#EXTINF:-1 tvg-id="RPCTVMaringa.br" tvg-name="RPC Maringá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Maringá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63274.m3u8
+#EXTINF:-1 tvg-id="RPCTVPontaGrossa.br" tvg-name="RPC Ponta Grossa" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Ponta Grossa
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73092.m3u8
+#EXTINF:-1 tvg-id="RPCTVPontaGrossa.br" tvg-name="RPC Ponta Grossa FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Ponta Grossa FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73090.m3u8
+#EXTINF:-1 tvg-id="RPCTVPontaGrossa.br" tvg-name="RPC Ponta Grossa HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Ponta Grossa HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73091.m3u8
+#EXTINF:-1 tvg-id="rpc.paranavai.br" tvg-name="RPC TV Paranavaí FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC TV Paranavaí FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73093.m3u8
+#EXTINF:-1 tvg-id="rpc.paranavai.br" tvg-name="RPC TV Paranavaí FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC TV Paranavaí FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73095.m3u8
+#EXTINF:-1 tvg-id="rpc.paranavai.br" tvg-name="RPC TV Paranavaí HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC TV Paranavaí HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73094.m3u8
+#EXTINF:-1 tvg-id="tv.ariquemes.br" tvg-name="Rede Amazônica Ariquemes HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Ariquemes HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108322.m3u8
+#EXTINF:-1 tvg-id="tv.boa.vista.br" tvg-name="Rede Amazônica Boa Vista" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Boa Vista
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73235.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Rede Amazônica Boa Vista FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Boa Vista FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73236.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.manaus.br" tvg-name="Rede Amazônica Boa Vista HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Boa Vista HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64650.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.manaus.br" tvg-name="Rede Amazônica Cacoal HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Cacoal HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108325.m3u8
+#EXTINF:-1 tvg-id="Rede Amazônica Coari HD" tvg-name="Rede Amazônica Coari HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Coari HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133128.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.manaus.br" tvg-name="Rede Amazônica Cruzeiro do Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Cruzeiro do Sul HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108305.m3u8
+#EXTINF:-1 tvg-id="tv.guajara.mirim.br" tvg-name="Rede Amazônica Guajará-Mirim HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Guajará-Mirim HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108326.m3u8
+#EXTINF:-1 tvg-id="Rede Amazônica Humaitá HD" tvg-name="Rede Amazônica Humaitá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Humaitá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133127.m3u8
+#EXTINF:-1 tvg-id="tv.itacoatiara.br" tvg-name="Rede Amazônica Itacoatiara HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Itacoatiara HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108314.m3u8
+#EXTINF:-1 tvg-id="tv.ji.parana.br" tvg-name="Rede Amazônica Ji-Paraná HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Ji-Paraná HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108327.m3u8
+#EXTINF:-1 tvg-id="tv.macapa.br" tvg-name="Rede Amazônica Macapá" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Macapá
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75480.m3u8
+#EXTINF:-1 tvg-id="tv.macapa.br" tvg-name="Rede Amazônica Macapá FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Macapá FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75481.m3u8
+#EXTINF:-1 tvg-id="tv.macapa.br" tvg-name="Rede Amazônica Macapá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Macapá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108310.m3u8
+#EXTINF:-1 tvg-id="Rede Amazônica Manacapuru HD" tvg-name="Rede Amazônica Manacapuru HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Manacapuru HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133126.m3u8
+#EXTINF:-1 tvg-id="RedeAmazonicaManaus.br" tvg-name="Rede Amazônica Manaus FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Manaus FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72910.m3u8
+#EXTINF:-1 tvg-id="RedeAmazonicaManaus.br" tvg-name="Rede Amazônica Manaus HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Manaus HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/72911.m3u8
+#EXTINF:-1 tvg-id="RedeAmazonicaManaus.br" tvg-name="Rede Amazônica Manaus HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Manaus HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108312.m3u8
+#EXTINF:-1 tvg-id="tv.parintins.br" tvg-name="Rede Amazônica Parintins HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Parintins HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108313.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Rede Amazônica Porto Velho" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Porto Velho
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73233.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Rede Amazônica Porto Velho FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Porto Velho FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73234.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.manaus.br" tvg-name="Rede Amazônica Porto Velho HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Porto Velho HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108318.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.rio.branco.br" tvg-name="Rede Amazônica Rio Branco" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Rio Branco
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73452.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.rio.branco.br" tvg-name="Rede Amazônica Rio Branco HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Rio Branco HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63212.m3u8
+#EXTINF:-1 tvg-id="Rede Amazônica Rorainópolis HD" tvg-name="Rede Amazônica Rorainópolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Rorainópolis HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133129.m3u8
+#EXTINF:-1 tvg-id="rede.amazonica.manaus.br" tvg-name="Rede Amazônica Vilhena HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",Rede Amazônica Vilhena HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108328.m3u8
+#EXTINF:-1 tvg-id="tv.alvorada.do.sul.br" tvg-name="TV Alvorada HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Alvorada HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108786.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Anápolis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Anápolis FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82745.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="TV Anhanguera Anápolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Anápolis HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82744.m3u8
+#EXTINF:-1 tvg-id="TV Anhanguera Araguaína HD" tvg-name="TV Anhanguera Araguaína HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Araguaína HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/121547.m3u8
+#EXTINF:-1 tvg-id="tv.anhaguera.catalao.br" tvg-name="TV Anhanguera Catalão FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Catalão FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82743.m3u8
+#EXTINF:-1 tvg-id="tv.anhaguera.catalao.br" tvg-name="TV Anhanguera Catalão HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Catalão HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82742.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Goiânia" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Goiânia
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91287.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Anhanguera Goiânia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Goiânia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91556.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Gurupi HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Gurupi HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108404.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="TV Anhanguera Itumbiara FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Itumbiara FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82741.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Itumbiara HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Itumbiara HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/82740.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="TV Anhanguera Jataí FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Jataí FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107579.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Jataí HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Jataí HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107578.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.luziania.br" tvg-name="TV Anhanguera Luziânia FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Luziânia FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107577.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.luziania.br" tvg-name="TV Anhanguera Luziânia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Luziânia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107576.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.palmas.br" tvg-name="TV Anhanguera Palmas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Palmas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108402.m3u8
+#EXTINF:-1 tvg-id="globo.anhanguera.br" tvg-name="TV Anhanguera Porangatu HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Porangatu HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108400.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.rio.verde.br" tvg-name="TV Anhanguera Rio Verde FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Rio Verde FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107575.m3u8
+#EXTINF:-1 tvg-id="tv.anhanguera.rio.verde.br" tvg-name="TV Anhanguera Rio Verde HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Anhanguera Rio Verde HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107574.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Asa Branca Alagoas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42995.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="TV Asa Branca Alagoas FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68073.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Asa Branca Alagoas FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91292.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Asa Branca Alagoas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Asa Branca Alagoas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42996.m3u8
+#EXTINF:-1 tvg-id="tv.bahia.br" tvg-name="TV Bahia" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Bahia
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/61974.m3u8
+#EXTINF:-1 tvg-id="tv.bahia.br" tvg-name="TV Bahia FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Bahia FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42987.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="TV Bahia FHD - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Bahia FHD - H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68063.m3u8
+#EXTINF:-1 tvg-id="tv.bahia.br" tvg-name="TV Bahia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Bahia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37096.m3u8
+#EXTINF:-1 tvg-id="tv.diario.br" tvg-name="TV Diário Fortaleza FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Diário Fortaleza FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63723.m3u8
+#EXTINF:-1 tvg-id="tv.diario.br" tvg-name="TV Diário Fortaleza HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Diário Fortaleza HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/58091.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Fronteira Paulista" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Fronteira Paulista
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75165.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Fronteira Paulista FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Fronteira Paulista FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75166.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Gazeta Maceió HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Maceió HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108735.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.noroeste.br" tvg-name="TV Gazeta Noroeste ES HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Noroeste ES HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107570.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.norte.br" tvg-name="TV Gazeta Norte ES HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Norte ES HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107571.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.sul.br" tvg-name="TV Gazeta Sul ES" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Sul ES
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63686.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.sul.br" tvg-name="TV Gazeta Sul ES FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Sul ES FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42997.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.sul.br" tvg-name="TV Gazeta Sul ES HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Sul ES HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42998.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Gazeta Vitória" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Vitória
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42978.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Gazeta Vitória FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Vitória FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42979.m3u8
+#EXTINF:-1 tvg-id="tv.gazeta.br" tvg-name="TV Gazeta Vitória HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Gazeta Vitória HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42980.m3u8
+#EXTINF:-1 tvg-id="globo.recife.br" tvg-name="TV Globo Recife FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Globo Recife FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91265.m3u8
+#EXTINF:-1 tvg-id="tv.grande.rio.br" tvg-name="TV Grande Rio HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Grande Rio HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108785.m3u8
+#EXTINF:-1 tvg-id="TV Integração Ituiutaba HD" tvg-name="TV Integração Ituiutaba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Integração Ituiutaba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133120.m3u8
+#EXTINF:-1 tvg-id="TV Liberal Altamira HD" tvg-name="TV Liberal Altamira HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Altamira HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133121.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.br" tvg-name="TV Liberal Altamira Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Altamira Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111313.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.castanhal.br" tvg-name="TV Liberal Castanhal HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Castanhal HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108783.m3u8
+#EXTINF:-1 tvg-id="TV Liberal Marabá HD" tvg-name="TV Liberal Marabá HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Marabá HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133122.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.br" tvg-name="TV Liberal Marabá Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Marabá Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111311.m3u8
+#EXTINF:-1 tvg-id="TV Liberal Paragominas HD" tvg-name="TV Liberal Paragominas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Paragominas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133124.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.paragominas.br" tvg-name="TV Liberal Paragominas Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Paragominas Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111314.m3u8
+#EXTINF:-1 tvg-id="TV Liberal Parauapebas HD" tvg-name="TV Liberal Parauapebas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Parauapebas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133123.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.parauapebas.br" tvg-name="TV Liberal Parauapebas Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Parauapebas Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111310.m3u8
+#EXTINF:-1 tvg-id="TV Liberal Redenção HD" tvg-name="TV Liberal Redenção HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Redenção HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/133125.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.redencao.br" tvg-name="TV Liberal Redenção Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Liberal Redenção Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111309.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="TV Mirante Balsas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante Balsas HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108736.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.cocais.br" tvg-name="TV Mirante Cocais FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante Cocais FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74964.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Mirante Imperatriz HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante Imperatriz HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107573.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="TV Mirante São Luis" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante São Luis
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42990.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="TV Mirante São Luis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante São Luis FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42988.m3u8
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="TV Mirante São Luis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Mirante São Luis HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42989.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Oeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Oeste HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108734.m3u8
+#EXTINF:-1 tvg-id="tv.paraiba.br" tvg-name="TV Paraíba HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Paraíba HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64602.m3u8
+#EXTINF:-1 tvg-id="TVSantaCruz.br" tvg-name="TV Santa Cruz" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Santa Cruz
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52565.m3u8
+#EXTINF:-1 tvg-id="TVSantaCruz.br" tvg-name="TV Santa Cruz FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Santa Cruz FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52563.m3u8
+#EXTINF:-1 tvg-id="TVSantaCruz.br" tvg-name="TV Santa Cruz HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Santa Cruz HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52564.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Subae Globo Bahia FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Subae Globo Bahia FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74960.m3u8
+#EXTINF:-1 tvg-id="globo.sp.br" tvg-name="TV Subae Globo Bahia HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Subae Globo Bahia HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/57804.m3u8
+#EXTINF:-1 tvg-id="tv.sudoeste.br" tvg-name="TV Sudoeste" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Sudoeste
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74957.m3u8
+#EXTINF:-1 tvg-id="tv.sudoeste.br" tvg-name="TV Sudoeste FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Sudoeste FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74958.m3u8
+#EXTINF:-1 tvg-id="tv.sudoeste.br" tvg-name="TV Sudoeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Sudoeste HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75485.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV São Francisco HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV São Francisco HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108733.m3u8
+#EXTINF:-1 tvg-id="globo.tem.bauru.br" tvg-name="TV TEM Bauru" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM Bauru
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37030.m3u8
+#EXTINF:-1 tvg-id="globo.tem.bauru.br" tvg-name="TV TEM Bauru FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM Bauru FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74972.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV TEM Bauru HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM Bauru HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/81021.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV TEM Itapetinga" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM Itapetinga
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75167.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="TV TEM SJRP FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM SJRP FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42993.m3u8
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="TV TEM Sorocaba" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV TEM Sorocaba
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37029.m3u8
+#EXTINF:-1 tvg-id="globo.br" tvg-name="TV Tapajós HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Tapajós HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108784.m3u8
+#EXTINF:-1 tvg-id="tv.liberal.br" tvg-name="TV Tapajós Santarém Pará" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Tapajós Santarém Pará
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111312.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.cariri.br" tvg-name="TV Verdes Mares Cariri" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Cariri
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74971.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.cariri.br" tvg-name="TV Verdes Mares Cariri FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Cariri FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63389.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.cariri.br" tvg-name="TV Verdes Mares Cariri HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Cariri HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75478.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.br" tvg-name="TV Verdes Mares Fortaleza" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Fortaleza
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/56908.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.br" tvg-name="TV Verdes Mares Fortaleza FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Fortaleza FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63641.m3u8
+#EXTINF:-1 tvg-id="tv.verdes.mares.br" tvg-name="TV Verdes Mares Fortaleza HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Verdes Mares Fortaleza HD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/61976.m3u8
+#EXTINF:-1 tvg-id="tv.vitoria.br" tvg-name="TV Vitória ES FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",TV Vitória ES FHD
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91584.m3u8
 
-#EXTINF:-1 group-title="Mundo" tvg-chno="10" tvg-id="AlJazeera.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/aljazeera.png" , Al Jazeera Español
-https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 
-#EXTINF:-1 group-title="Mundo" tvg-chno="11" tvg-id="Euronews.es" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/euronews.png" , Euronews Español
-https://euronews-espanol-en-brx.secure2.footprint.net/egress/bhost/euronews-español/live.m3u8
 
-#EXTINF:-1 group-title="Info" tvg-chno="12" tvg-id="BBCWorldNews.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/bbc.png" , BBC World News
-https://vs-hls-uk-rrd-1.live.es.hlscall.com/live/uk/bbc_world_news_ci.m3u8
-
-#EXTINF:-1 group-title="Info" tvg-chno="13" tvg-id="CNNespanol.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cnn.png" , CNN Internacional
-https://cnn-cnn-i-espn-euronews-esp-get.secure2.footprint.net/egress/bhost/cnn-int/live.m3u8
-
-#EXTINF:-1 group-title="Info" tvg-chno="14" tvg-id="franceinfo:.fr" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/franceinfo.png" , France Info
-https://static.franceinfo.fr/live/finfo_hls/playlist.m3u8
-
-#EXTINF:-1 group-title="Info" tvg-chno="15" tvg-id="BFMTV.fr" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/bfmtv.png" , BFM TV
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?start=LIVE&end=END
-
-#EXTINF:-1 group-title="Europa" tvg-chno="16" tvg-id="ETB1.es" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/etb.png" , ETB Basque
-https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8
-
-#EXTINF:-1 group-title="Europa" tvg-chno="17" tvg-id="TVG-TVGalicia.es" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/galicia.png" , Galicia TV America
-https://crtvg-america.flumotion.cloud/playlist.m3u8
-
-#EXTINF:-1 group-title="Europa" tvg-chno="18" tvg-id="RaiItalia.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/rai.png" , Rai Italia
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=260750
-
-#EXTINF:-1 group-title="Europa" tvg-chno="19" tvg-id="TVEInternacional.es" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tve.png" , TVE Internacional
-https://rtve-ivhls-rrd.flumotion.net/rtve/int/playlist.m3u8
-
-#EXTINF:-1 group-title="Europa" tvg-chno="20" tvg-id="TV5Monde.fr" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tv5monde.png" , TV5Monde Español
-https://slive.tv5monde.com/tv5monde_espagne_all/playlist.m3u8
-
-#EXTINF:-1 group-title="America Latina" tvg-chno="21" tvg-id="BoliviaTV.bo" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/boliviatv.png" , Bolivia TV
-https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8
-
-#EXTINF:-1 group-title="America Latina" tvg-chno="22" tvg-id="TVN.cl" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/tvn.png" , TVN Chile
-https://mdstrm.com/live-stream-playlist/57d7d125618f6b7618b70df7.m3u8
-
-#EXTINF:-1 group-title="America Latina" tvg-chno="23" tvg-id="Telemundo.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/telemundo.png" , Telemundo Internacional
-https://streamcdnf1-4b3f46f6c0e6e6e9d71a-4f6dc09c9c0c9fa6c00c9a1f98e2d0aa.msvdn.net/r/telemundotv/playlist.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="24" tvg-id="ESPN8TheOcho.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/espn.png" , ESPN8 The Ocho
-https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="25" tvg-id="ESPNDeportes.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/espn.png" , ESPN Deportes
-https://e3.thetvapp.to/hls/espn-deportes/index.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="26" tvg-id="CBSSportsGolazoNetwork.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/cbs.png" , CBS Sports Golazo
-https://dai.google.com/linear/hls/event/GxrCGmwST0ixsrc_QgB6qw/master.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="27" tvg-id="FanDuelTV.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/fanduel.png" , FanDuel TV
-https://d2jl8r92tdc3f1.cloudfront.net/out/v1/59419700344b4625b7cb0693ba265ea3/TVGindex_1.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="28" tvg-id="FIFA+.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/fifa.png" , FIFA+ 
-https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="29" tvg-id="RedbullTV.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/redbull.png" , Red Bull TV
-https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
-
-#EXTINF:-1 group-title="Deportes" tvg-chno="30" tvg-id="beINSports.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/bein.png" , beIN Sports XTRA
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bein-sports-xtra/playlist.m3u8?ads.vf=kBQplLldqQO
-
-#EXTINF:-1 group-title="Musica" tvg-chno="31" tvg-id="VH1.us" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/vh1.png" , VH1
-https://VH1-Live-1.m3u8
-
-#EXTINF:-1 group-title="Musica" tvg-chno="32" tvg-id="VMusic.ar" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/vmusic.png" , VMusic
-https://vmusicfm.tulive.com.ar/vmusic/live/playlist.m3u8
-
-#EXTINF:-1 group-title="Musica" tvg-chno="33" tvg-id="M2O.it" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/m2o.png" , M2O TV
-https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8
-
-#EXTINF:-1 group-title="Musica" tvg-chno="34" tvg-id="DeluxeMusic.de" tvg-logo="https://raw.githubusercontent.com/guigo85/lista-m3u-gratuita/main/logos/deluxe.png" , Deluxe Music
-https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
