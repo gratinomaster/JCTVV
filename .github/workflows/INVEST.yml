@@ -22,7 +22,7 @@ jobs:
       - name: Run OpenCode
         run: |
           opencode run "LEIA https://timesbrasil.com.br/ https://www.cnnbrasil.com.br/money/ https://valor.globo.com/ https://investnews.com.br/ https://www.bloomberglinea.com.br/ e crie um arquivo INVEST.txt com um resumo consolidado das principais notícias de todos os sites."
-          opencode run "Eu tenho R%100,00 diga o que comprar para receber dividendos ainda este mês"
+          opencode run "Eu tenho R%100,00 diga o que comprar para receber dividendos mês que vem, quero apenas as boas"
 
       - name: Commit INVEST.txt
         run: |
