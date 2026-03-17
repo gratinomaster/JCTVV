@@ -21,7 +21,7 @@ jobs:
 
       - name: Run OpenCode
         run: |
-          opencode run "transforme https://aeroescuta.com.br/sample-page/helicopteros-sp/ em NOSARES.m3u com conteudo no estilo #extinf"
+          opencode run "transforme https://aeroescuta.com.br/ em NOSARES.m3u com conteudo no estilo #extinf"
           
 
       - name: Commit INVEST.txt
