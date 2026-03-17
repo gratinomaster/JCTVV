@@ -1,4 +1,5 @@
 #EXTM3U
+https://iptv-org.github.io/epg/channels/us.epg.xml.gz
 #EXTINF:-1 tvg-id="ABC.us@East" group-title="USA" tvg-name="ABC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2f/ABC-2021-LOGO.svg.png",ABC EAST
 http://173.225.32.123/KSFY-2363/index.m3u8
 #EXTINF:-1 tvg-id="CBS.us@East" group-title="USA" tvg-name="CBS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/ee/CBS_logo_%282020%29.svg.png",CBS EAST
