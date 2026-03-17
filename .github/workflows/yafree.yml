@@ -2,6 +2,13 @@ name: ya
 
 on:
   workflow_dispatch:
+    inputs:
+      prompt:
+        description: "O que você quer gerar"
+        required: true
+      filename:
+        description: "Nome do arquivo de saída (ex: lista.m3u)"
+        required: true
 
 jobs:
   opencode:
@@ -19,16 +26,15 @@ jobs:
           curl -fsSL https://opencode.ai/install | bash
           echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Run OpenCode
+      - name: Run OpenCode and save output
         run: |
-          opencode run "transforme https://aeroescuta.com.br/ em NOSARES.m3u com conteudo no estilo #extinf"
-          
+          opencode run "${{ github.event.inputs.prompt }}" > "${{ github.event.inputs.filename }}"
 
-      - name: Commit INVEST.txt
+      - name: Commit generated file
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add INVEST.txt
-          git commit -m "Atualiza resumo de investimentos" || echo "Nada para commit"
+          git add *.m3u *.txt || true
+          git commit -m "Adiciona arquivo gerado" || echo "Nada para commit"
           git push
