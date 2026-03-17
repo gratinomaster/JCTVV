@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import concurrent.futures
 import json
 import time
+import subprocess
 
 # Configuração do Chrome
 options = Options()
@@ -21,32 +22,45 @@ globoplay_urls = [
     "https://www.foxnews.com/video/5614615980001",
     "https://www.foxnews.com/video/5614626175001",
     "https://abcnews.com/Live",
+    "https://abcnews.com/live/video/special-live-5/",
+    "https://abcnews.com/live/video/special-live-10/",
     "https://www.cbsnews.com/live/",
     "https://www.nbcnews.com/watch"
 ]
 
 def extract_stream(url):
-
     driver = webdriver.Chrome(options=options)
 
     try:
         driver.get(url)
-
         wait = WebDriverWait(driver, 20)
 
-        # tentar clicar play
+        # tentar clicar play OU imagem da ABC
         try:
+            # 1️⃣ botão genérico
             play = wait.until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "button"))
             )
             play.click()
         except:
-            pass
+            try:
+                # 2️⃣ imagem da ABC (streamprovider)
+                img = wait.until(
+                    EC.presence_of_element_located(
+                        (By.CSS_SELECTOR, 'img[src*="streamprovider"]')
+                    )
+                )
+
+                driver.execute_script("arguments[0].scrollIntoView(true);", img)
+                time.sleep(1)
+                driver.execute_script("arguments[0].click();", img)
+
+            except:
+                pass
 
         time.sleep(12)
 
         title = driver.title
-
         m3u8_list = []
         thumbnail = None
 
@@ -56,11 +70,10 @@ def extract_stream(url):
             log = json.loads(entry["message"])["message"]
 
             if log["method"] == "Network.responseReceived":
-
                 response = log["params"]["response"]
                 url_response = response["url"]
 
-                # IGNORAR chartbeat
+                # ignorar tracking
                 if url_response.startswith("https://ping.chartbeat.net/ping"):
                     continue
 
@@ -81,28 +94,23 @@ def extract_stream(url):
 
 
 def generate_playlist():
-
     with open("lista5.m3u", "w", encoding="utf-8") as file:
-
         file.write("#EXTM3U\n")
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-
-            futures = {executor.submit(extract_stream, url): url for url in globoplay_urls}
+            futures = {
+                executor.submit(extract_stream, url): url
+                for url in globoplay_urls
+            }
 
             for future in concurrent.futures.as_completed(futures):
-
                 url = futures[future]
-
                 title, m3u8_list, thumb = future.result()
 
                 if m3u8_list:
-
                     thumb = thumb if thumb else ""
 
                     for m3u8 in m3u8_list:
-
-                        # segurança extra (caso passe pelo filtro)
                         if m3u8.startswith("https://ping.chartbeat.net/ping"):
                             continue
 
@@ -114,18 +122,9 @@ def generate_playlist():
                         print("M3U8 encontrado:", m3u8)
 
                     print("OK:", url)
-
                 else:
                     print("Stream não encontrado:", url)
 
-
-if __name__ == "__main__":
-    generate_playlist()
-
-
-import subprocess
-
-arquivo = "lista5.m3u"
 
 def testar_url(url):
     try:
@@ -134,42 +133,48 @@ def testar_url(url):
             capture_output=True,
             text=True
         )
+
         if "200" in resultado.stdout:
             return True
     except:
         pass
+
     return False
 
 
-with open(arquivo, "r", encoding="utf-8") as f:
-    linhas = f.readlines()
+if __name__ == "__main__":
+    generate_playlist()
 
-saida = []
-saida.append("#EXTM3U\n")
+    arquivo = "lista5.m3u"
 
-i = 0
-while i < len(linhas):
-    linha = linhas[i].strip()
+    with open(arquivo, "r", encoding="utf-8") as f:
+        linhas = f.readlines()
 
-    if linha.startswith("#EXTINF"):
-        info = linha
-        url = linhas[i+1].strip()
+    saida = []
+    saida.append("#EXTM3U\n")
 
-        print(f"Testando: {url}")
+    i = 0
+    while i < len(linhas):
+        linha = linhas[i].strip()
 
-        if testar_url(url):
-            print("OK\n")
-            saida.append(info + "\n")
-            saida.append(url + "\n")
+        if linha.startswith("#EXTINF"):
+            info = linha
+            url = linhas[i + 1].strip()
+
+            print(f"Testando: {url}")
+
+            if testar_url(url):
+                print("OK\n")
+                saida.append(info + "\n")
+                saida.append(url + "\n")
+            else:
+                print("OFFLINE\n")
+
+            i += 2
         else:
-            print("OFFLINE\n")
+            i += 1
 
-        i += 2
-    else:
-        i += 1
+    with open(arquivo, "w", encoding="utf-8") as f:
+        f.writelines(saida)
 
-
-with open(arquivo, "w", encoding="utf-8") as f:
-    f.writelines(saida)
-
-print("Lista atualizada!")
+    print("Lista atualizada!")
