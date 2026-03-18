@@ -16,6 +16,7 @@ options.add_argument("--disable-infobars")
 
 # URLs dos vídeos Globoplay
 globoplay_urls = [
+    "https://ge.globo.com/motor/formula-1/video/formula-1-no-sportv-2026-12749215.ghtml",
     "https://globoplay.globo.com/v/4613774/",
     "https://globoplay.globo.com/ao-vivo/7689934/",
     "https://globoplay.globo.com/ao-vivo/7690141/",
