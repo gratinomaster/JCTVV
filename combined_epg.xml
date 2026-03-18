@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv generator-info-name="Globo EPG Generator - Globo Imposto" generated-date="2026-03-11 03:26:13" source-url="https://imprensa.globo.com/programacao-semanal/grade-de-programacao/">
+  <channel id="GloboSP.br">
+    <display-name lang="pt">Globo Sao Paulo</display-name>
+  </channel>
+  <channel id="globonews">
+    <display-name lang="pt">GloboNews</display-name>
+  </channel>
+  <channel id="cbn-sp">
+    <display-name lang="pt">CBN Sao Paulo</display-name>
+  </channel>
+  <programme start="20260307001500 -0300" stop="20260307004500 -0300" channel="GloboSP.br">
+    <title lang="pt">Pré Hora - Fórmula1</title>
+  </programme>
+  <programme start="20260307004500 -0300" stop="20260307030000 -0300" channel="GloboSP.br">
+    <title lang="pt">Fórmula 1 - GP da Austrália</title>
+  </programme>
+  <programme start="20260307030000 -0300" stop="20260307034000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307034000 -0300" stop="20260307042500 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260307042500 -0300" stop="20260307060000 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão II - Pixinguinha, Um Homem Carinhoso</title>
+  </programme>
+  <programme start="20260307060000 -0300" stop="20260307065000 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260307065000 -0300" stop="20260307075000 -0300" channel="GloboSP.br">
+    <title lang="pt">Bom Dia Sábado</title>
+  </programme>
+  <programme start="20260307075000 -0300" stop="20260307083000 -0300" channel="GloboSP.br">
+    <title lang="pt">Pequenas Empresas &amp; Grandes Negócios</title>
+  </programme>
+  <programme start="20260307083000 -0300" stop="20260307114500 -0300" channel="GloboSP.br">
+    <title lang="pt">É de Casa</title>
+  </programme>
+  <programme start="20260307114500 -0300" stop="20260307130000 -0300" channel="GloboSP.br">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260307130000 -0300" stop="20260307132500 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260307132500 -0300" stop="20260307141000 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260307141000 -0300" stop="20260307144000 -0300" channel="GloboSP.br">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260307144000 -0300" stop="20260307161500 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão De Sábado - Uma Noite No Museu 3: O Segredo Da Tumba</title>
+  </programme>
+  <programme start="20260307161500 -0300" stop="20260307184000 -0300" channel="GloboSP.br">
+    <title lang="pt">Caldeirão Com Mion</title>
+  </programme>
+  <programme start="20260307184000 -0300" stop="20260307192500 -0300" channel="GloboSP.br">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260307192500 -0300" stop="20260307194500 -0300" channel="GloboSP.br">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260307194500 -0300" stop="20260307203000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307203000 -0300" stop="20260307212000 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260307212000 -0300" stop="20260307222500 -0300" channel="GloboSP.br">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260307222500 -0300" stop="20260307225000 -0300" channel="GloboSP.br">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260307225000 -0300" stop="20260308040000 -0300" channel="GloboSP.br">
+    <title lang="pt">Altas Horas</title>
+  </programme>
+  <programme start="20260308000500 -0300" stop="20260308001500 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308001500 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308002000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308002000 -0300" stop="20260308004000 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308004000 -0300" stop="20260308005500 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308005500 -0300" stop="20260308010000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308010000 -0300" stop="20260308010500 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308010500 -0300" stop="20260308011000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308011000 -0300" stop="20260308012500 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308012500 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão I - L.O.C.A.</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308014000 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308014000 -0300" stop="20260308015000 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015000 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015500 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão I - De Pernas Pro Ar</title>
+  </programme>
+  <programme start="20260308015500 -0300" stop="20260308020500 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308020500 -0300" stop="20260308022500 -0300" channel="GloboSP.br">
+    <title lang="pt">Cinemaço - Alita: Anjo De Combate</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308022500 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão I - Um Casal Inseparável</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308024500 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308024500 -0300" stop="20260308025000 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão II - Muito Gelo E Dois Dedos D'água</title>
+  </programme>
+  <programme start="20260308025000 -0300" stop="20260308030500 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308030500 -0300" stop="20260308031000 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão II - Quincas Berro D'água</title>
+  </programme>
+  <programme start="20260308031000 -0300" stop="20260308040000 -0300" channel="GloboSP.br">
+    <title lang="pt">Comédia Na Madruga III</title>
+  </programme>
+  <programme start="20260308040000 -0300" stop="20260308042500 -0300" channel="GloboSP.br">
+    <title lang="pt">Hora Um</title>
+  </programme>
+  <programme start="20260308042500 -0300" stop="20260308060000 -0300" channel="GloboSP.br">
+    <title lang="pt">Corujão I - A Fabulosa Gilly Hopkins</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308060000 -0300" channel="GloboSP.br">
+    <title lang="pt">Santa Missa</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308065000 -0300" channel="GloboSP.br">
+    <title lang="pt">Bom Dia Praça</title>
+  </programme>
+  <programme start="20260308065000 -0300" stop="20260308074000 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308074000 -0300" stop="20260308081000 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Comunidade</title>
+  </programme>
+  <programme start="20260308081000 -0300" stop="20260308083000 -0300" channel="GloboSP.br">
+    <title lang="pt">Auto Esporte</title>
+  </programme>
+  <programme start="20260308083000 -0300" stop="20260308084000 -0300" channel="GloboSP.br">
+    <title lang="pt">Bom Dia Brasil</title>
+  </programme>
+  <programme start="20260308084000 -0300" stop="20260308093000 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260308093000 -0300" stop="20260308101500 -0300" channel="GloboSP.br">
+    <title lang="pt">Encontro Com Patrícia Poeta</title>
+  </programme>
+  <programme start="20260308101500 -0300" stop="20260308103500 -0300" channel="GloboSP.br">
+    <title lang="pt">Viver Sertanejo</title>
+  </programme>
+  <programme start="20260308103500 -0300" stop="20260308111000 -0300" channel="GloboSP.br">
+    <title lang="pt">Mais Você</title>
+  </programme>
+  <programme start="20260308111000 -0300" stop="20260308114500 -0300" channel="GloboSP.br">
+    <title lang="pt">Esporte Espetacular</title>
+  </programme>
+  <programme start="20260308114500 -0300" stop="20260308130000 -0300" channel="GloboSP.br">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308130000 -0300" channel="GloboSP.br">
+    <title lang="pt">Temperatura Máxima - Monster Hunter</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308132500 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260308132500 -0300" stop="20260308144500 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260308144500 -0300" stop="20260308145000 -0300" channel="GloboSP.br">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260308145000 -0300" stop="20260308152500 -0300" channel="GloboSP.br">
+    <title lang="pt">Domingão Com Huck</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308152500 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão da Tarde - 90 Minutos No Paraíso</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308153000 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão da Tarde - O Impossível</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão da Tarde - Agente 86</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão da Tarde - Vidas Passadas</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308170000 -0300" channel="GloboSP.br">
+    <title lang="pt">Sessão da Tarde - Saneamento Básico - O Filme</title>
+  </programme>
+  <programme start="20260308170000 -0300" stop="20260308171000 -0300" channel="GloboSP.br">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171000 -0300" stop="20260308171500 -0300" channel="GloboSP.br">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171500 -0300" stop="20260308174000 -0300" channel="GloboSP.br">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308174000 -0300" stop="20260308180500 -0300" channel="GloboSP.br">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308180500 -0300" stop="20260308182500 -0300" channel="GloboSP.br">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308182500 -0300" stop="20260308184500 -0300" channel="GloboSP.br">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308184500 -0300" stop="20260308191000 -0300" channel="GloboSP.br">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191000 -0300" stop="20260308191500 -0300" channel="GloboSP.br">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191500 -0300" stop="20260308194000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308194000 -0300" stop="20260308200000 -0300" channel="GloboSP.br">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308200000 -0300" stop="20260308201500 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308201500 -0300" stop="20260308203000 -0300" channel="GloboSP.br">
+    <title lang="pt">Fantástico</title>
+  </programme>
+  <programme start="20260308203000 -0300" stop="20260308203500 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308203500 -0300" stop="20260308212000 -0300" channel="GloboSP.br">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308212000 -0300" channel="GloboSP.br">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308222500 -0300" channel="GloboSP.br">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308222500 -0300" stop="20260308224500 -0300" channel="GloboSP.br">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308224500 -0300" stop="20260308230000 -0300" channel="GloboSP.br">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308230000 -0300" stop="20260308231000 -0300" channel="GloboSP.br">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308231000 -0300" stop="20260308232500 -0300" channel="GloboSP.br">
+    <title lang="pt">Falas Femininas 2026 - Quando Elas se Movimentam</title>
+  </programme>
+  <programme start="20260308232500 -0300" stop="20260308233000 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308233000 -0300" stop="20260308233500 -0300" channel="GloboSP.br">
+    <title lang="pt">Segue o Jogo</title>
+  </programme>
+  <programme start="20260308233500 -0300" stop="20260308234500 -0300" channel="GloboSP.br">
+    <title lang="pt">Lady Night</title>
+  </programme>
+  <programme start="20260308234500 -0300" stop="20260308235000 -0300" channel="GloboSP.br">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260308235000 -0300" channel="GloboSP.br">
+    <title lang="pt">Domingo Maior - As Viúvas</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260309040000 -0300" channel="GloboSP.br">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260307001500 -0300" stop="20260307004500 -0300" channel="globonews">
+    <title lang="pt">Pré Hora - Fórmula1</title>
+  </programme>
+  <programme start="20260307004500 -0300" stop="20260307030000 -0300" channel="globonews">
+    <title lang="pt">Fórmula 1 - GP da Austrália</title>
+  </programme>
+  <programme start="20260307030000 -0300" stop="20260307034000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307034000 -0300" stop="20260307042500 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260307042500 -0300" stop="20260307060000 -0300" channel="globonews">
+    <title lang="pt">Corujão II - Pixinguinha, Um Homem Carinhoso</title>
+  </programme>
+  <programme start="20260307060000 -0300" stop="20260307065000 -0300" channel="globonews">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260307065000 -0300" stop="20260307075000 -0300" channel="globonews">
+    <title lang="pt">Bom Dia Sábado</title>
+  </programme>
+  <programme start="20260307075000 -0300" stop="20260307083000 -0300" channel="globonews">
+    <title lang="pt">Pequenas Empresas &amp; Grandes Negócios</title>
+  </programme>
+  <programme start="20260307083000 -0300" stop="20260307114500 -0300" channel="globonews">
+    <title lang="pt">É de Casa</title>
+  </programme>
+  <programme start="20260307114500 -0300" stop="20260307130000 -0300" channel="globonews">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260307130000 -0300" stop="20260307132500 -0300" channel="globonews">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260307132500 -0300" stop="20260307141000 -0300" channel="globonews">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260307141000 -0300" stop="20260307144000 -0300" channel="globonews">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260307144000 -0300" stop="20260307161500 -0300" channel="globonews">
+    <title lang="pt">Sessão De Sábado - Uma Noite No Museu 3: O Segredo Da Tumba</title>
+  </programme>
+  <programme start="20260307161500 -0300" stop="20260307184000 -0300" channel="globonews">
+    <title lang="pt">Caldeirão Com Mion</title>
+  </programme>
+  <programme start="20260307184000 -0300" stop="20260307192500 -0300" channel="globonews">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260307192500 -0300" stop="20260307194500 -0300" channel="globonews">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260307194500 -0300" stop="20260307203000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307203000 -0300" stop="20260307212000 -0300" channel="globonews">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260307212000 -0300" stop="20260307222500 -0300" channel="globonews">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260307222500 -0300" stop="20260307225000 -0300" channel="globonews">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260307225000 -0300" stop="20260308040000 -0300" channel="globonews">
+    <title lang="pt">Altas Horas</title>
+  </programme>
+  <programme start="20260308000500 -0300" stop="20260308001500 -0300" channel="globonews">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308001500 -0300" channel="globonews">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308002000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308002000 -0300" stop="20260308004000 -0300" channel="globonews">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308004000 -0300" stop="20260308005500 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308005500 -0300" stop="20260308010000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308010000 -0300" stop="20260308010500 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308010500 -0300" stop="20260308011000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308011000 -0300" stop="20260308012500 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308012500 -0300" channel="globonews">
+    <title lang="pt">Corujão I - L.O.C.A.</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308014000 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308014000 -0300" stop="20260308015000 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015000 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015500 -0300" channel="globonews">
+    <title lang="pt">Corujão I - De Pernas Pro Ar</title>
+  </programme>
+  <programme start="20260308015500 -0300" stop="20260308020500 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308020500 -0300" stop="20260308022500 -0300" channel="globonews">
+    <title lang="pt">Cinemaço - Alita: Anjo De Combate</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308022500 -0300" channel="globonews">
+    <title lang="pt">Corujão I - Um Casal Inseparável</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308024500 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308024500 -0300" stop="20260308025000 -0300" channel="globonews">
+    <title lang="pt">Corujão II - Muito Gelo E Dois Dedos D'água</title>
+  </programme>
+  <programme start="20260308025000 -0300" stop="20260308030500 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308030500 -0300" stop="20260308031000 -0300" channel="globonews">
+    <title lang="pt">Corujão II - Quincas Berro D'água</title>
+  </programme>
+  <programme start="20260308031000 -0300" stop="20260308040000 -0300" channel="globonews">
+    <title lang="pt">Comédia Na Madruga III</title>
+  </programme>
+  <programme start="20260308040000 -0300" stop="20260308042500 -0300" channel="globonews">
+    <title lang="pt">Hora Um</title>
+  </programme>
+  <programme start="20260308042500 -0300" stop="20260308060000 -0300" channel="globonews">
+    <title lang="pt">Corujão I - A Fabulosa Gilly Hopkins</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308060000 -0300" channel="globonews">
+    <title lang="pt">Santa Missa</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308065000 -0300" channel="globonews">
+    <title lang="pt">Bom Dia Praça</title>
+  </programme>
+  <programme start="20260308065000 -0300" stop="20260308074000 -0300" channel="globonews">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308074000 -0300" stop="20260308081000 -0300" channel="globonews">
+    <title lang="pt">Globo Comunidade</title>
+  </programme>
+  <programme start="20260308081000 -0300" stop="20260308083000 -0300" channel="globonews">
+    <title lang="pt">Auto Esporte</title>
+  </programme>
+  <programme start="20260308083000 -0300" stop="20260308084000 -0300" channel="globonews">
+    <title lang="pt">Bom Dia Brasil</title>
+  </programme>
+  <programme start="20260308084000 -0300" stop="20260308093000 -0300" channel="globonews">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260308093000 -0300" stop="20260308101500 -0300" channel="globonews">
+    <title lang="pt">Encontro Com Patrícia Poeta</title>
+  </programme>
+  <programme start="20260308101500 -0300" stop="20260308103500 -0300" channel="globonews">
+    <title lang="pt">Viver Sertanejo</title>
+  </programme>
+  <programme start="20260308103500 -0300" stop="20260308111000 -0300" channel="globonews">
+    <title lang="pt">Mais Você</title>
+  </programme>
+  <programme start="20260308111000 -0300" stop="20260308114500 -0300" channel="globonews">
+    <title lang="pt">Esporte Espetacular</title>
+  </programme>
+  <programme start="20260308114500 -0300" stop="20260308130000 -0300" channel="globonews">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308130000 -0300" channel="globonews">
+    <title lang="pt">Temperatura Máxima - Monster Hunter</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308132500 -0300" channel="globonews">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260308132500 -0300" stop="20260308144500 -0300" channel="globonews">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260308144500 -0300" stop="20260308145000 -0300" channel="globonews">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260308145000 -0300" stop="20260308152500 -0300" channel="globonews">
+    <title lang="pt">Domingão Com Huck</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308152500 -0300" channel="globonews">
+    <title lang="pt">Sessão da Tarde - 90 Minutos No Paraíso</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308153000 -0300" channel="globonews">
+    <title lang="pt">Sessão da Tarde - O Impossível</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="globonews">
+    <title lang="pt">Sessão da Tarde - Agente 86</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="globonews">
+    <title lang="pt">Sessão da Tarde - Vidas Passadas</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308170000 -0300" channel="globonews">
+    <title lang="pt">Sessão da Tarde - Saneamento Básico - O Filme</title>
+  </programme>
+  <programme start="20260308170000 -0300" stop="20260308171000 -0300" channel="globonews">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171000 -0300" stop="20260308171500 -0300" channel="globonews">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171500 -0300" stop="20260308174000 -0300" channel="globonews">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308174000 -0300" stop="20260308180500 -0300" channel="globonews">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308180500 -0300" stop="20260308182500 -0300" channel="globonews">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308182500 -0300" stop="20260308184500 -0300" channel="globonews">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308184500 -0300" stop="20260308191000 -0300" channel="globonews">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191000 -0300" stop="20260308191500 -0300" channel="globonews">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191500 -0300" stop="20260308194000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308194000 -0300" stop="20260308200000 -0300" channel="globonews">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308200000 -0300" stop="20260308201500 -0300" channel="globonews">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308201500 -0300" stop="20260308203000 -0300" channel="globonews">
+    <title lang="pt">Fantástico</title>
+  </programme>
+  <programme start="20260308203000 -0300" stop="20260308203500 -0300" channel="globonews">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308203500 -0300" stop="20260308212000 -0300" channel="globonews">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308212000 -0300" channel="globonews">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308222500 -0300" channel="globonews">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308222500 -0300" stop="20260308224500 -0300" channel="globonews">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308224500 -0300" stop="20260308230000 -0300" channel="globonews">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308230000 -0300" stop="20260308231000 -0300" channel="globonews">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308231000 -0300" stop="20260308232500 -0300" channel="globonews">
+    <title lang="pt">Falas Femininas 2026 - Quando Elas se Movimentam</title>
+  </programme>
+  <programme start="20260308232500 -0300" stop="20260308233000 -0300" channel="globonews">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308233000 -0300" stop="20260308233500 -0300" channel="globonews">
+    <title lang="pt">Segue o Jogo</title>
+  </programme>
+  <programme start="20260308233500 -0300" stop="20260308234500 -0300" channel="globonews">
+    <title lang="pt">Lady Night</title>
+  </programme>
+  <programme start="20260308234500 -0300" stop="20260308235000 -0300" channel="globonews">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260308235000 -0300" channel="globonews">
+    <title lang="pt">Domingo Maior - As Viúvas</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260309040000 -0300" channel="globonews">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260307001500 -0300" stop="20260307004500 -0300" channel="cbn-sp">
+    <title lang="pt">Pré Hora - Fórmula1</title>
+  </programme>
+  <programme start="20260307004500 -0300" stop="20260307030000 -0300" channel="cbn-sp">
+    <title lang="pt">Fórmula 1 - GP da Austrália</title>
+  </programme>
+  <programme start="20260307030000 -0300" stop="20260307034000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307034000 -0300" stop="20260307042500 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260307042500 -0300" stop="20260307060000 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão II - Pixinguinha, Um Homem Carinhoso</title>
+  </programme>
+  <programme start="20260307060000 -0300" stop="20260307065000 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260307065000 -0300" stop="20260307075000 -0300" channel="cbn-sp">
+    <title lang="pt">Bom Dia Sábado</title>
+  </programme>
+  <programme start="20260307075000 -0300" stop="20260307083000 -0300" channel="cbn-sp">
+    <title lang="pt">Pequenas Empresas &amp; Grandes Negócios</title>
+  </programme>
+  <programme start="20260307083000 -0300" stop="20260307114500 -0300" channel="cbn-sp">
+    <title lang="pt">É de Casa</title>
+  </programme>
+  <programme start="20260307114500 -0300" stop="20260307130000 -0300" channel="cbn-sp">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260307130000 -0300" stop="20260307132500 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260307132500 -0300" stop="20260307141000 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260307141000 -0300" stop="20260307144000 -0300" channel="cbn-sp">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260307144000 -0300" stop="20260307161500 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão De Sábado - Uma Noite No Museu 3: O Segredo Da Tumba</title>
+  </programme>
+  <programme start="20260307161500 -0300" stop="20260307184000 -0300" channel="cbn-sp">
+    <title lang="pt">Caldeirão Com Mion</title>
+  </programme>
+  <programme start="20260307184000 -0300" stop="20260307192500 -0300" channel="cbn-sp">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260307192500 -0300" stop="20260307194500 -0300" channel="cbn-sp">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260307194500 -0300" stop="20260307203000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260307203000 -0300" stop="20260307212000 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260307212000 -0300" stop="20260307222500 -0300" channel="cbn-sp">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260307222500 -0300" stop="20260307225000 -0300" channel="cbn-sp">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260307225000 -0300" stop="20260308040000 -0300" channel="cbn-sp">
+    <title lang="pt">Altas Horas</title>
+  </programme>
+  <programme start="20260308000500 -0300" stop="20260308001500 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308001500 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308001500 -0300" stop="20260308002000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308002000 -0300" stop="20260308004000 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308004000 -0300" stop="20260308005500 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308005500 -0300" stop="20260308010000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308010000 -0300" stop="20260308010500 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308010500 -0300" stop="20260308011000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308011000 -0300" stop="20260308012500 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308012500 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão I - L.O.C.A.</title>
+  </programme>
+  <programme start="20260308012500 -0300" stop="20260308014000 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308014000 -0300" stop="20260308015000 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015000 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308015000 -0300" stop="20260308015500 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão I - De Pernas Pro Ar</title>
+  </programme>
+  <programme start="20260308015500 -0300" stop="20260308020500 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga I</title>
+  </programme>
+  <programme start="20260308020500 -0300" stop="20260308022500 -0300" channel="cbn-sp">
+    <title lang="pt">Cinemaço - Alita: Anjo De Combate</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308022500 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão I - Um Casal Inseparável</title>
+  </programme>
+  <programme start="20260308022500 -0300" stop="20260308024500 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308024500 -0300" stop="20260308025000 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão II - Muito Gelo E Dois Dedos D'água</title>
+  </programme>
+  <programme start="20260308025000 -0300" stop="20260308030500 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga II</title>
+  </programme>
+  <programme start="20260308030500 -0300" stop="20260308031000 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão II - Quincas Berro D'água</title>
+  </programme>
+  <programme start="20260308031000 -0300" stop="20260308040000 -0300" channel="cbn-sp">
+    <title lang="pt">Comédia Na Madruga III</title>
+  </programme>
+  <programme start="20260308040000 -0300" stop="20260308042500 -0300" channel="cbn-sp">
+    <title lang="pt">Hora Um</title>
+  </programme>
+  <programme start="20260308042500 -0300" stop="20260308060000 -0300" channel="cbn-sp">
+    <title lang="pt">Corujão I - A Fabulosa Gilly Hopkins</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308060000 -0300" channel="cbn-sp">
+    <title lang="pt">Santa Missa</title>
+  </programme>
+  <programme start="20260308060000 -0300" stop="20260308065000 -0300" channel="cbn-sp">
+    <title lang="pt">Bom Dia Praça</title>
+  </programme>
+  <programme start="20260308065000 -0300" stop="20260308074000 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308074000 -0300" stop="20260308081000 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Comunidade</title>
+  </programme>
+  <programme start="20260308081000 -0300" stop="20260308083000 -0300" channel="cbn-sp">
+    <title lang="pt">Auto Esporte</title>
+  </programme>
+  <programme start="20260308083000 -0300" stop="20260308084000 -0300" channel="cbn-sp">
+    <title lang="pt">Bom Dia Brasil</title>
+  </programme>
+  <programme start="20260308084000 -0300" stop="20260308093000 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Rural</title>
+  </programme>
+  <programme start="20260308093000 -0300" stop="20260308101500 -0300" channel="cbn-sp">
+    <title lang="pt">Encontro Com Patrícia Poeta</title>
+  </programme>
+  <programme start="20260308101500 -0300" stop="20260308103500 -0300" channel="cbn-sp">
+    <title lang="pt">Viver Sertanejo</title>
+  </programme>
+  <programme start="20260308103500 -0300" stop="20260308111000 -0300" channel="cbn-sp">
+    <title lang="pt">Mais Você</title>
+  </programme>
+  <programme start="20260308111000 -0300" stop="20260308114500 -0300" channel="cbn-sp">
+    <title lang="pt">Esporte Espetacular</title>
+  </programme>
+  <programme start="20260308114500 -0300" stop="20260308130000 -0300" channel="cbn-sp">
+    <title lang="pt">Praça TV - 1ª Edição</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308130000 -0300" channel="cbn-sp">
+    <title lang="pt">Temperatura Máxima - Monster Hunter</title>
+  </programme>
+  <programme start="20260308130000 -0300" stop="20260308132500 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Esporte</title>
+  </programme>
+  <programme start="20260308132500 -0300" stop="20260308144500 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal Hoje</title>
+  </programme>
+  <programme start="20260308144500 -0300" stop="20260308145000 -0300" channel="cbn-sp">
+    <title lang="pt">Edição Especial - Terra Nostra</title>
+  </programme>
+  <programme start="20260308145000 -0300" stop="20260308152500 -0300" channel="cbn-sp">
+    <title lang="pt">Domingão Com Huck</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308152500 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão da Tarde - 90 Minutos No Paraíso</title>
+  </programme>
+  <programme start="20260308152500 -0300" stop="20260308153000 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão da Tarde - O Impossível</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão da Tarde - Agente 86</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308153000 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão da Tarde - Vidas Passadas</title>
+  </programme>
+  <programme start="20260308153000 -0300" stop="20260308170000 -0300" channel="cbn-sp">
+    <title lang="pt">Sessão da Tarde - Saneamento Básico - O Filme</title>
+  </programme>
+  <programme start="20260308170000 -0300" stop="20260308171000 -0300" channel="cbn-sp">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171000 -0300" stop="20260308171500 -0300" channel="cbn-sp">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308171500 -0300" stop="20260308174000 -0300" channel="cbn-sp">
+    <title lang="pt">Vale a Pena Ver de Novo - Rainha da Sucata</title>
+  </programme>
+  <programme start="20260308174000 -0300" stop="20260308180500 -0300" channel="cbn-sp">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308180500 -0300" stop="20260308182500 -0300" channel="cbn-sp">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308182500 -0300" stop="20260308184500 -0300" channel="cbn-sp">
+    <title lang="pt">Êta Mundo Melhor!</title>
+  </programme>
+  <programme start="20260308184500 -0300" stop="20260308191000 -0300" channel="cbn-sp">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191000 -0300" stop="20260308191500 -0300" channel="cbn-sp">
+    <title lang="pt">Praça TV - 2ª Edição</title>
+  </programme>
+  <programme start="20260308191500 -0300" stop="20260308194000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308194000 -0300" stop="20260308200000 -0300" channel="cbn-sp">
+    <title lang="pt">Coração Acelerado</title>
+  </programme>
+  <programme start="20260308200000 -0300" stop="20260308201500 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308201500 -0300" stop="20260308203000 -0300" channel="cbn-sp">
+    <title lang="pt">Fantástico</title>
+  </programme>
+  <programme start="20260308203000 -0300" stop="20260308203500 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal Nacional</title>
+  </programme>
+  <programme start="20260308203500 -0300" stop="20260308212000 -0300" channel="cbn-sp">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308212000 -0300" channel="cbn-sp">
+    <title lang="pt">Três Graças</title>
+  </programme>
+  <programme start="20260308212000 -0300" stop="20260308222500 -0300" channel="cbn-sp">
+    <title lang="pt">Futebol</title>
+  </programme>
+  <programme start="20260308222500 -0300" stop="20260308224500 -0300" channel="cbn-sp">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308224500 -0300" stop="20260308230000 -0300" channel="cbn-sp">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308230000 -0300" stop="20260308231000 -0300" channel="cbn-sp">
+    <title lang="pt">Globo Repórter</title>
+  </programme>
+  <programme start="20260308231000 -0300" stop="20260308232500 -0300" channel="cbn-sp">
+    <title lang="pt">Falas Femininas 2026 - Quando Elas se Movimentam</title>
+  </programme>
+  <programme start="20260308232500 -0300" stop="20260308233000 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+  <programme start="20260308233000 -0300" stop="20260308233500 -0300" channel="cbn-sp">
+    <title lang="pt">Segue o Jogo</title>
+  </programme>
+  <programme start="20260308233500 -0300" stop="20260308234500 -0300" channel="cbn-sp">
+    <title lang="pt">Lady Night</title>
+  </programme>
+  <programme start="20260308234500 -0300" stop="20260308235000 -0300" channel="cbn-sp">
+    <title lang="pt">Big Brother Brasil 26</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260308235000 -0300" channel="cbn-sp">
+    <title lang="pt">Domingo Maior - As Viúvas</title>
+  </programme>
+  <programme start="20260308235000 -0300" stop="20260309040000 -0300" channel="cbn-sp">
+    <title lang="pt">Jornal da Globo</title>
+  </programme>
+<channel id="eptv-campinas">
+    <display-name lang="pt">EPTV Campinas</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/eptv-campinas.png" />
+  </channel>
+  <channel id="eptv-ribeirao">
+    <display-name lang="pt">EPTV Ribeirão Preto</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/eptv-ribeirao.png" />
+  </channel>
+  <channel id="rbs-porto-alegre">
+    <display-name lang="pt">RBS TV Porto Alegre</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/rbs-porto-alegre.png" />
+  </channel>
+  <channel id="nsc-tv">
+    <display-name lang="pt">NSC TV</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/nsc-tv.png" />
+  </channel>
+  <channel id="tv-verdes-mares">
+    <display-name lang="pt">TV Verdes Mares</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-verdes-mares.png" />
+  </channel>
+  <channel id="tv-globo-ba">
+    <display-name lang="pt">TV Bahia</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-globo-ba.png" />
+  </channel>
+  <channel id="tv-globo-al">
+    <display-name lang="pt">TV Globo Alagoas</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-globo-al.png" />
+  </channel>
+  <channel id="rede-amazonica">
+    <display-name lang="pt">Rede Amazônica</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/rede-amazonica.png" />
+  </channel>
+  <channel id="tv-liberal">
+    <display-name lang="pt">TV Liberal</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-liberal.png" />
+  </channel>
+  <channel id="tv-gazeta-es">
+    <display-name lang="pt">TV Gazeta ES</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-gazeta-es.png" />
+  </channel>
+  <channel id="tv-integracao">
+    <display-name lang="pt">TV Integração</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-integracao.png" />
+  </channel>
+  <channel id="tv-vanguarda">
+    <display-name lang="pt">TV Vanguarda</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-vanguarda.png" />
+  </channel>
+  <channel id="tv-pantanal">
+    <display-name lang="pt">TV Pantanal</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-pantanal.png" />
+  </channel>
+  <channel id="globo-rj">
+    <display-name lang="pt">Globo Rio de Janeiro</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/globo-rj.png" />
+  </channel>
+  <channel id="rbs-tv">
+    <display-name lang="pt">RBS TV Porto Alegre</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/rbs-tv.png" />
+  </channel>
+  <channel id="tv-globo-pe">
+    <display-name lang="pt">TV Globo Pernambuco</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/tv-globo-pe.png" />
+  </channel>
+  <channel id="cbn-rj">
+    <display-name lang="pt">CBN Rio de Janeiro</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/cbn-rj.png" />
+  </channel>
+  <channel id="sportv">
+    <display-name lang="pt">SporTV</display-name>
+    <icon src="https://s3.glbimg.com/v1/gla3/c40a7726c0a14c084f1df0cb8e8d6e1c/sportv.png" />
+  </channel>
+  </tv>
