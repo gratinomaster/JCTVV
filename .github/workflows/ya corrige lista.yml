@@ -24,7 +24,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          corrija o lista1.m3u para que todos os canais tenham epg valido, atualizado, teste para ver se o epg funciona, caso haja sinais de afiliadas, procure o epg para cada afiliada, tem que ter rbs e nsc no epg, insira a url do epg no arquivo .m3u,veja se tem a programação do dia de hoje e amanhã
+          corrija o lista5.m3u para que todos os canais tenham epg valido, atualizado, teste para ver se o epg funciona, caso haja sinais de afiliadas, procure o epg para cada afiliada, tem que ter rbs e nsc no epg, insira a url do epg no arquivo .m3u,veja se tem a programação do dia de hoje e amanhã
           EOF
 
       - name: Run OpenCode
@@ -39,7 +39,7 @@ jobs:
 
           if [ -f lista5.m3u ]; then
             echo "Playlist criada:"
-            cat lista1.m3u
+            cat lista5.m3u
           else
             echo "lista5.m3u não foi criado"
           fi
