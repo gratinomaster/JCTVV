@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/limaalef/braziltvepg/main/globo.xml"
+#EXTM3U url-tvg="globo_epg_regional.xml"
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="EPTV Campinas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40248.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="EPTV Campinas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",EPTV Campinas FHD
@@ -391,93 +391,93 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68072.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52587.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="InterTV Cabo Frio HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",InterTV Cabo Frio HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64591.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Blumenau" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52571.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Blumenau FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau FHD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Blumenau FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52569.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Blumenau HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Blumenau HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Blumenau HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52570.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Centro Oeste" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Centro Oeste" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73088.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Centro Oeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Centro Oeste HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Centro Oeste HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73087.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Chapecó" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Chapecó" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42971.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Chapecó FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó FHD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Chapecó FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42969.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Chapecó HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Chapecó HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Chapecó HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42970.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Criciúma" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Criciúma" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73085.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Criciúma FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma FHD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Criciúma FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73070.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Criciúma HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Criciúma HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Criciúma HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73071.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Florianópolis" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Florianópolis" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38641.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Florianópolis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis FHD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Florianópolis FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42985.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Florianópolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Florianópolis HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Florianópolis HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42958.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Joinville" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Joinville" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52540.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Joinville FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville FHD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Joinville FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52538.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="NSC TV Joinville HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville HD
+#EXTINF:-1 tvg-id="nsc-tv" tvg-name="NSC TV Joinville HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",NSC TV Joinville HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52539.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS 4K" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS 4K
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS 4K" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS 4K
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100611.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS Santa Cruz HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS Santa Cruz HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS Santa Cruz HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS Santa Cruz HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107580.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Bagé HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Bagé HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Bagé HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Bagé HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108372.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Caxias do Sul" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Caxias do Sul" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52568.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Caxias do Sul FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul FHD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Caxias do Sul FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52566.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Caxias do Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Caxias do Sul HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Caxias do Sul HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52567.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Cruz Alta HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Cruz Alta HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Cruz Alta HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Cruz Alta HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108373.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Erechim HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Erechim HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Erechim HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Erechim HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108374.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV FHD H265
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV FHD H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV FHD H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91301.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Passo Fundo" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Passo Fundo" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74965.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Passo Fundo FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo FHD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Passo Fundo FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74966.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Passo Fundo HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Passo Fundo HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Passo Fundo HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75231.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Pelotas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Pelotas" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52543.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Pelotas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas FHD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Pelotas FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52541.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Pelotas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Pelotas HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Pelotas HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52542.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Porto Alegre" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42959.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre - H265
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Porto Alegre - H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre - H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68048.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre FHD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Porto Alegre FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/51215.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre H265
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Porto Alegre H265" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62816.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Porto Alegre HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Porto Alegre HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40252.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Rio Grande HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Rio Grande HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Rio Grande HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Rio Grande HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108375.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Santa Maria" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Santa Maria" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73102.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Santa Maria FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria FHD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Santa Maria FHD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73099.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Santa Maria HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Santa Maria HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Maria HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73101.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Santa Rosa HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Rosa HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Santa Rosa HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Santa Rosa HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108377.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Uruguaiana HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Uruguaiana HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV Uruguaiana HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV Uruguaiana HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108380.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV dos Vales HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV dos Vales HD
+#EXTINF:-1 tvg-id="rbs-tv" tvg-name="RBS TV dos Vales HD" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RBS TV dos Vales HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108376.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RPC Cascavel" tvg-logo="https://i.imgur.com/v3JuPi6.png" group-title="Canais | Globo",RPC Cascavel
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74967.m3u8
