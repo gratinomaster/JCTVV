@@ -1,1 +1,1 @@
-corrija o lista5.m3u para que todos os canais tenham epg valido, atualizado, teste para ver se o epg funciona, caso haja sinais de afiliadas, procure o epg para cada afiliada, insira a url do epg no arquivo .m3u,veja se tem a programação do dia de hoje e amanhã
+corrija o lista1.m3u para que use url-tvg https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml corrigindo tvg-ids
