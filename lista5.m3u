@@ -1,15 +1,127 @@
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_lite.xml"
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml,https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml,https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/vivoplay.xml"
 
-#EXTM3U x-tvg-url="https://github.com/acidjesuz/EPG/raw/master/guide.xml"
-#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/es/gatotv.com.xml,https://iptv-org.github.io/epg/guides/es/mi.tv.xml,https://iptv-org.github.io/epg/guides/es/siba.com.co.xml"
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_lite.xml"
-#EXTM3U x-tvg-url="https://github.com/pendy99/iptv-epg/raw/main/epg.xml.gz"
-#EXTM3U x-tvg-url="https://github.com/acidjesuz/EPG/raw/master/guide.xml"
+#EXTINF:-1 tvg-id="globo.nordeste.br" tvg-name="Globo Nordeste FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Nordeste.png" group-title="GLOBO NORDESTE",Globo Nordeste FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1982
 
-#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/en/tvguide.com.xml"
-#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/en/tvpassport.com.xml"
-#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/en/flixed.io.xml"
+#EXTINF:-1 tvg-id="globo.nordeste.br" tvg-name="Globo Nordeste HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Nordeste.png" group-title="GLOBO NORDESTE",Globo Nordeste HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1935
 
-#EXTM3U
-#EXTM3U x-tvg-url="https://github.com/iptv-org/epg/raw/master/sites/directv.com/directv.com.channels.xml"
-#EXTM3U
+#EXTINF:-1 tvg-id="br#globo-s-o-paulo-hd" tvg-name="Globo SP FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20S%c3%a3o%20Paulo.png" group-title="GLOBO SUDESTE",Globo SP FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/62169
+
+#EXTINF:-1 tvg-id="br#globo-s-o-paulo-hd" tvg-name="Globo SP HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20S%c3%a3o%20Paulo.png" group-title="GLOBO SUDESTE",Globo SP HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1948
+
+#EXTINF:-1 tvg-id="br#globo-rio-hd" tvg-name="Globo RJ FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Rio.png" group-title="GLOBO SUDESTE",Globo RJ FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1943
+
+#EXTINF:-1 tvg-id="br#globo-rio-hd" tvg-name="Globo RJ HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Rio.png" group-title="GLOBO SUDESTE",Globo RJ HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1942
+
+#EXTINF:-1 tvg-id="br#globo-belo-horizonte-hd" tvg-name="Globo MG FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Minas.png" group-title="GLOBO SUDESTE",Globo MG FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1981
+
+#EXTINF:-1 tvg-id="br#globo-belo-horizonte" tvg-name="Globo MG HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo%20Minas.png" group-title="GLOBO SUDESTE",Globo MG HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1933
+
+#EXTINF:-1 tvg-id="tvsbahia.ba.gov.br" tvg-name="Globo TV Bahia FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Bahia.png" group-title="GLOBO NORDESTE",Globo TV Bahia FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1986
+
+#EXTINF:-1 tvg-id="tvsbahia.ba.gov.br" tvg-name="Globo TV Bahia HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Bahia.png" group-title="GLOBO NORDESTE",Globo TV Bahia HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1953
+
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Verdes Mares Fortaleza FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Verdes%20Mares.png" group-title="GLOBO NORDESTE",Globo TV Verdes Mares Fortaleza FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/39415
+
+#EXTINF:-1 tvg-id="a.e.br" tvg-name="Globo TV Verdes Mares Fortaleza HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Verdes%20Mares.png" group-title="GLOBO NORDESTE",Globo TV Verdes Mares Fortaleza HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/38904
+
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="Globo TV Anhanguera FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Anhanguera.png" group-title="GLOBO CENTRO OESTE",Globo TV Anhanguera FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1985
+
+#EXTINF:-1 tvg-id="tv.anhanguera.br" tvg-name="Globo TV Anhanguera HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Anhanguera.png" group-title="GLOBO CENTRO OESTE",Globo TV Anhanguera HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1951
+
+#EXTINF:-1 tvg-id="tvglobo.bsb.br" tvg-name="Globo Brasília FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo.png" group-title="GLOBO CENTRO OESTE",Globo Brasília FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1979
+
+#EXTINF:-1 tvg-id="tvglobo.bsb.br" tvg-name="Globo Brasília HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo.png" group-title="GLOBO CENTRO OESTE",Globo Brasília HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1924
+
+#EXTINF:-1 tvg-id="rpc.curitiba.br" tvg-name="Globo RPC Curitiba FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/RPC%20TV%20Curitiba.png" group-title="GLOBO SUL",Globo RPC Curitiba FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1946
+
+#EXTINF:-1 tvg-id="rpc.curitiba.br" tvg-name="Globo RPC Curitiba HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/RPC%20TV%20Curitiba.png" group-title="GLOBO SUL",Globo RPC Curitiba HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1945
+
+#EXTINF:-1 tvg-id="RBSTVPortoAlegre.br" tvg-name="Globo RBS Porto Alegre FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/RBS%20TV.png" group-title="GLOBO SUL",Globo RBS Porto Alegre FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/901491
+
+#EXTINF:-1 tvg-id="rbs.rio.grande.br" tvg-name="Globo RBS Porto Alegre HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/RBS%20TV.png" group-title="GLOBO SUL",Globo RBS Porto Alegre HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/901492
+
+#EXTINF:-1 tvg-id="nsc.florianopolis.br" tvg-name="Globo NSC TV Florianopolis FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/NSC%20TV.png" group-title="GLOBO SUL",Globo NSC TV Florianopolis FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1983
+
+#EXTINF:-1 tvg-id="nsc.florianopolis.br" tvg-name="Globo NSC TV Florianopolis HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/NSC%20TV.png" group-title="GLOBO SUL",Globo NSC TV Florianopolis HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1937
+
+#EXTINF:-1 tvg-id="br#eptv-sul-de-minas-hd" tvg-name="Globo EPTV Campinas FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/EPTV%20Campinas.png" group-title="GLOBO SUDESTE",Globo EPTV Campinas FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1980
+
+#EXTINF:-1 tvg-id="br#eptv-sul-de-minas-hd" tvg-name="Globo EPTV Campinas HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/EPTV%20Campinas.png" group-title="GLOBO SUDESTE",Globo EPTV Campinas HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1927
+
+#EXTINF:-1 tvg-id="br#globo-s-o-paulo-hd" tvg-name="Globo EPTV Ribeirão Preto FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/EPTV%20Ribeir%c3%a3o%20Preto.png" group-title="GLOBO SUDESTE",Globo EPTV Ribeirão Preto FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1999
+
+#EXTINF:-1 tvg-id="br#globo-s-o-paulo-hd" tvg-name="Globo EPTV Ribeirão Preto HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/EPTV%20Ribeir%c3%a3o%20Preto.png" group-title="GLOBO SUDESTE",Globo EPTV Ribeirão Preto HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1928
+
+#EXTINF:-1 tvg-id="tv.liberal.br" tvg-name="Globo TV Liberal Belem FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Liberal.png" group-title="GLOBO NORTE",Globo TV Liberal Belem FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/902484
+
+#EXTINF:-1 tvg-id="tv.liberal.br" tvg-name="Globo TV Liberal Belem HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Liberal.png" group-title="GLOBO NORTE",Globo TV Liberal Belem HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/902485
+
+#EXTINF:-1 tvg-id="globo.amazonas.br" tvg-name="Globo TV Rede Amazonica Manaus FHD" tvg-logo="https://s2.glbimg.com/NnbGCyELy4SUwoJgQ_nsmdA9f7U=/0x0:234x146/234x146/s.glbimg.com/pv/an/f/original/2015/03/26/rede_am.png" group-title="GLOBO NORTE",Globo TV Rede Amazonica Manaus FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/39457
+
+#EXTINF:-1 tvg-id="globo.amazonas.br" tvg-name="Globo TV Rede Amazonica Manaus HD" tvg-logo="https://s2.glbimg.com/NnbGCyELy4SUwoJgQ_nsmdA9f7U=/0x0:234x146/234x146/s.glbimg.com/pv/an/f/original/2015/03/26/rede_am.png" group-title="GLOBO NORTE",Globo TV Rede Amazonica Manaus HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/39458
+
+#EXTINF:-1 tvg-id="tv.morena.br" tvg-name="Globo TV Morena Campo Grande FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Morena.png" group-title="GLOBO CENTRO OESTE",Globo TV Morena Campo Grande FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1990
+
+#EXTINF:-1 tvg-id="tv.morena.br" tvg-name="Globo TV Morena Campo Grande HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Morena.png" group-title="GLOBO CENTRO OESTE",Globo TV Morena Campo Grande HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1991
+
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="Globo TV Mirante São Luis FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Mirante.png" group-title="GLOBO NORDESTE",Globo TV Mirante São Luis FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1987
+
+#EXTINF:-1 tvg-id="tv.mirante.sao.luis.br" tvg-name="Globo TV Mirante São Luis HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Mirante.png" group-title="GLOBO NORDESTE",Globo TV Mirante São Luis HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1988
+
+#EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="Globo TV Gazeta Vitoria FHD" tvg-logo="https://i.postimg.cc/FKtn17LD/TV-Gazeta-Sul.png" group-title="GLOBO SUDESTE",Globo TV Gazeta Vitoria FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1974
+
+#EXTINF:-1 tvg-id="InterTVSerraPlusMar.br" tvg-name="Globo Inter TV Serra Mar FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Inter%20TV.png" group-title="GLOBO SUDESTE",Globo Inter TV Serra Mar FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/2009
+
+#EXTINF:-1 tvg-id="tv.clube.br" tvg-name="Globo TV Clube Teresina FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Clube.png" group-title="GLOBO NORDESTE",Globo TV Clube Teresina FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1971
+
+#EXTINF:-1 tvg-id="tv.clube.br" tvg-name="Globo TV Clube Teresina HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Clube.png" group-title="GLOBO NORDESTE",Globo TV Clube Teresina HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1972
+
+#EXTINF:-1 tvg-id="tv.cabo.branco.br" tvg-name="Globo TV Cabo Branco FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo.png" group-title="GLOBO NORDESTE",Globo TV Cabo Branco FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/2024
+
+#EXTINF:-1 tvg-id="tv.cabo.branco.br" tvg-name="Globo TV Cabo Branco HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/Globo.png" group-title="GLOBO NORDESTE",Globo TV Cabo Branco HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/2025
+
+#EXTINF:-1 tvg-id="TVSergipe.br" tvg-name="Globo TV Sergipe FHD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Sergipe.png" group-title="GLOBO SUDESTE",Globo TV Sergipe FHD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1977
+
+#EXTINF:-1 tvg-id="TVSergipe.br" tvg-name="Globo TV Sergipe HD" tvg-logo="http://channelart.8b90287dn2.online/images/logos/TV%20Sergipe.png" group-title="GLOBO SUDESTE",Globo TV Sergipe HD
+http://site.poupadefrutas.shop:80/q2Y7tqVAUv/dnuavyuZV5/1978
