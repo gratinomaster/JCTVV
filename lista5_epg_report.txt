@@ -1,0 +1,160 @@
+======================================================================
+RELATORIO lista5.m3u - EPG + VIRUSTOTAL
+======================================================================
+
+Data: 2026-04-04 00:22
+Total de canais: 25
+Canais com EPG valido: 18
+Canais sem EPG valido: 7
+Canais removidos (maliciosos): 0
+Canais finais: 25
+
+EPG URLs:
+  https://iptv-epg.org/files/epg-es.xml.gz
+  https://iptv-epg.org/files/epg-fr.xml.gz
+  https://iptv-epg.org/files/epg-us.xml.gz
+  https://iptv-epg.org/files/epg-de.xml.gz
+
+----------------------------------------------------------------------
+CANAIS COM EPG VALIDO (PROGRAMACAO):
+----------------------------------------------------------------------
+
+Al Jazeera Español
+  ID: AlJazeeraEnglish.es
+  EPG: ES
+  Programacao: Hoje:39 Amanha:39 Depois:7
+  Programas de hoje: Newshour, Vietnam - 50 Years of Forgetting, News Live
+
+Euronews Español
+  ID: Euronews.es
+  EPG: ES
+  Programacao: Hoje:110 Amanha:111 Depois:21
+  Programas de hoje: Euronews Week-End, Euronews Week-End, Euronews Week-End
+
+BBC World News
+  ID: BBCWorldNews.fr
+  EPG: FR
+  Programacao: Hoje:45 Amanha:45 Depois:11
+  Programas de hoje: BBC News, Tech Now, BBC News
+
+CNN Internacional
+  ID: CNNInternational.fr
+  EPG: FR
+  Programacao: Hoje:31 Amanha:34 Depois:5
+  Programas de hoje: Erin Burnett OutFront, Anderson Cooper 360, The Source with Kaitlan Collins
+
+BFM TV
+  ID: BFMTV.fr
+  EPG: FR
+  Programacao: Hoje:8 Amanha:10 Depois:1
+  Programas de hoje: Week-end première, Le direct BFMTV, BFM Midi week-end
+
+ETB Basque
+  ID: ETB1.es
+  EPG: ES
+  Programacao: Hoje:42 Amanha:40 Depois:4
+  Programas de hoje: Wazemank, Wazemank, Wazemank
+
+Galicia TV America
+  ID: TVG-TVGalicia.es
+  EPG: ES
+  Programacao: Hoje:20 Amanha:26 Depois:2
+  Programas de hoje: Libro de familia, Libro de familia, O termómetro
+
+Rai Italia
+  ID: RaiItalia.us
+  EPG: US
+  Programacao: Hoje:30 Amanha:17 Depois:17
+  Programas de hoje: Stasera a letto tardi, Punti di vista, Concerto di Pasqua Orchestra del Maggio Musicale Fiorentino
+
+TVE Internacional
+  ID: TVEInternacional.es
+  EPG: ES
+  Programacao: Hoje:20 Amanha:0 Depois:0
+  Programas de hoje: Noticias 24h, Noticias 24h, Noticias 24h
+
+TV5Monde Español
+  ID: TV5Monde.fr
+  EPG: FR
+  Programacao: Hoje:47 Amanha:37 Depois:7
+  Programas de hoje: Le journal Afrique, 13h15, le dimanche..., 13h15, le dimanche...
+
+Telemundo Internacional
+  ID: Telemundo.us
+  EPG: US
+  Programacao: Hoje:30 Amanha:23 Depois:16
+  Programas de hoje: Lobo, morir matando  ᴺᵉʷ, Noticias Telemundo, Noticias Telemundo en la noche  ᴺᵉʷ
+
+ESPN8 The Ocho
+  ID: ESPN8TheOcho.us
+  EPG: US
+  Programacao: Hoje:22 Amanha:30 Depois:20
+  Programas de hoje: Spikeball : 2020 College Series: The Lost Season, Spikeball : 2020 College Series: The Lost Season, Spikeball's Co-Ed Summer Series
+
+ESPN Deportes
+  ID: ESPNDeportes.us
+  EPG: US
+  Programacao: Hoje:19 Amanha:16 Depois:17
+  Programas de hoje: SportsCenter  ᴸᶦᵛᵉ, Torneo del Baloncesto Universitario Femenino de la NCAA 2026  ᴸᶦᵛᵉ, SportsCenter  ᴸᶦᵛᵉ
+
+CBS Sports Golazo
+  ID: CBSSportsGolazoNetwork.us
+  EPG: US
+  Programacao: Hoje:8 Amanha:6 Depois:3
+  Programas de hoje: Scoreline: Soccer Highlights & Analysis, Scoreline: Soccer Highlights & Analysis, Scoreline: Soccer Highlights & Analysis
+
+FanDuel TV
+  ID: FanDuelTV.us
+  EPG: US
+  Programacao: Hoje:7 Amanha:6 Depois:5
+  Programas de hoje: Live Racing! Night Cap  ᴸᶦᵛᵉ, Live Racing! Night Cap  ᴸᶦᵛᵉ, Live Racing! International  ᴸᶦᵛᵉ
+
+FIFA+
+  ID: FIFA+.us
+  EPG: US
+  Programacao: Hoje:19 Amanha:17 Depois:14
+  Programas de hoje: Eyes of the World : Heartbreak: Roberto Baggio, 1994 FIFA World Cup : Brazil vs. Italy, The Long Walk
+
+VH1
+  ID: VH1.us
+  EPG: US
+  Programacao: Hoje:43 Amanha:32 Depois:28
+  Programas de hoje: My Wife and Kids, My Wife and Kids, My Wife and Kids
+
+Deluxe Music
+  ID: DeluxeMusic.de
+  EPG: DE
+  Programacao: Hoje:12 Amanha:11 Depois:9
+  Programas de hoje: SEXY HITS ONLY, GOOD NIGHT DELUXE, COFFEE & TV
+
+----------------------------------------------------------------------
+CANAIS SEM EPG VALIDO:
+----------------------------------------------------------------------
+
+France Info
+  ID: FranceInfo.fr
+  Status: sem_programacao
+
+Bolivia TV
+  ID: BoliviaTV.bo
+  Status: sem_programacao
+
+TVN Chile
+  ID: TVNChile.cl
+  Status: sem_programacao
+
+Red Bull TV
+  ID: RedBullTV.us
+  Status: sem_programacao
+
+beIN Sports XTRA
+  ID: beINSPORTSXtra.us
+  Status: sem_programacao
+
+VMusic
+  ID: VMusic.ar
+  Status: sem_programacao
+
+M2O TV
+  ID: M2OTV.it
+  Status: sem_programacao
