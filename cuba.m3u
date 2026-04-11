@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="http://epg.it999.ru/epg.xml.gz"
+#EXTM3U x-tvg-url="http://cdn.epg.one/epg.xml.gz"
 
 #EXTINF:-1 tvg-id="CanalClave.cu" tvg-name="Canal Clave" tvg-logo="https://www.tvcubana.icrt.cu/images/canaleslogo/canal-clave.jpg" group-title="🇨🇺 Cuba (Nacional)",Canal Clave (Música)
 #EXTVLCOPT:http-referrer=https://teveo.cu/
