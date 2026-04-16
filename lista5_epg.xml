@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tv date="20260410">
+<?xml version='1.0' encoding='UTF-8'?>
+<tv date="20260416">
   <channel id="ABCWBMA.us">
     <display-name lang="en">ABC News Live</display-name>
-    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg"/>
+    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" />
   </channel>
   <channel id="FoxNewsChannel.us">
     <display-name lang="en">Fox News</display-name>
-    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg"/>
-  </channel>
-  <channel id="FoxBusiness.us">
-    <display-name lang="en">Fox Business</display-name>
-    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg"/>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg" />
   </channel>
   <channel id="CBSNews247.us">
     <display-name lang="en">CBS News 24/7</display-name>
-    <icon src="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg"/>
+    <icon src="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" />
   </channel>
   <programme channel="ABCWBMA.us" start="202604100600 +0000" stop="202604101200 +0000">
     <title lang="en">Morning News</title>
@@ -380,286 +376,6 @@
     <title lang="en">The Ingraham Angle</title>
     <desc lang="en">Live news broadcast from Fox News Channel.</desc>
   </programme>
-  <programme channel="FoxBusiness.us" start="202604100000 +0000" stop="202604100600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604100600 +0000" stop="202604100900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604100900 +0000" stop="202604101200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604101200 +0000" stop="202604101300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604101300 +0000" stop="202604101500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604101500 +0000" stop="202604101700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604101700 +0000" stop="202604101800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604101800 +0000" stop="202604102000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604102000 +0000" stop="202604102100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604102100 +0000" stop="202604110000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604110000 +0000" stop="202604110600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604110600 +0000" stop="202604110900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604110900 +0000" stop="202604111200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604111200 +0000" stop="202604111300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604111300 +0000" stop="202604111500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604111500 +0000" stop="202604111700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604111700 +0000" stop="202604111800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604111800 +0000" stop="202604112000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604112000 +0000" stop="202604112100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604112100 +0000" stop="202604120000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604120000 +0000" stop="202604120600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604120600 +0000" stop="202604120900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604120900 +0000" stop="202604121200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604121200 +0000" stop="202604121300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604121300 +0000" stop="202604121500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604121500 +0000" stop="202604121700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604121700 +0000" stop="202604121800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604121800 +0000" stop="202604122000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604122000 +0000" stop="202604122100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604122100 +0000" stop="202604130000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604130000 +0000" stop="202604130600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604130600 +0000" stop="202604130900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604130900 +0000" stop="202604131200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604131200 +0000" stop="202604131300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604131300 +0000" stop="202604131500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604131500 +0000" stop="202604131700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604131700 +0000" stop="202604131800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604131800 +0000" stop="202604132000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604132000 +0000" stop="202604132100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604132100 +0000" stop="202604140000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604140000 +0000" stop="202604140600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604140600 +0000" stop="202604140900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604140900 +0000" stop="202604141200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604141200 +0000" stop="202604141300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604141300 +0000" stop="202604141500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604141500 +0000" stop="202604141700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604141700 +0000" stop="202604141800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604141800 +0000" stop="202604142000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604142000 +0000" stop="202604142100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604142100 +0000" stop="202604150000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604150000 +0000" stop="202604150600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604150600 +0000" stop="202604150900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604150900 +0000" stop="202604151200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604151200 +0000" stop="202604151300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604151300 +0000" stop="202604151500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604151500 +0000" stop="202604151700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604151700 +0000" stop="202604151800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604151800 +0000" stop="202604152000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604152000 +0000" stop="202604152100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604152100 +0000" stop="202604160000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604160000 +0000" stop="202604160600 +0000">
-    <title lang="en">Fox Business Tonight</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604160600 +0000" stop="202604160900 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604160900 +0000" stop="202604161200 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604161200 +0000" stop="202604161300 +0000">
-    <title lang="en">Power Lunch</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604161300 +0000" stop="202604161500 +0000">
-    <title lang="en">Halftime Report</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604161500 +0000" stop="202604161700 +0000">
-    <title lang="en">The Claman Countdown</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604161700 +0000" stop="202604161800 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604161800 +0000" stop="202604162000 +0000">
-    <title lang="en">Cavuto Coast to Coast</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604162000 +0000" stop="202604162100 +0000">
-    <title lang="en">The Big Money</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="202604162100 +0000" stop="202604170000 +0000">
-    <title lang="en">Fox Business Prime</title>
-    <desc lang="en">Live news broadcast from Fox Business Network.</desc>
-  </programme>
   <programme channel="CBSNews247.us" start="202604100000 +0000" stop="202604100600 +0000">
     <title lang="en">CBS News Overnight</title>
     <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
@@ -1021,6 +737,162 @@
     <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
   </programme>
   <programme channel="CBSNews247.us" start="202604162330 +0000" stop="202604170000 +0000">
+    <title lang="en">The Challenge</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="202604180000 +0000" stop="202604180600 +0000">
+    <title lang="en">Overnight News</title>
+    <desc lang="en">Live news broadcast from ABC News Live.</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="202604180600 +0000" stop="202604181200 +0000">
+    <title lang="en">Morning News</title>
+    <desc lang="en">Live news broadcast from ABC News Live.</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="202604181200 +0000" stop="202604181800 +0000">
+    <title lang="en">Afternoon News</title>
+    <desc lang="en">Live news broadcast from ABC News Live.</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="202604181800 +0000" stop="202604190000 +0000">
+    <title lang="en">Evening News</title>
+    <desc lang="en">Live news broadcast from ABC News Live.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604180000 +0000" stop="202604180600 +0000">
+    <title lang="en">Fox News at Night</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604180600 +0000" stop="202604180900 +0000">
+    <title lang="en">Fox and Friends First</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604180900 +0000" stop="202604181200 +0000">
+    <title lang="en">Fox and Friends</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604181200 +0000" stop="202604181500 +0000">
+    <title lang="en">Americas Newsroom</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604181500 +0000" stop="202604181700 +0000">
+    <title lang="en">The Story</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604181700 +0000" stop="202604181900 +0000">
+    <title lang="en">Your World with Cavuto</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604181900 +0000" stop="202604182100 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604182100 +0000" stop="202604182300 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="202604182300 +0000" stop="202604190000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">Live news broadcast from Fox News Channel.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604170000 +0000" stop="202604170600 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604170600 +0000" stop="202604170900 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604170900 +0000" stop="202604171200 +0000">
+    <title lang="en">CBS Mornings</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171200 +0000" stop="202604171330 +0000">
+    <title lang="en">CBS Midday News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171330 +0000" stop="202604171600 +0000">
+    <title lang="en">The Talk</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171600 +0000" stop="202604171700 +0000">
+    <title lang="en">The Price Is Right</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171700 +0000" stop="202604171730 +0000">
+    <title lang="en">Evening News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171730 +0000" stop="202604171900 +0000">
+    <title lang="en">Jeopardy</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604171900 +0000" stop="202604172000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604172000 +0000" stop="202604172100 +0000">
+    <title lang="en">The Simpsons</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604172100 +0000" stop="202604172200 +0000">
+    <title lang="en">Ghosts</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604172200 +0000" stop="202604172330 +0000">
+    <title lang="en">The Late Show</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604172330 +0000" stop="202604180000 +0000">
+    <title lang="en">The Challenge</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604180000 +0000" stop="202604180600 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604180600 +0000" stop="202604180900 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604180900 +0000" stop="202604181200 +0000">
+    <title lang="en">CBS Mornings</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181200 +0000" stop="202604181330 +0000">
+    <title lang="en">CBS Midday News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181330 +0000" stop="202604181600 +0000">
+    <title lang="en">The Talk</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181600 +0000" stop="202604181700 +0000">
+    <title lang="en">The Price Is Right</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181700 +0000" stop="202604181730 +0000">
+    <title lang="en">Evening News</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181730 +0000" stop="202604181900 +0000">
+    <title lang="en">Jeopardy</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604181900 +0000" stop="202604182000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604182000 +0000" stop="202604182100 +0000">
+    <title lang="en">The Simpsons</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604182100 +0000" stop="202604182200 +0000">
+    <title lang="en">Ghosts</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604182200 +0000" stop="202604182330 +0000">
+    <title lang="en">The Late Show</title>
+    <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="202604182330 +0000" stop="202604190000 +0000">
     <title lang="en">The Challenge</title>
     <desc lang="en">Live news broadcast from CBS News 24/7.</desc>
   </programme>
