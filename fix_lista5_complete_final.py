@@ -13,31 +13,31 @@ EPG_URL = "https://iptv-epg.org/files/epg-us.xml.gz"
 CHANNEL_CONFIG = {
     "ABCNewsLive": {
         "epg_id": "ABCNewsLive.us",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+        "logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
         "name": "ABC News Live",
         "keep_pattern": "abcn-live-10",
     },
     "ABC_GMA": {
         "epg_id": "ABCNewsLive.us",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+        "logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
         "name": "ABC News Live",
         "keep_pattern": "ctr-all-hdri-sliding",
     },
     "FoxNews": {
         "epg_id": "FoxNewsChannel.us",
-        "logo": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.png",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/ddf75165-e42b-482d-9255-434b80dcb2ec/53d05f4b-4872-4c8a-a5c3-08ceca360729/1280x720/match/400/225/image.jpg",
         "name": "Fox News Channel",
         "keep_pattern": "FNCHLSv3/master.m3u8",
     },
     "FoxBusiness": {
         "epg_id": "FoxBusiness.us",
-        "logo": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/2024/09/fb-logo-social-share.png",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
         "name": "Fox Business",
         "keep_pattern": "FBNHLSv3/master.m3u8",
     },
     "CBSNews": {
         "epg_id": "CBSNews.us",
-        "logo": "https://tvu-assets-prod.s3.amazonaws.com/cbsn-logo.png",
+        "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg",
         "name": "CBS News 24/7",
         "keep_pattern": "master.m3u8",
     }
@@ -71,10 +71,10 @@ def parse_m3u(content):
     return channels
 
 def get_base_url(url):
-    # For Disney+ URLs
+    # For Disney+ URLs - mark as dead since streams expire
     if 'dssott.com' in url:
         if 'linear-abcnews' in url:
-            return "dssott.com/abcnews"
+            return "dssott.com/abcnews-DEAD"
     
     # For Google DAI URLs
     if 'dai.google.com' in url:
@@ -167,7 +167,7 @@ def check_epg_has_data(channel_id):
 
 def main():
     print("=" * 70)
-    print("Fixing lista5.m3u - Final Version")
+    print("Fixing lista5.m3u - Complete Final Version")
     print("=" * 70)
     
     with open('/home/runner/work/JCTV/JCTV/lista5.m3u', 'r') as f:
@@ -190,6 +190,11 @@ def main():
     # For each URL group, keep only the best stream
     final_channels = []
     for base, ch_list in url_groups.items():
+        # Skip dead streams
+        if 'DEAD' in base:
+            print(f"  Skipping dead stream: {base}")
+            continue
+            
         best = None
         for key, ch in ch_list:
             if is_best_stream(key, ch['url']):

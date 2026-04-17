@@ -43,15 +43,6 @@ CHANNEL_CONFIG = {
     }
 }
 
-# Map to unified EPG IDs
-EPG_MAPPING = {
-    "ABCNewsLive": "ABCNewsLive.us",
-    "ABC_GMA": "ABCNewsLive.us",
-    "FoxNews": "FoxNewsChannel.us",
-    "FoxBusiness": "FoxBusiness.us",
-    "CBSNews": "CBSNews.us",
-}
-
 def parse_m3u(content):
     channels = []
     lines = content.strip().split('\n')
@@ -71,35 +62,17 @@ def parse_m3u(content):
     return channels
 
 def get_base_url(url):
-    # For Disney+ URLs
-    if 'dssott.com' in url:
-        if 'linear-abcnews' in url:
-            return "dssott.com/abcnews"
-    
-    # For Google DAI URLs
-    if 'dai.google.com' in url:
-        if '/stream/' in url:
-            parts = url.split('/stream/')
-            if len(parts) > 1:
-                stream_id = parts[1].split('/')[0]
-                return f"dai.google.com/stream/{stream_id}"
-    
-    # For akamaized ABC News
-    if 'abcnews-livestreams.akamaized.net' in url:
-        if 'abcn-live-10' in url:
-            return "abcnews-livestreams.akamaized.net/abcn-live-10"
-    
-    # For Fox
-    if '247.foxnews.com' in url:
-        if 'FNCHLSv3/master.m3u8' in url:
-            return "247.foxnews.com/FNCHLSv3"
-    if '247.foxbusiness.com' in url:
-        if 'FBNHLSv3/master.m3u8' in url:
-            return "247.foxbusiness.com/FBNHLSv3"
-    
-    # Fallback
     parsed = urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}{parsed.path}".split('?')[0]
+    path = parsed.path
+    
+    if 'dai.google.com' in url:
+        if 'master.m3u8' in path:
+            return f"{parsed.scheme}://{parsed.netloc}{'/'.join(path.split('/')[:-1])}/master.m3u8"
+        elif 'variant/' in path:
+            return f"{parsed.scheme}://{parsed.netloc}{'/'.join(path.split('/')[:path.split('/').index('stream')+2])}/master.m3u8"
+    
+    base = f"{parsed.scheme}://{parsed.netloc}{path}"
+    return base.split('?')[0]
 
 def get_channel_key(url):
     url_lower = url.lower()
@@ -112,7 +85,7 @@ def get_channel_key(url):
         return "ABCNewsLive"
     if 'abcnews' in url_lower:
         return "ABC_GMA"
-    if 'dai.google.com' in url_lower:
+    if 'dai.google.com' in url_lower and 'master.m3u8' in url_lower:
         return "CBSNews"
     
     return None
@@ -167,7 +140,7 @@ def check_epg_has_data(channel_id):
 
 def main():
     print("=" * 70)
-    print("Fixing lista5.m3u - Final Version")
+    print("Fixing lista5.m3u - Complete Fix v11")
     print("=" * 70)
     
     with open('/home/runner/work/JCTV/JCTV/lista5.m3u', 'r') as f:
@@ -176,28 +149,27 @@ def main():
     channels = parse_m3u(content)
     print(f"Found {len(channels)} channel entries")
     
-    # Group channels by base URL
-    url_groups = {}
+    # Group channels by type and keep only the best
+    channel_groups = {}
     for ch in channels:
         url = ch['url']
-        base = get_base_url(url)
         key = get_channel_key(url)
         
-        if base not in url_groups:
-            url_groups[base] = []
-        url_groups[base].append((key, ch))
+        if key:
+            if key not in channel_groups:
+                channel_groups[key] = []
+            channel_groups[key].append(ch)
     
-    # For each URL group, keep only the best stream
+    # For each group, keep only the best stream
     final_channels = []
-    for base, ch_list in url_groups.items():
+    for key, ch_list in channel_groups.items():
         best = None
-        for key, ch in ch_list:
+        for ch in ch_list:
             if is_best_stream(key, ch['url']):
                 best = ch
                 break
         if best is None:
-            key, ch = ch_list[0]
-            best = ch
+            best = ch_list[0]
         final_channels.append(best)
     
     print(f"After deduplication: {len(final_channels)} channels")
@@ -225,15 +197,9 @@ def main():
     print("EPG Verification - Next 3 Days")
     print("=" * 70)
     
-    unique_epg_ids = set()
-    for ch in final_channels:
-        key = get_channel_key(ch['url'])
-        if key in EPG_MAPPING:
-            unique_epg_ids.add(EPG_MAPPING[key])
-    
-    for epg_id in unique_epg_ids:
-        has_data, today, tomorrow, day_after = check_epg_has_data(epg_id)
-        print(f"  {epg_id}: {'OK' if has_data else 'NO DATA'} (Today: {today}, Tomorrow: {tomorrow}, Day after: {day_after})")
+    for key, config in CHANNEL_CONFIG.items():
+        has_data, today, tomorrow, day_after = check_epg_has_data(config["epg_id"])
+        print(f"  {config['name']}: {'OK' if has_data else 'NO DATA'} (Today: {today}, Tomorrow: {tomorrow}, Day after: {day_after})")
     
     print("\nDone!")
 

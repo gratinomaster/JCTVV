@@ -71,38 +71,21 @@ def parse_m3u(content):
     return channels
 
 def get_base_url(url):
-    # For Disney+ URLs
-    if 'dssott.com' in url:
-        if 'linear-abcnews' in url:
-            return "dssott.com/abcnews"
-    
-    # For Google DAI URLs
-    if 'dai.google.com' in url:
-        if '/stream/' in url:
-            parts = url.split('/stream/')
-            if len(parts) > 1:
-                stream_id = parts[1].split('/')[0]
-                return f"dai.google.com/stream/{stream_id}"
-    
-    # For akamaized ABC News
-    if 'abcnews-livestreams.akamaized.net' in url:
-        if 'abcn-live-10' in url:
-            return "abcnews-livestreams.akamaized.net/abcn-live-10"
-    
-    # For Fox
-    if '247.foxnews.com' in url:
-        if 'FNCHLSv3/master.m3u8' in url:
-            return "247.foxnews.com/FNCHLSv3"
-    if '247.foxbusiness.com' in url:
-        if 'FBNHLSv3/master.m3u8' in url:
-            return "247.foxbusiness.com/FBNHLSv3"
-    
-    # Fallback
     parsed = urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}{parsed.path}".split('?')[0]
+    path = parsed.path
+    
+    if 'dai.google.com' in url:
+        if 'master.m3u8' in path:
+            return f"{parsed.scheme}://{parsed.netloc}{'/'.join(path.split('/')[:-1])}/master.m3u8"
+        elif 'variant/' in path:
+            return f"{parsed.scheme}://{parsed.netloc}{'/'.join(path.split('/')[:path.split('/').index('stream')+2])}/master.m3u8"
+    
+    base = f"{parsed.scheme}://{parsed.netloc}{path}"
+    return base.split('?')[0]
 
 def get_channel_key(url):
     url_lower = url.lower()
+    base_url = get_base_url(url).lower()
     
     if 'fnchl' in url_lower and 'master.m3u8' in url_lower:
         return "FoxNews"
@@ -167,7 +150,7 @@ def check_epg_has_data(channel_id):
 
 def main():
     print("=" * 70)
-    print("Fixing lista5.m3u - Final Version")
+    print("Fixing lista5.m3u - Complete Fix v13")
     print("=" * 70)
     
     with open('/home/runner/work/JCTV/JCTV/lista5.m3u', 'r') as f:

@@ -15,41 +15,32 @@ CHANNEL_CONFIG = {
         "epg_id": "ABCNewsLive.us",
         "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
         "name": "ABC News Live",
-        "keep_pattern": "abcn-live-10",
+        "keep_patterns": ["abcn-live-10-cmaf-manifest", "ctr-all-hdri-sliding"],
     },
     "ABC_GMA": {
         "epg_id": "ABCNewsLive.us",
         "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
         "name": "ABC News Live",
-        "keep_pattern": "ctr-all-hdri-sliding",
+        "keep_patterns": ["linear-abcnews-akc", "ctr-all-hdri-sliding"],
     },
     "FoxNews": {
         "epg_id": "FoxNewsChannel.us",
         "logo": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.png",
         "name": "Fox News Channel",
-        "keep_pattern": "FNCHLSv3/master.m3u8",
+        "keep_patterns": ["FNCHLSv3/master.m3u8"],
     },
     "FoxBusiness": {
         "epg_id": "FoxBusiness.us",
         "logo": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/2024/09/fb-logo-social-share.png",
         "name": "Fox Business",
-        "keep_pattern": "FBNHLSv3/master.m3u8",
+        "keep_patterns": ["FBNHLSv3/master.m3u8"],
     },
     "CBSNews": {
         "epg_id": "CBSNews.us",
         "logo": "https://tvu-assets-prod.s3.amazonaws.com/cbsn-logo.png",
         "name": "CBS News 24/7",
-        "keep_pattern": "master.m3u8",
+        "keep_patterns": ["dai.google.com/linear", "master.m3u8"],
     }
-}
-
-# Map to unified EPG IDs
-EPG_MAPPING = {
-    "ABCNewsLive": "ABCNewsLive.us",
-    "ABC_GMA": "ABCNewsLive.us",
-    "FoxNews": "FoxNewsChannel.us",
-    "FoxBusiness": "FoxBusiness.us",
-    "CBSNews": "CBSNews.us",
 }
 
 def parse_m3u(content):
@@ -71,35 +62,10 @@ def parse_m3u(content):
     return channels
 
 def get_base_url(url):
-    # For Disney+ URLs
-    if 'dssott.com' in url:
-        if 'linear-abcnews' in url:
-            return "dssott.com/abcnews"
-    
-    # For Google DAI URLs
-    if 'dai.google.com' in url:
-        if '/stream/' in url:
-            parts = url.split('/stream/')
-            if len(parts) > 1:
-                stream_id = parts[1].split('/')[0]
-                return f"dai.google.com/stream/{stream_id}"
-    
-    # For akamaized ABC News
-    if 'abcnews-livestreams.akamaized.net' in url:
-        if 'abcn-live-10' in url:
-            return "abcnews-livestreams.akamaized.net/abcn-live-10"
-    
-    # For Fox
-    if '247.foxnews.com' in url:
-        if 'FNCHLSv3/master.m3u8' in url:
-            return "247.foxnews.com/FNCHLSv3"
-    if '247.foxbusiness.com' in url:
-        if 'FBNHLSv3/master.m3u8' in url:
-            return "247.foxbusiness.com/FBNHLSv3"
-    
-    # Fallback
     parsed = urlparse(url)
-    return f"{parsed.scheme}://{parsed.netloc}{parsed.path}".split('?')[0]
+    base = f"{parsed.scheme}://{parsed.netloc}{parsed.path}"
+    base_clean = base.split('?')[0]
+    return base_clean
 
 def get_channel_key(url):
     url_lower = url.lower()
@@ -112,15 +78,18 @@ def get_channel_key(url):
         return "ABCNewsLive"
     if 'abcnews' in url_lower:
         return "ABC_GMA"
-    if 'dai.google.com' in url_lower:
+    if 'dai.google.com' in url_lower and 'master.m3u8' in url_lower:
         return "CBSNews"
     
     return None
 
-def is_best_stream(key, url):
+def is_best_quality(key, url):
     if key and key in CHANNEL_CONFIG:
-        pattern = CHANNEL_CONFIG[key]["keep_pattern"]
-        return pattern.lower() in url.lower()
+        patterns = CHANNEL_CONFIG[key]["keep_patterns"]
+        url_lower = url.lower()
+        for pattern in patterns:
+            if pattern.lower() in url_lower:
+                return True
     return False
 
 def fix_extinf(extinf, config):
@@ -167,7 +136,7 @@ def check_epg_has_data(channel_id):
 
 def main():
     print("=" * 70)
-    print("Fixing lista5.m3u - Final Version")
+    print("Fixing lista5.m3u - Complete Fix v9")
     print("=" * 70)
     
     with open('/home/runner/work/JCTV/JCTV/lista5.m3u', 'r') as f:
@@ -176,30 +145,25 @@ def main():
     channels = parse_m3u(content)
     print(f"Found {len(channels)} channel entries")
     
-    # Group channels by base URL
-    url_groups = {}
+    seen_bases = {}
+    final_channels = []
+    
     for ch in channels:
         url = ch['url']
         base = get_base_url(url)
         key = get_channel_key(url)
         
-        if base not in url_groups:
-            url_groups[base] = []
-        url_groups[base].append((key, ch))
+        if key:
+            if key not in seen_bases:
+                seen_bases[key] = {"extinf": ch['extinf'], "url": url, "key": key}
+            else:
+                if is_best_quality(key, url) and not is_best_quality(key, seen_bases[key]['url']):
+                    seen_bases[key] = {"extinf": ch['extinf'], "url": url, "key": key}
+        else:
+            if base not in seen_bases:
+                seen_bases[base] = {"extinf": ch['extinf'], "url": url, "key": None}
     
-    # For each URL group, keep only the best stream
-    final_channels = []
-    for base, ch_list in url_groups.items():
-        best = None
-        for key, ch in ch_list:
-            if is_best_stream(key, ch['url']):
-                best = ch
-                break
-        if best is None:
-            key, ch = ch_list[0]
-            best = ch
-        final_channels.append(best)
-    
+    final_channels = list(seen_bases.values())
     print(f"After deduplication: {len(final_channels)} channels")
     
     output = "#EXTM3U\n"
@@ -207,7 +171,7 @@ def main():
     for ch in final_channels:
         extinf = ch['extinf']
         url = ch['url']
-        key = get_channel_key(url)
+        key = ch['key']
         
         config = CHANNEL_CONFIG.get(key)
         extinf = fix_extinf(extinf, config)
@@ -225,15 +189,9 @@ def main():
     print("EPG Verification - Next 3 Days")
     print("=" * 70)
     
-    unique_epg_ids = set()
-    for ch in final_channels:
-        key = get_channel_key(ch['url'])
-        if key in EPG_MAPPING:
-            unique_epg_ids.add(EPG_MAPPING[key])
-    
-    for epg_id in unique_epg_ids:
-        has_data, today, tomorrow, day_after = check_epg_has_data(epg_id)
-        print(f"  {epg_id}: {'OK' if has_data else 'NO DATA'} (Today: {today}, Tomorrow: {tomorrow}, Day after: {day_after})")
+    for key, config in CHANNEL_CONFIG.items():
+        has_data, today, tomorrow, day_after = check_epg_has_data(config["epg_id"])
+        print(f"  {config['name']}: {'OK' if has_data else 'NO DATA'} (Today: {today}, Tomorrow: {tomorrow}, Day after: {day_after})")
     
     print("\nDone!")
 
