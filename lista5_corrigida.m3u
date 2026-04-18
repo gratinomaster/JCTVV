@@ -1,7 +1,9 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/SEU_USUARIO/JCTV/main/lista5_epg_custom.xml"
-#EXTINF:-1 tvg-id="ABCWBMA.us" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
-https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg" group-title="NEWS WORLD",Fox News
-https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
-#EXTINF:-1 tvg-id="CBSNews247.us" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-us.xml.gz"
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/506771501949218816/x3cY4Z0S_normal.jpeg" group-title="NEWS WORLD" tvg-id="ABCWBMA.us",ABC News Live - ABC News
+https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1776613622~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1776498800636%2F~psid=6f528a16-5c63-4f1e-a46b-afab250508ff~did=6bd5928c-5aae-460a-a7d0-332e95a3d060~country=US~kid=k02~hmac=0d7fd07a3cd23c7a36126ca4e7a12b8152f1d7ecfad1b4bd3eeea6a7b12e28b4/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1776498800636/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=71f3e26f3e0f7896c16e16a8a321ba96b894c95c
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/871939640722137088/_pMxMJOd_normal.jpg" group-title="NEWS WORLD" tvg-id="FoxBusiness.us",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1776530820~acl=/*~hmac=1a932c3ac51cfc1bc340d895f27000327189edee72a0f1b7d8c89b5aa14c0e20
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/871939640722137088/_pMxMJOd_normal.jpg" group-title="NEWS WORLD" tvg-id="FoxNewsChannel.us",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1776530820~acl=/*~hmac=1a932c3ac51cfc1bc340d895f27000327189edee72a0f1b7d8c89b5aa14c0e20
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1456632014592237569/wzq8cNds_normal.jpg" group-title="NEWS WORLD" tvg-id="CBSNews.us",our free live news stream
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c9f52ff4-4025-4bf0-84de-e63ebdd4f20e:CHS/master.m3u8

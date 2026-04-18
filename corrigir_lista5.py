@@ -1,134 +1,126 @@
 #!/usr/bin/env python3
-import re
+"""
+Final script to properly format lista5.m3u with correct EPG, logos, and structure.
+"""
 import requests
+import gzip
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-import base64
-import hashlib
+import re
 
-EPG_URLS = {
-    "ABC News Live": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "ABCNewsLive.us@SD": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "ABC News Live - Beirut": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "ABCNewsLiveBeirut.us@SD": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "Fox News": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "FoxBusiness": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "CBS News 24/7": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
-    "CBSNews247.us@SD": "https://tvit.leicaflorianrobert.dev/epg/list.xml",
+EPG_URL = "https://iptv-epg.org/files/epg-us.xml.gz"
+
+CHANNEL_EPG_MAP = {
+    "ABC News Live": {"tvg_id": "ABCWBMA.us"},
+    "Fox Business Go": {"tvg_id": "FoxBusiness.us"},
+    "Fox News": {"tvg_id": "FoxNewsChannel.us"},
+    "CBS News": {"tvg_id": "CBSNews.us"},
+    "our free live news stream": {"tvg_id": "CBSNews.us"},
 }
 
-CHANNELS = [
-    {
-        "name": "ABC News Live",
-        "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
-        "group": "NEWS WORLD",
-        "tvg_id": "ABCNewsLive.us@SD"
-    },
-    {
-        "name": "ABC News Live - Beirut",
-        "url": "https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/abcn-live-05-index.m3u8",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider5.jpg",
-        "group": "NEWS WORLD",
-        "tvg_id": "ABCNewsLiveBeirut.us@SD"
-    },
-    {
-        "name": "Fox News Channel",
-        "url": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1775403842~acl=/*~hmac=6073659006d08fc6fd8624b605a6c365236a950cb1257e712432e096b9595d44",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1",
-        "group": "NEWS WORLD",
-        "tvg_id": "FoxNewsChannel.us@SD"
-    },
-    {
-        "name": "Fox Business Network",
-        "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1775403842~acl=/*~hmac=6073659006d08fc6fd8624b605a6c365236a950cb1257e712432e096b9595d44",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1",
-        "group": "NEWS WORLD",
-        "tvg_id": "FoxBusinessNetwork.us@SD"
-    },
-    {
-        "name": "CBS News 24/7",
-        "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/39b29541-2fca-49d7-b17b-fc007c70bb17:ATL/master.m3u8",
-        "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
-        "group": "NEWS WORLD",
-        "tvg_id": "CBSNews247.us@SD"
-    },
-]
+LOGO_MAP = {
+    "ABCWBMA.us": "https://pbs.twimg.com/profile_images/506771501949218816/x3cY4Z0S_normal.jpeg",
+    "FoxNewsChannel.us": "https://pbs.twimg.com/profile_images/871939640722137088/_pMxMJOd_normal.jpg",
+    "FoxBusiness.us": "https://pbs.twimg.com/profile_images/871939640722137088/_pMxMJOd_normal.jpg",
+    "CBSNews.us": "https://pbs.twimg.com/profile_images/1456632014592237569/wzq8cNds_normal.jpg",
+}
 
-def testar_stream(url):
+def download_epg(url):
     try:
-        response = requests.head(url, timeout=10, allow_redirects=True)
-        return response.status_code == 200
+        response = requests.get(url, timeout=60, headers={'Accept-Encoding': 'gzip'})
+        if response.status_code == 200:
+            return gzip.decompress(response.content) if url.endswith('.gz') else response.content
+    except Exception as e:
+        print(f"Error: {e}")
+    return None
+
+def identify_channel(name):
+    for key, info in CHANNEL_EPG_MAP.items():
+        if key.lower() in name.lower():
+            return info
+    return None
+
+def get_logo(tvg_id):
+    return LOGO_MAP.get(tvg_id, "")
+
+def check_programming(epg_content, tvg_id, days_ahead=0):
+    if not epg_content:
+        return False, []
+    try:
+        root = ET.fromstring(epg_content)
+        target_date = (datetime.now() + timedelta(days=days_ahead)).strftime("%Y%m%d")
+        channel_elems = root.findall(f".//channel[@id='{tvg_id}']")
+        if not channel_elems:
+            return False, []
+        channel_id = channel_elems[0].get('id')
+        programmes = root.findall(f".//programme[@channel='{channel_id}']")
+        found = []
+        for prog in programmes:
+            if prog.get('start', '').startswith(target_date):
+                title = prog.find('title')
+                if title is not None:
+                    found.append(title.text)
+        return len(found) > 0, found[:5]
+    except:
+        return False, []
+
+def test_url(url):
+    try:
+        response = requests.get(url, timeout=10, headers={'User-Agent': 'Mozilla/5.0'}, stream=True)
+        return response.status_code < 400
     except:
         return False
 
-def testar_epg(epg_url):
-    try:
-        response = requests.get(epg_url, timeout=30)
-        response.raise_for_status()
-        
-        xml_content = response.text
-        root = ET.fromstring(xml_content)
-        
-        programas = root.findall("programme")
-        
-        hoje = datetime.now().strftime("%Y%m%d")
-        amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
-        depois_amanha = (datetime.now() + timedelta(days=2)).strftime("%Y%m%d")
-        
-        count_hoje = count_amanha = count_depois = 0
-        
-        for prog in programas:
-            start = prog.get("start", "")[:8]
-            if start == hoje:
-                count_hoje += 1
-            elif start == amanha:
-                count_amanha += 1
-            elif start == depois_amanha:
-                count_depois += 1
-        
-        print(f"EPG Status: {len(programas)} programas encontrados")
-        print(f"  Hoje: {count_hoje}")
-        print(f"  Amanhã: {count_amanha}")
-        print(f"  Depois de amanhã: {count_depois}")
-        
-        return count_hoje > 0 and count_amanha > 0
-    except Exception as e:
-        print(f"EPG Error: {e}")
-        return False
+print("=== Downloading EPG ===\n")
+epg_content = download_epg(EPG_URL)
+if epg_content:
+    print(f"✓ EPG downloaded ({len(epg_content)} bytes)\n")
 
-def gerar_m3u():
-    epg_principal = "https://tvit.leicaflorianrobert.dev/epg/list.xml"
-    
-    print("=" * 60)
-    print("TESTANDO EPG")
-    print("=" * 60)
-    epg_ok = testar_epg(epg_principal)
-    print(f"EPG Funcionando: {'SIM' if epg_ok else 'NAO'}\n")
-    
-    print("=" * 60)
-    print("TESTANDO STREAMS")
-    print("=" * 60)
-    
-    linhas = ['#EXTM3U']
-    
-    for canal in CHANNELS:
-        print(f"\nTestando: {canal['name']}")
-        stream_ok = testar_stream(canal['url'])
-        print(f"  Stream OK: {'SIM' if stream_ok else 'NAO'}")
-        
-        if stream_ok:
-            linha = f'#EXTINF:-1 tvg-id="{canal["tvg_id"]}" tvg-name="{canal["name"]}" tvg-logo="{canal["logo"]}" group-title="{canal["group"]}",{canal["name"]}'
-            linhas.append(linha)
-            linhas.append(canal['url'])
-    
-    return '\n'.join(linhas), epg_ok
+print("=== Testing EPG Programming ===\n")
 
-if __name__ == "__main__":
-    conteudo, epg_ok = gerar_m3u()
+channels_data = [
+    ("ABC News Live - ABC News", "ABCWBMA.us"),
+    ("Fox Business Go | Fox News Video", "FoxBusiness.us"),
+    ("Watch Fox News Channel Online | Stream Fox News", "FoxNewsChannel.us"),
+    ("our free live news stream", "CBSNews.us"),
+]
+
+channel_urls = [
+    "https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1776613622~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1776498800636%2F~psid=6f528a16-5c63-4f1e-a46b-afab250508ff~did=6bd5928c-5aae-460a-a7d0-332e95a3d060~country=US~kid=k02~hmac=0d7fd07a3cd23c7a36126ca4e7a12b8152f1d7ecfad1b4bd3eeea6a7b12e28b4/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1776498800636/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=71f3e26f3e0f7896c16e16a8a321ba96b894c95c",
+    "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1776530820~acl=/*~hmac=1a932c3ac51cfc1bc340d895f27000327189edee72a0f1b7d8c89b5aa14c0e20",
+    "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1776530820~acl=/*~hmac=1a932c3ac51cfc1bc340d895f27000327189edee72a0f1b7d8c89b5aa14c0e20",
+    "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c9f52ff4-4025-4bf0-84de-e63ebdd4f20e:CHS/master.m3u8",
+]
+
+for i, (name, tvg_id) in enumerate(channels_data):
+    logo = get_logo(tvg_id)
+    url = channel_urls[i]
     
-    with open('/home/runner/work/JCTV/JCTV/lista5_corrigida.m3u', 'w') as f:
-        f.write(conteudo)
+    today_ok, today_progs = check_programming(epg_content, tvg_id, 0) if epg_content else (False, [])
+    tomorrow_ok, tomorrow_progs = check_programming(epg_content, tvg_id, 1) if epg_content else (False, [])
+    day_after_ok, day_after_progs = check_programming(epg_content, tvg_id, 2) if epg_content else (False, [])
     
-    print(f"\nArquivo lista5_corrigida.m3u gerado!")
-    print(f"EPG configurado: {'SIM' if epg_ok else 'NAO'}")
+    url_ok = test_url(url)
+    
+    print(f"Channel: {name}")
+    print(f"  tvg-id: {tvg_id}")
+    print(f"  Logo: {logo}")
+    print(f"  Today: {'✓' if today_ok else '✗'} | Tomorrow: {'✓' if tomorrow_ok else '✗'} | Day after: {'✓' if day_after_ok else '✗'}")
+    print(f"  URL OK: {'✓' if url_ok else '✗'}")
+    print()
+
+output_lines = [f"#EXTM3U url-tvg=\"{EPG_URL}\""]
+
+for i, (name, tvg_id) in enumerate(channels_data):
+    logo = get_logo(tvg_id)
+    url = channel_urls[i]
+    
+    extinf = f'#EXTINF:-1 tvg-logo="{logo}" group-title="NEWS WORLD" tvg-id="{tvg_id}",{name}'
+    output_lines.append(extinf)
+    output_lines.append(url)
+
+with open('lista5_corrigida.m3u', 'w') as f:
+    f.write('\n'.join(output_lines))
+
+print("=== File Created ===")
+print("✓ lista5_corrigida.m3u saved")
