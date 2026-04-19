@@ -26,7 +26,7 @@ jobs:
           cat << 'EOF' > prompt.txt
           faça FX.m3u8 e FXB.m3u8
           extraia o .m3u8 dos links abaixo
-          precisa ter hdnea=exp=
+          precisa ter token
           https://www.foxnews.com/video/5614615980001, https://www.foxnews.com/video/5614626175001
           EOF
 
