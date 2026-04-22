@@ -1,5 +1,5 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-STREAM-INF:BANDWIDTH=3000000,RESOLUTION=1920x1080
-https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3000000
+#EXT-X-MEDIA-SEQUENCE:1
+https://e2.thetvapp.to/hls/FoxBusiness/tracks-v1a1/mono.m3u8?token=-bogSVhySFrFB5hMuYdu3g&expires=1776870647&user_id=MTM1LjExOS4yMzUuODI=
