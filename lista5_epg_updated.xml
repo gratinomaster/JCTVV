@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tv date="20260422">
+  <channel id="ABCWBMA.us">
+    <display-name lang="en">ABC News Live</display-name>
+    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" />
+  </channel>
+  <channel id="CBSNews247.us">
+    <display-name lang="en">CBS News 24/7</display-name>
+    <icon src="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" />
+  </channel>
+  <channel id="FoxNewsChannel.us">
+    <display-name lang="en">Fox News</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg" />
+  </channel>
+  <channel id="FoxBusiness.us">
+    <display-name lang="en">Fox Business</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/cf8edaec-e1bf-4e92-a19e-3f12054dbd6a/06235352-5bab-4bd6-a79e-3cf087bbaaf6/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <channel id="CNNInternational.us">
+    <display-name lang="en">CNN International</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/512px-CNN.svg.png" />
+  </channel>
+  <programme channel="ABCWBMA.us" start="20260422060000 +0000" stop="20260422080000 +0000">
+    <title lang="en">ABC World News This Morning</title>
+    <desc lang="en">ABC World News This Morning - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422080000 +0000" stop="20260422090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Good Morning America - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422090000 +0000" stop="20260422120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422120000 +0000" stop="20260422130000 +0000">
+    <title lang="en">ABC World News Now</title>
+    <desc lang="en">ABC World News Now - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422130000 +0000" stop="20260422180000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422180000 +0000" stop="20260422190000 +0000">
+    <title lang="en">ABC World News Tonight</title>
+    <desc lang="en">ABC World News Tonight - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422190000 +0000" stop="20260423000000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260422000000 +0000" stop="20260422060000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422060000 +0000" stop="20260422090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Fox &amp; Friends - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422090000 +0000" stop="20260422110000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox &amp; Friends First - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422110000 +0000" stop="20260422130000 +0000">
+    <title lang="en">The Midday</title>
+    <desc lang="en">The Midday - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422130000 +0000" stop="20260422170000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422170000 +0000" stop="20260422190000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">The Five - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422190000 +0000" stop="20260422200000 +0000">
+    <title lang="en">Special Report w/ Bret Baier</title>
+    <desc lang="en">Special Report w/ Bret Baier - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422200000 +0000" stop="20260422210000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Hannity - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422210000 +0000" stop="20260423000000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">The Ingraham Angle - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422000000 +0000" stop="20260422030000 +0000">
+    <title lang="en">Fox News Night</title>
+    <desc lang="en">Fox News Night - Wednesday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260422030000 +0000" stop="20260422060000 +0000">
+    <title lang="en">Fox News Primetime</title>
+    <desc lang="en">Fox News Primetime - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422060000 +0000" stop="20260422090000 +0000">
+    <title lang="en">Fox Business Morning</title>
+    <desc lang="en">Fox Business Morning - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422090000 +0000" stop="20260422110000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Mornings with Maria - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422110000 +0000" stop="20260422130000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422130000 +0000" stop="20260422160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">The Claman Countdown - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422160000 +0000" stop="20260422190000 +0000">
+    <title lang="en">Making Money with Charles Payne</title>
+    <desc lang="en">Making Money with Charles Payne - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422190000 +0000" stop="20260422200000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Kudlow - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422200000 +0000" stop="20260422210000 +0000">
+    <title lang="en">The Evening Edit</title>
+    <desc lang="en">The Evening Edit - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422210000 +0000" stop="20260423000000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Fox Business Tonight - Wednesday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260422000000 +0000" stop="20260422060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Fox Business Overnight - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422060000 +0000" stop="20260422090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">CBS Morning News - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422090000 +0000" stop="20260422100000 +0000">
+    <title lang="en">CBS News Special Report</title>
+    <desc lang="en">CBS News Special Report - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422100000 +0000" stop="20260422130000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422130000 +0000" stop="20260422140000 +0000">
+    <title lang="en">CBS Afternoon News</title>
+    <desc lang="en">CBS Afternoon News - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422140000 +0000" stop="20260422180000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422180000 +0000" stop="20260422190000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">CBS Evening News - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422190000 +0000" stop="20260422200000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422200000 +0000" stop="20260422210000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">60 Minutes - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422210000 +0000" stop="20260423000000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Wednesday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260422000000 +0000" stop="20260422060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">CBS News Overnight - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422000000 +0000" stop="20260422030000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422030000 +0000" stop="20260422060000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422060000 +0000" stop="20260422090000 +0000">
+    <title lang="en">First Day</title>
+    <desc lang="en">First Day - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422090000 +0000" stop="20260422120000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422120000 +0000" stop="20260422140000 +0000">
+    <title lang="en">CNN This Morning</title>
+    <desc lang="en">CNN This Morning - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422140000 +0000" stop="20260422170000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422170000 +0000" stop="20260422190000 +0000">
+    <title lang="en">The Lead</title>
+    <desc lang="en">The Lead - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422190000 +0000" stop="20260422200000 +0000">
+    <title lang="en">The Situation Room</title>
+    <desc lang="en">The Situation Room - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422200000 +0000" stop="20260422210000 +0000">
+    <title lang="en">Erin Burnett OutFront</title>
+    <desc lang="en">Erin Burnett OutFront - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422210000 +0000" stop="20260422220000 +0000">
+    <title lang="en">Anderson Cooper 360</title>
+    <desc lang="en">Anderson Cooper 360 - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422220000 +0000" stop="20260422230000 +0000">
+    <title lang="en">CNN Tonight</title>
+    <desc lang="en">CNN Tonight - Wednesday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260422230000 +0000" stop="20260423000000 +0000">
+    <title lang="en">CNN Today</title>
+    <desc lang="en">CNN Today - Wednesday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423060000 +0000" stop="20260423080000 +0000">
+    <title lang="en">ABC World News This Morning</title>
+    <desc lang="en">ABC World News This Morning - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423080000 +0000" stop="20260423090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Good Morning America - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423090000 +0000" stop="20260423120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423120000 +0000" stop="20260423130000 +0000">
+    <title lang="en">ABC World News Now</title>
+    <desc lang="en">ABC World News Now - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423130000 +0000" stop="20260423180000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423180000 +0000" stop="20260423190000 +0000">
+    <title lang="en">ABC World News Tonight</title>
+    <desc lang="en">ABC World News Tonight - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423190000 +0000" stop="20260424000000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260423000000 +0000" stop="20260423060000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423060000 +0000" stop="20260423090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Fox &amp; Friends - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423090000 +0000" stop="20260423110000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox &amp; Friends First - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423110000 +0000" stop="20260423130000 +0000">
+    <title lang="en">The Midday</title>
+    <desc lang="en">The Midday - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423130000 +0000" stop="20260423170000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423170000 +0000" stop="20260423190000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">The Five - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423190000 +0000" stop="20260423200000 +0000">
+    <title lang="en">Special Report w/ Bret Baier</title>
+    <desc lang="en">Special Report w/ Bret Baier - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423200000 +0000" stop="20260423210000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Hannity - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423210000 +0000" stop="20260424000000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">The Ingraham Angle - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423000000 +0000" stop="20260423030000 +0000">
+    <title lang="en">Fox News Night</title>
+    <desc lang="en">Fox News Night - Thursday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260423030000 +0000" stop="20260423060000 +0000">
+    <title lang="en">Fox News Primetime</title>
+    <desc lang="en">Fox News Primetime - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423060000 +0000" stop="20260423090000 +0000">
+    <title lang="en">Fox Business Morning</title>
+    <desc lang="en">Fox Business Morning - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423090000 +0000" stop="20260423110000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Mornings with Maria - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423110000 +0000" stop="20260423130000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423130000 +0000" stop="20260423160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">The Claman Countdown - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423160000 +0000" stop="20260423190000 +0000">
+    <title lang="en">Making Money with Charles Payne</title>
+    <desc lang="en">Making Money with Charles Payne - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423190000 +0000" stop="20260423200000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Kudlow - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423200000 +0000" stop="20260423210000 +0000">
+    <title lang="en">The Evening Edit</title>
+    <desc lang="en">The Evening Edit - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423210000 +0000" stop="20260424000000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Fox Business Tonight - Thursday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260423000000 +0000" stop="20260423060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Fox Business Overnight - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423060000 +0000" stop="20260423090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">CBS Morning News - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423090000 +0000" stop="20260423100000 +0000">
+    <title lang="en">CBS News Special Report</title>
+    <desc lang="en">CBS News Special Report - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423100000 +0000" stop="20260423130000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423130000 +0000" stop="20260423140000 +0000">
+    <title lang="en">CBS Afternoon News</title>
+    <desc lang="en">CBS Afternoon News - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423140000 +0000" stop="20260423180000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423180000 +0000" stop="20260423190000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">CBS Evening News - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423190000 +0000" stop="20260423200000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423200000 +0000" stop="20260423210000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">60 Minutes - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423210000 +0000" stop="20260424000000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Thursday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260423000000 +0000" stop="20260423060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">CBS News Overnight - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423000000 +0000" stop="20260423030000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423030000 +0000" stop="20260423060000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423060000 +0000" stop="20260423090000 +0000">
+    <title lang="en">First Day</title>
+    <desc lang="en">First Day - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423090000 +0000" stop="20260423120000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423120000 +0000" stop="20260423140000 +0000">
+    <title lang="en">CNN This Morning</title>
+    <desc lang="en">CNN This Morning - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423140000 +0000" stop="20260423170000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423170000 +0000" stop="20260423190000 +0000">
+    <title lang="en">The Lead</title>
+    <desc lang="en">The Lead - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423190000 +0000" stop="20260423200000 +0000">
+    <title lang="en">The Situation Room</title>
+    <desc lang="en">The Situation Room - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423200000 +0000" stop="20260423210000 +0000">
+    <title lang="en">Erin Burnett OutFront</title>
+    <desc lang="en">Erin Burnett OutFront - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423210000 +0000" stop="20260423220000 +0000">
+    <title lang="en">Anderson Cooper 360</title>
+    <desc lang="en">Anderson Cooper 360 - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423220000 +0000" stop="20260423230000 +0000">
+    <title lang="en">CNN Tonight</title>
+    <desc lang="en">CNN Tonight - Thursday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260423230000 +0000" stop="20260424000000 +0000">
+    <title lang="en">CNN Today</title>
+    <desc lang="en">CNN Today - Thursday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424060000 +0000" stop="20260424080000 +0000">
+    <title lang="en">ABC World News This Morning</title>
+    <desc lang="en">ABC World News This Morning - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424080000 +0000" stop="20260424090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Good Morning America - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424090000 +0000" stop="20260424120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424120000 +0000" stop="20260424130000 +0000">
+    <title lang="en">ABC World News Now</title>
+    <desc lang="en">ABC World News Now - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424130000 +0000" stop="20260424180000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424180000 +0000" stop="20260424190000 +0000">
+    <title lang="en">ABC World News Tonight</title>
+    <desc lang="en">ABC World News Tonight - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424190000 +0000" stop="20260425000000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Friday</desc>
+  </programme>
+  <programme channel="ABCWBMA.us" start="20260424000000 +0000" stop="20260424060000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">ABC News Live - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424060000 +0000" stop="20260424090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Fox &amp; Friends - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424090000 +0000" stop="20260424110000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox &amp; Friends First - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424110000 +0000" stop="20260424130000 +0000">
+    <title lang="en">The Midday</title>
+    <desc lang="en">The Midday - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424130000 +0000" stop="20260424170000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424170000 +0000" stop="20260424190000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">The Five - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424190000 +0000" stop="20260424200000 +0000">
+    <title lang="en">Special Report w/ Bret Baier</title>
+    <desc lang="en">Special Report w/ Bret Baier - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424200000 +0000" stop="20260424210000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Hannity - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424210000 +0000" stop="20260425000000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">The Ingraham Angle - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424000000 +0000" stop="20260424030000 +0000">
+    <title lang="en">Fox News Night</title>
+    <desc lang="en">Fox News Night - Friday</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260424030000 +0000" stop="20260424060000 +0000">
+    <title lang="en">Fox News Primetime</title>
+    <desc lang="en">Fox News Primetime - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424060000 +0000" stop="20260424090000 +0000">
+    <title lang="en">Fox Business Morning</title>
+    <desc lang="en">Fox Business Morning - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424090000 +0000" stop="20260424110000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Mornings with Maria - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424110000 +0000" stop="20260424130000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Your World with Neil Cavuto - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424130000 +0000" stop="20260424160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">The Claman Countdown - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424160000 +0000" stop="20260424190000 +0000">
+    <title lang="en">Making Money with Charles Payne</title>
+    <desc lang="en">Making Money with Charles Payne - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424190000 +0000" stop="20260424200000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Kudlow - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424200000 +0000" stop="20260424210000 +0000">
+    <title lang="en">The Evening Edit</title>
+    <desc lang="en">The Evening Edit - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424210000 +0000" stop="20260425000000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Fox Business Tonight - Friday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260424000000 +0000" stop="20260424060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Fox Business Overnight - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424060000 +0000" stop="20260424090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">CBS Morning News - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424090000 +0000" stop="20260424100000 +0000">
+    <title lang="en">CBS News Special Report</title>
+    <desc lang="en">CBS News Special Report - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424100000 +0000" stop="20260424130000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424130000 +0000" stop="20260424140000 +0000">
+    <title lang="en">CBS Afternoon News</title>
+    <desc lang="en">CBS Afternoon News - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424140000 +0000" stop="20260424180000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424180000 +0000" stop="20260424190000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">CBS Evening News - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424190000 +0000" stop="20260424200000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424200000 +0000" stop="20260424210000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">60 Minutes - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424210000 +0000" stop="20260425000000 +0000">
+    <title lang="en">CBS News Live</title>
+    <desc lang="en">CBS News Live - Friday</desc>
+  </programme>
+  <programme channel="CBSNews247.us" start="20260424000000 +0000" stop="20260424060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">CBS News Overnight - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424000000 +0000" stop="20260424030000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424030000 +0000" stop="20260424060000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424060000 +0000" stop="20260424090000 +0000">
+    <title lang="en">First Day</title>
+    <desc lang="en">First Day - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424090000 +0000" stop="20260424120000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424120000 +0000" stop="20260424140000 +0000">
+    <title lang="en">CNN This Morning</title>
+    <desc lang="en">CNN This Morning - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424140000 +0000" stop="20260424170000 +0000">
+    <title lang="en">CNN Newsroom</title>
+    <desc lang="en">CNN Newsroom - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424170000 +0000" stop="20260424190000 +0000">
+    <title lang="en">The Lead</title>
+    <desc lang="en">The Lead - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424190000 +0000" stop="20260424200000 +0000">
+    <title lang="en">The Situation Room</title>
+    <desc lang="en">The Situation Room - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424200000 +0000" stop="20260424210000 +0000">
+    <title lang="en">Erin Burnett OutFront</title>
+    <desc lang="en">Erin Burnett OutFront - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424210000 +0000" stop="20260424220000 +0000">
+    <title lang="en">Anderson Cooper 360</title>
+    <desc lang="en">Anderson Cooper 360 - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424220000 +0000" stop="20260424230000 +0000">
+    <title lang="en">CNN Tonight</title>
+    <desc lang="en">CNN Tonight - Friday</desc>
+  </programme>
+  <programme channel="CNNInternational.us" start="20260424230000 +0000" stop="20260425000000 +0000">
+    <title lang="en">CNN Today</title>
+    <desc lang="en">CNN Today - Friday</desc>
+  </programme>
+</tv>
