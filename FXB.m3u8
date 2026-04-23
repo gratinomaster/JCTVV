@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=3000000
-https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1776939766~acl=/*~hmac=2b34936a5ec3c4d73547b7d5c7145f483728241c92ce74e1a27c1730f9451ab2
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,NAME="Fox Business HD"
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8
