@@ -1,1 +1,4 @@
-corrija o lista1.m3u para que use url-tvg https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml corrigindo tvg-ids
+faça FX.m3u8 e FXB.m3u8
+extraia o .m3u8 dos links abaixo
+precisa ter token
+https://www.foxnews.com/video/5614615980001, https://www.foxnews.com/video/5614626175001

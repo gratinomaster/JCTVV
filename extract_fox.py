@@ -34,14 +34,17 @@ async def find_m3u8_stream(url: str, domain: str) -> str | None:
             for req in result.network_requests:
                 req_url = req.get("url", "")
                 req_url_lower = req_url.lower()
-                if domain in req_url_lower and "master.m3u8" in req_url_lower:
-                    return req_url
-                
+                if domain in req_url_lower and ".m3u8" in req_url_lower and "master.m3u8" in req_url_lower:
+                    if "chartbeat" not in req_url_lower and "ping" not in req_url_lower:
+                        return req_url
+                        
         if result and result.html:
             matches = re.findall(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', result.html)
             for m in matches:
-                if domain in m.lower() and "master.m3u8" in m.lower():
-                    return m
+                m_lower = m.lower()
+                if domain in m_lower and "master.m3u8" in m_lower:
+                    if "chartbeat" not in m_lower and "ping" not in m_lower:
+                        return m
                 
     return None
 
