@@ -1,128 +1,287 @@
 #!/usr/bin/env python3
-import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
-def gerar_epg():
-    """Gera EPG para os canais da lista5.m3u"""
-    
-    canais = [
-        {
-            "id": "ABCNewsLive.us@SD",
-            "name": "ABC News Live",
-            "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg"
-        },
-        {
-            "id": "FoxNewsChannel.us@SD",
-            "name": "Fox News Channel",
-            "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg"
-        },
-        {
-            "id": "FoxWeather.us@SD",
-            "name": "Fox Weather",
-            "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg"
-        },
-        {
-            "id": "CBSNews247.us@SD",
-            "name": "CBS News 24/7",
-            "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg"
-        },
-    ]
-    
-    programas_templates = {
-        "ABCNewsLive.us@SD": [
-            ("ABC World News This Morning", "Morning news coverage with latest updates"),
-            ("ABC World News Midday", "Midday news program"),
-            ("ABC Live - Afternoon Update", "Afternoon news coverage"),
-            ("ABC World News Tonight", "Evening news program"),
-            ("ABC Live - Prime Time", "Prime time news coverage"),
-            ("ABC Nightline", "Late night news program"),
-            ("ABC World News Now", "Overnight news coverage"),
-        ],
-        "FoxNewsChannel.us@SD": [
-            ("Fox & Friends First", "Morning news program"),
-            ("Fox & Friends", "Morning news and talk show"),
-            ("America's Newsroom", "News program with latest updates"),
-            ("Hannity", "Political commentary and news"),
-            ("The Ingraham Angle", "Evening news commentary"),
-            ("Fox News @ Night", "Late night news program"),
-            ("Gutfeld!", "Late night comedy news"),
-        ],
-        "FoxWeather.us@SD": [
-            ("Weather Today Morning", "Morning weather updates"),
-            ("Weather Midday Report", "Midday weather report"),
-            ("Weather Alert Center", "Weather alerts and updates"),
-            ("Evening Weather Report", "Evening weather coverage"),
-            ("Weather Tonight", "Night weather forecast"),
-            ("Overnight Weather Watch", "Overnight weather monitoring"),
-            ("Early Morning Weather", "Early morning weather updates"),
-        ],
-        "CBSNews247.us@SD": [
-            ("CBS News Mornings", "Morning news coverage"),
-            ("CBS News Midday", "Midday news program"),
-            ("CBS Evening News", "Evening news broadcast"),
-            ("CBS News 24/7 Live", "Continuous news coverage"),
-            ("Face the Nation", "Sunday morning news program"),
-        ],
-    }
-    
-    root = ET.Element("tv")
-    now = datetime.now()
-    
-    for canal in canais:
-        ch_elem = ET.SubElement(root, "channel")
-        ch_elem.set("id", canal["id"])
-        
-        display_name = ET.SubElement(ch_elem, "display-name")
-        display_name.text = canal["name"]
-        
-        icon = ET.SubElement(ch_elem, "icon")
-        icon.set("src", canal["logo"])
-        
-        templates = programas_templates.get(canal["id"], [])
-        
-        for day_offset in range(3):
-            current_date = now + timedelta(days=day_offset)
-            date_str = current_date.strftime("%Y%m%d")
-            
-            for hour in range(24):
-                for minute in [0, 30]:
-                    start_time = f"{date_str}{hour:02d}{minute:02d}00"
-                    end_hour = hour
-                    end_minute = minute + 30
-                    if end_minute >= 60:
-                        end_hour += 1
-                        end_minute = 0
-                    end_time = f"{date_str}{end_hour:02d}{end_minute:02d}00"
-                    
-                    if end_hour >= 24:
-                        continue
-                    
-                    prog_index = (hour * 2 + minute // 30) % len(templates)
-                    title, desc = templates[prog_index]
-                    
-                    prog = ET.SubElement(root, "programme")
-                    prog.set("channel", canal["id"])
-                    prog.set("start", f"{start_time} +0000")
-                    prog.set("stop", f"{end_time} +0000")
-                    
-                    title_elem = ET.SubElement(prog, "title")
-                    title_elem.set("lang", "en")
-                    title_elem.text = title
-                    
-                    desc_elem = ET.SubElement(prog, "desc")
-                    desc_elem.set("lang", "en")
-                    desc_elem.text = desc
-    
-    tree = ET.ElementTree(root)
-    tree.write("/home/runner/work/JCTV/JCTV/lista5_epg.xml", encoding="UTF-8", xml_declaration=True)
-    
-    return len(root.findall("channel")), len(root.findall("programme"))
+today = datetime.now()
+tomorrow = today + timedelta(days=1)
+day_after = tomorrow + timedelta(days=1)
 
-if __name__ == "__main__":
-    canais, programas = gerar_epg()
-    print(f"EPG gerado: {canais} canais, {programas} programas")
-    
-    now = datetime.now()
-    print(f"\nDias cobertos: {now.strftime('%Y-%m-%d')} (hoje)")
-    print(f"            : {(now + timedelta(days=1)).strftime('%Y-%m-%d')} (amanhã)")
-    print(f"            : {(now + timedelta(days=2)).strftime('%Y-%m-%d')} (depois de amanhã)")
+epg = '''<?xml version="1.0" encoding="UTF-8"?>
+<tv date="{date}">
+  <channel id="ABC News Live">
+    <display-name lang="en">ABC News Live</display-name>
+    <icon src="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" />
+  </channel>
+  <programme channel="ABC News Live" start="{today}T06:00:00 +0000" stop="{today}T09:00:00 +0000">
+    <title lang="en">Morning News - {today_str}</title>
+    <desc lang="en">Cobertura das principais notícias da manhã</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{today}T09:00:00 +0000" stop="{today}T12:00:00 +0000">
+    <title lang="en">Midday News - {today_str}</title>
+    <desc lang="en">Edição do meio-dia com as principais notícias</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{today}T12:00:00 +0000" stop="{today}T18:00:00 +0000">
+    <title lang="en">Afternoon Edition - {today_str}</title>
+    <desc lang="en">Cobertura das notícias da tarde</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{today}T18:00:00 +0000" stop="{today}T20:00:00 +0000">
+    <title lang="en">Evening News - {today_str}</title>
+    <desc lang="en">Edição vespertina com as principais notícias</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{today}T20:00:00 +0000" stop="{tomorrow}T06:00:00 +0000">
+    <title lang="en">Night Edition - {today_str}</title>
+    <desc lang="en">Últimas notícias do dia</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{tomorrow}T06:00:00 +0000" stop="{tomorrow}T09:00:00 +0000">
+    <title lang="en">Morning News - {tomorrow_str}</title>
+    <desc lang="en">Cobertura das principais notícias da manhã</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{tomorrow}T09:00:00 +0000" stop="{tomorrow}T12:00:00 +0000">
+    <title lang="en">Midday News - {tomorrow_str}</title>
+    <desc lang="en">Edição do meio-dia com as principais notícias</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{tomorrow}T12:00:00 +0000" stop="{tomorrow}T18:00:00 +0000">
+    <title lang="en">Afternoon Edition - {tomorrow_str}</title>
+    <desc lang="en">Cobertura das notícias da tarde</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{tomorrow}T18:00:00 +0000" stop="{tomorrow}T20:00:00 +0000">
+    <title lang="en">Evening News - {tomorrow_str}</title>
+    <desc lang="en">Edição vespertina com as principais notícias</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{tomorrow}T20:00:00 +0000" stop="{day_after}T06:00:00 +0000">
+    <title lang="en">Night Edition - {tomorrow_str}</title>
+    <desc lang="en">Últimas notícias do dia</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{day_after}T06:00:00 +0000" stop="{day_after}T09:00:00 +0000">
+    <title lang="en">Morning News - {day_after_str}</title>
+    <desc lang="en">Cobertura das principais notícias da manhã</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{day_after}T09:00:00 +0000" stop="{day_after}T12:00:00 +0000">
+    <title lang="en">Midday News - {day_after_str}</title>
+    <desc lang="en">Edição do meio-dia com as principais notícias</desc>
+  </programme>
+  <programme channel="ABC News Live" start="{day_after}T12:00:00 +0000" stop="{day_after}T18:00:00 +0000">
+    <title lang="en">Afternoon Edition - {day_after_str}</title>
+    <desc lang="en">Cobertura das notícias da tarde</desc>
+  </programme>
+
+  <channel id="Fox News Channel">
+    <display-name lang="en">Fox News Channel</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <programme channel="Fox News Channel" start="{today}T06:00:00 +0000" stop="{today}T09:00:00 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{today}T09:00:00 +0000" stop="{today}T12:00:00 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{today}T12:00:00 +0000" stop="{today}T15:00:00 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{today}T15:00:00 +0000" stop="{today}T17:00:00 +0000">
+    <title lang="en">The Story</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{today}T17:00:00 +0000" stop="{today}T20:00:00 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{today}T20:00:00 +0000" stop="{tomorrow}T06:00:00 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T06:00:00 +0000" stop="{tomorrow}T09:00:00 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T09:00:00 +0000" stop="{tomorrow}T12:00:00 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T12:00:00 +0000" stop="{tomorrow}T15:00:00 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T15:00:00 +0000" stop="{tomorrow}T17:00:00 +0000">
+    <title lang="en">The Story</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T17:00:00 +0000" stop="{tomorrow}T20:00:00 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{tomorrow}T20:00:00 +0000" stop="{day_after}T06:00:00 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{day_after}T06:00:00 +0000" stop="{day_after}T09:00:00 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{day_after}T09:00:00 +0000" stop="{day_after}T12:00:00 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+  <programme channel="Fox News Channel" start="{day_after}T12:00:00 +0000" stop="{day_after}T15:00:00 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Fox News</desc>
+  </programme>
+
+  <channel id="Fox Business">
+    <display-name lang="en">Fox Business</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <programme channel="Fox Business" start="{today}T06:00:00 +0000" stop="{today}T09:00:00 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{today}T09:00:00 +0000" stop="{today}T12:00:00 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{today}T12:00:00 +0000" stop="{today}T15:00:00 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{today}T15:00:00 +0000" stop="{today}T18:00:00 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{today}T18:00:00 +0000" stop="{today}T20:00:00 +0000">
+    <title lang="en">Evening Edit</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{today}T20:00:00 +0000" stop="{tomorrow}T06:00:00 +0000">
+    <title lang="en">Nightly Business Report</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T06:00:00 +0000" stop="{tomorrow}T09:00:00 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T09:00:00 +0000" stop="{tomorrow}T12:00:00 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T12:00:00 +0000" stop="{tomorrow}T15:00:00 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T15:00:00 +0000" stop="{tomorrow}T18:00:00 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T18:00:00 +0000" stop="{tomorrow}T20:00:00 +0000">
+    <title lang="en">Evening Edit</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{tomorrow}T20:00:00 +0000" stop="{day_after}T06:00:00 +0000">
+    <title lang="en">Nightly Business Report</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{day_after}T06:00:00 +0000" stop="{day_after}T09:00:00 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{day_after}T09:00:00 +0000" stop="{day_after}T12:00:00 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+  <programme channel="Fox Business" start="{day_after}T12:00:00 +0000" stop="{day_after}T15:00:00 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Fox Business</desc>
+  </programme>
+
+  <channel id="CBS News">
+    <display-name lang="en">CBS News 24/7</display-name>
+    <icon src="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" />
+  </channel>
+  <programme channel="CBS News" start="{today}T06:00:00 +0000" stop="{today}T09:00:00 +0000">
+    <title lang="en">CBS Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T09:00:00 +0000" stop="{today}T12:00:00 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T12:00:00 +0000" stop="{today}T13:00:00 +0000">
+    <title lang="en">CBS Midday News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T13:00:00 +0000" stop="{today}T18:00:00 +0000">
+    <title lang="en">CBS Afternoon News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T18:00:00 +0000" stop="{today}T19:00:00 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T19:00:00 +0000" stop="{today}T22:00:00 +0000">
+    <title lang="en">CBS Prime News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{today}T22:00:00 +0000" stop="{tomorrow}T06:00:00 +0000">
+    <title lang="en">CBS Night News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T06:00:00 +0000" stop="{tomorrow}T09:00:00 +0000">
+    <title lang="en">CBS Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T09:00:00 +0000" stop="{tomorrow}T12:00:00 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T12:00:00 +0000" stop="{tomorrow}T13:00:00 +0000">
+    <title lang="en">CBS Midday News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T13:00:00 +0000" stop="{tomorrow}T18:00:00 +0000">
+    <title lang="en">CBS Afternoon News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T18:00:00 +0000" stop="{tomorrow}T19:00:00 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T19:00:00 +0000" stop="{tomorrow}T22:00:00 +0000">
+    <title lang="en">CBS Prime News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{tomorrow}T22:00:00 +0000" stop="{day_after}T06:00:00 +0000">
+    <title lang="en">CBS Night News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{day_after}T06:00:00 +0000" stop="{day_after}T09:00:00 +0000">
+    <title lang="en">CBS Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{day_after}T09:00:00 +0000" stop="{day_after}T12:00:00 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+  <programme channel="CBS News" start="{day_after}T12:00:00 +0000" stop="{day_after}T13:00:00 +0000">
+    <title lang="en">CBS Midday News</title>
+    <desc lang="en">CBS News</desc>
+  </programme>
+
+</tv>
+'''.format(
+    date=today.strftime('%Y%m%d%H%M%S'),
+    today=today.strftime('%Y%m%d'),
+    today_str=today.strftime('%Y-%m-%d'),
+    tomorrow=tomorrow.strftime('%Y%m%d'),
+    tomorrow_str=tomorrow.strftime('%Y-%m-%d'),
+    day_after=day_after.strftime('%Y%m%d'),
+    day_after_str=day_after.strftime('%Y-%m-%d')
+)
+
+with open('lista5_epg.xml', 'w', encoding='utf-8') as f:
+    f.write(epg)
+
+print(f"EPG gerado: lista5_epg.xml")
+print(f"Data: {today.strftime('%Y-%m-%d')}")
+print(f"Amanhã: {tomorrow.strftime('%Y-%m-%d')}")
+print(f"Depois de amanhã: {day_after.strftime('%Y-%m-%d')}")

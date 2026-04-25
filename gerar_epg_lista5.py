@@ -1,173 +1,217 @@
 #!/usr/bin/env python3
-import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
+import gzip
 import requests
+import io
+import xml.etree.ElementTree as ET
+import re
 
-def gerar_epg_lista5():
-    """Gera EPG para os canais da lista5.m3u"""
-    
-    canais = [
-        {
-            "id": "ABCNewsLive.us@SD",
-            "name": "ABC News Live",
-            "logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg"
-        },
-        {
-            "id": "ABCNewsLiveBeirut.us@SD",
-            "name": "ABC News Live - Beirut",
-            "logo": "https://keyframe-cdn.abcnews.com/streamprovider5.jpg"
-        },
-        {
-            "id": "FoxNewsChannel.us@SD",
-            "name": "Fox News Channel",
-            "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg"
-        },
-        {
-            "id": "FoxBusinessNetwork.us@SD",
-            "name": "Fox Business Network",
-            "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg"
-        },
-        {
-            "id": "CBSNews247.us@SD",
-            "name": "CBS News 24/7",
-            "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg"
-        },
-    ]
-    
-    programas_templates = {
-        "ABCNewsLive.us@SD": [
-            ("ABC World News This Morning", "Morning news coverage with latest updates"),
-            ("ABC World News Midday", "Midday news program"),
-            ("ABC Live - Afternoon Update", "Afternoon news coverage"),
-            ("ABC World News Tonight", "Evening news program"),
-            ("ABC Live - Prime Time", "Prime time news coverage"),
-            ("ABC Nightline", "Late night news program"),
-            ("ABC World News Now", "Overnight news coverage"),
-        ],
-        "ABCNewsLiveBeirut.us@SD": [
-            ("Live Coverage from Beirut", "On-the-ground reporting from Beirut"),
-            ("Middle East Update", "Latest news from the Middle East region"),
-            ("Breaking News Coverage", "Breaking news updates"),
-            ("International News Report", "International news coverage"),
-            ("Live from Beirut", "Live reporting from Beirut"),
-        ],
-        "FoxNewsChannel.us@SD": [
-            ("Fox & Friends First", "Morning news program"),
-            ("Fox & Friends", "Morning news and talk show"),
-            ("America's Newsroom", "News program with latest updates"),
-            ("Hannity", "Political commentary and news"),
-            ("The Ingraham Angle", "Evening news commentary"),
-            ("Fox News @ Night", "Late night news program"),
-            ("Gutfeld!", "Late night comedy news"),
-        ],
-        "FoxBusinessNetwork.us@SD": [
-            ("Mornings with Maria", "Morning business news program"),
-            ("Fox Business Morning", "Business news coverage"),
-            ("Making Money", "Financial news and advice"),
-            ("The Claman Countdown", "Market closing coverage"),
-            ("Cavuto: Coast to Coast", "Business news program"),
-            ("Fox Business Tonight", "Evening business coverage"),
-        ],
-        "CBSNews247.us@SD": [
-            ("CBS News Mornings", "Morning news coverage"),
-            ("CBS News Midday", "Midday news program"),
-            ("CBS Evening News", "Evening news broadcast"),
-            ("CBS News 24/7 Live", "Continuous news coverage"),
-            ("Face the Nation", "Sunday morning news program"),
-        ],
+CHANNEL_MAPPING = {
+    "ABC News Live": {
+        "names": ["ABC News Live", "ABCNewsLive.us"],
+        "logo": "https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg"
+    },
+    "Fox News Channel": {
+        "names": ["Fox News", "FoxNews", "FoxNewsChannel.us"],
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg"
+    },
+    "Fox Business": {
+        "names": ["Fox Business", "FoxBusiness", "FoxBusinessNetwork.us"],
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg"
+    },
+    "CBS News": {
+        "names": ["CBS News", "CBSNews", "CBSNewsNetwork.us"],
+        "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg"
     }
-    
-    root = ET.Element("tv")
-    
-    now = datetime.now()
-    
-    for canal in canais:
-        ch_elem = ET.SubElement(root, "channel")
-        ch_elem.set("id", canal["id"])
-        
-        display_name = ET.SubElement(ch_elem, "display-name")
-        display_name.text = canal["name"]
-        
-        icon = ET.SubElement(ch_elem, "icon")
-        icon.set("src", canal["logo"])
-        
-        templates = programas_templates.get(canal["id"], [])
-        
-        for day_offset in range(3):
-            current_date = now + timedelta(days=day_offset)
-            date_str = current_date.strftime("%Y%m%d")
-            
-            if canal["id"] in ["ABCNewsLive.us@SD", "ABCNewsLiveBeirut.us@SD", "CBSNews247.us@SD"]:
-                # Streams 24/7 - programas a cada 30 minutos
-                for hour in range(24):
-                    for minute in [0, 30]:
-                        start_time = f"{date_str}{hour:02d}{minute:02d}00"
-                        end_hour = hour
-                        end_minute = minute + 30
-                        if end_minute >= 60:
-                            end_hour += 1
-                            end_minute = 0
-                        end_time = f"{date_str}{end_hour:02d}{end_minute:02d}00"
-                        
-                        if end_hour >= 24:
-                            continue
-                        
-                        prog_index = (hour * 2 + minute // 30) % len(templates)
-                        title, desc = templates[prog_index]
-                        
-                        prog = ET.SubElement(root, "programme")
-                        prog.set("channel", canal["id"])
-                        prog.set("start", f"{start_time} +0000")
-                        prog.set("stop", f"{end_time} +0000")
-                        
-                        title_elem = ET.SubElement(prog, "title")
-                        title_elem.set("lang", "en")
-                        title_elem.text = title
-                        
-                        desc_elem = ET.SubElement(prog, "desc")
-                        desc_elem.set("lang", "en")
-                        desc_elem.text = desc
+}
+
+def get_affiliate_programmes(epg_content, channel_name, days=3):
+    from datetime import datetime, timedelta
+    today = datetime.now()
+    programmes = []
+
+    affiliate_ids = {
+        "ABC News Live": ["WABC-DT.us_locals1", "KABC-DT.us_locals1"],
+        "Fox News Channel": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
+        "Fox Business": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
+        "CBS News": ["WCBS-DT.us_locals1", "KCBS-DT.us_locals1"]
+    }
+
+    ids = affiliate_ids.get(channel_name, [])
+
+    for affiliate_id in ids:
+        if affiliate_id in epg_content:
+            print(f"  Encontrado affiliate: {affiliate_id}")
+            return get_programmes_from_affiliate(epg_content, affiliate_id, days)
+
+    return generate_generic_programmes(channel_name, days)
+
+def get_programmes_from_affiliate(epg_content, affiliate_id, days):
+    from datetime import datetime, timedelta
+    import re
+
+    today = datetime.now()
+    tomorrow = today + timedelta(days=1)
+    day_after = today + timedelta(days=2)
+
+    programmes = []
+    pattern = rf'<programme[^>]+channel="{re.escape(affiliate_id)}"[^>]+start="(\d{14})\s*\+\d{4}"[^>]+stop="(\d{14})\s*\+\d{4}"[^>]*>.*?</programme>'
+
+    matches = re.findall(pattern, epg_content, re.DOTALL)
+
+    for start, stop in matches[:days * 6]:
+        try:
+            prog_date = datetime.strptime(start[:8], '%Y%m%d')
+            if prog_date.date() <= day_after.date():
+                programmes.append({
+                    'start': start,
+                    'stop': stop,
+                    'start_dt': prog_date
+                })
+        except:
+            continue
+
+    return programmes[:days * 6]
+
+def generate_generic_programmes(channel_name, days):
+    from datetime import datetime, timedelta
+
+    today = datetime.now()
+    programmes = []
+
+    shows = {
+        "ABC News Live": ["Good Morning America", "World News This Morning", "ABC World News", "GMA3: What You Need To Know", "World News Tonight", "Nightline"],
+        "Fox News Channel": ["Fox & Friends First", "America's Newsroom", "Happening Now", "The Story", "Fox News @ Night", "Tucker Carlson Tonight"],
+        "Fox Business": ["Mornings with Maria", "Squawk Box", "Making Money", "The Claman Countdown", "Evening Edit", "Nightly Business Report"],
+        "CBS News": ["CBS Mornings", "CBS News Mornings", "CBS Midday News", "CBS Afternoon News", "CBS Evening News", "CBS Night News"]
+    }
+
+    channel_shows = shows.get(channel_name, shows["ABC News Live"])
+
+    for day_offset in range(days):
+        current_day = today + timedelta(days=day_offset)
+        day_str = current_day.strftime('%Y%m%d')
+
+        times = ["060000", "090000", "120000", "130000", "180000", "220000"]
+        next_times = ["090000", "120000", "130000", "180000", "220000", "060000"]
+
+        for i, (start_t, show) in enumerate(zip(times, channel_shows)):
+            end_t = next_times[i]
+
+            if i == 5:
+                next_day = current_day + timedelta(days=1)
+                end_str = next_day.strftime('%Y%m%d') + "060000"
             else:
-                # Programas fixos durante o dia
-                times = [
-                    ("060000", "090000"),
-                    ("090000", "120000"),
-                    ("120000", "150000"),
-                    ("150000", "180000"),
-                    ("180000", "210000"),
-                    ("210000", "000000"),
-                ]
-                
-                for i, (start, stop) in enumerate(times):
-                    if i >= len(templates):
-                        break
-                    
-                    start_time = f"{date_str}{start}"
-                    end_date = date_str
-                    if stop == "000000":
-                        end_date = (current_date + timedelta(days=1)).strftime("%Y%m%d")
-                    
-                    prog = ET.SubElement(root, "programme")
-                    prog.set("channel", canal["id"])
-                    prog.set("start", f"{start_time} +0000")
-                    prog.set("stop", f"{end_date}{stop} +0000")
-                    
-                    title, desc = templates[i]
-                    
-                    title_elem = ET.SubElement(prog, "title")
-                    title_elem.set("lang", "en")
-                    title_elem.text = title
-                    
-                    desc_elem = ET.SubElement(prog, "desc")
-                    desc_elem.set("lang", "en")
-                    desc_elem.text = desc
-    
-    tree = ET.ElementTree(root)
-    tree.write("/home/runner/work/JCTV/JCTV/lista5_epg.xml", encoding="UTF-8", xml_declaration=True)
-    
-    return len(root.findall("channel")), len(root.findall("programme"))
+                end_str = day_str + end_t
+
+            start_str = day_str + start_t
+
+            programmes.append({
+                'start': start_str,
+                'stop': end_str
+            })
+
+    return programmes
+
+def create_custom_epg():
+    from datetime import datetime
+
+    print("=" * 70)
+    print("Criando EPG customizado para lista5.m3u")
+    print("=" * 70)
+
+    today = datetime.now()
+    tomorrow = today + timedelta(days=1)
+    day_after = today + timedelta(days=2)
+
+    print(f"\nProgramação para:")
+    print(f"  Hoje: {today.strftime('%Y-%m-%d')}")
+    print(f"  Amanhã: {tomorrow.strftime('%Y-%m-%d')}")
+    print(f"  Depois de amanhã: {day_after.strftime('%Y-%m-%d')}")
+
+    xml = f'''<?xml version="1.0" encoding="UTF-8"?>
+<tv date="{today.strftime('%Y%m%d%H%M%S')}">
+'''
+
+    for ch_name, ch_info in CHANNEL_MAPPING.items():
+        xml += f'''  <channel id="{ch_name}">
+    <display-name lang="en">{ch_name}</display-name>
+    <icon src="{ch_info['logo']}" />
+  </channel>
+'''
+
+    for ch_name, ch_info in CHANNEL_MAPPING.items():
+        print(f"\nProcessando: {ch_name}")
+        programmes = generate_generic_programmes(ch_name, 3)
+
+        for prog in programmes:
+            start = prog['start'][:8] + 'T' + prog['start'][8:] + '00 +0000'
+            stop = prog['stop'][:8] + 'T' + prog['stop'][8:] + '00 +0000'
+
+            show_name = get_show_for_time(ch_name, prog['start'])
+            xml += f'''  <programme channel="{ch_name}" start="{start}" stop="{stop}">
+    <title lang="en">{show_name}</title>
+    <desc lang="en">Live news coverage from {ch_name}</desc>
+  </programme>
+'''
+
+    xml += '</tv>\n'
+
+    with open('lista5_epg.xml', 'w', encoding='utf-8') as f:
+        f.write(xml)
+
+    print(f"\nEPG salvo: lista5_epg.xml ({len(xml)} bytes)")
+
+def get_show_for_time(channel, timestamp):
+    hour = int(timestamp[8:10])
+
+    shows = {
+        "ABC News Live": {
+            (6, 9): "Good Morning America",
+            (9, 12): "World News This Morning",
+            (12, 13): "ABC World News Midday",
+            (13, 18): "GMA3: What You Need To Know",
+            (18, 20): "World News Tonight",
+            (20, 23): "Nightline",
+            (23, 6): "Overnight News"
+        },
+        "Fox News Channel": {
+            (6, 9): "Fox & Friends First",
+            (9, 12): "America's Newsroom",
+            (12, 15): "Happening Now",
+            (15, 17): "The Story",
+            (17, 20): "Fox News @ Night",
+            (20, 23): "Tucker Carlson Tonight",
+            (23, 6): "Fox News Overnight"
+        },
+        "Fox Business": {
+            (6, 9): "Mornings with Maria",
+            (9, 12): "Squawk Box",
+            (12, 15): "Making Money",
+            (15, 18): "The Claman Countdown",
+            (18, 20): "Evening Edit",
+            (20, 23): "Nightly Business Report",
+            (23, 6): "Markets After Hours"
+        },
+        "CBS News": {
+            (6, 9): "CBS Mornings",
+            (9, 12): "CBS News Mornings",
+            (12, 13): "CBS Midday News",
+            (13, 18): "CBS Afternoon News",
+            (18, 19): "CBS Evening News",
+            (19, 22): "CBS Prime News",
+            (22, 23): "CBS Night News",
+            (23, 6): "CBS Overnight"
+        }
+    }
+
+    channel_shows = shows.get(channel, shows["ABC News Live"])
+
+    for (start_h, end_h), show_name in channel_shows.items():
+        if start_h <= hour < end_h:
+            return show_name
+
+    return "News Coverage"
 
 if __name__ == "__main__":
-    canais, programas = gerar_epg_lista5()
-    print(f"EPG gerado: {canais} canais, {programas} programas")
-    print("Arquivo: lista5_epg.xml")
+    create_custom_epg()

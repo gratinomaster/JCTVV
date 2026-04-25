@@ -1,4 +1,2 @@
-faça FX.m3u8 e FXB.m3u8
-extraia o .m3u8 dos links abaixo
-precisa ter token
-https://www.foxnews.com/video/5614615980001, https://www.foxnews.com/video/5614626175001
+corrija o lista5.m3u 
+para que todos os canais tenham epg valido, atualizado, teste para ver se o epg funciona, pode ser que seja necessario varios epgs para que todos os canais tenham guia, caso haja sinais de afiliadas, procure o epg para cada afiliada, insira a url do epg no arquivo .m3u,veja se tem a programação do dia de hoje e amanhã, e depois de amanhã, remova canais que não passarem no teste do virustotal, adcione tvg-logo onde não exista, tem que estar em .jpg, não deixe links de canais sem o # na linha de cima, os que tiverem tvg-logo que não sejam .jpg devem ser trocados para .jpg, teste se funcionam, não gosto de imgur.com
