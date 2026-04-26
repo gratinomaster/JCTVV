@@ -2,7 +2,7 @@ name: LINK
 
 on:
   schedule:
-    - cron: '0 */1 * * *'  # Executa a cada 6 horas
+    - cron: '*/45 * * * *'
   pull_request:
     branches:
       - main
