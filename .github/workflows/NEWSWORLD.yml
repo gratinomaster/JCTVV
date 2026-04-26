@@ -29,6 +29,8 @@ jobs:
           adcione tvg-logo em canais que estejam sem ou invalidos
           exclua os canais offline
           remova #extinf que não tenham links dos canais
+          teste os links para não me deixar usar links com virus
+          corrija caso o epg não funcione nos canais corretamente
           EOF
 
       - name: Run OpenCode
