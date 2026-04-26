@@ -1,7 +1,0 @@
-#EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
-#EXTINF:-1 tvg-id="abcnews" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/ABC_News_Logo.svg/1200px-ABC_News_Logo.svg.png" group-title="USA NEWS",ABC News Live
-https://abcnews.go.com/live
-#EXTINF:-1 tvg-id="cbsnews" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/CBS_News_logo.svg/1200px-CBS_News_logo.svg.png" group-title="USA NEWS",CBS News Live
-https://www.cbsnews.com/live/
-#EXTINF:-1 tvg-id="nbcnews" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/NBC_News_Logo.svg/1200px-NBC_News_Logo.svg.png" group-title="USA NEWS",NBC News Live
-https://www.nbcnews.com/watch
