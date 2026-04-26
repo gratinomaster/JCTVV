@@ -1,7 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml"
 
-#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider5.jpg" group-title="NEWS WORLD",ABC News Live
-https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/abcn-live-05-index.m3u8
 #EXTINF:-1 tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="NEWS WORLD",CBS News 24/7
 https://news20e7hhcb.airspace-cdn.cbsivideo.com/index.m3u8
 #EXTINF:-1 tvg-name="NBC News NOW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nbc-news-now-uk.png" group-title="NEWS WORLD",NBC News Now
