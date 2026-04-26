@@ -1,1 +1,5 @@
-corrija o lista1.m3u para que use url-tvg https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml corrigindo tvg-ids
+acesse NEWSWORLDNOVOS.m3u
+adcione 1 canal do mesmo estilo dos que já estão na lista
+adcione tvg-logo em canais que estejam sem ou invalidos
+exclua os canais offline
+remova #extinf que não tenham links dos canais
