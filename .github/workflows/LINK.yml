@@ -30,6 +30,20 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install selenium crawl4ai playwright requests beautifulsoup4 lxml python-dateutil pytz gdown streamlink yt-dlp
 
+      
+      - name: Install OpenCode
+        run: |
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
+
+      - name: Create prompt
+        run: |
+          cat << 'EOF' > prompt.txt
+          acesse lista5.m3u
+          exclua canais que não estejam funcionando
+          sobescreva o lista5.m3u
+          EOF      
+      
       - name: Instalar browsers do Playwright
         run: |
           playwright install chromium
