@@ -1,18 +1,10 @@
-#EXTINF:-1 tvg-id="BBCNewsChannel.uk" tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" group-title="NEWS WORLD",BBC News (UK)
-https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_hd_abr_v2.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English" tvg-logo="https://cdn.brt.pt/brt/logos/aberturas/aljazeera.jpg" group-title="NEWS WORLD",Al Jazeera English
-https://live-hls-apps-aje.getaj.net/AJE/index.m3u8
-#EXTINF:-1 tvg-id="DWEnglish.int" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/dw-english-int.png" group-title="NEWS WORLD",DW English
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 tvg-id="SkyNews.uk" tvg-name="Sky News" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-news-uk.png" group-title="NEWS WORLD",Sky News International
-https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Live/channel(skynews)/index_1080-30.m3u8
-#EXTINF:-1 tvg-id="INDIATODAY.in" tvg-name="India Today" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/india-today-in.png" group-title="NEWS WORLD",India Today
-https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8
-#EXTINF:-1 tvg-id="NDTV24x7.in" tvg-name="NDTV 24x7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/ndtv-24x7-in.png" group-title="NEWS WORLD",NDTV 24x7
-https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/ndtv24x7master.m3u8
-#EXTINF:-1 tvg-id="ScrippsNews.us" tvg-name="Scripps News" tvg-logo="https://pbs.twimg.com/profile_banners/1123266034033336320/1559225761/1500x500.png" group-title="NEWS WORLD",Scripps News
-https://content.uplynk.com/channel/4bb4901b934c4e029fd4c1abfc766c37.m3u8
-#EXTINF:-1 tvg-id="adn40.mx" tvg-name="ADN40" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/adn-noticias-mx.png" group-title="Canales Internacionales",ADN40 (Mexico)
-https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
-#EXTINF:-1 tvg-id="CNNInternational.us" tvg-name="CNN International" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-international-us.png" group-title="NEWS WORLD",CNN International
-https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8
+Vou criar um arquivo M3U com as 3 URLs de notícias americanas que você solicitou:
+Criei o arquivo `USA_NEWS.m3u` com as 3 notícias americanas:
+
+- **ABC News Live** (abcnews.com/Live)
+- **CBS News Live** (cbsnews.com/live)  
+- **NBC News Live** (nbcnews.com/watch)
+
+**Nota importante:** Estas URLs são páginas web, não streams HLS diretos. Para funcionarem no seu IPTV, você precisa de streams diretos (.m3u8) de um serviço de IPTV. Se os streams não carregarem, significa que essas fontes não oferecem streams diretos públicos - você precisará de um provider de IPTV que disponibilize esses canais.
+
+Pode usar o arquivo misturado com as suas outras listas ou verificar se o seu IPTV consegue extrair o stream das páginas URLs.
