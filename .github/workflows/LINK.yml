@@ -49,6 +49,12 @@ jobs:
           sobescreva o lista5.m3u
           EOF      
       
+      - name: Run OpenCode
+        run: |
+          echo "Executando OpenCode..."
+          opencode run "$(cat prompt.txt)"
+          
+          
       - name: Instalar browsers do Playwright
         run: |
           playwright install chromium
