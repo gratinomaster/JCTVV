@@ -30,7 +30,7 @@ jobs:
 
       - name: Run OpenCode and save output
         run: |
-          opencode run "${{ github.event.inputs.prompt }}" > "${{ github.event.inputs.filename }}"
+          opencode run "Instale Crawl4ai e yt-dlp ${{ github.event.inputs.prompt }}" > "${{ github.event.inputs.filename }}"
 
       - name: Commit generated file safely
         run: |
