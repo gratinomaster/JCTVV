@@ -17,6 +17,8 @@ https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 http://41.205.93.154/ABC/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us" tvg-logo="https://assets.bloomberg.tv/assets/img/brand/logo-share.png" group-title="NEWS WORLD",Bloomberg TV
 https://bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="BloombergTVBrasil.br" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bloomberg_L.P.svg/512px-Bloomberg_L.P.svg.png" group-title="BUSINESS NEWS",Bloomberg TV Brasil
+https://bloomberg.com/media-manifest/streams/us.m3u8
 #EXTINF:-1 tvg-id="CBSNewsBaltimore.us" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",CBS News Baltimore
 https://cbsn-baltimore.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 #EXTINF:-1 tvg-id="CBSNewsBayArea.us" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",CBS News Bay Area

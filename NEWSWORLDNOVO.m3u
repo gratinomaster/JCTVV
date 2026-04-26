@@ -1,0 +1,18 @@
+Vou verificar a lista atual e adicionar Bloomberg TV Brasil. Primeiro, preciso encontrar uma URL de stream funcionando.
+Vou adicionar Bloomberg TV Brasil à lista. Primeiro, vou verificar as configurações existentes no arquivo principal.
+O stream funciona. Agora vou testar o EPG:
+Vou testar o EPG para ver a programação:
+Vou verificar outras fontes de EPG:
+Vou verificar as outras fontes de stream para ver se precisamos de mais alguma coisa, e testar o EPG para todos os canais:
+**Bloomberg TV Brasil adicionado!**
+
+- Adicionei à `lista5_final.m3u`
+- Stream URL funciona (usa o mesmo stream dos EUA)
+- EPG: **NÃO disponível** em nenhuma fonte (BR, global, iptv-epg verificados)
+
+**Sobre EPG:**
+- Fontes de EPG verificadas: BR (epg.pw), BR alt, US, global, iptv-epg
+- Nenhuma tem Bloomberg TV Brasil
+- Não vai precisar de outra fonte - просто não existe EPG para Bloomberg TV Brasil publicamente
+
+Quer que eu adicione mapeamento no Python (corrigir_lista5_completo.py) ou deixar assim na lista?
