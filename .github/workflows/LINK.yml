@@ -31,6 +31,11 @@ jobs:
           pip install selenium crawl4ai playwright requests beautifulsoup4 lxml python-dateutil pytz gdown streamlink yt-dlp
 
       
+      - name: Rodar script Python
+        run: |
+          python3 LINK.py
+          
+          
       - name: Install OpenCode
         run: |
           curl -fsSL https://opencode.ai/install | bash
@@ -51,10 +56,6 @@ jobs:
       - name: Verificar versão do Python
         run: |
           python3 --version
-
-      - name: Rodar script Python
-        run: |
-          python3 LINK.py
 
       - name: Adicionar mudanças ao Git
         run: |
