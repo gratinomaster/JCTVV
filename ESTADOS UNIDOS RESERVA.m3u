@@ -3,45 +3,6 @@
 # 📺 Source: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/Backup.m3u
 #EXTINF:-1  tvg-id="CNN.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58646_dark_360w_270h.png" tvg-name="CNN",CNN
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_1464000.m3u8
-#EXTINF:-1  tvg-id="Crime.+.Investigation.Canada.ca" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/crime-and-investigation-us.png?raw=true" tvg-name="Crime + Investigation",Crime + Investigation
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/2022
-#EXTINF:-1  tvg-id="ESPN.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10179_dark_360w_270h.png" tvg-name="ESPN",ESPN
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/133.m3u8
-#EXTINF:-1  tvg-id="Fox.News.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16374_dark_360w_270h.png" tvg-name="FOX News Channel",FOX News Channel
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/267.m3u8
-#EXTINF:-1  tvg-id="FOX.Soccer.Plus.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Fox_Soccer_Plus_logo.svg/1200px-Fox_Soccer_Plus_logo.svg.png" tvg-name="FOX SOCCER PLUS",FOX SOCCER PLUS
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/265.m3u8
-#EXTINF:-1  tvg-id="Fox.Sports.2.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/fox-sports-2-us.png?raw=true" tvg-name="FS2",FS2
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/264
-#EXTINF:-1  tvg-id="History.Channel.US.-.Eastern.Feed.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/united-states/history-channel-us.png" tvg-name="History",History
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/153.m3u8
-#EXTINF:-1  tvg-id="LOGO.-.East.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s46762_dark_360w_270h.png" tvg-name="Logo",Logo
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/952.m3u8
-#EXTINF:-1  tvg-id="MGM+.Hits.HDTV.(East).(MGM+HTHD).us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mgm-plus-hits-us.png?raw=true" tvg-name="MGM+ HITS",MGM+ HITS
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/388
-#EXTINF:-1  tvg-id="MGM+.Marquee.HDTV.(East).(MGM+MRQ).us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mgm-plus-marquee-us.png?raw=true" tvg-name="MGM+ MARQUEE",MGM+ MARQUEE
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/132
-#EXTINF:-1  tvg-id="MSNBC.USA.us" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16300_dark_360w_270h.png" tvg-name="MSNBC",MSNBC
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/143.m3u8
-#EXTINF:-1  tvg-id="MTV.Classic.-.East.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/mtv-classic-us.png?raw=true" tvg-name="MTV Classic",MTV Classic
-http://cdn1host.online:2999/live/kratorius/opLcbhlXaT/1194.m3u8
-#EXTINF:-1  tvg-id="PixL.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/pixl-us.png?raw=true" tvg-name="Pixl",Pixl
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/1665
-#EXTINF:-1  tvg-id="POP.-.East.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/pop-us.png" tvg-name="PopTV",PopTV
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/226
-#EXTINF:-1  tvg-id="SEC.Network.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sec-network-us.png?raw=true" tvg-name="SEC Network",SEC Network
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/295
-#EXTINF:-1  tvg-id="Sony.Movies.us" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/sony-movie-channel-hz-us.png?raw=true" tvg-name="Sony Movie Channel",Sony Movie Channel
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/1217
-#EXTINF:-1  tvg-id="plex.tv.Stadium.plex" tvg-logo="https://github.com/tv-logo/tv-logos/blob/main/countries/united-states/stadium-us.png?raw=true" tvg-name="Stadium",Stadium
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/1466
-# ---------------Backup Channels----------------
-#EXTINF:-1  tvg-logo="https://i.ibb.co/pBk4JHgD/Family-Guy-Logo-svg.png",Family Guy 24/7
-http://user.scalecdn.co:8080/live/26725074/92867131/50187.ts
-#EXTINF:-1 ,Adult Swim (East)
-https://turnerlive.warnermediacdn.com/hls/live/2023183/aseast/noslate/VIDEO_1_5128000.m3u8
-#EXTINF:-1 ,Adult Swim (West)
-https://turnerlive.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_1_5128000.m3u8
 #EXTINF:-1 ,CNN
 https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1  tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/tbs-us.png",TBS (East)
