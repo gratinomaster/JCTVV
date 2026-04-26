@@ -1,3 +1,1 @@
-acesse ESTADOS UNIDOS RESERVA.m3u
-exclua os canais offline
-remova #extinf que não tenham links dos canais
+corrija o lista1.m3u para que use url-tvg https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml corrigindo tvg-ids
