@@ -26,6 +26,7 @@ jobs:
           cat << 'EOF' > prompt.txt
           acesse ESTADOS UNIDOS RESERVA.m3u
           exclua os canais offline
+          remova #extinf que não tenham links dos canais
           EOF
 
       - name: Run OpenCode
