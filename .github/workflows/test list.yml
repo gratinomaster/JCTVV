@@ -24,7 +24,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          acesse cuba.m3u
+          acesse NEWSWORLDNOVOS.m3u
           exclua os canais offline
           remova #extinf que não tenham links dos canais
           EOF
