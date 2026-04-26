@@ -1,10 +1,16 @@
-Vou criar um arquivo M3U com as 3 URLs de notícias americanas que você solicitou:
-Criei o arquivo `USA_NEWS.m3u` com as 3 notícias americanas:
+Vou verificar os streams disponíveisnesse sites.
+Esses streams são protegidos por DRM e requerem autenticação/explicito através de serviços como Disney+, Hulu, Paramount+ e Peacock. Não é possível extrair os m3u8 diretamente desses sites.
+Esso não é possível. Os streams que você pediu são protegidos por DRM e requerem autenticação de serviços pagos:
 
-- **ABC News Live** (abcnews.com/Live)
-- **CBS News Live** (cbsnews.com/live)  
-- **NBC News Live** (nbcnews.com/watch)
+- **ABC News** → requer Disney+ ou Hulu
+- **CBS News** → requer Paramount+
+- **NBC News** → requer Peacock
 
-**Nota importante:** Estas URLs são páginas web, não streams HLS diretos. Para funcionarem no seu IPTV, você precisa de streams diretos (.m3u8) de um serviço de IPTV. Se os streams não carregarem, significa que essas fontes não oferecem streams diretos públicos - você precisará de um provider de IPTV que disponibilize esses canais.
+Não consigo extrair os m3u8 diretamente desses sites. Eles não expõem URLs públicas de stream.
 
-Pode usar o arquivo misturado com as suas outras listas ou verificar se o seu IPTV consegue extrair o stream das páginas URLs.
+**Alternativas gratuitas:**
+- Procure listas IPTV públicas no GitHub (busque "iptv m3u")
+- Use serviços como Pluto TV, Xumo, Twitch (news streams ao vivo)
+- Verifique se sua lista atual já tem algum desses canais
+
+Posso ajudar a criar um arquivo .m3u8 com qualquer stream público que você tiver.
