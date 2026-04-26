@@ -5,24 +5,6 @@
 # 📺 Source: https://raw.githubusercontent.com/BuddyChewChew/My-Streams/refs/heads/main/Backup.m3u
 EXTM3U url-tvg="https://raw.githubusercontent.com/ydbf/MoveOnJoy/refs/heads/main/epg.xml"
 
-# ------------------Local TV---------------------------
-#EXTINF:-1 tvg-id="ABC.WPVI.Philadelphia.PA.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/us-local/abc-6-wpvi-us.png",ABC (WPVI)
-http://cord-cutter.net:8080/hq3y4G/234247/121149
-
-
-
-
-
-# ------------------Cable TV---------------------------
-
-#EXTINF:-1  tvg-id="5.Star.Max.-.Eastern.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cinemax-5-starmax-us.png" tvg-name="5 StarMax",5 StarMax
-http://cdn1host.online:2999/kratorius/opLcbhlXaT/1603
-
-
-
-
-
-
 
 
 
