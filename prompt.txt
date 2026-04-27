@@ -1,4 +1,8 @@
-acesse lista5.m3u
-teste todos os canais dessa lista e exclua canais que não estejam funcionando
-sobescreva o lista5.m3u
-EOF      
+acesse NEWSWORLDNOVOS.m3u
+adcione 1 canal do mesmo estilo dos que já estão na lista
+adcione tvg-logo em canais que estejam sem ou invalidos
+exclua os canais offline
+remova #extinf que não tenham links dos canais
+teste os links para não me deixar usar links com virus
+corrija caso o epg não funcione nos canais corretamente
+veja se todos os canais estão com tvg-id funcionando com o epg que está na lista
