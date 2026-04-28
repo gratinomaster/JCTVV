@@ -1,46 +1,77 @@
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml"
-
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BBC_World_News_2022.svg/512px-BBC_World_News_2022.svg.png" group-title="NEWS WORLD",BBC News
-https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
-
-#EXTINF:-1 tvg-id="CNNInternational.us" tvg-name="CNN International" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/CNN.svg/512px-CNN.svg.png" group-title="NEWS WORLD",CNN International
-https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
-
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="Fox News Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png" group-title="NEWS WORLD",Fox News Channel
-http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
-
-#EXTINF:-1 tvg-id="France24English.fr" tvg-name="France 24 English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/France_24.png" group-title="NEWS WORLD",France 24 English
-https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
-
-#EXTINF:-1 tvg-id="ABCNewsLive8.us" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c3/ABC_News_Live_Logo.png" group-title="NEWS WORLD",ABC News Live
-https://abcnews-streams.akamaized.net/hls/live/2023567/abcnewshudson8/master_4000.m3u8
-
-#EXTINF:-1 tvg-id="CBSNews247.us" tvg-name="CBS News 24/7" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cbs-news-us.png" group-title="NEWS WORLD",CBS News 24/7
-https://news20e7hhcb.airspace-cdn.cbsivideo.com/index.m3u8
-
-#EXTINF:-1 tvg-id="NBCNewsNow.us" tvg-name="NBC News NOW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nbc-news-now-uk.png" group-title="NEWS WORLD",NBC News Now
-https://xumo-drct-nbcnn-ir8ze.fast.nbcuni.com/live/master.m3u8
-
-#EXTINF:-1 tvg-id="BloombergTV.us" tvg-name="Bloomberg TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Bloomberg_logo.svg/1200px-Bloomberg_logo.svg.png" group-title="NEWS WORLD",Bloomberg TV
-https://www.bloomberg.com/media-manifest/streams/eu.m3u8
-
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Al_Jazeera_English_Logo.svg/512px-Al_Jazeera_English_Logo.svg.png" group-title="NEWS WORLD",Al Jazeera English
-https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
-
-#EXTINF:-1 tvg-id="SkyNews.uk" tvg-name="Sky News" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-news-uk.png" group-title="NEWS WORLD",Sky News
-https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Live/channel(skynews)/index_1080-30.m3u8
-
-#EXTINF:-1 tvg-id="Newsmax.us" tvg-name="Newsmax" tvg-logo="https://www.lyngsat.com/logo/tv/nn/newsmax-2-us-ug.png" group-title="NEWS WORLD",Newsmax
-https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
-
-#EXTINF:-1 tvg-id="Meganoticias.cl" tvg-name="Meganoticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Meganoticias2019.png" group-title="NEWS WORLD",Meganoticias [CL]
-https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="T13.cl" tvg-name="T13 - Teletrece" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Logotipo_de_Teletrece.svg" group-title="NEWS WORLD",T13 - Teletrece [CL]
-https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CHVNoticias.cl" tvg-name="CHV Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c7/CHV_Noticias_2018.png" group-title="NEWS WORLD",CHV Noticias [CL]
-https://mdstrm.com/live-stream-playlist/6491ced935a5833c47dd7f41.m3u8
-
-#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/Euronews_2022.svg" group-title="NEWS WORLD",Euronews English
-https://aegis-cloudfront-1.tubi.video/b1c4d439-03a5-4c40-ae9d-90a183e010c9/euronews-en.m3u8
+#EXTM3U x-tvg-url="https://www.davidefulgione.it/epg-it.xml,https://tvit.leicaflorianrobert.dev/epg/list.xml"
+#EXTINF:-1 tvg-id="real-time" tvg-name="Real Time" tvg-logo="https://api.superguidatv.it/v1/channels/255/logo?width=120&theme=dark" group-title="Italy",Real Time
+https://d3562mgijzx0zq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-kizqtzpvvl3i8/Realtime_IT.m3u8
+#EXTINF:-1 tvg-id="rai-1" tvg-name="Rai 1" tvg-logo="https://api.superguidatv.it/v1/channels/217/logo?width=120&theme=dark" group-title="Italy",Rai 1
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="rai-2" tvg-name="Rai 2" tvg-logo="https://api.superguidatv.it/v1/channels/218/logo?width=120&theme=dark" group-title="Italy",Rai 2
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="rai-3" tvg-name="Rai 3" tvg-logo="https://api.superguidatv.it/v1/channels/219/logo?width=120&theme=dark" group-title="Italy",Rai 3
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="rete-4" tvg-name="Rete 4" tvg-logo="https://api.superguidatv.it/v1/channels/189/logo?width=120&theme=dark" group-title="Italy",Rete 4
+https://live03-seg.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest_hd.mpd
+#EXTINF:-1 tvg-id="canale-5" tvg-name="Canale 5" tvg-logo="https://api.superguidatv.it/v1/channels/187/logo?width=120&theme=dark" group-title="Italy",Canale 5
+https://live03-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest_hd.mpd
+#EXTINF:-1 tvg-id="italia-1" tvg-name="Italia 1" tvg-logo="https://api.superguidatv.it/v1/channels/188/logo?width=120&theme=dark" group-title="Italy",Italia 1
+https://live02-seg.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8
+#EXTINF:-1 tvg-id="la7" tvg-name="LA7" tvg-logo="https://api.superguidatv.it/v1/channels/253/logo?width=120&theme=dark" group-title="Italy",LA7
+https://jmp2.uk/stvp-ITBD1500002NL
+#EXTINF:-1 tvg-id="tv8" tvg-name="TV8" tvg-logo="https://api.superguidatv.it/v1/channels/237/logo?width=120&theme=dark" group-title="Italy",TV8
+https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+#EXTINF:-1 tvg-id="nove" tvg-name="NOVE" tvg-logo="https://api.superguidatv.it/v1/channels/238/logo?width=120&theme=dark" group-title="Italy",NOVE
+https://d31mw7o1gs0dap.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-y5pbi2sq9r609/NOVE_IT.m3u8
+#EXTINF:-1 tvg-id="20" tvg-name="20 Mediaset" tvg-logo="https://api.superguidatv.it/v1/channels/443/logo?width=120&theme=dark" group-title="Italy",20 Mediaset
+https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="rai-4" tvg-name="Rai 4" tvg-logo="https://api.superguidatv.it/v1/channels/220/logo?width=120&theme=dark" group-title="Italy",Rai 4
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="iris" tvg-name="Iris" tvg-logo="https://api.superguidatv.it/v1/channels/192/logo?width=120&theme=dark" group-title="Italy",Iris
+https://live03-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="rai-5" tvg-name="Rai 5" tvg-logo="https://api.superguidatv.it/v1/channels/221/logo?width=120&theme=dark" group-title="Italy",Rai 5
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="rai-movie" tvg-name="Rai Movie" tvg-logo="https://api.superguidatv.it/v1/channels/229/logo?width=120&theme=dark" group-title="Italy",Rai Movie
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=raiplayappletv
+#EXTINF:-1 tvg-id="cielo" tvg-name="Cielo" tvg-logo="https://api.superguidatv.it/v1/channels/239/logo?width=120&theme=dark" group-title="Italy",Cielo
+https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
+#EXTINF:-1 tvg-id="twenty-seven" tvg-name="Twenty Seven" tvg-logo="https://api.superguidatv.it/v1/channels/601/logo?width=120&theme=dark" group-title="Italy",Twenty Seven
+https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="la7d" tvg-name="LA7d" tvg-logo="https://api.superguidatv.it/v1/channels/254/logo?width=120&theme=dark" group-title="Italy",LA7d
+https://viamotionhsi.netplus.ch/live/eds/la7d/browser-HLS8/la7d.m3u8
+#EXTINF:-1 tvg-id="la-5" tvg-name="La 5" tvg-logo="https://api.superguidatv.it/v1/channels/190/logo?width=120&theme=dark" group-title="Italy",La 5
+https://live03-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="cine34" tvg-name="Cine34" tvg-logo="https://api.superguidatv.it/v1/channels/574/logo?width=120&theme=dark" group-title="Italy",Cine34
+https://live03-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="focus" tvg-name="FOCUS" tvg-logo="https://api.superguidatv.it/v1/channels/249/logo?width=120&theme=dark" group-title="Italy",FOCUS
+https://live03-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="warner-tv" tvg-name="Warner TV" tvg-logo="https://api.superguidatv.it/v1/channels/1344181813/logo?width=120&theme=dark" group-title="Italy",Warner TV
+https://d24aqelmrau4kx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-l1oas691aj7p2/WBTV_IT.m3u8
+#EXTINF:-1 tvg-id="giallo" tvg-name="Giallo" tvg-logo="https://api.superguidatv.it/v1/channels/244/logo?width=120&theme=dark" group-title="Italy",Giallo
+https://d9fqo6nfqlv2h.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ulukbrgm1n3yb/Giallo_IT.m3u8
+#EXTINF:-1 tvg-id="top-crime" tvg-name="Top Crime" tvg-logo="https://api.superguidatv.it/v1/channels/193/logo?width=120&theme=dark" group-title="Italy",Top Crime
+https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="boing" tvg-name="Boing" tvg-logo="https://api.superguidatv.it/v1/channels/195/logo?width=120&theme=dark" group-title="Italy",Boing
+https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="k2" tvg-name="K2" tvg-logo="https://api.superguidatv.it/v1/channels/245/logo?width=120&theme=dark" group-title="Italy",K2
+https://d1pmpe0hs35ka5.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-39hsskpppgf72/K2_IT.m3u8
+#EXTINF:-1 tvg-id="frisbee" tvg-name="Frisbee" tvg-logo="https://api.superguidatv.it/v1/channels/246/logo?width=120&theme=dark" group-title="Italy",Frisbee
+https://d6m7lubks416z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-zmbstsedxme9s/Frisbee_IT.m3u8
+#EXTINF:-1 tvg-id="cartoonito" tvg-name="Cartoonito" tvg-logo="https://api.superguidatv.it/v1/channels/196/logo?width=120&theme=dark" group-title="Italy",Cartoonito
+https://live03-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="italia-2" tvg-name="Italia 2" tvg-logo="https://api.superguidatv.it/v1/channels/191/logo?width=120&theme=dark" group-title="Italy",Italia 2
+https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="tgcom24" tvg-name="TGCOM 24" tvg-logo="https://api.superguidatv.it/v1/channels/197/logo?width=120&theme=dark" group-title="Italy",TGCOM 24
+https://live03-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="dmax" tvg-name="DMAX" tvg-logo="https://api.superguidatv.it/v1/channels/256/logo?width=120&theme=dark" group-title="Italy",DMAX
+https://d2j2nqgg7bzth.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-02k1gv1j0ufwn/DMAX_IT.m3u8
+#EXTINF:-1 tvg-id="mediaset-extra" tvg-name="Mediaset Extra" tvg-logo="https://api.superguidatv.it/v1/channels/194/logo?width=120&theme=dark" group-title="Italy",Mediaset Extra
+https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="radio-105" tvg-name="Radio 105" tvg-logo="https://api.superguidatv.it/v1/channels/460/logo?width=120&theme=dark" group-title="Italy",Radio 105
+https://live03-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="r101" tvg-name="R101" tvg-logo="https://api.superguidatv.it/v1/channels/463/logo?width=120&theme=dark" group-title="Italy",R101
+https://live03-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/manifest.mpd
+#EXTINF:-1 tvg-id="tv2000" tvg-name="TV2000" tvg-logo="https://api.superguidatv.it/v1/channels/2000/logo?width=120&theme=dark" group-title="Italy",TV2000
+https://hls-live-tv2000.akamaized.net/hls/live/2028510/tv2000/master.m3u8
+#EXTINF:-1 tvg-id="qvc" tvg-name="QVC" tvg-logo="https://api.superguidatv.it/v1/channels/2001/logo?width=120&theme=dark" group-title="Italy",QVC
+https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
+#EXTINF:-1 tvg-id="radio-italia-tv" tvg-name="RadioItaliaTV" tvg-logo="https://api.superguidatv.it/v1/channels/2002/logo?width=120&theme=dark" group-title="Italy",RadioItaliaTV
+https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8
+#EXTINF:-1 tvg-id="padre-pio-tv" tvg-name="Padre Pio TV" tvg-logo="https://api.superguidatv.it/v1/channels/2003/logo?width=120&theme=dark" group-title="Italy",Padre Pio TV
+https://600f07e114306.streamlock.net/PadrePioTV/livestream/playlist.m3u8
