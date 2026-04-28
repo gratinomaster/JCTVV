@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml"
+#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml,https://raw.githubusercontent.com/Puticastillo/EPGCL/main/Publico/guia-de-programacion.xml"
 
 #EXTINF:-1 tvg-id="DWEnglish.de" tvg-name="DW News English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DW_Logo.svg/512px-DW_Logo.svg.png" group-title="NEWS WORLD",DW News English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
@@ -45,3 +45,5 @@ https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/Euronews_2022.svg" group-title="NEWS WORLD",Euronews English
 https://aegis-cloudfront-1.tubi.video/b1c4d439-03a5-4c40-ae9d-90a183e010c9/euronews-en.m3u8
 
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-name="TeleSUR English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Telesur_english_logo.svg/512px-Telesur_english_logo.svg.png" group-title="NEWS WORLD",TeleSUR English
+https://mblenmain01.telesur.ultrabase.net/mblivev3/hd/playlist.m3u8
