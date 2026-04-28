@@ -41,3 +41,6 @@ https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd
 
 #EXTINF:-1 tvg-id="CHVNoticias.cl" tvg-name="CHV Noticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c7/CHV_Noticias_2018.png" group-title="NEWS WORLD",CHV Noticias [CL]
 https://mdstrm.com/live-stream-playlist/6491ced935a5833c47dd7f41.m3u8
+
+#EXTINF:-1 tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/Euronews_2022.svg" group-title="NEWS WORLD",Euronews English
+https://aegis-cloudfront-1.tubi.video/b1c4d439-03a5-4c40-ae9d-90a183e010c9/euronews-en.m3u8
