@@ -3,13 +3,13 @@
 https://tvpass.org/live/AEEast/sd
 #EXTINF:-1 tvg-id="I265.51529.schedulesdirect.org" tvg-name="A&E US Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s51529_dark_360w_270h.png",A&E US Eastern Feed HD
 https://tvpass.org/live/AEEast/hd
-#EXTINF:-1 tvg-id="" tvg-name="ABC (KABC) Los Angeles SD" tvg-logo="",ABC (KABC) Los Angeles SD
+#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles SD
 https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
-#EXTINF:-1 tvg-id="" tvg-name="ABC (KABC) Los Angeles HD" tvg-logo="",ABC (KABC) Los Angeles HD
+#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles HD
 https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
-#EXTINF:-1 tvg-id="" tvg-name="ABC (WABC) New York, NY SD" tvg-logo="",ABC (WABC) New York, NY SD
+#EXTINF:-1 tvg-id="I10007.11496.schedulesdirect.org" tvg-name="ABC (WABC) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11496_dark_360w_270h.png",ABC (WABC) New York, NY SD
 https://tvpass.org/live/WABCDT1/sd
-#EXTINF:-1 tvg-id="" tvg-name="ABC (WABC) New York, NY HD" tvg-logo="",ABC (WABC) New York, NY HD
+#EXTINF:-1 tvg-id="I10007.11496.schedulesdirect.org" tvg-name="ABC (WABC) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11496_dark_360w_270h.png",ABC (WABC) New York, NY HD
 https://tvpass.org/live/WABCDT1/hd
 #EXTINF:-1 tvg-id="I612.111905.schedulesdirect.org" tvg-name="ACC Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s111905_dark_360w_270h.png",ACC Network SD
 https://tvpass.org/live/ACCNetwork/sd
@@ -75,13 +75,13 @@ https://tvpass.org/live/CSPAN2/hd
 https://tvpass.org/live/CartoonNetworkEast/sd
 #EXTINF:-1 tvg-id="I296.12131.schedulesdirect.org" tvg-name="Cartoon Network USA Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12131_dark_360w_270h.png",Cartoon Network USA Eastern Feed HD
 https://tvpass.org/live/CartoonNetworkEast/hd
-#EXTINF:-1 tvg-id="" tvg-name="CBS (KCBS) Los Angeles SD" tvg-logo="",CBS (KCBS) Los Angeles SD
+#EXTINF:-1 tvg-id="I10007.32528.schedulesdirect.org" tvg-name="CBS (KCBS) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32528_dark_360w_270h.png",CBS (KCBS) Los Angeles SD
 https://tvpass.org/live/cbs-kcbs-los-angeles-ca/sd
-#EXTINF:-1 tvg-id="" tvg-name="CBS (KCBS) Los Angeles HD" tvg-logo="",CBS (KCBS) Los Angeles HD
+#EXTINF:-1 tvg-id="I10007.32528.schedulesdirect.org" tvg-name="CBS (KCBS) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32528_dark_360w_270h.png",CBS (KCBS) Los Angeles HD
 https://tvpass.org/live/cbs-kcbs-los-angeles-ca/hd
-#EXTINF:-1 tvg-id="" tvg-name="CBS (WCBS) New York, NY SD" tvg-logo="",CBS (WCBS) New York, NY SD
+#EXTINF:-1 tvg-id="I10007.32527.schedulesdirect.org" tvg-name="CBS (WCBS) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32527_dark_360w_270h.png",CBS (WCBS) New York, NY SD
 https://tvpass.org/live/WCBSDT1/sd
-#EXTINF:-1 tvg-id="" tvg-name="CBS (WCBS) New York, NY HD" tvg-logo="",CBS (WCBS) New York, NY HD
+#EXTINF:-1 tvg-id="I10007.32527.schedulesdirect.org" tvg-name="CBS (WCBS) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32527_dark_360w_270h.png",CBS (WCBS) New York, NY HD
 https://tvpass.org/live/WCBSDT1/hd
 #EXTINF:-1 tvg-id="I221.59250.schedulesdirect.org" tvg-name="CBS Sports Network USA SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59250_dark_360w_270h.png",CBS Sports Network USA SD
 https://tvpass.org/live/CBSSportsNetworkUSA/sd
@@ -115,13 +115,13 @@ https://tvpass.org/live/ComedyCentralEast/hd
 https://tvpass.org/live/CrimePlusInvestigation/sd
 #EXTINF:-1 tvg-id="I284.57390.schedulesdirect.org" tvg-name="Crime & Investigation Network USA HD HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57390_dark_360w_270h.png",Crime & Investigation Network USA HD HD
 https://tvpass.org/live/CrimePlusInvestigation/hd
-#EXTINF:-1 tvg-id="" tvg-name="CW (KFMB-TV2) San Diego SD" tvg-logo="",CW (KFMB-TV2) San Diego SD
+#EXTINF:-1 tvg-id="I10007.14884.schedulesdirect.org" tvg-name="CW (KFMB-TV2) San Diego SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14884_dark_360w_270h.png",CW (KFMB-TV2) San Diego SD
 https://tvpass.org/live/cw-kfmbtv2-san-diego-ca/sd
-#EXTINF:-1 tvg-id="" tvg-name="CW (KFMB-TV2) San Diego HD" tvg-logo="",CW (KFMB-TV2) San Diego HD
+#EXTINF:-1 tvg-id="I10007.14884.schedulesdirect.org" tvg-name="CW (KFMB-TV2) San Diego HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14884_dark_360w_270h.png",CW (KFMB-TV2) San Diego HD
 https://tvpass.org/live/cw-kfmbtv2-san-diego-ca/hd
-#EXTINF:-1 tvg-id="" tvg-name="CW (WDCW) District of Columbia SD" tvg-logo="",CW (WDCW) District of Columbia SD
+#EXTINF:-1 tvg-id="I10007.72525.schedulesdirect.org" tvg-name="CW (WDCW) District of Columbia SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s72525_dark_360w_270h.png",CW (WDCW) District of Columbia SD
 https://tvpass.org/live/cw-wdcw-district-of-columbia/sd
-#EXTINF:-1 tvg-id="" tvg-name="CW (WDCW) District of Columbia HD" tvg-logo="",CW (WDCW) District of Columbia HD
+#EXTINF:-1 tvg-id="I10007.72525.schedulesdirect.org" tvg-name="CW (WDCW) District of Columbia HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s72525_dark_360w_270h.png",CW (WDCW) District of Columbia HD
 https://tvpass.org/live/cw-wdcw-district-of-columbia/hd
 #EXTINF:-1 tvg-id="I286.60468.schedulesdirect.org" tvg-name="Destination America SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60468_dark_360w_270h.png",Destination America SD
 https://tvpass.org/live/DestinationAmerica/sd
@@ -255,13 +255,13 @@ https://tvpass.org/live/fanduel-sports-tennessee-east/hd
 https://tvpass.org/live/FoodNetworkEast/sd
 #EXTINF:-1 tvg-id="I232.68065.schedulesdirect.org" tvg-name="Food Network USA Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68065_dark_360w_270h.png",Food Network USA Eastern Feed HD
 https://tvpass.org/live/FoodNetworkEast/hd
-#EXTINF:-1 tvg-id="" tvg-name="FOX (KTTV) Los Angeles SD" tvg-logo="",FOX (KTTV) Los Angeles SD
+#EXTINF:-1 tvg-id="I10007.32552.schedulesdirect.org" tvg-name="FOX (KTTV) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32552_dark_360w_270h.png",FOX (KTTV) Los Angeles SD
 https://tvpass.org/live/fox-kttv-los-angeles-ca/sd
-#EXTINF:-1 tvg-id="" tvg-name="FOX (KTTV) Los Angeles HD" tvg-logo="",FOX (KTTV) Los Angeles HD
+#EXTINF:-1 tvg-id="I10007.32552.schedulesdirect.org" tvg-name="FOX (KTTV) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32552_dark_360w_270h.png",FOX (KTTV) Los Angeles HD
 https://tvpass.org/live/fox-kttv-los-angeles-ca/hd
-#EXTINF:-1 tvg-id="" tvg-name="FOX (WNYW) New York, NY SD" tvg-logo="",FOX (WNYW) New York, NY SD
+#EXTINF:-1 tvg-id="I10007.32546.schedulesdirect.org" tvg-name="FOX (WNYW) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32546_dark_360w_270h.png",FOX (WNYW) New York, NY SD
 https://tvpass.org/live/WNYWDT1/sd
-#EXTINF:-1 tvg-id="" tvg-name="FOX (WNYW) New York, NY HD" tvg-logo="",FOX (WNYW) New York, NY HD
+#EXTINF:-1 tvg-id="I10007.32546.schedulesdirect.org" tvg-name="FOX (WNYW) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32546_dark_360w_270h.png",FOX (WNYW) New York, NY HD
 https://tvpass.org/live/WNYWDT1/hd
 #EXTINF:-1 tvg-id="I359.58718.schedulesdirect.org" tvg-name="Fox Business SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58718_dark_360w_270h.png",Fox Business SD
 https://tvpass.org/live/FoxBusiness/sd
@@ -451,13 +451,13 @@ https://tvpass.org/live/NationalGeographicWildEast/hd
 https://tvpass.org/live/NBATV/sd
 #EXTINF:-1 tvg-id="I216.45526.schedulesdirect.org" tvg-name="NBA TV USA HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45526_dark_360w_270h.png",NBA TV USA HD
 https://tvpass.org/live/NBATV/hd
-#EXTINF:-1 tvg-id="" tvg-name="NBC (KNBC) Los Angeles SD" tvg-logo="",NBC (KNBC) Los Angeles SD
+#EXTINF:-1 tvg-id="I10007.32531.schedulesdirect.org" tvg-name="NBC (KNBC) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32531_dark_360w_270h.png",NBC (KNBC) Los Angeles SD
 https://tvpass.org/live/nbc-knbc-los-angeles-ca/sd
-#EXTINF:-1 tvg-id="" tvg-name="NBC (KNBC) Los Angeles HD" tvg-logo="",NBC (KNBC) Los Angeles HD
+#EXTINF:-1 tvg-id="I10007.32531.schedulesdirect.org" tvg-name="NBC (KNBC) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32531_dark_360w_270h.png",NBC (KNBC) Los Angeles HD
 https://tvpass.org/live/nbc-knbc-los-angeles-ca/hd
-#EXTINF:-1 tvg-id="" tvg-name="NBC (WNBC) New York, NY SD" tvg-logo="",NBC (WNBC) New York, NY SD
+#EXTINF:-1 tvg-id="I10007.32530.schedulesdirect.org" tvg-name="NBC (WNBC) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32530_dark_360w_270h.png",NBC (WNBC) New York, NY SD
 https://tvpass.org/live/WNBCDT1/sd
-#EXTINF:-1 tvg-id="" tvg-name="NBC (WNBC) New York, NY HD" tvg-logo="",NBC (WNBC) New York, NY HD
+#EXTINF:-1 tvg-id="I10007.32530.schedulesdirect.org" tvg-name="NBC (WNBC) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32530_dark_360w_270h.png",NBC (WNBC) New York, NY HD
 https://tvpass.org/live/WNBCDT1/hd
 #EXTINF:-1 tvg-id="I437.35035.gracenote.com" tvg-name="NBC Sports Bay Area SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s35035_dark_360w_270h.png",NBC Sports Bay Area SD
 https://tvpass.org/live/nbc-sports-bay-area/sd
@@ -519,9 +519,9 @@ https://tvpass.org/live/OutdoorChannel/hd
 https://tvpass.org/live/OxygenEast/sd
 #EXTINF:-1 tvg-id="I251.70522.schedulesdirect.org" tvg-name="Oxygen Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70522_dark_360w_270h.png",Oxygen Eastern Feed HD
 https://tvpass.org/live/OxygenEast/hd
-#EXTINF:-1 tvg-id="" tvg-name="PBS (WNET) New York, NY SD" tvg-logo="",PBS (WNET) New York, NY SD
+#EXTINF:-1 tvg-id="I10007.11478.schedulesdirect.org" tvg-name="PBS (WNET) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11478_dark_360w_270h.png",PBS (WNET) New York, NY SD
 https://tvpass.org/live/WNET/sd
-#EXTINF:-1 tvg-id="" tvg-name="PBS (WNET) New York, NY HD" tvg-logo="",PBS (WNET) New York, NY HD
+#EXTINF:-1 tvg-id="I10007.11478.schedulesdirect.org" tvg-name="PBS (WNET) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11478_dark_360w_270h.png",PBS (WNET) New York, NY HD
 https://tvpass.org/live/WNET/hd
 #EXTINF:-1 tvg-id="I238.68385.schedulesdirect.org" tvg-name="ReelzChannel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002HWGQ0.png_dark_360w_270h.png",ReelzChannel SD
 https://tvpass.org/live/Reelz/sd
@@ -699,9 +699,9 @@ https://tvpass.org/live/VICETV/hd
 https://tvpass.org/live/WeTVEast/sd
 #EXTINF:-1 tvg-id="I260.16409.schedulesdirect.org" tvg-name="WE (Women's Entertainment) Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16409_dark_360w_270h.png",WE (Women's Entertainment) Eastern HD
 https://tvpass.org/live/WeTVEast/hd
-#EXTINF:-1 tvg-id="" tvg-name="WPIX New York (SUPERSTATION) SD" tvg-logo="",WPIX New York (SUPERSTATION) SD
+#EXTINF:-1 tvg-id="I10007.14158.schedulesdirect.org" tvg-name="WPIX New York (SUPERSTATION) SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14158_dark_360w_270h.png",WPIX New York (SUPERSTATION) SD
 https://tvpass.org/live/WPIX/sd
-#EXTINF:-1 tvg-id="" tvg-name="WPIX New York (SUPERSTATION) HD" tvg-logo="",WPIX New York (SUPERSTATION) HD
+#EXTINF:-1 tvg-id="I10007.14158.schedulesdirect.org" tvg-name="WPIX New York (SUPERSTATION) HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14158_dark_360w_270h.png",WPIX New York (SUPERSTATION) HD
 https://tvpass.org/live/WPIX/hd
 #EXTINF:-1 tvg-id="I1702.46275.gracenote.com" tvg-name="Yes Network SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/46275/s46275_ll_h15_aa.png",Yes Network SD
 https://tvpass.org/live/yes-network/sd
@@ -711,7 +711,11 @@ https://tvpass.org/live/yes-network/hd
 https://tvpass.org/live/paramount-network-us/sd
 #EXTINF:-1 tvg-id="I241.59186.schedulesdirect.org" tvg-name="Paramount Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59186_dark_360w_270h.png",Paramount Network HD
 https://tvpass.org/live/paramount-network-us/hd
-#EXTINF:-1 tvg-id="I729.60855.schedulesdirect.org" tvg-name="MegaNoticias" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16292_dark_360w_270h.png",MegaNoticias
+#EXTINF:-1 tvg-id="I570.58532.schedulesdirect.org" tvg-name="Smithsonian Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58532_dark_360w_270h.png",Smithsonian Channel SD
+https://tvpass.org/live/Smithsonian/sd
+#EXTINF:-1 tvg-id="I570.58532.schedulesdirect.org" tvg-name="Smithsonian Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58532_dark_360w_270h.png",Smithsonian Channel HD
+https://tvpass.org/live/Smithsonian/hd
+#EXTINF:-1 tvg-id="I468.43099.schedulesdirect.org" tvg-name="MegaNoticias" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s43099_dark_360w_270h.png",MegaNoticias
 https://tvpass.org/live/meganoticias/hd
 #EXTINF:-1 tvg-id="" tvg-name="NewsNation SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NewsNation_logo.svg/320px-NewsNation_logo.svg.png",NewsNation SD
 https://tvpass.org/live/NewsNation/sd
