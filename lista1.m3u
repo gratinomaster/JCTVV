@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="GLOBOEPG.xml.gz"
+#EXTM3U url-tvg="https://github.com/gratinomaster/JCTV/raw/refs/heads/main/GLOBOEPG.xml.gz"
 #EXTINF:-1 tvg-id="globo_sp" tvg-name="EPTV Campinas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/EPTV_2021.png/180px-EPTV_2021.png" group-title="Canais | Globo",EPTV Campinas
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40248.m3u8
 #EXTINF:-1 tvg-id="globo_sp" tvg-name="EPTV Campinas FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/EPTV_2021.png/180px-EPTV_2021.png" group-title="Canais | Globo",EPTV Campinas FHD
