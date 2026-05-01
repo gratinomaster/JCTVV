@@ -2,7 +2,7 @@ name: LINK
 
 on:
   schedule:
-    - cron: '*/45 * * * *'
+    - cron: '*/35 * * * *'
   pull_request:
     branches:
       - main
