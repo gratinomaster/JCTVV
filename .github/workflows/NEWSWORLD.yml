@@ -1,4 +1,4 @@
-name: Remove XML Files
+name: NEWSWORLD
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: "0 */8 * * *"
 
 jobs:
-  clean-xml:
+  opencode:
     runs-on: ubuntu-latest
 
     permissions:
@@ -16,17 +16,47 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Remover arquivos XML
+      - name: Install OpenCode
         run: |
-          echo "Removendo todos os arquivos .xml..."
-          find . -type f -name "*.xml" -delete
+          curl -fsSL https://opencode.ai/install | bash
+          echo "$HOME/.opencode/bin" >> $GITHUB_PATH
 
-      - name: Commit alterações
+      - name: Create prompt
+        run: |
+          cat << 'EOF' > prompt.txt
+          acesse regionaisglobo.m3u
+          adcione 1 canal do mesmo estilo dos que já estão na lista
+          adcione tvg-logo em canais que estejam sem ou invalidos
+          exclua os canais offline
+          remova #extinf que não tenham links dos canais
+          teste os links para não me deixar usar links com virus
+          corrija caso o epg não funcione nos canais corretamente
+          veja se todos os canais estão com tvg-id funcionando com o epg que está na lista
+          não salve o .py que for gerado
+          EOF
+
+      - name: Run OpenCode
+        run: |
+          echo "Executando OpenCode..."
+          opencode run "$(cat prompt.txt)"
+
+      - name: Check generated files
+        run: |
+          echo "Arquivos no diretório:"
+          ls -la
+
+          if [ -f lista5.m3u ]; then
+            echo "Playlist criada:"
+            cat lista5.m3u
+          else
+            echo "lista5.m3u não foi criado"
+          fi
+
+      - name: Commit files
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
           git add . || true
-          git commit -m "Remoção automática de arquivos XML" || echo "Nada para commit"
+          git commit -m "Atualização automática da playlist" || echo "Nada para commit"
           git push origin HEAD || echo "Falha ao dar push"
-          
