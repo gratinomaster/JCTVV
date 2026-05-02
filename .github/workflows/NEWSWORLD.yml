@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 */8 * * *"
 
+concurrency:
+  group: newsworld-playlist
+  cancel-in-progress: false
+
 jobs:
   opencode:
     runs-on: ubuntu-latest
@@ -55,11 +59,29 @@ jobs:
             echo "lista5.m3u não foi criado"
           fi
 
-      - name: Commit files
+      - name: Commit and Push safely
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
           git add . || true
           git commit -m "Atualização automática da playlist" || echo "Nada para commit"
-          git push origin HEAD || echo "Falha ao dar push"
+
+          # tenta sincronizar e enviar sem sobrescrever ninguém
+          for i in {1..10}; do
+            echo "Tentativa $i de push..."
+
+            git fetch origin
+
+            git rebase origin/$(git rev-parse --abbrev-ref HEAD) || {
+              echo "Conflito no rebase, abortando e tentando novamente..."
+              git rebase --abort
+              sleep 5
+              continue
+            }
+
+            git push origin HEAD && break
+
+            echo "Push falhou, tentando novamente em 5s..."
+            sleep 5
+          done
