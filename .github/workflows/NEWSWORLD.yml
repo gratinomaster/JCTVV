@@ -38,7 +38,7 @@ jobs:
           veja se todos os canais estão com tvg-id funcionando com o epg que está na lista
           tvg-id reais e não inventados e coloque o .xml ou .xml.gz e teste para ver se ele tem a programação de hoje
           não salve o .py que for gerado
-          o link do epg deve começar com www
+          o link do epg deve começar com https
           abra um navegador e teste o link dos epgs, eles tem que funcionar em qualquer lugar não só aqui
           EOF
 
