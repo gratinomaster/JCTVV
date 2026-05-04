@@ -27,6 +27,10 @@ https://tvpass.org/live/AMCEast/hd
 https://tvpass.org/live/AmericanHeroesChannel/sd
 #EXTINF:-1 tvg-id="I287.78808.schedulesdirect.org" tvg-name="American Heroes Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s78808_dark_360w_270h.png",American Heroes Channel HD
 https://tvpass.org/live/AmericanHeroesChannel/hd
+#EXTINF:-1 tvg-id="I353.31044.gracenote.com" tvg-name="Antenna TV SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/31044/GNLZZGG0028Y4HS.png",Antenna TV SD
+https://tvpass.org/live/antenna-tv/sd
+#EXTINF:-1 tvg-id="I353.31044.gracenote.com" tvg-name="Antenna TV HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/31044/GNLZZGG0028Y4HS.png",Antenna TV HD
+https://tvpass.org/live/antenna-tv/hd
 #EXTINF:-1 tvg-id="I282.57394.schedulesdirect.org" tvg-name="Animal Planet US East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57394_dark_360w_270h.png",Animal Planet US East SD
 https://tvpass.org/live/AnimalPlanetEast/sd
 #EXTINF:-1 tvg-id="I282.57394.schedulesdirect.org" tvg-name="Animal Planet US East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57394_dark_360w_270h.png",Animal Planet US East HD
@@ -611,9 +615,9 @@ https://tvpass.org/live/TeenNickEast/hd
 https://tvpass.org/live/TelemundoEast/sd
 #EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Telemundo Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Telemundo Eastern Feed HD
 https://tvpass.org/live/TelemundoEast/hd
-#EXTINF:-1 tvg-id="I232.68065.schedulesdirect.org" tvg-name="The Cooking Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68065_dark_360w_270h.png",The Cooking Channel SD
+#EXTINF:-1 tvg-id="I232.30156.schedulesdirect.org" tvg-name="The Cooking Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30156_dark_360w_270h.png",The Cooking Channel SD
 https://tvpass.org/live/CookingChannel/sd
-#EXTINF:-1 tvg-id="I232.68065.schedulesdirect.org" tvg-name="The Cooking Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68065_dark_360w_270h.png",The Cooking Channel HD
+#EXTINF:-1 tvg-id="I232.30156.schedulesdirect.org" tvg-name="The Cooking Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30156_dark_360w_270h.png",The Cooking Channel HD
 https://tvpass.org/live/CookingChannel/hd
 #EXTINF:-1 tvg-id="I217.60316.schedulesdirect.org" tvg-name="The Tennis Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60316_dark_360w_270h.png",The Tennis Channel SD
 https://tvpass.org/live/TennisChannel/sd
