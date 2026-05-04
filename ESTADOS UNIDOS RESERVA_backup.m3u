@@ -1,20 +1,22 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/acidjesuz/EPGTalk/master/guide.xml.gz"
 #EXTINF:-1 tvg-id="I265.51529.schedulesdirect.org" tvg-name="A&E US Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s51529_dark_360w_270h.png",A&E US Eastern Feed SD
 https://tvpass.org/live/AEEast/sd
-#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles HD
-https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
-#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles SD
-https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="I265.51529.schedulesdirect.org" tvg-name="A&E US Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s51529_dark_360w_270h.png",A&E US Eastern Feed HD
 https://tvpass.org/live/AEEast/hd
-#EXTINF:-1 tvg-id="I612.111905.schedulesdirect.org" tvg-name="ACC Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s111905_dark_360w_270h.png",ACC Network SD
-https://tvpass.org/live/ACCNetwork/sd
+#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles SD
+https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
+#EXTINF:-1 tvg-id="I10007.9751.schedulesdirect.org" tvg-name="ABC (KABC) Los Angeles HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s9751_dark_360w_270h.png",ABC (KABC) Los Angeles HD
+https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
+#EXTINF:-1 tvg-id="I10007.11496.schedulesdirect.org" tvg-name="ABC (WABC) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11496_dark_360w_270h.png",ABC (WABC) New York, NY SD
+https://tvpass.org/live/WABCDT1/sd
 #EXTINF:-1 tvg-id="I10007.11496.schedulesdirect.org" tvg-name="ABC (WABC) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11496_dark_360w_270h.png",ABC (WABC) New York, NY HD
 https://tvpass.org/live/WABCDT1/hd
-#EXTINF:-1 tvg-id="I413.65596.gracenote.com" tvg-name="Altitude Sports Denver SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/65596/s44263_ll_h15_ab.png",Altitude Sports Denver SD
-https://tvpass.org/live/altitude-sports-denver/sd
+#EXTINF:-1 tvg-id="I612.111905.schedulesdirect.org" tvg-name="ACC Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s111905_dark_360w_270h.png",ACC Network SD
+https://tvpass.org/live/ACCNetwork/sd
 #EXTINF:-1 tvg-id="I612.111905.schedulesdirect.org" tvg-name="ACC Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s111905_dark_360w_270h.png",ACC Network HD
 https://tvpass.org/live/ACCNetwork/hd
+#EXTINF:-1 tvg-id="I413.65596.gracenote.com" tvg-name="Altitude Sports Denver SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/65596/s44263_ll_h15_ab.png",Altitude Sports Denver SD
+https://tvpass.org/live/altitude-sports-denver/sd
 #EXTINF:-1 tvg-id="I413.65596.gracenote.com" tvg-name="Altitude Sports Denver HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/65596/s44263_ll_h15_ab.png",Altitude Sports Denver HD
 https://tvpass.org/live/altitude-sports-denver/hd
 #EXTINF:-1 tvg-id="I254.58574.schedulesdirect.org" tvg-name="AMC Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58574_dark_360w_270h.png",AMC Eastern Feed SD
@@ -25,6 +27,10 @@ https://tvpass.org/live/AMCEast/hd
 https://tvpass.org/live/AmericanHeroesChannel/sd
 #EXTINF:-1 tvg-id="I287.78808.schedulesdirect.org" tvg-name="American Heroes Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s78808_dark_360w_270h.png",American Heroes Channel HD
 https://tvpass.org/live/AmericanHeroesChannel/hd
+#EXTINF:-1 tvg-id="I353.31044.gracenote.com" tvg-name="Antenna TV SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/31044/GNLZZGG0028Y4HS.png",Antenna TV SD
+https://tvpass.org/live/antenna-tv/sd
+#EXTINF:-1 tvg-id="I353.31044.gracenote.com" tvg-name="Antenna TV HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/31044/GNLZZGG0028Y4HS.png",Antenna TV HD
+https://tvpass.org/live/antenna-tv/hd
 #EXTINF:-1 tvg-id="I282.57394.schedulesdirect.org" tvg-name="Animal Planet US East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57394_dark_360w_270h.png",Animal Planet US East SD
 https://tvpass.org/live/AnimalPlanetEast/sd
 #EXTINF:-1 tvg-id="I282.57394.schedulesdirect.org" tvg-name="Animal Planet US East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57394_dark_360w_270h.png",Animal Planet US East HD
@@ -105,10 +111,10 @@ https://tvpass.org/live/CNBC/hd
 https://tvpass.org/live/CNN/sd
 #EXTINF:-1 tvg-id="I202.58646.schedulesdirect.org" tvg-name="CNN US HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58646_dark_360w_270h.png",CNN US HD
 https://tvpass.org/live/CNN/hd
-#EXTINF:-1 tvg-id="I249.62420.schedulesdirect.org" tvg-name="Comedy Central (US) Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62420_dark_360w_270h.png",Comedy Central (US) Eastern Feed HD
-https://tvpass.org/live/ComedyCentralEast/hd
 #EXTINF:-1 tvg-id="I249.62420.schedulesdirect.org" tvg-name="Comedy Central (US) Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62420_dark_360w_270h.png",Comedy Central (US) Eastern Feed SD
 https://tvpass.org/live/ComedyCentralEast/sd
+#EXTINF:-1 tvg-id="I249.62420.schedulesdirect.org" tvg-name="Comedy Central (US) Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62420_dark_360w_270h.png",Comedy Central (US) Eastern Feed HD
+https://tvpass.org/live/ComedyCentralEast/hd
 #EXTINF:-1 tvg-id="I284.57390.schedulesdirect.org" tvg-name="Crime & Investigation Network USA HD SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57390_dark_360w_270h.png",Crime & Investigation Network USA HD SD
 https://tvpass.org/live/CrimePlusInvestigation/sd
 #EXTINF:-1 tvg-id="I284.57390.schedulesdirect.org" tvg-name="Crime & Investigation Network USA HD HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57390_dark_360w_270h.png",Crime & Investigation Network USA HD HD
@@ -127,24 +133,26 @@ https://tvpass.org/live/DestinationAmerica/sd
 https://tvpass.org/live/DestinationAmerica/hd
 #EXTINF:-1 tvg-id="I278.56905.schedulesdirect.org" tvg-name="Discovery Channel (US) Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s56905_dark_360w_270h.png",Discovery Channel (US) Eastern Feed SD
 https://tvpass.org/live/DiscoveryChannelEast/sd
-#EXTINF:-1 tvg-id="I294.67749.schedulesdirect.org" tvg-name="Discovery Family Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s67749_dark_360w_270h.png",Discovery Family Channel SD
-https://tvpass.org/live/DiscoveryFamily/sd
 #EXTINF:-1 tvg-id="I278.56905.schedulesdirect.org" tvg-name="Discovery Channel (US) Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s56905_dark_360w_270h.png",Discovery Channel (US) Eastern Feed HD
 https://tvpass.org/live/DiscoveryChannelEast/hd
+#EXTINF:-1 tvg-id="I294.67749.schedulesdirect.org" tvg-name="Discovery Family Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s67749_dark_360w_270h.png",Discovery Family Channel SD
+https://tvpass.org/live/DiscoveryFamily/sd
 #EXTINF:-1 tvg-id="I294.67749.schedulesdirect.org" tvg-name="Discovery Family Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s67749_dark_360w_270h.png",Discovery Family Channel HD
 https://tvpass.org/live/DiscoveryFamily/hd
 #EXTINF:-1 tvg-id="I261.16125.schedulesdirect.org" tvg-name="Discovery Life Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16125_dark_360w_270h.png",Discovery Life Channel SD
 https://tvpass.org/live/DiscoveryLife/sd
-#EXTINF:-1 tvg-id="I290.59684.schedulesdirect.org" tvg-name="Disney Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59684_dark_360w_270h.png",Disney Eastern Feed HD
-https://tvpass.org/live/DisneyChannelEast/hd
-#EXTINF:-1 tvg-id="I290.59684.schedulesdirect.org" tvg-name="Disney Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59684_dark_360w_270h.png",Disney Eastern Feed SD
-https://tvpass.org/live/DisneyChannelEast/sd
 #EXTINF:-1 tvg-id="I261.16125.schedulesdirect.org" tvg-name="Discovery Life Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s16125_dark_360w_270h.png",Discovery Life Channel HD
 https://tvpass.org/live/DiscoveryLife/hd
+#EXTINF:-1 tvg-id="I290.59684.schedulesdirect.org" tvg-name="Disney Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59684_dark_360w_270h.png",Disney Eastern Feed SD
+https://tvpass.org/live/DisneyChannelEast/sd
+#EXTINF:-1 tvg-id="I290.59684.schedulesdirect.org" tvg-name="Disney Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59684_dark_360w_270h.png",Disney Eastern Feed HD
+https://tvpass.org/live/DisneyChannelEast/hd
 #EXTINF:-1 tvg-id="I289.74885.schedulesdirect.org" tvg-name="Disney Junior USA East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s74885_dark_360w_270h.png",Disney Junior USA East SD
 https://tvpass.org/live/DisneyJuniorEast/sd
 #EXTINF:-1 tvg-id="I289.74885.schedulesdirect.org" tvg-name="Disney Junior USA East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s74885_dark_360w_270h.png",Disney Junior USA East HD
 https://tvpass.org/live/DisneyJuniorEast/hd
+#EXTINF:-1 tvg-id="I292.60006.schedulesdirect.org" tvg-name="Disney XD USA Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60006_dark_360w_270h.png",Disney XD USA Eastern Feed SD
+https://tvpass.org/live/DisneyXDEast/sd
 #EXTINF:-1 tvg-id="I292.60006.schedulesdirect.org" tvg-name="Disney XD USA Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60006_dark_360w_270h.png",Disney XD USA Eastern Feed HD
 https://tvpass.org/live/DisneyXDEast/hd
 #EXTINF:-1 tvg-id="I236.61812.schedulesdirect.org" tvg-name="E! Entertainment USA Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s61812_dark_360w_270h.png",E! Entertainment USA Eastern Feed SD
@@ -165,40 +173,52 @@ https://tvpass.org/live/ESPNews/sd
 https://tvpass.org/live/ESPNews/hd
 #EXTINF:-1 tvg-id="I208.45654.schedulesdirect.org" tvg-name="ESPN U SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45654_dark_360w_270h.png",ESPN U SD
 https://tvpass.org/live/ESPNU/sd
-#EXTINF:-1 tvg-id="I209.12444.schedulesdirect.org" tvg-name="ESPN2 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12444_dark_360w_270h.png",ESPN2 SD
-https://tvpass.org/live/ESPN2/sd
 #EXTINF:-1 tvg-id="I208.45654.schedulesdirect.org" tvg-name="ESPN U HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45654_dark_360w_270h.png",ESPN U HD
 https://tvpass.org/live/ESPNU/hd
+#EXTINF:-1 tvg-id="I209.12444.schedulesdirect.org" tvg-name="ESPN2 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12444_dark_360w_270h.png",ESPN2 SD
+https://tvpass.org/live/ESPN2/sd
 #EXTINF:-1 tvg-id="I209.12444.schedulesdirect.org" tvg-name="ESPN2 HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s12444_dark_360w_270h.png",ESPN2 HD
 https://tvpass.org/live/ESPN2/hd
+#EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Indiana SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Indiana SD
+https://tvpass.org/live/fanduel-sports-indiana/sd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Indiana HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Indiana HD
 https://tvpass.org/live/fanduel-sports-indiana/hd
-#EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Detroit HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Detroit HD
-https://tvpass.org/live/fanduel-sports-network-detroit-hd/hd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Detroit SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Detroit SD
 https://tvpass.org/live/fanduel-sports-network-detroit-hd/sd
+#EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Detroit HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Detroit HD
+https://tvpass.org/live/fanduel-sports-network-detroit-hd/hd
 #EXTINF:-1 tvg-id="I1720.50728.gracenote.com" tvg-name="Fanduel Sports Network Florida SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/50728/s50728_ll_h15_ac.png",Fanduel Sports Network Florida SD
 https://tvpass.org/live/fanduel-sports-network-florida/sd
+#EXTINF:-1 tvg-id="I1720.50728.gracenote.com" tvg-name="Fanduel Sports Network Florida HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/50728/s50728_ll_h15_ac.png",Fanduel Sports Network Florida HD
+https://tvpass.org/live/fanduel-sports-network-florida/hd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Great Lakes SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Great Lakes SD
 https://tvpass.org/live/fanduel-sports-network-great-lakes/sd
-#EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network North SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network North SD
-https://tvpass.org/live/fanduel-sports-network-north/sd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Great Lakes HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Great Lakes HD
 https://tvpass.org/live/fanduel-sports-network-great-lakes/hd
+#EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network North SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network North SD
+https://tvpass.org/live/fanduel-sports-network-north/sd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network North HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network North HD
 https://tvpass.org/live/fanduel-sports-network-north/hd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Ohio Cleveland SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Ohio Cleveland SD
 https://tvpass.org/live/fanduel-sports-network-ohio-cleveland/sd
-#EXTINF:-1 tvg-id="I1753.35295.gracenote.com" tvg-name="Fanduel Sports Network Oklahoma SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/35295/s59629_ll_h15_ac.png",Fanduel Sports Network Oklahoma SD
-https://tvpass.org/live/fanduel-sports-network-oklahoma/sd
 #EXTINF:-1 tvg-id="I1748.50728.gracenote.com" tvg-name="Fanduel Sports Network Ohio Cleveland HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s50728_dark_360w_270h.png",Fanduel Sports Network Ohio Cleveland HD
 https://tvpass.org/live/fanduel-sports-network-ohio-cleveland/hd
+#EXTINF:-1 tvg-id="I1753.35295.gracenote.com" tvg-name="Fanduel Sports Network Oklahoma SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/35295/s59629_ll_h15_ac.png",Fanduel Sports Network Oklahoma SD
+https://tvpass.org/live/fanduel-sports-network-oklahoma/sd
 #EXTINF:-1 tvg-id="I1753.35295.gracenote.com" tvg-name="Fanduel Sports Network Oklahoma HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/35295/s59629_ll_h15_ac.png",Fanduel Sports Network Oklahoma HD
 https://tvpass.org/live/fanduel-sports-network-oklahoma/hd
+#EXTINF:-1 tvg-id="I1774.59625.gracenote.com" tvg-name="Fanduel Sports Network San Diego SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/59625/s59625_ll_h15_ac.png",Fanduel Sports Network San Diego SD
+https://tvpass.org/live/fanduel-sports-network-san-diego/sd
+#EXTINF:-1 tvg-id="I1774.59625.gracenote.com" tvg-name="Fanduel Sports Network San Diego HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/59625/s59625_ll_h15_ac.png",Fanduel Sports Network San Diego HD
+https://tvpass.org/live/fanduel-sports-network-san-diego/hd
 #EXTINF:-1 tvg-id="I1774.59625.gracenote.com" tvg-name="Fanduel Sports Network Socal SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/59625/s59625_ll_h15_ac.png",Fanduel Sports Network Socal SD
 https://tvpass.org/live/fanduel-sports-network-socal/sd
 #EXTINF:-1 tvg-id="I1774.59625.gracenote.com" tvg-name="Fanduel Sports Network Socal HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/59625/s59625_ll_h15_ac.png",Fanduel Sports Network Socal HD
 https://tvpass.org/live/fanduel-sports-network-socal/hd
+#EXTINF:-1 tvg-id="I1724.75970.gracenote.com" tvg-name="Fanduel Sports Network South Carolinas SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/75970/s12410_ll_h15_ac.png",Fanduel Sports Network South Carolinas SD
+https://tvpass.org/live/fanduel-sports-network-south-carolinas/sd
+#EXTINF:-1 tvg-id="I1724.75970.gracenote.com" tvg-name="Fanduel Sports Network South Carolinas HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/75970/s12410_ll_h15_ac.png",Fanduel Sports Network South Carolinas HD
+https://tvpass.org/live/fanduel-sports-network-south-carolinas/hd
 #EXTINF:-1 tvg-id="I1724.75970.gracenote.com" tvg-name="Fanduel Sports Network South Tennessee SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/75970/s12410_ll_h15_ac.png",Fanduel Sports Network South Tennessee SD
 https://tvpass.org/live/fanduel-sports-network-south-tennessee-usa/sd
 #EXTINF:-1 tvg-id="I1724.75970.gracenote.com" tvg-name="Fanduel Sports Network South Tennessee HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/75970/s12410_ll_h15_ac.png",Fanduel Sports Network South Tennessee HD
@@ -235,6 +255,8 @@ https://tvpass.org/live/fanduel-sports-sun/hd
 https://tvpass.org/live/fanduel-sports-tennessee-east/sd
 #EXTINF:-1 tvg-id="I1724.75970.gracenote.com" tvg-name="Fanduel Sports Tennessee East HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/75970/s12410_ll_h15_ac.png",Fanduel Sports Tennessee East HD
 https://tvpass.org/live/fanduel-sports-tennessee-east/hd
+#EXTINF:-1 tvg-id="I232.68065.schedulesdirect.org" tvg-name="Food Network USA Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68065_dark_360w_270h.png",Food Network USA Eastern Feed SD
+https://tvpass.org/live/FoodNetworkEast/sd
 #EXTINF:-1 tvg-id="I232.68065.schedulesdirect.org" tvg-name="Food Network USA Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68065_dark_360w_270h.png",Food Network USA Eastern Feed HD
 https://tvpass.org/live/FoodNetworkEast/hd
 #EXTINF:-1 tvg-id="I10007.32552.schedulesdirect.org" tvg-name="FOX (KTTV) Los Angeles SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s32552_dark_360w_270h.png",FOX (KTTV) Los Angeles SD
@@ -251,10 +273,10 @@ https://tvpass.org/live/FoxBusiness/sd
 https://tvpass.org/live/FoxBusiness/hd
 #EXTINF:-1 tvg-id="I360.60179.schedulesdirect.org" tvg-name="Fox News SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60179_dark_360w_270h.png",Fox News SD
 https://tvpass.org/live/FoxNewsChannel/sd
-#EXTINF:-1 tvg-id="I219.82547.schedulesdirect.org" tvg-name="Fox Sports 1 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s82547_dark_360w_270h.png",Fox Sports 1 SD
-https://tvpass.org/live/FoxSports1/sd
 #EXTINF:-1 tvg-id="I360.60179.schedulesdirect.org" tvg-name="Fox News HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60179_dark_360w_270h.png",Fox News HD
 https://tvpass.org/live/FoxNewsChannel/hd
+#EXTINF:-1 tvg-id="I219.82547.schedulesdirect.org" tvg-name="Fox Sports 1 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s82547_dark_360w_270h.png",Fox Sports 1 SD
+https://tvpass.org/live/FoxSports1/sd
 #EXTINF:-1 tvg-id="I219.82547.schedulesdirect.org" tvg-name="Fox Sports 1 HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s82547_dark_360w_270h.png",Fox Sports 1 HD
 https://tvpass.org/live/FoxSports1/hd
 #EXTINF:-1 tvg-id="I618.59305.schedulesdirect.org" tvg-name="Fox Sports 2 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59305_dark_360w_270h.png",Fox Sports 2 SD
@@ -271,10 +293,10 @@ https://tvpass.org/live/FuseEast/sd
 https://tvpass.org/live/FuseEast/hd
 #EXTINF:-1 tvg-id="I258.70253.schedulesdirect.org" tvg-name="FX Movie Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70253_dark_360w_270h.png",FX Movie Channel SD
 https://tvpass.org/live/FXMovieChannel/sd
-#EXTINF:-1 tvg-id="I248.58574.schedulesdirect.org" tvg-name="FX Networks East Coast SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58574_dark_360w_270h.png",FX Networks East Coast SD
-https://tvpass.org/live/FXEast/sd
 #EXTINF:-1 tvg-id="I258.70253.schedulesdirect.org" tvg-name="FX Movie Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70253_dark_360w_270h.png",FX Movie Channel HD
 https://tvpass.org/live/FXMovieChannel/hd
+#EXTINF:-1 tvg-id="I248.58574.schedulesdirect.org" tvg-name="FX Networks East Coast SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58574_dark_360w_270h.png",FX Networks East Coast SD
+https://tvpass.org/live/FXEast/sd
 #EXTINF:-1 tvg-id="I248.58574.schedulesdirect.org" tvg-name="FX Networks East Coast HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58574_dark_360w_270h.png",FX Networks East Coast HD
 https://tvpass.org/live/FXEast/hd
 #EXTINF:-1 tvg-id="I259.66379.schedulesdirect.org" tvg-name="FXX USA Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s66379_dark_360w_270h.png",FXX USA Eastern SD
@@ -293,6 +315,8 @@ https://tvpass.org/live/game-show-network-east/hd
 https://tvpass.org/live/GolfChannel/sd
 #EXTINF:-1 tvg-id="I218.61854.schedulesdirect.org" tvg-name="Golf Channel USA HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002RFQ5S.png_dark_360w_270h.png",Golf Channel USA HD
 https://tvpass.org/live/GolfChannel/hd
+#EXTINF:-1 tvg-id="I312.66268.schedulesdirect.org" tvg-name="Hallmark Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s66268_dark_360w_270h.png",Hallmark Eastern Feed SD
+https://tvpass.org/live/HallmarkChannelEast/sd
 #EXTINF:-1 tvg-id="I312.66268.schedulesdirect.org" tvg-name="Hallmark Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s66268_dark_360w_270h.png",Hallmark Eastern Feed HD
 https://tvpass.org/live/HallmarkChannelEast/hd
 #EXTINF:-1 tvg-id="I564.105723.schedulesdirect.org" tvg-name="Hallmark Family HD SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s105723_dark_360w_270h.png",Hallmark Family HD SD
@@ -301,10 +325,10 @@ https://tvpass.org/live/HallmarkDrama/sd
 https://tvpass.org/live/HallmarkDrama/hd
 #EXTINF:-1 tvg-id="I565.46710.schedulesdirect.org" tvg-name="Hallmark Mystery Eastern HD SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s46710_dark_360w_270h.png",Hallmark Mystery Eastern HD SD
 https://tvpass.org/live/HallmarkMoviesMysteriesEast/sd
-#EXTINF:-1 tvg-id="I501.19548.schedulesdirect.org" tvg-name="HBO Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s19548_dark_360w_270h.png",HBO Eastern Feed SD
-https://tvpass.org/live/HBOEast/sd
 #EXTINF:-1 tvg-id="I565.46710.schedulesdirect.org" tvg-name="Hallmark Mystery Eastern HD HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s46710_dark_360w_270h.png",Hallmark Mystery Eastern HD HD
 https://tvpass.org/live/HallmarkMoviesMysteriesEast/hd
+#EXTINF:-1 tvg-id="I501.19548.schedulesdirect.org" tvg-name="HBO Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s19548_dark_360w_270h.png",HBO Eastern Feed SD
+https://tvpass.org/live/HBOEast/sd
 #EXTINF:-1 tvg-id="I501.19548.schedulesdirect.org" tvg-name="HBO Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s19548_dark_360w_270h.png",HBO Eastern Feed HD
 https://tvpass.org/live/HBOEast/hd
 #EXTINF:-1 tvg-id="I547.58533.schedulesdirect.org" tvg-name="HBO 2 Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58533_dark_360w_270h.png",HBO 2 Eastern Feed SD
@@ -329,30 +353,32 @@ https://tvpass.org/live/HBOZoneEast/sd
 https://tvpass.org/live/HBOZoneEast/hd
 #EXTINF:-1 tvg-id="I229.49788.schedulesdirect.org" tvg-name="HGTV USA Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49788_dark_360w_270h.png",HGTV USA Eastern Feed SD
 https://tvpass.org/live/HGTVEast/sd
-#EXTINF:-1 tvg-id="I269.57708.schedulesdirect.org" tvg-name="History Channel US Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57708_dark_360w_270h.png",History Channel US Eastern Feed HD
-https://tvpass.org/live/HistoryEast/hd
 #EXTINF:-1 tvg-id="I229.49788.schedulesdirect.org" tvg-name="HGTV USA Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49788_dark_360w_270h.png",HGTV USA Eastern Feed HD
 https://tvpass.org/live/HGTVEast/hd
+#EXTINF:-1 tvg-id="I269.57708.schedulesdirect.org" tvg-name="History Channel US Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57708_dark_360w_270h.png",History Channel US Eastern Feed SD
+https://tvpass.org/live/HistoryEast/sd
+#EXTINF:-1 tvg-id="I269.57708.schedulesdirect.org" tvg-name="History Channel US Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57708_dark_360w_270h.png",History Channel US Eastern Feed HD
+https://tvpass.org/live/HistoryEast/hd
 #EXTINF:-1 tvg-id="I204.64549.schedulesdirect.org" tvg-name="HLN SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64549_dark_360w_270h.png",HLN SD
 https://tvpass.org/live/HLN/sd
-#EXTINF:-1 tvg-id="I285.65342.schedulesdirect.org" tvg-name="Investigation Discovery USA Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s65342_dark_360w_270h.png",Investigation Discovery USA Eastern SD
-https://tvpass.org/live/InvestigationDiscoveryEast/sd
-#EXTINF:-1 tvg-id="I333.59444.schedulesdirect.org" tvg-name="Independent Film Channel US SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59444_dark_360w_270h.png",Independent Film Channel US SD
-https://tvpass.org/live/IFCEast/sd
 #EXTINF:-1 tvg-id="I204.64549.schedulesdirect.org" tvg-name="HLN HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64549_dark_360w_270h.png",HLN HD
 https://tvpass.org/live/HLN/hd
+#EXTINF:-1 tvg-id="I333.59444.schedulesdirect.org" tvg-name="Independent Film Channel US SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59444_dark_360w_270h.png",Independent Film Channel US SD
+https://tvpass.org/live/IFCEast/sd
 #EXTINF:-1 tvg-id="I333.59444.schedulesdirect.org" tvg-name="Independent Film Channel US HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59444_dark_360w_270h.png",Independent Film Channel US HD
 https://tvpass.org/live/IFCEast/hd
+#EXTINF:-1 tvg-id="I285.65342.schedulesdirect.org" tvg-name="Investigation Discovery USA Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s65342_dark_360w_270h.png",Investigation Discovery USA Eastern SD
+https://tvpass.org/live/InvestigationDiscoveryEast/sd
 #EXTINF:-1 tvg-id="I285.65342.schedulesdirect.org" tvg-name="Investigation Discovery USA Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s65342_dark_360w_270h.png",Investigation Discovery USA Eastern HD
 https://tvpass.org/live/InvestigationDiscoveryEast/hd
 #EXTINF:-1 tvg-id="I305.76894.schedulesdirect.org" tvg-name="ION Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18633_dark_360w_270h.png",ION Eastern Feed SD
 https://tvpass.org/live/IONTVEast/sd
 #EXTINF:-1 tvg-id="I305.76894.schedulesdirect.org" tvg-name="ION Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18633_dark_360w_270h.png",ION Eastern Feed HD
 https://tvpass.org/live/IONTVEast/hd
-#EXTINF:-1 tvg-id="I253.55887.schedulesdirect.org" tvg-name="Lifetime Movies East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s55887_dark_360w_270h.png",Lifetime Movies East HD
-https://tvpass.org/live/LifetimeMoviesEast/hd
 #EXTINF:-1 tvg-id="I253.55887.schedulesdirect.org" tvg-name="Lifetime Movies East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s55887_dark_360w_270h.png",Lifetime Movies East SD
 https://tvpass.org/live/LifetimeMoviesEast/sd
+#EXTINF:-1 tvg-id="I253.55887.schedulesdirect.org" tvg-name="Lifetime Movies East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s55887_dark_360w_270h.png",Lifetime Movies East HD
+https://tvpass.org/live/LifetimeMoviesEast/hd
 #EXTINF:-1 tvg-id="I252.60150.schedulesdirect.org" tvg-name="Lifetime Network US Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60150_dark_360w_270h.png",Lifetime Network US Eastern Feed SD
 https://tvpass.org/live/LifetimeEast/sd
 #EXTINF:-1 tvg-id="I252.60150.schedulesdirect.org" tvg-name="Lifetime Network US Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60150_dark_360w_270h.png",Lifetime Network US Eastern Feed HD
@@ -371,10 +397,10 @@ https://tvpass.org/live/metv-toons/sd
 https://tvpass.org/live/metv-toons/hd
 #EXTINF:-1 tvg-id="I430.25399.gracenote.com" tvg-name="MeTV Wjlp New Jerseynew York SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s25399_dark_360w_270h.png",MeTV Wjlp New Jerseynew York SD
 https://tvpass.org/live/metv-wjlp-new-jerseynew-york/sd
-#EXTINF:-1 tvg-id="I433.35039.gracenote.com" tvg-name="Midatlantic Sports Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s35039_dark_360w_270h.png",Midatlantic Sports Network SD
-https://tvpass.org/live/midatlantic-sports-network/sd
 #EXTINF:-1 tvg-id="I430.25399.gracenote.com" tvg-name="MeTV Wjlp New Jerseynew York HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s25399_dark_360w_270h.png",MeTV Wjlp New Jerseynew York HD
 https://tvpass.org/live/metv-wjlp-new-jerseynew-york/hd
+#EXTINF:-1 tvg-id="I433.35039.gracenote.com" tvg-name="Midatlantic Sports Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s35039_dark_360w_270h.png",Midatlantic Sports Network SD
+https://tvpass.org/live/midatlantic-sports-network/sd
 #EXTINF:-1 tvg-id="I433.35039.gracenote.com" tvg-name="Midatlantic Sports Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s35039_dark_360w_270h.png",Midatlantic Sports Network HD
 https://tvpass.org/live/midatlantic-sports-network/hd
 #EXTINF:-1 tvg-id="I213.62081.schedulesdirect.org" tvg-name="MLB Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62081_dark_360w_270h.png",MLB Network SD
@@ -389,10 +415,10 @@ https://tvpass.org/live/monumental-sports-network/hd
 https://tvpass.org/live/MoreMaxEast/sd
 #EXTINF:-1 tvg-id="I517.59373.schedulesdirect.org" tvg-name="MoreMax Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG0029CKC8.png_dark_360w_270h.png",MoreMax Eastern HD
 https://tvpass.org/live/MoreMaxEast/hd
-#EXTINF:-1 tvg-id="I281.31046.schedulesdirect.org" tvg-name="Motor Trend HD HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002RMTEG.png_dark_360w_270h.png",Motor Trend HD HD
-https://tvpass.org/live/Motortrend/hd
 #EXTINF:-1 tvg-id="I281.31046.schedulesdirect.org" tvg-name="Motor Trend HD SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002RMTEG.png_dark_360w_270h.png",Motor Trend HD SD
 https://tvpass.org/live/Motortrend/sd
+#EXTINF:-1 tvg-id="I281.31046.schedulesdirect.org" tvg-name="Motor Trend HD HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002RMTEG.png_dark_360w_270h.png",Motor Trend HD HD
+https://tvpass.org/live/Motortrend/hd
 #EXTINF:-1 tvg-id="I535.36225.schedulesdirect.org" tvg-name="MovieMax (Max 6) East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s36225_dark_360w_270h.png",MovieMax (Max 6) East SD
 https://tvpass.org/live/MovieMaxEast/sd
 #EXTINF:-1 tvg-id="I535.36225.schedulesdirect.org" tvg-name="MovieMax (Max 6) East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s36225_dark_360w_270h.png",MovieMax (Max 6) East HD
@@ -401,6 +427,10 @@ https://tvpass.org/live/MovieMaxEast/hd
 https://tvpass.org/live/msg-madison-square-gardens/sd
 #EXTINF:-1 tvg-id="I433.34999.gracenote.com" tvg-name="MSG Madison Square Gardens HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s34999_dark_360w_270h.png",MSG Madison Square Gardens HD
 https://tvpass.org/live/msg-madison-square-gardens/hd
+#EXTINF:-1 tvg-id="I433.34999.gracenote.com" tvg-name="MSG Plus SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s34999_dark_360w_270h.png",MSG Plus SD
+https://tvpass.org/live/msg-plus/sd
+#EXTINF:-1 tvg-id="I433.34999.gracenote.com" tvg-name="MSG Plus HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s34999_dark_360w_270h.png",MSG Plus HD
+https://tvpass.org/live/msg-plus/hd
 #EXTINF:-1 tvg-id="I356.58639.schedulesdirect.org" tvg-name="MSNBC USA SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58639_dark_360w_270h.png",MSNBC USA SD
 https://tvpass.org/live/MSNBC/sd
 #EXTINF:-1 tvg-id="I356.58639.schedulesdirect.org" tvg-name="MSNBC USA HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58639_dark_360w_270h.png",MSNBC USA HD
@@ -487,28 +517,28 @@ https://tvpass.org/live/OWNEast/sd
 https://tvpass.org/live/OWNEast/hd
 #EXTINF:-1 tvg-id="I606.14776.schedulesdirect.org" tvg-name="Outdoor Channel US SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14776_dark_360w_270h.png",Outdoor Channel US SD
 https://tvpass.org/live/OutdoorChannel/sd
-#EXTINF:-1 tvg-id="I251.70522.schedulesdirect.org" tvg-name="Oxygen Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70522_dark_360w_270h.png",Oxygen Eastern Feed SD
-https://tvpass.org/live/OxygenEast/sd
 #EXTINF:-1 tvg-id="I606.14776.schedulesdirect.org" tvg-name="Outdoor Channel US HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s14776_dark_360w_270h.png",Outdoor Channel US HD
 https://tvpass.org/live/OutdoorChannel/hd
+#EXTINF:-1 tvg-id="I251.70522.schedulesdirect.org" tvg-name="Oxygen Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70522_dark_360w_270h.png",Oxygen Eastern Feed SD
+https://tvpass.org/live/OxygenEast/sd
 #EXTINF:-1 tvg-id="I251.70522.schedulesdirect.org" tvg-name="Oxygen Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s70522_dark_360w_270h.png",Oxygen Eastern Feed HD
 https://tvpass.org/live/OxygenEast/hd
 #EXTINF:-1 tvg-id="I10007.11478.schedulesdirect.org" tvg-name="PBS (WNET) New York, NY SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11478_dark_360w_270h.png",PBS (WNET) New York, NY SD
 https://tvpass.org/live/WNET/sd
 #EXTINF:-1 tvg-id="I10007.11478.schedulesdirect.org" tvg-name="PBS (WNET) New York, NY HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11478_dark_360w_270h.png",PBS (WNET) New York, NY HD
 https://tvpass.org/live/WNET/hd
-#EXTINF:-1 tvg-id="I238.68385.schedulesdirect.org" tvg-name="ReelzChannel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002HWGQ0.png_dark_360w_270h.png",ReelzChannel HD
-https://tvpass.org/live/Reelz/hd
 #EXTINF:-1 tvg-id="I238.68385.schedulesdirect.org" tvg-name="ReelzChannel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002HWGQ0.png_dark_360w_270h.png",ReelzChannel SD
 https://tvpass.org/live/Reelz/sd
+#EXTINF:-1 tvg-id="I238.68385.schedulesdirect.org" tvg-name="ReelzChannel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/GNLZZGG002HWGQ0.png_dark_360w_270h.png",ReelzChannel HD
+https://tvpass.org/live/Reelz/hd
 #EXTINF:-1 tvg-id="I284.57390.schedulesdirect.org" tvg-name="Science SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57390_dark_360w_270h.png",Science SD
 https://tvpass.org/live/Science/sd
 #EXTINF:-1 tvg-id="I284.57390.schedulesdirect.org" tvg-name="Science HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s57390_dark_360w_270h.png",Science HD
 https://tvpass.org/live/Science/hd
-#EXTINF:-1 tvg-id="I611.89535.schedulesdirect.org" tvg-name="SEC Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89535_dark_360w_270h.png",SEC Network HD
-https://tvpass.org/live/SECN/hd
 #EXTINF:-1 tvg-id="I611.89535.schedulesdirect.org" tvg-name="SEC Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89535_dark_360w_270h.png",SEC Network SD
 https://tvpass.org/live/SECN/sd
+#EXTINF:-1 tvg-id="I611.89535.schedulesdirect.org" tvg-name="SEC Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s89535_dark_360w_270h.png",SEC Network HD
+https://tvpass.org/live/SECN/hd
 #EXTINF:-1 tvg-id="I545.21868.schedulesdirect.org" tvg-name="Showtime Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s21868_dark_360w_270h.png",Showtime Eastern Feed SD
 https://tvpass.org/live/ShowtimeEast/sd
 #EXTINF:-1 tvg-id="I545.21868.schedulesdirect.org" tvg-name="Showtime Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s21868_dark_360w_270h.png",Showtime Eastern Feed HD
@@ -537,6 +567,8 @@ https://tvpass.org/live/spectrum-sportsnet/hd
 https://tvpass.org/live/sportsnet-east/sd
 #EXTINF:-1 tvg-id="I406.18798.schedulesdirect.org" tvg-name="Sportsnet (East) HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18798_dark_360w_270h.png",Sportsnet (East) HD
 https://tvpass.org/live/sportsnet-east/hd
+#EXTINF:-1 tvg-id="I410.49952.schedulesdirect.org" tvg-name="Sportsnet 360 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49952_dark_360w_270h.png",Sportsnet 360 SD
+https://tvpass.org/live/sportsnet-360/sd
 #EXTINF:-1 tvg-id="I410.49952.schedulesdirect.org" tvg-name="Sportsnet 360 HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49952_dark_360w_270h.png",Sportsnet 360 HD
 https://tvpass.org/live/sportsnet-360/hd
 #EXTINF:-1 tvg-id="I409.68858.schedulesdirect.org" tvg-name="Sportsnet One SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s68858_dark_360w_270h.png",Sportsnet One SD
@@ -545,10 +577,16 @@ https://tvpass.org/live/sportsnet-one/sd
 https://tvpass.org/live/sportsnet-one/hd
 #EXTINF:-1 tvg-id="I405.62111.schedulesdirect.org" tvg-name="Sportsnet Ontario SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62111_dark_360w_270h.png",Sportsnet Ontario SD
 https://tvpass.org/live/sportsnet-ontario/sd
+#EXTINF:-1 tvg-id="I405.62111.schedulesdirect.org" tvg-name="Sportsnet Ontario HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62111_dark_360w_270h.png",Sportsnet Ontario HD
+https://tvpass.org/live/sportsnet-ontario/hd
 #EXTINF:-1 tvg-id="I407.18801.schedulesdirect.org" tvg-name="Sportsnet Pacific SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18801_dark_360w_270h.png",Sportsnet Pacific SD
 https://tvpass.org/live/sportsnet-pacific/sd
+#EXTINF:-1 tvg-id="I407.18801.schedulesdirect.org" tvg-name="Sportsnet Pacific HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18801_dark_360w_270h.png",Sportsnet Pacific HD
+https://tvpass.org/live/sportsnet-pacific/hd
 #EXTINF:-1 tvg-id="I428.49882.gracenote.com" tvg-name="Sportsnet Pittsburgh SD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/49882/s26028_ll_h15_ac.png",Sportsnet Pittsburgh SD
 https://tvpass.org/live/sportsnet-pittsburgh/sd
+#EXTINF:-1 tvg-id="I428.49882.gracenote.com" tvg-name="Sportsnet Pittsburgh HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/49882/s26028_ll_h15_ac.png",Sportsnet Pittsburgh HD
+https://tvpass.org/live/sportsnet-pittsburgh/hd
 #EXTINF:-1 tvg-id="I408.18800.schedulesdirect.org" tvg-name="Sportsnet West SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18800_dark_360w_270h.png",Sportsnet West SD
 https://tvpass.org/live/sportsnet-west/sd
 #EXTINF:-1 tvg-id="I408.18800.schedulesdirect.org" tvg-name="Sportsnet West HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18800_dark_360w_270h.png",Sportsnet West HD
@@ -559,34 +597,34 @@ https://tvpass.org/live/StarzEast/sd
 https://tvpass.org/live/StarzEast/hd
 #EXTINF:-1 tvg-id="I239.71280.schedulesdirect.org" tvg-name="SundanceTV USA East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s71280_dark_360w_270h.png",SundanceTV USA East SD
 https://tvpass.org/live/SundanceTVEast/sd
+#EXTINF:-1 tvg-id="I239.71280.schedulesdirect.org" tvg-name="SundanceTV USA East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s71280_dark_360w_270h.png",SundanceTV USA East HD
+https://tvpass.org/live/SundanceTVEast/hd
 #EXTINF:-1 tvg-id="I244.58623.schedulesdirect.org" tvg-name="Syfy Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58623_dark_360w_270h.png",Syfy Eastern Feed SD
 https://tvpass.org/live/SyfyEast/sd
 #EXTINF:-1 tvg-id="I244.58623.schedulesdirect.org" tvg-name="Syfy Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58623_dark_360w_270h.png",Syfy Eastern Feed HD
 https://tvpass.org/live/SyfyEast/hd
-#EXTINF:-1 tvg-id="I239.71280.schedulesdirect.org" tvg-name="SundanceTV USA East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s71280_dark_360w_270h.png",SundanceTV USA East HD
-https://tvpass.org/live/SundanceTVEast/hd
 #EXTINF:-1 tvg-id="I247.58515.schedulesdirect.org" tvg-name="TBS East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58515_dark_360w_270h.png",TBS East SD
 https://tvpass.org/live/TBSEast/sd
 #EXTINF:-1 tvg-id="I247.58515.schedulesdirect.org" tvg-name="TBS East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58515_dark_360w_270h.png",TBS East HD
 https://tvpass.org/live/TBSEast/hd
-#EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Telemundo Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Telemundo Eastern Feed SD
-https://tvpass.org/live/TelemundoEast/sd
 #EXTINF:-1 tvg-id="I682.72294.schedulesdirect.org" tvg-name="TeenNick Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s72294_dark_360w_270h.png",TeenNick Eastern SD
 https://tvpass.org/live/TeenNickEast/sd
 #EXTINF:-1 tvg-id="I682.72294.schedulesdirect.org" tvg-name="TeenNick Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s72294_dark_360w_270h.png",TeenNick Eastern HD
 https://tvpass.org/live/TeenNickEast/hd
+#EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Telemundo Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Telemundo Eastern Feed SD
+https://tvpass.org/live/TelemundoEast/sd
 #EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Telemundo Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Telemundo Eastern Feed HD
 https://tvpass.org/live/TelemundoEast/hd
 #EXTINF:-1 tvg-id="I232.30156.schedulesdirect.org" tvg-name="The Cooking Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30156_dark_360w_270h.png",The Cooking Channel SD
 https://tvpass.org/live/CookingChannel/sd
-#EXTINF:-1 tvg-id="I217.60316.schedulesdirect.org" tvg-name="The Tennis Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60316_dark_360w_270h.png",The Tennis Channel HD
-https://tvpass.org/live/TennisChannel/hd
-#EXTINF:-1 tvg-id="I362.11187.schedulesdirect.org" tvg-name="The Weather Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11187_dark_360w_270h.png",The Weather Channel SD
-https://tvpass.org/live/TheWeatherChannel/sd
 #EXTINF:-1 tvg-id="I232.30156.schedulesdirect.org" tvg-name="The Cooking Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s30156_dark_360w_270h.png",The Cooking Channel HD
 https://tvpass.org/live/CookingChannel/hd
 #EXTINF:-1 tvg-id="I217.60316.schedulesdirect.org" tvg-name="The Tennis Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60316_dark_360w_270h.png",The Tennis Channel SD
 https://tvpass.org/live/TennisChannel/sd
+#EXTINF:-1 tvg-id="I217.60316.schedulesdirect.org" tvg-name="The Tennis Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60316_dark_360w_270h.png",The Tennis Channel HD
+https://tvpass.org/live/TennisChannel/hd
+#EXTINF:-1 tvg-id="I362.11187.schedulesdirect.org" tvg-name="The Weather Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11187_dark_360w_270h.png",The Weather Channel SD
+https://tvpass.org/live/TheWeatherChannel/sd
 #EXTINF:-1 tvg-id="I362.11187.schedulesdirect.org" tvg-name="The Weather Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11187_dark_360w_270h.png",The Weather Channel HD
 https://tvpass.org/live/TheWeatherChannel/hd
 #EXTINF:-1 tvg-id="I697.107373.schedulesdirect.org" tvg-name="TLC USA Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s73822_dark_360w_270h.png",TLC USA Eastern SD
@@ -601,10 +639,10 @@ https://tvpass.org/live/TheMovieChannelEast/hd
 https://tvpass.org/live/TNTEast/sd
 #EXTINF:-1 tvg-id="I245.42642.schedulesdirect.org" tvg-name="TNT Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s42642_dark_360w_270h.png",TNT Eastern Feed HD
 https://tvpass.org/live/TNTEast/hd
-#EXTINF:-1 tvg-id="I277.11180.schedulesdirect.org" tvg-name="Travel US East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11180_dark_360w_270h.png",Travel US East HD
-https://tvpass.org/live/TravelChannelEast/hd
 #EXTINF:-1 tvg-id="I277.11180.schedulesdirect.org" tvg-name="Travel US East SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11180_dark_360w_270h.png",Travel US East SD
 https://tvpass.org/live/TravelChannelEast/sd
+#EXTINF:-1 tvg-id="I277.11180.schedulesdirect.org" tvg-name="Travel US East HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11180_dark_360w_270h.png",Travel US East HD
+https://tvpass.org/live/TravelChannelEast/hd
 #EXTINF:-1 tvg-id="I246.64490.schedulesdirect.org" tvg-name="truTV USA Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64490_dark_360w_270h.png",truTV USA Eastern SD
 https://tvpass.org/live/truTVEast/sd
 #EXTINF:-1 tvg-id="I246.64490.schedulesdirect.org" tvg-name="truTV USA Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64490_dark_360w_270h.png",truTV USA Eastern HD
@@ -613,6 +651,8 @@ https://tvpass.org/live/truTVEast/hd
 https://tvpass.org/live/tsn1/sd
 #EXTINF:-1 tvg-id="I400.11182.schedulesdirect.org" tvg-name="TSN1 HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png",TSN1 HD
 https://tvpass.org/live/tsn1/hd
+#EXTINF:-1 tvg-id="I401.18990.schedulesdirect.org" tvg-name="TSN2 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18990_dark_360w_270h.png",TSN2 SD
+https://tvpass.org/live/tsn2/sd
 #EXTINF:-1 tvg-id="I401.18990.schedulesdirect.org" tvg-name="TSN2 HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s18990_dark_360w_270h.png",TSN2 HD
 https://tvpass.org/live/tsn2/hd
 #EXTINF:-1 tvg-id="I402.90118.schedulesdirect.org" tvg-name="TSN3 SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s90118_dark_360w_270h.png",TSN3 SD
@@ -631,14 +671,18 @@ https://tvpass.org/live/tsn5/hd
 https://tvpass.org/live/TCMEast/sd
 #EXTINF:-1 tvg-id="I256.64312.schedulesdirect.org" tvg-name="Turner Classic Movies USA HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s64312_dark_360w_270h.png",Turner Classic Movies USA HD
 https://tvpass.org/live/TCMEast/hd
-#EXTINF:-1 tvg-id="I304.73541.schedulesdirect.org" tvg-name="TV Land Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s73541_dark_360w_270h.png",TV Land Eastern HD
-https://tvpass.org/live/tv-land-eastern/hd
 #EXTINF:-1 tvg-id="I304.73541.schedulesdirect.org" tvg-name="TV Land Eastern SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s73541_dark_360w_270h.png",TV Land Eastern SD
 https://tvpass.org/live/tv-land-eastern/sd
+#EXTINF:-1 tvg-id="I304.73541.schedulesdirect.org" tvg-name="TV Land Eastern HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s73541_dark_360w_270h.png",TV Land Eastern HD
+https://tvpass.org/live/tv-land-eastern/hd
 #EXTINF:-1 tvg-id="I328.61960.schedulesdirect.org" tvg-name="TV One SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s61960_dark_360w_270h.png",TV One SD
 https://tvpass.org/live/TVOne/sd
 #EXTINF:-1 tvg-id="I328.61960.schedulesdirect.org" tvg-name="TV One HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s61960_dark_360w_270h.png",TV One HD
 https://tvpass.org/live/TVOne/hd
+#EXTINF:-1 tvg-id="I292.60006.schedulesdirect.org" tvg-name="Universal Kids SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60006_dark_360w_270h.png",Universal Kids SD
+https://tvpass.org/live/UniversalKidsEast/sd
+#EXTINF:-1 tvg-id="I292.60006.schedulesdirect.org" tvg-name="Universal Kids HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s60006_dark_360w_270h.png",Universal Kids HD
+https://tvpass.org/live/UniversalKidsEast/hd
 #EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Univision Eastern Feed SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Univision Eastern Feed SD
 https://tvpass.org/live/UnivisionEast/sd
 #EXTINF:-1 tvg-id="I402.68049.schedulesdirect.org" tvg-name="Univision Eastern Feed HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11118_dark_360w_270h.png",Univision Eastern Feed HD
@@ -667,3 +711,17 @@ https://tvpass.org/live/WPIX/hd
 https://tvpass.org/live/yes-network/sd
 #EXTINF:-1 tvg-id="I1702.46275.gracenote.com" tvg-name="Yes Network HD" tvg-logo="https://zpmc.tmsimg.com/h3/NowShowing/46275/s46275_ll_h15_aa.png",Yes Network HD
 https://tvpass.org/live/yes-network/hd
+#EXTINF:-1 tvg-id="I241.59186.schedulesdirect.org" tvg-name="Paramount Network SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59186_dark_360w_270h.png",Paramount Network SD
+https://tvpass.org/live/paramount-network-us/sd
+#EXTINF:-1 tvg-id="I241.59186.schedulesdirect.org" tvg-name="Paramount Network HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s59186_dark_360w_270h.png",Paramount Network HD
+https://tvpass.org/live/paramount-network-us/hd
+#EXTINF:-1 tvg-id="I570.58532.schedulesdirect.org" tvg-name="Smithsonian Channel SD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58532_dark_360w_270h.png",Smithsonian Channel SD
+https://tvpass.org/live/Smithsonian/sd
+#EXTINF:-1 tvg-id="I570.58532.schedulesdirect.org" tvg-name="Smithsonian Channel HD" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s58532_dark_360w_270h.png",Smithsonian Channel HD
+https://tvpass.org/live/Smithsonian/hd
+#EXTINF:-1 tvg-id="I468.43099.schedulesdirect.org" tvg-name="MegaNoticias" tvg-logo="https://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s43099_dark_360w_270h.png",MegaNoticias
+https://tvpass.org/live/meganoticias/hd
+#EXTINF:-1 tvg-id="" tvg-name="NewsNation SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NewsNation_logo.svg/320px-NewsNation_logo.svg.png",NewsNation SD
+https://tvpass.org/live/NewsNation/sd
+#EXTINF:-1 tvg-id="" tvg-name="NewsNation HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NewsNation_logo.svg/320px-NewsNation_logo.svg.png",NewsNation HD
+https://tvpass.org/live/NewsNation/hd
