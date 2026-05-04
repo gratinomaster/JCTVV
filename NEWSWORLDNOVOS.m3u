@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml,https://epg.pw/xmltv/epg_GB.xml,https://epg.pw/xmltv/epg_FR.xml,https://epg.pw/xmltv/epg_DE.xml,https://epg.pw/xmltv/epg_CN.xml,https://epg.pw/xmltv/epg_RU.xml"
 
-#EXTINF:-1 tvg-id="" tvg-name="DW News English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DW_Logo.svg/512px-DW_Logo.svg.png" group-title="NEWS WORLD",DW News English
+#EXTINF:-1 tvg-id="7471" tvg-name="DW News English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DW_Logo.svg/512px-DW_Logo.svg.png" group-title="NEWS WORLD",DW News English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
 #EXTINF:-1 tvg-id="12162" tvg-name="BBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BBC_World_News_2022.svg/512px-BBC_World_News_2022.svg.png" group-title="NEWS WORLD",BBC News
@@ -12,7 +12,7 @@ https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_35
 #EXTINF:-1 tvg-id="465372" tvg-name="Fox News Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png" group-title="NEWS WORLD",Fox News Channel
 https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
 
-#EXTINF:-1 tvg-id="443227" tvg-name="France 24 English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/France_24.png" group-title="NEWS WORLD",France 24 English
+#EXTINF:-1 tvg-id="12047" tvg-name="France 24 English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6c/France_24.png" group-title="NEWS WORLD",France 24 English
 https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
 
 #EXTINF:-1 tvg-id="465150" tvg-name="ABC News Live" tvg-logo="https://upload.wikimedia.org/wikipedia/en/c/c3/ABC_News_Live_Logo.png" group-title="NEWS WORLD",ABC News Live
@@ -36,20 +36,23 @@ https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Liv
 #EXTINF:-1 tvg-id="464863" tvg-name="Newsmax" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/newsmax-us.png" group-title="NEWS WORLD",Newsmax
 https://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="Meganoticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Meganoticias2019.png" group-title="NEWS WORLD",Meganoticias [CL]
+#EXTINF:-1 tvg-id="465309" tvg-name="Meganoticias" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Meganoticias2019.png" group-title="NEWS WORLD",Meganoticias [CL]
 https://pantera1-100gb-cl-movistar.dps.live/mega/mega.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="T13 - Teletrece" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/09/Logotipo_de_Teletrece.svg" group-title="NEWS WORLD",T13 - Teletrece [CL]
 https://redirector.rudo.video/hls-video/10b92cafdf3646cbc1e727f3dc76863621a327fd/t13/t13.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="52000" tvg-name="Euronews English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/Euronews_2022.svg" group-title="NEWS WORLD",Euronews English
+#EXTINF:-1 tvg-id="12529" tvg-name="Euronews English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/aa/Euronews_2022.svg" group-title="NEWS WORLD",Euronews English
 https://aegis-cloudfront-1.tubi.video/b1c4d439-03a5-4c40-ae9d-90a183e010c9/euronews-en.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-name="TeleSUR English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Telesur_english_logo.svg/512px-Telesur_english_logo.svg.png" group-title="NEWS WORLD",TeleSUR English
 https://mblenmain01.telesur.ultrabase.net/mblivev3/hd/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-name="RT Espanol" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/512px-Russia-today-logo.svg.png" group-title="NEWS WORLD",RT Espanol
+#EXTINF:-1 tvg-id="6578" tvg-name="RT Espanol" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/512px-Russia-today-logo.svg.png" group-title="NEWS WORLD",RT Espanol
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 
-#EXTINF:-1 tvg-id="55960" tvg-name="Africa 24 English" tvg-logo="https://africa24tv.com/wp-content/uploads/2023/12/logo-Africa24TVEnglish.png" group-title="NEWS WORLD",Africa 24 English
+#EXTINF:-1 tvg-id="55959" tvg-name="Africa 24 English" tvg-logo="https://africa24tv.com/wp-content/uploads/2023/12/logo-Africa24TVEnglish.png" group-title="NEWS WORLD",Africa 24 English
 https://edge20.vedge.infomaniak.com/livecast/ik:africa24english/manifest.m3u8
+
+#EXTINF:-1 tvg-id="9440" tvg-name="TRT World" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/TRT_World_logo.svg/512px-TRT_World_logo.svg.png" group-title="NEWS WORLD",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
