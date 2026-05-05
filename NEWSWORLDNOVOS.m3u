@@ -1,6 +1,6 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml,https://epg.pw/xmltv/epg_GB.xml,https://epg.pw/xmltv/epg_FR.xml,https://epg.pw/xmltv/epg_DE.xml,https://epg.pw/xmltv/epg_CN.xml,https://epg.pw/xmltv/epg_RU.xml"
 
-#EXTINF:-1 tvg-id="7471" tvg-name="DW News English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DW_Logo.svg/512px-DW_Logo.svg.png" group-title="NEWS WORLD",DW News English
+#EXTINF:-1 tvg-name="DW News English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/DW_Logo.svg/512px-DW_Logo.svg.png" group-title="NEWS WORLD",DW News English
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 
 #EXTINF:-1 tvg-id="12162" tvg-name="BBC News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BBC_World_News_2022.svg/512px-BBC_World_News_2022.svg.png" group-title="NEWS WORLD",BBC News
