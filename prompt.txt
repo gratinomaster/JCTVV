@@ -1,13 +1,3 @@
 acesse https://github.com/punkstarbr/STR-YT/raw/refs/heads/main/OUTRA3.m3u
-adcione 1 canal do mesmo estilo dos que já estão na lista
-adcione tvg-logo em canais que estejam sem ou invalidos
-exclua os canais offline
-remova #extinf que não tenham links dos canais
-teste os links para não me deixar usar links com virus
-corrija caso o epg não funcione nos canais corretamente
-veja se todos os canais estão com tvg-id funcionando com o epg que está na lista
-tvg-id reais e não inventados e coloque o .xml ou .xml.gz e teste para ver se ele tem a programação de hoje
-não salve o .py que for gerado
-o link do epg deve começar com https
-abra um navegador e teste o link dos epgs, eles tem que funcionar em qualquer lugar não só aqui
-não use tvg-ids inventados, apenas reais
+crie EPGFULL.xml.gz sem os canais que não estão no arquivo .m3u, para que o guia não fique maior do que preciso
+caso este arquivo já exista .xml.gz já exista, sobescreva
