@@ -28,7 +28,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          acesse https://github.com/punkstarbr/STR-YT/raw/refs/heads/main/veja%20se%20fica%20com%20algum.m3u
+          acesse https://github.com/punkstarbr/STR-YT/raw/refs/heads/main/OUTRA3.m3u
           adcione 1 canal do mesmo estilo dos que já estão na lista
           adcione tvg-logo em canais que estejam sem ou invalidos
           exclua os canais offline
@@ -40,6 +40,7 @@ jobs:
           não salve o .py que for gerado
           o link do epg deve começar com https
           abra um navegador e teste o link dos epgs, eles tem que funcionar em qualquer lugar não só aqui
+          não use tvg-ids inventados, apenas reais
           EOF
 
       - name: Run OpenCode
