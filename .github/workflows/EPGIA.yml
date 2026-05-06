@@ -28,7 +28,7 @@ jobs:
       - name: Create prompt
         run: |
           cat << 'EOF' > prompt.txt
-          acesse https://github.com/punkstarbr/STR-YT/raw/refs/heads/main/OUTRA3.m3u
+          acesse https://github.com/gratinomaster/1/raw/refs/heads/main/lista1.M3U
           crie EPGFULL.xml.gz sem os canais que não estão no arquivo .m3u, para que o guia não fique maior do que preciso
           caso este arquivo já exista .xml.gz já exista, sobescreva
           EOF
