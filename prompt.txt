@@ -1,3 +1,1 @@
-acesse https://github.com/punkstarbr/STR-YT/raw/refs/heads/main/OUTRA3.m3u
-crie EPGFULL.xml.gz sem os canais que não estão no arquivo .m3u, para que o guia não fique maior do que preciso
-caso este arquivo já exista .xml.gz já exista, sobescreva
+corrija o lista1.m3u para que use url-tvg https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml corrigindo tvg-ids
