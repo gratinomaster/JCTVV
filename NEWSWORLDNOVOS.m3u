@@ -41,5 +41,7 @@ https://www.bloomberg.com/media-manifest/streams/asia.m3u8
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 #EXTINF:-1 tvg-id="516389" tvg-name="Al Jazeera" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/aljazeera-uk.png" group-title="NEWS WORLD",Al Jazeera Arabic
 https://live-hls-web-aja.getaj.net/AJA/03.m3u8
+#EXTINF:-1 tvg-id="465150" tvg-name="ABC News Live" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/abc-news-live-us.png" group-title="NEWS WORLD",ABC News Live
+https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/6508be683a0d700008c534e4/master.m3u8?deviceId=channel&deviceModel=web&deviceVersion=1.0&appVersion=1.0&deviceType=web&deviceMake=iprtlk&deviceDNT=1
 #EXTINF:-1 tvg-id="369836" tvg-name="NHK World-Japan" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/nhk-world-japan-int.png" group-title="NEWS WORLD",NHK World-Japan
 https://nhk.lls.pbs.org/index.m3u8
