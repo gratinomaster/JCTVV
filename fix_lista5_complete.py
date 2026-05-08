@@ -1,356 +1,324 @@
 #!/usr/bin/env python3
-import requests
+import re
 import gzip
 import io
-import re
+import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
-import base64
-import sys
-import time
-import hashlib
+from collections import OrderedDict
 
-EPG_URL = "https://epg.pw/xmltv/epg.xml.gz"
-VIRUSTOTAL_API_URL = "https://www.virustotal.com/api/v3/urls"
-
-CHANNEL_MAP = {
-    "ABC News Live": {
-        "epg_id": "465150",
-        "tvg_name": "ABC News Live",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider1.jpg",
-    },
-    "Fox Business": {
+CHANNEL_MAP = OrderedDict([
+    ("Fox Business", {
         "epg_id": "464766",
-        "tvg_name": "Fox Business HD",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1",
-    },
-    "Fox News": {
-        "epg_id": "412132",
-        "tvg_name": "Fox News Channel",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1",
-    },
-    "CBS News": {
+        "tvg_id": "464766",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+        "group": "NEWS WORLD",
+        "match_names": ["Fox Business"]
+    }),
+    ("Fox News Channel", {
+        "epg_id": "465372",
+        "tvg_id": "465372",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg",
+        "group": "NEWS WORLD",
+        "match_names": ["Fox News"]
+    }),
+    ("ABC News Live", {
+        "epg_id": "465150",
+        "tvg_id": "465150",
+        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+        "group": "NEWS WORLD",
+        "match_names": ["ABC News"]
+    }),
+    ("CBS News 24/7", {
         "epg_id": "464941",
-        "tvg_name": "CBS News National Stream",
-        "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg",
-    },
-}
+        "tvg_id": "464941",
+        "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
+        "group": "NEWS WORLD",
+        "match_names": ["CBS News"]
+    })
+])
 
-def load_epg() -> Tuple[Dict, Dict]:
-    print("Baixando EPG...")
-    r = requests.get(EPG_URL, timeout=120, headers={'Accept-Encoding': 'gzip'}, stream=True)
-    r.raise_for_status()
+CUSTOM_EPG_URL = "https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg.xml"
+
+def norm(s):
+    return re.sub(r'[\s\-_\.]+', '', s).lower()
+
+def detect_channel(channel_name, stream_url=""):
+    name_lower = channel_name.lower()
+    url_lower = stream_url.lower()
+    for display_name, config in CHANNEL_MAP.items():
+        for match_name in config["match_names"]:
+            if match_name.lower() in name_lower:
+                return display_name, config
+    for display_name, config in CHANNEL_MAP.items():
+        for match_name in config["match_names"]:
+            if match_name.lower() in url_lower:
+                return display_name, config
+    return None, None
+
+def find_best_url(variants):
+    priority_orderings = [
+        lambda u: 'master.m3u8' in u.lower(),
+        lambda u: 'cmaf' in u.lower() and '2400' in u.lower(),
+        lambda u: 'cmaf' in u.lower(),
+        lambda u: '720' in u.lower() or '1080' in u.lower(),
+        lambda u: 'hdri' in u.lower(),
+        lambda u: True,
+    ]
+    scored = []
+    for url in variants:
+        score = sum(5 if cond(url) else 0 for cond in priority_orderings)
+        scored.append((score, url))
+    scored.sort(key=lambda x: -x[0])
+    return scored[0][1] if scored else None
+
+def generate_custom_epg():
+    print("=" * 60)
+    print("Generating custom EPG for lista5 channels from epg.pw US")
+    print("=" * 60)
+
+    target_ids = set()
+    for display_name, config in CHANNEL_MAP.items():
+        target_ids.add(config["epg_id"])
+
+    epg_url = "https://epg.pw/xmltv/epg_US.xml.gz"
+    print(f"Downloading: {epg_url}")
+    r = requests.get(epg_url, timeout=120, headers={'User-Agent': 'Mozilla/5.0'})
+    raw = r.content
+    print(f"Received: {len(raw)} bytes")
+
+    if raw[:2] == b'\x1f\x8b':
+        raw = gzip.decompress(raw)
+
+    root = ET.fromstring(raw)
     
+    matching_channels = []
+    for channel in root.findall("channel"):
+        cid = channel.get("id", "")
+        if cid in target_ids:
+            matching_channels.append(channel)
+
+    matching_programmes = []
+    for prog in root.findall("programme"):
+        ch = prog.get("channel", "")
+        if ch in target_ids:
+            matching_programmes.append(prog)
+
+    print(f"Found {len(matching_channels)} channels, {len(matching_programmes)} programmes")
+
+    output = ET.Element("tv", attrib={"generator-info-name": "lista5_epg"})
+    for ch in matching_channels:
+        output.append(ch)
+    for prog in matching_programmes:
+        output.append(prog)
+
+    tree = ET.ElementTree(output)
+    buf = io.BytesIO()
+    tree.write(buf, encoding='utf-8', xml_declaration=True)
+
+    filepath = "/home/runner/work/JCTV/JCTV/lista5_epg.xml"
+    with open(filepath, 'wb') as f:
+        f.write(buf.getvalue())
+    
+    filepath_gz = "/home/runner/work/JCTV/JCTV/lista5_epg.xml.gz"
+    with gzip.open(filepath_gz, 'wb') as f:
+        f.write(buf.getvalue())
+
+    print(f"Saved: {filepath} ({len(buf.getvalue())} bytes)")
+    print(f"Saved: {filepath_gz}")
+    return filepath, matching_channels, matching_programmes
+
+def test_epg():
+    print("\n" + "=" * 60)
+    print("Testing EPG functionality")
+    print("=" * 60)
+
+    filepath = "/home/runner/work/JCTV/JCTV/lista5_epg.xml"
+    today = datetime.now().strftime("%Y%m%d")
+    tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
+    day_after = (datetime.now() + timedelta(days=2)).strftime("%Y%m%d")
+
+    print(f"Today: {today}")
+    print(f"Tomorrow: {tomorrow}")
+    print(f"Day after: {day_after}")
+
+    tree = ET.parse(filepath)
+    root = tree.getroot()
+
     channels = {}
-    programs = {}
-    
-    with gzip.open(io.BytesIO(r.content), 'rt', encoding='utf-8') as f:
-        in_elem = None
-        current_tag = ''
-        current_attrs = {}
-        current_text = ''
-        elem_buffer = ''
-        
-        for line in f:
-            line = line.strip()
-            
-            if line.startswith('<channel '):
-                current_tag = 'channel'
-                m = re.match(r'<channel\s+(.*?)>', line)
-                if m:
-                    attrs = m.group(1)
-                    current_attrs = dict(re.findall(r'(\w+)="([^"]*)"', attrs))
-                current_text = line
-            elif line.startswith('<programme '):
-                current_tag = 'programme'
-                m = re.match(r'<programme\s+(.*?)>', line)
-                if m:
-                    attrs = m.group(1)
-                    current_attrs = dict(re.findall(r'(\w+)="([^"]*)"', attrs))
-                current_text = line
-            elif line.startswith('</channel>') or line.startswith('</programme>'):
-                current_text += line
-                
-                try:
-                    root = ET.fromstring(current_text)
-                    if current_tag == 'channel':
-                        cid = root.get('id', '')
-                        name = root.findtext('display-name', '')
-                        icon_elem = root.find('icon')
-                        icon = icon_elem.get('src', '') if icon_elem is not None else ''
-                        channels[cid] = {'name': name, 'logo': icon}
-                    elif current_tag == 'programme':
-                        chan = root.get('channel', '')
-                        start = root.get('start', '')
-                        stop = root.get('stop', '')
-                        title = root.findtext('title', '')
-                        desc = root.findtext('desc', '')
-                        if chan not in programs:
-                            programs[chan] = []
-                        programs[chan].append({
-                            'start': start,
-                            'stop': stop,
-                            'title': title,
-                            'desc': desc,
-                        })
-                except ET.ParseError:
-                    pass
-                
-                current_tag = ''
-                current_attrs = {}
-                current_text = ''
-            elif current_tag:
-                current_text += line
+    for ch in root.findall("channel"):
+        cid = ch.get("id", "")
+        dn = ch.find("display-name")
+        channels[cid] = dn.text if dn is not None else cid
 
-    print(f"  Canais no EPG: {len(channels)}")
-    total_progs = sum(len(v) for v in programs.values())
-    print(f"  Programas no EPG: {total_progs}")
+    programmes = root.findall("programme")
     
-    return channels, programs
+    stats = {cid: {"today": 0, "tomorrow": 0, "day_after": 0} for cid in channels}
+    
+    for prog in programmes:
+        ch = prog.get("channel", "")
+        start = prog.get("start", "")[:8]
+        if ch in stats:
+            if start == today:
+                stats[ch]["today"] += 1
+            elif start == tomorrow:
+                stats[ch]["tomorrow"] += 1
+            elif start == day_after:
+                stats[ch]["day_after"] += 1
 
-def verify_stream(url: str) -> Dict:
-    result = {
-        "status": "unknown",
-        "http_code": None,
-        "error": None
-    }
-    try:
-        resp = requests.head(url, timeout=10, allow_redirects=True, 
-                            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'})
-        result["http_code"] = resp.status_code
-        if resp.status_code == 200:
-            result["status"] = "ok"
-        elif resp.status_code in (301, 302, 303, 307, 308):
-            result["status"] = "redirect_ok"
-        elif resp.status_code == 405:
-            result["status"] = "ok_method_not_allowed"
-        elif resp.status_code == 403:
-            result["status"] = "forbidden_may_work"
-        else:
-            result["status"] = f"http_{resp.status_code}"
-    except requests.exceptions.Timeout:
-        result["status"] = "timeout"
-    except Exception as e:
-        result["status"] = "error"
-        result["error"] = str(e)
-    return result
+    all_ok = True
+    for cid, ch_name in channels.items():
+        s = stats[cid]
+        ok = s["today"] > 0 and s["tomorrow"] > 0
+        status = "OK" if ok else "FAIL"
+        print(f"  [{status}] {ch_name} (ID: {cid}):")
+        print(f"         Today: {s['today']} | Tomorrow: {s['tomorrow']} | Day after: {s['day_after']}")
+        if not ok:
+            all_ok = False
 
-def verify_virustotal(url: str, api_key: Optional[str] = None) -> Dict:
-    result = {"status": "not_verified", "malicious": None, "votes": {}, "error": None}
-    
-    if not api_key:
-        result["error"] = "no_api_key"
-        return result
-    
-    try:
-        url_id = base64.urlsafe_b64encode(url.encode()).decode().strip("=")
-        headers = {"x-apikey": api_key}
-        resp = requests.get(f"{VIRUSTOTAL_API_URL}/{url_id}", headers=headers, timeout=30)
-        
-        if resp.status_code == 200:
-            data = resp.json()
-            stats = data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
-            result["votes"] = stats
-            result["malicious"] = stats.get("malicious", 0) > 0 or stats.get("malicious", 0) > 2
-            result["status"] = "verified"
-        elif resp.status_code == 404:
-            result["status"] = "not_in_db"
-        else:
-            result["error"] = f"api_error_{resp.status_code}"
-    except Exception as e:
-        result["error"] = str(e)
-    
-    return result
+    if all_ok:
+        print("\n  EPG is valid and working for all channels!")
+    else:
+        print("\n  WARNING: Some channels have missing EPG data")
 
-def test_epg_programming(programs: Dict, epg_ids: List[str]) -> Dict:
-    result = {
-        "has_programming": False,
-        "today": 0,
-        "tomorrow": 0,
-        "day_after": 0,
-    }
-    
-    hoje = datetime.now().strftime("%Y%m%d")
-    amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
-    depois = (datetime.now() + timedelta(days=2)).strftime("%Y%m%d")
-    
-    for eid in epg_ids:
-        if eid in programs:
-            for p in programs[eid]:
-                start = p['start'][:8] if p['start'] else ''
-                if start == hoje:
-                    result["today"] += 1
-                elif start == amanha:
-                    result["tomorrow"] += 1
-                elif start == depois:
-                    result["day_after"] += 1
-    
-    result["has_programming"] = result["today"] > 0 and result["tomorrow"] > 0
-    
-    return result
+    return all_ok
 
-def normalize_name(name: str) -> str:
-    name = name.strip()
-    name = re.sub(r'\s*\|\s*', ' - ', name)
-    name = re.sub(r'\s+', ' ', name)
-    return name
+def fix_m3u():
+    print("\n" + "=" * 60)
+    print("Fixing lista5.m3u")
+    print("=" * 60)
 
-def get_canonical_name(name: str) -> str:
-    n = name.lower()
-    if 'abc' in n and 'news' in n:
-        return 'ABC News Live'
-    if 'fox business' in n:
-        return 'Fox Business'
-    if 'fox news' in n:
-        return 'Fox News'
-    if 'cbs news' in n:
-        return 'CBS News'
-    return name
-
-def fix_logo_url(url: str) -> str:
-    if not url:
-        return url
-    if 'imgur.com' in url.lower():
-        return ''
-    url = url.split('?')[0]
-    if not url.lower().endswith('.jpg'):
-        return ''
-    return url
-
-def stream_score(status: str) -> int:
-    scores = {
-        'ok': 100,
-        'redirect_ok': 90,
-        'ok_method_not_allowed': 80,
-        'forbidden_may_work': 30,
-    }
-    return scores.get(status, 0)
-
-def main():
-    api_key = sys.argv[1] if len(sys.argv) > 1 else None
-    
-    channels, programs = load_epg()
-    
-    print("\nCarregando lista5.m3u...")
-    with open("lista5.m3u", "r") as f:
+    with open("lista5.m3u", "r", encoding="utf-8") as f:
         content = f.read()
-    
-    lines = content.strip().split('\n')
+
+    lines = content.strip().split("\n")
+
+    attr_pattern = re.compile(r'(tvg-id|tvg-logo|tvg-name|group-title)="([^"]*)"')
+
+    def extract_extinf(extinf_line):
+        params_part = re.sub(r'^#EXTINF:-?\d+\s*', '', extinf_line)
+        attrs = {}
+        pos = 0
+        while True:
+            m = attr_pattern.search(params_part, pos)
+            if not m:
+                break
+            key, val = m.group(1), m.group(2)
+            attrs[key] = val
+            pos = m.end()
+        after_attrs = params_part[pos:].strip()
+        channel_name = after_attrs.lstrip(',').strip()
+        return channel_name, attrs
+
+    variants = {}
     
     i = 0
-    all_channels = []
-    
     while i < len(lines):
         line = lines[i].strip()
-        
-        if line.startswith('#EXTINF:'):
-            name_match = re.search(r',([^,]+)$', line)
-            name = name_match.group(1).strip() if name_match else "Unknown"
-            normalized_name = normalize_name(name)
-            canonical = get_canonical_name(normalized_name)
-            
-            logo_match = re.search(r'tvg-logo="([^"]*)"', line)
-            logo = logo_match.group(1) if logo_match else ''
-            logo = fix_logo_url(logo)
-            
-            group_match = re.search(r'group-title="([^"]*)"', line)
-            group = group_match.group(1) if group_match else 'NEWS WORLD'
-            
+        if not line.startswith('#EXTINF:'):
             i += 1
-            if i >= len(lines):
-                i += 1
-                continue
-            
-            url = lines[i].strip()
-            
-            if not url or not url.startswith('http'):
-                i += 1
-                continue
-            
-            epg_info = CHANNEL_MAP.get(canonical)
-            epg_id = epg_info['epg_id'] if epg_info else ''
-            
-            epg_prog = test_epg_programming(programs, [epg_id] if epg_id else [])
-            stream_result = verify_stream(url)
-            
-            if api_key:
-                vt_result = verify_virustotal(url, api_key)
-                if vt_result.get('malicious'):
-                    print(f"  REMOVIDO (malicioso): {normalized_name}")
-                    i += 1
-                    continue
-            
-            use_logo = logo if logo else (epg_info['logo'] if epg_info else '')
-            
-            all_channels.append({
-                'name': normalized_name,
-                'canonical': canonical,
-                'url': url,
-                'logo': use_logo,
-                'group': group,
-                'epg_id': epg_id,
-                'has_epg': epg_prog.get('has_programming', False),
-                'stream_status': stream_result['status'],
-                'stream_score': stream_score(stream_result['status']),
-                'epg_today': epg_prog.get('today', 0),
-                'epg_tomorrow': epg_prog.get('tomorrow', 0),
-                'epg_day_after': epg_prog.get('day_after', 0),
-            })
+            continue
         
-        i += 1
-    
-    print(f"\nTotal de canais brutos: {len(all_channels)}")
-    
-    seen_canonical = {}
-    best_channels = []
-    
-    for ch in all_channels:
-        canon = ch['canonical']
-        score = ch['stream_score']
+        channel_name, attrs = extract_extinf(line)
+        logo = attrs.get('tvg-logo', '')
+        group = attrs.get('group-title', 'NEWS WORLD')
         
-        if canon not in seen_canonical:
-            seen_canonical[canon] = len(best_channels)
-            best_channels.append(ch)
+        url_line = ""
+        if i + 1 < len(lines):
+            next_line = lines[i + 1].strip()
+            if next_line and not next_line.startswith("#"):
+                url_line = next_line
+        
+        if url_line and channel_name:
+            display_name, config = detect_channel(channel_name, url_line)
+            key = display_name if display_name else channel_name
+            if key not in variants:
+                variants[key] = {
+                    "name": display_name if display_name else channel_name,
+                    "logo": logo,
+                    "group": group,
+                    "urls": [],
+                    "config": config,
+                }
+            variants[key]["urls"].append(url_line)
+        
+        i += 2
+
+    print(f"Found {len(variants)} unique channels")
+
+    output_lines = []
+    output_lines.append(f'#EXTM3U url-tvg="{CUSTOM_EPG_URL}"')
+
+    for display_name, v in variants.items():
+        if v["config"]:
+            best_url = find_best_url(v["urls"])
+            if best_url:
+                logo = v["config"]["logo"]
+                tvg_id = v["config"]["tvg_id"]
+                
+                extinf = f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{v["group"]}",{v["name"]}'
+                output_lines.append(extinf)
+                output_lines.append(best_url)
         else:
-            existing = best_channels[seen_canonical[canon]]
-            if score > existing['stream_score']:
-                best_channels[seen_canonical[canon]] = ch
-            elif score == existing['stream_score'] and ch['has_epg'] and not existing['has_epg']:
-                best_channels[seen_canonical[canon]] = ch
+            best_url = find_best_url(v["urls"])
+            if best_url:
+                logo = v["logo"]
+                if not logo.lower().endswith(".jpg"):
+                    logo = ""
+                extinf = f'#EXTINF:-1 tvg-logo="{logo}" group-title="{v["group"]}",{v["name"]}'
+                output_lines.append(extinf)
+                output_lines.append(best_url)
+
+    output = "\n".join(output_lines) + "\n"
+
+    with open("lista5.m3u", "w", encoding="utf-8") as f:
+        f.write(output)
+
+    channel_count = len([l for l in output_lines if l.startswith("#EXTINF:")])
+    print(f"Written {channel_count} channels to lista5.m3u")
+    return output_lines
+
+def test_streams():
+    print("\n" + "=" * 60)
+    print("Testing stream URLs")
+    print("=" * 60)
+
+    with open("lista5.m3u", "r", encoding="utf-8") as f:
+        lines = f.readlines()
+
+    urls = [l.strip() for l in lines if l.strip().startswith("http")]
     
-    print(f"Canais únicos: {len(best_channels)}")
-    
-    output_lines = ['#EXTM3U url-tvg="https://epg.pw/xmltv/epg.xml.gz"']
-    
-    for ch in best_channels:
-        tvg_id_attr = f'tvg-id="{ch["epg_id"]}"' if ch["epg_id"] else ''
-        logo_attr = f'tvg-logo="{ch["logo"]}"' if ch["logo"] else ''
-        group_attr = f'group-title="{ch["group"]}"'
-        
-        parts = [p for p in [tvg_id_attr, logo_attr, group_attr] if p]
-        new_extinf = f"#EXTINF:-1 {' '.join(parts)},{ch['name']}"
-        
-        output_lines.append(new_extinf)
-        output_lines.append(ch['url'])
-        
-        epg_status = "EPG OK" if ch['has_epg'] else "SEM EPG"
-        print(f"  {ch['canonical']} | {epg_status} | Stream: {ch['stream_status']} | EPG: {ch['epg_today']}/{ch['epg_tomorrow']}/{ch['epg_day_after']}")
-    
-    with open("lista5.m3u", "w") as f:
-        f.write('\n'.join(output_lines) + '\n')
-    
-    print(f"\nArquivo lista5.m3u atualizado com {len(best_channels)} canais!")
-    
-    print("\n" + "="*60)
-    print("RESUMO")
-    print("="*60)
-    
-    with_epg = sum(1 for c in best_channels if c['has_epg'])
-    without_epg = sum(1 for c in best_channels if not c['has_epg'])
-    
-    print(f"Canais com EPG válido: {with_epg}")
-    print(f"Canais sem EPG: {without_epg}")
+    results = {}
+    for url in urls:
+        try:
+            r = requests.head(url, timeout=15, allow_redirects=True, headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            })
+            results[url] = r.status_code
+            status = "OK" if r.status_code < 400 else f"HTTP {r.status_code}"
+            print(f"  [{status}] {url[:80]}...")
+        except Exception as e:
+            results[url] = str(e)
+            print(f"  [FAIL] {url[:80]}... -> {e}")
+
+    working = sum(1 for v in results.values() if isinstance(v, int) and v < 400)
+    failed = len(results) - working
+    print(f"\nStreams: {working}/{len(results)} working, {failed} failed")
+    return results
+
+def main():
+    generate_custom_epg()
+    test_epg()
+    fix_m3u()
+    test_streams()
+
+    print("\n" + "=" * 60)
+    print("SUMMARY")
+    print("=" * 60)
+    print("  Custom EPG: lista5_epg.xml (generated from epg.pw US)")
+    print(f"  EPG URL: {CUSTOM_EPG_URL}")
+    print("  M3U: lista5.m3u (fixed)")
+    print("  To use EPG in player, add the url-tvg to your playlist")
 
 if __name__ == "__main__":
     main()
