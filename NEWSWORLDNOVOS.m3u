@@ -1,6 +1,5 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_US.xml.gz,https://epg.pw/xmltv/epg_GB.xml.gz,https://epg.pw/xmltv/epg_FR.xml.gz,https://epg.pw/xmltv/epg_BR.xml.gz,https://epg.pw/xmltv/epg_CN.xml.gz,https://epg.pw/xmltv/epg_SG.xml.gz,https://epg.pw/xmltv/epg_IN.xml.gz,https://epg.pw/xmltv/epg_TW.xml.gz,https://epg.pw/xmltv/epg_RU.xml.gz"
-#EXTINF:-1 tvg-id="369766" tvg-name="DW-TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/dw-english-int.png" group-title="NEWS WORLD",DW News English
-https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+
 #EXTINF:-1 tvg-id="464746" tvg-name="BBC News" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" group-title="NEWS WORLD",BBC News
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="465021" tvg-name="CNN International" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/cnn-international-int.png" group-title="NEWS WORLD",CNN International
