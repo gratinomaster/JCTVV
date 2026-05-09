@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="www.raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml.gz"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml"
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="EPTV Campinas" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/EPTV_2021.png/180px-EPTV_2021.png" group-title="Canais | Globo",EPTV Campinas
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40248.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="EPTV Campinas HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/EPTV_2021.png/180px-EPTV_2021.png" group-title="Canais | Globo",EPTV Campinas HD
@@ -31,16 +31,12 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40513.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215396.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo CE [4K]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo CE [4K]
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215393.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Campinas H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Campinas H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62821.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Ceará" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Ceará
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/71675.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Ceará FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Ceará FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/116823.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Centro América Cuaibá HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Centro América Cuaibá HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91288.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Centro América FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Centro América FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68056.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Cuaibá HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Cuaibá HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91266.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Cuiabá FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Cuiabá FHD
@@ -51,8 +47,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215392.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/71664.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Goiânia HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Goiânia HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/64651.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Inter TV Grande Minas  FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Inter TV Grande Minas  FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68077.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Joaçaba FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Joaçaba FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100614.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Joaçaba HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Joaçaba HD
@@ -67,32 +61,18 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100616.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40250.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Minas FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Minas FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/41515.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Minas FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Minas FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68058.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Minas FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Minas FHD H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91293.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Minas H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Minas H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62820.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Minas HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Minas HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40251.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Montes Claros MG FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Montes Claros MG FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100612.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Montes Claros MG HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Montes Claros MG HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/100613.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC Blumenau FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC Blumenau FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91296.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC Chapecó FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC Chapecó FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91298.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC Criciúma FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC Criciúma FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91299.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC Florianópolis FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC Florianópolis FHD - H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68060.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC Joinville FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC Joinville FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91300.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC TV Blumenau" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC TV Blumenau
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91283.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC TV Blumenau FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC TV Blumenau FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68079.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC TV Santa Catarina HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC TV Santa Catarina HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/65270.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo NSC TV [4K]" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/NSC_TV.png/180px-NSC_TV.png" group-title="Canais | Globo",Globo NSC TV [4K]
@@ -105,16 +85,8 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91281.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/93586.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37092.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste 2 FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste 2 FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68047.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42984.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68059.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91295.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62819.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Nordeste HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Nordeste HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38971.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Paraná HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Paraná HD
@@ -133,16 +105,10 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63414.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62815.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37091.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio 2 FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio 2 FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68049.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38425.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68070.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio FHD H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91302.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62857.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/36968.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio Interior FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio Interior FHD
@@ -155,8 +121,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/105957.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37090.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo SP FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo SP FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38424.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo SP FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo SP FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68050.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo SP H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo SP H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/62855.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo SP HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo SP HD
@@ -183,12 +147,8 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38967.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73098.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Asa Branca FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Asa Branca FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73096.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Asa Branca FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Asa Branca FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91308.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Asa Branca HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Asa Branca HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/73097.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Belem FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Belem FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68069.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Brasilia FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Brasilia FHD - H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68076.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Cabo Branco FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Cabo Branco FHD
@@ -255,16 +215,12 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42964.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63640.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Liberal Belem HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV_Liberal.png/180px-TV_Liberal.png" group-title="Canais | Globo",Globo TV Liberal Belem HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63654.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Liberal FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV_Liberal.png/180px-TV_Liberal.png" group-title="Canais | Globo",Globo TV Liberal FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68064.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Mirante Bolsas HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/TV_Mirante.png/180px-TV_Mirante.png" group-title="Canais | Globo",Globo TV Mirante Bolsas HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107572.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Mirante Cocais" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/TV_Mirante.png/180px-TV_Mirante.png" group-title="Canais | Globo",Globo TV Mirante Cocais
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74963.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Mirante Cocais HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/TV_Mirante.png/180px-TV_Mirante.png" group-title="Canais | Globo",Globo TV Mirante Cocais HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75483.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Mirante FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/TV_Mirante.png/180px-TV_Mirante.png" group-title="Canais | Globo",Globo TV Mirante FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68065.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Morena Campo Grande" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV_Morena.png/180px-TV_Morena.png" group-title="Canais | Globo",Globo TV Morena Campo Grande
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42992.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Morena Campo Grande FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV_Morena.png/180px-TV_Morena.png" group-title="Canais | Globo",Globo TV Morena Campo Grande FHD
@@ -275,8 +231,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63655.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107565.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Morena FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV_Morena.png/180px-TV_Morena.png" group-title="Canais | Globo",Globo TV Morena FHD - H265
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68066.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Morena FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV_Morena.png/180px-TV_Morena.png" group-title="Canais | Globo",Globo TV Morena FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91312.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Morena Ponta Porã HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/TV_Morena.png/180px-TV_Morena.png" group-title="Canais | Globo",Globo TV Morena Ponta Porã HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107564.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Petrolina PE" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Petrolina PE
@@ -291,8 +245,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52548.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42908.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Sergipe FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Sergipe FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42981.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Sergipe FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Sergipe FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68071.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Sergipe HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Sergipe HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42982.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV TEM Itapetininga" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TV_TEM.png/180px-TV_TEM.png" group-title="Canais | Globo",Globo TV TEM Itapetininga
@@ -305,9 +257,9 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75475.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40516.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV TEM São José do Rio Preto FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TV_TEM.png/180px-TV_TEM.png" group-title="Canais | Globo",Globo TV TEM São José do Rio Preto FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75161.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Tem Sorocaba HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Tem Sorocaba HD
+#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Tem Sorocaba HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TV_TEM.png/180px-TV_TEM.png" group-title="Canais | Globo",Globo TV Tem Sorocaba HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75476.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Tem São José do Rio Preto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Tem São José do Rio Preto
+#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Tem São José do Rio Preto" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TV_TEM.png/180px-TV_TEM.png" group-title="Canais | Globo",Globo TV Tem São José do Rio Preto
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/40515.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo TV Tribuna FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo TV Tribuna FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75162.m3u8
@@ -361,8 +313,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52573.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52578.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Inter TV dos Vales FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Inter TV dos Vales FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52590.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Inter TV dos Vales FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Inter TV dos Vales FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68072.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="Inter TV dos Vales HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Inter TV dos Vales HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52587.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="InterTV Cabo Frio HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",InterTV Cabo Frio HD
@@ -433,8 +383,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52541.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/52542.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RBS_TV.png/180px-RBS_TV.png" group-title="Canais | Globo",RBS TV Porto Alegre
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42959.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RBS_TV.png/180px-RBS_TV.png" group-title="Canais | Globo",RBS TV Porto Alegre - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68048.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RBS_TV.png/180px-RBS_TV.png" group-title="Canais | Globo",RBS TV Porto Alegre FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/51215.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RBS TV Porto Alegre H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/RBS_TV.png/180px-RBS_TV.png" group-title="Canais | Globo",RBS TV Porto Alegre H265
@@ -481,8 +429,6 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107582.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63273.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RPC Maringá FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RPC_TV.png/180px-RPC_TV.png" group-title="Canais | Globo",RPC Maringá FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63275.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="RPC Maringá FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RPC_TV.png/180px-RPC_TV.png" group-title="Canais | Globo",RPC Maringá FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91305.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RPC Maringá HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RPC_TV.png/180px-RPC_TV.png" group-title="Canais | Globo",RPC Maringá HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/63274.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="RPC Ponta Grossa" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/RPC_TV.png/180px-RPC_TV.png" group-title="Canais | Globo",RPC Ponta Grossa
@@ -579,18 +525,12 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107575.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/107574.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Asa Branca Alagoas FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42995.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Asa Branca Alagoas FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68073.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Asa Branca Alagoas FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Asa Branca Alagoas FHD H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91292.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Asa Branca Alagoas HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Asa Branca Alagoas HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42996.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Bahia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Bahia
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/61974.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Bahia FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Bahia FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42987.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Bahia FHD - H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Bahia FHD - H265
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/68063.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Bahia HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Bahia HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37096.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Diário Fortaleza FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Diário Fortaleza FHD
@@ -681,9 +621,9 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/75167.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/42993.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV TEM Sorocaba" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/TV_TEM.png/180px-TV_TEM.png" group-title="Canais | Globo",TV TEM Sorocaba
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/37029.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Tapajós HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV_Liberal.png/180px-TV_Liberal.png" group-title="Canais | Globo",TV Tapajós HD
+#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Tapajós HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Tapajós HD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/108784.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Tapajós Santarém Pará" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/TV_Liberal.png/180px-TV_Liberal.png" group-title="Canais | Globo",TV Tapajós Santarém Pará
+#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Tapajós Santarém Pará" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",TV Tapajós Santarém Pará
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/111312.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Verdes Mares Cariri" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/TV_Verdes_Mares.png/180px-TV_Verdes_Mares.png" group-title="Canais | Globo",TV Verdes Mares Cariri
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/74971.m3u8
@@ -703,5 +643,5 @@ http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/91584.m3u8
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215398.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Anhanguera Brasília FHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/TV_Anhanguera.png/180px-TV_Anhanguera.png" group-title="Canais | Globo",TV Anhanguera Brasília FHD
 http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215399.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo News HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo News HD
-http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/38970.m3u8
+#EXTINF:-1 tvg-id="tv-globo" tvg-name="Globo Rio Interior FHD H265" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" group-title="Canais | Globo",Globo Rio Interior FHD H265
+http://play.dnsrot.vip/live/ramagi777/e4ifqhgjpqf/215400.m3u8
