@@ -6,13 +6,8 @@ http://41.205.93.154/BBCONE/index.m3u8
 https://streamer.nexyl.uk/69ef899e-8ca9-4537-9f1a-fe8b4216afbb.m3u8
 #EXTINF:-1 group-title="UK" tvg-id="BBCThreeHD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-three-uk.png",BBC Three HD
 https://streamer.nexyl.uk/39290a19-b8dd-43ea-b8dc-081c37790f24.m3u8
-#EXTINF:-1 group-title="UK" tvg-id="ITV1London.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/itv-1-uk.png",ITV1
-http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19185/index.m3u8
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=a0763c867523cdae498b2ad5a8ed66c4:fbca9fa0d6d784be974170f82c155938
-https://a122aivottlinear-a.akamaihd.net/OTTB/bom-nitro/live/dash/enc/yfsmgtnygz/out/v1/272d43358d1f41feb4dc2e9c61733628/cenc.mpd
+#EXTINF:-1 group-title="UK" tvg-id="BBCFourHD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-four-uk.png",BBC Four HD
+https://streamer.nexyl.uk/48559ccd-6400-457d-8acc-06b9e24c2ed8.m3u8
 #EXTINF:-1 group-title="UK" tvg-id="E4.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/e-4-uk.png",E4
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=0000000000000000000000000065340a:88a5d26b2dc54896693dea815df7c592
