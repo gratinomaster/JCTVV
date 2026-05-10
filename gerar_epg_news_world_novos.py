@@ -33,10 +33,13 @@ for tid in sorted(m3u_ids):
     name = m3u_names.get(tid, '')
     print(f"    {tid}: {name}")
 
-epg_urls_match = re.search(r'x-tvg-url="([^"]*)"', m3u_content)
-if epg_urls_match:
-    epg_urls = [u.strip() for u in epg_urls_match.group(1).split(',')]
-else:
+epg_urls = []
+for match in re.finditer(r'(?:url-tvg|x-tvg-url)="([^"]*)"', m3u_content):
+    for u in match.group(1).split(','):
+        u = u.strip()
+        if u and u not in epg_urls:
+            epg_urls.append(u)
+if not epg_urls:
     epg_urls = [
         "https://epg.pw/xmltv/epg_US.xml.gz",
         "https://epg.pw/xmltv/epg_GB.xml.gz",
