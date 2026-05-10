@@ -1,10 +1,4 @@
-#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz"
-#EXTM3U x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz"
+#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz"
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://i.imgur.com/MN5tnPw.png",Casa do Patrao: Piscina (B)
 http://play.1list.vip/live/8gZav5kQe2/duoiptv/1009227.m3u8
@@ -39,10 +33,10 @@ http://domestipo1.online:80/live/ser682mun/5w49evr21/747415.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://deadline.com/wp-content/uploads/2026/02/la-casa-de-los-famosos-season-6-2026-telemundo-cast-photos.jpg?w=681&h=383&crop=1" tvg-chno="800",LCDLF 6 USA (24/7 - 2) 🇺🇸
 http://domestipo1.online:80/live/ser682mun/5w49evr21/747416.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Las.Estrellas.mx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Las_Estrellas_2016.svg/250px-Las_Estrellas_2016.svg.png",2 Las Estrellas
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",2 Las Estrellas
 http://45.186.106.207:8000/play/a098/index.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Las.Estrellas.mx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Las_Estrellas_2016.svg/250px-Las_Estrellas_2016.svg.png",3 Las Estrellas
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",3 Las Estrellas
 http://200.115.120.1:8000/play/ca014/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://logosandtypes.com/wp-content/uploads/2020/11/channel-5-mexico.svg",Canal 5
@@ -59,14 +53,6 @@ http://190.11.225.124:5000/live/canal5_hd/playlist.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://logosandtypes.com/wp-content/uploads/2020/11/channel-5-mexico.svg",Canal 5
 http://200.115.120.1:8000/play/ca0105/index.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Univision.us",2 Univisión
-##EXTVLCOPT:network-caching=1000
-#EXTVLCOPT--http-reconnect=true
-http://x3c1rsvw.ottclub.xyz/iptv/F5BM9GXMAPYBDK/1099/index.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="UniMàs.us" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDjMhVH4ShcGj34bMboM0d_7eTGGZXFHOJIyHKqjm0Lg&s=10",4 Unimas
-http://x3c1rsvw.ottclub.xyz/iptv/F5BM9GXMAPYBDK/1100/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM 24/7
 http://live.detodotvplay.com:8080/Risario8/Pineda13/460828
@@ -89,10 +75,10 @@ http://live.detodotvplay.com:8080/Risario8/Pineda13/460834
 #EXTINF:-1 group-title="Reality Show's Live"  tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM MULTICAMARA
 http://live.detodotvplay.com:8080/Risario8/Pineda13/460835
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Las_Estrellas_logo_%282016%29.svg/154px-Las_Estrellas_logo_%282016%29.svg.png",Canal Estrellas
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",Canal Estrellas
 http://181.205.130.194:4000/play/a07r
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Pink.TV.rs" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhg_yJyms3Y21jxx3Q0j4FizlewTj2oU0dfA_2EfhI53wSR9j_6ADeZn48qc&s",Pink TV
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Pink.HD.rs" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhg_yJyms3Y21jxx3Q0j4FizlewTj2oU0dfA_2EfhI53wSR9j_6ADeZn48qc&s",Pink TV
 https://edge8.pink.rs/pinktv/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live"  tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Villa) 🇺🇸
@@ -119,7 +105,8 @@ http://domestipo1.online:80/live/ser682mun/5w49evr21/738703.m3u8
 #EXTINF:-1 group-title="Reality Show's Live"  tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Multicámaras) 🇺🇸
 http://domestipo1.online:80/live/ser682mun/5w49evr21/738706.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Telemundo.(México).mx" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Telemundo_2018_logo.svg/250px-Telemundo_2018_logo.svg.png" tvg-chno="42",Telemundo
-http://200.115.120.1:8000/play/ca087/index.m3u8
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Telemundo.(México).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/telemundo-mediano.png" tvg-chno="42",Telemundo
 http://200.115.120.1:8000/play/ca087/index.m3u8
 
+#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Azteca.Uno.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/azteca_uno-mediano.png",Azteca Uno
+https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8
