@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d7/IRIBTV1.svg" group-title="IRIB",IRIB 1
+https://ncdn.telewebion.ir/tv1/live/playlist.m3u8
+#EXTINF:-1 tvg-id="IRIB2.ir" tvg-name="IRIB 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/IRIB_TV2_logo.svg" group-title="IRIB",IRIB 2
+https://ncdn.telewebion.ir/tv2/live/playlist.m3u8
+#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="IRIB 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/IRIB_TV3_LOGO.svg" group-title="IRIB",IRIB 3
+https://ncdn.telewebion.ir/tv3/live/playlist.m3u8
