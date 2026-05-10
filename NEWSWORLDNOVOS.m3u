@@ -49,3 +49,5 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 #EXTINF:-1 tvg-id="464874" tvg-name="Scripps News" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/scripps-news-us.png" group-title="NEWS WORLD",Scripps News
 https://content.uplynk.com/channel/4bb4901b934c4e029fd4c1abfc766c37.m3u8
 
+#EXTINF:-1 tvg-id="AlArabiya.ae" tvg-logo="https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://alarabiya.net&size=128" group-title="NEWS WORLD",Al Arabiya
+https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
