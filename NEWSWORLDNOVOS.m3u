@@ -39,10 +39,7 @@ http://45.186.106.207:8000/play/a098/index.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",3 Las Estrellas
 http://200.115.120.1:8000/play/ca014/index.m3u8
 
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
-##EXTVLCOPT:network-caching=1000
-#EXTVLCOPT--http-reconnect=true
 http://45.5.119.43:4000/play/a05o/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
@@ -115,3 +112,5 @@ http://45.186.106.207:8000/play/a099/index.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.11.de.México.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png",Canal Once (11)
 https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 
+#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Globo.br" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/globo-mediano.png" tvg-chno="5",Globo SP
+https://live-as-09-19.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJVUyIsImRvbWFpbiI6ImxpdmUtYXMtMDktMTkudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzc4NTM0NDA3LCJpYXQiOjE3Nzg1MTI4MDcsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiIiwicGF0aCI6Ii9saXZlL2YoaT0yKS9zcG8xMjRoYS9wbGF5bGlzdC5tM3U4In0.atUE00w34c4Q9Fz9a-Cbc3yaqTSjEmx7nLm8s6yQ1R7hnzF7fES_K3pjUH5JSOW5cv5_5ZH1Mgb7Lg0WGfgX1lXcZYjiWzrv9srgdfFW2NqqDEFnkVVLDaKy5RcZ4xyxd4n0pH7-MpEwSeWnuxPpEraoEjsRUeP_Epct6ApduTh5AHRWpAcBchg4kQSxgLEIRLh_UCENobFPrRXua_UnR3Y54Pxu3a7zaBz1GqKe6pF_q85z-yhs4F1tcQGez5lbLZA6ONjhWz6t15etFsUOXNR4T2MhvhgAx12tr8hBaoUXpbMYJp8sPmJGVZ4kWg_Hzs9-dimmGVFPP0zZS2p2lA/live/f(i=2)/spo124ha/playlist.m3u8
