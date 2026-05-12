@@ -70,9 +70,6 @@ http://live.detodotvplay.com:8080/Risario8/Pineda13/460835
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",Canal Estrellas
 http://181.205.130.194:4000/play/a07r
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Pink.HD.rs" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhg_yJyms3Y21jxx3Q0j4FizlewTj2oU0dfA_2EfhI53wSR9j_6ADeZn48qc&s",Pink TV
-https://edge8.pink.rs/pinktv/index.m3u8
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Villa) 🇺🇸
 http://domestipo1.online:80/live/ser682mun/5w49evr21/738700.m3u8
 
@@ -106,8 +103,8 @@ https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.11.de.México.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png",Canal Once (11)
 https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Globo.br" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" tvg-chno="5",Globo SP
-https://live-as-09-19.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJVUyIsImRvbWFpbiI6ImxpdmUtYXMtMDktMTkudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzc4NTM0NDA3LCJpYXQiOjE3Nzg1MTI4MDcsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiIiwicGF0aCI6Ii9saXZlL2YoaT0yKS9zcG8xMjRoYS9wbGF5bGlzdC5tM3U4In0.atUE00w34c4Q9Fz9a-Cbc3yaqTSjEmx7nLm8s6yQ1R7hnzF7fES_K3pjUH5JSOW5cv5_5ZH1Mgb7Lg0WGfgX1lXcZYjiWzrv9srgdfFW2NqqDEFnkVVLDaKy5RcZ4xyxd4n0pH7-MpEwSeWnuxPpEraoEjsRUeP_Epct6ApduTh5AHRWpAcBchg4kQSxgLEIRLh_UCENobFPrRXua_UnR3Y54Pxu3a7zaBz1GqKe6pF_q85z-yhs4F1tcQGez5lbLZA6ONjhWz6t15etFsUOXNR4T2MhvhgAx12tr8hBaoUXpbMYJp8sPmJGVZ4kWg_Hzs9-dimmGVFPP0zZS2p2lA/live/f(i=2)/spo124ha/playlist.m3u8
-
 #EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/8f1e0b7c9e8e1a5d2f3c4b5a6e7d8f9.webp" tvg-chno="6",Record TV
 https://tvconquistalrv.duckdns.org:3334/hls/tvconquistalrv.m3u8?ManoTV
+
+#EXTINF:-1 group-title="News & World" tvg-id="RTNews.ru" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
+https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
