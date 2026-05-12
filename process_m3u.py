@@ -25,6 +25,7 @@ MAX_RETENTION_PER_CHANNEL = 1
 
 # EPG sources - multiple for better coverage
 EPG_SOURCES = [
+    ("lista5_epg.xml.gz", "Local lista5 EPG"),
     ("https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz", "epgshare01 US"),
     ("https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz", "epgshare01 US Locals"),
 ]
@@ -32,7 +33,7 @@ EPG_SOURCES = [
 # Channel mapping: channel name keywords -> tvg-id (from EPG source)
 CHANNEL_EPG_MAP = [
     {
-        "keywords": ["abc news live"],
+        "keywords": ["abc news live", "abcnl", "tracking the western heat"],
         "tvg_id": "ABC.News.Live.us2",
         "tvg_name": "ABC News Live",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ABC_News_Live_logo.svg/1200px-ABC_News_Live_logo.svg.jpg",
@@ -178,20 +179,29 @@ def test_url(url, timeout=10):
 def test_epg_url(epg_url, timeout=30):
     """Test EPG URL and check if it has recent program data."""
     try:
-        # Download the gzipped EPG
-        result = subprocess.run(
-            ['curl', '-s', '--max-time', str(timeout), epg_url],
-            capture_output=True, timeout=timeout + 10
-        )
-        if result.returncode != 0 or len(result.stdout) == 0:
-            return False, "Failed to download EPG"
+        # Handle local files
+        if not epg_url.startswith('http://') and not epg_url.startswith('https://'):
+            try:
+                with open(epg_url, 'rb') as f:
+                    raw_data = f.read()
+            except FileNotFoundError:
+                return False, f"Local file not found: {epg_url}"
+        else:
+            # Download the gzipped EPG
+            result = subprocess.run(
+                ['curl', '-s', '--max-time', str(timeout), epg_url],
+                capture_output=True, timeout=timeout + 10
+            )
+            if result.returncode != 0 or len(result.stdout) == 0:
+                return False, "Failed to download EPG"
+            raw_data = result.stdout
 
         # Try to decompress and parse
         try:
-            with gzip.GzipFile(fileobj=io.BytesIO(result.stdout)) as f:
+            with gzip.GzipFile(fileobj=io.BytesIO(raw_data)) as f:
                 xml_content = f.read()
         except:
-            xml_content = result.stdout
+            xml_content = raw_data
 
         # Parse XML
         root = ET.fromstring(xml_content)
@@ -207,10 +217,12 @@ def test_epg_url(epg_url, timeout=30):
             start_str = programme.get('start', '')
             if start_str:
                 try:
-                    # XMLTV format: 20240510000000 +0000
-                    dt = datetime.strptime(start_str[:14], '%Y%m%d%H%M%S')
-                    dates_found.add(dt.date())
-                    total_progs += 1
+                    # XMLTV format: 20240510000000 +0000 or 20260512T06:00:00 +0000
+                    clean_start = start_str.replace('T', '').replace('-', '').replace(':', '')
+                    if len(clean_start) >= 14:
+                        dt = datetime.strptime(clean_start[:14], '%Y%m%d%H%M%S')
+                        dates_found.add(dt.date())
+                        total_progs += 1
                 except:
                     pass
 
@@ -295,8 +307,9 @@ def main():
     print(f"  Unique channels: {len(unique_channels)} (removed {len(channels) - len(unique_channels)} duplicates)")
 
     # Step 3: Test URLs and check safety
-    print("\n[3] Testing URL accessibility and safety...")
+    print("\n[3] Testing URL accessibility and safety - removing failed channels...")
     working_channels = OrderedDict()
+    removed_count = 0
     for ch_key, (extinf, url, name, _, group) in unique_channels.items():
         attrs = extract_attrs(extinf)
         print(f"  Testing: {name[:50]}...", end=" ")
@@ -305,21 +318,21 @@ def main():
         # Safety check
         safety_issues = check_malware_url(url, timeout=8)
         
+        # If safety issues found, remove the channel
+        if safety_issues:
+            print(f"REMOVED (Safety: {'; '.join(safety_issues)})")
+            removed_count += 1
+            continue
+        
         # URL accessibility test
         success, code, err = test_url(url, timeout=8)
         
         if not success:
-            print(f"FAILED (HTTP {code or err})")
-            ch_info = get_channel_info(name)
-            if safety_issues:
-                print(f"    Safety issues: {'; '.join(safety_issues)}")
-            # Still keep the channel, but note the issue
-            working_channels[ch_key] = (extinf, url, name, group, safety_issues, False)
+            print(f"REMOVED (HTTP {code or err})")
+            removed_count += 1
         else:
             print(f"OK (HTTP {code})")
-            if safety_issues:
-                print(f"    Warning: {'; '.join(safety_issues)}")
-            working_channels[ch_key] = (extinf, url, name, group, safety_issues, True)
+            working_channels[ch_key] = (extinf, url, name, group, [], True)
 
     # Step 4: Enhance with EPG info and fix logos
     print("\n[4] Adding EPG info and fixing logos...")
@@ -329,7 +342,7 @@ def main():
     
     output_lines = [m3u_header + '\n']
     
-    for ch_key, (orig_extinf, url, name, group, safety_issues, working) in working_channels.items():
+    for ch_key, (orig_extinf, url, name, group, _, working) in working_channels.items():
         try:
             attrs = extract_attrs(orig_extinf)
         except:
@@ -392,10 +405,9 @@ def main():
     print("=" * 60)
     print(f"Original entries: {len(channels)}")
     print(f"Unique channels kept: {len(working_channels)}")
-    working_count = sum(1 for v in working_channels.values() if v[5])
-    failed_count = sum(1 for v in working_channels.values() if not v[5])
+    print(f"Removed (safety/failed): {removed_count}")
+    working_count = len(working_channels)
     print(f"URLs accessible: {working_count}")
-    print(f"URLs failed: {failed_count}")
     
     channels_with_epg = sum(1 for v in working_channels.values() if get_channel_info(v[2]))
     print(f"Channels with EPG mapping: {channels_with_epg}")
