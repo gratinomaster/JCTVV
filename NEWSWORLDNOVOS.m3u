@@ -33,9 +33,6 @@ http://domestipo1.online:80/live/ser682mun/5w49evr21/747415.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://deadline.com/wp-content/uploads/2026/02/la-casa-de-los-famosos-season-6-2026-telemundo-cast-photos.jpg?w=681&h=383&crop=1" tvg-chno="800",LCDLF 6 USA (24/7 - 2) 🇺🇸
 http://domestipo1.online:80/live/ser682mun/5w49evr21/747416.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",2 Las Estrellas
-http://45.186.106.207:8000/play/a098/index.m3u8
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",3 Las Estrellas
 http://200.115.120.1:8000/play/ca014/index.m3u8
 
@@ -106,11 +103,11 @@ http://200.115.120.1:8000/play/ca087/index.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Azteca.Uno.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/azteca_uno-mediano.png",Azteca Uno
 https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Milenio.TV.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/milenio_tv-mediano.png",Milenio TV
-http://45.186.106.207:8000/play/a099/index.m3u8
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.11.de.México.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png",Canal Once (11)
 https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Globo.br" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/globo-mediano.png" tvg-chno="5",Globo SP
+#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Globo.br" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/TV_Globo.png/180px-TV_Globo.png" tvg-chno="5",Globo SP
 https://live-as-09-19.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJVUyIsImRvbWFpbiI6ImxpdmUtYXMtMDktMTkudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzc4NTM0NDA3LCJpYXQiOjE3Nzg1MTI4MDcsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiIiwicGF0aCI6Ii9saXZlL2YoaT0yKS9zcG8xMjRoYS9wbGF5bGlzdC5tM3U4In0.atUE00w34c4Q9Fz9a-Cbc3yaqTSjEmx7nLm8s6yQ1R7hnzF7fES_K3pjUH5JSOW5cv5_5ZH1Mgb7Lg0WGfgX1lXcZYjiWzrv9srgdfFW2NqqDEFnkVVLDaKy5RcZ4xyxd4n0pH7-MpEwSeWnuxPpEraoEjsRUeP_Epct6ApduTh5AHRWpAcBchg4kQSxgLEIRLh_UCENobFPrRXua_UnR3Y54Pxu3a7zaBz1GqKe6pF_q85z-yhs4F1tcQGez5lbLZA6ONjhWz6t15etFsUOXNR4T2MhvhgAx12tr8hBaoUXpbMYJp8sPmJGVZ4kWg_Hzs9-dimmGVFPP0zZS2p2lA/live/f(i=2)/spo124ha/playlist.m3u8
+
+#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/8f1e0b7c9e8e1a5d2f3c4b5a6e7d8f9.webp" tvg-chno="6",Record TV
+https://tvconquistalrv.duckdns.org:3334/hls/tvconquistalrv.m3u8?ManoTV
