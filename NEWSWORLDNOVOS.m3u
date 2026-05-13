@@ -1,37 +1,7 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz"
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Principal) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736727.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Sala) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736728.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Comedor) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736729.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Beauty) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736732.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Hab. Calma) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736730.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Hab. Tormenta) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736731.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://www.laopinion.co/sites/default/files/styles/portada_principal_mobile_376x211/public/2025-09/LCDLF-3.jpg?itok=wD9eFKBG" tvg-chno="800",LCDLF 3 (Baños) 🇨🇴
-http://domestipo1.online:80/live/ser682mun/5w49evr21/736733.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://deadline.com/wp-content/uploads/2026/02/la-casa-de-los-famosos-season-6-2026-telemundo-cast-photos.jpg?w=681&h=383&crop=1" tvg-chno="800",LCDLF 6 USA (24/7 - 1) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/747415.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://deadline.com/wp-content/uploads/2026/02/la-casa-de-los-famosos-season-6-2026-telemundo-cast-photos.jpg?w=681&h=383&crop=1" tvg-chno="800",LCDLF 6 USA (24/7 - 2) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/747416.m3u8
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",3 Las Estrellas
 http://200.115.120.1:8000/play/ca014/index.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
-http://45.5.119.43:4000/play/a05o/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
 http://38.49.128.38:8000/play/a0n6/index.m3u8
@@ -40,53 +10,8 @@ http://190.11.225.124:5000/live/canal5_hd/playlist.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
 http://200.115.120.1:8000/play/ca0105/index.m3u8
 
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM 24/7
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460828
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM VILLA
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460829
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM H CORAZON
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460830
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM H TREBOL
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460831
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM BAÑOS
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460832
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM SALA
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460834
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3NNA1PtioIudXluo13qD-RFMkblih4RTzkw&s",APM MULTICAMARA
-http://live.detodotvplay.com:8080/Risario8/Pineda13/460835
-
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",Canal Estrellas
 http://181.205.130.194:4000/play/a07r
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Villa) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738700.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Conexión Total 24/7) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738699.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Sala) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738705.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Cocina) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738704.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Hab. Corazón) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738701.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Hab. Trébol) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738702.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Baños) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738703.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-logo="https://periodicocorreo.com.mx/core/correo/assets/images/2026/01/19/middle-g-bwnplxcaan42l-Xe3FRAPQV.jpg" tvg-chno="800",Apostarias por Mí (Multicámaras) 🇺🇸
-http://domestipo1.online:80/live/ser682mun/5w49evr21/738706.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.Telemundo.(México).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/telemundo-mediano.png" tvg-chno="42",Telemundo
 http://200.115.120.1:8000/play/ca087/index.m3u8
@@ -100,8 +25,11 @@ https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 #EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/8f1e0b7c9e8e1a5d2f3c4b5a6e7d8f9.webp" tvg-chno="6",Record TV
 https://tvconquistalrv.duckdns.org:3334/hls/tvconquistalrv.m3u8?ManoTV
 
-#EXTINF:-1 group-title="News & World" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
+#EXTINF:-1 group-title="News & World" tvg-id="RTNews.ru" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
 https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="51",RT Español
+#EXTINF:-1 group-title="News & World" tvg-id="RTenEspanol.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/512px-Russia-today-logo.svg.png" tvg-chno="51",RT Español
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
+
+#EXTINF:-1 group-title="News & World" tvg-id="BandBrasil.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/df0c35517ab2f2e9e6e63c1808730694.webp" tvg-chno="7",Band TV
+https://streaming.gruporba.com.br/rba.m3u8
