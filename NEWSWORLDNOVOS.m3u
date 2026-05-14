@@ -22,14 +22,17 @@ https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.11.de.México.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png",Canal Once (11)
 https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/8f1e0b7c9e8e1a5d2f3c4b5a6e7d8f9.webp" tvg-chno="6",Record TV
+#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/record-br.png" tvg-chno="6",Record TV
 https://tvconquistalrv.duckdns.org:3334/hls/tvconquistalrv.m3u8?ManoTV
 
-#EXTINF:-1 group-title="News & World" tvg-id="RTNews.ru" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
+#EXTINF:-1 group-title="News & World" tvg-id="Russia.Today.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
 https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="RTenEspanol.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/512px-Russia-today-logo.svg.png" tvg-chno="51",RT Español
+#EXTINF:-1 group-title="News & World" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-Espa%C3%B1ol.png" tvg-chno="51",RT Español
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="BandBrasil.br" tvg-logo="https://www.cxtv.com.br/img/Tvs/Logo/webp-l/df0c35517ab2f2e9e6e63c1808730694.webp" tvg-chno="7",Band TV
+#EXTINF:-1 group-title="News & World" tvg-id="Band.br" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/band-br.png" tvg-chno="7",Band TV
 https://streaming.gruporba.com.br/rba.m3u8
+
+#EXTINF:-1 group-title="News & World" tvg-id="BBC.NEWS.HD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" tvg-chno="60",BBC News
+https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
