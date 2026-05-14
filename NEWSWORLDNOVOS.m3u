@@ -6,8 +6,6 @@ http://200.115.120.1:8000/play/ca014/index.m3u8
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
 http://38.49.128.38:8000/play/a0n6/index.m3u8
 http://190.11.225.124:5000/live/canal5_hd/playlist.m3u8
-
-#EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.5.(XHPNH).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/5_de_mexico-mediano.png",Canal 5
 http://200.115.120.1:8000/play/ca0105/index.m3u8
 
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/de_las_estrellas-mediano.png",Canal Estrellas
@@ -36,3 +34,6 @@ https://streaming.gruporba.com.br/rba.m3u8
 
 #EXTINF:-1 group-title="News & World" tvg-id="BBC.NEWS.HD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" tvg-chno="60",BBC News
 https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
+
+#EXTINF:-1 group-title="News & World" tvg-id="FRANCE.24.ENGLISH.tr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France-24.png" tvg-chno="55",France 24 English
+https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
