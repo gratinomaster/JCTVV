@@ -20,20 +20,20 @@ https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3
 #EXTINF:-1 group-title="Reality Show's Live" tvg-id="Canal.11.de.México.mx" tvg-logo="https://imagenes.gatotv.com/logos/canales/oscuros/once_tv_mexico-mediano.png",Canal Once (11)
 https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Record.br" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/record-br.png" tvg-chno="6",Record TV
-https://tvconquistalrv.duckdns.org:3334/hls/tvconquistalrv.m3u8?ManoTV
-
 #EXTINF:-1 group-title="News & World" tvg-id="Russia.Today.pt" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-News.png" tvg-chno="50",RT News
 https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
 
 #EXTINF:-1 group-title="News & World" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/RT-Espa%C3%B1ol.png" tvg-chno="51",RT Español
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="Band.br" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/band-br.png" tvg-chno="7",Band TV
+#EXTINF:-1 group-title="News & World" tvg-id="São.Paulo/SP..Band.br" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/band-br.png" tvg-chno="7",Band TV
 https://streaming.gruporba.com.br/rba.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="BBC.NEWS.HD.uk" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" tvg-chno="60",BBC News
+#EXTINF:-1 group-title="News & World" tvg-id="BBC.World.News.ae" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-news-uk.png" tvg-chno="60",BBC News
 https://dash2.antik.sk/live/test_bbc_world/playlist.m3u8
 
-#EXTINF:-1 group-title="News & World" tvg-id="FRANCE.24.ENGLISH.tr" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France-24.png" tvg-chno="55",France 24 English
+#EXTINF:-1 group-title="News & World" tvg-id="France.24.English.ae" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/France-24.png" tvg-chno="55",France 24 English
 https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
+
+#EXTINF:-1 group-title="News & World" tvg-id="Al.Jazeera.English.HD.ae" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/aljazeera-uk.png" tvg-chno="56",Al Jazeera English
+https://live-hls-web-aja.getaj.net/AJA/index.m3u8
