@@ -35,7 +35,7 @@ for tid in sorted(m3u_ids):
 
 epg_urls = []
 for match in re.finditer(r'(?:url-tvg|x-tvg-url)="([^"]*)"', m3u_content):
-    for u in match.group(1).split(','):
+    for u in match.group(1).replace(',', ' ').split():
         u = u.strip()
         if u and u not in epg_urls:
             epg_urls.append(u)
