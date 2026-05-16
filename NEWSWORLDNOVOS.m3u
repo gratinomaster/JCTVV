@@ -1,11 +1,14 @@
 #EXTM3U url-tvg="https://epg.pw/xmltv/epg_CN.xml.gz https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+#EXTINF:-1 group-title="CHINA" tvg-id="494998" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",CCTV+ 3
+#EXTVLCOPT:network-caching=1000
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL3.smil/playlist.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-id="494985" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",CCTV+ 1
 #EXTVLCOPT:network-caching=1000
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-id="494986" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",CCTV+ 2
 #EXTVLCOPT:network-caching=1000
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-id="Red.Bull.TV.in" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",Red Bull TV
+#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",Red Bull TV
 #EXTVLCOPT:network-caching=1000
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-id="494988" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",CCTV+ 4
@@ -50,9 +53,6 @@ http://stream2.jlntv.cn/jlyb/sd/live.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",新昌休闲影视
 #EXTVLCOPT:network-caching=1000
 http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",新昌新聞綜合
-#EXTVLCOPT:network-caching=1000
-http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",江津新闻综合
 #EXTVLCOPT:network-caching=1000
 http://222.179.155.21:1935/ch1.m3u8
@@ -62,13 +62,13 @@ http://222.179.155.21:1935/ch0.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-id="544342" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",河源公共
 #EXTVLCOPT:network-caching=1000
 http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-id="544342" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",河源综合
+#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",河源综合
 #EXTVLCOPT:network-caching=1000
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-id="495006" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",绍兴影视
+#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",绍兴影视
 #EXTVLCOPT:network-caching=1000
 http://live.shaoxing.com.cn/video/s10001-sxtv3/index.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-id="495006" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",绍兴综合
+#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",绍兴综合
 #EXTVLCOPT:network-caching=1000
 http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",萬州三峽移民
@@ -83,7 +83,7 @@ http://123.146.162.24:8017/Cz7WPb8/800/live.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",萬州綜合頻道
 #EXTVLCOPT:network-caching=1000
 http://123.146.162.24:8017/iTXwrGs/800/live.m3u8
-#EXTINF:-1 group-title="CHINA" tvg-id="Red.Bull.TV.in" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",红牛REDBULL TV
+#EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/Red-Bull-TV.png",红牛REDBULL TV
 #EXTVLCOPT:network-caching=1000
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master_3360.m3u8
 #EXTINF:-1 group-title="CHINA" tvg-logo="https://raw.githubusercontent.com/LITUATUI/M3UPT/main/logos/CGTN.png",荣昌综合
