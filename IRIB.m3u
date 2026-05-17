@@ -1,13 +1,15 @@
 #EXTM3U x-tvg-url="https://epg.pw/xmltv/epg.xml"
-#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d7/IRIBTV1.svg" group-title="IRIB",IRIB 1
+#EXTINF:-1 tvg-id="IRIB1.ir" tvg-name="IRIB 1" tvg-logo="https://i.imgur.com/rad9Guw.png" group-title="IRIB",IRIB 1
 https://ncdn.telewebion.ir/tv1/live/playlist.m3u8
-#EXTINF:-1 tvg-id="IRIB2.ir" tvg-name="IRIB 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/16/IRIB_TV2_logo.svg" group-title="IRIB",IRIB 2
+#EXTINF:-1 tvg-id="IRIB2.ir" tvg-name="IRIB 2" tvg-logo="https://i.imgur.com/FKiTd3O.png" group-title="IRIB",IRIB 2
 https://ncdn.telewebion.ir/tv2/live/playlist.m3u8
-#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="IRIB 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/IRIB_TV3_LOGO.svg" group-title="IRIB",IRIB 3
+#EXTINF:-1 tvg-id="IRIB3.ir" tvg-name="IRIB 3" tvg-logo="https://i.imgur.com/6cIaH0c.png" group-title="IRIB",IRIB 3
 https://ncdn.telewebion.ir/tv3/live/playlist.m3u8
-#EXTINF:-1 tvg-id="IRIB4.ir" tvg-name="IRIB 4" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fd/IRIB_TV4_logo.svg" group-title="IRIB",IRIB 4
+#EXTINF:-1 tvg-id="IRIB4.ir" tvg-name="IRIB 4" tvg-logo="https://i.imgur.com/fsdz81l.png" group-title="IRIB",IRIB 4
 https://ncdn.telewebion.ir/tv4/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Nasim.ir" tvg-name="IRIB Nasim" tvg-logo="https://i.ibb.co/cwWJXBY/nasim.png" group-title="IRIB",IRIB Nasim
+#EXTINF:-1 tvg-id="Nasim.ir" tvg-name="IRIB Nasim" tvg-logo="https://i.imgur.com/EqjQN83.png" group-title="IRIB",IRIB Nasim
 https://ncdn.telewebion.ir/nasim/live/playlist.m3u8
-#EXTINF:-1 tvg-id="PressTV.ir" tvg-name="Press TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/fb/Press_TV_logo.svg" group-title="IRIB",Press TV
+#EXTINF:-1 tvg-id="PressTV.ir" tvg-name="Press TV" tvg-logo="https://i.imgur.com/X3YP2Gg.png" group-title="IRIB",Press TV
 https://live.presstv.ir/hls/presstv.m3u8
+#EXTINF:-1 tvg-id="IRINN.ir" tvg-name="IRINN" tvg-logo="https://i.imgur.com/7HL4joq.png" group-title="IRIB",IRINN
+https://ncdn.telewebion.ir/irinn/live/playlist.m3u8
