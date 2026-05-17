@@ -42,6 +42,7 @@ jobs:
           abra um navegador e teste o link dos epgs, eles tem que funcionar em qualquer lugar não só aqui
           não use tvg-ids inventados, apenas reais
           se o arquivo .m3u não tiver nenhum epg de programação, coloque o que seja apropriado e tenha a programação do dia de hoje
+          use leitor de imagens para ver se o tvg logo está correto
           EOF
 
       - name: Run OpenCode
