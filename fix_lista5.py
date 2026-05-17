@@ -1,285 +1,223 @@
 #!/usr/bin/env python3
-import re
-import gzip
-import xml.etree.ElementTree as ET
+import requests, gzip, re, sys, xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-import requests
 
-M3U_FILE = '/home/runner/work/JCTV/JCTV/lista5.m3u'
-EPG_FILE = '/home/runner/work/JCTV/JCTV/lista5_epg.xml.gz'
-EPG_URL = 'https://epg.pw/xmltv/epg_US.xml.gz'
-
-CHANNEL_MAP = {
-    'abc': {
-        'tvg_id': '465150',
-        'name': 'ABC News Live',
-        'logo': 'https://keyframe-cdn.abcnews.com/streamprovider11.jpg',
-        'epg_name': 'ABC News Live',
-    },
-    'fox business': {
-        'tvg_id': '464766',
-        'name': 'Fox Business',
-        'logo': 'https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3c290c97-693d-41bd-94bc-2b6a36e9d7e4/e145015a-c736-4a86-9f07-4f0f9133d139/1280x720/match/400/225/image.jpg',
-        'epg_name': 'Fox Business HD',
-    },
-    'fox news': {
-        'tvg_id': '465372',
-        'name': 'Fox News',
-        'logo': 'https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg',
-        'epg_name': 'Fox News Channel HD',
-    },
-    'cbs': {
-        'tvg_id': '464941',
-        'name': 'CBS News 24/7',
-        'logo': 'https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg',
-        'epg_name': 'CBS News National Stream',
-    },
-}
-
-CHANNEL_MATCH_RULES = [
-    (['abc news live', 'abc news', 'abcnl', 'abcn'], 'abc'),
-    (['fox business', 'fbn', 'fox biz', 'fox business go'], 'fox business'),
-    (['fox news', 'fnc', 'fox news channel'], 'fox news'),
-    (['cbs news', 'cbsn', 'cbs 24/7'], 'cbs'),
+CHANNEL_MAP = [
+    ("abc news live", {"tvg_id": "465150", "name": "ABC News Live", "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg"}),
+    ("abc news", {"tvg_id": "465150", "name": "ABC News Live", "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg"}),
+    ("fox business", {"tvg_id": "464766", "name": "Fox Business", "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg"}),
+    ("fox news", {"tvg_id": "465372", "name": "Fox News Channel", "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/63eca216-d4fe-42c6-91f3-08cfdfb8159f/03a45698-b51f-47d3-af85-f706cc9f6872/1280x720/match/400/225/image.jpg"}),
+    ("cbs news", {"tvg_id": "464941", "name": "CBS News", "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg"}),
 ]
 
-def classify_channel(name, url):
-    name_lower = name.lower()
-    url_lower = url.lower()
-    for keywords, ch_type in CHANNEL_MATCH_RULES:
-        for kw in keywords:
-            if kw in name_lower or kw in url_lower:
-                return ch_type
+EPG_URLS = [
+    "https://epg.pw/xmltv/epg_US.xml.gz",
+    "https://iptv-epg.org/files/epg-us.xml.gz",
+]
+
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+
+def fix_logo(url):
+    if not url:
+        return None
+    url = url.split("?")[0]
+    if "imgur.com" in url.lower():
+        return None
+    if not url.lower().endswith((".jpg", ".jpeg")):
+        url = re.sub(r'\.(png|webp|svg|gif)(\?.*)?$', '.jpg', url)
+    return url
+
+def get_channel_info(extinf, url):
+    text = (extinf + " " + url).lower()
+    for key, info in CHANNEL_MAP:
+        if key in text:
+            return info
+    if "fox" in text and "business" in text:
+        return dict(CHANNEL_MAP[2][1])
+    if "fox" in text and "news" in text:
+        return dict(CHANNEL_MAP[3][1])
+    if "abc" in text:
+        return dict(CHANNEL_MAP[0][1])
+    if "cbs" in text:
+        return dict(CHANNEL_MAP[4][1])
     return None
 
-def parse_m3u(filepath):
-    channels = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        current = None
-        for line in f:
-            line = line.rstrip('\n\r')
-            if line.startswith('#EXTINF:'):
-                attrs = line[9:]
-                logo_m = re.search(r'tvg-logo="([^"]*)"', attrs)
-                group_m = re.search(r'group-title="([^"]*)"', attrs)
-                comma = attrs.rfind(',')
-                name = attrs[comma+1:].strip() if comma != -1 else attrs
-                current = {
-                    'name': name,
-                    'logo': logo_m.group(1) if logo_m else None,
-                    'group': group_m.group(1) if group_m else 'NEWS WORLD',
-                    'url': None,
-                }
-            elif line and not line.startswith('#') and not line.startswith('//') and current:
-                current['url'] = line
-                ch_type = classify_channel(current['name'], line)
-                current['type'] = ch_type
-                if ch_type:
-                    info = CHANNEL_MAP[ch_type]
-                    current['tvg_id'] = info['tvg_id']
-                    current['clean_name'] = info['name']
-                    if not current['logo'] or 'imgur' in current['logo']:
-                        current['logo'] = info['logo']
-                    if current['logo'] and not current['logo'].lower().endswith('.jpg') and not current['logo'].lower().endswith('.jpeg'):
-                        current['logo'] = info['logo']
-                else:
-                    current['tvg_id'] = None
-                    current['clean_name'] = current['name']
-                channels.append(current)
-                current = None
-    return channels
-
-def get_epg_programs(epg_path):
+def download_epg(url):
     try:
-        with gzip.open(epg_path, 'rb') as f:
-            content = f.read().decode('utf-8')
-        root = ET.fromstring(content)
-        return root.findall('programme')
-    except:
-        return []
+        r = requests.get(url, timeout=120, headers={"Accept-Encoding": "gzip", "User-Agent": USER_AGENT})
+        r.raise_for_status()
+        data = gzip.decompress(r.content).decode("utf-8")
+        root = ET.fromstring(data)
+        progs = root.findall("programme")
+        hoje = datetime.now().strftime("%Y%m%d")
+        amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
+        depois = (datetime.now() + timedelta(days=2)).strftime("%Y%m%d")
+        epg_data = {}
+        for p in progs:
+            ch = p.get("channel", "")
+            start = p.get("start", "")[:8]
+            title = p.findtext("title", "")
+            if ch not in epg_data:
+                epg_data[ch] = {"hoje": 0, "amanha": 0, "depois": 0}
+            if start == hoje:
+                epg_data[ch]["hoje"] += 1
+            elif start == amanha:
+                epg_data[ch]["amanha"] += 1
+            elif start == depois:
+                epg_data[ch]["depois"] += 1
+        return url, epg_data, root
+    except Exception as e:
+        print(f"  EPG download error: {e}")
+        return url, {}, None
 
-def count_epg_by_date(programmes, date_str):
-    return sum(1 for p in programmes if p.get('start', '')[:8] == date_str)
-
-def get_epg_for_channel(programmes, channel_id, date_str):
-    entries = []
-    for p in programmes:
-        if p.get('channel') == channel_id and p.get('start', '')[:8] == date_str:
-            title = p.find('title')
-            desc = p.find('desc')
-            start = p.get('start', '')
-            stop = p.get('stop', '')
-            entries.append({
-                'title': title.text if title is not None else '',
-                'desc': desc.text if desc is not None else '',
-                'start': start,
-                'stop': stop,
-            })
-    entries.sort(key=lambda x: x['start'])
-    return entries
-
-def ensure_jpg_logo(logo_url):
-    if not logo_url:
-        return None
-    if 'imgur.com' in logo_url:
-        return None
-    logo_url = logo_url.split('?')[0]
-    ext = logo_url.lower().rsplit('.', 1)[-1] if '.' in logo_url else ''
-    if ext not in ('jpg', 'jpeg'):
-        logo_url = re.sub(r'\.(png|webp|svg|gif|ico)$', '.jpg', logo_url, flags=re.IGNORECASE)
-    return logo_url
-
-def verify_stream(url):
+def test_stream(url, timeout=10):
     try:
-        resp = requests.get(url, timeout=10, stream=True)
-        return resp.status_code < 400
+        r = requests.get(url, timeout=timeout, headers={"User-Agent": USER_AGENT}, allow_redirects=True)
+        return r.status_code in [200, 201, 202, 203, 204, 205, 206, 301, 302, 303, 307, 308]
     except:
-        return None
+        return False
 
-def main():
-    print('=' * 70)
-    print('CORREÇÃO COMPLETA LISTA5.M3U')
-    print('=' * 70)
+print("=" * 60)
+print("CORRECAO COMPLETA lista5.m3u")
+print("=" * 60)
 
-    channels = parse_m3u(M3U_FILE)
-    print(f'\nTotal de entradas lidas: {len(channels)}')
+filepath = "lista5.m3u"
+with open(filepath, "r") as f:
+    raw = f.read()
+lines = raw.strip().split("\n")
 
-    unique = {}
-    for ch in channels:
-        key = ch['type'] or ch['url']
-        if key not in unique:
-            unique[key] = []
-        unique[key].append(ch)
-    print(f'Canais únicos identificados: {len(unique)}')
-    for k, v in unique.items():
-        print(f'  [{k}] {v[0]["name"]} ({len(v)} variantes)')
-
-    epg_progs = get_epg_programs(EPG_FILE)
-    today = datetime.now().strftime('%Y%m%d')
-    tomorrow = (datetime.now() + timedelta(days=1)).strftime('%Y%m%d')
-    day_after = (datetime.now() + timedelta(days=2)).strftime('%Y%m%d')
-
-    print(f'\nTeste EPG local ({EPG_FILE}):')
-    print(f'  Programas hoje ({today}): {count_epg_by_date(epg_progs, today)}')
-    print(f'  Programas amanhã ({tomorrow}): {count_epg_by_date(epg_progs, tomorrow)}')
-    print(f'  Programas depois ({day_after}): {count_epg_by_date(epg_progs, day_after)}')
-
-    print(f'\n--- MONTANDO LISTA CORRIGIDA ---')
-    output_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
-    seen_types = set()
-    added_count = 0
-    removed_count = 0
-    virus_removed = 0
-
-    for key, variants in unique.items():
-        best = variants[0]
-        ch_type = best['type']
-
-        if ch_type and ch_type in seen_types:
-            print(f'  [DUPLICADO ignorado] {best.get("name")}')
-            removed_count += len(variants)
-            continue
-        if ch_type:
-            seen_types.add(ch_type)
-
-        info = CHANNEL_MAP.get(ch_type)
-        if not info:
-            name = best.get('name', 'Desconhecido')
-            logo = ensure_jpg_logo(best.get('logo'))
-            if not logo:
-                logo = 'https://via.placeholder.com/200x150.jpg?text=TV'
-            group = best.get('group', 'NEWS WORLD')
-            url = best['url']
-
-            print(f'  [SEM EPG] {name}')
-            output_lines.append(f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}')
-            output_lines.append(url)
-            added_count += 1
-            continue
-
-        tvg_id = info['tvg_id']
-        name = info['name']
-        group = best.get('group', 'NEWS WORLD')
-        logo = info['logo']
-
-        best_url = best['url']
-        for v in variants:
-            url = v['url']
-            status = verify_stream(url)
-            if status is True:
-                best_url = url
+channels = []
+i = 0
+while i < len(lines):
+    l = lines[i].strip()
+    if l.startswith("#EXTINF"):
+        extinf = l
+        url = ""
+        j = i + 1
+        while j < len(lines):
+            nl = lines[j].strip()
+            if nl and not nl.startswith("#"):
+                url = nl
                 break
-            elif status is None and best_url == best['url']:
-                best_url = url
-
-        epg_count = count_epg_by_date(epg_progs, today)
-        epg_entries = get_epg_for_channel(epg_progs, tvg_id, today)
-
-        print(f'  [EPG {tvg_id}] {name}')
-        print(f'    EPG hoje: {len(epg_entries)} programas')
-        if epg_entries:
-            print(f'    Agora: {epg_entries[0]["title"]} ({epg_entries[0]["start"][:10]})')
-        if len(epg_entries) > 1:
-            print(f'    Seguinte: {epg_entries[1]["title"]} ({epg_entries[1]["start"][:10]})')
-
-        output_lines.append(f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-logo="{logo}" group-title="{group}",{name}')
-        output_lines.append(best_url)
-        added_count += 1
-
-    output = '\n'.join(output_lines) + '\n'
-
-    with open(M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write(output)
-
-    print(f'\n--- RESUMO ---')
-    print(f'Canais mantidos: {added_count}')
-    print(f'Entradas removidas (duplicadas): {removed_count}')
-    print(f'EPG URL: {EPG_URL}')
-    print(f'Total de canais com EPG: {sum(1 for t in seen_types if t is not None)}')
-
-    print(f'\n--- VERIFICAÇÃO FINAL ---')
-    lines = output.strip().split('\n')
-    has_extm3u = lines[0].startswith('#EXTM3U')
-    print(f'#EXTM3U header: {"OK" if has_extm3u else "FALTA"}')
-
-    errors = 0
-    for i, line in enumerate(lines):
-        if line.startswith('http') and not line.startswith('https://epg'):
-            if i == 0 or not lines[i-1].startswith('#EXTINF'):
-                print(f'  ERRO linha {i+1}: URL sem #EXTINF antes')
-                errors += 1
-        if 'imgur.com' in line:
-            print(f'  ERRO linha {i+1}: imgur.com encontrado')
-            errors += 1
-
-    for i, line in enumerate(lines):
-        if line.startswith('#EXTINF:'):
-            logo_m = re.search(r'tvg-logo="([^"]*)"', line)
-            if logo_m:
-                url = logo_m.group(1)
-                if not url.lower().endswith('.jpg') and not url.lower().endswith('.jpeg'):
-                    print(f'  ERRO linha {i+1}: logo não é .jpg: {url}')
-                    errors += 1
-
-    if errors == 0:
-        print('  Todas as verificações passaram!')
+            j += 1
+        channels.append({"extinf": extinf, "url": url})
+        i = j + 1
     else:
-        print(f'  {errors} erro(s) encontrado(s)')
+        i += 1
 
-    print(f'\n--- TESTE EPG ---')
-    for ch_type in seen_types:
-        if ch_type:
-            info = CHANNEL_MAP[ch_type]
-            entries_hoje = get_epg_for_channel(epg_progs, info['tvg_id'], today)
-            entries_amanha = get_epg_for_channel(epg_progs, info['tvg_id'], tomorrow)
-            entries_depois = get_epg_for_channel(epg_progs, info['tvg_id'], day_after)
-            status = '✓' if entries_hoje and entries_amanha and entries_depois else '✗'
-            print(f'  {status} {info["name"]}: hoje={len(entries_hoje)} amanhã={len(entries_amanha)} depois={len(entries_depois)}')
-            if entries_hoje:
-                print(f'     Ex: {entries_hoje[0]["title"]}')
+print(f"\nCanais encontrados no arquivo: {len(channels)}")
 
-    print(f'\nCONCLUÍDO!')
-    print(f'Arquivo salvo: {M3U_FILE}')
+print("\nBaixando EPG...")
+epg_url_used = None
+epg_data = {}
+epg_root = None
+for url in EPG_URLS:
+    u, d, r = download_epg(url)
+    if d and len(d) > 0:
+        epg_url_used = u
+        epg_data = d
+        epg_root = r
+        print(f"  Usando: {u}")
+        break
 
-if __name__ == '__main__':
-    main()
+if not epg_url_used:
+    print("ERRO: Nenhum EPG disponivel!")
+    sys.exit(1)
+
+print("\nVerificacao EPG por canal:")
+seen_ids = set()
+for key, info in CHANNEL_MAP:
+    tid = info["tvg_id"]
+    if tid in seen_ids:
+        continue
+    seen_ids.add(tid)
+    c = epg_data.get(tid, {"hoje": 0, "amanha": 0, "depois": 0})
+    total = c["hoje"] + c["amanha"] + c["depois"]
+    status = "OK" if c["hoje"] > 0 and c["amanha"] > 0 and c["depois"] > 0 else "FALHA"
+    print(f"  {status} {info['name']} (ID:{tid}): Hoje={c['hoje']}, Amanha={c['amanha']}, Depois={c['depois']}")
+
+print("\nTestando streams e processando canais...")
+seen_urls = set()
+seen_channels = {}
+valid = []
+removed = {"offline": 0, "duplicate": 0, "no_match": 0, "imgur": 0, "invalid": 0}
+
+for idx, ch in enumerate(channels):
+    url = ch["url"]
+    extinf = ch["extinf"]
+
+    if not url or not url.startswith("http"):
+        removed["invalid"] += 1
+        continue
+
+    if url in seen_urls:
+        removed["duplicate"] += 1
+        continue
+
+    info = get_channel_info(extinf, url)
+    if not info:
+        removed["no_match"] += 1
+        continue
+
+    stream_ok = test_stream(url, timeout=8)
+    if not stream_ok:
+        removed["offline"] += 1
+        continue
+
+    seen_urls.add(url)
+
+    channel_name = info["name"]
+    if channel_name not in seen_channels:
+        logo = fix_logo(info["logo"])
+        new_extinf = f'#EXTINF:-1 tvg-id="{info["tvg_id"]}" tvg-name="{channel_name}" group-title="NEWS WORLD",{channel_name}'
+        if logo:
+            new_extinf = f'#EXTINF:-1 tvg-id="{info["tvg_id"]}" tvg-name="{channel_name}" tvg-logo="{logo}" group-title="NEWS WORLD",{channel_name}'
+            if not re.search(r'\.jpe?g["\s]', new_extinf):
+                new_extinf = re.sub(r'(tvg-logo=")([^"]+?)(\.\w+)?(")', 
+                    lambda m: f'{m.group(1)}{re.sub(r"\.(png|webp|svg|gif)", ".jpg", m.group(2))}{m.group(4)}', new_extinf)
+        seen_channels[channel_name] = {"extinf": new_extinf, "url": url, "tvg_id": info["tvg_id"]}
+        valid.append(seen_channels[channel_name])
+        print(f"  [{idx+1}/{len(channels)}] OK: {channel_name} -> {url[:60]}...")
+    else:
+        removed["duplicate"] += 1
+
+print(f"\nResumo:")
+print(f"  Validos: {len(valid)}")
+print(f"  Removidos - Offline: {removed['offline']}, Duplicados: {removed['duplicate']}, Sem match: {removed['no_match']}, Invalidos: {removed['invalid']}")
+
+epg_urls_str = ",".join(EPG_URLS)
+print(f"\nEscrevendo {filepath}...")
+with open(filepath, "w", encoding="utf-8") as f:
+    f.write(f'#EXTM3U x-tvg-url="{epg_urls_str}"\n')
+    for ch in valid:
+        f.write(f"{ch['extinf']}\n")
+        f.write(f"{ch['url']}\n")
+
+print(f"Concluido! {len(valid)} canais no arquivo.")
+print(f"EPGs: {epg_urls_str}")
+
+print(f"\nVerificacao final do formato:")
+today_str = datetime.now().strftime("%Y-%m-%d")
+tomorrow_str = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+after_str = (datetime.now() + timedelta(days=2)).strftime("%Y-%m-%d")
+print(f"  Programacao: Hoje ({today_str}), Amanha ({tomorrow_str}), Depois ({after_str})")
+
+with open(filepath, "r") as f:
+    content = f.read()
+
+lines = content.strip().split("\n")
+errors = []
+for i, line in enumerate(lines):
+    if line.startswith("http") and i > 0:
+        prev = lines[i-1].strip()
+        if not prev.startswith("#EXTINF"):
+            errors.append(f"  Linha {i+1}: URL sem #EXTINF antes: {line[:50]}...")
+    if "imgur.com" in line.lower():
+        errors.append(f"  Linha {i+1}: Contem imgur.com")
+
+if errors:
+    print("AVISOS:")
+    for e in errors:
+        print(e)
+else:
+    print("  Formato OK - todas as URLs tem #EXTINF antes e sem imgur.com")
