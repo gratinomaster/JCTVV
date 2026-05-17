@@ -1,12 +1,12 @@
 #EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-kr.xml.gz https://cdn.epg.one/epg.xml.gz"
 
-#EXTINF:-1 tvg-id="KoreanCentralTelevision.kp" tvg-name="KCTV SD" tvg-logo="https://i.imgur.com/p02AEOF.png" group-title="🇰🇵 Coreia do Norte",Korean Central Television (KCTV) (576p)
+#EXTINF:-1 tvg-name="KCTV Main" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/KCTV_logo.svg/200px-KCTV_logo.svg.png" group-title="🇰🇵 Coreia do Norte",KCTV (Korean Central TV)
 #EXTVLCOPT:http-referrer=https://kcnawatch.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36
-https://streamer.nknews.org/tvdash/stream.mpd
-
-#EXTINF:-1 tvg-id="KoreanCentralTelevision.kp" tvg-name="KCTV Main" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/KCTV_logo.svg/200px-KCTV_logo.svg.png" group-title="🇰🇵 Coreia do Norte",KCTV (Korean Central TV)
 https://tv.intchoson.com/kctv/index.m3u8
 
 #EXTINF:-1 tvg-id="아리랑TV.kr" tvg-name="Arirang TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4c/Arirang-TV-Logo.svg" group-title="🇰🇷 Coreia do Sul",Arirang TV (HD)
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+
+#EXTINF:-1 tvg-id="828" tvg-name="BBC World News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BBC_World_News_logo.svg/512px-BBC_World_News_logo.svg.png" group-title="🌍 Internacional",BBC World News
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
