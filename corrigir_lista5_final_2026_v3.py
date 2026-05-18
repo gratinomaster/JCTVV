@@ -22,7 +22,7 @@ CHANNELS = OrderedDict([
     ("Fox News Channel", {
         "tvg-id": "465372",
         "tvg-name": "Fox News Channel HD",
-        "tvg-logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-news-us.png",
+        "tvg-logo": "https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg",
         "group-title": "NEWS WORLD",
         "stream": "https://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8",
         "tvg-chno": "2",
@@ -30,7 +30,7 @@ CHANNELS = OrderedDict([
     ("Fox Business", {
         "tvg-id": "464766",
         "tvg-name": "Fox Business HD",
-        "tvg-logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/fox-business-us.png",
+        "tvg-logo": "https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg",
         "group-title": "NEWS WORLD",
         "stream": "https://tvpass.org/live/FoxBusiness/hd",
         "tvg-chno": "3",
