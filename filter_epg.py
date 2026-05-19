@@ -1,91 +1,170 @@
-import gzip, re, urllib.request
+#!/usr/bin/env python3
+"""Build EPGFULL.xml.gz from epgshare01, matching channels by ID and display name."""
 
-MANUAL_MAP = {
-    "DW News English": "DW.English.HD.il",
-    "BBC News": "65d92a8c8b24c80008e285c0",
-    "CNN International": "CNN.International.fr",
-    "France 24 English": "France.24.fr",
-    "CBS News 24/7": "CBS.News.us",
-    "Bloomberg TV": "BLOOMBERG TV",
-    "Al Jazeera English": "Al.Jazeera.English.es",
-    "Sky News": "55b285cd2665de274553d66f",
-    "Newsmax": "Newsmax.us",
-    "Euronews English": "Euronews.fr",
-    "Africa 24 English": "Africa.24.fr",
-    "TRT World": "TRT.WORLD.tr",
-    "CGTN": "CGTN",
-    "NDTV 24x7": "NDTV.24x7.in",
-    "CGTN Francais": "CGTN",
-    "DW Espanol": "DW.pt",
-    "Bloomberg Asia": "BLOOMBERG TV",
-    "CNA": "Channel.News.Asia.id",
-    "Al Jazeera Arabic": "AL.JAZEERA.ARABIC.tr",
-    "NHK World-Japan": "NHK.World.TV.pt",
-    "France 24 Français": "France.24.fr",
-}
+import re, gzip, io, sys, subprocess
 
-# Fetch M3U
-req = urllib.request.urlopen('https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u')
-m3u = req.read().decode()
+M3U_FILE = "/tmp/NEWSWORLDNOVOS.m3u"
+OUTPUT_FILE = "EPGFULL.xml.gz"
+EPG_URL = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
 
-# Extract M3U channel display names
-m3u_names = {}
-for line in m3u.split('\n'):
-    if line.startswith('#EXTINF:'):
-        parts = line.rsplit(',', 1)
-        if len(parts) > 1:
-            name = parts[1].strip()
-            if name:
-                m3u_names[name] = True
+# --- Read M3U channel info ---
+m3u_by_id = {}       # tvg-id -> cleaned display name
+m3u_by_name = {}     # cleaned display name -> tvg-id
+m3u_ids = set()
 
-# Read original EPG XML
-with gzip.open('EPGFULL.xml.gz', 'rt', encoding='utf-8') as f:
-    xml = f.read()
+with open(M3U_FILE) as f:
+    for line in f:
+        m = re.search(r'tvg-id="([^"]*)"', line)
+        if m and ',' in line:
+            tid = m.group(1)
+            name = line.rsplit(',', 1)[1].strip()
+            name = re.sub(r'\s*\(\d+p\)', '', name)
+            name = re.sub(r'\s*\[.*?\]', '', name)
+            name = re.sub(r'\s*tvg-logo=".*?"', '', name)
+            name = re.sub(r'&amp;', '&', name).strip()
+            m3u_by_id[tid] = name
+            m3u_by_name[name.lower()] = tid
+            m3u_ids.add(tid)
 
-# Match M3U channels to EPG IDs
-matched_ids = set()
-for m3u_name in m3u_names:
-    matched = False
-    for pattern, epg_id in MANUAL_MAP.items():
-        if pattern.lower() in m3u_name.lower():
-            matched_ids.add(epg_id)
-            print(f"MATCH: '{m3u_name}' -> '{epg_id}'")
-            matched = True
-            break
-    if not matched:
-        print(f"NO MATCH: '{m3u_name}'")
+print(f"M3U: {len(m3u_ids)} unique tvg-ids", file=sys.stderr)
 
-print(f"\nTotal matched channels: {len(matched_ids)}")
-print(f"Matched IDs: {sorted(matched_ids)}")
+# --- Stream process epgshare01 ---
+# We'll build a mapping: epg_channel_id -> m3u_tvg_id
+id_map = {}  # epg_share_id -> m3u_tvg_id
 
-# Extract channel blocks for matched IDs
-channel_pattern = re.compile(r'<channel id="([^"]+)">(.*?)</channel>', re.DOTALL)
-channels_xml = ''
-for m in channel_pattern.finditer(xml):
-    if m.group(1) in matched_ids:
-        channels_xml += m.group(0) + '\n'
+channel_count = 0
+programme_count = 0
+written_ids = set()
 
-# Extract programme blocks for matched channels
-programme_pattern = re.compile(r'<programme[^>]*channel="([^"]+)"[^>]*>.*?</programme>', re.DOTALL)
-programmes_xml = ''
-for m in programme_pattern.finditer(xml):
-    if m.group(1) in matched_ids:
-        programmes_xml += m.group(0) + '\n'
+out = gzip.open(OUTPUT_FILE, "wt", encoding="utf-8")
+out.write('<?xml version="1.0" encoding="utf-8"?>\n')
+out.write("<tv>\n")
 
-# Get XML header (everything before the first <channel> or <programme>)
-header_end = xml.find('<channel ')
-if header_end == -1:
-    header_end = xml.find('<programme ')
-header = xml[:header_end]
+def normalize_name(n):
+    return re.sub(r'[^a-z0-9]', '', n.lower())
 
-# Build filtered XML
-filtered_xml = header + '\n' + channels_xml + programmes_xml + '</tv>'
+print("Streaming epgshare01 and filtering...", file=sys.stderr)
 
-# Write gzipped output (overwrite)
-with gzip.open('EPGFULL.xml.gz', 'wt', encoding='utf-8') as f:
-    f.write(filtered_xml)
+proc = subprocess.Popen(
+    ["curl", "-sL", EPG_URL],
+    stdout=subprocess.PIPE, stderr=subprocess.DEVNULL
+)
+gz_file = gzip.GzipFile(fileobj=proc.stdout)
 
-ch_count = filtered_xml.count('<channel ')
-pr_count = filtered_xml.count('<programme ')
-print(f"\nOutput: {ch_count} channels, {pr_count} programmes")
-print(f"Size: {len(filtered_xml)} bytes uncompressed")
+ch_names_seen = {}  # epg_id -> display_name (for logging)
+
+# We need to track what epg IDs map to what M3U IDs for programme rewriting
+# Since channels come first in the file, we can build the map as we go
+
+in_channel = False
+in_programme = False
+keep = False
+current_lines = []
+current_tag = ""
+current_epg_id = ""
+buffer = []  # buffer for current element
+
+for line_bytes in gz_file:
+    line = line_bytes.decode("utf-8", errors="replace")
+
+    if "<tv>" in line or "<?xml" in line:
+        continue
+
+    # --- Channel start ---
+    chm = re.search(r'<channel\s+id="([^"]*)"', line)
+    if chm:
+        in_channel = True
+        current_tag = "channel"
+        current_epg_id = chm.group(1)
+        keep = False
+        buffer = [line]
+        continue
+
+    if in_channel:
+        if "</channel>" in line:
+            buffer.append(line)
+            # Check if this channel matches an M3U channel
+            ch_text = "".join(buffer)
+            dn = re.search(r'<display-name[^>]*>(.*?)</display-name>', ch_text)
+            dn_name = dn.group(1).strip() if dn else ""
+            
+            matched_m3u_id = None
+            
+            # 1. Exact ID match
+            if current_epg_id in m3u_ids:
+                matched_m3u_id = current_epg_id
+            
+            # 2. Name match
+            if not matched_m3u_id and dn_name:
+                dn_lower = dn_name.lower().strip()
+                dn_norm = normalize_name(dn_name)
+                
+                # Exact name match
+                if dn_lower in m3u_by_name:
+                    matched_m3u_id = m3u_by_name[dn_lower]
+                
+                # Normalized match
+                if not matched_m3u_id:
+                    for m3u_name, m3u_tid in m3u_by_name.items():
+                        m3u_norm = normalize_name(m3u_name)
+                        if dn_norm == m3u_norm:
+                            matched_m3u_id = m3u_tid
+                            break
+                
+                # Partial: if M3U name is contained in EPG display name or vice versa
+                # Minimum 5 chars for the shorter
+                if not matched_m3u_id:
+                    for m3u_name, m3u_tid in m3u_by_name.items():
+                        if len(m3u_name) >= 5 and len(dn_lower) >= 5:
+                            if m3u_name in dn_lower or dn_lower in m3u_name:
+                                # Avoid very generic matches
+                                matched_m3u_id = m3u_tid
+                                break
+
+            if matched_m3u_id and matched_m3u_id not in written_ids:
+                id_map[current_epg_id] = matched_m3u_id
+                written_ids.add(matched_m3u_id)
+                ch_text = "".join(buffer)
+                ch_text = ch_text.replace(f'id="{current_epg_id}"', f'id="{matched_m3u_id}"', 1)
+                out.write(ch_text)
+                channel_count += 1
+
+            in_channel = False
+            buffer = []
+        else:
+            buffer.append(line)
+        continue
+
+    # --- Programme start ---
+    pm = re.search(r'<programme\s+[^>]*channel="([^"]*)"', line)
+    if pm:
+        in_programme = True
+        current_tag = "programme"
+        current_epg_id = pm.group(1)
+        keep = current_epg_id in id_map
+        buffer = [line]
+        continue
+
+    if in_programme:
+        if "</programme>" in line:
+            buffer.append(line)
+            if current_epg_id in id_map:
+                m3u_id = id_map[current_epg_id]
+                for l in buffer:
+                    out.write(l.replace(f'channel="{current_epg_id}"', f'channel="{m3u_id}"'))
+                programme_count += 1
+            in_programme = False
+            buffer = []
+        else:
+            buffer.append(line)
+        continue
+
+proc.wait()
+
+out.write("</tv>\n")
+out.close()
+
+import os
+size = os.path.getsize(OUTPUT_FILE)
+print(f"\nFinal: {channel_count} channels, {programme_count} programmes -> {OUTPUT_FILE} ({size} bytes)", file=sys.stderr)
+print(f"ID map size: {len(id_map)}", file=sys.stderr)
