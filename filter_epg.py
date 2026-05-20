@@ -1,98 +1,134 @@
 #!/usr/bin/env python3
-"""Filter EPGFULL.xml.gz to only include channels present in NEWSWORLDNOVOS.m3u"""
-import gzip
+"""Filter EPG XML to only include channels present in an M3U file."""
 import re
-import xml.etree.ElementTree as ET
-from xml.dom import minidom
-from datetime import datetime, timedelta
+import gzip
+import sys
+import tempfile
+import os
+import shutil
 
 M3U_FILE = "/tmp/NEWSWORLDNOVOS.m3u"
-EPG_IN = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
-EPG_OUT = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
+OLD_EPG = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
+NEW_EPG = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
 
-# Read M3U tvg-ids
-m3u_ids = set()
-with open(M3U_FILE) as f:
+tvg_ids = set()
+with open(M3U_FILE, "r") as f:
     for line in f:
-        m = re.search(r'tvg-id="([^"]*)"', line)
-        if m and m.group(1):
-            m3u_ids.add(m.group(1))
+        for m in re.finditer(r'tvg-id="([^"]*)"', line):
+            tid = m.group(1)
+            if tid:
+                tvg_ids.add(tid)
 
-print(f"M3U tvg-ids: {len(m3u_ids)}")
+print(f"Found {len(tvg_ids)} unique tvg-id values in M3U", file=sys.stderr)
 
-# Read existing EPG
-with gzip.open(EPG_IN, 'rt', encoding='utf-8') as f:
-    xml_content = f.read()
+channel_ids_in_epg = set()
+kept_channels = 0
+kept_programmes = 0
+skipped_channels = 0
+skipped_programmes = 0
 
-# Parse XML
-root = ET.fromstring(xml_content)
+# Check if old EPG exists and has content
+if not os.path.exists(OLD_EPG) or os.path.getsize(OLD_EPG) == 0:
+    print(f"ERROR: Old EPG file {OLD_EPG} does not exist or is empty", file=sys.stderr)
+    sys.exit(1)
 
-# Filter channels
-channels_to_keep = []
-channels_removed = 0
-for channel in root.findall('channel'):
-    cid = channel.get('id')
-    if cid in m3u_ids:
-        channels_to_keep.append(cid)
-    else:
-        channels_removed += 1
+# Read entire old EPG into memory first (it's ~1MB compressed, manageable)
+with gzip.open(OLD_EPG, "rt", encoding="utf-8", errors="replace") as fin:
+    old_content = fin.read()
 
-print(f"Channels to keep: {len(channels_to_keep)}")
-print(f"Channels removed: {channels_removed}")
+print(f"Read {len(old_content)} bytes from EPG", file=sys.stderr)
 
-# Build new XML
-tv = ET.Element("tv")
-for key, val in root.attrib.items():
-    tv.set(key, val)
+# Write filtered content to temp file, then replace
+tmp_fd, tmp_path = tempfile.mkstemp(suffix=".xml.gz", dir="/tmp")
+os.close(tmp_fd)
 
-keep_set = set(channels_to_keep)
+try:
+    with gzip.open(tmp_path, "wt", encoding="utf-8", errors="replace") as fout:
+        in_channel = False
+        keep_channel = False
+        channel_buf = []
 
-# Add channels
-for channel in root.findall('channel'):
-    if channel.get('id') in keep_set:
-        tv.append(channel)
+        in_programme = False
+        keep_programme = False
+        programme_buf = []
 
-# Add programmes
-progs_added = 0
-progs_removed = 0
-for prog in root.findall('programme'):
-    if prog.get('channel') in keep_set:
-        tv.append(prog)
-        progs_added += 1
-    else:
-        progs_removed += 1
+        for line in old_content.splitlines(keepends=True):
+            if line.startswith("<?xml") or line.startswith("<tv>"):
+                fout.write(line)
+                continue
+            if line.startswith("</tv>"):
+                fout.write(line)
+                break
 
-print(f"Programmes kept: {progs_added}")
-print(f"Programmes removed: {progs_removed}")
+            if not in_channel and not in_programme:
+                cm = re.match(r'\s*<channel\s+id="([^"]+)"', line)
+                if cm:
+                    cid = cm.group(1)
+                    in_channel = True
+                    keep_channel = cid in tvg_ids
+                    channel_buf = [line]
+                    if keep_channel:
+                        channel_ids_in_epg.add(cid)
+                        kept_channels += 1
+                    else:
+                        skipped_channels += 1
+                    continue
 
-# Write output
-xml_str = ET.tostring(tv, encoding='utf-8')
-parsed = minidom.parseString(xml_str)
-pretty = parsed.toprettyxml(indent="  ")
+                pm = re.match(r'\s*<programme\s', line)
+                if pm:
+                    in_programme = True
+                    chan_match = re.search(r'channel="([^"]+)"', line)
+                    keep_programme = chan_match is not None and chan_match.group(1) in tvg_ids
+                    programme_buf = [line]
+                    if keep_programme:
+                        kept_programmes += 1
+                    else:
+                        skipped_programmes += 1
+                    continue
 
-with gzip.open(EPG_OUT, 'wt', encoding='utf-8') as f:
-    f.write(pretty)
+                fout.write(line)
+                continue
 
-import os
-size = os.path.getsize(EPG_OUT)
-print(f"\nSaved: {EPG_OUT} ({size:,} bytes)")
+            if in_channel:
+                channel_buf.append(line)
+                if "</channel>" in line:
+                    in_channel = False
+                    if keep_channel:
+                        fout.writelines(channel_buf)
+                    channel_buf = []
+                continue
 
-# Test
-today = datetime.now().strftime("%Y%m%d")
-tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
+            if in_programme:
+                programme_buf.append(line)
+                if "</programme>" in line:
+                    in_programme = False
+                    if keep_programme:
+                        fout.writelines(programme_buf)
+                    programme_buf = []
+                continue
 
-today_count = len(re.findall(r'<programme[^>]*start="' + today, pretty))
-tomorrow_count = len(re.findall(r'<programme[^>]*start="' + tomorrow, pretty))
+    shutil.move(tmp_path, NEW_EPG)
+    print(f"Moved temp file to {NEW_EPG}", file=sys.stderr)
 
-print(f"\n=== TEST RESULTS ===")
-print(f"Today ({today}): {today_count} programmes")
-print(f"Tomorrow ({tomorrow}): {tomorrow_count} programmes")
+except Exception as e:
+    if os.path.exists(tmp_path):
+        os.unlink(tmp_path)
+    print(f"ERROR: {e}", file=sys.stderr)
+    sys.exit(1)
 
-if today_count > 0 and tomorrow_count > 0:
-    print("✓ EPG is working and has programmes for today AND tomorrow!")
-else:
-    print("✗ EPG missing programmes for today or tomorrow!")
-    if today_count == 0:
-        print("  - No programmes for today found!")
-    if tomorrow_count == 0:
-        print("  - No programmes for tomorrow found!")
+print(f"Kept {kept_channels} channels, skipped {skipped_channels}", file=sys.stderr)
+print(f"Kept {kept_programmes} programmes, skipped {skipped_programmes}", file=sys.stderr)
+print(f"Channel IDs in both M3U and EPG: {len(channel_ids_in_epg)}", file=sys.stderr)
+
+missing = tvg_ids - channel_ids_in_epg
+if missing:
+    print(f"Channels in M3U but NOT in EPG ({len(missing)}):", file=sys.stderr)
+    for m in sorted(missing):
+        print(f"  {m}", file=sys.stderr)
+
+# Restore backup if available
+bak_file = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz.bak"
+if not os.path.exists(OLD_EPG) or os.path.getsize(OLD_EPG) == 0:
+    if os.path.exists(bak_file):
+        print(f"Restoring from backup {bak_file}", file=sys.stderr)
+        shutil.copy2(bak_file, OLD_EPG)
