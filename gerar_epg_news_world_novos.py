@@ -3,9 +3,41 @@ import re, gzip, io, copy, sys
 import xml.etree.ElementTree as ET
 import requests
 from collections import OrderedDict
+from datetime import datetime, timedelta
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
 OUTPUT = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
+
+EPG_SOURCES = [
+    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_ZA1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_KR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PL1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_SE1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_NO1.xml.gz",
+    "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml",
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
+]
 
 def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
@@ -15,37 +47,24 @@ r = requests.get(M3U_URL, timeout=60, allow_redirects=True)
 m3u_content = r.text
 
 m3u_ids = set()
-m3u_names = {}
 for match in re.finditer(r'tvg-id="([^"]*)"', m3u_content):
     tid = match.group(1).strip()
     if tid and tid != "0" and tid != "(no tvg-id)":
         m3u_ids.add(tid)
 
-for match in re.finditer(r'tvg-id="([^"]*)"[^>]*tvg-name="([^"]*)"', m3u_content):
-    tid = match.group(1).strip()
-    name = match.group(2).strip()
-    if tid and name:
-        m3u_names[tid] = name
-
-m3u_norm_ids = {norm(t) for t in m3u_ids}
+m3u_norm = {norm(t): t for t in m3u_ids}
+m3u_norm_set = set(m3u_norm.keys())
 print(f"  Encontrados {len(m3u_ids)} tvg-ids no M3U")
-for tid in sorted(m3u_ids):
-    name = m3u_names.get(tid, '')
-    print(f"    {tid}: {name}")
 
-epg_urls = []
+epg_urls_from_m3u = []
 for match in re.finditer(r'(?:url-tvg|x-tvg-url)="([^"]*)"', m3u_content):
     for u in match.group(1).replace(',', ' ').split():
         u = u.strip()
-        if u and u not in epg_urls:
-            epg_urls.append(u)
-if not epg_urls:
-    epg_urls = [
-        "https://epg.pw/xmltv/epg_US.xml.gz",
-        "https://epg.pw/xmltv/epg_GB.xml.gz",
-    ]
+        if u and u not in epg_urls_from_m3u:
+            epg_urls_from_m3u.append(u)
 
-print(f"\n2. Fontes EPG: {len(epg_urls)} URLs")
+all_sources = epg_urls_from_m3u + [u for u in EPG_SOURCES if u not in epg_urls_from_m3u]
+print(f"2. Fontes EPG: {len(all_sources)} URLs")
 
 matched_ids = set()
 seen_progs = set()
@@ -68,46 +87,72 @@ def download_epg(url):
         print(f"    Error: {e}")
         return None
 
-def process_epg_xml(xml_bytes, valid_ids, valid_norm):
+def process_epg_xml(xml_bytes):
     new_ch = 0
     new_pr = 0
     try:
         if xml_bytes[:2] == b'\x1f\x8b':
-            raw = gzip.GzipFile(fileobj=io.BytesIO(xml_bytes)).read()
+            f = gzip.GzipFile(fileobj=io.BytesIO(xml_bytes))
         else:
-            raw = xml_bytes
+            f = io.BytesIO(xml_bytes)
 
-        tree = ET.parse(io.BytesIO(raw))
-        root = tree.getroot()
+        id_remap = {}
+        context = ET.iterparse(f, events=('end',))
+        for event, elem in context:
+            tag = elem.tag
+            if tag == 'channel':
+                cid = elem.get('id', '')
+                if not cid:
+                    elem.clear()
+                    continue
+                nc = norm(cid)
+                m3u_id = None
+                if cid in m3u_ids:
+                    m3u_id = cid
+                elif nc in m3u_norm_set:
+                    m3u_id = m3u_norm[nc]
 
-        for channel in root.findall('channel'):
-            cid = channel.get('id', '')
-            if cid in valid_ids or norm(cid) in valid_norm:
-                if cid not in matched_ids:
-                    matched_ids.add(cid)
-                    all_channels[cid] = copy.deepcopy(channel)
-                    new_ch += 1
-
-        for prog in root.findall('programme'):
-            ch = prog.get('channel', '')
-            if ch in matched_ids:
-                start = prog.get('start', '')
-                stop = prog.get('stop', '')
-                key = f"{ch}|{start}|{stop}"
-                if key not in seen_progs:
-                    seen_progs.add(key)
-                    all_programmes[key] = copy.deepcopy(prog)
-                    new_pr += 1
+                if m3u_id:
+                    id_remap[cid] = m3u_id
+                    if m3u_id not in matched_ids:
+                        matched_ids.add(m3u_id)
+                        ch = copy.deepcopy(elem)
+                        ch.set('id', m3u_id)
+                        all_channels[m3u_id] = ch
+                        new_ch += 1
+            elif tag == 'programme':
+                ch = elem.get('channel', '')
+                if not ch:
+                    elem.clear()
+                    continue
+                m3u_id = id_remap.get(ch)
+                if m3u_id is None:
+                    nc = norm(ch)
+                    if ch in m3u_ids:
+                        m3u_id = ch
+                    elif nc in m3u_norm_set:
+                        m3u_id = m3u_norm[nc]
+                if m3u_id:
+                    start = elem.get('start', '')
+                    stop = elem.get('stop', '')
+                    key = f"{m3u_id}|{start}|{stop}"
+                    if key not in seen_progs:
+                        seen_progs.add(key)
+                        pr = copy.deepcopy(elem)
+                        pr.set('channel', m3u_id)
+                        all_programmes[key] = pr
+                        new_pr += 1
+            elem.clear()
     except ET.ParseError as e:
         print(f"    XML parse error: {e}")
     return new_ch, new_pr
 
 print("\n3. Processando fontes EPG...")
-for url in epg_urls:
+for url in all_sources:
     data = download_epg(url)
     if data is None:
         continue
-    ch, pr = process_epg_xml(data, m3u_ids, m3u_norm_ids)
+    ch, pr = process_epg_xml(data)
     print(f"    -> {ch} novos canais, {pr} novos programas")
 
 print(f"\n4. Total: {len(matched_ids)} canais, {len(all_programmes)} programas")
@@ -126,16 +171,18 @@ xml_data = buf.getvalue()
 with gzip.open(OUTPUT, 'wb') as f:
     f.write(xml_data)
 
-print(f"\n5. Salvo: {OUTPUT} ({len(xml_data)} bytes uncompressed, {len(buf.getvalue())} compressed)")
+file_size = 0
+import os
+file_size = os.path.getsize(OUTPUT)
+print(f"\n5. Salvo: {OUTPUT} ({file_size} bytes)")
 
-print("\n6. Testando EPF gerado...")
-import xml.etree.ElementTree as ET2
+print("\n6. Testando EPG gerado...")
 from datetime import datetime, timedelta
 
 with gzip.open(OUTPUT, 'rb') as f:
     test_xml = f.read().decode('utf-8', errors='ignore')
 
-test_root = ET2.fromstring(test_xml)
+test_root = ET.fromstring(test_xml)
 canais = test_root.findall("channel")
 programas = test_root.findall("programme")
 
