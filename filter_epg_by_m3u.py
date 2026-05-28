@@ -2,22 +2,27 @@
 import gzip
 import re
 import xml.etree.ElementTree as ET
-import urllib.request
 import os
 import sys
 import io
-import shutil
-import copy
+from collections import OrderedDict
 
 M3U_FILE = "NEWSWORLDNOVOS.m3u"
 OUTPUT_EPG = "EPGFULL.xml.gz"
+EPG_SOURCES = [
+    ("epg.pw full", "/tmp/epg.xml"),
+    ("epg.pw US", "/tmp/epg_US.xml.gz"),
+    ("epg.pw BR", "/tmp/epg_BR.xml"),
+]
 
 def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
 
+# Load M3U data
 tvg_ids = set()
-tvg_norm = set()
-epg_urls = []
+tvg_norm = {}
+tvg_names = {}
+tvg_logo_ids = {}
 
 with open(M3U_FILE, "r", encoding="utf-8") as f:
     for line in f:
@@ -25,11 +30,13 @@ with open(M3U_FILE, "r", encoding="utf-8") as f:
         if m and m.group(1):
             tid = m.group(1)
             tvg_ids.add(tid)
-            tvg_norm.add(norm(tid))
-        if line.startswith("#EXTM3U"):
-            um = re.search(r'url-tvg="([^"]*)"', line)
-            if um:
-                epg_urls = [u.strip() for u in um.group(1).split(",") if u.strip()]
+            tvg_norm[norm(tid)] = tid
+        mn = re.search(r'tvg-name="([^"]*)"', line)
+        if mn:
+            tvg_names[tid] = mn.group(1).lower().strip()
+        ml = re.search(r'epg\.pw/media/logos/tvg-id/(.+)\.png', line)
+        if ml:
+            tvg_logo_ids[tid] = ml.group(1)
 
 print(f"Found {len(tvg_ids)} tvg-ids in M3U")
 
@@ -37,94 +44,127 @@ if not tvg_ids:
     print("ERROR: No tvg-ids found in M3U!")
     sys.exit(1)
 
-if not epg_urls:
-    epg_urls = ["https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"]
-
-def download(url):
-    print(f"Downloading {url}...")
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"})
-    resp = urllib.request.urlopen(req, timeout=600)
-    data = resp.read()
-    print(f"  {len(data)} bytes")
-    return data
-
-def parse_xml(data):
-    if data[:2] == b'\x1f\x8b':
-        f = gzip.GzipFile(fileobj=io.BytesIO(data))
-    else:
-        f = io.BytesIO(data)
-    return ET.parse(f)
+# Build reverse name lookup from M3U
+name_to_tvgid = {}
+for tid, name in tvg_names.items():
+    nname = norm(name)
+    if nname:
+        name_to_tvgid[nname] = tid
 
 matched_ids = set()
-all_channels = {}
-all_programmes = {}
+channel_elements = OrderedDict()
+programme_elements = OrderedDict()
 seen_progs = set()
 
-for url in epg_urls:
+def parse_epg_source(name, path, match_mode="id"):
+    global matched_ids, channel_elements, programme_elements, seen_progs
+    if not os.path.exists(path):
+        print(f"  {name}: file not found, skipping")
+        return
+
+    print(f"Parsing {name}...")
     try:
-        data = download(url)
-        tree = parse_xml(data)
-        root = tree.getroot()
+        if path.endswith(".gz"):
+            f = gzip.open(path, "rb")
+        else:
+            f = open(path, "rb")
     except Exception as e:
-        print(f"  Failed: {e}")
-        continue
+        print(f"  Error opening: {e}")
+        return
 
     ch_count = 0
-    for ch in root.findall("channel"):
-        cid = ch.get("id")
-        if not cid:
-            continue
-        ncid = norm(cid)
-        # Check exact match first, then normalized
-        if cid in tvg_ids:
-            key = cid
-        elif ncid in tvg_norm:
-            key = next(t for t in tvg_ids if norm(t) == ncid)
-        else:
-            continue
-        if key not in matched_ids:
-            matched_ids.add(key)
-            all_channels[key] = copy.deepcopy(ch)
-            ch_count += 1
-    print(f"  +{ch_count} new channels")
+    for event, elem in ET.iterparse(f, events=("end",)):
+        if elem.tag == "channel":
+            cid = elem.get("id")
+            if not cid:
+                elem.clear()
+                continue
+            key = None
+            ncid = norm(cid)
+            if cid in tvg_ids:
+                key = cid
+            elif ncid in tvg_norm:
+                key = tvg_norm[ncid]
 
-    pr_count = 0
-    for prog in root.findall("programme"):
-        ch = prog.get("channel")
-        nch = norm(ch)
-        # Find matching M3U id for this programme channel
-        key = None
-        if ch in tvg_ids:
-            key = ch
-        elif nch in tvg_norm:
-            key = next((t for t in tvg_ids if norm(t) == nch), None)
-        if key is None or key not in matched_ids:
-            continue
-        start = prog.get("start", "")
-        stop = prog.get("stop", "")
-        pkey = f"{key}|{start}|{stop}"
-        if pkey not in seen_progs:
-            seen_progs.add(pkey)
-            all_programmes[pkey] = copy.deepcopy(prog)
-            pr_count += 1
-    print(f"  +{pr_count} new programmes")
+            # Try matching by logo ID (epg.pw logo filename)
+            if key is None:
+                for tid, lid in tvg_logo_ids.items():
+                    if norm(cid) == norm(lid):
+                        key = tid
+                        break
 
-print(f"\nTotal: {len(all_channels)} channels, {len(all_programmes)} programmes")
+            # Try matching by display-name
+            if key is None and match_mode == "name":
+                dn = elem.find("display-name")
+                if dn is not None and dn.text:
+                    ndn = norm(dn.text)
+                    if ndn in name_to_tvgid:
+                        key = name_to_tvgid[ndn]
+
+            if key is not None and key not in matched_ids:
+                matched_ids.add(key)
+                channel_elements[key] = ET.tostring(elem, encoding="unicode")
+                ch_count += 1
+            elem.clear()
+
+        elif elem.tag == "programme":
+            ch = elem.get("channel")
+            if not ch:
+                elem.clear()
+                continue
+            key = None
+            nch = norm(ch)
+            if ch in matched_ids:
+                key = ch
+            elif nch in tvg_norm and tvg_norm[nch] in matched_ids:
+                key = tvg_norm[nch]
+            if key is None:
+                elem.clear()
+                continue
+            start = elem.get("start", "")
+            stop = elem.get("stop", "")
+            pkey = f"{key}|{start}|{stop}"
+            if pkey not in seen_progs:
+                seen_progs.add(pkey)
+                programme_elements[pkey] = ET.tostring(elem, encoding="unicode")
+            elem.clear()
+
+    f.close()
+    print(f"  +{ch_count} new channels, {sum(1 for p in programme_elements if p.startswith('|'))} programmes")
+
+# Primary pass: exact ID match on all sources
+for src_name, src_path in EPG_SOURCES:
+    parse_epg_source(src_name, src_path, match_mode="id")
+
+print(f"\nAfter primary pass: {len(matched_ids)}/{len(tvg_ids)} channels matched")
+
+# Secondary pass: try name matching for missing channels
+missing = [cid for cid in sorted(tvg_ids) if cid not in matched_ids]
+if missing:
+    print(f"Missing channels ({len(missing)}): {missing}")
+    print("Trying name-based matching...")
+    for src_name, src_path in EPG_SOURCES:
+        parse_epg_source(f"{src_name} (name match)", src_path, match_mode="name")
+
+print(f"\nFinal: {len(matched_ids)}/{len(tvg_ids)} channels, {len(programme_elements)} programmes")
 
 missing = [cid for cid in sorted(tvg_ids) if cid not in matched_ids]
 if missing:
     print(f"Still missing ({len(missing)}): {missing}")
 
-tv = ET.Element("tv")
-for cid in sorted(all_channels.keys()):
-    tv.append(all_channels[cid])
-for prog_key in sorted(all_programmes.keys()):
-    tv.append(all_programmes[prog_key])
+# Build XML
+lines = ['<?xml version="1.0" encoding="utf-8"?>', "<tv>"]
+for buf in channel_elements.values():
+    lines.append(buf)
+for buf in programme_elements.values():
+    lines.append(buf)
+lines.append("</tv>")
 
-xml_bytes = ET.tostring(tv, encoding="utf-8", xml_declaration=True)
+xml_str = "\n".join(lines)
 
 with gzip.open(OUTPUT_EPG, "wt", encoding="utf-8") as f:
-    f.write(xml_bytes.decode("utf-8"))
+    f.write(xml_str)
 
 out_size = os.path.getsize(OUTPUT_EPG)
 print(f"\nWritten to {OUTPUT_EPG} ({out_size} bytes)")
+print(f"File overwritten successfully")
