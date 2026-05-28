@@ -7,21 +7,25 @@ import xml.etree.ElementTree as ET
 import re
 
 CHANNEL_MAPPING = {
-    "ABC News Live": {
+    "ABCNewsLive.us": {
+        "display": "ABC News Live",
         "names": ["ABC News Live", "ABCNewsLive.us"],
-        "logo": "https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg"
+        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg"
     },
-    "Fox News Channel": {
+    "FoxNewsChannel.us": {
+        "display": "Fox News Channel",
         "names": ["Fox News", "FoxNews", "FoxNewsChannel.us"],
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg"
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg"
     },
-    "Fox Business": {
+    "FoxBusiness.us": {
+        "display": "Fox Business",
         "names": ["Fox Business", "FoxBusiness", "FoxBusinessNetwork.us"],
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3b09e0ef-610a-43d4-960b-78dc97ae2bd2/dc2e6082-3de1-40e8-a3ab-b6a61b18c3b1/1280x720/match/400/225/image.jpg"
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg"
     },
-    "CBS News": {
+    "CBSNews.us": {
+        "display": "CBS News 24/7",
         "names": ["CBS News", "CBSNews", "CBSNewsNetwork.us"],
-        "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg"
+        "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg"
     }
 }
 
@@ -34,7 +38,7 @@ def get_affiliate_programmes(epg_content, channel_name, days=3):
         "ABC News Live": ["WABC-DT.us_locals1", "KABC-DT.us_locals1"],
         "Fox News Channel": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
         "Fox Business": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
-        "CBS News": ["WCBS-DT.us_locals1", "KCBS-DT.us_locals1"]
+        "CBS News 24/7": ["WCBS-DT.us_locals1", "KCBS-DT.us_locals1"]
     }
 
     ids = affiliate_ids.get(channel_name, [])
@@ -133,25 +137,29 @@ def create_custom_epg():
 <tv date="{today.strftime('%Y%m%d%H%M%S')}">
 '''
 
-    for ch_name, ch_info in CHANNEL_MAPPING.items():
-        xml += f'''  <channel id="{ch_name}">
-    <display-name lang="en">{ch_name}</display-name>
+    for ch_id, ch_info in CHANNEL_MAPPING.items():
+        ch_id_esc = escape_xml(ch_id)
+        display_esc = escape_xml(ch_info['display'])
+        xml += f'''  <channel id="{ch_id_esc}">
+    <display-name lang="en">{display_esc}</display-name>
     <icon src="{ch_info['logo']}" />
   </channel>
 '''
 
-    for ch_name, ch_info in CHANNEL_MAPPING.items():
-        print(f"\nProcessando: {ch_name}")
-        programmes = generate_generic_programmes(ch_name, 3)
+    for ch_id, ch_info in CHANNEL_MAPPING.items():
+        display_name = ch_info['display']
+        print(f"\nProcessando: {display_name} ({ch_id})")
+        programmes = generate_generic_programmes(display_name, 3)
+        ch_id_esc = escape_xml(ch_id)
 
         for prog in programmes:
             start = prog['start'][:8] + 'T' + prog['start'][8:] + '00 +0000'
             stop = prog['stop'][:8] + 'T' + prog['stop'][8:] + '00 +0000'
 
-            show_name = get_show_for_time(ch_name, prog['start'])
-            xml += f'''  <programme channel="{ch_name}" start="{start}" stop="{stop}">
+            show_name = get_show_for_time(display_name, prog['start'])
+            xml += f'''  <programme channel="{ch_id_esc}" start="{start}" stop="{stop}">
     <title lang="en">{show_name}</title>
-    <desc lang="en">Live news coverage from {ch_name}</desc>
+    <desc lang="en">Live news coverage from {ch_info['display']}</desc>
   </programme>
 '''
 
@@ -161,6 +169,9 @@ def create_custom_epg():
         f.write(xml)
 
     print(f"\nEPG salvo: lista5_epg.xml ({len(xml)} bytes)")
+
+def escape_xml(s):
+    return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;').replace("'", '&apos;')
 
 def get_show_for_time(channel, timestamp):
     hour = int(timestamp[8:10])
@@ -176,7 +187,7 @@ def get_show_for_time(channel, timestamp):
             (23, 6): "Overnight News"
         },
         "Fox News Channel": {
-            (6, 9): "Fox & Friends First",
+            (6, 9): "Fox &amp; Friends First",
             (9, 12): "America's Newsroom",
             (12, 15): "Happening Now",
             (15, 17): "The Story",

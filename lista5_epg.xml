@@ -1,2 +1,307 @@
-<?xml version='1.0' encoding='utf-8'?>
-<tv date="20260527021639"><channel id="ABCNewsLive.us"><display-name lang="en">ABC News Live</display-name><icon src="https://keyframe-cdn.abcnews.com/streamprovider5.jpg" /></channel><channel id="FoxNewsChannel.us"><display-name lang="en">Fox News Channel</display-name><icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/a6a5c792-7fc5-4cbd-a17f-5c17b855647d/d5bbc9d6-134a-4eb2-a923-931842d1e2dd/1280x720/match/400/225/image.jpg" /></channel><channel id="FoxBusiness.us"><display-name lang="en">Fox Business</display-name><icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/a6a5c792-7fc5-4cbd-a17f-5c17b855647d/d5bbc9d6-134a-4eb2-a923-931842d1e2dd/1280x720/match/400/225/image.jpg" /></channel><channel id="CBSNews.us"><display-name lang="en">CBS News 24/7</display-name><icon src="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" /></channel><programme channel="ABCNewsLive.us" start="2026052506000000 +0000" stop="2026052509000000 +0000"><title lang="en">Good Morning America</title><desc lang="en">Morning news coverage from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052509000000 +0000" stop="2026052512000000 +0000"><title lang="en">ABC News Live - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052512000000 +0000" stop="2026052513000000 +0000"><title lang="en">ABC World News Midday</title><desc lang="en">Midday news update from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052513000000 +0000" stop="2026052516300000 +0000"><title lang="en">ABC News Live - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052516300000 +0000" stop="2026052518000000 +0000"><title lang="en">ABC News Live - The Report</title><desc lang="en">In-depth news reporting</desc></programme><programme channel="ABCNewsLive.us" start="2026052518000000 +0000" stop="2026052518300000 +0000"><title lang="en">ABC World News Tonight</title><desc lang="en">Evening news from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052518300000 +0000" stop="2026052523000000 +0000"><title lang="en">ABC News Live - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052506000000 +0000" stop="2026052509000000 +0000"><title lang="en">CBS Mornings</title><desc lang="en">Morning news coverage from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052509000000 +0000" stop="2026052512000000 +0000"><title lang="en">CBS News 24/7 - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="CBSNews.us" start="2026052512000000 +0000" stop="2026052513000000 +0000"><title lang="en">CBS Midday News</title><desc lang="en">Midday news update</desc></programme><programme channel="CBSNews.us" start="2026052513000000 +0000" stop="2026052516300000 +0000"><title lang="en">CBS News 24/7 - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="CBSNews.us" start="2026052516300000 +0000" stop="2026052518000000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Evening news from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052518000000 +0000" stop="2026052519000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052519000000 +0000" stop="2026052523000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Evening news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052506000000 +0000" stop="2026052509000000 +0000"><title lang="en">Fox &amp; Friends First</title><desc lang="en">Morning news coverage from Fox News</desc></programme><programme channel="FoxNewsChannel.us" start="2026052509000000 +0000" stop="2026052512000000 +0000"><title lang="en">America's Newsroom</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052512000000 +0000" stop="2026052513000000 +0000"><title lang="en">Happening Now</title><desc lang="en">Midday news update</desc></programme><programme channel="FoxNewsChannel.us" start="2026052513000000 +0000" stop="2026052516000000 +0000"><title lang="en">The Story with Martha MacCallum</title><desc lang="en">Afternoon news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052516000000 +0000" stop="2026052518000000 +0000"><title lang="en">Your World with Neil Cavuto</title><desc lang="en">Afternoon business news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052518000000 +0000" stop="2026052519000000 +0000"><title lang="en">Special Report with Bret Baier</title><desc lang="en">Evening news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052519000000 +0000" stop="2026052523000000 +0000"><title lang="en">Fox News Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052506000000 +0000" stop="2026052509000000 +0000"><title lang="en">Mornings with Maria</title><desc lang="en">Morning business news</desc></programme><programme channel="FoxBusiness.us" start="2026052509000000 +0000" stop="2026052511000000 +0000"><title lang="en">Fox Business - Morning</title><desc lang="en">Live morning business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052511000000 +0000" stop="2026052512000000 +0000"><title lang="en">Making Money with Charles Payne</title><desc lang="en">Investment news</desc></programme><programme channel="FoxBusiness.us" start="2026052512000000 +0000" stop="2026052514000000 +0000"><title lang="en">Afternoon Business</title><desc lang="en">Afternoon business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052514000000 +0000" stop="2026052516000000 +0000"><title lang="en">Cavuto: Coast to Coast</title><desc lang="en">Business news analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052516000000 +0000" stop="2026052518000000 +0000"><title lang="en">Making Money</title><desc lang="en">Market analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052518000000 +0000" stop="2026052523000000 +0000"><title lang="en">Fox Business Primetime</title><desc lang="en">Evening business news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052606000000 +0000" stop="2026052609000000 +0000"><title lang="en">Good Morning America</title><desc lang="en">Morning news coverage from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052609000000 +0000" stop="2026052612000000 +0000"><title lang="en">ABC News Live - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052612000000 +0000" stop="2026052613000000 +0000"><title lang="en">ABC World News Midday</title><desc lang="en">Midday news update from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052613000000 +0000" stop="2026052616300000 +0000"><title lang="en">ABC News Live - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052616300000 +0000" stop="2026052618000000 +0000"><title lang="en">ABC News Live - The Report</title><desc lang="en">In-depth news reporting</desc></programme><programme channel="ABCNewsLive.us" start="2026052618000000 +0000" stop="2026052618300000 +0000"><title lang="en">ABC World News Tonight</title><desc lang="en">Evening news from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052618300000 +0000" stop="2026052623000000 +0000"><title lang="en">ABC News Live - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052606000000 +0000" stop="2026052609000000 +0000"><title lang="en">CBS Mornings</title><desc lang="en">Morning news coverage from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052609000000 +0000" stop="2026052612000000 +0000"><title lang="en">CBS News 24/7 - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="CBSNews.us" start="2026052612000000 +0000" stop="2026052613000000 +0000"><title lang="en">CBS Midday News</title><desc lang="en">Midday news update</desc></programme><programme channel="CBSNews.us" start="2026052613000000 +0000" stop="2026052616300000 +0000"><title lang="en">CBS News 24/7 - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="CBSNews.us" start="2026052616300000 +0000" stop="2026052618000000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Evening news from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052618000000 +0000" stop="2026052619000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052619000000 +0000" stop="2026052623000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Evening news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052606000000 +0000" stop="2026052609000000 +0000"><title lang="en">Fox &amp; Friends First</title><desc lang="en">Morning news coverage from Fox News</desc></programme><programme channel="FoxNewsChannel.us" start="2026052609000000 +0000" stop="2026052612000000 +0000"><title lang="en">America's Newsroom</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052612000000 +0000" stop="2026052613000000 +0000"><title lang="en">Happening Now</title><desc lang="en">Midday news update</desc></programme><programme channel="FoxNewsChannel.us" start="2026052613000000 +0000" stop="2026052616000000 +0000"><title lang="en">The Story with Martha MacCallum</title><desc lang="en">Afternoon news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052616000000 +0000" stop="2026052618000000 +0000"><title lang="en">Your World with Neil Cavuto</title><desc lang="en">Afternoon business news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052618000000 +0000" stop="2026052619000000 +0000"><title lang="en">Special Report with Bret Baier</title><desc lang="en">Evening news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052619000000 +0000" stop="2026052623000000 +0000"><title lang="en">Fox News Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052606000000 +0000" stop="2026052609000000 +0000"><title lang="en">Mornings with Maria</title><desc lang="en">Morning business news</desc></programme><programme channel="FoxBusiness.us" start="2026052609000000 +0000" stop="2026052611000000 +0000"><title lang="en">Fox Business - Morning</title><desc lang="en">Live morning business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052611000000 +0000" stop="2026052612000000 +0000"><title lang="en">Making Money with Charles Payne</title><desc lang="en">Investment news</desc></programme><programme channel="FoxBusiness.us" start="2026052612000000 +0000" stop="2026052614000000 +0000"><title lang="en">Afternoon Business</title><desc lang="en">Afternoon business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052614000000 +0000" stop="2026052616000000 +0000"><title lang="en">Cavuto: Coast to Coast</title><desc lang="en">Business news analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052616000000 +0000" stop="2026052618000000 +0000"><title lang="en">Making Money</title><desc lang="en">Market analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052618000000 +0000" stop="2026052623000000 +0000"><title lang="en">Fox Business Primetime</title><desc lang="en">Evening business news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052706000000 +0000" stop="2026052709000000 +0000"><title lang="en">Good Morning America</title><desc lang="en">Morning news coverage from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052709000000 +0000" stop="2026052712000000 +0000"><title lang="en">ABC News Live - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052712000000 +0000" stop="2026052713000000 +0000"><title lang="en">ABC World News Midday</title><desc lang="en">Midday news update from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052713000000 +0000" stop="2026052716300000 +0000"><title lang="en">ABC News Live - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052716300000 +0000" stop="2026052718000000 +0000"><title lang="en">ABC News Live - The Report</title><desc lang="en">In-depth news reporting</desc></programme><programme channel="ABCNewsLive.us" start="2026052718000000 +0000" stop="2026052718300000 +0000"><title lang="en">ABC World News Tonight</title><desc lang="en">Evening news from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052718300000 +0000" stop="2026052723000000 +0000"><title lang="en">ABC News Live - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052706000000 +0000" stop="2026052709000000 +0000"><title lang="en">CBS Mornings</title><desc lang="en">Morning news coverage from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052709000000 +0000" stop="2026052712000000 +0000"><title lang="en">CBS News 24/7 - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="CBSNews.us" start="2026052712000000 +0000" stop="2026052713000000 +0000"><title lang="en">CBS Midday News</title><desc lang="en">Midday news update</desc></programme><programme channel="CBSNews.us" start="2026052713000000 +0000" stop="2026052716300000 +0000"><title lang="en">CBS News 24/7 - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="CBSNews.us" start="2026052716300000 +0000" stop="2026052718000000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Evening news from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052718000000 +0000" stop="2026052719000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052719000000 +0000" stop="2026052723000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Evening news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052706000000 +0000" stop="2026052709000000 +0000"><title lang="en">Fox &amp; Friends First</title><desc lang="en">Morning news coverage from Fox News</desc></programme><programme channel="FoxNewsChannel.us" start="2026052709000000 +0000" stop="2026052712000000 +0000"><title lang="en">America's Newsroom</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052712000000 +0000" stop="2026052713000000 +0000"><title lang="en">Happening Now</title><desc lang="en">Midday news update</desc></programme><programme channel="FoxNewsChannel.us" start="2026052713000000 +0000" stop="2026052716000000 +0000"><title lang="en">The Story with Martha MacCallum</title><desc lang="en">Afternoon news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052716000000 +0000" stop="2026052718000000 +0000"><title lang="en">Your World with Neil Cavuto</title><desc lang="en">Afternoon business news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052718000000 +0000" stop="2026052719000000 +0000"><title lang="en">Special Report with Bret Baier</title><desc lang="en">Evening news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052719000000 +0000" stop="2026052723000000 +0000"><title lang="en">Fox News Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052706000000 +0000" stop="2026052709000000 +0000"><title lang="en">Mornings with Maria</title><desc lang="en">Morning business news</desc></programme><programme channel="FoxBusiness.us" start="2026052709000000 +0000" stop="2026052711000000 +0000"><title lang="en">Fox Business - Morning</title><desc lang="en">Live morning business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052711000000 +0000" stop="2026052712000000 +0000"><title lang="en">Making Money with Charles Payne</title><desc lang="en">Investment news</desc></programme><programme channel="FoxBusiness.us" start="2026052712000000 +0000" stop="2026052714000000 +0000"><title lang="en">Afternoon Business</title><desc lang="en">Afternoon business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052714000000 +0000" stop="2026052716000000 +0000"><title lang="en">Cavuto: Coast to Coast</title><desc lang="en">Business news analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052716000000 +0000" stop="2026052718000000 +0000"><title lang="en">Making Money</title><desc lang="en">Market analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052718000000 +0000" stop="2026052723000000 +0000"><title lang="en">Fox Business Primetime</title><desc lang="en">Evening business news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052806000000 +0000" stop="2026052809000000 +0000"><title lang="en">Good Morning America</title><desc lang="en">Morning news coverage from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052809000000 +0000" stop="2026052812000000 +0000"><title lang="en">ABC News Live - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052812000000 +0000" stop="2026052813000000 +0000"><title lang="en">ABC World News Midday</title><desc lang="en">Midday news update from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052813000000 +0000" stop="2026052816300000 +0000"><title lang="en">ABC News Live - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052816300000 +0000" stop="2026052818000000 +0000"><title lang="en">ABC News Live - The Report</title><desc lang="en">In-depth news reporting</desc></programme><programme channel="ABCNewsLive.us" start="2026052818000000 +0000" stop="2026052818300000 +0000"><title lang="en">ABC World News Tonight</title><desc lang="en">Evening news from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052818300000 +0000" stop="2026052823000000 +0000"><title lang="en">ABC News Live - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052806000000 +0000" stop="2026052809000000 +0000"><title lang="en">CBS Mornings</title><desc lang="en">Morning news coverage from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052809000000 +0000" stop="2026052812000000 +0000"><title lang="en">CBS News 24/7 - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="CBSNews.us" start="2026052812000000 +0000" stop="2026052813000000 +0000"><title lang="en">CBS Midday News</title><desc lang="en">Midday news update</desc></programme><programme channel="CBSNews.us" start="2026052813000000 +0000" stop="2026052816300000 +0000"><title lang="en">CBS News 24/7 - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="CBSNews.us" start="2026052816300000 +0000" stop="2026052818000000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Evening news from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052818000000 +0000" stop="2026052819000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052819000000 +0000" stop="2026052823000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Evening news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052806000000 +0000" stop="2026052809000000 +0000"><title lang="en">Fox &amp; Friends First</title><desc lang="en">Morning news coverage from Fox News</desc></programme><programme channel="FoxNewsChannel.us" start="2026052809000000 +0000" stop="2026052812000000 +0000"><title lang="en">America's Newsroom</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052812000000 +0000" stop="2026052813000000 +0000"><title lang="en">Happening Now</title><desc lang="en">Midday news update</desc></programme><programme channel="FoxNewsChannel.us" start="2026052813000000 +0000" stop="2026052816000000 +0000"><title lang="en">The Story with Martha MacCallum</title><desc lang="en">Afternoon news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052816000000 +0000" stop="2026052818000000 +0000"><title lang="en">Your World with Neil Cavuto</title><desc lang="en">Afternoon business news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052818000000 +0000" stop="2026052819000000 +0000"><title lang="en">Special Report with Bret Baier</title><desc lang="en">Evening news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052819000000 +0000" stop="2026052823000000 +0000"><title lang="en">Fox News Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052806000000 +0000" stop="2026052809000000 +0000"><title lang="en">Mornings with Maria</title><desc lang="en">Morning business news</desc></programme><programme channel="FoxBusiness.us" start="2026052809000000 +0000" stop="2026052811000000 +0000"><title lang="en">Fox Business - Morning</title><desc lang="en">Live morning business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052811000000 +0000" stop="2026052812000000 +0000"><title lang="en">Making Money with Charles Payne</title><desc lang="en">Investment news</desc></programme><programme channel="FoxBusiness.us" start="2026052812000000 +0000" stop="2026052814000000 +0000"><title lang="en">Afternoon Business</title><desc lang="en">Afternoon business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052814000000 +0000" stop="2026052816000000 +0000"><title lang="en">Cavuto: Coast to Coast</title><desc lang="en">Business news analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052816000000 +0000" stop="2026052818000000 +0000"><title lang="en">Making Money</title><desc lang="en">Market analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052818000000 +0000" stop="2026052823000000 +0000"><title lang="en">Fox Business Primetime</title><desc lang="en">Evening business news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052906000000 +0000" stop="2026052909000000 +0000"><title lang="en">Good Morning America</title><desc lang="en">Morning news coverage from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052909000000 +0000" stop="2026052912000000 +0000"><title lang="en">ABC News Live - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052912000000 +0000" stop="2026052913000000 +0000"><title lang="en">ABC World News Midday</title><desc lang="en">Midday news update from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052913000000 +0000" stop="2026052916300000 +0000"><title lang="en">ABC News Live - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="ABCNewsLive.us" start="2026052916300000 +0000" stop="2026052918000000 +0000"><title lang="en">ABC News Live - The Report</title><desc lang="en">In-depth news reporting</desc></programme><programme channel="ABCNewsLive.us" start="2026052918000000 +0000" stop="2026052918300000 +0000"><title lang="en">ABC World News Tonight</title><desc lang="en">Evening news from ABC News</desc></programme><programme channel="ABCNewsLive.us" start="2026052918300000 +0000" stop="2026052923000000 +0000"><title lang="en">ABC News Live - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052906000000 +0000" stop="2026052909000000 +0000"><title lang="en">CBS Mornings</title><desc lang="en">Morning news coverage from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052909000000 +0000" stop="2026052912000000 +0000"><title lang="en">CBS News 24/7 - Morning</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="CBSNews.us" start="2026052912000000 +0000" stop="2026052913000000 +0000"><title lang="en">CBS Midday News</title><desc lang="en">Midday news update</desc></programme><programme channel="CBSNews.us" start="2026052913000000 +0000" stop="2026052916300000 +0000"><title lang="en">CBS News 24/7 - Afternoon</title><desc lang="en">Live afternoon news coverage</desc></programme><programme channel="CBSNews.us" start="2026052916300000 +0000" stop="2026052918000000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Evening news from CBS News</desc></programme><programme channel="CBSNews.us" start="2026052918000000 +0000" stop="2026052919000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="CBSNews.us" start="2026052919000000 +0000" stop="2026052923000000 +0000"><title lang="en">CBS News 24/7 - Primetime</title><desc lang="en">Evening news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052906000000 +0000" stop="2026052909000000 +0000"><title lang="en">Fox &amp; Friends First</title><desc lang="en">Morning news coverage from Fox News</desc></programme><programme channel="FoxNewsChannel.us" start="2026052909000000 +0000" stop="2026052912000000 +0000"><title lang="en">America's Newsroom</title><desc lang="en">Live morning news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052912000000 +0000" stop="2026052913000000 +0000"><title lang="en">Happening Now</title><desc lang="en">Midday news update</desc></programme><programme channel="FoxNewsChannel.us" start="2026052913000000 +0000" stop="2026052916000000 +0000"><title lang="en">The Story with Martha MacCallum</title><desc lang="en">Afternoon news coverage</desc></programme><programme channel="FoxNewsChannel.us" start="2026052916000000 +0000" stop="2026052918000000 +0000"><title lang="en">Your World with Neil Cavuto</title><desc lang="en">Afternoon business news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052918000000 +0000" stop="2026052919000000 +0000"><title lang="en">Special Report with Bret Baier</title><desc lang="en">Evening news</desc></programme><programme channel="FoxNewsChannel.us" start="2026052919000000 +0000" stop="2026052923000000 +0000"><title lang="en">Fox News Primetime</title><desc lang="en">Prime time news coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052906000000 +0000" stop="2026052909000000 +0000"><title lang="en">Mornings with Maria</title><desc lang="en">Morning business news</desc></programme><programme channel="FoxBusiness.us" start="2026052909000000 +0000" stop="2026052911000000 +0000"><title lang="en">Fox Business - Morning</title><desc lang="en">Live morning business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052911000000 +0000" stop="2026052912000000 +0000"><title lang="en">Making Money with Charles Payne</title><desc lang="en">Investment news</desc></programme><programme channel="FoxBusiness.us" start="2026052912000000 +0000" stop="2026052914000000 +0000"><title lang="en">Afternoon Business</title><desc lang="en">Afternoon business coverage</desc></programme><programme channel="FoxBusiness.us" start="2026052914000000 +0000" stop="2026052916000000 +0000"><title lang="en">Cavuto: Coast to Coast</title><desc lang="en">Business news analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052916000000 +0000" stop="2026052918000000 +0000"><title lang="en">Making Money</title><desc lang="en">Market analysis</desc></programme><programme channel="FoxBusiness.us" start="2026052918000000 +0000" stop="2026052923000000 +0000"><title lang="en">Fox Business Primetime</title><desc lang="en">Evening business news coverage</desc></programme></tv>
+<?xml version="1.0" encoding="UTF-8"?>
+<tv date="20260528020003">
+  <channel id="ABCNewsLive.us">
+    <display-name lang="en">ABC News Live</display-name>
+    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" />
+  </channel>
+  <channel id="FoxNewsChannel.us">
+    <display-name lang="en">Fox News Channel</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <channel id="FoxBusiness.us">
+    <display-name lang="en">Fox Business</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <channel id="CBSNews.us">
+    <display-name lang="en">CBS News 24/7</display-name>
+    <icon src="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" />
+  </channel>
+  <programme channel="ABCNewsLive.us" start="20260528T06000000 +0000" stop="20260528T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260528T09000000 +0000" stop="20260528T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260528T12000000 +0000" stop="20260528T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260528T13000000 +0000" stop="20260528T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260528T18000000 +0000" stop="20260528T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260528T22000000 +0000" stop="20260529T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T06000000 +0000" stop="20260529T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T09000000 +0000" stop="20260529T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T12000000 +0000" stop="20260529T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T13000000 +0000" stop="20260529T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T18000000 +0000" stop="20260529T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260529T22000000 +0000" stop="20260530T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T06000000 +0000" stop="20260530T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T09000000 +0000" stop="20260530T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T12000000 +0000" stop="20260530T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T13000000 +0000" stop="20260530T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T18000000 +0000" stop="20260530T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260530T22000000 +0000" stop="20260531T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from ABC News Live</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T06000000 +0000" stop="20260528T09000000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T09000000 +0000" stop="20260528T12000000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T12000000 +0000" stop="20260528T13000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T13000000 +0000" stop="20260528T18000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T18000000 +0000" stop="20260528T22000000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260528T22000000 +0000" stop="20260529T06000000 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T06000000 +0000" stop="20260529T09000000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T09000000 +0000" stop="20260529T12000000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T12000000 +0000" stop="20260529T13000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T13000000 +0000" stop="20260529T18000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T18000000 +0000" stop="20260529T22000000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260529T22000000 +0000" stop="20260530T06000000 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T06000000 +0000" stop="20260530T09000000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T09000000 +0000" stop="20260530T12000000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T12000000 +0000" stop="20260530T13000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T13000000 +0000" stop="20260530T18000000 +0000">
+    <title lang="en">Happening Now</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T18000000 +0000" stop="20260530T22000000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260530T22000000 +0000" stop="20260531T06000000 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Live news coverage from Fox News Channel</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T06000000 +0000" stop="20260528T09000000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T09000000 +0000" stop="20260528T12000000 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T12000000 +0000" stop="20260528T13000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T13000000 +0000" stop="20260528T18000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T18000000 +0000" stop="20260528T22000000 +0000">
+    <title lang="en">Evening Edit</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260528T22000000 +0000" stop="20260529T06000000 +0000">
+    <title lang="en">Nightly Business Report</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T06000000 +0000" stop="20260529T09000000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T09000000 +0000" stop="20260529T12000000 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T12000000 +0000" stop="20260529T13000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T13000000 +0000" stop="20260529T18000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T18000000 +0000" stop="20260529T22000000 +0000">
+    <title lang="en">Evening Edit</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260529T22000000 +0000" stop="20260530T06000000 +0000">
+    <title lang="en">Nightly Business Report</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T06000000 +0000" stop="20260530T09000000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T09000000 +0000" stop="20260530T12000000 +0000">
+    <title lang="en">Squawk Box</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T12000000 +0000" stop="20260530T13000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T13000000 +0000" stop="20260530T18000000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T18000000 +0000" stop="20260530T22000000 +0000">
+    <title lang="en">Evening Edit</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260530T22000000 +0000" stop="20260531T06000000 +0000">
+    <title lang="en">Nightly Business Report</title>
+    <desc lang="en">Live news coverage from Fox Business</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T06000000 +0000" stop="20260528T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T09000000 +0000" stop="20260528T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T12000000 +0000" stop="20260528T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T13000000 +0000" stop="20260528T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T18000000 +0000" stop="20260528T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260528T22000000 +0000" stop="20260529T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T06000000 +0000" stop="20260529T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T09000000 +0000" stop="20260529T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T12000000 +0000" stop="20260529T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T13000000 +0000" stop="20260529T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T18000000 +0000" stop="20260529T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260529T22000000 +0000" stop="20260530T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T06000000 +0000" stop="20260530T09000000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T09000000 +0000" stop="20260530T12000000 +0000">
+    <title lang="en">World News This Morning</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T12000000 +0000" stop="20260530T13000000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T13000000 +0000" stop="20260530T18000000 +0000">
+    <title lang="en">GMA3: What You Need To Know</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T18000000 +0000" stop="20260530T22000000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260530T22000000 +0000" stop="20260531T06000000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage from CBS News 24/7</desc>
+  </programme>
+</tv>
