@@ -56,3 +56,35 @@ Data: 2026-05-24 16:52
   Canais incluidos: 4
   Canais removidos: 0
   Problemas: 0
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-05-29 02:04
+======================================================================
+
+[1] Backup: OK
+
+[2-5] EPG:
+  Fontes: 3
+  Programas totais: 780
+  Cobertura: Hoje=120 Amanha=125 Depois=115
+  Canal: ABC News Live | tvg-id=ABCNewsLive.us | OK | Hoje=36 Amanha=31 Depois=29
+  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | OK | Hoje=24 Amanha=23 Depois=24
+  Canal: Fox Business | tvg-id=FoxBusiness.us | OK | Hoje=34 Amanha=42 Depois=34
+  Canal: CBS News 24/7 | tvg-id=CBSNews.us | OK | Hoje=26 Amanha=29 Depois=28
+  Stream ABC News Live: OK (status=200)
+  Stream Fox News Channel: OK (status=200)
+  Stream Fox Business: OK (status=200)
+  Stream CBS News 24/7: OK (status=200)
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
+  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
+  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+
+[10-11] M3U:
+  Canais incluidos: 4
+  Canais removidos: 0
+  Problemas: 0
