@@ -13,6 +13,7 @@ EPG_SOURCES = [
     ("epg.pw full", "/tmp/epg.xml"),
     ("epg.pw US", "/tmp/epg_US.xml.gz"),
     ("epg.pw BR", "/tmp/epg_BR.xml"),
+    ("epgshare01 ripper", "/tmp/epg_ripper_ALL_SOURCES1.xml.gz"),
 ]
 
 def norm(s):
