@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
-<tv generator-info-name="JCTV News EPG" generator-info-url="https://github.com/JCTV/JCTV" date="20260601023752">
-  <channel id="ABCNewsLive.us">
-    <display-name lang="en">ABC News Live</display-name>
-    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg"/>
+<tv generator-info-name="JCTV News EPG" generator-info-url="https://github.com/JCTV/JCTV" date="20260601133204">
+  <channel id="FoxBusiness.us">
+    <display-name lang="en">Fox Business</display-name>
+    <icon src="https://a57.foxnews.com/static/694940094001/0/0/0/0/image.jpg"/>
   </channel>
   <channel id="FoxNewsChannel.us">
     <display-name lang="en">Fox News Channel</display-name>
-    <icon src="https://raw.githubusercontent.com/JCTV/JCTV/main/fox_news.jpg"/>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/bd35484e-66a3-40ac-91e8-fc32bd92a7b3/adc346f3-81ae-4e5b-aa50-856e1b1bc1d7/1280x720/match/400/225/image.jpg"/>
   </channel>
-  <channel id="FoxBusiness.us">
-    <display-name lang="en">Fox Business</display-name>
-    <icon src="https://raw.githubusercontent.com/JCTV/JCTV/main/fox_business.jpg"/>
+  <channel id="ABCNewsLive.us">
+    <display-name lang="en">ABC News Live</display-name>
+    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg"/>
   </channel>
   <channel id="CBSNews.us">
     <display-name lang="en">CBS News 24/7</display-name>
@@ -40,7 +40,7 @@
     <title lang="en">ABC World News Tonight</title>
     <desc lang="en">Live news coverage - ABC World News Tonight</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260601183000 +0000" stop="20260601190000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260601183000 +0000" stop="20260601200000 +0000">
     <title lang="en">ABC Evening News</title>
     <desc lang="en">Live news coverage - ABC Evening News</desc>
   </programme>
@@ -52,7 +52,7 @@
     <title lang="en">Nightline</title>
     <desc lang="en">Live news coverage - Nightline</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260601230000 +0000" stop="20260602060000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260601230000 +0000" stop="20260601235900 +0000">
     <title lang="en">ABC World News Now</title>
     <desc lang="en">Live news coverage - ABC World News Now</desc>
   </programme>
@@ -100,7 +100,7 @@
     <title lang="en">The Ingraham Angle</title>
     <desc lang="en">Live news coverage - The Ingraham Angle</desc>
   </programme>
-  <programme channel="FoxNewsChannel.us" start="20260601230000 +0000" stop="20260602000000 +0000">
+  <programme channel="FoxNewsChannel.us" start="20260601230000 +0000" stop="20260601235900 +0000">
     <title lang="en">Fox News @ Night</title>
     <desc lang="en">Live news coverage - Fox News @ Night</desc>
   </programme>
@@ -140,7 +140,7 @@
     <title lang="en">Kudlow</title>
     <desc lang="en">Live news coverage - Kudlow</desc>
   </programme>
-  <programme channel="FoxBusiness.us" start="20260601200000 +0000" stop="20260602000000 +0000">
+  <programme channel="FoxBusiness.us" start="20260601200000 +0000" stop="20260601235900 +0000">
     <title lang="en">Fox Business @ Night</title>
     <desc lang="en">Live news coverage - Fox Business @ Night</desc>
   </programme>
@@ -152,19 +152,19 @@
     <title lang="en">CBS This Morning</title>
     <desc lang="en">Live news coverage - CBS This Morning</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260601090000 +0000" stop="20260601100000 +0000">
+  <programme channel="CBSNews.us" start="20260601090000 +0000" stop="20260601120000 +0000">
     <title lang="en">CBS News Daily</title>
     <desc lang="en">Live news coverage - CBS News Daily</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260601120000 +0000" stop="20260601123000 +0000">
-    <title lang="en">CBS News Midday</title>
-    <desc lang="en">Live news coverage - CBS News Midday</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260601123000 +0000" stop="20260601133000 +0000">
     <title lang="en">CBS News Update</title>
     <desc lang="en">Live news coverage - CBS News Update</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260601133000 +0000" stop="20260601163000 +0000">
+  <programme channel="CBSNews.us" start="20260601123000 +0000" stop="20260601140000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage - CBS News Midday</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260601140000 +0000" stop="20260601163000 +0000">
     <title lang="en">CBS News Afternoon</title>
     <desc lang="en">Live news coverage - CBS News Afternoon</desc>
   </programme>
@@ -172,19 +172,27 @@
     <title lang="en">CBS Evening News</title>
     <desc lang="en">Live news coverage - CBS Evening News</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260601183000 +0000" stop="20260601190000 +0000">
+  <programme channel="CBSNews.us" start="20260601173000 +0000" stop="20260601183000 +0000">
     <title lang="en">CBS World News Tonight</title>
     <desc lang="en">Live news coverage - CBS World News Tonight</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260601190000 +0000" stop="20260601200000 +0000">
+  <programme channel="CBSNews.us" start="20260601183000 +0000" stop="20260601200000 +0000">
     <title lang="en">60 Minutes</title>
     <desc lang="en">Live news coverage - 60 Minutes</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260601200000 +0000" stop="20260601210000 +0000">
+    <title lang="en">48 Hours</title>
+    <desc lang="en">Live news coverage - 48 Hours</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260601210000 +0000" stop="20260601220000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage - CBS News Special</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260601220000 +0000" stop="20260601230000 +0000">
     <title lang="en">CBS News Nightwatch</title>
     <desc lang="en">Live news coverage - CBS News Nightwatch</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260601230000 +0000" stop="20260602060000 +0000">
+  <programme channel="CBSNews.us" start="20260601230000 +0000" stop="20260601235900 +0000">
     <title lang="en">CBS News Overnight</title>
     <desc lang="en">Live news coverage - CBS News Overnight</desc>
   </programme>
@@ -212,7 +220,7 @@
     <title lang="en">ABC World News Tonight</title>
     <desc lang="en">Live news coverage - ABC World News Tonight</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260602183000 +0000" stop="20260602190000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260602183000 +0000" stop="20260602200000 +0000">
     <title lang="en">ABC Evening News</title>
     <desc lang="en">Live news coverage - ABC Evening News</desc>
   </programme>
@@ -224,7 +232,7 @@
     <title lang="en">Nightline</title>
     <desc lang="en">Live news coverage - Nightline</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260602230000 +0000" stop="20260603060000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260602230000 +0000" stop="20260602235900 +0000">
     <title lang="en">ABC World News Now</title>
     <desc lang="en">Live news coverage - ABC World News Now</desc>
   </programme>
@@ -272,7 +280,7 @@
     <title lang="en">The Ingraham Angle</title>
     <desc lang="en">Live news coverage - The Ingraham Angle</desc>
   </programme>
-  <programme channel="FoxNewsChannel.us" start="20260602230000 +0000" stop="20260603000000 +0000">
+  <programme channel="FoxNewsChannel.us" start="20260602230000 +0000" stop="20260602235900 +0000">
     <title lang="en">Fox News @ Night</title>
     <desc lang="en">Live news coverage - Fox News @ Night</desc>
   </programme>
@@ -312,7 +320,7 @@
     <title lang="en">Kudlow</title>
     <desc lang="en">Live news coverage - Kudlow</desc>
   </programme>
-  <programme channel="FoxBusiness.us" start="20260602200000 +0000" stop="20260603000000 +0000">
+  <programme channel="FoxBusiness.us" start="20260602200000 +0000" stop="20260602235900 +0000">
     <title lang="en">Fox Business @ Night</title>
     <desc lang="en">Live news coverage - Fox Business @ Night</desc>
   </programme>
@@ -324,19 +332,19 @@
     <title lang="en">CBS This Morning</title>
     <desc lang="en">Live news coverage - CBS This Morning</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260602090000 +0000" stop="20260602100000 +0000">
+  <programme channel="CBSNews.us" start="20260602090000 +0000" stop="20260602120000 +0000">
     <title lang="en">CBS News Daily</title>
     <desc lang="en">Live news coverage - CBS News Daily</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260602120000 +0000" stop="20260602123000 +0000">
-    <title lang="en">CBS News Midday</title>
-    <desc lang="en">Live news coverage - CBS News Midday</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260602123000 +0000" stop="20260602133000 +0000">
     <title lang="en">CBS News Update</title>
     <desc lang="en">Live news coverage - CBS News Update</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260602133000 +0000" stop="20260602163000 +0000">
+  <programme channel="CBSNews.us" start="20260602123000 +0000" stop="20260602140000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage - CBS News Midday</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260602140000 +0000" stop="20260602163000 +0000">
     <title lang="en">CBS News Afternoon</title>
     <desc lang="en">Live news coverage - CBS News Afternoon</desc>
   </programme>
@@ -344,19 +352,27 @@
     <title lang="en">CBS Evening News</title>
     <desc lang="en">Live news coverage - CBS Evening News</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260602183000 +0000" stop="20260602190000 +0000">
+  <programme channel="CBSNews.us" start="20260602173000 +0000" stop="20260602183000 +0000">
     <title lang="en">CBS World News Tonight</title>
     <desc lang="en">Live news coverage - CBS World News Tonight</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260602190000 +0000" stop="20260602200000 +0000">
+  <programme channel="CBSNews.us" start="20260602183000 +0000" stop="20260602200000 +0000">
     <title lang="en">60 Minutes</title>
     <desc lang="en">Live news coverage - 60 Minutes</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260602200000 +0000" stop="20260602210000 +0000">
+    <title lang="en">48 Hours</title>
+    <desc lang="en">Live news coverage - 48 Hours</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260602210000 +0000" stop="20260602220000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage - CBS News Special</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260602220000 +0000" stop="20260602230000 +0000">
     <title lang="en">CBS News Nightwatch</title>
     <desc lang="en">Live news coverage - CBS News Nightwatch</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260602230000 +0000" stop="20260603060000 +0000">
+  <programme channel="CBSNews.us" start="20260602230000 +0000" stop="20260602235900 +0000">
     <title lang="en">CBS News Overnight</title>
     <desc lang="en">Live news coverage - CBS News Overnight</desc>
   </programme>
@@ -384,7 +400,7 @@
     <title lang="en">ABC World News Tonight</title>
     <desc lang="en">Live news coverage - ABC World News Tonight</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260603183000 +0000" stop="20260603190000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260603183000 +0000" stop="20260603200000 +0000">
     <title lang="en">ABC Evening News</title>
     <desc lang="en">Live news coverage - ABC Evening News</desc>
   </programme>
@@ -396,7 +412,7 @@
     <title lang="en">Nightline</title>
     <desc lang="en">Live news coverage - Nightline</desc>
   </programme>
-  <programme channel="ABCNewsLive.us" start="20260603230000 +0000" stop="20260604060000 +0000">
+  <programme channel="ABCNewsLive.us" start="20260603230000 +0000" stop="20260603235900 +0000">
     <title lang="en">ABC World News Now</title>
     <desc lang="en">Live news coverage - ABC World News Now</desc>
   </programme>
@@ -444,7 +460,7 @@
     <title lang="en">The Ingraham Angle</title>
     <desc lang="en">Live news coverage - The Ingraham Angle</desc>
   </programme>
-  <programme channel="FoxNewsChannel.us" start="20260603230000 +0000" stop="20260604000000 +0000">
+  <programme channel="FoxNewsChannel.us" start="20260603230000 +0000" stop="20260603235900 +0000">
     <title lang="en">Fox News @ Night</title>
     <desc lang="en">Live news coverage - Fox News @ Night</desc>
   </programme>
@@ -484,7 +500,7 @@
     <title lang="en">Kudlow</title>
     <desc lang="en">Live news coverage - Kudlow</desc>
   </programme>
-  <programme channel="FoxBusiness.us" start="20260603200000 +0000" stop="20260604000000 +0000">
+  <programme channel="FoxBusiness.us" start="20260603200000 +0000" stop="20260603235900 +0000">
     <title lang="en">Fox Business @ Night</title>
     <desc lang="en">Live news coverage - Fox Business @ Night</desc>
   </programme>
@@ -496,19 +512,19 @@
     <title lang="en">CBS This Morning</title>
     <desc lang="en">Live news coverage - CBS This Morning</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260603090000 +0000" stop="20260603100000 +0000">
+  <programme channel="CBSNews.us" start="20260603090000 +0000" stop="20260603120000 +0000">
     <title lang="en">CBS News Daily</title>
     <desc lang="en">Live news coverage - CBS News Daily</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260603120000 +0000" stop="20260603123000 +0000">
-    <title lang="en">CBS News Midday</title>
-    <desc lang="en">Live news coverage - CBS News Midday</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260603123000 +0000" stop="20260603133000 +0000">
     <title lang="en">CBS News Update</title>
     <desc lang="en">Live news coverage - CBS News Update</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260603133000 +0000" stop="20260603163000 +0000">
+  <programme channel="CBSNews.us" start="20260603123000 +0000" stop="20260603140000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage - CBS News Midday</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260603140000 +0000" stop="20260603163000 +0000">
     <title lang="en">CBS News Afternoon</title>
     <desc lang="en">Live news coverage - CBS News Afternoon</desc>
   </programme>
@@ -516,19 +532,207 @@
     <title lang="en">CBS Evening News</title>
     <desc lang="en">Live news coverage - CBS Evening News</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260603183000 +0000" stop="20260603190000 +0000">
+  <programme channel="CBSNews.us" start="20260603173000 +0000" stop="20260603183000 +0000">
     <title lang="en">CBS World News Tonight</title>
     <desc lang="en">Live news coverage - CBS World News Tonight</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260603190000 +0000" stop="20260603200000 +0000">
+  <programme channel="CBSNews.us" start="20260603183000 +0000" stop="20260603200000 +0000">
     <title lang="en">60 Minutes</title>
     <desc lang="en">Live news coverage - 60 Minutes</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260603200000 +0000" stop="20260603210000 +0000">
+    <title lang="en">48 Hours</title>
+    <desc lang="en">Live news coverage - 48 Hours</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260603210000 +0000" stop="20260603220000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage - CBS News Special</desc>
   </programme>
   <programme channel="CBSNews.us" start="20260603220000 +0000" stop="20260603230000 +0000">
     <title lang="en">CBS News Nightwatch</title>
     <desc lang="en">Live news coverage - CBS News Nightwatch</desc>
   </programme>
-  <programme channel="CBSNews.us" start="20260603230000 +0000" stop="20260604060000 +0000">
+  <programme channel="CBSNews.us" start="20260603230000 +0000" stop="20260603235900 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news coverage - CBS News Overnight</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604060000 +0000" stop="20260604090000 +0000">
+    <title lang="en">ABC World News This Morning</title>
+    <desc lang="en">Live news coverage - ABC World News This Morning</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604090000 +0000" stop="20260604110000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage - Good Morning America</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604110000 +0000" stop="20260604123000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage - ABC World News Midday</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604123000 +0000" stop="20260604140000 +0000">
+    <title lang="en">ABC Live Now</title>
+    <desc lang="en">Live news coverage - ABC Live Now</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604140000 +0000" stop="20260604170000 +0000">
+    <title lang="en">ABC World News This Afternoon</title>
+    <desc lang="en">Live news coverage - ABC World News This Afternoon</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604170000 +0000" stop="20260604183000 +0000">
+    <title lang="en">ABC World News Tonight</title>
+    <desc lang="en">Live news coverage - ABC World News Tonight</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604183000 +0000" stop="20260604200000 +0000">
+    <title lang="en">ABC Evening News</title>
+    <desc lang="en">Live news coverage - ABC Evening News</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604200000 +0000" stop="20260604220000 +0000">
+    <title lang="en">ABC Live Prime Time</title>
+    <desc lang="en">Live news coverage - ABC Live Prime Time</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604220000 +0000" stop="20260604230000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage - Nightline</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260604230000 +0000" stop="20260604235900 +0000">
+    <title lang="en">ABC World News Now</title>
+    <desc lang="en">Live news coverage - ABC World News Now</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604060000 +0000" stop="20260604090000 +0000">
+    <title lang="en">Fox &amp; Friends First</title>
+    <desc lang="en">Live news coverage - Fox &amp; Friends First</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604090000 +0000" stop="20260604110000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Live news coverage - Fox &amp; Friends</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604110000 +0000" stop="20260604120000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage - America's Newsroom</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604120000 +0000" stop="20260604130000 +0000">
+    <title lang="en">Fox News @ Noon</title>
+    <desc lang="en">Live news coverage - Fox News @ Noon</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604130000 +0000" stop="20260604150000 +0000">
+    <title lang="en">The Story with Martha MacCallum</title>
+    <desc lang="en">Live news coverage - The Story with Martha MacCallum</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604150000 +0000" stop="20260604170000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">Live news coverage - The Five</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604170000 +0000" stop="20260604180000 +0000">
+    <title lang="en">Special Report with Bret Baier</title>
+    <desc lang="en">Live news coverage - Special Report with Bret Baier</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604180000 +0000" stop="20260604200000 +0000">
+    <title lang="en">Fox News Tonight</title>
+    <desc lang="en">Live news coverage - Fox News Tonight</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604200000 +0000" stop="20260604210000 +0000">
+    <title lang="en">Tucker Carlson Tonight</title>
+    <desc lang="en">Live news coverage - Tucker Carlson Tonight</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604210000 +0000" stop="20260604220000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Live news coverage - Hannity</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604220000 +0000" stop="20260604230000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">Live news coverage - The Ingraham Angle</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260604230000 +0000" stop="20260604235900 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage - Fox News @ Night</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604060000 +0000" stop="20260604090000 +0000">
+    <title lang="en">Fox Business Morning</title>
+    <desc lang="en">Live news coverage - Fox Business Morning</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604090000 +0000" stop="20260604110000 +0000">
+    <title lang="en">Varney &amp; Co.</title>
+    <desc lang="en">Live news coverage - Varney &amp; Co.</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604110000 +0000" stop="20260604120000 +0000">
+    <title lang="en">The Big Money Show</title>
+    <desc lang="en">Live news coverage - The Big Money Show</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604120000 +0000" stop="20260604130000 +0000">
+    <title lang="en">Fox Business Midday</title>
+    <desc lang="en">Live news coverage - Fox Business Midday</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604130000 +0000" stop="20260604140000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Live news coverage - The Claman Countdown</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604140000 +0000" stop="20260604150000 +0000">
+    <title lang="en">Making Money with Charles Payne</title>
+    <desc lang="en">Live news coverage - Making Money with Charles Payne</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604150000 +0000" stop="20260604170000 +0000">
+    <title lang="en">Cavuto: Coast to Coast</title>
+    <desc lang="en">Live news coverage - Cavuto: Coast to Coast</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604170000 +0000" stop="20260604190000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Live news coverage - Fox Business Tonight</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604190000 +0000" stop="20260604200000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Live news coverage - Kudlow</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260604200000 +0000" stop="20260604235900 +0000">
+    <title lang="en">Fox Business @ Night</title>
+    <desc lang="en">Live news coverage - Fox Business @ Night</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604060000 +0000" stop="20260604070000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news coverage - CBS Morning News</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604070000 +0000" stop="20260604090000 +0000">
+    <title lang="en">CBS This Morning</title>
+    <desc lang="en">Live news coverage - CBS This Morning</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604090000 +0000" stop="20260604120000 +0000">
+    <title lang="en">CBS News Daily</title>
+    <desc lang="en">Live news coverage - CBS News Daily</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604120000 +0000" stop="20260604123000 +0000">
+    <title lang="en">CBS News Update</title>
+    <desc lang="en">Live news coverage - CBS News Update</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604123000 +0000" stop="20260604140000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage - CBS News Midday</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604140000 +0000" stop="20260604163000 +0000">
+    <title lang="en">CBS News Afternoon</title>
+    <desc lang="en">Live news coverage - CBS News Afternoon</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604163000 +0000" stop="20260604173000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">Live news coverage - CBS Evening News</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604173000 +0000" stop="20260604183000 +0000">
+    <title lang="en">CBS World News Tonight</title>
+    <desc lang="en">Live news coverage - CBS World News Tonight</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604183000 +0000" stop="20260604200000 +0000">
+    <title lang="en">60 Minutes</title>
+    <desc lang="en">Live news coverage - 60 Minutes</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604200000 +0000" stop="20260604210000 +0000">
+    <title lang="en">48 Hours</title>
+    <desc lang="en">Live news coverage - 48 Hours</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604210000 +0000" stop="20260604220000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage - CBS News Special</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604220000 +0000" stop="20260604230000 +0000">
+    <title lang="en">CBS News Nightwatch</title>
+    <desc lang="en">Live news coverage - CBS News Nightwatch</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260604230000 +0000" stop="20260604235900 +0000">
     <title lang="en">CBS News Overnight</title>
     <desc lang="en">Live news coverage - CBS News Overnight</desc>
   </programme>
