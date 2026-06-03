@@ -1,130 +1,25 @@
 ======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-05-23 02:00
+RELATORIO CORRECAO lista5.m3u v5
+Data: 2026-06-03 12:32
 ======================================================================
-
-Canal: ABC News Live: tvg-id=ABCNewsLive.us, EPG Hoje=32 Amanha=29 Depois=36
-Canal: ABC News All Access: tvg-id=ABCNewsLive.us, EPG Hoje=32 Amanha=29 Depois=36
-Canal: Fox News Channel: tvg-id=FoxNewsChannel.us, EPG Hoje=24 Amanha=24 Depois=24
-Canal: Fox Business: tvg-id=FoxBusiness.us, EPG Hoje=40 Amanha=31 Depois=34
-Canal: CBS News 24/7: tvg-id=CBSNews.us, EPG Hoje=29 Amanha=28 Depois=26
+Backup: /home/runner/work/JCTV/JCTV/lista5.m3u.bak
+Canal: ABC News Live | EPG: Hoje=28 Amanha=35 Depois=25 | Status: OK
+Canal: Fox News Channel | EPG: Hoje=24 Amanha=24 Depois=24 | Status: OK
+Canal: Fox Business | EPG: Hoje=27 Amanha=27 Depois=34 | Status: OK
+Canal: CBS News 24/7 | EPG: Hoje=24 Amanha=26 Depois=26 | Status: OK
 Stream ABC News Live: OK
-Stream ABC News All Access: OK
-Stream Fox News Channel: OK
-Stream Fox Business: OK
+Stream Fox News Channel: OFFLINE
+Stream Fox Business: OFFLINE
 Stream CBS News 24/7: OK
-Status ABC News Live: INCLUIDO
-Status ABC News All Access: INCLUIDO
-Status Fox News Channel: INCLUIDO
-Status Fox Business: INCLUIDO
-Status CBS News 24/7: INCLUIDO
-
-Total canais: 5
-Cobertura EPG: Hoje=125 Amanha=112 Depois=120
-EPG Funcional: SIM
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-05-24 16:52
-======================================================================
-
-[1] Backup: OK
-
-[2-5] EPG:
-  Fontes: 3
-  Programas totais: 796
-  Cobertura: Hoje=114 Amanha=120 Depois=112
-  Canal: ABC News Live | tvg-id=ABCNewsLive.us | OK | Hoje=29 Amanha=36 Depois=33
-  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | OK | Hoje=24 Amanha=24 Depois=24
-  Canal: Fox Business | tvg-id=FoxBusiness.us | OK | Hoje=33 Amanha=34 Depois=28
-  Canal: CBS News 24/7 | tvg-id=CBSNews.us | OK | Hoje=28 Amanha=26 Depois=27
-  Stream ABC News Live: OK (status=200)
-  Stream Fox News Channel: OK (status=200)
-  Stream Fox Business: OK (status=200)
-  Stream CBS News 24/7: OK (status=200)
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-
-[10-11] M3U:
-  Canais incluidos: 4
-  Canais removidos: 0
-  Problemas: 0
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-05-29 02:04
-======================================================================
-
-[1] Backup: OK
-
-[2-5] EPG:
-  Fontes: 3
-  Programas totais: 780
-  Cobertura: Hoje=120 Amanha=125 Depois=115
-  Canal: ABC News Live | tvg-id=ABCNewsLive.us | OK | Hoje=36 Amanha=31 Depois=29
-  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | OK | Hoje=24 Amanha=23 Depois=24
-  Canal: Fox Business | tvg-id=FoxBusiness.us | OK | Hoje=34 Amanha=42 Depois=34
-  Canal: CBS News 24/7 | tvg-id=CBSNews.us | OK | Hoje=26 Amanha=29 Depois=28
-  Stream ABC News Live: OK (status=200)
-  Stream Fox News Channel: OK (status=200)
-  Stream Fox Business: OK (status=200)
-  Stream CBS News 24/7: OK (status=200)
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-
-[10-11] M3U:
-  Canais incluidos: 4
-  Canais removidos: 0
-  Problemas: 0
-======================================================================
-RELATORIO CORRECAO lista5.m3u v4
-Data: 2026-06-01 20:10
-======================================================================
-
-Canal: ABC News Live
-  tvg-id: ABCNewsLive.us
-  EPG: Hoje=35 Amanha=38 Depois=28
-Canal: Fox News Channel
-  tvg-id: FoxNewsChannel.us
-  EPG: Hoje=24 Amanha=24 Depois=24
-Canal: Fox Business
-  tvg-id: FoxBusiness.us
-  EPG: Hoje=33 Amanha=27 Depois=27
-Canal: CBS News 24/7
-  tvg-id: CBSNews.us
-  EPG: Hoje=26 Amanha=26 Depois=24
-  EPG salvo: 754 programas
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  VirusTotal: nao_verificado
-  VirusTotal: nao_verificado
-  VirusTotal: nao_verificado
-  VirusTotal: nao_verificado
-  Status: INCLUIDO
-  Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+Canal ABC News Live: INCLUIDO | Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+Canal Fox News Channel: OFFLINE (mantido no M3U)
+Canal Fox News Channel: INCLUIDO | Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
+Canal Fox Business: OFFLINE (mantido no M3U)
+Canal Fox Business: INCLUIDO | Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
+Canal CBS News 24/7: INCLUIDO | Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+Verificacao: OK
 
 Total canais: 4
-Cobertura EPG: Hoje=118 Amanha=115 Depois=103
 EPG Funcional: SIM
 Problemas: 0
 ======================================================================
