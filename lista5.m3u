@@ -1,15 +1,99 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg_atualizado.xml,https://raw.githubusercontent.com/gratinomaster/JCTV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz,https://epg.pw/xmltv/epg_US.xml.gz,https://github.com/iptv-org/epg/raw/master/guide/us.xml.gz,https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
-#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1780892114~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998%2F~psid=224a8262-a960-4ace-9ceb-73a8299d4129~did=bb46e4f8-8456-4692-90b2-4b45078e2cef~country=US~kid=k02~hmac=cbdd9165511c003f197714621d7ccdd664501fbedc221f9bcfdfb5932212e198/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=567d9a0dc20d879f1c3d2b7689aac26f02df5200
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1780892114~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998%2F~psid=224a8262-a960-4ace-9ceb-73a8299d4129~did=bb46e4f8-8456-4692-90b2-4b45078e2cef~country=US~kid=k02~hmac=cbdd9165511c003f197714621d7ccdd664501fbedc221f9bcfdfb5932212e198/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1780892114~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998%2F~psid=224a8262-a960-4ace-9ceb-73a8299d4129~did=bb46e4f8-8456-4692-90b2-4b45078e2cef~country=US~kid=k02~hmac=cbdd9165511c003f197714621d7ccdd664501fbedc221f9bcfdfb5932212e198/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998/audio-aac-1-64K/64_slide.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/eb72c555-f020-4a31-b8ef-7f4d17ff0fd9/unenc-all-e618bdc8-2f96-42d6-adcb-e32e54aa1c59-165b2f0c-ad7c-44d3-9145-78db9822ed4b.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/a6b0286f-ce9b-4ee6-96a5-44d757280809/unenc-all-ab4c8c4d-fdf0-4a97-b292-15513d2585b7-473e2066-fe07-4a5a-b605-d7faf0d4f0f3.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/9d3027a0-34e4-4e85-9665-efa4acf74298/unenc-all-040c2ad0-aa87-474b-a3b1-5ba828b2c4c3-8380f638-69d9-4cc3-803e-1bddd27a73f3.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/b0acb294-5cd8-47ca-95fb-498720d1a871/unenc-all-306f1c9b-1cd6-48eb-ab32-cb549f83e5eb-43ed268b-b266-4614-b53c-e6e9045905b6.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/a9cf6350-2a4f-439a-b737-05c009029517/unenc-all-519e8017-29db-4b0b-9b1b-3417a376d0d2-25ccaf94-d1bc-4af8-abdd-50d4ffc30e17.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/f7bb2b2c-a33d-4d20-a3da-dc68bf2c649a/unenc-all-d82b3d61-b864-4946-8b6e-0572ae85997c-4efc3fe2-a7a2-4287-8fc0-132f375a11cc.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/eb72c555-f020-4a31-b8ef-7f4d17ff0fd9/r/d7ed0f94-d74c-4340-bdfe-db6ea0dbdf8c/9212-MAIN/03/128_complete.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/eb72c555-f020-4a31-b8ef-7f4d17ff0fd9/r/3508d87f-ca04-4a1d-bced-42a628ef54de/9212-MAIN/03/1200_complete-6b907cc9-466c-4527-94cd-7a96bdfd1a7a.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1780892114~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998%2F~psid=224a8262-a960-4ace-9ceb-73a8299d4129~did=bb46e4f8-8456-4692-90b2-4b45078e2cef~country=US~kid=k02~hmac=cbdd9165511c003f197714621d7ccdd664501fbedc221f9bcfdfb5932212e198/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1780892114~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998%2F~psid=224a8262-a960-4ace-9ceb-73a8299d4129~did=bb46e4f8-8456-4692-90b2-4b45078e2cef~country=US~kid=k02~hmac=cbdd9165511c003f197714621d7ccdd664501fbedc221f9bcfdfb5932212e198/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1779444005998/audio-aac-1-64K/64_slide.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/eb72c555-f020-4a31-b8ef-7f4d17ff0fd9/r/3508d87f-ca04-4a1d-bced-42a628ef54de/9212-MAIN/03/1800_complete-6b907cc9-466c-4527-94cd-7a96bdfd1a7a.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/a6b0286f-ce9b-4ee6-96a5-44d757280809/r/9cb5734f-e5f7-453b-a4ab-a2bef6a500de/dc78-MAIN/03/128_complete.m3u8
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",What Would You Do? | Watch Live News on ABCNL
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/a6b0286f-ce9b-4ee6-96a5-44d757280809/r/61739a43-241d-45a4-b4a4-7934e009dcaf/dc78-MAIN/03/1200_complete-a730c8fd-1e50-4bbb-8034-f205a849e663.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live (backup)
-https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/abcn-live-05-index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="Fox News Channel" tvg-logo="https://a57.foxnews.com/static/694940094001/3c70d434-22c1-46e2-8dfa-166d423f23e1/6eb58ca6-5084-4d73-b6f5-a58bdcc8ed37/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox News Channel
-http://41.205.93.154/FOX-NEWS/index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="Fox News Channel" tvg-logo="https://a57.foxnews.com/static/694940094001/3c70d434-22c1-46e2-8dfa-166d423f23e1/6eb58ca6-5084-4d73-b6f5-a58bdcc8ed37/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox News Channel (backup)
-http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
-#EXTINF:-1 tvg-id="FoxBusinessNetwork.us" tvg-name="Fox Business Network" tvg-logo="https://a57.foxnews.com/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg" group-title="NEWS WORLD",Fox Business Network
-http://41.205.93.154/FOXBUSINESS/index.m3u8
-#EXTINF:-1 tvg-id="CBSNewsNetwork.us" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
-#EXTINF:-1 tvg-id="CBSNewsNetwork.us" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",CBS News 24/7 (backup)
-https://cbsn-2.cbsnstream.cbsnews.com/out/v1/a6a897e8f4f74cfc896223dfd822482f/master.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3c70d434-22c1-46e2-8dfa-166d423f23e1/6eb58ca6-5084-4d73-b6f5-a58bdcc8ed37/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1780809316~acl=/*~hmac=7de321edeb9461d5085793922e86801961b36c7c7a896731bee7a67d6b4357c2
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/3c70d434-22c1-46e2-8dfa-166d423f23e1/6eb58ca6-5084-4d73-b6f5-a58bdcc8ed37/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1780809315~acl=/*~hmac=ef3556ef121ef93b154bcd440a4649b53462cf458612317cde13ff0227b54edf
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/master.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/93c2acc6479504ccd49e3f4d21db1bec/bandwidth/441000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/93c2acc6479504ccd49e3f4d21db1bec/bandwidth/441000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/746103095c4cba0bf336a095edd0798c/bandwidth/733000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/df15b3d87264e51b4858655d95765b18/bandwidth/1549000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/9b9c3d2ac5aa8733095eb4ff47cef5d8/bandwidth/2249000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
+#EXTINF:-1 tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7 -CBS News
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e92f135e-33de-4de3-8a36-b0fc6ae1d6da:CBF2/variant/bbe09487996e4026304507dc92286621/bandwidth/4231000.m3u8
