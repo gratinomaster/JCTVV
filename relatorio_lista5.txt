@@ -178,3 +178,99 @@ Cobertura EPG: Hoje=0 Amanha=0 Depois=0
 EPG Funcional: NAO
 Problemas: 0
 ======================================================================
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-08 02:35
+======================================================================
+
+[1] Backup: OK
+
+[2-5] EPG:
+  Fontes: 3
+  Programas totais: 767
+  Cobertura: Hoje=118 Amanha=121 Depois=113
+  Canal: ABC News Live | tvg-id=ABCNewsLive.us | OK | Hoje=35 Amanha=38 Depois=36
+  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | OK | Hoje=24 Amanha=24 Depois=24
+  Canal: Fox Business | tvg-id=FoxBusiness.us | OK | Hoje=33 Amanha=33 Depois=27
+  Canal: CBS News 24/7 | tvg-id=CBSNews.us | OK | Hoje=26 Amanha=26 Depois=26
+  Stream ABC News Live: OK (status=200)
+  Stream Fox News Channel: OK (status=200)
+  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f883b25ffe0>: Failed to establish a new connection: [Errno 111] Connection refused')))
+  Stream CBS News 24/7: OK (status=200)
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
+  Status Fox Business: PULADO (stream offline)
+  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+
+[10-11] M3U:
+  Canais incluidos: 3
+  Canais removidos: 1
+  Problemas: 0
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-08 02:38
+======================================================================
+
+[1] Backup: OK
+
+[2-5] EPG:
+  Fontes: 2
+  Programas totais: 0
+  Cobertura: Hoje=0 Amanha=0 Depois=0
+  Canal: ABC News Live | tvg-id=ABCNewsLive.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
+  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
+  Canal: Fox Business | tvg-id=FoxBusiness.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
+  Canal: CBS News 24/7 | tvg-id=CBSNews.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
+  Stream ABC News Live: OK (status=200)
+  Stream Fox News Channel: OK (status=200)
+  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fede623bc20>: Failed to establish a new connection: [Errno 111] Connection refused')))
+  Stream CBS News 24/7: OK (status=200)
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg | stream=OK
+  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg | stream=OK
+  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg | stream=OFFLINE
+  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg | stream=OK
+
+[10-11] M3U:
+  Canais incluidos: 4
+  Canais removidos: 0
+  Problemas: 0
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-08 02:39
+======================================================================
+
+[1] Backup: OK
+
+[2-5] EPG:
+  Fontes: 2
+  Programas totais: 820
+  Cobertura: Hoje=236 Amanha=240 Depois=117
+  Canal: ABC News Live | tvg-id=465150 | OK | Hoje=65 Amanha=75 Depois=37
+  Canal: Fox News Channel | tvg-id=465372 | OK | Hoje=53 Amanha=52 Depois=27
+  Canal: Fox Business | tvg-id=464766 | OK | Hoje=70 Amanha=62 Depois=27
+  Canal: CBS News 24/7 | tvg-id=464941 | OK | Hoje=48 Amanha=51 Depois=26
+  Stream ABC News Live: OK (status=200)
+  Stream Fox News Channel: OK (status=200)
+  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8b6f813c80>: Failed to establish a new connection: [Errno 111] Connection refused')))
+  Stream CBS News 24/7: OK (status=200)
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg | stream=OK
+  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg | stream=OK
+  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg | stream=OFFLINE
+  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg | stream=OK
+
+[10-11] M3U:
+  Canais incluidos: 4
+  Canais removidos: 0
+  Problemas: 0

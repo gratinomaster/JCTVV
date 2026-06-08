@@ -15,14 +15,14 @@ REPORT_FILE = f"{BASE}/relatorio_lista5.txt"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 EPG_URLS = [
-    "https://iptv-epg.org/files/epg-us.xml.gz",
     "https://epg.pw/xmltv/epg_US.xml.gz",
     "https://epg.pw/xmltv/epg.xml.gz",
+    "https://iptv-epg.org/files/epg-us.xml.gz",
 ]
 
 CHANNELS = OrderedDict([
     ("ABC News Live", {
-        "tvg-id": "ABCNewsLive.us",
+        "tvg-id": "465150",
         "tvg-name": "ABC News Live",
         "tvg-logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
         "group-title": "NEWS WORLD",
@@ -30,7 +30,7 @@ CHANNELS = OrderedDict([
         "tvg-chno": "1",
     }),
     ("Fox News Channel", {
-        "tvg-id": "FoxNewsChannel.us",
+        "tvg-id": "465372",
         "tvg-name": "Fox News Channel",
         "tvg-logo": "https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg",
         "group-title": "NEWS WORLD",
@@ -38,7 +38,7 @@ CHANNELS = OrderedDict([
         "tvg-chno": "2",
     }),
     ("Fox Business", {
-        "tvg-id": "FoxBusiness.us",
+        "tvg-id": "464766",
         "tvg-name": "Fox Business",
         "tvg-logo": "https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg",
         "group-title": "NEWS WORLD",
@@ -46,7 +46,7 @@ CHANNELS = OrderedDict([
         "tvg-chno": "3",
     }),
     ("CBS News 24/7", {
-        "tvg-id": "CBSNews.us",
+        "tvg-id": "464941",
         "tvg-name": "CBS News 24/7",
         "tvg-logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
         "group-title": "NEWS WORLD",
@@ -56,10 +56,10 @@ CHANNELS = OrderedDict([
 ])
 
 AFFILIATE_IDS = {
-    "ABCNewsLive.us": ["WABC-DT.us_locals1", "KABC-DT.us_locals1"],
-    "FoxNewsChannel.us": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
-    "FoxBusiness.us": ["WFOX-DT.us_locals1", "KFOX-DT.us_locals1"],
-    "CBSNews.us": ["WCBS-DT.us_locals1", "KCBS-DT.us_locals1"],
+    "465150": ["464943", "464944"],
+    "465372": ["464877", "464878"],
+    "464766": ["464877", "464878"],
+    "464941": ["464942", "464945"],
 }
 
 def log(msg):
@@ -433,7 +433,7 @@ def main():
 
     # 10. Generate corrected M3U
     log("\n[10] Gerando M3U corrigido...")
-    epg_urls_str = ','.join(sources_used[:2])
+    epg_urls_str = ','.join(sources_used)
 
     m3u_lines = [f'#EXTM3U x-tvg-url="{epg_urls_str}"']
 
@@ -441,11 +441,7 @@ def main():
     channels_included = []
 
     for ch_name, ch_info in CHANNELS.items():
-        if not stream_results.get(ch_name, False):
-            log(f"  PULANDO {ch_name} (stream offline)")
-            log_report(f"  Status {ch_name}: PULADO (stream offline)")
-            channels_removed.append(ch_name)
-            continue
+        stream_ok = stream_results.get(ch_name, False)
 
         if vt_results.get(ch_name, {}).get('status') == 'malicious':
             log(f"  PULANDO {ch_name} (malicioso no VirusTotal)")
@@ -468,8 +464,9 @@ def main():
         m3u_lines.append(f'#EXTINF:-1 {attrs},{ch_name}')
         m3u_lines.append(ch_info['stream'])
         channels_included.append(ch_name)
-        log(f"  + {ch_name} (logo: {final_logo})")
-        log_report(f"  Status {ch_name}: INCLUIDO | logo={final_logo}")
+        stream_note = " (stream offline)" if not stream_ok else ""
+        log(f"  + {ch_name}{stream_note} (logo: {final_logo})")
+        log_report(f"  Status {ch_name}: INCLUIDO | logo={final_logo} | stream={'OK' if stream_ok else 'OFFLINE'}")
 
     m3u_content = '\n'.join(m3u_lines) + '\n'
 
