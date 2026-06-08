@@ -1,276 +1,74 @@
 ======================================================================
-RELATORIO CORRECAO lista5.m3u v5
-Data: 2026-06-03 12:32
-======================================================================
-Backup: /home/runner/work/JCTV/JCTV/lista5.m3u.bak
-Canal: ABC News Live | EPG: Hoje=28 Amanha=35 Depois=25 | Status: OK
-Canal: Fox News Channel | EPG: Hoje=24 Amanha=24 Depois=24 | Status: OK
-Canal: Fox Business | EPG: Hoje=27 Amanha=27 Depois=34 | Status: OK
-Canal: CBS News 24/7 | EPG: Hoje=24 Amanha=26 Depois=26 | Status: OK
-Stream ABC News Live: OK
-Stream Fox News Channel: OFFLINE
-Stream Fox Business: OFFLINE
-Stream CBS News 24/7: OK
-Canal ABC News Live: INCLUIDO | Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-Canal Fox News Channel: OFFLINE (mantido no M3U)
-Canal Fox News Channel: INCLUIDO | Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-Canal Fox Business: OFFLINE (mantido no M3U)
-Canal Fox Business: INCLUIDO | Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-Canal CBS News 24/7: INCLUIDO | Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-Verificacao: OK
-
-Total canais: 4
-EPG Funcional: SIM
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u v5
-Data: 2026-06-04 10:56
+CORRECAO COMPLETA lista5.m3u - EPG + AFILIADAS + LOGOS
 ======================================================================
 
-Canal: ABC News Live
-  tvg-id: ABCNewsLive.us
-  EPG: Hoje=36 Amanha=36 Depois=32
-Canal: Fox News Channel
-  tvg-id: FoxNewsChannel.us
-  EPG: Hoje=24 Amanha=24 Depois=24
-Canal: CBS News 24/7
-  tvg-id: CBSNews.us
-  EPG: Hoje=26 Amanha=26 Depois=29
-  EPG salvo: 592 programas
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OK
-  Stream CBS News 24/7: OK
-  Stream CBS News Bay Area: OK
-  Stream CBS News Chicago: OK
-  Stream CBS News Miami: OK
-  Stream CBS News New York: OK
-  Stream CBS News Los Angeles: OK
-  Stream CBS News Dallas Ft Worth: OK
-  Stream CBS News Detroit: OK
-  Stream CBS News Philadelphia: OK
-  Stream CBS News Colorado: OK
-  Stream CBS News Minnesota: OK
-  Stream CBS News Pittsburgh: OK
-  Stream CBS News Sacramento: OK
-  Stream CBSN Boston: OK
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  VirusTotal CBS News Bay Area: nao_verificado
-  VirusTotal CBS News Chicago: nao_verificado
-  VirusTotal CBS News Miami: nao_verificado
-  VirusTotal CBS News New York: nao_verificado
-  VirusTotal CBS News Los Angeles: nao_verificado
-  VirusTotal CBS News Dallas Ft Worth: nao_verificado
-  VirusTotal CBS News Detroit: nao_verificado
-  VirusTotal CBS News Philadelphia: nao_verificado
-  VirusTotal CBS News Colorado: nao_verificado
-  VirusTotal CBS News Minnesota: nao_verificado
-  VirusTotal CBS News Pittsburgh: nao_verificado
-  VirusTotal CBS News Sacramento: nao_verificado
-  VirusTotal CBSN Boston: nao_verificado
-  Status: INCLUIDO
-  Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status: INCLUIDO
-  Logo: https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+[1] Backup...
+  Backup: /home/runner/work/JCTV/JCTV/lista5.m3u.bak
 
-Total canais: 16
-Cobertura EPG: Hoje=86 Amanha=86 Depois=85
-EPG Funcional: SIM
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-06 16:59
-======================================================================
+[2] Baixando EPG...
+  OK: 58314937 bytes
+  EPG: 12714 canais, 1071256 programas
+  Programas filtrados: 546
 
-Canal: ABC News Live
-  tvg-id: ABC.News.Live.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: Fox News Channel
-  tvg-id: Fox.News.Channel.HD.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: Fox Business
-  tvg-id: Fox.Business.HD.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: CBS News 24/7
-  tvg-id: CBS.News.National.Stream.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  Status: INCLUIDO
-  Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+[3] Cobertura: Hoje=85 Amanha=88 Depois=86
 
-Total canais: 4
-Cobertura EPG: Hoje=0 Amanha=0 Depois=0
-EPG Funcional: NAO
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-06 17:00
-======================================================================
+[4] Cobertura por canal EPG:
+  FoxNewsChannel.us (US - FOX NEWS): Hoje=24 Amanha=24 Depois=24
+  ABCNewsLive.us (US - ABC News Live): Hoje=35 Amanha=38 Depois=36
+  CBSNews.us (US - CBS News): Hoje=26 Amanha=26 Depois=26
 
-Canal: ABC News Live
-  tvg-id: ABC.News.Live.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: Fox News Channel
-  tvg-id: Fox.News.Channel.HD.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: Fox Business
-  tvg-id: Fox.Business.HD.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-Canal: CBS News 24/7
-  tvg-id: CBS.News.National.Stream.us2
-  EPG: Hoje=0 Amanha=0 Depois=0
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  Stream: OK
-  Status: INCLUIDO
-  Logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status: INCLUIDO
-  Logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Status: INCLUIDO
-  Logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+[5] Testando streams...
+  OK: ABC News Live
+  OK: Fox News Channel
+  OK: CBS News 24/7
+  OK: CBS News Bay Area
+  OK: CBS News Chicago
+  OK: CBS News Miami
+  OK: CBS News New York
+  OK: CBS News Los Angeles
+  OK: CBS News Dallas Ft Worth
+  OK: CBS News Detroit
+  OK: CBS News Philadelphia
+  OK: CBS News Colorado
+  OK: CBS News Minnesota
+  OK: CBS News Pittsburgh
+  OK: CBS News Sacramento
+  OK: CBSN Boston
 
-Total canais: 4
-Cobertura EPG: Hoje=0 Amanha=0 Depois=0
-EPG Funcional: NAO
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-08 02:35
-======================================================================
+[6] Salvando EPG filtrado...
+  XML: /home/runner/work/JCTV/JCTV/lista5_epg.xml (546 programas)
+  GZ: /home/runner/work/JCTV/JCTV/lista5_epg.xml.gz
 
-[1] Backup: OK
+[7] Gerando M3U...
+  + ABC News Live
+  + Fox News Channel
+  + CBS News 24/7
+  + CBS News Bay Area
+  + CBS News Chicago
+  + CBS News Miami
+  + CBS News New York
+  + CBS News Los Angeles
+  + CBS News Dallas Ft Worth
+  + CBS News Detroit
+  + CBS News Philadelphia
+  + CBS News Colorado
+  + CBS News Minnesota
+  + CBS News Pittsburgh
+  + CBS News Sacramento
+  + CBSN Boston
+  Salvo: /home/runner/work/JCTV/JCTV/lista5.m3u (16 canais)
 
-[2-5] EPG:
-  Fontes: 3
-  Programas totais: 767
-  Cobertura: Hoje=118 Amanha=121 Depois=113
-  Canal: ABC News Live | tvg-id=ABCNewsLive.us | OK | Hoje=35 Amanha=38 Depois=36
-  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | OK | Hoje=24 Amanha=24 Depois=24
-  Canal: Fox Business | tvg-id=FoxBusiness.us | OK | Hoje=33 Amanha=33 Depois=27
-  Canal: CBS News 24/7 | tvg-id=CBSNews.us | OK | Hoje=26 Amanha=26 Depois=26
-  Stream ABC News Live: OK (status=200)
-  Stream Fox News Channel: OK (status=200)
-  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f883b25ffe0>: Failed to establish a new connection: [Errno 111] Connection refused')))
-  Stream CBS News 24/7: OK (status=200)
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Status Fox Business: PULADO (stream offline)
-  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+[8] Validacao final...
+  TUDO OK!
 
-[10-11] M3U:
-  Canais incluidos: 3
-  Canais removidos: 1
-  Problemas: 0
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-08 02:38
-======================================================================
+[9] RELATORIO FINAL:
+  Canais: 16
+  EPG: 546 programas (85 hoje, 88 amanha, 86 depois)
+  Fonte EPG: https://iptv-epg.org/files/epg-us.xml.gz
+  Todos com tvg-id: SIM
+  Todos com tvg-logo .jpg: SIM
+  Sem imgur.com: SIM
+  Todas URLs com #EXTINF: SIM
+  EPG Funcional: SIM
 
-[1] Backup: OK
-
-[2-5] EPG:
-  Fontes: 2
-  Programas totais: 0
-  Cobertura: Hoje=0 Amanha=0 Depois=0
-  Canal: ABC News Live | tvg-id=ABCNewsLive.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
-  Canal: Fox News Channel | tvg-id=FoxNewsChannel.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
-  Canal: Fox Business | tvg-id=FoxBusiness.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
-  Canal: CBS News 24/7 | tvg-id=CBSNews.us | SEM EPG | Hoje=0 Amanha=0 Depois=0
-  Stream ABC News Live: OK (status=200)
-  Stream Fox News Channel: OK (status=200)
-  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fede623bc20>: Failed to establish a new connection: [Errno 111] Connection refused')))
-  Stream CBS News 24/7: OK (status=200)
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg | stream=OK
-  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg | stream=OK
-  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg | stream=OFFLINE
-  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg | stream=OK
-
-[10-11] M3U:
-  Canais incluidos: 4
-  Canais removidos: 0
-  Problemas: 0
-======================================================================
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-08 02:39
-======================================================================
-
-[1] Backup: OK
-
-[2-5] EPG:
-  Fontes: 2
-  Programas totais: 820
-  Cobertura: Hoje=236 Amanha=240 Depois=117
-  Canal: ABC News Live | tvg-id=465150 | OK | Hoje=65 Amanha=75 Depois=37
-  Canal: Fox News Channel | tvg-id=465372 | OK | Hoje=53 Amanha=52 Depois=27
-  Canal: Fox Business | tvg-id=464766 | OK | Hoje=70 Amanha=62 Depois=27
-  Canal: CBS News 24/7 | tvg-id=464941 | OK | Hoje=48 Amanha=51 Depois=26
-  Stream ABC News Live: OK (status=200)
-  Stream Fox News Channel: OK (status=200)
-  Stream Fox Business: OFFLINE (status=HTTPSConnectionPool(host='tvpass.org', port=443): Max retries exceeded with url: /live/FoxBusiness/hd (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8b6f813c80>: Failed to establish a new connection: [Errno 111] Connection refused')))
-  Stream CBS News 24/7: OK (status=200)
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  Status ABC News Live: INCLUIDO | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg | stream=OK
-  Status Fox News Channel: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg | stream=OK
-  Status Fox Business: INCLUIDO | logo=https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg | stream=OFFLINE
-  Status CBS News 24/7: INCLUIDO | logo=https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg | stream=OK
-
-[10-11] M3U:
-  Canais incluidos: 4
-  Canais removidos: 0
-  Problemas: 0
+Concluido!
