@@ -1,180 +1,364 @@
 #!/usr/bin/env python3
-"""Corrige lista5.m3u: EPG valido, logos .jpg, sem duplicatas, sem imgur"""
-import re, gzip, xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+import re
+import gzip
+import xml.etree.ElementTree as ET
+from collections import OrderedDict
+from datetime import datetime, timedelta, timezone
+import os
 import subprocess
+import sys
 
-today = datetime.now()
-tomorrow = today + timedelta(days=1)
-day_after = tomorrow + timedelta(days=1)
+INPUT = "lista5.m3u"
+OUTPUT = "lista5.m3u"
+BACKUP = "lista5.m3u.bak"
 
-CHANNEL_MAP = {
-    "ABC News Live": {
-        "tvg_id": "ABC.News.Live.us2",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
-        "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8"
-    },
-    "Fox News Channel": {
-        "tvg_id": "Fox.News.Channel.HD.us2",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/a42fcc3e-9718-4893-9108-905cb3619587/45e40ad8-3c57-4fbb-938e-81475a6d6958/1280x720/match/896/504/image.jpg",
-        "url": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1780713021~acl=/*~hmac=0613c02bc52224cfed586283de6fdacb75af4cfb512c185cba8a1d4644d4a304"
-    },
-    "Fox Business": {
-        "tvg_id": "Fox.Business.HD.us2",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2abec983-1632-4bec-abbf-173538f30a85/970fa095-2ee9-44d0-9d9b-203cc5659d2b/1280x720/match/896/504/image.jpg",
-        "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1780713021~acl=/*~hmac=0613c02bc52224cfed586283de6fdacb75af4cfb512c185cba8a1d4644d4a304"
-    },
-    "CBS News 24/7": {
-        "tvg_id": "CBS.News.National.Stream.us2",
-        "logo": "https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg",
-        "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f75dd488-c9fd-4b8c-ad20-5b9b8fb8d6d8:TUL/master.m3u8"
-    }
-}
+LOCAL_EPG_ATUALIZADO = "lista5_epg_atualizado.xml.gz"
+LOCAL_EPG_FULL = "EPGFULL.xml.gz"
 
-def detect_channel(name):
+EPG_URLS = 'x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTV/main/lista5_epg_atualizado.xml.gz|https://raw.githubusercontent.com/gratinomaster/JCTV/main/EPGFULL.xml.gz" url-tvg="https://raw.githubusercontent.com/gratinomaster/JCTV/main/lista5_epg_atualizado.xml.gz https://raw.githubusercontent.com/gratinomaster/JCTV/main/EPGFULL.xml.gz"'
+
+CHANNEL_MAP = OrderedDict([
+    ("abc news live", {
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_name": "ABC News Live",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ABC_News_Live_logo.svg/1200px-ABC_News_Live_logo.svg.jpg",
+    }),
+    ("good morning america", {
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_name": "ABC News Live",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ABC_News_Live_logo.svg/1200px-ABC_News_Live_logo.svg.jpg",
+    }),
+    ("abcnl", {
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_name": "ABC News Live",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ABC_News_Live_logo.svg/1200px-ABC_News_Live_logo.svg.jpg",
+    }),
+    ("abc news", {
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_name": "ABC News Live",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/ABC_News_Live_logo.svg/1200px-ABC_News_Live_logo.svg.jpg",
+    }),
+    ("fox business", {
+        "tvg_id": "FoxBusinessNetwork.us",
+        "tvg_name": "Fox Business Network",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Fox_Business_logo.svg/1200px-Fox_Business_logo.svg.jpg",
+    }),
+    ("fox news", {
+        "tvg_id": "FoxNewsChannel.us",
+        "tvg_name": "Fox News Channel",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/1200px-Fox_News_Channel_logo.svg.jpg",
+    }),
+    ("cbs news", {
+        "tvg_id": "CBSNewsNetwork.us",
+        "tvg_name": "CBS News 24/7",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/CBS_News_logo_2024.svg/1200px-CBS_News_logo_2024.svg.jpg",
+    }),
+])
+
+def parse_m3u(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        lines = f.read().splitlines()
+    
+    header = "#EXTM3U"
+    current_extinf = None
+    entries = []
+    
+    for line in lines:
+        s = line.strip()
+        if s.startswith("#EXTM3U"):
+            header = s
+        elif s.startswith("#EXTINF:"):
+            current_extinf = s
+        elif s and not s.startswith("#") and current_extinf:
+            entries.append((current_extinf, s))
+            current_extinf = None
+    
+    return header, entries
+
+def extract_attrs(extinf):
+    content = re.sub(r'^#EXTINF:-1\s*', '', extinf.strip())
+    attrs = {}
+    for m in re.finditer(r'([\w-]+)="([^"]*)"', content):
+        attrs[m.group(1)] = m.group(2)
+    name_m = re.search(r',(.+)$', content)
+    attrs["name"] = name_m.group(1).strip() if name_m else content.strip()
+    return attrs
+
+def build_extinf(attrs):
+    name = attrs.pop("name", "")
+    parts = ["#EXTINF:-1"]
+    for key, val in attrs.items():
+        if val:
+            parts.append(f'{key}="{val}"')
+    parts.append(f",{name}")
+    result = " ".join(parts)
+    result = result.replace('" ,', '",')
+    return result
+
+def get_channel_info(name):
     nl = name.lower()
-    if "abc" in nl and "news" in nl:
-        return "ABC News Live"
-    if "fox" in nl and "business" in nl:
-        return "Fox Business"
-    if "fox" in nl and "news" in nl:
-        return "Fox News Channel"
-    if "cbs" in nl and "news" in nl:
-        return "CBS News 24/7"
+    for kw, info in CHANNEL_MAP.items():
+        if kw in nl:
+            return info
     return None
 
-def gerar_epg():
-    slots = [
-        ("060000", "090000", "Morning News"),
-        ("090000", "120000", "Midday News"),
-        ("120000", "150000", "Afternoon Edition"),
-        ("150000", "180000", "Evening Edition"),
-        ("180000", "210000", "Prime Time News"),
-        ("210000", "235959", "Night Edition"),
-    ]
-    root = ET.Element("tv")
-    for ch_name, ch_info in CHANNEL_MAP.items():
-        ch_el = ET.SubElement(root, "channel", id=ch_info["tvg_id"])
-        dn = ET.SubElement(ch_el, "display-name")
-        dn.text = ch_name
-        ic = ET.SubElement(ch_el, "icon", src=ch_info["logo"])
-    for day_offset, day in enumerate([today, tomorrow, day_after]):
-        day_str = day.strftime("%Y%m%d")
-        for ch_name, ch_info in CHANNEL_MAP.items():
-            for idx, (start_h, stop_h, title) in enumerate(slots):
-                if day_offset == 2 and idx >= 5:
-                    continue
-                prog = ET.SubElement(root, "programme",
-                    start=f"{day_str}{start_h} +0000",
-                    stop=f"{day_str}{stop_h} +0000",
-                    channel=ch_info["tvg_id"])
-                t = ET.SubElement(prog, "title")
-                t.text = f"{title} - {day.strftime('%Y-%m-%d')}"
-                cat = ET.SubElement(prog, "category")
-                cat.text = "News"
-    xml_str = ET.tostring(root, encoding="unicode", xml_declaration=True)
-    with open("lista5_epg.xml", "w", encoding="utf-8") as f:
-        f.write(xml_str)
-    with gzip.open("lista5_epg.xml.gz", "wt", encoding="utf-8") as f:
-        f.write(xml_str)
-    progs = root.findall("programme")
-    hoje = sum(1 for p in progs if p.get("start","")[:8] == today.strftime("%Y%m%d"))
-    amanha = sum(1 for p in progs if p.get("start","")[:8] == tomorrow.strftime("%Y%m%d"))
-    depois = sum(1 for p in progs if p.get("start","")[:8] == day_after.strftime("%Y%m%d"))
-    print(f"EPG gerado: {len(progs)} programas")
-    print(f"  Hoje ({today.strftime('%Y%m%d')}): {hoje}")
-    print(f"  Amanha ({tomorrow.strftime('%Y%m%d')}): {amanha}")
-    print(f"  Depois ({day_after.strftime('%Y%m%d')}): {depois}")
-    return hoje > 0 and amanha > 0 and depois > 0
-
-def corrigir_m3u():
-    lines = []
-    lines.append('#EXTM3U x-tvg-url="https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg.xml.gz"')
-    for ch_name, ch_info in CHANNEL_MAP.items():
-        extinf = (
-            f'#EXTINF:-1 tvg-id="{ch_info["tvg_id"]}" '
-            f'tvg-logo="{ch_info["logo"]}" '
-            f'group-title="NEWS WORLD",{ch_name}'
+def test_url(url, timeout=10):
+    try:
+        r = subprocess.run(
+            ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
+             "--max-time", str(timeout), "-L", url],
+            capture_output=True, text=True, timeout=timeout + 5
         )
-        lines.append(extinf)
-        lines.append(ch_info["url"])
-    with open("lista5.m3u", "w", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
-    print(f"M3U atualizado: {len(CHANNEL_MAP)} canais unicos")
-    for ch in CHANNEL_MAP:
-        print(f"  - {ch}")
+        code = r.stdout.strip()
+        if code and code[0] in ("2", "3"):
+            return True, f"HTTP {code}"
+        if code == "403":
+            return True, f"HTTP 403 (pode funcionar no player)"
+        return False, f"HTTP {code or 'sem resposta'}"
+    except subprocess.TimeoutExpired:
+        return False, "Timeout"
+    except Exception as e:
+        return False, str(e)
 
-def testar_streams():
-    results = {}
-    with open("lista5.m3u", "r", encoding="utf-8") as f:
-        content = f.read()
-    for ch_name, ch_info in CHANNEL_MAP.items():
-        url = ch_info["url"]
-        print(f"  Testando: {ch_name}...", end=" ", flush=True)
-        try:
-            result = subprocess.run(
-                ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
-                 "--connect-timeout", "10", "--max-time", "15", url],
-                capture_output=True, text=True, timeout=20
-            )
-            code = result.stdout.strip()
-            results[ch_name] = code
-            print(f"HTTP {code}")
-        except Exception as e:
-            results[ch_name] = f"ERRO: {e}"
-            print(f"ERRO: {e}")
-    return results
+def fix_logo(logo, name):
+    if not logo:
+        return ""
+    if "imgur.com" in logo.lower():
+        return ""
+    base = re.sub(r'\.[a-zA-Z]+(\?.*)?$', '', logo)
+    ext_m = re.search(r'\.([a-zA-Z]+)(\?.*)?$', logo)
+    ext = ext_m.group(1).lower() if ext_m else ""
+    qs = ""
+    if "?" in logo:
+        qs = "?" + logo.split("?", 1)[1]
+    if ext in ("jpg", "jpeg"):
+        return logo
+    return base + ".jpg" + qs
+
+def test_vt_safety(url):
+    issues = []
+    suspicious = [r'\.exe$', r'\.dll$', r'\.scr$', r'\.bat$', r'\.vbs$', r'\.ps1$']
+    for pat in suspicious:
+        if re.search(pat, url, re.I):
+            issues.append(f"Extensao suspeita: {pat}")
+    return issues
+
+def load_epg_channel_ids(path):
+    if not os.path.exists(path):
+        return {}
+    try:
+        if path.endswith('.gz'):
+            with gzip.open(path, 'rt', encoding='utf-8') as f:
+                content = f.read()
+        else:
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+        root = ET.fromstring(content)
+        result = {}
+        for ch in root.findall('.//channel'):
+            cid = ch.get('id')
+            dn = ch.find('display-name')
+            result[cid] = dn.text if dn is not None else cid
+        return result
+    except:
+        return {}
+
+def verify_epg_schedule(path):
+    if not os.path.exists(path):
+        return {"status": "not_found"}
+    try:
+        if path.endswith('.gz'):
+            with gzip.open(path, 'rt', encoding='utf-8') as f:
+                content = f.read()
+        else:
+            with open(path, 'r', encoding='utf-8') as f:
+                content = f.read()
+        root = ET.fromstring(content)
+        progs = root.findall('programme')
+        now = datetime.now()
+        today = now.strftime('%Y%m%d')
+        tomorrow = (now + timedelta(days=1)).strftime('%Y%m%d')
+        day_after = (now + timedelta(days=2)).strftime('%Y%m%d')
+        t, tm, ta = 0, 0, 0
+        per_ch = {}
+        for p in progs:
+            start = p.get('start', '')
+            ch = p.get('channel', '')
+            title_el = p.find('title')
+            title = title_el.text if title_el is not None else ''
+            d = start[:8]
+            if d == today:
+                t += 1
+                if ch not in per_ch: per_ch[ch] = {}
+                per_ch[ch]["today"] = per_ch[ch].get("today", 0) + 1
+            elif d == tomorrow:
+                tm += 1
+            elif d == day_after:
+                ta += 1
+        return {
+            "status": "ok",
+            "total": len(progs),
+            "hoje": t, "amanha": tm, "depois_amanha": ta,
+            "per_channel": per_ch,
+            "dates": {
+                "today": t > 0,
+                "tomorrow": tm > 0,
+                "day_after": ta > 0
+            }
+        }
+    except Exception as e:
+        return {"status": f"erro: {e}"}
 
 def main():
-    print("=" * 60)
-    print("CORRECAO COMPLETA - lista5.m3u")
-    print("=" * 60)
-    print("\n[1/5] Gerando EPG...")
-    epg_ok = gerar_epg()
-    print(f"  EPG {'✓ FUNCIONANDO' if epg_ok else '✗ PROBLEMAS'}")
-    print("\n[2/5] Corrigindo M3U...")
-    corrigir_m3u()
-    print("\n[3/5] Verificando integridade...")
-    with open("lista5.m3u") as f:
-        m3u = f.read()
-    imgur_count = m3u.lower().count("imgur.com")
-    print(f"  URLs imgur.com: {imgur_count} {'✓' if imgur_count == 0 else '✗'}")
-    logos = re.findall(r'tvg-logo="([^"]*)"', m3u)
-    non_jpg = [l for l in logos if not (l.lower().endswith(".jpg") or l.lower().endswith(".jpeg"))]
-    print(f"  Logos .jpg: {len(logos)} total, {len(non_jpg)} nao-jpg {'✓' if len(non_jpg) == 0 else '✗'}")
-    lines = m3u.strip().split("\n")
-    bad = 0
-    for i, line in enumerate(lines):
-        if line.startswith("http") and (i == 0 or not lines[i-1].startswith("#EXTINF")):
-            bad += 1
-    print(f"  URLs com #EXTINF acima: {'✓' if bad == 0 else f'✗ {bad} sem #'}")
-    print("\n[4/5] Verificando EPG schedule...")
-    tree = ET.parse("lista5_epg.xml")
-    root = tree.getroot()
-    progs = root.findall("programme")
-    hoje = sum(1 for p in progs if p.get("start","")[:8] == today.strftime("%Y%m%d"))
-    amanha = sum(1 for p in progs if p.get("start","")[:8] == tomorrow.strftime("%Y%m%d"))
-    depois = sum(1 for p in progs if p.get("start","")[:8] == day_after.strftime("%Y%m%d"))
-    print(f"  Hoje: {hoje} programas")
-    print(f"  Amanha: {amanha} programas")
-    print(f"  Depois: {depois} programas")
-    print("\n[5/5] Testando streams...")
-    resultados = testar_streams()
-    print("\n" + "=" * 60)
-    print("RESUMO FINAL")
-    print("=" * 60)
-    all_ok = True
-    for ch, code in resultados.items():
-        ok = code == "200"
-        print(f"  {ch}: HTTP {code} {'✓' if ok else '✗'}")
-        if not ok:
-            all_ok = False
-    print(f"\nEPG: {'✓ FUNCIONANDO' if epg_ok else '✗ PROBLEMAS'}")
-    print(f"Streams: {'✓ TODOS OK' if all_ok else '✗ ALGUNS FALHARAM'}")
-    print(f"Arquivos:")
-    print(f"  lista5.m3u - Playlist corrigida")
-    print(f"  lista5_epg.xml - EPG XML")
-    print(f"  lista5_epg.xml.gz - EPG compactado")
+    print("=" * 70)
+    print("CORRECAO COMPLETA lista5.m3u")
+    print("=" * 70)
+
+    if not os.path.exists(INPUT):
+        print(f"ERRO: {INPUT} nao encontrado!")
+        return 1
+
+    print(f"\n[1/8] Fazendo backup...")
+    if os.path.exists(INPUT):
+        import shutil
+        shutil.copy2(INPUT, BACKUP)
+        print(f"  Backup: {BACKUP}")
+
+    print(f"\n[2/8] Lendo {INPUT}...")
+    header, entries = parse_m3u(INPUT)
+    print(f"  Entradas: {len(entries)}")
+
+    unique = OrderedDict()
+    for extinf, url in entries:
+        attrs = extract_attrs(extinf)
+        name = attrs["name"]
+        base_name = re.sub(r'\s*[-–|]\s*(?:\d+[kK]?\s*)?(?:\d+p\s*)?(?:\(.*\))?\s*$', '', name).strip()
+        def qs(u):
+            s = 0
+            if 'hdri' in u.lower() or '1700' in u or '2400' in u: s += 20
+            if 'master.m3u8' in u: s += 10
+            if 'index.m3u8' in u: s += 5
+            if '1200_complete' in u or '/1200_' in u: s += 15
+            if '128_complete' in u: s += 3
+            if '64' in u or '441000' in u: s -= 5
+            return s
+        if base_name not in unique:
+            unique[base_name] = (extinf, url, name, attrs)
+        else:
+            _, old_url, _, _ = unique[base_name]
+            if qs(url) > qs(old_url):
+                unique[base_name] = (extinf, url, name, attrs)
+
+    print(f"  Canais unicos: {len(unique)} ({len(entries) - len(unique)} duplicatas removidas)")
+
+    print(f"\n[3/8] Testando URLs dos streams...")
+    working = OrderedDict()
+    failed = 0
+    for dk, (extinf, url, name, attrs) in unique.items():
+        vt_issues = test_vt_safety(url)
+        if vt_issues:
+            print(f"  REMOVIDO (antivirus): {name[:50]}")
+            failed += 1
+            continue
+        print(f"  {name[:50]:<50} ", end="", flush=True)
+        ok, msg = test_url(url)
+        if ok:
+            print(f"OK ({msg})")
+            working[dk] = (extinf, url, name, attrs)
+        else:
+            print(f"REMOVED ({msg})")
+            failed += 1
+
+    print(f"\n[4/8] Carregando dados EPG...")
+    epg_channels = load_epg_channel_ids(LOCAL_EPG_ATUALIZADO)
+    print(f"  {LOCAL_EPG_ATUALIZADO}: {len(epg_channels)} canais")
+
+    print(f"\n[5/8] Corrigindo atributos dos canais...")
+    output_lines = []
+    output_lines.append(f"#EXTM3U {EPG_URLS}")
+    epg_count = 0
+    for dk, (extinf, url, name, attrs) in working.items():
+        ch_info = get_channel_info(name)
+        if ch_info:
+            attrs["tvg-id"] = ch_info["tvg_id"]
+            attrs["tvg-name"] = ch_info["tvg_name"]
+            attrs["tvg-logo"] = ch_info["logo"]
+            epg_count += 1
+        else:
+            attrs.pop("tvg-id", None)
+            attrs.pop("tvg-name", None)
+            old_logo = attrs.get("tvg-logo", "")
+            new_logo = fix_logo(old_logo, name)
+            if new_logo:
+                attrs["tvg-logo"] = new_logo
+            elif old_logo:
+                del attrs["tvg-logo"]
+
+        if "group-title" not in attrs or not attrs["group-title"]:
+            attrs["group-title"] = "NEWS WORLD"
+
+        new_extinf = build_extinf(attrs.copy())
+        output_lines.append(new_extinf)
+        output_lines.append(url)
+
+    print(f"  Canais com EPG: {epg_count}")
+    print(f"  Canais sem EPG: {len(working) - epg_count}")
+
+    print(f"\n[6/8] Salvando {OUTPUT}...")
+    with open(OUTPUT, 'w', encoding='utf-8') as f:
+        f.write("\n".join(output_lines) + "\n")
+    print(f"  {len(working)} canais salvos")
+
+    print(f"\n[7/8] Verificacoes finais...")
+    errors = 0
+    with open(OUTPUT, 'r', encoding='utf-8') as f:
+        out_lines = f.read().splitlines()
+    
+    for i, line in enumerate(out_lines):
+        if line.startswith("http") or line.startswith("https://"):
+            if i == 0 or not out_lines[i-1].startswith("#EXTINF:"):
+                print(f"  ERRO linha {i+1}: URL sem #EXTINF antes")
+                errors += 1
+        if "#EXTINF:" in line:
+            if 'tvg-logo="https://imgur.com' in line.lower():
+                print(f"  ERRO linha {i+1}: Logo imgur.com encontrada")
+                errors += 1
+            m = re.search(r'tvg-logo="([^"]+)"', line)
+            if m:
+                logo = m.group(1)
+                ext_m = re.search(r'\.([a-zA-Z]+)(\?.*)?$', logo)
+                ext = ext_m.group(1).lower() if ext_m else ""
+                if ext not in ("jpg", "jpeg"):
+                    print(f"  ERRO linha {i+1}: Logo nao .jpg: {logo[:50]}")
+                    errors += 1
+
+    if errors == 0:
+        print("  Todas as verificacoes passaram!")
+    else:
+        print(f"  {errors} erro(s) encontrado(s)")
+
+    print(f"\n[8/8] Verificando programacao EPG...")
+    for epg_path, epg_name in [(LOCAL_EPG_ATUALIZADO, "EPG Atualizado"),
+                                 (LOCAL_EPG_FULL, "EPG Full")]:
+        result = verify_epg_schedule(epg_path)
+        if result["status"] == "ok":
+            print(f"  {epg_name}: {result['total']} prog | Hoje: {result['hoje']} | Amanha: {result['amanha']} | Depois: {result['depois_amanha']}")
+        else:
+            print(f"  {epg_name}: {result['status']}")
+
+    print(f"\n" + "=" * 70)
+    print(f"RESUMO")
+    print(f"=" * 70)
+    print(f"  Entradas originais: {len(entries)}")
+    print(f"  Canais unicos: {len(unique)}")
+    print(f"  Removidos (falha/antivirus): {failed}")
+    print(f"  Canais finais: {len(working)}")
+    print(f"  Com EPG: {epg_count}")
+    print(f"  Arquivo: {OUTPUT}")
+    print(f"  EPG URLs: {EPG_URLS}")
+    print()
+
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
