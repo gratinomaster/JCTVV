@@ -349,8 +349,6 @@ https://cdn-edge1.streamcomedia.com/abr_tngr969fm/abr-tngr969fm_streams/playlist
 https://bozztv.com/hwotta/playlist/playlist.m3u8
 #EXTINF:-1 tvg-id="470453" tvg-name="HLN" tvg-logo="https://epg.pw/media/logos/tvg-id/hln-us.png" group-title="NEWS WORLD",HLN
 https://turnerlive.warnermediacdn.com/hls/live/586496/cnngo/hln/VIDEO_0_3564000.m3u8?DVR
-#EXTINF:-1 tvg-id="76737" tvg-name="Géopolis TV" tvg-logo="https://epg.pw/media/logos/tvg-id/news-fr.png" group-title="NEWS WORLD",Géopolis TV
-https://tnt-television.com/Geopolis_tv/index.m3u8
 #EXTINF:-1 tvg-id="470346" tvg-name="ICI RDI" tvg-logo="https://epg.pw/media/logos/tvg-id/ici-rdi-ca.png" group-title="NEWS WORLD",ICI RDI
 https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8
 #EXTINF:-1 tvg-id="76763" tvg-name="Global Punjab" tvg-logo="https://epg.pw/media/logos/tvg-id/news-in.png" group-title="NEWS WORLD",Global Punjab
@@ -526,7 +524,7 @@ https://a-cdn.klowdtv.com/live2/thefirst_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="523282" tvg-name="Record TV" tvg-logo="https://epg.pw/media/logos/tvg-id/record-br.png" group-title="NEWS WORLD",Record TV
 https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8
 #EXTINF:-1 tvg-id="523352" tvg-name="Record News" tvg-logo="https://epg.pw/media/logos/tvg-id/record-news-br.png" group-title="NEWS WORLD",Record News
-https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8
+https://playplusnews-lh.akamaihd.net/i/pp_nws@377849/master.m3u8
 #EXTINF:-1 tvg-id="465219" tvg-name="Reuters" tvg-logo="https://epg.pw/media/logos/tvg-id/reuters-uk.png" group-title="NEWS WORLD",Reuters
 https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8
 #EXTINF:-1 tvg-id="76708" tvg-name="Rudaw TV" tvg-logo="https://epg.pw/media/logos/tvg-id/rudaw-iq.png" group-title="NEWS WORLD",Rudaw TV
@@ -695,6 +693,9 @@ https://live.visir.is/hls-live/visir.smil/playlist.m3u8
 https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
 #EXTINF:-1 tvg-id="902" tvg-name="tv9 Telemaremma" tvg-logo="https://epg.pw/media/logos/tvg-id/tv9-it.png" group-title="NEWS WORLD",tv9 Telemaremma
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
+
+#EXTINF:-1 tvg-id="465209" tvg-name="MSNBC" tvg-logo="https://epg.pw/media/logos/tvg-id/msnbc-us.png" group-title="NEWS WORLD",MSNBC
+http://41.205.93.154/MSNBC/index.m3u8
 #EXTINF:-1 tvg-id="465787" tvg-name="Arkansas - KNOE(CBS)" tvg-logo="https://epg.pw/media/logos/tvg-id/arkansas-knoe-cbs-us.png" group-title="USA",Arkansas - KNOE(CBS)
 https://playlistserver.aws.syncbak.com/playlist/13353644/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IkdyYXkyMDE2MDgyOSIsInN1YiI6IioiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3OTA1NDQ4MDgsImlzcyI6IldMUyIsIm1kNSI6ImRiYjE0OGQwMDQxNmE1YzBmMjQyZmY4MTVjNTBiYTlhIiwibWlkIjoiMTMzNTM2NDQifQ.ifqK3SjqEA9zxIzehzOADwGU3hh7l-T-kXpUQSs10sU
 #EXTINF:-1 tvg-id="76726" tvg-name="Top News" tvg-logo="https://epg.pw/media/logos/tvg-id/news-th.png" group-title="NEWS WORLD",Top News
@@ -719,5 +720,3 @@ https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 https://nbculocallive.akamaized.net/hls/live/2037500/elpaso/stream2/master.m3u8
 #EXTINF:-1 tvg-id="523305" tvg-name="TV Cultura" tvg-logo="https://epg.pw/media/logos/tvg-id/tv-cultura-br.png" group-title="NEWS WORLD",TV Cultura
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
-#EXTINF:-1 tvg-id="523282" tvg-name="BandNews TV" tvg-logo="https://epg.pw/media/logos/tvg-id/523282.png" group-title="NEWS WORLD",BandNews TV
-https://evpp.mm.uol.com.br/band/bandnews/playlist.m3u8
