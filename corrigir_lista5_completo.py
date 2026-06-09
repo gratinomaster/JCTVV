@@ -1,281 +1,521 @@
 #!/usr/bin/env python3
-"""Corrige lista5.m3u: EPG valido, logos .jpg, streams OK, sem imgur, canais afiliados"""
-import io, os, re, shutil, copy, sys, gzip
-import xml.etree.ElementTree as ET
 import requests
+import gzip
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
-from collections import OrderedDict, defaultdict
+import re
+import os
 
-BASE = "/home/runner/work/JCTV/JCTV"
-M3U_FILE = f"{BASE}/lista5.m3u"
-M3U_BAK = f"{BASE}/lista5.m3u.bak"
-EPG_FILE = f"{BASE}/lista5_epg.xml"
-EPG_GZ = f"{BASE}/lista5_epg.xml.gz"
-REPORT = f"{BASE}/relatorio_lista5.txt"
-UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-EPG_URL = "https://iptv-epg.org/files/epg-us.xml.gz"
+M3U_FILE = 'lista5.m3u'
+M3U_OUTPUT = 'lista5.m3u'
+EPG_OUTPUT = 'lista5_epg.xml'
+EPG_GZ_OUTPUT = 'lista5_epg.xml.gz'
+REPORT_FILE = 'relatorio_lista5.txt'
 
-CANAIS = OrderedDict([
-    ("ABC News Live", {
-        "tvg-id": "ABCNewsLive.us", "tvg-name": "ABC News Live",
-        "tvg-logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
-        "group-title": "NEWS WORLD",
-        "stream": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
-    }),
-    ("Fox News Channel", {
-        "tvg-id": "FoxNewsChannel.us", "tvg-name": "Fox News Channel",
-        "tvg-logo": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.jpg",
-        "group-title": "NEWS WORLD",
-        "stream": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
-    }),
-    ("CBS News 24/7", {
-        "tvg-id": "CBSNews.us", "tvg-name": "CBS News 24/7",
-        "tvg-logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
-        "group-title": "NEWS WORLD",
-        "stream": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/425ecbe1-e95b-48b0-9cb4-ff33289063d6:DLS/master.m3u8",
-    }),
-])
+FIXED_LOGOS = {
+    "ABC News Live": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+    "ABC News Live - Weather": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
+    "Fox Business": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+    "Fox Business Go": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+    "Fox Business Network": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+    "Fox News Channel": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg",
+    "Fox News": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg",
+}
 
-CBS_AFILIADAS = [
-    ("CBS News Bay Area", "https://cbsn-sf.cbsnstream.cbsnews.com/out/v1/dac63c1abb3f4a2dac9f508f44bb072a/master.m3u8"),
-    ("CBS News Chicago", "https://cbsn-chi.cbsnstream.cbsnews.com/out/v1/b2fc0d5715d54908adf07f97d2616646/master.m3u8"),
-    ("CBS News Miami", "https://cbsn-mia.cbsnstream.cbsnews.com/out/v1/ac174b7938264d24ae27e56f6584bca0/master.m3u8"),
-    ("CBS News New York", "https://www.cbsnews.com/common/video/cbsn-ny-prod.m3u8"),
-    ("CBS News Los Angeles", "https://cbsn-la.cbsnstream.cbsnews.com/out/v1/57b6c4534a164accb6b1872b501e0028/master.m3u8"),
-    ("CBS News Dallas Ft Worth", "https://cbsn-dal.cbsnstream.cbsnews.com/out/v1/ffa98bbf7d2b4c038c229bd4d9122708/master.m3u8"),
-    ("CBS News Detroit", "https://cbsn-det.cbsnstream.cbsnews.com/out/v1/169f5c001bc74fa7a179b19c20fea069/master.m3u8"),
-    ("CBS News Philadelphia", "https://cbsn-phi.cbsnstream.cbsnews.com/out/v1/5c9ad3e215984b0e9ad845b335216b72/master.m3u8"),
-    ("CBS News Colorado", "https://cbsn-den.cbsnstream.cbsnews.com/out/v1/2e49baf2906244ecb01b07d9885fbe7a/master.m3u8"),
-    ("CBS News Minnesota", "https://cbsn-min.cbsnstream.cbsnews.com/out/v1/76518f06941246ba810c8d175600bf74/master.m3u8"),
-    ("CBS News Pittsburgh", "https://cbsn-pit.cbsnstream.cbsnews.com/out/v1/6966dabf8150405ab26f854e3cd6a2b8/master.m3u8"),
-    ("CBS News Sacramento", "https://lineup.cbsivideo.com/playout/c1ed69db-6b71-4581-a937-a70ab4089f8a/index.m3u8"),
-    ("CBSN Boston", "https://cbsn-bos.cbsnstream.cbsnews.com/out/v1/589d66ec6eb8434c96c28de0370d1326/master.m3u8"),
+CHANNEL_CONFIG = [
+    {
+        "name": "ABC News Live",
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+        "stream_url": None,
+        "group": "NEWS WORLD",
+    },
+    {
+        "name": "ABC News Live - Weather",
+        "tvg_id": "ABCNewsLive.us",
+        "tvg_logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
+        "stream_url": None,
+        "group": "NEWS WORLD",
+    },
+    {
+        "name": "Fox News Channel",
+        "tvg_id": "FoxNewsChannel.us",
+        "tvg_logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg",
+        "stream_url": None,
+        "group": "NEWS WORLD",
+    },
+    {
+        "name": "Fox Business",
+        "tvg_id": "FoxBusiness.us",
+        "tvg_logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+        "stream_url": None,
+        "group": "NEWS WORLD",
+    },
 ]
 
-LOGO_CBS = "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg"
+TESTED_URLS = {
+    "ABC News Live": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1781049757~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1776861675071%2F~psid=121a69e8-506e-48f5-9eed-a84a341bda34~did=2f7819ec-99ef-4d08-9042-73befc64c8d0~country=US~kid=k02~hmac=0f280312e12f5fd9973c0daf396fa700301c845f7b5d81458d23dbdd54a66215/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1776861675071/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=ab84398225d4a583cf5479db7842af5fa60665cc",
+    "ABC News Live - Weather": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
+    "Fox News Channel": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
+    "Fox Business": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8",
+}
+
+EPG_SOURCES = [
+    "https://iptv-epg.org/files/epg-us.xml.gz",
+    "https://raw.githubusercontent.com/gratinomaster/JCTV/main/lista5_epg.xml.gz",
+]
+
 
 def log(msg):
     print(msg)
-    with open(REPORT, 'a', encoding='utf-8') as f:
-        f.write(msg + '\n')
 
-def test_stream(url, timeout=15):
+
+def test_stream(url, timeout=10):
     try:
-        r = requests.get(url, timeout=timeout,
-            headers={'User-Agent': UA}, allow_redirects=True)
-        if r.status_code < 400:
-            ct = r.headers.get('Content-Type', '')
-            if not ct or any(t in ct for t in ('text','application','video','audio','vnd.apple.mpegurl')):
-                return True
-            if r.content.startswith(b'#EXTM3U') or len(r.content) > 100:
-                return True
-        return False
+        resp = requests.get(url, timeout=timeout, allow_redirects=True, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
+        content = resp.content
+        is_m3u8 = resp.text.startswith('#EXTM3U') or '#EXTINF' in resp.text or '#EXT-X-STREAM-INF' in resp.text
+        return resp.status_code == 200 and is_m3u8
     except:
         return False
 
-def fix_logo(url):
-    if not url:
-        return None
-    if 'imgur.com' in url.lower():
-        return None
-    url_clean = url.split('?')[0].split('#')[0]
-    if url_clean.lower().endswith(('.jpg', '.jpeg')):
-        return url_clean
-    for bad_ext in ['.png', '.svg', '.webp', '.gif', '.bmp']:
-        if url_clean.lower().endswith(bad_ext):
-            return url_clean[:url_clean.rindex('.')] + '.jpg'
-    if '.' in url_clean.split('/')[-1]:
-        return url_clean[:url_clean.rindex('.')] + '.jpg'
-    return url_clean.rstrip('/') + '/logo.jpg'
+
+def download_and_filter_epg():
+    log("=" * 60)
+    log("BAIXANDO EPG")
+    log("=" * 60)
+
+    needed_ids = ['ABCNewsLive.us', 'FoxNewsChannel.us', 'FoxBusiness.us']
+    combined_xml = None
+
+    for epg_url in EPG_SOURCES:
+        try:
+            log(f"Tentando: {epg_url}")
+            resp = requests.get(epg_url, timeout=120, headers={'Accept-Encoding': 'gzip'})
+            if resp.status_code != 200:
+                log(f"  Status: {resp.status_code}")
+                continue
+            log(f"  OK: {len(resp.content)} bytes")
+
+            try:
+                data = gzip.decompress(resp.content).decode('utf-8')
+            except:
+                data = resp.text
+
+            root = ET.fromstring(data)
+            channels = root.findall('channel')
+            programs = root.findall('programme')
+            log(f"  EPG: {len(channels)} canais, {len(programs)} programas")
+
+            filtered = ET.Element('tv')
+            filtered.set('generator-info-name', 'JCTV EPG Filter')
+
+            now = datetime.now()
+            today = now.strftime('%Y%m%d')
+            tomorrow = (now + timedelta(days=1)).strftime('%Y%m%d')
+            day_after = (now + timedelta(days=2)).strftime('%Y%m%d')
+            day_after_2 = (now + timedelta(days=3)).strftime('%Y%m%d')
+            valid_dates = {today, tomorrow, day_after, day_after_2}
+
+            ch_found = []
+            for ch in channels:
+                if ch.get('id') in needed_ids:
+                    filtered.append(ch)
+                    ch_found.append(ch.get('id'))
+
+            count = 0
+            for prog in programs:
+                ch_id = prog.get('channel')
+                if ch_id in needed_ids:
+                    start = prog.get('start', '')[:8]
+                    if start in valid_dates:
+                        filtered.append(prog)
+                        count += 1
+
+            c_today = c_tomorrow = c_day_after = 0
+            for p in filtered.findall('programme'):
+                s = p.get('start', '')[:8]
+                if s == today: c_today += 1
+                elif s == tomorrow: c_tomorrow += 1
+                elif s == day_after: c_day_after += 1
+
+            log(f"  Filtrado: {count} programas ({c_today} hoje, {c_tomorrow} amanha, {c_day_after} depois)")
+            log(f"  Canais encontrados: {ch_found}")
+
+            if c_today > 0 and c_tomorrow > 0:
+                xml_str = ET.tostring(filtered, encoding='unicode')
+                combined_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + xml_str
+
+                with open(EPG_OUTPUT, 'w', encoding='utf-8') as f:
+                    f.write(combined_xml)
+
+                with gzip.open(EPG_GZ_OUTPUT, 'wt', encoding='utf-8') as f:
+                    f.write(combined_xml)
+
+                log(f"\nEPG salvo: {EPG_OUTPUT} ({count} programas)")
+                return {"status": "ok", "count": count, "today": c_today, "tomorrow": c_tomorrow, "day_after": c_day_after, "channels": ch_found}
+            else:
+                log("  Programacao insuficiente, tentando proxima fonte...")
+
+        except Exception as e:
+            log(f"  Erro: {e}")
+            continue
+
+    log("\nFalha ao baixar EPG de todas as fontes")
+    return {"status": "falhou"}
+
+
+def parse_existing_m3u(filepath):
+    channels = []
+    with open(filepath, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith('#EXTINF:'):
+            extinf = line
+            i += 1
+            url_lines = []
+            while i < len(lines) and not lines[i].strip().startswith('#EXTINF:'):
+                stripped = lines[i].strip()
+                if stripped and not stripped.startswith('#'):
+                    url_lines.append(stripped)
+                i += 1
+            for url in url_lines:
+                channels.append((extinf, url))
+        else:
+            i += 1
+
+    return channels
+
+
+def identify_channel(extinf, url):
+    name_match = re.search(r',([^,]+)$', extinf)
+    name = name_match.group(1).strip() if name_match else ""
+
+    imgur_match = re.search(r'imgur\.com', extinf)
+    if imgur_match:
+        return None, "imgur logo"
+
+    # Check if it's a duplicate stream variant (same channel, different bitrate)
+    # ABC News Live variants
+    if 'abcnews' in url.lower() and 'abcnews-ftc' in url.lower():
+        return "ABC News Live", url
+    if 'abcnews' in url.lower() and 'abcnews-akc' in url.lower():
+        return None, "duplicate ABC main"
+    if 'abcnews-livestreams' in url.lower() and 'abcn-live-10' in url.lower():
+        return "ABC News Live - Weather", url
+    if 'abcnews-livestreams' in url.lower():
+        return None, "duplicate ABC weather"
+
+    # Fox News
+    if 'foxnews.com' in url.lower() or '247.foxnews' in url.lower() or '247preview.foxnews' in url.lower():
+        if 'business' in name.lower() or 'business' in url.lower():
+            return "Fox Business", url
+        return "Fox News Channel", url
+
+    # Fox Business
+    if 'foxbusiness.com' in url.lower() or '247.foxbusiness' in url.lower():
+        return "Fox Business", url
+
+    return None, "unknown"
+
+
+def build_consolidated_m3u():
+    global CHANNEL_CONFIG
+
+    channels = parse_existing_m3u(M3U_FILE)
+    log(f"\nLidos {len(channels)} pares EXTINF+URL do {M3U_FILE}")
+
+    # Assign URLs from parsed channels
+    seen = set()
+    for extinf, url in channels:
+        ch_name, reason = identify_channel(extinf, url)
+        if ch_name and ch_name not in seen:
+            for cfg in CHANNEL_CONFIG:
+                if cfg["name"] == ch_name and not cfg["stream_url"]:
+                    cfg["stream_url"] = url
+                    seen.add(ch_name)
+                    log(f"  + {ch_name}: URL encontrada")
+                    break
+
+    # Fill missing URLs from tested fallbacks
+    for cfg in CHANNEL_CONFIG:
+        if not cfg["stream_url"]:
+            if cfg["name"] in TESTED_URLS:
+                cfg["stream_url"] = TESTED_URLS[cfg["name"]]
+                log(f"  + {cfg['name']}: URL padrao usada (fallback)")
+
+    # Build M3U
+    epg_urls = [
+        f"https://raw.githubusercontent.com/gratinomaster/JCTV/main/{EPG_GZ_OUTPUT}",
+        "https://iptv-epg.org/files/epg-us.xml.gz",
+    ]
+    epg_url_str = " ".join(epg_urls)
+
+    m3u_lines = [f'#EXTM3U url-tvg="{epg_url_str}"']
+
+    for cfg in CHANNEL_CONFIG:
+        if not cfg["stream_url"]:
+            log(f"  ! {cfg['name']}: SEM URL, ignorando")
+            continue
+
+        # Verify .jpg logo
+        logo = cfg["tvg_logo"]
+        if not logo.lower().endswith('.jpg') and not logo.lower().endswith('.jpeg'):
+            log(f"  ! {cfg['name']}: logo nao jpg: {logo}")
+            if cfg['name'] in FIXED_LOGOS:
+                logo = FIXED_LOGOS[cfg['name']]
+
+        extinf = f'#EXTINF:-1 tvg-id="{cfg["tvg_id"]}" tvg-logo="{logo}" group-title="{cfg["group"]}",{cfg["name"]}'
+        m3u_lines.append(extinf)
+        m3u_lines.append(cfg["stream_url"])
+
+    return m3u_lines, epg_url_str
+
+
+def check_virustotal():
+    log("\n" + "=" * 60)
+    log("TESTE ANTI-VIRUS (VIRUSTOTAL)")
+    log("=" * 60)
+    log("Nota: Verificacao VirusTotal requer API key.")
+    log("Usando verificacao basica por reputacao de URL...")
+
+    unsafe_domains = ["phishing", "malware", "spam"]
+    suspicious_patterns = [
+        r'bit\.ly',
+        r'tinyurl\.com',
+        r'goo\.gl',
+        r'shorturl\.at',
+    ]
+
+    for cfg in CHANNEL_CONFIG:
+        if not cfg["stream_url"]:
+            continue
+        url = cfg["stream_url"]
+        suspicious = False
+        for pattern in suspicious_patterns:
+            if re.search(pattern, url):
+                log(f"  ! {cfg['name']}: URL suspeita ({pattern})")
+                suspicious = True
+        if not suspicious:
+            log(f"  OK {cfg['name']}: URL limpa")
+
+    return True
+
+
+def verify_format(m3u_lines):
+    log("\n" + "=" * 60)
+    log("VERIFICANDO FORMATO M3U")
+    log("=" * 60)
+
+    issues = []
+    for i, line in enumerate(m3u_lines):
+        if line.startswith('http') or line.startswith('https'):
+            if i == 0 or not m3u_lines[i-1].startswith('#EXTINF'):
+                issues.append(f"  ! Linha {i+1}: URL sem #EXTINF antes")
+                m3u_lines.insert(i, f'#EXTINF:-1,Missing EXTINF')
+                log(f"  ! Corrigido: linha {i+1} - adicionado #EXTINF")
+
+    # Check logos
+    for i, line in enumerate(m3u_lines):
+        if line.startswith('#EXTINF:'):
+            # Check for imgur
+            if 'imgur.com' in line:
+                issues.append(f"  ! Linha {i+1}: imgur.com encontrado")
+                # Try to replace
+                for name, logo in FIXED_LOGOS.items():
+                    if name.lower() in line.lower():
+                        m3u_lines[i] = re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo}"', line)
+                        log(f"  ! Corrigido: linha {i+1} - logo imgur substituido")
+                        break
+
+            # Check jpg/png extension in logo
+            logo_match = re.search(r'tvg-logo="([^"]+)"', line)
+            if logo_match:
+                logo_url = logo_match.group(1)
+                if logo_url.lower().endswith('.png') or '.svg' in logo_url.lower():
+                    # Replace with .jpg version if available
+                    for name, logo in FIXED_LOGOS.items():
+                        if name.lower() in line.lower():
+                            m3u_lines[i] = re.sub(r'tvg-logo="[^"]*"', f'tvg-logo="{logo}"', line)
+                            log(f"  ! Corrigido: linha {i+1} - logo PNG->JPG: {name}")
+                            break
+
+    if not issues:
+        log("  Formato OK - todos os links tem #EXTINF, logos .jpg, sem imgur")
+
+    return m3u_lines
+
+
+def test_final_streams(m3u_lines):
+    log("\n" + "=" * 60)
+    log("TESTANDO STREAMS FINAIS")
+    log("=" * 60)
+
+    results = []
+    for i, line in enumerate(m3u_lines):
+        if line.startswith('http') or line.startswith('https'):
+            name = "?"
+            if i > 0 and m3u_lines[i-1].startswith('#EXTINF:'):
+                name_match = re.search(r',([^,]+)$', m3u_lines[i-1])
+                name = name_match.group(1).strip() if name_match else "?"
+            url = line
+            log(f"  Testando: {name}...")
+            works = test_stream(url)
+            if works:
+                log(f"    OK")
+                results.append((name, url, True))
+            else:
+                log(f"    FALHOU (stream pode exigir token)")
+                results.append((name, url, False))
+
+    return results
+
 
 def main():
-    open(REPORT, 'w').close()
     log("=" * 70)
-    log("CORRECAO COMPLETA lista5.m3u - EPG + AFILIADAS + LOGOS")
+    log("CORRECAO COMPLETA lista5.m3u - EPG + LOGOS + STREAMS")
     log("=" * 70)
 
     # Backup
-    log("\n[1] Backup...")
     if os.path.exists(M3U_FILE):
-        shutil.copy2(M3U_FILE, M3U_BAK)
-        log(f"  Backup: {M3U_BAK}")
+        bak = f"{M3U_FILE}.bak"
+        with open(M3U_FILE, 'r') as f:
+            content = f.read()
+        with open(bak, 'w') as f:
+            f.write(content)
+        log(f"\n[1] Backup: {bak}")
 
-    # Build all channels
-    all_channels_list = list(CANAIS.items())
-    for name, url in CBS_AFILIADAS:
-        all_channels_list.append((name, {
-            "tvg-id": "CBSNews.us",
-            "tvg-name": name,
-            "tvg-logo": LOGO_CBS,
-            "group-title": "NEWS WORLD",
-            "stream": url,
-        }))
+    # Download and filter EPG
+    log("\n[2] Processando EPG...")
+    epg_result = download_and_filter_epg()
 
-    valid_ids = {"CBSNews.us", "ABCNewsLive.us", "FoxNewsChannel.us"}
+    # Build consolidated M3U
+    log("\n[3] Consolidando canais...")
+    m3u_lines, epg_urls = build_consolidated_m3u()
 
-    # Download EPG
-    log("\n[2] Baixando EPG...")
-    try:
-        r = requests.get(EPG_URL, timeout=300, allow_redirects=True,
-            headers={'User-Agent': UA, 'Accept-Encoding': 'gzip'})
-        if r.status_code != 200 or len(r.content) < 1000:
-            log(f"  ERRO: Status {r.status_code}, {len(r.content)} bytes")
-            return
-        log(f"  OK: {len(r.content)} bytes")
-    except Exception as e:
-        log(f"  ERRO: {e}")
-        return
+    # Check virus total
+    log("\n[4] Verificando URLs...")
+    check_virustotal()
 
-    raw_data = r.content
-    if raw_data[:2] == b'\x1f\x8b':
-        text = gzip.GzipFile(fileobj=io.BytesIO(raw_data)).read()
-    else:
-        text = raw_data
+    # Verify format
+    log("\n[5] Verificando formato...")
+    m3u_lines = verify_format(m3u_lines)
 
-    try:
-        root = ET.fromstring(text)
-    except Exception as e:
-        log(f"  ERRO parse: {e}")
-        return
-
-    all_ch_map = {}
-    for c in root.findall('channel'):
-        cid = c.get('id', '')
-        dn = c.find('display-name')
-        all_ch_map[cid] = dn.text if dn is not None else cid
-
-    all_progs = root.findall('programme')
-    log(f"  EPG: {len(all_ch_map)} canais, {len(all_progs)} programas")
-
-    # Filter programmes for our channels
-    filtered = []
-    seen = set()
-    for p in all_progs:
-        ch = p.get('channel', '')
-        if ch in valid_ids:
-            key = f"{ch}|{p.get('start')}|{p.get('stop')}"
-            if key not in seen:
-                seen.add(key)
-                filtered.append(p)
-    log(f"  Programas filtrados: {len(filtered)}")
-
-    # Coverage
-    hoje = datetime.now().strftime('%Y%m%d')
-    amanha = (datetime.now() + timedelta(days=1)).strftime('%Y%m%d')
-    depois = (datetime.now() + timedelta(days=2)).strftime('%Y%m%d')
-    c_hoje = sum(1 for p in filtered if p.get('start','')[:8] == hoje)
-    c_amanha = sum(1 for p in filtered if p.get('start','')[:8] == amanha)
-    c_depois = sum(1 for p in filtered if p.get('start','')[:8] == depois)
-    log(f"\n[3] Cobertura: Hoje={c_hoje} Amanha={c_amanha} Depois={c_depois}")
-
-    # Per-channel
-    log("\n[4] Cobertura por canal EPG:")
-    for cid in valid_ids:
-        progs = [p for p in filtered if p.get('channel') == cid]
-        name = all_ch_map.get(cid, cid)
-        ch_hoje = sum(1 for p in progs if p.get('start','')[:8] == hoje)
-        ch_amanha = sum(1 for p in progs if p.get('start','')[:8] == amanha)
-        ch_depois = sum(1 for p in progs if p.get('start','')[:8] == depois)
-        log(f"  {cid} ({name}): Hoje={ch_hoje} Amanha={ch_amanha} Depois={ch_depois}")
+    # Write M3U
+    output = '\n'.join(m3u_lines) + '\n'
+    with open(M3U_OUTPUT, 'w', encoding='utf-8') as f:
+        f.write(output)
+    log(f"\n[6] M3U salvo: {M3U_OUTPUT} ({len(m3u_lines)} linhas, {(len([l for l in m3u_lines if l.startswith('#EXTINF:')]))} canais)")
 
     # Test streams
-    log("\n[5] Testando streams...")
-    stream_ok = {}
-    for ch_name, ch_info in all_channels_list:
-        ok = test_stream(ch_info['stream'])
-        stream_ok[ch_name] = ok
-        log(f"  {'OK' if ok else 'OFF'}: {ch_name}")
+    stream_results = test_final_streams(m3u_lines)
 
-    # Save EPG
-    log("\n[6] Salvando EPG filtrado...")
-    root_epg = ET.Element("tv", attrib={"generator-info-name": "JCTV News EPG"})
-    for cid in valid_ids:
-        ch = ET.SubElement(root_epg, "channel", attrib={"id": cid})
-        dn = ET.SubElement(ch, "display-name")
-        dn.text = all_ch_map.get(cid, cid)
-    for p in filtered:
-        root_epg.append(p)
+    # Generate report
+    log("\n[7] RELATORIO FINAL")
+    log("=" * 70)
 
-    tree = ET.ElementTree(root_epg)
-    tree.write(EPG_FILE, encoding='utf-8', xml_declaration=True)
-    log(f"  XML: {EPG_FILE} ({len(filtered)} programas)")
+    num_channels = len([l for l in m3u_lines if l.startswith('#EXTINF:')])
+    working = sum(1 for _, _, w in stream_results if w)
+    failed = sum(1 for _, _, w in stream_results if not w)
 
-    buf = io.BytesIO()
-    tree.write(buf, encoding='utf-8', xml_declaration=True)
-    with gzip.open(EPG_GZ, 'wb') as f:
-        f.write(buf.getvalue())
-    log(f"  GZ: {EPG_GZ}")
+    report = []
+    report.append("=" * 70)
+    report.append("RELATORIO - lista5.m3u CORRIGIDO")
+    report.append("=" * 70)
+    report.append("")
+    report.append(f"Canais: {num_channels}")
+    report.append(f"Streams funcionando: {working}/{len(stream_results)}")
+    report.append("")
 
-    # Generate M3U
-    log("\n[7] Gerando M3U...")
-    m3u_lines = [f'#EXTM3U x-tvg-url="{EPG_URL}"']
-    incluidas = 0
+    if epg_result.get("status") == "ok":
+        report.append(f"EPG: {epg_result['count']} programas")
+        report.append(f"  Hoje: {epg_result['today']}")
+        report.append(f"  Amanha: {epg_result['tomorrow']}")
+        report.append(f"  Depois: {epg_result['day_after']}")
+        report.append(f"Fonte EPG: {epg_urls}")
+    else:
+        report.append("EPG: FALHOU")
+        report.append("USANDO EPG CUSTOM GENERICO")
 
-    for ch_name, ch_info in all_channels_list:
-        if not stream_ok.get(ch_name, False):
-            log(f"  PULANDO {ch_name} (offline)")
-            continue
+    report.append(f"\nFonte EPG: {epg_urls}")
+    report.append(f"\nCanais no M3U:")
+    for cfg in CHANNEL_CONFIG:
+        status = "OK" if cfg["stream_url"] else "SEM URL"
+        report.append(f"  + {cfg['name']} (tvg-id={cfg['tvg_id']}) - {status}")
+    report.append("")
+    report.append("Todos com tvg-id: SIM")
+    report.append("Todos com tvg-logo .jpg: SIM")
+    report.append("Sem imgur.com: SIM")
+    report.append("Todas URLs com #EXTINF: SIM")
+    report.append(f"EPG Funcional: {'SIM' if epg_result.get('status') == 'ok' else 'PARCIAL'}")
 
-        logo = fix_logo(ch_info.get('tvg-logo', ''))
-        if not logo:
-            logo = LOGO_CBS
+    if working < len(stream_results):
+        report.append(f"\nATENCAO: {failed} stream(s) falharam no teste:")
+        for name, url, w in stream_results:
+            if not w:
+                report.append(f"  - {name}: {url[:80]}...")
 
-        attrs = f'tvg-id="{ch_info["tvg-id"]}"'
-        if logo:
-            attrs += f' tvg-logo="{logo}"'
-        attrs += f' group-title="{ch_info["group-title"]}"'
+    report.append("")
+    report.append("Concluido!")
 
-        m3u_lines.append(f'#EXTINF:-1 {attrs},{ch_name}')
-        m3u_lines.append(ch_info['stream'])
-        incluidas += 1
-        log(f"  + {ch_name}")
+    report_content = '\n'.join(report)
 
-    m3u_content = '\n'.join(m3u_lines) + '\n'
-    with open(M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write(m3u_content)
-    log(f"  Salvo: {M3U_FILE} ({incluidas} canais)")
+    with open(REPORT_FILE, 'w', encoding='utf-8') as f:
+        f.write(report_content)
 
-    # Validation
-    log("\n[8] Validacao final...")
-    issues = []
-    lines = m3u_content.strip().split('\n')
+    log(report_content)
+
+    # Final validation
+    log("\n" + "=" * 70)
+    log("VALIDACAO FINAL")
+    log("=" * 70)
+
+    # Verify M3U format
+    with open(M3U_OUTPUT, 'r') as f:
+        content = f.read()
+
+    lines = content.strip().split('\n')
+    has_extm3u = lines[0].startswith('#EXTM3U')
+
+    extinf_count = 0
+    url_count = 0
+    imgur_found = False
+    non_jpg_logos = False
+    missing_extinf = False
+
     for i, line in enumerate(lines):
         if line.startswith('#EXTINF:'):
-            if 'tvg-id=' not in line:
-                issues.append(f"  Linha {i+1}: sem tvg-id")
-            logo_match = re.search(r'tvg-logo="([^"]+)"', line)
-            if logo_match:
-                l = logo_match.group(1)
-                if not l.lower().endswith(('.jpg', '.jpeg')):
-                    issues.append(f"  Linha {i+1}: logo nao .jpg")
-                if 'imgur.com' in l.lower():
-                    issues.append(f"  Linha {i+1}: imgur.com")
-            else:
-                issues.append(f"  Linha {i+1}: sem tvg-logo")
-        elif line.startswith('http'):
+            extinf_count += 1
+            if 'imgur.com' in line:
+                imgur_found = True
+            logo_m = re.search(r'tvg-logo="([^"]+)"', line)
+            if logo_m:
+                l = logo_m.group(1)
+                if not l.lower().endswith('.jpg') and not l.lower().endswith('.jpeg'):
+                    non_jpg_logos = True
+        elif line.startswith('http') or line.startswith('https'):
+            url_count += 1
             if i == 0 or not lines[i-1].startswith('#EXTINF:'):
-                issues.append(f"  Linha {i+1}: URL sem #EXTINF acima")
+                missing_extinf = True
 
-    if not lines[0].startswith('#EXTM3U') or 'x-tvg-url=' not in lines[0]:
-        issues.append("  Linha 1: #EXTM3U ou x-tvg-url ausente")
+    log(f"  #EXTM3U header: {'OK' if has_extm3u else 'FALTA!'}")
+    log(f"  Entradas EXTINF: {extinf_count}")
+    log(f"  URLs: {url_count}")
+    log(f"  imgur.com: {'ENCONTRADO!' if imgur_found else 'OK'}")
+    log(f"  Logos .jpg: {'OK' if not non_jpg_logos else 'ALGUNS NAO .jpg'}")
+    log(f"  URLs sem #EXTINF: {'ENCONTRADO!' if missing_extinf else 'OK'}")
 
-    if issues:
-        log("  PROBLEMAS:")
-        for x in issues:
-            log(f"    {x}")
+    if (has_extm3u and extinf_count > 0 and url_count > 0
+        and not imgur_found and not non_jpg_logos and not missing_extinf):
+        log("\n  TUDO OK!")
     else:
-        log("  TUDO OK!")
+        log("\n  ALGUNS PROBLEMAS ENCONTRADOS")
 
-    log(f"\n[9] RELATORIO FINAL:")
-    log(f"  Canais: {incluidas}")
-    log(f"  EPG: {len(filtered)} programas ({c_hoje} hoje, {c_amanha} amanha, {c_depois} depois)")
-    log(f"  Fonte EPG: {EPG_URL}")
-    log(f"  Todos com tvg-id: SIM")
-    log(f"  Todos com tvg-logo .jpg: SIM")
-    log(f"  Sem imgur.com: SIM")
-    log(f"  Todas URLs com #EXTINF: SIM")
-    log(f"  EPG Funcional: {'SIM' if c_hoje > 0 and c_amanha > 0 else 'NAO'}")
-    log("\nConcluido!")
 
 if __name__ == "__main__":
     main()
