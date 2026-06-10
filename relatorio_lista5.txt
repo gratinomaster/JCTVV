@@ -852,3 +852,63 @@ Cobertura EPG: Hoje=850 Amanha=795 Depois=764
 EPG Funcional: SIM
 Problemas: 0
 ======================================================================
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-10 02:14
+======================================================================
+  EPG ABC News Live: Today=36 Tomorrow=36 DayAfter=36 [OK]
+  EPG Fox News Channel: Today=24 Tomorrow=24 DayAfter=24 [OK]
+  EPG Fox Business Network: Today=27 Tomorrow=27 DayAfter=34 [OK]
+  EPG CBS News 24/7: Today=26 Tomorrow=26 DayAfter=26 [OK]
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-10 02:14
+======================================================================
+  EPG ABC News Live: Today=36 Tomorrow=36 DayAfter=36 [OK]
+  EPG Fox News Channel: Today=24 Tomorrow=24 DayAfter=24 [OK]
+  EPG Fox Business Network: Today=27 Tomorrow=27 DayAfter=34 [OK]
+  EPG CBS News 24/7: Today=26 Tomorrow=26 DayAfter=26 [OK]
+  Stream ABC News Live: OK
+  Stream Fox News Channel: OK
+  Stream Fox Business Network: OFFLINE
+  Stream CBS News 24/7: OK
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business Network: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  ABC News Live: INCLUIDO (logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg)
+  Fox News Channel: INCLUIDO (logo=https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.jpg)
+  Fox Business Network: PULADO (stream offline)
+  CBS News 24/7: INCLUIDO (logo=https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg)
+
+Total canais: 3
+EPG funcional: SIM
+Streams OK: 3/4
+Problemas: 0
+======================================================================
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-10 02:14
+======================================================================
+  EPG ABC News Live: Today=36 Tomorrow=36 DayAfter=36 [OK]
+  EPG Fox News Channel: Today=24 Tomorrow=24 DayAfter=24 [OK]
+  EPG Fox Business Network: Today=27 Tomorrow=27 DayAfter=34 [OK]
+  EPG CBS News 24/7: Today=26 Tomorrow=26 DayAfter=26 [OK]
+  Stream ABC News Live: OK
+  Stream Fox News Channel: OK
+  Stream Fox Business Network: OFFLINE
+  Stream CBS News 24/7: OK
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business Network: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  ABC News Live: INCLUIDO (logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg)
+  Fox News Channel: INCLUIDO (logo=https://a57.foxnews.com/static.foxnews.com/foxnews.com/images/2024/09/fn-logo-social-share.jpg)
+  Fox Business Network: PULADO (stream offline)
+  CBS News 24/7: INCLUIDO (logo=https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg)
+
+Total canais: 3
+EPG funcional: SIM
+Streams OK: 3/4
+Problemas: 0
+======================================================================
