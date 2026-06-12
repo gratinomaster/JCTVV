@@ -6,7 +6,7 @@ from collections import OrderedDict
 from datetime import datetime, timedelta
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
-OUTPUT = "/home/runner/work/JCTV/JCTV/EPGFULL.xml.gz"
+OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 
 EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
