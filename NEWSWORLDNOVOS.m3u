@@ -1,4 +1,6 @@
-#EXTM3U url-tvg="https://epg.pw/xmltv/epg.xml,https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz,https://epg.pw/xmltv/epg_BR.xml,https://epg.pw/xmltv/epg_BR.xml.gz,https://epg.pw/xmltv/epg_US.xml.gz"
+#EXTM3U url-tvg="https://epg.pw/xmltv/epg.xml,https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz,https://epg.pw/xmltv/epg_BR.xml.gz,https://epg.pw/xmltv/epg_US.xml.gz"
+#EXTINF:-1 tvg-id="" tvg-name="GloboNews" tvg-logo="https://epg.pw/media/logos/tvg-id/globonews-br.png" group-title="NEWS WORLD",GloboNews
+https://playlist.oi.com.br/live/globonews/index.m3u8
 #EXTINF:-1 tvg-id="465218" tvg-name="Yahoo! Finance" tvg-logo="https://epg.pw/media/logos/tvg-id/yahoo-finance-us.png" group-title="BUSINESS NEWS",Yahoo! Finance
 https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="410308" tvg-name="Bloomberg Television" tvg-logo="https://epg.pw/media/logos/tvg-id/bloomberg-television-us.png" group-title="BUSINESS NEWS",Bloomberg Television
@@ -47,8 +49,6 @@ https://streaming-a-806.cdn.nextologies.com/38dafadc68316650d32c7e974332e5b8/pla
 https://streaming-a-806.cdn.nextologies.com/b88e314b3e2b62b5756ba2fc95289f21/playlist.m3u8
 #EXTINF:-1 tvg-id="466222" tvg-name="Action (KCKS-LD4)" tvg-logo="https://epg.pw/media/logos/tvg-id/action-kcks-ld4-us.png" group-title="NEWS WORLD",Action (KCKS-LD4)
 https://cdn.igocast.com/channel4_hls/channel4_master.m3u8
-#EXTINF:-1 tvg-id="417184" tvg-name="ATN News" tvg-logo="https://epg.pw/media/logos/tvg-id/atn-news-af.png" group-title="NEWS WORLD",ATN News
-https://d10rltuy0iweup.cloudfront.net/ATNNEWS/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="543065" tvg-name="ABP Ganga" tvg-logo="https://epg.pw/media/logos/tvg-id/abp-ganga-in.png" group-title="NEWS WORLD",ABP Ganga
 https://abplivetv.akamaized.net/hls/live/2043013/ganga/master.m3u8
 #EXTINF:-1 tvg-id="543378" tvg-name="ABP News" tvg-logo="https://epg.pw/media/logos/tvg-id/abp-news-in.png" group-title="NEWS WORLD",ABP News
@@ -100,7 +100,7 @@ https://5d94523502c2d.streamlock.net/alsharqiyalive/mystream/playlist.m3u8
 #EXTINF:-1 tvg-id="55749" tvg-name="BBC News" tvg-logo="https://epg.pw/media/logos/tvg-id/bbc-news-uk.png" group-title="NEWS WORLD",BBC News
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
 #EXTINF:-1 tvg-id="55750" tvg-name="BBC Arabic" tvg-logo="https://epg.pw/media/logos/tvg-id/bbc-arabic-uk.png" group-title="NEWS WORLD",BBC Arabic
-https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="55751" tvg-name="BBC Persian" tvg-logo="https://epg.pw/media/logos/tvg-id/bbc-persian-uk.png" group-title="NEWS WORLD",BBC Persian
 https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="3958" tvg-name="Astro Awani" tvg-logo="https://epg.pw/media/logos/tvg-id/astro-awani-my.png" group-title="NEWS WORLD",Astro Awani
@@ -135,8 +135,6 @@ https://live-cdn-bfmtvlyo-euw1.bfmtv.bct.nextradiotv.com/master.m3u8
 https://www.bloomberg.com/media-manifest/streams/politics.m3u8
 #EXTINF:-1 tvg-id="76781" tvg-name="BEK TV News" tvg-logo="https://epg.pw/media/logos/tvg-id/bek-tv-us.png" group-title="NEWS WORLD",BEK TV News
 https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEeast.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="76752" tvg-name="CBC TV8" tvg-logo="https://epg.pw/media/logos/tvg-id/cbc-tv8-lb.png" group-title="NEWS WORLD",CBC TV8
-https://1740288887.rsc.cdn77.org/1740288887/index.m3u8
 #EXTINF:-1 tvg-id="464941" tvg-name="CBS News 24/7" tvg-logo="https://epg.pw/media/logos/tvg-id/cbs-news-us.png" group-title="NEWS WORLD",CBS News 24/7
 https://news20e7hhcb.airspace-cdn.cbsivideo.com/index.m3u8
 #EXTINF:-1 tvg-id="465152" tvg-name="CAM CAPITOLIO EEUU" tvg-logo="https://epg.pw/media/logos/tvg-id/c-span-us.png" group-title="NEWS WORLD",CAM CAPITOLIO EEUU
@@ -569,13 +567,13 @@ https://6n3yow8pl9ok-hls-live.5centscdn.com/sadhananewstv/live.stream/playlist.m
 https://stream.skynewsarabia.com/vertical/vertical.m3u8
 #EXTINF:-1 tvg-id="12069" tvg-name="Sky News Extra 1" tvg-logo="https://epg.pw/media/logos/tvg-id/sky-news-uk.png" group-title="NEWS WORLD",Sky News Extra 1
 https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
-#EXTINF:-1 tvg-id="TGRT.HABER.tr" tvg-name="TGRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/tgrt-haber-tr.png" group-title="NEWS WORLD",TGRT Haber
+#EXTINF:-1 tvg-id="" tvg-name="TGRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/tgrt-haber-tr.png" group-title="NEWS WORLD",TGRT Haber
 https://canli.tgrthaber.com/tgrt.m3u8
-#EXTINF:-1 tvg-id="9621" tvg-name="TRT World" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-world-tr.png" group-title="NEWS WORLD",TRT World
+#EXTINF:-1 tvg-id="9440" tvg-name="TRT World" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-world-tr.png" group-title="NEWS WORLD",TRT World
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="522573" tvg-name="TRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-haber-tr.png" group-title="NEWS WORLD",TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="TRT.ARABI.tr" tvg-name="TRT Arabi" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-arabi-tr.png" group-title="NEWS WORLD",TRT Arabi
+#EXTINF:-1 tvg-id="" tvg-name="TRT Arabi" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-arabi-tr.png" group-title="NEWS WORLD",TRT Arabi
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="76801" tvg-name="TCM 10 HD" tvg-logo="https://epg.pw/media/logos/tvg-id/tcm10hd-br.png" group-title="NEWS WORLD",TCM 10 HD
 https://live.tcm10.com.br/tcm10hd/stream.m3u8
@@ -688,7 +686,7 @@ https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master
 #EXTINF:-1 tvg-id="902" tvg-name="tv9 Telemaremma" tvg-logo="https://epg.pw/media/logos/tvg-id/tv9-it.png" group-title="NEWS WORLD",tv9 Telemaremma
 https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/2095a288-1384-ed2e-5da0-278ccbb72295.m3u8
 #EXTINF:-1 tvg-id="447005" tvg-name="MSNBC" tvg-logo="https://epg.pw/media/logos/tvg-id/msnbc-us.png" group-title="NEWS WORLD",MSNBC
-http://41.205.93.154/MSNBC/index.m3u8
+https://content.uplynk.com/channel/cbea8a0f0dd84d9d9b8f1b9a8e0c9b7c.m3u8
 #EXTINF:-1 tvg-id="465787" tvg-name="Arkansas - KNOE(CBS)" tvg-logo="https://epg.pw/media/logos/tvg-id/arkansas-knoe-cbs-us.png" group-title="USA",Arkansas - KNOE(CBS)
 https://playlistserver.aws.syncbak.com/playlist/13353644/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IkdyYXkyMDE2MDgyOSIsInN1YiI6IioiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3OTA1NDQ4MDgsImlzcyI6IldMUyIsIm1kNSI6ImRiYjE0OGQwMDQxNmE1YzBmMjQyZmY4MTVjNTBiYTlhIiwibWlkIjoiMTMzNTM2NDQifQ.ifqK3SjqEA9zxIzehzOADwGU3hh7l-T-kXpUQSs10sU
 #EXTINF:-1 tvg-id="76726" tvg-name="Top News" tvg-logo="https://epg.pw/media/logos/tvg-id/news-th.png" group-title="NEWS WORLD",Top News
@@ -715,3 +713,5 @@ https://nbculocallive.akamaized.net/hls/live/2037500/elpaso/stream2/master.m3u8
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 #EXTINF:-1 tvg-id="523339" tvg-name="TV Brasil" tvg-logo="https://epg.pw/media/logos/tvg-id/tv-brasil-br.png" group-title="NEWS WORLD",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="GloboNews SP" tvg-logo="https://epg.pw/media/logos/tvg-id/globonews-br.png" group-title="NEWS WORLD",GloboNews SP
+https://evpp.mmu.ac.in/live/GloboNews/HD/playlist.m3u8
