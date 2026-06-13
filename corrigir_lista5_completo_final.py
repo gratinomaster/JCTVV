@@ -7,7 +7,7 @@ import gzip
 from datetime import datetime, timedelta
 from collections import OrderedDict, defaultdict
 
-BASE = "/home/runner/work/JCTV/JCTV"
+BASE = "/home/runner/work/JCTVV/JCTVV"
 M3U_FILE = f"{BASE}/lista5.m3u"
 M3U_BAK = f"{BASE}/lista5.m3u.bak"
 EPG_OUT = f"{BASE}/lista5_epg.xml.gz"
@@ -16,11 +16,13 @@ REPORT = f"{BASE}/relatorio_lista5.txt"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 EPG_URLS = [
+    "https://raw.githubusercontent.com/gratinomaster/JCTV/main/lista5_epg.xml.gz",
     "https://iptv-epg.org/files/epg-us.xml.gz",
     "https://epg.pw/xmltv/epg_US.xml.gz",
     "https://epg.pw/xmltv/epg.xml.gz",
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-pt.xml.gz",
+    "https://iptv-epg.org/files/epg-fr.xml.gz",
 ]
 
 CHANNELS = OrderedDict([
