@@ -1,144 +1,18 @@
-======================================================================
-RELATORIO FINAL - lista5.m3u CORRIGIDO
-Data: 2026-06-13 02:15
-======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-06-16 19:31
+==================================================
+Entries lidas: 40
+Canais unicos: 5
+Streams OK: 5/5
+  VirusTotal ABC News Live (Disney): nao_verificado
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+Canais limpos: 5/5
+EPG Funcional: SIM
 
-Header: #EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTV/main/lis...
-
-  ABC News Live
-    tvg-id: ABCNewsLive.us
-    logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-    server: abcnews-streams.akamaized.net
-  CBS News 24/7
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-us.cbsnstream.cbsnews.com
-  CNN US
-    tvg-id: CNN.us
-    logo: https://epg.pw/media/logos/tvg-id/cnn-us.jpg
-    server: turnerlive.warnermediacdn.com
-  CNN International
-    tvg-id: CNNinternational.us
-    logo: https://epg.pw/media/logos/tvg-id/cnn-international-us.jpg
-    server: turnerlive.warnermediacdn.com
-  BBC News
-    tvg-id: BBCNewsNorthAmerica.us
-    logo: https://epg.pw/media/logos/tvg-id/bbc-news-uk.jpg
-    server: cdn4.skygo.mn
-  Sky News
-    tvg-id: SkyNews.pluto
-    logo: https://epg.pw/media/logos/tvg-id/sky-news-uk.jpg
-    server: linear417-gb-hls1-prd-ak.cdn.skycdp.com
-  Al Jazeera English
-    tvg-id: AlJazeera.us
-    logo: https://epg.pw/media/logos/tvg-id/aljazeera-uk.jpg
-    server: live-hls-apps-aje-fa.getaj.net
-  Bloomberg TV
-    tvg-id: Bloomberg.us
-    logo: https://epg.pw/media/logos/tvg-id/bloomberg-television-us.jpg
-    server: www.bloomberg.com
-  France 24 English
-    tvg-id: 5842
-    logo: https://epg.pw/media/logos/tvg-id/france-24-fr.jpg
-    server: static.france24.com
-  DW English
-    tvg-id: DWEnglish.us
-    logo: https://epg.pw/media/logos/tvg-id/dw-de.jpg
-    server: dwamdstream102.akamaized.net
-  CGTN
-    tvg-id: CGTN9.us
-    logo: https://epg.pw/media/logos/tvg-id/cgtn-cn.jpg
-    server: amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv
-  Euronews
-    tvg-id: Euronews.us
-    logo: https://epg.pw/media/logos/tvg-id/euronews-int.jpg
-    server: aegis-cloudfront-1.tubi.video
-  TRT World
-    tvg-id: 9621
-    logo: https://epg.pw/media/logos/tvg-id/trt-world-tr.jpg
-    server: tv-trtworld.medya.trt.com.tr
-  NHK World Japan
-    tvg-id: NHKWorld.us
-    logo: https://epg.pw/media/logos/tvg-id/nhk-world-japan-int.jpg
-    server: nhk.lls.pbs.org
-  RT News
-    tvg-id: RTNews.us
-    logo: https://epg.pw/media/logos/tvg-id/rt-news-ru.jpg
-    server: rt-glb.rttv.com
-  Newsmax TV
-    tvg-id: NewsmaxTV.us
-    logo: https://epg.pw/media/logos/tvg-id/newsmax-tv-us.jpg
-    server: nmx1ota.akamaized.net
-  Scripps News
-    tvg-id: ScrippsNews.us
-    logo: https://epg.pw/media/logos/tvg-id/scripps-news-us.jpg
-    server: content.uplynk.com
-  ABC NEWS (Australia)
-    tvg-id: 3474
-    logo: https://epg.pw/media/logos/tvg-id/abc-news-us.jpg
-    server: abcnews-streams.akamaized.net
-  CBS News Bay Area
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-sf.cbsnstream.cbsnews.com
-  CBS News Chicago
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-chi.cbsnstream.cbsnews.com
-  CBS News Miami
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-mia.cbsnstream.cbsnews.com
-  CBS News New York
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: www.cbsnews.com
-  CBS News Los Angeles
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-la.cbsnstream.cbsnews.com
-  CBS News Dallas Ft Worth
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-dal.cbsnstream.cbsnews.com
-  CBS News Detroit
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-det.cbsnstream.cbsnews.com
-  CBS News Philadelphia
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-phi.cbsnstream.cbsnews.com
-  CBS News Colorado
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-den.cbsnstream.cbsnews.com
-  CBS News Minnesota
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-min.cbsnstream.cbsnews.com
-  CBS News Pittsburgh
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-pit.cbsnstream.cbsnews.com
-  CBS News Sacramento
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: lineup.cbsivideo.com
-  CBSN Boston
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    server: cbsn-bos.cbsnstream.cbsnews.com
-
-Total de canais: 31
-
-Validacao:
-  Todos com tvg-id: SIM
-  Todos com tvg-logo .jpg: SIM
-  Sem imgur.com: SIM
-  Todas URLs com #EXTINF: SIM
-  Nenhum problema encontrado!
-  Estrutura M3U correta: SIM
-
-======================================================================
-Concluido!
+Total canais: 5
+EPG URLs: https://iptv-epg.org/files/epg-us.xml.gz
+Problemas: 0
+==================================================
