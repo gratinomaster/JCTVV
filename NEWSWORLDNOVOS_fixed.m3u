@@ -672,7 +672,7 @@ https://pantera1-100gb-cl-movistar.dps.live/nctv/nctv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="543354" tvg-name="News 24 - ALBANIA" tvg-logo="https://epg.pw/media/logos/tvg-id/news-24-al.png" group-title="NEWS WORLD",News 24 - ALBANIA
 https://tv.balkanweb.com/news24/livestream/playlist.m3u8
 
-#EXTINF:-1 tvg-id="norte-informativo-tv-br" tvg-name="Norte Informativo TV" tvg-logo="https://epg.pw/media/logos/tvg-id/norte-informativo-tv-br.png" group-title="NEWS WORLD",Norte Informativo TV
+#EXTINF:-1 tvg-id="NorteInformativoTV" tvg-name="Norte Informativo TV" tvg-logo="https://epg.pw/media/logos/tvg-id/norte-informativo-tv-br.png" group-title="NEWS WORLD",Norte Informativo TV
 https://videohd.live:19360/8076/8076.m3u8
 
 #EXTINF:-1 tvg-id="422356" tvg-name="NHK G" tvg-logo="https://epg.pw/media/logos/tvg-id/nhk-world-jp.png" group-title="NEWS WORLD",NHK G
@@ -759,7 +759,7 @@ https://v2.tustreaming.cl/rln/tracks-v1a1/mono.m3u8?DVR
 #EXTINF:-1 tvg-id="464986" tvg-name="RTVE 24h" tvg-logo="https://epg.pw/media/logos/tvg-id/24h-es.png" group-title="NEWS WORLD",RTVE 24h
 https://rtvelivestream.rtve.es/rtvesec/24h/24h_main_dvr.m3u8
 
-#EXTINF:-1 tvg-id="rtl-1025-it" tvg-name="RTL 102.5 News" tvg-logo="https://epg.pw/media/logos/tvg-id/rtl-1025-it.png" group-title="NEWS WORLD",RTL 102.5 News
+#EXTINF:-1 tvg-id="RTL1025" tvg-name="RTL 102.5 News" tvg-logo="https://epg.pw/media/logos/tvg-id/rtl-1025-it.png" group-title="NEWS WORLD",RTL 102.5 News
 https://streamcdnb2-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S38122967/2lyQRIAAGgRR/playlist_video.m3u8
 
 #EXTINF:-1 tvg-id="464923" tvg-name="Radio Ancón" tvg-logo="https://epg.pw/media/logos/tvg-id/news-pa.png" group-title="NEWS WORLD",Radio Ancón
@@ -849,7 +849,7 @@ https://stream.skynewsarabia.com/vertical/vertical.m3u8
 #EXTINF:-1 tvg-id="12069" tvg-name="Sky News Extra 1" tvg-logo="https://epg.pw/media/logos/tvg-id/sky-news-uk.png" group-title="NEWS WORLD",Sky News Extra 1
 https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
 
-#EXTINF:-1 tvg-id="tgrt-haber-tr" tvg-name="TGRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/tgrt-haber-tr.png" group-title="NEWS WORLD",TGRT Haber
+#EXTINF:-1 tvg-id="TGRTHaber" tvg-name="TGRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/tgrt-haber-tr.png" group-title="NEWS WORLD",TGRT Haber
 https://canli.tgrthaber.com/tgrt.m3u8
 
 #EXTINF:-1 tvg-id="9440" tvg-name="TRT World" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-world-tr.png" group-title="NEWS WORLD",TRT World
@@ -858,7 +858,7 @@ https://tv-trtworld.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="522573" tvg-name="TRT Haber" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-haber-tr.png" group-title="NEWS WORLD",TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="trt-arabi-tr" tvg-name="TRT Arabi" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-arabi-tr.png" group-title="NEWS WORLD",TRT Arabi
+#EXTINF:-1 tvg-id="TRTArabi" tvg-name="TRT Arabi" tvg-logo="https://epg.pw/media/logos/tvg-id/trt-arabi-tr.png" group-title="NEWS WORLD",TRT Arabi
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="76801" tvg-name="TCM 10 HD" tvg-logo="https://epg.pw/media/logos/tvg-id/tcm10hd-br.png" group-title="NEWS WORLD",TCM 10 HD
@@ -1053,7 +1053,7 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="76723" tvg-name="Известиia" tvg-logo="https://epg.pw/media/logos/tvg-id/izvestia-ru.png" group-title="NEWS WORLD",Известиia
 https://igi-hls.cdnvideo.ru/igi/igi_tcode/playlist.m3u8
 
-#EXTINF:-1 tvg-id="canal-26-ar" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
+#EXTINF:-1 tvg-id="Canal26" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 
 #EXTINF:-1 tvg-id="464962" tvg-name="Telemundo Nuevo México" tvg-logo="https://epg.pw/media/logos/tvg-id/telemundo-us.png" group-title="NEWS WORLD",Telemundo Nuevo México
@@ -1065,6 +1065,6 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 #EXTINF:-1 tvg-id="523339" tvg-name="TV Brasil" tvg-logo="https://epg.pw/media/logos/tvg-id/tv-brasil-br.png" group-title="NEWS WORLD",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 
-#EXTINF:-1 tvg-id="523352" tvg-name="Record News" tvg-logo="https://epg.pw/media/logos/tvg-id/record-news-br.png" group-title="NEWS WORLD",Record News
-https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8
+#EXTINF:-1 tvg-id="GloboNews" tvg-name="Globo News" tvg-logo="https://epg.pw/media/logos/tvg-id/globonews-br.png" group-title="NEWS WORLD",Globo News
+https://coge-iptv.cdn.srv.br/globonews/master.m3u8
 
