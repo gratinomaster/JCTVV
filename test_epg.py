@@ -1,85 +1,75 @@
 #!/usr/bin/env python3
-import requests
-import gzip
+import gzip, sys
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
-import sys
+from datetime import datetime, timedelta, timezone
 
-def testar_epg(epg_url):
-    print(f"\n{'='*60}")
-    print("TESTE DE EPG")
-    print(f"{'='*60}")
-    print(f"URL: {epg_url}")
-    
-    resultado = {
-        "status": "falhou",
-        "programas_hoje": 0,
-        "programas_amanha": 0,
-        "programas_depois_amanha": 0,
-        "canais": [],
-        "erro": None
-    }
-    
-    try:
-        response = requests.get(epg_url, timeout=60, headers={'Accept-Encoding': 'gzip'})
-        response.raise_for_status()
-        
-        print(f"Status: {response.status_code}")
-        print(f"Tamanho: {len(response.content)} bytes")
-        
-        try:
-            xml_content = gzip.decompress(response.content).decode('utf-8')
-        except:
-            xml_content = response.text
-        
-        root = ET.fromstring(xml_content)
-        
-        canais = root.findall("channel")
-        programas = root.findall("programme")
-        
-        resultado["canais"] = [c.get("id") for c in canais]
-        resultado["programas_total"] = len(programas)
-        
-        print(f"Canais encontrados: {len(canais)}")
-        print(f"Programas encontrados: {len(programas)}")
-        
-        hoje = datetime.now().strftime("%Y%m%d")
-        amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
-        depois_amanha = (datetime.now() + timedelta(days=2)).strftime("%Y%m%d")
-        
-        for prog in programas:
-            start = prog.get("start", "")[:8]
-            if start[:8] == hoje:
-                resultado["programas_hoje"] += 1
-            elif start[:8] == amanha:
-                resultado["programas_amanha"] += 1
-            elif start[:8] == depois_amanha:
-                resultado["programas_depois_amanha"] += 1
-        
-        print(f"\nProgramação:")
-        print(f"  Hoje: {resultado['programas_hoje']} programas")
-        print(f"  Amanhã: {resultado['programas_amanha']} programas")
-        print(f"  Depois de amanhã: {resultado['programas_depois_amanha']} programas")
-        
-        if resultado["programas_hoje"] > 0 and resultado["programas_amanha"] > 0:
-            resultado["status"] = "ok"
-            print("\n✓ EPG FUNCIONANDO!")
-        else:
-            resultado["erro"] = "Programação insuficiente para os próximos dias"
-            print("\n✗ EPG com problemas de programação")
-        
-        return resultado
-        
-    except Exception as e:
-        resultado["erro"] = str(e)
-        print(f"\n✗ ERRO: {e}")
-        return resultado
+EPG_FILE = "EPGFULL.xml.gz"
 
-if __name__ == "__main__":
-    epg_urls = [
-        "https://epg.pw/xmltv/epg.xml.gz",
-        "https://epg.pw/xmltv/epg_BR.xml.gz",
-    ]
-    
-    for epg in epg_urls:
-        testar_epg(epg)
+try:
+    f = gzip.open(EPG_FILE, "rb")
+except FileNotFoundError:
+    print(f"ERROR: {EPG_FILE} not found!")
+    sys.exit(1)
+
+today = datetime.now(timezone.utc).strftime("%Y%m%d")
+tomorrow = (datetime.now(timezone.utc) + timedelta(days=1)).strftime("%Y%m%d")
+
+channels = set()
+today_progs = {}
+tomorrow_progs = {}
+total_progs = 0
+
+for event, elem in ET.iterparse(f, events=("end",)):
+    if elem.tag == "channel":
+        cid = elem.get("id")
+        if cid:
+            channels.add(cid)
+    elif elem.tag == "programme":
+        ch = elem.get("channel", "")
+        start = elem.get("start", "")
+        total_progs += 1
+        if start.startswith(today):
+            today_progs.setdefault(ch, 0)
+            today_progs[ch] += 1
+        elif start.startswith(tomorrow):
+            tomorrow_progs.setdefault(ch, 0)
+            tomorrow_progs[ch] += 1
+    elem.clear()
+f.close()
+
+print(f"File: {EPG_FILE}")
+print(f"Channels: {len(channels)}")
+print(f"Total programmes: {total_progs}")
+print(f"Today ({today}): {sum(today_progs.values())} programmes across {len(today_progs)} channels")
+print(f"Tomorrow ({tomorrow}): {sum(tomorrow_progs.values())} programmes across {len(tomorrow_progs)} channels")
+print()
+
+if not channels:
+    print("FAIL: No channels found!")
+    sys.exit(1)
+
+if sum(today_progs.values()) == 0:
+    print("FAIL: No programmes for today!")
+    sys.exit(1)
+
+if sum(tomorrow_progs.values()) == 0:
+    print("FAIL: No programmes for tomorrow!")
+    sys.exit(1)
+
+print("PASS: EPG has programmes for today and tomorrow")
+
+missing_today = sorted(channels - set(today_progs.keys()))
+if missing_today:
+    print(f"  Warning - channels with no programmes today: {missing_today}")
+
+missing_tomorrow = sorted(channels - set(tomorrow_progs.keys()))
+if missing_tomorrow:
+    print(f"  Warning - channels with no programmes tomorrow: {missing_tomorrow}")
+
+print("\nProgrammes per channel today:")
+for ch in sorted(today_progs):
+    print(f"  {ch}: {today_progs[ch]} programmes")
+
+print("\nProgrammes per channel tomorrow:")
+for ch in sorted(tomorrow_progs):
+    print(f"  {ch}: {tomorrow_progs[ch]} programmes")
