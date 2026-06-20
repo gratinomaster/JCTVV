@@ -1,18 +1,46 @@
+======================================================================
 RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-16 19:31
-==================================================
-Entries lidas: 40
-Canais unicos: 5
-Streams OK: 5/5
-  VirusTotal ABC News Live (Disney): nao_verificado
+Data: 2026-06-20 17:19
+======================================================================
+Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=32 Amanha=30 Depois=1
+Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=24 Amanha=24 Depois=1
+Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=41 Amanha=33 Depois=1
+Canal: CBS News 24/7 | tvg-id: USBA370000104 | EPG: Hoje=8 Amanha=18 Depois=18
   VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox Business: nao_verificado
   VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
   VirusTotal CBS News 24/7: nao_verificado
-Canais limpos: 5/5
-EPG Funcional: SIM
+  VirusTotal CBS News Bay Area: nao_verificado
+  VirusTotal CBS News Chicago: nao_verificado
+  VirusTotal CBS News Miami: nao_verificado
+  VirusTotal CBS News New York: nao_verificado
+  VirusTotal CBS News Los Angeles: nao_verificado
+  VirusTotal CBS News Dallas Ft Worth: nao_verificado
+  VirusTotal CBS News Detroit: nao_verificado
+  VirusTotal CBS News Philadelphia: nao_verificado
+  VirusTotal CBS News Colorado: nao_verificado
+  VirusTotal CBS News Minnesota: nao_verificado
+  VirusTotal CBS News Pittsburgh: nao_verificado
+  VirusTotal CBSN Boston: nao_verificado
+  ABC News Live: INCLUIDO | ID=465150 | Stream=OK
+  Fox News Channel: PULADO (stream offline)
+  Fox Business: PULADO (stream offline)
+  CBS News 24/7: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Bay Area: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Chicago: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Miami: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News New York: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Los Angeles: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Dallas Ft Worth: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Detroit: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Philadelphia: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Colorado: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Minnesota: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Pittsburgh: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBSN Boston: INCLUIDO | ID=USBA370000104 | Stream=OK
 
-Total canais: 5
-EPG URLs: https://iptv-epg.org/files/epg-us.xml.gz
+Total canais: 14
+EPG cobertura: 20260620=105, 20260621=105, 20260622=21
+EPG OK: SIM
 Problemas: 0
-==================================================
+======================================================================

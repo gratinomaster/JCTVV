@@ -1,307 +1,1001 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tv date="20260618114409">
-  <channel id="ABCNewsLive.us">
-    <display-name lang="en">ABC News Live</display-name>
-    <icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" />
-  </channel>
-  <channel id="FoxNewsChannel.us">
-    <display-name lang="en">Fox News Channel</display-name>
-    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg" />
-  </channel>
-  <channel id="FoxBusiness.us">
-    <display-name lang="en">Fox Business</display-name>
-    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5083aae4-b8c5-4708-ac25-f3c5ac554341/b17e991e-a824-4bf7-8e6b-885b7cd2bcf4/1280x720/match/400/225/image.jpg" />
-  </channel>
-  <channel id="CBSNews.us">
-    <display-name lang="en">CBS News 24/7</display-name>
-    <icon src="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" />
-  </channel>
-  <programme channel="ABCNewsLive.us" start="20260618T06000000 +0000" stop="20260618T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260618T09000000 +0000" stop="20260618T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260618T12000000 +0000" stop="20260618T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260618T13000000 +0000" stop="20260618T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260618T18000000 +0000" stop="20260618T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260618T22000000 +0000" stop="20260619T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T06000000 +0000" stop="20260619T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T09000000 +0000" stop="20260619T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T12000000 +0000" stop="20260619T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T13000000 +0000" stop="20260619T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T18000000 +0000" stop="20260619T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260619T22000000 +0000" stop="20260620T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T06000000 +0000" stop="20260620T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T09000000 +0000" stop="20260620T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T12000000 +0000" stop="20260620T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T13000000 +0000" stop="20260620T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T18000000 +0000" stop="20260620T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="ABCNewsLive.us" start="20260620T22000000 +0000" stop="20260621T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from ABC News Live</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T06000000 +0000" stop="20260618T09000000 +0000">
-    <title lang="en">Fox &amp; Friends First</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T09000000 +0000" stop="20260618T12000000 +0000">
-    <title lang="en">America's Newsroom</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T12000000 +0000" stop="20260618T13000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T13000000 +0000" stop="20260618T18000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T18000000 +0000" stop="20260618T22000000 +0000">
-    <title lang="en">Fox News @ Night</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260618T22000000 +0000" stop="20260619T06000000 +0000">
-    <title lang="en">Tucker Carlson Tonight</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T06000000 +0000" stop="20260619T09000000 +0000">
-    <title lang="en">Fox &amp; Friends First</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T09000000 +0000" stop="20260619T12000000 +0000">
-    <title lang="en">America's Newsroom</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T12000000 +0000" stop="20260619T13000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T13000000 +0000" stop="20260619T18000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T18000000 +0000" stop="20260619T22000000 +0000">
-    <title lang="en">Fox News @ Night</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260619T22000000 +0000" stop="20260620T06000000 +0000">
-    <title lang="en">Tucker Carlson Tonight</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T06000000 +0000" stop="20260620T09000000 +0000">
-    <title lang="en">Fox &amp; Friends First</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T09000000 +0000" stop="20260620T12000000 +0000">
-    <title lang="en">America's Newsroom</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T12000000 +0000" stop="20260620T13000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T13000000 +0000" stop="20260620T18000000 +0000">
-    <title lang="en">Happening Now</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T18000000 +0000" stop="20260620T22000000 +0000">
-    <title lang="en">Fox News @ Night</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxNewsChannel.us" start="20260620T22000000 +0000" stop="20260621T06000000 +0000">
-    <title lang="en">Tucker Carlson Tonight</title>
-    <desc lang="en">Live news coverage from Fox News Channel</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T06000000 +0000" stop="20260618T09000000 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T09000000 +0000" stop="20260618T12000000 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T12000000 +0000" stop="20260618T13000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T13000000 +0000" stop="20260618T18000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T18000000 +0000" stop="20260618T22000000 +0000">
-    <title lang="en">Evening Edit</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260618T22000000 +0000" stop="20260619T06000000 +0000">
-    <title lang="en">Nightly Business Report</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T06000000 +0000" stop="20260619T09000000 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T09000000 +0000" stop="20260619T12000000 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T12000000 +0000" stop="20260619T13000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T13000000 +0000" stop="20260619T18000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T18000000 +0000" stop="20260619T22000000 +0000">
-    <title lang="en">Evening Edit</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260619T22000000 +0000" stop="20260620T06000000 +0000">
-    <title lang="en">Nightly Business Report</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T06000000 +0000" stop="20260620T09000000 +0000">
-    <title lang="en">Mornings with Maria</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T09000000 +0000" stop="20260620T12000000 +0000">
-    <title lang="en">Squawk Box</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T12000000 +0000" stop="20260620T13000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T13000000 +0000" stop="20260620T18000000 +0000">
-    <title lang="en">Making Money</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T18000000 +0000" stop="20260620T22000000 +0000">
-    <title lang="en">Evening Edit</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="FoxBusiness.us" start="20260620T22000000 +0000" stop="20260621T06000000 +0000">
-    <title lang="en">Nightly Business Report</title>
-    <desc lang="en">Live news coverage from Fox Business</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T06000000 +0000" stop="20260618T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T09000000 +0000" stop="20260618T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T12000000 +0000" stop="20260618T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T13000000 +0000" stop="20260618T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T18000000 +0000" stop="20260618T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260618T22000000 +0000" stop="20260619T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T06000000 +0000" stop="20260619T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T09000000 +0000" stop="20260619T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T12000000 +0000" stop="20260619T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T13000000 +0000" stop="20260619T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T18000000 +0000" stop="20260619T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260619T22000000 +0000" stop="20260620T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T06000000 +0000" stop="20260620T09000000 +0000">
-    <title lang="en">Good Morning America</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T09000000 +0000" stop="20260620T12000000 +0000">
-    <title lang="en">World News This Morning</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T12000000 +0000" stop="20260620T13000000 +0000">
-    <title lang="en">ABC World News Midday</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T13000000 +0000" stop="20260620T18000000 +0000">
-    <title lang="en">GMA3: What You Need To Know</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T18000000 +0000" stop="20260620T22000000 +0000">
-    <title lang="en">World News Tonight</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-  <programme channel="CBSNews.us" start="20260620T22000000 +0000" stop="20260621T06000000 +0000">
-    <title lang="en">Nightline</title>
-    <desc lang="en">Live news coverage from CBS News 24/7</desc>
-  </programme>
-</tv>
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="JCTV News EPG"><channel id="464766"><display-name>Fox Business HD</display-name></channel><channel id="465150"><display-name>ABC News Live</display-name></channel><channel id="465372"><display-name>Fox News Channel HD</display-name></channel><channel id="USBA370000104"><display-name>CBS News 24/7</display-name></channel><programme channel="465150" start="20260620000000 +0000" stop="20260620003000 +0000">
+    <title lang="zh">The Obama Legacy: First Joint Interview Post-White House</title>
+    <desc />
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620003000 +0000" stop="20260620010000 +0000">
+    <title lang="zh">Nightline</title>
+    <desc>In-depth reporting on one or more of the major stories in the news, with occasional segments on pop culture; journalists Juju Chang and Byron Pitts share hosting duties for this late-night program.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620010000 +0000" stop="20260620020000 +0000">
+    <title lang="zh">Live: ABCNL Prime With Linsey Davis</title>
+    <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620020000 +0000" stop="20260620023000 +0000">
+    <title lang="zh">ABC World News Tonight With David Muir</title>
+    <desc>Delivering the news that matters most.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620023000 +0000" stop="20260620030000 +0000">
+    <title lang="zh">ABCNL Prime With Linsey Davis</title>
+    <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620030000 +0000" stop="20260620043000 +0000">
+    <title lang="zh">ABCNL Prime With Linsey Davis</title>
+    <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620043000 +0000" stop="20260620050000 +0000">
+    <title lang="zh">ABC World News Tonight With David Muir</title>
+    <desc>Delivering the news that matters most.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620050000 +0000" stop="20260620060000 +0000">
+    <title lang="zh">ABCNL Prime With Linsey Davis</title>
+    <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620060000 +0000" stop="20260620063000 +0000">
+    <title lang="zh">The Obama Legacy: First Joint Interview Post-White House</title>
+    <desc />
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620063000 +0000" stop="20260620070000 +0000">
+    <title lang="zh">Nightline</title>
+    <desc>In-depth reporting on one or more of the major stories in the news, with occasional segments on pop culture; journalists Juju Chang and Byron Pitts share hosting duties for this late-night program.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620070000 +0000" stop="20260620090000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Police and surveillance footage show the obsession of a stalker who tormented a young woman -- even holding her in a soundproof box -- while she fights for her life and freedom.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620090000 +0000" stop="20260620110000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>When a young woman goes missing and another is found beaten in a nearby town, detectives learn that one of the victims holds the answers to both crimes in her hand.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620110000 +0000" stop="20260620113000 +0000">
+    <title lang="zh">On the Red Carpet Presents: Toy Story 5</title>
+    <desc>The voice cast of "Toy Story 5" walks the red carpet and Disney+ captures all the fun!</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620113000 +0000" stop="20260620120000 +0000">
+    <title lang="zh">Live: The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620120000 +0000" stop="20260620123000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620123000 +0000" stop="20260620130000 +0000">
+    <title lang="zh">Live: GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620130000 +0000" stop="20260620133000 +0000">
+    <title lang="zh">Live: Good Morning America - Top Stories</title>
+    <desc>The stories from the GMA team - Robin Roberts, George Stephanopoulos and Michael Strahan.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620133000 +0000" stop="20260620140000 +0000">
+    <title lang="zh">The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620140000 +0000" stop="20260620143000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620143000 +0000" stop="20260620150000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620150000 +0000" stop="20260620153000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620153000 +0000" stop="20260620160000 +0000">
+    <title lang="zh">GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620160000 +0000" stop="20260620163000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620163000 +0000" stop="20260620170000 +0000">
+    <title lang="zh">Live: The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620170000 +0000" stop="20260620173000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620173000 +0000" stop="20260620180000 +0000">
+    <title lang="zh">GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620180000 +0000" stop="20260620183000 +0000">
+    <title lang="zh">ABC News Live Weekend: Saturday</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620183000 +0000" stop="20260620190000 +0000">
+    <title lang="zh">The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620190000 +0000" stop="20260620193000 +0000">
+    <title lang="zh">ABC News Live Weekend: Saturday</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620193000 +0000" stop="20260620200000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620200000 +0000" stop="20260620220000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Award-winning program anchored by David Muir, featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260620220000 +0000" stop="20260621000000 +0000">
+    <title lang="zh">ABC News Live</title>
+    <desc>Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465150" start="20260621000000 +0000" stop="20260621020000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Award-winning program anchored by David Muir, featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621020000 +0000" stop="20260621023000 +0000">
+    <title lang="zh">Live: ABC World News Tonight With David Muir</title>
+    <desc>Delivering the news that matters most.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621023000 +0000" stop="20260621030000 +0000">
+    <title lang="zh">ABC World News Tonight With David Muir</title>
+    <desc>Delivering the news that matters most.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621030000 +0000" stop="20260621040000 +0000">
+    <title lang="zh">ABC News Live</title>
+    <desc>Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621040000 +0000" stop="20260621050000 +0000">
+    <title lang="zh">What Would You Do?</title>
+    <desc>Using hidden cameras, host John Quiñones observes and comments on how ordinary people behave when they are confronted with dilemmas that require them either to take action or to walk by and mind their own business. Various scenarios are created that force people to make split-second -- and often surprising -- decisions, and variations of the situation (such as changing the genders, races or clothi</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621050000 +0000" stop="20260621070000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Award-winning program anchored by David Muir, featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621070000 +0000" stop="20260621080000 +0000">
+    <title lang="zh">What Would You Do?</title>
+    <desc>Using hidden cameras, host John Quiñones observes and comments on how ordinary people behave when they are confronted with dilemmas that require them either to take action or to walk by and mind their own business. Various scenarios are created that force people to make split-second -- and often surprising -- decisions, and variations of the situation (such as changing the genders, races or clothi</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621080000 +0000" stop="20260621100000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Police and surveillance footage show the obsession of a stalker who tormented a young woman -- even holding her in a soundproof box -- while she fights for her life and freedom.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621100000 +0000" stop="20260621103000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621103000 +0000" stop="20260621110000 +0000">
+    <title lang="zh">Live: GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621110000 +0000" stop="20260621113000 +0000">
+    <title lang="zh">On the Red Carpet Presents: Toy Story 5</title>
+    <desc>The voice cast of "Toy Story 5" walks the red carpet and Disney+ captures all the fun!</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621113000 +0000" stop="20260621120000 +0000">
+    <title lang="zh">Live: The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621120000 +0000" stop="20260621123000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621123000 +0000" stop="20260621130000 +0000">
+    <title lang="zh">GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621130000 +0000" stop="20260621133000 +0000">
+    <title lang="zh">Live: Good Morning America - Top Stories</title>
+    <desc>The stories from the GMA team - Robin Roberts, George Stephanopoulos and Michael Strahan.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621133000 +0000" stop="20260621140000 +0000">
+    <title lang="zh">The Weekend View</title>
+    <desc>Information and entertainment; discussing news and events.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621140000 +0000" stop="20260621143000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621143000 +0000" stop="20260621150000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621150000 +0000" stop="20260621153000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621153000 +0000" stop="20260621160000 +0000">
+    <title lang="zh">GMA Life</title>
+    <desc>A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621160000 +0000" stop="20260621163000 +0000">
+    <title lang="zh">ABC News Live Weekends</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621163000 +0000" stop="20260621170000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621170000 +0000" stop="20260621180000 +0000">
+    <title lang="zh">This Week With George Stephanopoulos</title>
+    <desc>Anchor George Stephanopoulos and co-anchors Martha Raddatz and Jonathan Karl interview top newsmakers and officials, with reporting from across the country and roundtable debates over the hottest political issues.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621180000 +0000" stop="20260621183000 +0000">
+    <title lang="zh">ABC News Live Weekend: Sunday</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621183000 +0000" stop="20260621190000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621190000 +0000" stop="20260621193000 +0000">
+    <title lang="zh">ABC News Live Weekend: Sunday</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621193000 +0000" stop="20260621200000 +0000">
+    <title lang="zh">ABC News Live Weekend</title>
+    <desc>Breaking news coverage and live video.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621200000 +0000" stop="20260621220000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Award-winning program anchored by David Muir, featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621220000 +0000" stop="20260621233000 +0000">
+    <title lang="zh">Finding Mango: To Live and Die on Skid Row</title>
+    <desc />
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260621233000 +0000" stop="20260622000000 +0000">
+    <title lang="zh">ABCNL Prime With Linsey Davis</title>
+    <desc>Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465150" start="20260622000000 +0000" stop="20260623000000 +0000">
+    <title lang="zh">20/20</title>
+    <desc>Award-winning program anchored by David Muir, featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <date>2026-06-22</date>
+  </programme>
+<programme channel="465372" start="20260620000000 +0000" stop="20260620010000 +0000">
+    <title lang="zh">Live: Jesse Watters Primetime</title>
+    <desc>Jesse Watters speaks with newsmakers from across the U.S. to present news with a clear and direct approach.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620010000 +0000" stop="20260620020000 +0000">
+    <title lang="zh">Live: Hannity</title>
+    <desc>Sean Hannity interviews political figures and newsmakers and offers his own conservative perspective on events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620020000 +0000" stop="20260620030000 +0000">
+    <title lang="zh">Gutfeld!</title>
+    <desc>Greg Gutfeld looks at the news of the day through a satiric lens fused with pop culture and features his takes on the day's headlines.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620030000 +0000" stop="20260620040000 +0000">
+    <title lang="zh">Live: Fox News at Night</title>
+    <desc>Hard news and analysis of compelling stories from DC and across the country; journalists provide viewers with must-see information and consequential news.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620040000 +0000" stop="20260620050000 +0000">
+    <title lang="zh">The Five</title>
+    <desc>Dana Perino, Greg Gutfeld and Jesse Watters and rotating liberal co-hosts Jessica Tarlov and Harold Ford Jr. discuss and debate the hot issues across the spectrum from politics to pop culture.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620050000 +0000" stop="20260620060000 +0000">
+    <title lang="zh">Jesse Watters Primetime</title>
+    <desc>Jesse Watters speaks with newsmakers from across the U.S. to present news with a clear and direct approach.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620060000 +0000" stop="20260620070000 +0000">
+    <title lang="zh">Hannity</title>
+    <desc>Sean Hannity interviews political figures and newsmakers and offers his own conservative perspective on events.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620070000 +0000" stop="20260620080000 +0000">
+    <title lang="zh">Gutfeld!</title>
+    <desc>Greg Gutfeld looks at the news of the day through a satiric lens fused with pop culture and features his takes on the day's headlines.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620080000 +0000" stop="20260620090000 +0000">
+    <title lang="zh">Fox News at Night</title>
+    <desc>Hard news and analysis of compelling stories from DC and across the country; journalists provide viewers with must-see information and consequential news.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620090000 +0000" stop="20260620100000 +0000">
+    <title lang="zh">The Five</title>
+    <desc>Dana Perino, Greg Gutfeld and Jesse Watters and rotating liberal co-hosts Jessica Tarlov and Harold Ford Jr. discuss and debate the hot issues across the spectrum from politics to pop culture.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620100000 +0000" stop="20260620110000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620110000 +0000" stop="20260620120000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620120000 +0000" stop="20260620130000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620130000 +0000" stop="20260620140000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620140000 +0000" stop="20260620150000 +0000">
+    <title lang="zh">Live: Saturday in America</title>
+    <desc />
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620150000 +0000" stop="20260620160000 +0000">
+    <title lang="zh">Live: Saturday in America</title>
+    <desc />
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620160000 +0000" stop="20260620170000 +0000">
+    <title lang="zh">Fox News Live</title>
+    <desc>Covering the latest news on the economy, society, sport and culture, with insightful analysis and expert commentary.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620170000 +0000" stop="20260620180000 +0000">
+    <title lang="zh">Fox News Live</title>
+    <desc>Covering the latest news on the economy, society, sport and culture, with insightful analysis and expert commentary.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620180000 +0000" stop="20260620190000 +0000">
+    <title lang="zh">Live: The Journal Editorial Report</title>
+    <desc>Paul Gigot discusses news, politics, society and finance.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620190000 +0000" stop="20260620200000 +0000">
+    <title lang="zh">Live: Fox Report With Jon Scott</title>
+    <desc>The latest headlines, news and analysis.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620200000 +0000" stop="20260620210000 +0000">
+    <title lang="zh">Live: Fox Report With Jon Scott</title>
+    <desc>The latest headlines, news and analysis.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620210000 +0000" stop="20260620220000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620220000 +0000" stop="20260620230000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260620230000 +0000" stop="20260621000000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="465372" start="20260621000000 +0000" stop="20260621010000 +0000">
+    <title lang="zh">Live: Life, Liberty &amp; Levin</title>
+    <desc>Explore the fundamental values and principles undergirding American society, culture and politics; examine their relevance to the nation's future and everyday lives of the citizens.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621010000 +0000" stop="20260621020000 +0000">
+    <title lang="zh">Live: My View With Lara Trump</title>
+    <desc>Presenting in-depth analysis of the issues and stories that matter most to Americans while offering context and solutions to help bring the country together.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621020000 +0000" stop="20260621030000 +0000">
+    <title lang="zh">Live: FOX News Saturday Night With Jimmy Failla</title>
+    <desc>Host Jimmy Failla welcomes guests to give a humorous perspective on the stories America is talking about and everyday issues.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621030000 +0000" stop="20260621040000 +0000">
+    <title lang="zh">Gutfeld!</title>
+    <desc>Greg Gutfeld looks at the news of the day through a satiric lens fused with pop culture and features his takes on the day's headlines.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621040000 +0000" stop="20260621050000 +0000">
+    <title lang="zh">Life, Liberty &amp; Levin</title>
+    <desc>Explore the fundamental values and principles undergirding American society, culture and politics; examine their relevance to the nation's future and everyday lives of the citizens.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621050000 +0000" stop="20260621060000 +0000">
+    <title lang="zh">My View With Lara Trump</title>
+    <desc>Presenting in-depth analysis of the issues and stories that matter most to Americans while offering context and solutions to help bring the country together.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621060000 +0000" stop="20260621070000 +0000">
+    <title lang="zh">FOX News Saturday Night With Jimmy Failla</title>
+    <desc>Host Jimmy Failla welcomes guests to give a humorous perspective on the stories America is talking about and everyday issues.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621070000 +0000" stop="20260621080000 +0000">
+    <title lang="zh">Life, Liberty &amp; Levin</title>
+    <desc>Explore the fundamental values and principles undergirding American society, culture and politics; examine their relevance to the nation's future and everyday lives of the citizens.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621080000 +0000" stop="20260621090000 +0000">
+    <title lang="zh">My View With Lara Trump</title>
+    <desc>Presenting in-depth analysis of the issues and stories that matter most to Americans while offering context and solutions to help bring the country together.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621090000 +0000" stop="20260621100000 +0000">
+    <title lang="zh">FOX News Saturday Night With Jimmy Failla</title>
+    <desc>Host Jimmy Failla welcomes guests to give a humorous perspective on the stories America is talking about and everyday issues.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621100000 +0000" stop="20260621110000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621110000 +0000" stop="20260621120000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621120000 +0000" stop="20260621130000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621130000 +0000" stop="20260621140000 +0000">
+    <title lang="zh">Live: Fox &amp; Friends Weekend</title>
+    <desc>FOX &amp; Friends Weekend, hosted by Rachel Campos-Duffy and Charlie Hurt, highlights the latest in news, entertainment, politics, and sports.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621140000 +0000" stop="20260621150000 +0000">
+    <title lang="zh">Live: Sunday Morning Futures With Maria Bartiromo</title>
+    <desc>Analysis of recent economic developments and interviews with business leaders and newsmakers.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621150000 +0000" stop="20260621160000 +0000">
+    <title lang="zh">Live: The Sunday Briefing</title>
+    <desc />
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621160000 +0000" stop="20260621170000 +0000">
+    <title lang="zh">Fox News Live</title>
+    <desc>Covering the latest news on the economy, society, sport and culture, with insightful analysis and expert commentary.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621170000 +0000" stop="20260621180000 +0000">
+    <title lang="zh">Fox News Live</title>
+    <desc>Covering the latest news on the economy, society, sport and culture, with insightful analysis and expert commentary.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621180000 +0000" stop="20260621190000 +0000">
+    <title lang="zh">Live: FOX News Sunday</title>
+    <desc>Anchor Shannon Bream interviews the biggest newsmakers of the week and leads guests in providing context and analysis of the issues facing Americans.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621190000 +0000" stop="20260621200000 +0000">
+    <title lang="zh">Live: Fox Report With Jon Scott</title>
+    <desc>The latest headlines, news and analysis.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621200000 +0000" stop="20260621210000 +0000">
+    <title lang="zh">Live: Fox Report With Jon Scott</title>
+    <desc>The latest headlines, news and analysis.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621210000 +0000" stop="20260621220000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621220000 +0000" stop="20260621230000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260621230000 +0000" stop="20260622000000 +0000">
+    <title lang="zh">Live: The Big Weekend Show</title>
+    <desc>Rotating panelists discuss the big news of the day and react to the top stories.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="465372" start="20260622000000 +0000" stop="20260623000000 +0000">
+    <title lang="zh">Live: Life, Liberty &amp; Levin</title>
+    <desc>Explore the fundamental values and principles undergirding American society, culture and politics; examine their relevance to the nation's future and everyday lives of the citizens.</desc>
+    <date>2026-06-22</date>
+  </programme>
+<programme channel="464766" start="20260620000000 +0000" stop="20260620003000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A jaywalker darts on a mad dash through the weeds; things go badly for a suspect on a stolen motorcycle when choppers help officers track him down; a domestic dispute leads cops to a slew of unexpected crimes.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620003000 +0000" stop="20260620010000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect believes he sees monsters; two women in a hotel rumble; sorting out where two motorists got their car and whose dope they have.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620010000 +0000" stop="20260620013000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>An uncooperative suspect obeys instructions from a relative; uncovering crack rock; trying to get the truth out of two known drug users.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620013000 +0000" stop="20260620020000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect's bizarre driving techniques; searching a man accused of shooting up the neighborhood; an officer deals with a suspect's denial before finding crack.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620020000 +0000" stop="20260620023000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A resistant suspect gets too many chances from an understanding cop; a driver lets a friend borrow his car; a man's lie to police.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620023000 +0000" stop="20260620030000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A defiant suspect gets a K-9 bite; a former fiancé pays his ex an unwanted visit; warrants, pregnancy and meth in a routine traffic stop.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620030000 +0000" stop="20260620033000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A jaywalker darts on a mad dash through the weeds; things go badly for a suspect on a stolen motorcycle when choppers help officers track him down; a domestic dispute leads cops to a slew of unexpected crimes.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620033000 +0000" stop="20260620040000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect believes he sees monsters; two women in a hotel rumble; sorting out where two motorists got their car and whose dope they have.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620040000 +0000" stop="20260620043000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>An uncooperative suspect obeys instructions from a relative; uncovering crack rock; trying to get the truth out of two known drug users.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620043000 +0000" stop="20260620050000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect's bizarre driving techniques; searching a man accused of shooting up the neighborhood; an officer deals with a suspect's denial before finding crack.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620050000 +0000" stop="20260620053000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A resistant suspect gets too many chances from an understanding cop; a driver lets a friend borrow his car; a man's lie to police.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620053000 +0000" stop="20260620060000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A defiant suspect gets a K-9 bite; a former fiancé pays his ex an unwanted visit; warrants, pregnancy and meth in a routine traffic stop.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620060000 +0000" stop="20260620063000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A jaywalker darts on a mad dash through the weeds; things go badly for a suspect on a stolen motorcycle when choppers help officers track him down; a domestic dispute leads cops to a slew of unexpected crimes.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620063000 +0000" stop="20260620070000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect believes he sees monsters; two women in a hotel rumble; sorting out where two motorists got their car and whose dope they have.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620070000 +0000" stop="20260620073000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>An uncooperative suspect obeys instructions from a relative; uncovering crack rock; trying to get the truth out of two known drug users.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620073000 +0000" stop="20260620080000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect's bizarre driving techniques; searching a man accused of shooting up the neighborhood; an officer deals with a suspect's denial before finding crack.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620080000 +0000" stop="20260620083000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A resistant suspect gets too many chances from an understanding cop; a driver lets a friend borrow his car; a man's lie to police.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620083000 +0000" stop="20260620090000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A defiant suspect gets a K-9 bite; a former fiancé pays his ex an unwanted visit; warrants, pregnancy and meth in a routine traffic stop.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620090000 +0000" stop="20260620093000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A jaywalker darts on a mad dash through the weeds; things go badly for a suspect on a stolen motorcycle when choppers help officers track him down; a domestic dispute leads cops to a slew of unexpected crimes.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620093000 +0000" stop="20260620100000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect believes he sees monsters; two women in a hotel rumble; sorting out where two motorists got their car and whose dope they have.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620100000 +0000" stop="20260620110000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620110000 +0000" stop="20260620120000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620120000 +0000" stop="20260620130000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620130000 +0000" stop="20260620140000 +0000">
+    <title lang="zh">Fox Business in Depth: Roadmap to the Future</title>
+    <desc>Cheryl Casone hosts Fox Business In Depth: Roadmap to the Future as America celebrates 250 years. The U.S. leads in making transportation innovative, facing a new revolution with China. Driverless and air taxis emerge, with some infrastructure projects stalled like California's high-speed rail. Cheryl and experts discuss the future of planes, trains, and automobiles.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620140000 +0000" stop="20260620143000 +0000">
+    <title lang="zh">Maria Bartiromo's Wall Street</title>
+    <desc>Maria Bartiromo brings together prominent figures from Wall Street to discuss emerging economic trends and empower long-term investors.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620143000 +0000" stop="20260620150000 +0000">
+    <title lang="zh">Barron's Roundtable</title>
+    <desc>A weekly prime-time series that features interviews with investors and major industry leaders about what to expect in the week ahead on Wall Street.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620150000 +0000" stop="20260620160000 +0000">
+    <title lang="zh">Kudlow Weekend</title>
+    <desc>Following the closing bell, economist Larry Kudlow covers stock market analysis, financial and business news of the day, and looks at some of the most pressing economic issues impacting everyday Americans.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620160000 +0000" stop="20260620163000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620163000 +0000" stop="20260620170000 +0000">
+    <title lang="zh">Historic Silver Set</title>
+    <desc>Add the Set of 20 Truly Historic Morgan Silver Dollars in Brilliant Uncirculated condition to your numismatic collection today; with only about 1% of all Morgan Dollars grading in uncirculated condition, examples like these are Condition Rarities.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620170000 +0000" stop="20260620173000 +0000">
+    <title lang="zh">Historic USA Gold</title>
+    <desc>Secure the only .9999 fine pure gold coin with the dual date featuring 1776, the year of our nation's founding and the Liberty Bell privy. This 1776-2026 American Gold Buffalo is graded perfect PF70UCAM in an exclusive 250th anniversary holder.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620173000 +0000" stop="20260620180000 +0000">
+    <title lang="zh">Historic USA Gold</title>
+    <desc>Secure the only .9999 fine pure gold coin with the dual date featuring 1776, the year of our nation's founding and the Liberty Bell privy. This 1776-2026 American Gold Buffalo is graded perfect PF70UCAM in an exclusive 250th anniversary holder.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620180000 +0000" stop="20260620183000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620183000 +0000" stop="20260620190000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620190000 +0000" stop="20260620193000 +0000">
+    <title lang="zh">1776 USA Pure Gold</title>
+    <desc>Celebrate the 250th Anniversary of American Freedom with this Gold 1776-2026 American Gold Eagle graded PF70UCAM. Encapsulated in a 1 of 250 40th Anniversary holder with the First Day of Issue designation, this is a once in a lifetime American coin!</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620193000 +0000" stop="20260620200000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620200000 +0000" stop="20260620203000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620203000 +0000" stop="20260620210000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620210000 +0000" stop="20260620213000 +0000">
+    <title lang="zh">1776 Rare USA Gold</title>
+    <desc>Own the 1776-2026 American 1oz Gold Buffalo featuring a Liberty Bell Privy mark, celebrating 250 years of the USA, and graded PF70UCAM; struck from .9999 pure gold using the classic Buffalo Nickel design, it's one of the rarest releases this year.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620213000 +0000" stop="20260620220000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620220000 +0000" stop="20260620230000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>Veteran miners the Dale Brothers use their life savings to buy over 60 long-abandoned mines in Bear Gulch, Mont., to prove that the old timers who quit the mines 80 years ago missed one of the largest untapped gold structures in America.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260620230000 +0000" stop="20260621000000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A catastrophic cave-in forces the Dale brothers to find a new path to Ole's Gold while John tries to open a pipeline to the deep one by melting the ice in the B&amp;H.</desc>
+    <date>2026-06-20</date>
+  </programme>
+  <programme channel="464766" start="20260621000000 +0000" stop="20260621010000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A cache of unexplored rounds left by the old timers could blow the Dale brothers' path to the deep ore sky-high; tensions boil over at the Pete &amp; Joe as the brothers race to Ole's Gold before winter.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621010000 +0000" stop="20260621020000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A shocking discovery throws Ole's legend into doubt, so the Dale brothers spend 48 hours searching their claims for proof that Bear gulch is on the brink of a gold boom.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621020000 +0000" stop="20260621030000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A gold-rich sample turns the Mohave mine into a new target for the Dales, so the family rushes to save the site's 80-year-old mill and machine shop before an impending winter storm causes them to collapse.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621030000 +0000" stop="20260621040000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>The Dales find a 50-foot swamp of subterranean muck standing between them and Ole's Gold.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621040000 +0000" stop="20260621050000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>The Dale Brothers race to replace a failing cap beam in the Pete &amp; Joe #3 before it collapses under the weight of seven stories of earth and brings their hunt for Ole's Gold to a disastrous end.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621050000 +0000" stop="20260621060000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>The Dale's enlist the next generation to tackle the mud pit standing between them and Ole's Gold, while oldest brothers Rick &amp; John launch a frontal assault on the ice blocking their path to the deep ore.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621060000 +0000" stop="20260621070000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>Winter chases the Dales out of Bear Gulch, but a break in the weather gives them one last shot to find Ole's Gold this season.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621070000 +0000" stop="20260621080000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A terrible discovery dashes the Dale brothers' plan to reach Ole's gold, but a clue left by the old timers reveals an unexpected path to the prize.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621080000 +0000" stop="20260621090000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>Veteran miners the Dale Brothers use their life savings to buy over 60 long-abandoned mines in Bear Gulch, Mont., to prove that the old timers who quit the mines 80 years ago missed one of the largest untapped gold structures in America.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621090000 +0000" stop="20260621100000 +0000">
+    <title lang="zh">American Gold: The Legend of Bear Gulch</title>
+    <desc>A catastrophic cave-in forces the Dale brothers to find a new path to Ole's Gold while John tries to open a pipeline to the deep one by melting the ice in the B&amp;H.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621100000 +0000" stop="20260621110000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621110000 +0000" stop="20260621120000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621120000 +0000" stop="20260621130000 +0000">
+    <title lang="zh">Live: Weather Command Weekend</title>
+    <desc>Stay up to date inside the Weather Command center with a weekend forecast and real-time alerts.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621130000 +0000" stop="20260621140000 +0000">
+    <title lang="zh">Fox Business in Depth: Roadmap to the Future</title>
+    <desc>Cheryl Casone hosts Fox Business In Depth: Roadmap to the Future as America celebrates 250 years. The U.S. leads in making transportation innovative, facing a new revolution with China. Driverless and air taxis emerge, with some infrastructure projects stalled like California's high-speed rail. Cheryl and experts discuss the future of planes, trains, and automobiles.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621140000 +0000" stop="20260621143000 +0000">
+    <title lang="zh">Maria Bartiromo's Wall Street</title>
+    <desc>Maria Bartiromo brings together prominent figures from Wall Street to discuss emerging economic trends and empower long-term investors.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621143000 +0000" stop="20260621150000 +0000">
+    <title lang="zh">Barron's Roundtable</title>
+    <desc>A weekly prime-time series that features interviews with investors and major industry leaders about what to expect in the week ahead on Wall Street.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621150000 +0000" stop="20260621160000 +0000">
+    <title lang="zh">Sunday Morning Futures With Maria Bartiromo</title>
+    <desc>Analysis of recent economic developments and interviews with business leaders and newsmakers.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621160000 +0000" stop="20260621163000 +0000">
+    <title lang="zh">Michael A. Youssef</title>
+    <desc>Pastor Michael Youssef proclaims God's word to all the people around the world through the ministries of Leading The Way.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621163000 +0000" stop="20260621170000 +0000">
+    <title lang="zh">Greg Laurie</title>
+    <desc>Biblical teaching and contemporary Christian music.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621170000 +0000" stop="20260621173000 +0000">
+    <title lang="zh">Jewish Jesus</title>
+    <desc>A supernatural and prophetic discovery of the Jewish Jesus. Messianic Rabbi Kirt Schneider, a Jewish believer in Jesus and end-times messenger of the LORD, delivers the Word of the LORD with the true passion of the Holy Spirit.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621173000 +0000" stop="20260621180000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621180000 +0000" stop="20260621183000 +0000">
+    <title lang="zh">The Wealth Council</title>
+    <desc>Providing an engaging exploration of financial news, market trends and retirement focused wealth management strategies.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621183000 +0000" stop="20260621190000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621190000 +0000" stop="20260621193000 +0000">
+    <title lang="zh">1776 USA Gold Rarity</title>
+    <desc>Secure a 1oz Gold 1776-2026 American Gold Eagle graded PF70UCAM in a special Holder, honoring 250 years of American Freedom! Included as a bonus is a free 2026 1oz Silver Eagle also featuring the iconic Liberty Bell to create a one of a kind pair!</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621193000 +0000" stop="20260621200000 +0000">
+    <title lang="zh">1776 USA Gold Rarity</title>
+    <desc>Secure a 1oz Gold 1776-2026 American Gold Eagle graded PF70UCAM in a special Holder, honoring 250 years of American Freedom! Included as a bonus is a free 2026 1oz Silver Eagle also featuring the iconic Liberty Bell to create a one of a kind pair!</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621200000 +0000" stop="20260621203000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621203000 +0000" stop="20260621210000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621210000 +0000" stop="20260621213000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621213000 +0000" stop="20260621220000 +0000">
+    <title lang="zh">Paid Programming</title>
+    <desc>Paid programming.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621220000 +0000" stop="20260621223000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A defiant suspect gets a K-9 bite; a former fiancé pays his ex an unwanted visit; warrants, pregnancy and meth in a routine traffic stop.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621223000 +0000" stop="20260621230000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A resistant suspect gets too many chances from an understanding cop; a driver lets a friend borrow his car; a man's lie to police.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621230000 +0000" stop="20260621233000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect's bizarre driving techniques; searching a man accused of shooting up the neighborhood; an officer deals with a suspect's denial before finding crack.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260621233000 +0000" stop="20260622000000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>An uncooperative suspect obeys instructions from a relative; uncovering crack rock; trying to get the truth out of two known drug users.</desc>
+    <date>2026-06-21</date>
+  </programme>
+  <programme channel="464766" start="20260622000000 +0000" stop="20260623000000 +0000">
+    <title lang="zh">Cops</title>
+    <desc>A suspect believes he sees monsters; two women in a hotel rumble; sorting out where two motorists got their car and whose dope they have.</desc>
+    <date>2026-06-22</date>
+  </programme>
+<programme channel="USBA370000104" start="20260620150000 +0000" stop="20260620180000 +0000">
+    <title>CBS Saturday Morning</title>
+    <desc>Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories  the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_2756108584_0_20260406T071220562Z_1_imageprocessorclient-tvplus-linear-796646965d-29zqx.jpeg" />
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620180000 +0000" stop="20260620183000 +0000">
+    <title>CBS News Weekender</title>
+    <desc>Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_547845940_0_20240921T063919493Z_15_imageprocessorclient-tvplus-linear-5dc4fd45f6-7zhsx.jpeg" />
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620183000 +0000" stop="20260620190000 +0000">
+    <title>CBS News Weekender</title>
+    <desc>Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_547845940_0_20240921T063919493Z_15_imageprocessorclient-tvplus-linear-5dc4fd45f6-7zhsx.jpeg" />
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620190000 +0000" stop="20260620193000 +0000">
+    <title>CBS News Weekender</title>
+    <desc>Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_547845940_0_20240921T063919493Z_15_imageprocessorclient-tvplus-linear-5dc4fd45f6-7zhsx.jpeg" />
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620193000 +0000" stop="20260620200000 +0000">
+    <title>CBS News Weekender</title>
+    <desc>Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_547845940_0_20240921T063919493Z_15_imageprocessorclient-tvplus-linear-5dc4fd45f6-7zhsx.jpeg" />
+    <rating>
+      <value>NA</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620200000 +0000" stop="20260620210000 +0000">
+    <title>48 Hours</title>
+    <desc>This newsmagazine investigates intriguing crime and justice cases that touch on all aspects of the human experience. Over its long run, the show has helped exonerate wrongly convicted people, driven the reopening -- and resolution -- of cold cases, and changed numerous lives. CBS News correspondents offer an in-depth look into each story, with the emphasis on solving the mystery at its heart. The program and its team have earned critical acclaim, including multiple Emmy, Peabody and Edward R. Murrow Awards.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_2705855924_0_20260325T071751650Z_1_imageprocessorclient-tvplus-linear-796646965d-62x5h.jpeg" />
+    <rating>
+      <value>TV-14</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620210000 +0000" stop="20260620220000 +0000">
+    <title>48 Hours</title>
+    <desc>This newsmagazine investigates intriguing crime and justice cases that touch on all aspects of the human experience. Over its long run, the show has helped exonerate wrongly convicted people, driven the reopening -- and resolution -- of cold cases, and changed numerous lives. CBS News correspondents offer an in-depth look into each story, with the emphasis on solving the mystery at its heart. The program and its team have earned critical acclaim, including multiple Emmy, Peabody and Edward R. Murrow Awards.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_2705855924_0_20260325T071751650Z_1_imageprocessorclient-tvplus-linear-796646965d-62x5h.jpeg" />
+    <rating>
+      <value>TV-14</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260620220000 +0000" stop="20260620230000 +0000">
+    <title>48 Hours</title>
+    <desc>This newsmagazine investigates intriguing crime and justice cases that touch on all aspects of the human experience. Over its long run, the show has helped exonerate wrongly convicted people, driven the reopening -- and resolution -- of cold cases, and changed numerous lives. CBS News correspondents offer an in-depth look into each story, with the emphasis on solving the mystery at its heart. The program and its team have earned critical acclaim, including multiple Emmy, Peabody and Edward R. Murrow Awards.</desc>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/contents/vc/00/LINEAR/US_USQA520417A_2705855924_0_20260325T071751650Z_1_imageprocessorclient-tvplus-linear-796646965d-62x5h.jpeg" />
+    <rating>
+      <value>TV-14</value>
+    </rating>
+  </programme>
+  <programme channel="USBA370000104" start="20260621060000 +0000" stop="20260621070000 +0000"><title lang="en">CBS Morning News</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621070000 +0000" stop="20260621090000 +0000"><title lang="en">CBS This Morning</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621090000 +0000" stop="20260621100000 +0000"><title lang="en">CBS News Daily</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621100000 +0000" stop="20260621120000 +0000"><title lang="en">CBS This Morning</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621120000 +0000" stop="20260621123000 +0000"><title lang="en">CBS News Midday</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621123000 +0000" stop="20260621133000 +0000"><title lang="en">CBS News Update</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621133000 +0000" stop="20260621140000 +0000"><title lang="en">The Price Is Right</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621140000 +0000" stop="20260621143000 +0000"><title lang="en">CBS News Update</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621143000 +0000" stop="20260621153000 +0000"><title lang="en">The Young and the Restless</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621153000 +0000" stop="20260621163000 +0000"><title lang="en">CBS News Afternoon</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621163000 +0000" stop="20260621173000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621173000 +0000" stop="20260621183000 +0000"><title lang="en">CBS News Evening</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621183000 +0000" stop="20260621190000 +0000"><title lang="en">CBS World News Tonight</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621190000 +0000" stop="20260621200000 +0000"><title lang="en">60 Minutes</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621200000 +0000" stop="20260621210000 +0000"><title lang="en">CBS News Special</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621210000 +0000" stop="20260621220000 +0000"><title lang="en">CBS News Special</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621220000 +0000" stop="20260621230000 +0000"><title lang="en">CBS News Nightwatch</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260621230000 +0000" stop="20260621060000 +0000"><title lang="en">CBS News Overnight</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622060000 +0000" stop="20260622070000 +0000"><title lang="en">CBS Morning News</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622070000 +0000" stop="20260622090000 +0000"><title lang="en">CBS This Morning</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622090000 +0000" stop="20260622100000 +0000"><title lang="en">CBS News Daily</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622100000 +0000" stop="20260622120000 +0000"><title lang="en">CBS This Morning</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622120000 +0000" stop="20260622123000 +0000"><title lang="en">CBS News Midday</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622123000 +0000" stop="20260622133000 +0000"><title lang="en">CBS News Update</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622133000 +0000" stop="20260622140000 +0000"><title lang="en">The Price Is Right</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622140000 +0000" stop="20260622143000 +0000"><title lang="en">CBS News Update</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622143000 +0000" stop="20260622153000 +0000"><title lang="en">The Young and the Restless</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622153000 +0000" stop="20260622163000 +0000"><title lang="en">CBS News Afternoon</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622163000 +0000" stop="20260622173000 +0000"><title lang="en">CBS Evening News</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622173000 +0000" stop="20260622183000 +0000"><title lang="en">CBS News Evening</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622183000 +0000" stop="20260622190000 +0000"><title lang="en">CBS World News Tonight</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622190000 +0000" stop="20260622200000 +0000"><title lang="en">60 Minutes</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622200000 +0000" stop="20260622210000 +0000"><title lang="en">CBS News Special</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622210000 +0000" stop="20260622220000 +0000"><title lang="en">CBS News Special</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622220000 +0000" stop="20260622230000 +0000"><title lang="en">CBS News Nightwatch</title><desc lang="en">Live news coverage</desc></programme><programme channel="USBA370000104" start="20260622230000 +0000" stop="20260622060000 +0000"><title lang="en">CBS News Overnight</title><desc lang="en">Live news coverage</desc></programme></tv>
