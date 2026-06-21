@@ -1,46 +1,82 @@
-======================================================================
 RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-20 17:19
+Data: 2026-06-21 02:44
 ======================================================================
-Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=32 Amanha=30 Depois=1
-Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=24 Amanha=24 Depois=1
-Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=41 Amanha=33 Depois=1
-Canal: CBS News 24/7 | tvg-id: USBA370000104 | EPG: Hoje=8 Amanha=18 Depois=18
+
+
+--- COBERTURA EPG POR CANAL ---
+  ABC News Live (ID:ABCNewsLive.us): Hoje=31 Amanha=34 Depois=38 [OK]
+  Fox News Channel (ID:FoxNewsChannel.us): Hoje=24 Amanha=24 Depois=24 [OK]
+  CBS News 24/7 (ID:CBSNews.us): Hoje=28 Amanha=26 Depois=26 [OK]
+  CBS News Bay Area (ID:CBSNewsBayArea.us): Hoje=32 Amanha=32 Depois=33 [OK]
+  CBS News Chicago (ID:CBSNewsChicago.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
+  CBS News New York (ID:CBSNewsNewYork.pluto): Hoje=8 Amanha=1 Depois=1 [OK]
+  CBS News Los Angeles (ID:CBSNewsLosAngeles.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
+  CBS News Miami (ID:CBSNewsMiami.pluto): Hoje=10 Amanha=1 Depois=1 [OK]
+  CBS News Colorado (ID:CBSNewsColorado.pluto): Hoje=6 Amanha=1 Depois=1 [OK]
+  CBS News Minnesota (ID:CBSNewsMinnesota.pluto): Hoje=6 Amanha=1 Depois=1 [OK]
+  CBS News Philadelphia (ID:CBSNewsPhiladelphia.pluto): Hoje=11 Amanha=1 Depois=1 [OK]
+  CBS News Pittsburgh (ID:CBSNewsPittsburgh.us): Hoje=38 Amanha=34 Depois=34 [OK]
+  CBS News Sacramento (ID:CBSNewsSacramento.pluto): Hoje=9 Amanha=1 Depois=1 [OK]
+  CBS News Texas (ID:CBSNewsTexas.us): Hoje=47 Amanha=38 Depois=37 [OK]
+  CBS Boston (ID:CBSNewsBoston.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
+  CBS News Detroit (ID:CBSNewsDetroit.pluto): Hoje=10 Amanha=1 Depois=1 [OK]
+
+EPG salvo: 1649 programas
+  Stream ABC News Live: OK
+  Stream Fox News Channel: OK
+  Stream CBS News 24/7: OK
+  Stream CBS News Bay Area: OK
+  Stream CBS News Chicago: OK
+  Stream CBS News New York: OK
+  Stream CBS News Los Angeles: OK
+  Stream CBS News Miami: OK
+  Stream CBS News Colorado: OK
+  Stream CBS News Minnesota: OK
+  Stream CBS News Philadelphia: OK
+  Stream CBS News Pittsburgh: OK
+  Stream CBS News Sacramento: OK
+  Stream CBS News Texas: OK
+  Stream CBS Boston: OK
+  Stream CBS News Detroit: OK
   VirusTotal ABC News Live: nao_verificado
   VirusTotal Fox News Channel: nao_verificado
-  VirusTotal Fox Business: nao_verificado
   VirusTotal CBS News 24/7: nao_verificado
   VirusTotal CBS News Bay Area: nao_verificado
   VirusTotal CBS News Chicago: nao_verificado
-  VirusTotal CBS News Miami: nao_verificado
   VirusTotal CBS News New York: nao_verificado
   VirusTotal CBS News Los Angeles: nao_verificado
-  VirusTotal CBS News Dallas Ft Worth: nao_verificado
-  VirusTotal CBS News Detroit: nao_verificado
-  VirusTotal CBS News Philadelphia: nao_verificado
+  VirusTotal CBS News Miami: nao_verificado
   VirusTotal CBS News Colorado: nao_verificado
   VirusTotal CBS News Minnesota: nao_verificado
+  VirusTotal CBS News Philadelphia: nao_verificado
   VirusTotal CBS News Pittsburgh: nao_verificado
-  VirusTotal CBSN Boston: nao_verificado
-  ABC News Live: INCLUIDO | ID=465150 | Stream=OK
-  Fox News Channel: PULADO (stream offline)
-  Fox Business: PULADO (stream offline)
-  CBS News 24/7: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Bay Area: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Chicago: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Miami: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News New York: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Los Angeles: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Dallas Ft Worth: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Detroit: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Philadelphia: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Colorado: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Minnesota: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBS News Pittsburgh: INCLUIDO | ID=USBA370000104 | Stream=OK
-  CBSN Boston: INCLUIDO | ID=USBA370000104 | Stream=OK
+  VirusTotal CBS News Sacramento: nao_verificado
+  VirusTotal CBS News Texas: nao_verificado
+  VirusTotal CBS Boston: nao_verificado
+  VirusTotal CBS News Detroit: nao_verificado
+  Status ABC News Live: INCLUIDO
+  Status Fox News Channel: INCLUIDO
+  Status CBS News 24/7: INCLUIDO
+  Status CBS News Bay Area: INCLUIDO
+  Status CBS News Chicago: INCLUIDO
+  Status CBS News New York: INCLUIDO
+  Status CBS News Los Angeles: INCLUIDO
+  Status CBS News Miami: INCLUIDO
+  Status CBS News Colorado: INCLUIDO
+  Status CBS News Minnesota: INCLUIDO
+  Status CBS News Philadelphia: INCLUIDO
+  Status CBS News Pittsburgh: INCLUIDO
+  Status CBS News Sacramento: INCLUIDO
+  Status CBS News Texas: INCLUIDO
+  Status CBS Boston: INCLUIDO
+  Status CBS News Detroit: INCLUIDO
 
-Total canais: 14
-EPG cobertura: 20260620=105, 20260621=105, 20260622=21
-EPG OK: SIM
+======================================================================
+RELATORIO FINAL
+======================================================================
+Total canais: 16
+Cobertura EPG: Hoje=281 Amanha=198 Depois=202
+EPG Funcional: SIM
 Problemas: 0
+Canais adicionados: ABC News Live, Fox News Channel, CBS News 24/7, CBS News Bay Area, CBS News Chicago, CBS News New York, CBS News Los Angeles, CBS News Miami, CBS News Colorado, CBS News Minnesota, CBS News Philadelphia, CBS News Pittsburgh, CBS News Sacramento, CBS News Texas, CBS Boston, CBS News Detroit
 ======================================================================
