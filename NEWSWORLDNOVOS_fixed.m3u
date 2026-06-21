@@ -19,8 +19,6 @@ https://30a-tv.com/feeds/xodglobal/30atv.m3u8
 https://30a-tv.com/ln.m3u8
 #EXTINF:-1 tvg-id="465308" tvg-name="AMX Noticias" tvg-logo="https://epg.pw/media/logos/tvg-id/news-mx.png" group-title="NEWS WORLD",AMX Noticias
 https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
-#EXTINF:-1 tvg-id="76730" tvg-name="92 News HD" tvg-logo="https://epg.pw/media/logos/tvg-id/92-news-pk.png" group-title="NEWS WORLD",92 News HD
-https://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
 #EXTINF:-1 tvg-id="76703" tvg-name="3AW Melbourne" tvg-logo="https://epg.pw/media/logos/tvg-id/3aw-au.png" group-title="NEWS WORLD",3AW Melbourne
 https://3awlive.akamaized.net/hls/live/2032295/3AW/index.m3u8
 #EXTINF:-1 tvg-id="370178" tvg-name="Bloomberg TV Mongolia" tvg-logo="https://epg.pw/media/logos/tvg-id/bloomberg-television-us.png" group-title="BUSINESS NEWS",Bloomberg TV Mongolia
@@ -103,6 +101,8 @@ https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic
 https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="3958" tvg-name="Astro Awani" tvg-logo="https://epg.pw/media/logos/tvg-id/astro-awani-my.png" group-title="NEWS WORLD",Astro Awani
 https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/index.m3u8
+#EXTINF:-1 tvg-id="443224" tvg-name="Asharq Radio" tvg-logo="https://epg.pw/media/logos/tvg-id/asharq-news-sa.png" group-title="NEWS WORLD",Asharq Radio
+https://svs.itworkscdn.net/asharqradiovlive/asharqradiov/playlist.m3u8
 #EXTINF:-1 tvg-id="368370" tvg-name="Arirang TV" tvg-logo="https://epg.pw/media/logos/tvg-id/arirang-int.png" group-title="NEWS WORLD",Arirang TV
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="443224" tvg-name="Asharq News" tvg-logo="https://epg.pw/media/logos/tvg-id/asharq-news-sa.png" group-title="NEWS WORLD",Asharq News
@@ -373,16 +373,12 @@ https://kwtktv2ta.cdn.mangomolo.com/ktv2/smil:ktv2.stream.smil/chunklist.m3u8
 https://kwtkbta.cdn.mangomolo.com/kb/smil:kb.stream.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="76770" tvg-name="Korea TV" tvg-logo="https://epg.pw/media/logos/tvg-id/kbs-kr.png" group-title="NEWS WORLD",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="4424" tvg-name="LA RED" tvg-logo="https://epg.pw/media/logos/tvg-id/la-red-cl.png" group-title="NEWS WORLD",LA RED
-https://janus-tv-ply.senado.cl/playlist/playlist.m3u8?DVR
 #EXTINF:-1 tvg-id="76777" tvg-name="Mekameleen TV" tvg-logo="https://epg.pw/media/logos/tvg-id/mekameleen-tv.png" group-title="NEWS WORLD",Mekameleen TV
 https://mn-nl.mncdn.com/mekameleen/smil:mekameleentv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="76740" tvg-name="M95 Televisión Marbella" tvg-logo="https://epg.pw/media/logos/tvg-id/m95-marbella-es.png" group-title="NEWS WORLD",M95 Televisión Marbella
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
 #EXTINF:-1 tvg-id="523308" tvg-name="MTV Uutiset" tvg-logo="https://epg.pw/media/logos/tvg-id/mtv-uutiset-fi.png" group-title="NEWS WORLD",MTV Uutiset
 https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8
-#EXTINF:-1 tvg-id="524016" tvg-name="Lingkar TV" tvg-logo="https://epg.pw/media/logos/tvg-id/news-id.png" group-title="NEWS WORLD",Lingkar TV
-https://lingkartv.my.id/hls/lingkartv.m3u8
 #EXTINF:-1 tvg-id="76731" tvg-name="Lahore News" tvg-logo="https://epg.pw/media/logos/tvg-id/news-pk.png" group-title="NEWS WORLD",Lahore News
 https://vcdn.dunyanews.tv/lahorelive/ngrp:lnews_1_all/playlist.m3u8
 #EXTINF:-1 tvg-id="76717" tvg-name="Mihan TV" tvg-logo="https://epg.pw/media/logos/tvg-id/mihan-tv-ir.png" group-title="NEWS WORLD",Mihan TV
@@ -701,6 +697,5 @@ https://nbculocallive.akamaized.net/hls/live/2037500/elpaso/stream2/master.m3u8
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 #EXTINF:-1 tvg-id="523339" tvg-name="TV Brasil" tvg-logo="https://epg.pw/media/logos/tvg-id/tv-brasil-br.png" group-title="NEWS WORLD",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
-
-#EXTINF:-1 tvg-id="523353" tvg-name="Rede Globo" tvg-logo="https://epg.pw/media/logos/tvg-id/rede-globo-br.png" group-title="NEWS WORLD",Rede Globo
-https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="523341" tvg-name="GloboNews" tvg-logo="https://epg.pw/media/logos/tvg-id/523341.png" group-title="NEWS WORLD",GloboNews
+http://41.205.70.146/GLOBONEWS/index.m3u8
