@@ -1,73 +1,79 @@
 #!/usr/bin/env python3
-import subprocess
-import sys
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
 
-INPUT_FILE = "lista5.m3u"
+M3U_FILE = "lista5.m3u"
 
 def parse_m3u(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-    header = None
-    channels = []
-    current_extinf = None
-    for line in lines:
-        stripped = line.strip()
-        if stripped.startswith('#EXTM3U'):
-            header = line
-        elif stripped.startswith('#EXTINF:'):
-            current_extinf = stripped
-        elif stripped and not stripped.startswith('#') and current_extinf:
-            channels.append((current_extinf, stripped, line))
-            current_extinf = None
-    if not header:
-        header = '#EXTM3U\n'
-    return header, channels
 
-def test_url(url, timeout=10):
+    header = lines[0] if lines else ""
+    entries = []
+    i = 1
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("#EXTINF"):
+            if i + 1 < len(lines) and not lines[i+1].startswith("#"):
+                extinf = line.rstrip("\n")
+                url = lines[i+1].rstrip("\n")
+                entries.append((extinf, url))
+                i += 2
+            else:
+                i += 1
+        elif line.startswith("#"):
+            i += 1
+        else:
+            i += 1
+    return header, entries
+
+def check_url(url, timeout=10):
     try:
-        result = subprocess.run(
-            ['curl', '-s', '-o', '/dev/null', '-w', '%{http_code}', '--max-time', str(timeout), url],
-            capture_output=True, text=True, timeout=timeout + 5
-        )
-        code = result.stdout.strip()
-        if code and code[0] in ('2', '3'):
-            return True, code
-        return False, code or 'no response'
-    except subprocess.TimeoutExpired:
-        return False, 'timeout'
-    except Exception as e:
-        return False, str(e)
+        resp = requests.head(url, timeout=timeout, allow_redirects=True, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
+        return url, resp.status_code == 200
+    except Exception:
+        return url, False
 
 def main():
-    header, channels = parse_m3u(INPUT_FILE)
-    print(f"Total entries: {len(channels)}")
+    print("Parsing lista5.m3u...")
+    header, entries = parse_m3u(M3U_FILE)
+    print(f"Found {len(entries)} entries")
 
-    results = {}
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        futures = {}
-        for i, (extinf, url, _) in enumerate(channels):
-            ch_name = extinf.split(',')[-1].strip() if ',' in extinf else 'unknown'
-            futures[executor.submit(test_url, url)] = (i, ch_name, url)
+    print("Testing URLs...")
+    working = []
+    failed = []
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        future_map = {executor.submit(check_url, url): (extinf, url) for extinf, url in entries}
+        for i, future in enumerate(as_completed(future_map)):
+            url, ok = future.result()
+            extinf, _ = future_map[future]
+            if ok:
+                working.append((extinf, url))
+            else:
+                failed.append((extinf, url))
+            if (i + 1) % 10 == 0 or i == len(entries) - 1:
+                print(f"  Progress: {i+1}/{len(entries)}")
 
-        for future in as_completed(futures):
-            i, ch_name, url = futures[future]
-            ok, code = future.result()
-            status = 'OK' if ok else 'FAIL'
-            print(f"[{status}] {ch_name[:50]:50s} HTTP {code}")
-            results[i] = (ok, code)
+    print(f"\nWorking: {len(working)}")
+    print(f"Failed: {len(failed)}")
 
-    working_count = sum(1 for v in results.values() if v[0])
-    print(f"\nWorking: {working_count}/{len(channels)}")
+    if failed:
+        print("\nRemoved channels:")
+        for extinf, url in failed:
+            name = extinf.split(",")[-1] if "," in extinf else extinf
+            print(f"  {name}")
 
-    with open(INPUT_FILE, 'w', encoding='utf-8') as f:
-        f.write(header.rstrip('\n') + '\n')
-        for i, (extinf, url, _) in enumerate(channels):
-            if results[i][0]:
-                f.write(extinf + '\n')
-                f.write(url + '\n')
+    print(f"\nWriting cleaned file ({len(working)} entries)...")
+    with open(M3U_FILE, 'w', encoding='utf-8') as f:
+        f.write(header)
+        for extinf, url in working:
+            f.write(extinf + "\n")
+            f.write(url + "\n")
 
-    print(f"Saved {working_count} working channels to {INPUT_FILE}")
+    print("Done! lista5.m3u updated.")
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
