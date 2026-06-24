@@ -337,6 +337,8 @@ https://live.corusdigitaldev.com/groupc/live/f191ef59-6c28-42ba-86d0-d47df528024
 https://live.corusdigitaldev.com/groupb/live/3062d0e3-ed4c-4f47-8482-95648250f4b8/live.isml/.m3u8
 #EXTINF:-1 tvg-id="465606" tvg-name="Global News Winnipeg" tvg-logo="https://epg.pw/media/logos/tvg-id/global-news-ca.png" group-title="NEWS WORLD",Global News Winnipeg
 https://live.corusdigitaldev.com/groupb/live/564df695-94f9-4f27-b1b9-0a936ab01721/live.isml/.m3u8
+#EXTINF:-1 tvg-id="76801" tvg-name="Giornale Radio TV" tvg-logo="https://epg.pw/media/logos/tvg-id/news-it.png" group-title="NEWS WORLD",Giornale Radio TV
+https://5f204aff97bee.streamlock.net/GR_tv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="76780" tvg-name="Guardian Talk Radio" tvg-logo="https://epg.pw/media/logos/tvg-id/guardian-talk-radio-us.png" group-title="NEWS WORLD",Guardian Talk Radio
 https://cdn-edge1.streamcomedia.com/abr_tngr969fm/abr-tngr969fm_streams/playlist.m3u8
 #EXTINF:-1 tvg-id="76779" tvg-name="HollyWire" tvg-logo="https://epg.pw/media/logos/tvg-id/hollywire-us.png" group-title="NEWS WORLD",HollyWire
@@ -459,6 +461,8 @@ https://oneamericanews-roku-us.amagi.tv/playlist.m3u8
 https://oan-plus-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="76771" tvg-name="Oman Mubashir" tvg-logo="https://epg.pw/media/logos/tvg-id/oman-tv-om.png" group-title="NEWS WORLD",Oman Mubashir
 https://partwota.cdn.mgmlcdn.com/omlive/smil:omlive.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="464941" tvg-name="News 24" tvg-logo="https://epg.pw/media/logos/tvg-id/news-24-in.png" group-title="NEWS WORLD",News 24
+https://vidcdn.vidgyor.com/news24-origin/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="464944" tvg-name="PENTAGONO USA" tvg-logo="https://epg.pw/media/logos/tvg-id/pentagon-channel-us.png" group-title="NEWS WORLD",PENTAGONO USA
 https://do7ujvb4kwqvb.cloudfront.net/out/v1/434726d616804d87ae523d226d2b6afd/index.m3u8
 #EXTINF:-1 tvg-id="76789" tvg-name="OZTV Channel (Asia)" tvg-logo="https://epg.pw/media/logos/tvg-id/oztv-my.png" group-title="NEWS WORLD",OZTV Channel (Asia)
@@ -701,4 +705,4 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 
 #EXTINF:-1 tvg-id="523341" tvg-name="Globo News" tvg-logo="https://epg.pw/media/logos/tvg-id/globo-news-br.png" group-title="BUSINESS NEWS",Globo News
-http://31.43.191.125:8080/vip6671769357668/9c933f68998a/4864
+http://143.14.178.40:7777/GloboNews_HD/index.m3u8
