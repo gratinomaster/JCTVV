@@ -1,143 +1,117 @@
 #!/usr/bin/env python3
-import gzip
-import re
+import gzip, re, sys, os, io, urllib.request
 import xml.etree.ElementTree as ET
-import os
-import requests
 from collections import OrderedDict
+from datetime import datetime, timedelta
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
-INPUT_EPG = "EPGFULL.xml.gz"
-OUTPUT_EPG = "EPGFULL.xml.gz"
+OUTPUT = "EPGFULL.xml.gz"
+FRESH_EPG = "/tmp/epg_ripper.xml.gz"
 
 def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
 
-print("Downloading M3U from GitHub...")
-r = requests.get(M3U_URL, timeout=60, allow_redirects=True)
-m3u_content = r.text
+print("1. Baixando M3U do GitHub...")
+req = urllib.request.Request(M3U_URL, headers={"User-Agent": "Mozilla/5.0"})
+with urllib.request.urlopen(req, timeout=30) as resp:
+    m3u_content = resp.read().decode("utf-8", errors="replace")
 
 tvg_ids = set()
-tvg_norm = {}
-tvg_names = {}
-tvg_logo_ids = {}
-
-for line in m3u_content.splitlines():
-    m = re.search(r'tvg-id="([^"]*)"', line)
-    if m and m.group(1):
-        tid = m.group(1)
+for m in re.finditer(r'tvg-id="([^"]*)"', m3u_content):
+    tid = m.group(1).strip()
+    if tid and tid != "0":
         tvg_ids.add(tid)
-        tvg_norm[norm(tid)] = tid
-    mn = re.search(r'tvg-name="([^"]*)"', line)
-    if mn:
-        tvg_names[tid] = mn.group(1).lower().strip()
-    ml = re.search(r'epg\.pw/media/logos/tvg-id/(.+)\.png', line)
-    if ml:
-        tvg_logo_ids[tid] = ml.group(1)
 
-print(f"Found {len(tvg_ids)} tvg-ids in M3U")
+tvg_norm = {norm(t): t for t in tvg_ids}
+print(f"  {len(tvg_ids)} tvg-ids encontrados: {sorted(tvg_ids)}")
 
 if not tvg_ids:
-    print("ERROR: No tvg-ids found in M3U!")
-    exit(1)
+    print("ERRO: Nenhum tvg-id encontrado!")
+    sys.exit(1)
 
-name_to_tvgid = {}
-for tid, name in tvg_names.items():
-    nname = norm(name)
-    if nname:
-        name_to_tvgid[nname] = tid
-
+print(f"2. Processando EPG fresco ({FRESH_EPG})...")
 matched_ids = set()
-channel_elements = OrderedDict()
-programme_elements = OrderedDict()
+channels = OrderedDict()
+programmes = OrderedDict()
 seen_progs = set()
+ch_count = 0
+prog_count = 0
 
-def parse_existing_epg():
-    global matched_ids, channel_elements, programme_elements, seen_progs
-    if not os.path.exists(INPUT_EPG):
-        print(f"  {INPUT_EPG} not found!")
-        return
-
-    print(f"Parsing {INPUT_EPG}...")
-    f = gzip.open(INPUT_EPG, "rb")
-
-    ch_count = 0
+with gzip.open(FRESH_EPG, "rb") as f:
     for event, elem in ET.iterparse(f, events=("end",)):
         if elem.tag == "channel":
-            cid = elem.get("id")
+            cid = elem.get("id", "")
             if not cid:
                 elem.clear()
                 continue
             key = None
-            ncid = norm(cid)
             if cid in tvg_ids:
                 key = cid
-            elif ncid in tvg_norm:
-                key = tvg_norm[ncid]
-
-            if key is None:
-                for tid, lid in tvg_logo_ids.items():
-                    if norm(cid) == norm(lid):
-                        key = tid
-                        break
-
-            if key is None:
-                dn = elem.find("display-name")
-                if dn is not None and dn.text:
-                    ndn = norm(dn.text)
-                    if ndn in name_to_tvgid:
-                        key = name_to_tvgid[ndn]
-
-            if key is not None and key not in matched_ids:
+            elif norm(cid) in tvg_norm:
+                key = tvg_norm[norm(cid)]
+            if key and key not in matched_ids:
                 matched_ids.add(key)
-                channel_elements[key] = ET.tostring(elem, encoding="unicode")
+                channels[key] = ET.tostring(elem, encoding="unicode")
                 ch_count += 1
             elem.clear()
-
         elif elem.tag == "programme":
-            ch = elem.get("channel")
+            ch = elem.get("channel", "")
             if not ch:
                 elem.clear()
                 continue
             key = None
-            nch = norm(ch)
             if ch in matched_ids:
                 key = ch
-            elif nch in tvg_norm and tvg_norm[nch] in matched_ids:
-                key = tvg_norm[nch]
-            if key is None:
-                elem.clear()
-                continue
-            start = elem.get("start", "")
-            stop = elem.get("stop", "")
-            pkey = f"{key}|{start}|{stop}"
-            if pkey not in seen_progs:
-                seen_progs.add(pkey)
-                programme_elements[pkey] = ET.tostring(elem, encoding="unicode")
+            elif norm(ch) in tvg_norm and tvg_norm[norm(ch)] in matched_ids:
+                key = tvg_norm[norm(ch)]
+            if key:
+                start = elem.get("start", "")
+                stop = elem.get("stop", "")
+                pkey = f"{key}|{start}|{stop}"
+                if pkey not in seen_progs:
+                    seen_progs.add(pkey)
+                    programmes[pkey] = ET.tostring(elem, encoding="unicode")
+                    prog_count += 1
             elem.clear()
 
-    f.close()
-    print(f"  {ch_count} channels matched, {len(programme_elements)} programmes")
+print(f"  {ch_count} canais, {prog_count} programas")
 
-parse_existing_epg()
-
-print(f"\nFinal: {len(matched_ids)}/{len(tvg_ids)} channels, {len(programme_elements)} programmes")
-
-missing = [cid for cid in sorted(tvg_ids) if cid not in matched_ids]
-if missing:
-    print(f"Missing tvg-ids ({len(missing)}): {missing}")
-
+print("3. Escrevendo EPGFULL.xml.gz...")
 lines = ['<?xml version="1.0" encoding="utf-8"?>', "<tv>"]
-for buf in channel_elements.values():
-    lines.append(buf)
-for buf in programme_elements.values():
-    lines.append(buf)
+lines.extend(channels.values())
+lines.extend(programmes.values())
 lines.append("</tv>")
 
 xml_str = "\n".join(lines)
-
-with gzip.open(OUTPUT_EPG, "wt", encoding="utf-8") as f:
+with gzip.open(OUTPUT, "wt", encoding="utf-8") as f:
     f.write(xml_str)
 
-out_size = os.path.getsize(OUTPUT_EPG)
-print(f"\nWritten to {OUTPUT_EPG} ({out_size} bytes)")
+size = os.path.getsize(OUTPUT)
+print(f"  {OUTPUT} ({size} bytes)")
+
+print("\n4. Testando EPG...")
+with gzip.open(OUTPUT, "rb") as f:
+    test_root = ET.fromstring(f.read())
+
+canais = test_root.findall("channel")
+programas = test_root.findall("programme")
+print(f"  Canais: {len(canais)}")
+print(f"  Programas: {len(programas)}")
+
+hoje = datetime.now().strftime("%Y%m%d")
+amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
+prog_hoje = sum(1 for p in programas if p.get("start","")[:8]==hoje)
+prog_amanha = sum(1 for p in programas if p.get("start","")[:8]==amanha)
+print(f"  Programas hoje ({hoje}): {prog_hoje}")
+print(f"  Programas amanhã ({amanha}): {prog_amanha}")
+
+if prog_hoje > 0 and prog_amanha > 0:
+    print("\n✓ EPG FUNCIONANDO! Programas para hoje e amanhã disponíveis.")
+else:
+    print("\n✗ EPG COM PROBLEMAS! Faltam programas para hoje ou amanhã.")
+    sys.exit(1)
+
+for ch in canais:
+    dn = ch.find("display-name")
+    name = dn.text if dn is not None and dn.text else "N/A"
+    print(f"  {ch.get('id')}: {name}")
