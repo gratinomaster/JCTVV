@@ -687,7 +687,7 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="76723" tvg-name="Известиia" tvg-logo="https://epg.pw/media/logos/tvg-id/izvestia-ru.png" group-title="NEWS WORLD",Известиia
 https://igi-hls.cdnvideo.ru/igi/igi_tcode/playlist.m3u8
-#EXTINF:-1 tvg-id="[CAN26SD].Canal.26.uy" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
+#EXTINF:-1 tvg-id="Canal.26.uy" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:-1 tvg-id="464962" tvg-name="Telemundo Nuevo México" tvg-logo="https://epg.pw/media/logos/tvg-id/telemundo-us.png" group-title="NEWS WORLD",Telemundo Nuevo México
 https://nbculocallive.akamaized.net/hls/live/2037500/elpaso/stream2/master.m3u8
@@ -697,3 +697,5 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="523341" tvg-name="GloboNews" tvg-logo="https://epg.pw/media/logos/tvg-id/globo-news-br.png" group-title="NEWS WORLD",GloboNews
 http://143.14.178.40:7777/GloboNews_HD/index.m3u8
+#EXTINF:-1 tvg-id="523314" tvg-name="BandNews TV" tvg-logo="https://epg.pw/media/logos/tvg-id/band-news-br.png" group-title="NEWS WORLD",BandNews TV
+http://143.14.178.40:7777/Band_News_HD/index.m3u8
