@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="JCTV News EPG v5"><channel id="CBSNews.us"><display-name>US - CBS News</display-name></channel><channel id="ABCNewsLive.us"><display-name>US - ABC News Live</display-name></channel><channel id="FoxBusiness.us"><display-name>US - Fox Business</display-name></channel><channel id="FoxNewsChannel.us"><display-name>US - FOX NEWS</display-name></channel><programme start="20260620003000 +0000" stop="20260620010000 +0000" channel="ABCNewsLive.us">
+<tv generator-info-name="JCTV News EPG v6"><channel id="FoxBusiness.us"><display-name>US - Fox Business</display-name></channel><channel id="CBSNews.us"><display-name>US - CBS News</display-name></channel><channel id="ABCNewsLive.us"><display-name>US - ABC News Live</display-name></channel><channel id="FoxNewsChannel.us"><display-name>US - FOX NEWS</display-name></channel><programme start="20260620003000 +0000" stop="20260620010000 +0000" channel="ABCNewsLive.us">
     <category lang="en">Interview</category>
     <category lang="en">News</category>
     <category lang="en">Talk</category>
@@ -13928,5 +13928,365 @@ William Randolph Hearst builds on his father George's mining fortune by becoming
     <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
     <previously-shown />
     <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703180000 +0000" stop="20260703183000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703183000 +0000" stop="20260703190000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260703190000 +0000" stop="20260703193000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703193000 +0000" stop="20260703200000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260703200000 +0000" stop="20260703203000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703203000 +0000" stop="20260703210000 +0000" channel="ABCNewsLive.us">
+    <category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703210000 +0000" stop="20260703223000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703223000 +0000" stop="20260703230000 +0000" channel="ABCNewsLive.us">
+    <category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703230000 +0000" stop="20260704000000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260704000000 +0000" stop="20260704020000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704020000 +0000" stop="20260704030000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704030000 +0000" stop="20260704033500 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704033500 +0000" stop="20260704043700 +0000" channel="ABCNewsLive.us">
+    <category /><category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704043700 +0000" stop="20260704050700 +0000" channel="ABCNewsLive.us">
+    <category /><category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704050700 +0000" stop="20260704090000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704090000 +0000" stop="20260704110000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704110000 +0000" stop="20260704140000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704140000 +0000" stop="20260704163000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704163000 +0000" stop="20260704170000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704170000 +0000" stop="20260704190000 +0000" channel="ABCNewsLive.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703180000 +0000" stop="20260703190000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260703190000 +0000" stop="20260703200000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260703200000 +0000" stop="20260703210000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260703210000 +0000" stop="20260703220000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260703220000 +0000" stop="20260703230000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260703230000 +0000" stop="20260704000000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704000000 +0000" stop="20260704010000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704010000 +0000" stop="20260704020000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704020000 +0000" stop="20260704023000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704023000 +0000" stop="20260704030000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704030000 +0000" stop="20260704040000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704040000 +0000" stop="20260704050000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704050000 +0000" stop="20260704053000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704053000 +0000" stop="20260704060000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704060000 +0000" stop="20260704070000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704070000 +0000" stop="20260704073000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704073000 +0000" stop="20260704080000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704080000 +0000" stop="20260704090000 +0000" channel="CBSNews.us">
+    <category /><category /><category /><date /><desc /><icon /><title /></programme>
+  <programme start="20260704090000 +0000" stop="20260704093000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704093000 +0000" stop="20260704100000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704100000 +0000" stop="20260704103000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704103000 +0000" stop="20260704110000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704110000 +0000" stop="20260704113000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704113000 +0000" stop="20260704120000 +0000" channel="CBSNews.us">
+    <category /><desc /><icon /><title /></programme>
+  <programme start="20260704120000 +0000" stop="20260704130000 +0000" channel="CBSNews.us">
+    <category /><category /><desc /><icon /><title /></programme>
+  <programme start="20260704130000 +0000" stop="20260704150000 +0000" channel="CBSNews.us">
+    <category /><category /><desc />
+    <icon /><title /></programme>
+  <programme start="20260704150000 +0000" stop="20260704180000 +0000" channel="CBSNews.us">
+    <category /><category /><desc /><icon /><title /></programme>
+  <programme start="20260703180000 +0000" stop="20260703190000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703190000 +0000" stop="20260703200000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703200000 +0000" stop="20260703210000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703210000 +0000" stop="20260703220000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703220000 +0000" stop="20260703230000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><category /><desc />
+    <icon /><title /><live /></programme>
+  <programme start="20260703230000 +0000" stop="20260704000000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704000000 +0000" stop="20260704010000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704010000 +0000" stop="20260704030000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704030000 +0000" stop="20260704040000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704040000 +0000" stop="20260704050000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704050000 +0000" stop="20260704060000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260704060000 +0000" stop="20260704080000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260704080000 +0000" stop="20260704090000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260704090000 +0000" stop="20260704100000 +0000" channel="FoxNewsChannel.us">
+    <category /><category /><desc /><icon /><previously-shown /><title /></programme>
+  <programme start="20260704100000 +0000" stop="20260704110000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704110000 +0000" stop="20260704120000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704120000 +0000" stop="20260704130000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704130000 +0000" stop="20260704140000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704140000 +0000" stop="20260704150000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704150000 +0000" stop="20260704160000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704160000 +0000" stop="20260704170000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260704170000 +0000" stop="20260704180000 +0000" channel="FoxNewsChannel.us">
+    <category /><date /><desc /><icon /><title /><live /></programme>
+  <programme start="20260703180000 +0000" stop="20260703190000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E02 — Hilton
+Conrad Hilton gets rich building the world's first international hotel chain; after his sons' rivalry almost destroys everything, his great-granddaughter emerges to redefine the family brand.</desc>
+    <episode-num>S02 E02</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703190000 +0000" stop="20260703200000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E03 — Heinz
+Henry Heinz builds an empire by revolutionizing food processing; his son Howard and grandson Jack must navigate wars, economic depression and changing times to keep the family-led company on course.</desc>
+    <episode-num>S02 E03</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703200000 +0000" stop="20260703210000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E04 — Astor
+From the fur trade to the drug trade, John Jacob Astor builds America's first mega-fortune; ensuing generations of Astors battle to control it, helping to define the opulent Gilded Age.</desc>
+    <episode-num>S02 E04</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703210000 +0000" stop="20260703220000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E05 — Post
+Breakfast cereal king CW Post's death makes his daughter the nation's richest woman; rather than rest on his laurels, she seeks to expand on his legacy and redefine the role of women in America.</desc>
+    <episode-num>S02 E05</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703220000 +0000" stop="20260703230000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E06 — Harley-Davidson
+Bill Harley and Arthur Davidson work with family members to build an iconic brand; their heirs lose control of the company but take back ownership and restore its reputation.</desc>
+    <episode-num>S02 E06</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260703230000 +0000" stop="20260704000000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E08 — Carnegie
+Forrest Mars reunites with his estranged father to transform a candy company; Forrest takes over from family members to build one of the largest privately held corporations in the world.</desc>
+    <episode-num>S02 E08</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260704000000 +0000" stop="20260704010000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Mars
+Forrest Mars reunites with his estranged father to transform a candy company; later, Forrest takes over from family members to build one of the largest privately held corporations in the world.</desc>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260704010000 +0000" stop="20260704020000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E09 — Johnson &amp; Johnson
+Robert Wood Johnson starts a medical supplies company that his son grows into a large healthcare products corporation; family rivalries and lawsuits threaten its reputation.</desc>
+    <episode-num>S02 E09</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260704020000 +0000" stop="20260704030000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E07 — Anheuser Busch
+Adolphus Busch saves a failing brewery; his grandson turns Budweiser into America's number one beer, but after a corporate takeover, a marketing ploy brings consumer backlash and plummeting sales.</desc>
+    <episode-num>S02 E07</episode-num>
+    <icon src="https://iptv-epg.org/images/opCN7qbulN7oM1PY9XsR4CfS51PRR8qDHkKdHkpk2ldtfsLAGSyJb9KKCx4F41jmjwikIcNbzvAmgcsICsopp-YxUJS3SQQhNit2Z8JZR-w" />
+    <previously-shown />
+    <title lang="en">American Dynasty</title>
+  </programme>
+  <programme start="20260704030000 +0000" stop="20260704040000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">Vietnam is a nation both ancient and modern, bursting with life and rooted in history; it is Vietnam where American soldiers fought more than 50 years ago and where Harris Faulkner's father, Lt. Col. Bobby Harris, served two tours of duty.</desc>
+    <icon src="https://iptv-epg.org/images/-fiTgGFO5Thrg3g3rKae_YF7CD6NpfxCv2IsWq0VOXst3tvmZjTQG06v9woukCLs6YQw5SUc54znx9FqjNxYpVToc3kPHNS8sSXf1n1DZkc" />
+    <title lang="en">Vietnam: Footsteps of My Father With Harris Faulkner</title>
+  </programme>
+  <programme start="20260704040000 +0000" stop="20260704050000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <date>2025</date>
+    <desc lang="en">A look at the men and women buried at Arlington National Cemetery who sacrificed so much for this country.</desc>
+    <icon src="https://iptv-epg.org/images/Vkl8YJZh5OHIosByS534hQ8SdrergJjs-fff0blkwuHW8ucMY1RRXvGkEuOBrsLDuxv_DwcrKk3qxlRFGzJosHFhS68ah5T81K7au2CppG8" />
+    <title lang="en">The Unsung Of Arlington</title>
+  </programme>
+  <programme start="20260704050000 +0000" stop="20260704060000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2025</date>
+    <desc lang="en">Bret Baier reveals the storied life of Theodore Roosevelt, a leader whose passion, daring, and prowess left an indelible mark on the fabric of our country.</desc>
+    <icon src="https://iptv-epg.org/images/3vmDCtRQ4GjQt_PzGn1IMW5ZCJhnmGoXKnBD_R7Qq8KOwMRJLlgjd3-huzu5WU0Qwp2VwAhFxqxSKzMnG0sMPI82yd-6apoz1H5TpCTPuGg" />
+    <title lang="en">To Rescue the American Spirit</title>
+  </programme>
+  <programme start="20260704060000 +0000" stop="20260704070000 +0000" channel="FoxBusiness.us">
+    <category lang="en">Interview</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Special</category>
+    <credits>
+      <actor>Dana Perino</actor>
+      <actor>George Bush</actor>
+    </credits>
+    <date>2021</date>
+    <desc lang="en">Dana Perino sits down with former President George W. Bush in Dallas to talk about his new book, "Out of Many, One: Portraits of America's Immigrants."</desc>
+    <icon src="https://iptv-epg.org/images/TqKByTadIB1XpSwcOv6e-jywzYYr6BVDMntsS9PXYFbFdyBHeYE9OIcAy7R6iW07Umq4YhQboEO4nl2h223Wz-nMEhyDepmiTrrAo9Stkgc" />
+    <title lang="en">43 Portraits: George W. Bush</title>
+  </programme>
+  <programme start="20260704070000 +0000" stop="20260704080000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2026</date>
+    <desc lang="en">Dennis Quaid stars as the Great Communicator. But making the film was no easy feat.</desc>
+    <icon src="https://iptv-epg.org/images/CDBMHHwrcXuIhuStjPB1gklTBpmo_84uXHG3EHaqDVzCW3IubyvpY4dPy4ORz7UZapcA_xWRqj1y_Ffa718ZAuS92o__5ev9idAtWMIioQ4" />
+    <title lang="en">Making REAGAN</title>
+  </programme>
+  <programme start="20260704080000 +0000" stop="20260704090000 +0000" channel="FoxBusiness.us">
+    <date>1000</date>
+    <desc lang="en">EVEL: America's Daredevil</desc>
+    <icon src="https://iptv-epg.org/images/hA7IQlbRqpD4EcZfShxSlvu3ZmqNQvfI0SqC9bf6X3BMTXZQhKU0vgMwB0k0uyg7G0xvZnj4DxfsX2hk8TS8SAuydOL9WaauwO1ACU4OGOM" />
+    <title lang="en">EVEL: America's Daredevil</title>
+  </programme>
+  <programme start="20260704090000 +0000" stop="20260704100000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <date>2026</date>
+    <desc lang="en">In the summer of 1776, Thomas Jefferson is tasked with writing the Declaration of Independence in Philadelphia-while in NY a secret conspiracy threatens the life of General George Washington.</desc>
+    <icon src="https://iptv-epg.org/images/09XDb4DHxVmpwHLT2d38f5QJDD-5iQnm_ykWukY_sH7MoNJtNWWrQhn-x2mUii0V118z7b00cspy4jXnWttE7963oJAhCio3zoeAcTebKxY" />
+    <title lang="en">The Patriot War</title>
+  </programme>
+  <programme start="20260704100000 +0000" stop="20260704110000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">Vietnam is a nation both ancient and modern, bursting with life and rooted in history; it is Vietnam where American soldiers fought more than 50 years ago and where Harris Faulkner's father, Lt. Col. Bobby Harris, served two tours of duty.</desc>
+    <icon src="https://iptv-epg.org/images/-fiTgGFO5Thrg3g3rKae_YF7CD6NpfxCv2IsWq0VOXst3tvmZjTQG06v9woukCLs6YQw5SUc54znx9FqjNxYpVToc3kPHNS8sSXf1n1DZkc" />
+    <title lang="en">Vietnam: Footsteps of My Father With Harris Faulkner</title>
+  </programme>
+  <programme start="20260704110000 +0000" stop="20260704120000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <date>2025</date>
+    <desc lang="en">A look at the men and women buried at Arlington National Cemetery who sacrificed so much for this country.</desc>
+    <icon src="https://iptv-epg.org/images/Vkl8YJZh5OHIosByS534hQ8SdrergJjs-fff0blkwuHW8ucMY1RRXvGkEuOBrsLDuxv_DwcrKk3qxlRFGzJosHFhS68ah5T81K7au2CppG8" />
+    <title lang="en">The Unsung Of Arlington</title>
+  </programme>
+  <programme start="20260704120000 +0000" stop="20260704130000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2025</date>
+    <desc lang="en">Bret Baier reveals the storied life of Theodore Roosevelt, a leader whose passion, daring, and prowess left an indelible mark on the fabric of our country.</desc>
+    <icon src="https://iptv-epg.org/images/3vmDCtRQ4GjQt_PzGn1IMW5ZCJhnmGoXKnBD_R7Qq8KOwMRJLlgjd3-huzu5WU0Qwp2VwAhFxqxSKzMnG0sMPI82yd-6apoz1H5TpCTPuGg" />
+    <title lang="en">To Rescue the American Spirit</title>
+  </programme>
+  <programme start="20260704130000 +0000" stop="20260704140000 +0000" channel="FoxBusiness.us">
+    <category lang="en">Interview</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Special</category>
+    <credits>
+      <actor>Dana Perino</actor>
+      <actor>George Bush</actor>
+    </credits>
+    <date>2021</date>
+    <desc lang="en">Dana Perino sits down with former President George W. Bush in Dallas to talk about his new book, "Out of Many, One: Portraits of America's Immigrants."</desc>
+    <icon src="https://iptv-epg.org/images/TqKByTadIB1XpSwcOv6e-jywzYYr6BVDMntsS9PXYFbFdyBHeYE9OIcAy7R6iW07Umq4YhQboEO4nl2h223Wz-nMEhyDepmiTrrAo9Stkgc" />
+    <title lang="en">43 Portraits: George W. Bush</title>
+  </programme>
+  <programme start="20260704140000 +0000" stop="20260704150000 +0000" channel="FoxBusiness.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2026</date>
+    <desc lang="en">Dennis Quaid stars as the Great Communicator. But making the film was no easy feat.</desc>
+    <icon src="https://iptv-epg.org/images/CDBMHHwrcXuIhuStjPB1gklTBpmo_84uXHG3EHaqDVzCW3IubyvpY4dPy4ORz7UZapcA_xWRqj1y_Ffa718ZAuS92o__5ev9idAtWMIioQ4" />
+    <title lang="en">Making REAGAN</title>
+  </programme>
+  <programme start="20260704150000 +0000" stop="20260704160000 +0000" channel="FoxBusiness.us">
+    <category lang="en">American history</category>
+    <date>2026</date>
+    <desc lang="en">In the summer of 1776, Thomas Jefferson is tasked with writing the Declaration of Independence in Philadelphia-while in NY a secret conspiracy threatens the life of General George Washington.</desc>
+    <icon src="https://iptv-epg.org/images/09XDb4DHxVmpwHLT2d38f5QJDD-5iQnm_ykWukY_sH7MoNJtNWWrQhn-x2mUii0V118z7b00cspy4jXnWttE7963oJAhCio3zoeAcTebKxY" />
+    <title lang="en">The Patriot War</title>
+  </programme>
+  <programme start="20260704160000 +0000" stop="20260704170000 +0000" channel="FoxBusiness.us">
+    <category lang="en">Documentary</category>
+    <category lang="en">History</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E01 — Sam Adams &amp; Paul Revere - The Rebellion Begins
+The story behind the Sons of Liberty and how they started the fight for American independence leading to the infamous Boston Massacre.</desc>
+    <episode-num>S02 E01</episode-num>
+    <icon src="https://iptv-epg.org/images/kxqTpGQbgU4z5PwrseppUvYL8a42yL1AVw_LFpDMH8yY6wUPzo1ST9kfX5jO5joghcXDuj4phwW95uXiF0U9Uph-_5gVB9RBhAGPpbb-lJo" />
+    <previously-shown />
+    <title lang="en">Legends &amp; Lies: The Patriots</title>
+  </programme>
+  <programme start="20260704170000 +0000" stop="20260704180000 +0000" channel="FoxBusiness.us">
+    <category lang="en">Documentary</category>
+    <category lang="en">History</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S02 E02 — John Adams:Ready for War
+The first shots fire at the battle of Lexington and Concord; John Adams defends British troops killed at the Boston Massacre.</desc>
+    <episode-num>S02 E02</episode-num>
+    <icon src="https://iptv-epg.org/images/kxqTpGQbgU4z5PwrseppUvYL8a42yL1AVw_LFpDMH8yY6wUPzo1ST9kfX5jO5joghcXDuj4phwW95uXiF0U9Uph-_5gVB9RBhAGPpbb-lJo" />
+    <previously-shown />
+    <title lang="en">Legends &amp; Lies: The Patriots</title>
   </programme>
   </tv>
