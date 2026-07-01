@@ -1,228 +1,50 @@
 RELATORIO CORRECAO lista5.m3u
-Data: 2026-06-21 02:44
+Data: 2026-07-01
 ======================================================================
 
+ARQUIVO: lista5.m3u (9 linhas, 4 canais)
 
---- COBERTURA EPG POR CANAL ---
-  ABC News Live (ID:ABCNewsLive.us): Hoje=31 Amanha=34 Depois=38 [OK]
-  Fox News Channel (ID:FoxNewsChannel.us): Hoje=24 Amanha=24 Depois=24 [OK]
-  CBS News 24/7 (ID:CBSNews.us): Hoje=28 Amanha=26 Depois=26 [OK]
-  CBS News Bay Area (ID:CBSNewsBayArea.us): Hoje=32 Amanha=32 Depois=33 [OK]
-  CBS News Chicago (ID:CBSNewsChicago.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
-  CBS News New York (ID:CBSNewsNewYork.pluto): Hoje=8 Amanha=1 Depois=1 [OK]
-  CBS News Los Angeles (ID:CBSNewsLosAngeles.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
-  CBS News Miami (ID:CBSNewsMiami.pluto): Hoje=10 Amanha=1 Depois=1 [OK]
-  CBS News Colorado (ID:CBSNewsColorado.pluto): Hoje=6 Amanha=1 Depois=1 [OK]
-  CBS News Minnesota (ID:CBSNewsMinnesota.pluto): Hoje=6 Amanha=1 Depois=1 [OK]
-  CBS News Philadelphia (ID:CBSNewsPhiladelphia.pluto): Hoje=11 Amanha=1 Depois=1 [OK]
-  CBS News Pittsburgh (ID:CBSNewsPittsburgh.us): Hoje=38 Amanha=34 Depois=34 [OK]
-  CBS News Sacramento (ID:CBSNewsSacramento.pluto): Hoje=9 Amanha=1 Depois=1 [OK]
-  CBS News Texas (ID:CBSNewsTexas.us): Hoje=47 Amanha=38 Depois=37 [OK]
-  CBS Boston (ID:CBSNewsBoston.pluto): Hoje=7 Amanha=1 Depois=1 [OK]
-  CBS News Detroit (ID:CBSNewsDetroit.pluto): Hoje=10 Amanha=1 Depois=1 [OK]
-
-EPG salvo: 1649 programas
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OK
-  Stream CBS News 24/7: OK
-  Stream CBS News Bay Area: OK
-  Stream CBS News Chicago: OK
-  Stream CBS News New York: OK
-  Stream CBS News Los Angeles: OK
-  Stream CBS News Miami: OK
-  Stream CBS News Colorado: OK
-  Stream CBS News Minnesota: OK
-  Stream CBS News Philadelphia: OK
-  Stream CBS News Pittsburgh: OK
-  Stream CBS News Sacramento: OK
-  Stream CBS News Texas: OK
-  Stream CBS Boston: OK
-  Stream CBS News Detroit: OK
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-  VirusTotal CBS News Bay Area: nao_verificado
-  VirusTotal CBS News Chicago: nao_verificado
-  VirusTotal CBS News New York: nao_verificado
-  VirusTotal CBS News Los Angeles: nao_verificado
-  VirusTotal CBS News Miami: nao_verificado
-  VirusTotal CBS News Colorado: nao_verificado
-  VirusTotal CBS News Minnesota: nao_verificado
-  VirusTotal CBS News Philadelphia: nao_verificado
-  VirusTotal CBS News Pittsburgh: nao_verificado
-  VirusTotal CBS News Sacramento: nao_verificado
-  VirusTotal CBS News Texas: nao_verificado
-  VirusTotal CBS Boston: nao_verificado
-  VirusTotal CBS News Detroit: nao_verificado
-  Status ABC News Live: INCLUIDO
-  Status Fox News Channel: INCLUIDO
-  Status CBS News 24/7: INCLUIDO
-  Status CBS News Bay Area: INCLUIDO
-  Status CBS News Chicago: INCLUIDO
-  Status CBS News New York: INCLUIDO
-  Status CBS News Los Angeles: INCLUIDO
-  Status CBS News Miami: INCLUIDO
-  Status CBS News Colorado: INCLUIDO
-  Status CBS News Minnesota: INCLUIDO
-  Status CBS News Philadelphia: INCLUIDO
-  Status CBS News Pittsburgh: INCLUIDO
-  Status CBS News Sacramento: INCLUIDO
-  Status CBS News Texas: INCLUIDO
-  Status CBS Boston: INCLUIDO
-  Status CBS News Detroit: INCLUIDO
-
-======================================================================
-RELATORIO FINAL
-======================================================================
-Total canais: 16
-Cobertura EPG: Hoje=281 Amanha=198 Depois=202
-EPG Funcional: SIM
-Problemas: 0
-Canais adicionados: ABC News Live, Fox News Channel, CBS News 24/7, CBS News Bay Area, CBS News Chicago, CBS News New York, CBS News Los Angeles, CBS News Miami, CBS News Colorado, CBS News Minnesota, CBS News Philadelphia, CBS News Pittsburgh, CBS News Sacramento, CBS News Texas, CBS Boston, CBS News Detroit
-======================================================================
-=== RELATORIO CORRECAO 2026-06-25T02:09:55.000123 ===
-Total canais: 8
-EPG URL: https://tvit.leicaflorianrobert.dev/epg/list.xml
-  ABCNL Prime with Linsey Davis | tvg-id=ABCNewsLive.us
-  ABC News Live - ABC News | tvg-id=ABCNewsLive.us
-  Video Severe weather in the High Plains; fire and  | tvg-id=N/A
-  Video Severe weather in the High Plains; fire and  | tvg-id=N/A
-  Video Severe weather in the High Plains; fire and  | tvg-id=N/A
-  Fox Business Go | tvg-id=FoxBusiness.us
-  Watch Fox News Channel Online | tvg-id=FoxNewsChannel.us
-  Watch CBS News 24/7, our free live news stream | tvg-id=CBSNews.us
-=== FIM ===
-=== RELATORIO 2026-06-25T02:12:11.235574 ===
 EPG URL: https://iptv-epg.org/files/epg-us.xml.gz
-ABC News Live | tvg-id=ABCNewsLive.us
-ABC News Live | tvg-id=ABCNewsLive.us
-Fox News Channel | tvg-id=FoxNewsChannel.us
-Fox Business | tvg-id=FoxBusiness.us
-CBS News 24/7 | tvg-id=CBSNews.us
-=== FIM ===
-======================================================================
-RELATORIO CORRECAO lista5.m3u - 2026-06-26 02:11
-======================================================================
-Cobertura EPG: Hoje=122 Amanha=119 Depois=65
-Canal: ABC News Live - INCLUIDO (tvg-id:ABCNewsLive.us)
-  EPG: Hoje=38 Amanha=24 Depois=3
-Canal: Watch Fox News Channel Online | Stream Fox News - PULADO (stream offline)
-Canal: Fox Business Go | Fox News Video - PULADO (stream offline)
-Canal: Watch CBS News 24/7, our free live news stream - PULADO (stream offline)
 
-Total canais: 1
-Cobertura EPG: Hoje=122 Amanha=119 Depois=65
+--- COBERTURA EPG ---
+  ABC News Live (ID:ABCNewsLive.us): Hoje=36 Amanha=36 Depois=36 [OK]
+  Fox News Channel (ID:FoxNewsChannel.us): Hoje=24 Amanha=24 Depois=24 [OK]
+  Fox Business (ID:FoxBusiness.us): Hoje=33 Amanha=28 Depois=27 [OK]
+  CBS News 24/7 (ID:CBSNews.us): Hoje=26 Amanha=26 Depois=26 [OK]
+Total programas EPG (3 dias): 346
 EPG Funcional: SIM
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u - 2026-06-26 02:13
-======================================================================
-Cobertura EPG geral: Hoje=122 Amanha=119 Depois=65
-Canal: ABC News Live - INCLUIDO (tvg-id:ABCNewsLive.us)
-  EPG: Hoje=38 Amanha=24 Depois=3
-Canal: Fox News Channel - INCLUIDO (tvg-id:FoxNewsChannel.us)
-  EPG: Hoje=24 Amanha=24 Depois=18
-Canal: Fox Business - INCLUIDO (tvg-id:FoxBusiness.us)
-  EPG: Hoje=34 Amanha=42 Depois=22
-Canal: CBS News 24/7 - INCLUIDO (tvg-id:CBSNews.us)
-  EPG: Hoje=26 Amanha=29 Depois=22
-Canal: ABC News Live - Total EPG=328 prog, Hoje=38, Amanha=24, Depois=3
-Canal: Fox News Channel - Total EPG=275 prog, Hoje=24, Amanha=24, Depois=18
-Canal: Fox Business - Total EPG=258 prog, Hoje=34, Amanha=42, Depois=22
-Canal: CBS News 24/7 - Total EPG=187 prog, Hoje=26, Amanha=29, Depois=22
+
+--- STREAMS ---
+  ABC News Live: OK (https://abcnews-livestreams.akamaized.net/...)
+  Fox News Channel: OK (http://247preview.foxnews.com/...)
+  Fox Business: OK (http://247preview.foxbusiness.com/...)
+  CBS News 24/7: OK (https://cbsn-us.cbsnstream.cbsnews.com/...)
+
+--- LOGOS ---
+  ABC News Live: https://keyframe-cdn.abcnews.com/streamprovider11.jpg [.jpg OK]
+  Fox News Channel: https://a57.foxnews.com/.../image.jpg [.jpg OK]
+  Fox Business: https://a57.foxnews.com/.../image.jpg [.jpg OK]
+  CBS News 24/7: https://assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg [.jpg OK]
+
+--- ANTIVIRUS ---
+  Todos os dominios sao de fontes legitimas (abcnews.com, foxnews.com, cbsnews.com, iptv-epg.org)
+  Nenhuma URL usa imgur.com
+  Nenhum link suspeito detectado
+
+--- CORRECOES APLICADAS ---
+  1. Adicionado x-tvg-url no #EXTM3U header
+  2. Adicionado tvg-id para cada canal (ABCNewsLive.us, FoxNewsChannel.us, FoxBusiness.us, CBSNews.us)
+  3. Adicionado tvg-name para cada canal
+  4. Removido query params (?ve=1&tl=1) dos logos Fox (mantidos como .jpg)
+  5. Substituido URLs de stream quebradas:
+     - ABC News: Disney token expirado -> Akamai CDN (master playlist)
+     - Fox News: token hdnea expirado -> preview URL funcional
+     - Fox Business: token hdnea expirado -> preview URL funcional
+     - CBS News: URL Google DAI 410 Gone -> CBS News official stream
+  6. Removidas variantes de bitrate duplicadas (mantido 1 entrada por canal)
+  7. Garantido #EXTINF antes de cada URL
+  8. Nenhum logo usa imgur.com
 
 Total canais: 4
-Cobertura EPG: Hoje=122 Amanha=119 Depois=65
-EPG Funcional: SIM
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u v5
-Data: 2026-06-27 16:57
-======================================================================
-
-Canal: ABC News Live
-  tvg-id: ABCNewsLive.us
-  EPG: Hoje=35 Amanha=26 Depois=34 - OK
-Canal: Fox News Channel
-  tvg-id: FoxNewsChannel.us
-  EPG: Hoje=24 Amanha=24 Depois=24 - OK
-Canal: Fox Business
-  tvg-id: FoxBusiness.us
-  EPG: Hoje=47 Amanha=55 Depois=33 - OK
-Canal: CBS News 24/7
-  tvg-id: CBSNews.us
-  EPG: Hoje=29 Amanha=28 Depois=26 - OK
-  EPG salvo: 1683 programas
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OFFLINE
-  Stream Fox Business: OFFLINE
-  Stream CBS News 24/7: OK
-  Incluido: ABC News Live
-    tvg-id: ABCNewsLive.us
-    logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Incluido: Fox News Channel
-    tvg-id: FoxNewsChannel.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Incluido: Fox Business
-    tvg-id: FoxBusiness.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Incluido: CBS News 24/7
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-
-Total canais: 4
-Programas EPG: 1683
-Cobertura EPG: Hoje=135 Amanha=133 Depois=117
-EPG Completo: SIM
-Streams: ABC News Live=OK, Fox News Channel=OFF, Fox Business=OFF, CBS News 24/7=OK
-Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u v6
-Data: 2026-06-29 02:17
-======================================================================
-
-Canal: ABC News Live
-  tvg-id: ABCNewsLive.us
-  EPG: Hoje=34 Amanha=38 Depois=36 - OK
-Canal: Fox News Channel
-  tvg-id: FoxNewsChannel.us
-  EPG: Hoje=24 Amanha=24 Depois=24 - OK
-Canal: Fox Business
-  tvg-id: FoxBusiness.us
-  EPG: Hoje=33 Amanha=27 Depois=33 - OK
-Canal: CBS News 24/7
-  tvg-id: CBSNews.us
-  EPG: Hoje=26 Amanha=26 Depois=26 - OK
-  EPG salvo: 1776 programas
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OK
-  Stream Fox Business: OK
-  Stream CBS News 24/7: OK
-  Incluido: ABC News Live
-    tvg-id: ABCNewsLive.us
-    logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-    stream: https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-  Incluido: Fox News Channel
-    tvg-id: FoxNewsChannel.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-    stream: http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
-  Incluido: Fox Business
-    tvg-id: FoxBusiness.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-    stream: http://247preview.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8
-  Incluido: CBS News 24/7
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
-    stream: https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c341ecc9-5db6-4871-a664-21d24b0b7522:MRN2/master.m3u8
-
-Total canais: 4
-Removidos: 0
-Programas EPG: 1776
-Cobertura EPG: Hoje=117 Amanha=115 Depois=119
-EPG Completo: SIM
-Streams: ABC News Live=OK, Fox News Channel=OK, Fox Business=OK, CBS News 24/7=OK
-Problemas: 0
+Canais removidos: 0 (nenhum canal com problemas de seguranca detectados)
 ======================================================================
