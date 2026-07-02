@@ -2,6 +2,7 @@
 import gzip, re, sys, os, io, urllib.request
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
+from datetime import datetime, timedelta, timezone
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
 OUTPUT = "EPGFULL.xml.gz"
@@ -10,6 +11,11 @@ EPG_URLS = [
     "https://iptv-epg.org/files/epg-mx.xml.gz",
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-ar.xml.gz",
+    "https://iptv-epg.org/files/epg-pt.xml.gz",
+    "https://iptv-epg.org/files/epg-fr.xml.gz",
+    "https://iptv-epg.org/files/epg-co.xml.gz",
+    "https://iptv-epg.org/files/epg-ve.xml.gz",
+    "https://iptv-epg.org/files/epg-es.xml.gz",
 ]
 
 def norm(s):
@@ -29,7 +35,7 @@ for m in re.finditer(r'tvg-id="([^"]*)"', m3u_content):
     if tid and tid != "0":
         tvg_ids.add(tid)
 tvg_norm = {norm(t): t for t in tvg_ids}
-print(f"   {len(tvg_ids)} unique tvg-ids found")
+print(f"   {len(tvg_ids)} unique tvg-ids found: {sorted(tvg_ids)}")
 
 if not tvg_ids:
     print("ERROR: No tvg-ids found!")
@@ -104,6 +110,55 @@ print(f"\nTotal: {len(matched_ids)} channels matched, {len(programme_elements)} 
 missing = sorted(tvg_ids - matched_ids)
 if missing:
     print(f"Missing from EPG ({len(missing)}): {missing}")
+    print("\nChecking ALL_SOURCES1 for missing channels...")
+    try:
+        all_url = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+        req = urllib.request.Request(all_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=600) as resp:
+            all_data = resp.read()
+        print(f"   Got {len(all_data)} bytes")
+        with gzip.open(io.BytesIO(all_data), "rb") as f:
+            for event, elem in ET.iterparse(f, events=("end",)):
+                if elem.tag == "channel":
+                    cid = elem.get("id", "")
+                    if not cid:
+                        elem.clear()
+                        continue
+                    key = None
+                    if cid in tvg_ids:
+                        key = cid
+                    elif norm(cid) in tvg_norm:
+                        key = tvg_norm[norm(cid)]
+                    if key and key not in matched_ids:
+                        matched_ids.add(key)
+                        channel_elements[key] = ET.tostring(elem, encoding="unicode")
+                        ch_count = 1
+                    elem.clear()
+                elif elem.tag == "programme":
+                    ch = elem.get("channel", "")
+                    if not ch:
+                        elem.clear()
+                        continue
+                    key = None
+                    if ch in matched_ids:
+                        key = ch
+                    elif norm(ch) in tvg_norm and tvg_norm[norm(ch)] in matched_ids:
+                        key = tvg_norm[norm(ch)]
+                    if key:
+                        start = elem.get("start", "")
+                        stop = elem.get("stop", "")
+                        pkey = f"{key}|{start}|{stop}"
+                        if pkey not in seen_progs:
+                            seen_progs.add(pkey)
+                            programme_elements[pkey] = ET.tostring(elem, encoding="unicode")
+                    elem.clear()
+    except Exception as e:
+        print(f"   -> Error: {e}")
+
+    missing2 = sorted(tvg_ids - matched_ids)
+    print(f"After ALL_SOURCES1: {len(matched_ids)} channels matched")
+    if missing2 != missing:
+        print(f"Still missing ({len(missing2)}): {missing2}")
 else:
     print("All M3U channels found in EPG sources!")
 
@@ -129,7 +184,6 @@ print()
 print("=" * 60)
 print("4. Testing EPG")
 print("=" * 60)
-from datetime import datetime, timedelta, timezone
 with gzip.open(OUTPUT, "rb") as f:
     test_root = ET.fromstring(f.read())
 canais = test_root.findall("channel")
