@@ -19,3 +19,45 @@ Canal adicionado: CBS News 24/7
 Verificacao final: OK
 Canais: 4 | EPG: 1776progs | EPG_ok: True | Streams: 3/5 | Problemas: 0
 ======================================================================
+======================================================================
+RELATORIO CORRECAO lista5.m3u v5
+Data: 2026-07-03 01:53
+======================================================================
+
+Canal: ABC News Live
+  tvg-id: ABCNewsLive.us
+  EPG: Hoje=37 Amanha=15 Depois=26 - OK
+Canal: Fox News Channel
+  tvg-id: FoxNewsChannel.us
+  EPG: Hoje=24 Amanha=23 Depois=24 - OK
+Canal: Fox Business
+  tvg-id: FoxBusiness.us
+  EPG: Hoje=27 Amanha=24 Depois=32 - OK
+Canal: CBS News 24/7
+  tvg-id: CBSNews.us
+  EPG: Hoje=26 Amanha=31 Depois=25 - OK
+  EPG salvo: 2225 programas
+  Stream ABC News Live: OK
+  Stream Fox News Channel: OFFLINE
+  Stream Fox Business: OFFLINE
+  Stream CBS News 24/7: OFFLINE
+  Incluido: ABC News Live
+    tvg-id: ABCNewsLive.us
+    logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  Incluido: Fox News Channel
+    tvg-id: FoxNewsChannel.us
+    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
+  Incluido: Fox Business
+    tvg-id: FoxBusiness.us
+    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
+  Incluido: CBS News 24/7
+    tvg-id: CBSNews.us
+    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+
+Total canais: 4
+Programas EPG: 2225
+Cobertura EPG: Hoje=114 Amanha=93 Depois=107
+EPG Completo: SIM
+Streams: ABC News Live=OK, Fox News Channel=OFF, Fox Business=OFF, CBS News 24/7=OFF
+Problemas: 0
+======================================================================
