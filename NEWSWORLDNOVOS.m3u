@@ -357,7 +357,7 @@ https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/ind
 https://halktv-live.daioncdn.net/halktv/halktv.m3u8
 #EXTINF:-1 tvg-id="76718" tvg-name="HispanTV" tvg-logo="https://epg.pw/media/logos/tvg-id/hispantv-ir.png" group-title="NEWS WORLD",HispanTV
 https://live.presstv.ir/hls/hispantv.m3u8
-#EXTINF:-1 tvg-id="523278" tvg-name="Iran International" tvg-logo="https://epg.pw/media/logos/tvg-id/iran-international-uk.png" group-title="NEWS WORLD",Iran International
+#EXTINF:-1 tvg-id="" tvg-name="Iran International" tvg-logo="https://epg.pw/media/logos/tvg-id/iran-international-uk.png" group-title="NEWS WORLD",Iran International
 https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8
 #EXTINF:-1 tvg-id="543070" tvg-name="India Today" tvg-logo="https://epg.pw/media/logos/tvg-id/india-today-in.png" group-title="NEWS WORLD",India Today
 https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/playlist.m3u8
@@ -687,7 +687,7 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:informacionnyy.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="76723" tvg-name="Известиia" tvg-logo="https://epg.pw/media/logos/tvg-id/izvestia-ru.png" group-title="NEWS WORLD",Известиia
 https://igi-hls.cdnvideo.ru/igi/igi_tcode/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal.26.uy" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
+#EXTINF:-1 tvg-id="[CAN26SD].Canal.26.uy" tvg-name="Canal 26" tvg-logo="https://epg.pw/media/logos/tvg-id/canal-26-ar.png" group-title="NEWS WORLD",Canal 26
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:-1 tvg-id="464962" tvg-name="Telemundo Nuevo México" tvg-logo="https://epg.pw/media/logos/tvg-id/telemundo-us.png" group-title="NEWS WORLD",Telemundo Nuevo México
 https://nbculocallive.akamaized.net/hls/live/2037500/elpaso/stream2/master.m3u8
@@ -696,6 +696,8 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 #EXTINF:-1 tvg-id="523339" tvg-name="TV Brasil" tvg-logo="https://epg.pw/media/logos/tvg-id/tv-brasil-br.png" group-title="NEWS WORLD",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="523341" tvg-name="GloboNews" tvg-logo="https://epg.pw/media/logos/tvg-id/globo-news-br.png" group-title="NEWS WORLD",GloboNews
-http://143.14.178.40:7777/GloboNews_HD/index.m3u8
+https://playplusnews-lh.akamaihd.net/i/ppnews=1/master.m3u8
 #EXTINF:-1 tvg-id="523314" tvg-name="BandNews TV" tvg-logo="https://epg.pw/media/logos/tvg-id/band-news-br.png" group-title="NEWS WORLD",BandNews TV
-http://143.14.178.40:7777/Band_News_HD/index.m3u8
+https://evpp.mmu.ac.in/live/bandnewstv/bandnewstv.m3u8
+#EXTINF:-1 tvg-id="417184" tvg-name="Record News" tvg-logo="https://epg.pw/media/logos/tvg-id/record-news-br.png" group-title="NEWS WORLD",Record News
+https://playplusnews-lh.akamaihd.net/i/ppnews=1/master.m3u8
