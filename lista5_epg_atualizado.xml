@@ -1,363 +1,487 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv date="20260621171825">
-<channel id="ABCNewsLive.us">
-<display-name lang="en">ABC News Live</display-name>
-<icon src="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" />
-</channel>
-<channel id="FoxNewsChannel.us">
-<display-name lang="en">Fox News Channel</display-name>
-<icon src="https://a57.foxnews.com/static/foxnews/fox-news-logo.jpg" />
-</channel>
-<channel id="FoxBusiness.us">
-<display-name lang="en">Fox Business</display-name>
-<icon src="https://a57.foxnews.com/static/foxnews/fox-business-logo.jpg" />
-</channel>
-<programme channel="ABCNewsLive.us" start="20260621T060000 +0000" stop="20260621T090000 +0000">
-<title lang="en">Good Morning America</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T090000 +0000" stop="20260621T120000 +0000">
-<title lang="en">World News This Morning</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T120000 +0000" stop="20260621T130000 +0000">
-<title lang="en">ABC World News Midday</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T130000 +0000" stop="20260621T170000 +0000">
-<title lang="en">ABC News Live</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T170000 +0000" stop="20260621T180000 +0000">
-<title lang="en">World News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T180000 +0000" stop="20260621T220000 +0000">
-<title lang="en">ABC News Prime</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T220000 +0000" stop="20260621T230000 +0000">
-<title lang="en">Nightline</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260621T230000 +0000" stop="20260621T060000 +0000">
-<title lang="en">ABC World News Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T060000 +0000" stop="20260622T090000 +0000">
-<title lang="en">Good Morning America</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T090000 +0000" stop="20260622T120000 +0000">
-<title lang="en">World News This Morning</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T120000 +0000" stop="20260622T130000 +0000">
-<title lang="en">ABC World News Midday</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T130000 +0000" stop="20260622T170000 +0000">
-<title lang="en">ABC News Live</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T170000 +0000" stop="20260622T180000 +0000">
-<title lang="en">World News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T180000 +0000" stop="20260622T220000 +0000">
-<title lang="en">ABC News Prime</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T220000 +0000" stop="20260622T230000 +0000">
-<title lang="en">Nightline</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260622T230000 +0000" stop="20260622T060000 +0000">
-<title lang="en">ABC World News Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T060000 +0000" stop="20260623T090000 +0000">
-<title lang="en">Good Morning America</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T090000 +0000" stop="20260623T120000 +0000">
-<title lang="en">World News This Morning</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T120000 +0000" stop="20260623T130000 +0000">
-<title lang="en">ABC World News Midday</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T130000 +0000" stop="20260623T170000 +0000">
-<title lang="en">ABC News Live</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T170000 +0000" stop="20260623T180000 +0000">
-<title lang="en">World News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T180000 +0000" stop="20260623T220000 +0000">
-<title lang="en">ABC News Prime</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T220000 +0000" stop="20260623T230000 +0000">
-<title lang="en">Nightline</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="ABCNewsLive.us" start="20260623T230000 +0000" stop="20260623T060000 +0000">
-<title lang="en">ABC World News Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T060000 +0000" stop="20260621T090000 +0000">
-<title lang="en">Fox &amp; Friends First</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T090000 +0000" stop="20260621T120000 +0000">
-<title lang="en">America's Newsroom</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T120000 +0000" stop="20260621T130000 +0000">
-<title lang="en">Happening Now</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T130000 +0000" stop="20260621T160000 +0000">
-<title lang="en">The Story with Martha MacCallum</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T160000 +0000" stop="20260621T170000 +0000">
-<title lang="en">Your World with Neil Cavuto</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T170000 +0000" stop="20260621T180000 +0000">
-<title lang="en">The Five</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T180000 +0000" stop="20260621T200000 +0000">
-<title lang="en">Fox News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T200000 +0000" stop="20260621T210000 +0000">
-<title lang="en">Tucker Carlson Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T210000 +0000" stop="20260621T220000 +0000">
-<title lang="en">Hannity</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T220000 +0000" stop="20260621T230000 +0000">
-<title lang="en">The Ingraham Angle</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260621T230000 +0000" stop="20260621T060000 +0000">
-<title lang="en">Fox News @ Night</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T060000 +0000" stop="20260622T090000 +0000">
-<title lang="en">Fox &amp; Friends First</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T090000 +0000" stop="20260622T120000 +0000">
-<title lang="en">America's Newsroom</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T120000 +0000" stop="20260622T130000 +0000">
-<title lang="en">Happening Now</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T130000 +0000" stop="20260622T160000 +0000">
-<title lang="en">The Story with Martha MacCallum</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T160000 +0000" stop="20260622T170000 +0000">
-<title lang="en">Your World with Neil Cavuto</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T170000 +0000" stop="20260622T180000 +0000">
-<title lang="en">The Five</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T180000 +0000" stop="20260622T200000 +0000">
-<title lang="en">Fox News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T200000 +0000" stop="20260622T210000 +0000">
-<title lang="en">Tucker Carlson Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T210000 +0000" stop="20260622T220000 +0000">
-<title lang="en">Hannity</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T220000 +0000" stop="20260622T230000 +0000">
-<title lang="en">The Ingraham Angle</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260622T230000 +0000" stop="20260622T060000 +0000">
-<title lang="en">Fox News @ Night</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T060000 +0000" stop="20260623T090000 +0000">
-<title lang="en">Fox &amp; Friends First</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T090000 +0000" stop="20260623T120000 +0000">
-<title lang="en">America's Newsroom</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T120000 +0000" stop="20260623T130000 +0000">
-<title lang="en">Happening Now</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T130000 +0000" stop="20260623T160000 +0000">
-<title lang="en">The Story with Martha MacCallum</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T160000 +0000" stop="20260623T170000 +0000">
-<title lang="en">Your World with Neil Cavuto</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T170000 +0000" stop="20260623T180000 +0000">
-<title lang="en">The Five</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T180000 +0000" stop="20260623T200000 +0000">
-<title lang="en">Fox News Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T200000 +0000" stop="20260623T210000 +0000">
-<title lang="en">Tucker Carlson Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T210000 +0000" stop="20260623T220000 +0000">
-<title lang="en">Hannity</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T220000 +0000" stop="20260623T230000 +0000">
-<title lang="en">The Ingraham Angle</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxNewsChannel.us" start="20260623T230000 +0000" stop="20260623T060000 +0000">
-<title lang="en">Fox News @ Night</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T060000 +0000" stop="20260621T090000 +0000">
-<title lang="en">Mornings with Maria</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T090000 +0000" stop="20260621T120000 +0000">
-<title lang="en">Varney &amp; Co.</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T120000 +0000" stop="20260621T140000 +0000">
-<title lang="en">Cavuto: Coast to Coast</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T140000 +0000" stop="20260621T160000 +0000">
-<title lang="en">The Claman Countdown</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T160000 +0000" stop="20260621T170000 +0000">
-<title lang="en">Making Money</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T170000 +0000" stop="20260621T180000 +0000">
-<title lang="en">The Bottom Line</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T180000 +0000" stop="20260621T190000 +0000">
-<title lang="en">Fox Business Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T190000 +0000" stop="20260621T220000 +0000">
-<title lang="en">Kudlow</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T220000 +0000" stop="20260621T230000 +0000">
-<title lang="en">The Big Money Show</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260621T230000 +0000" stop="20260621T060000 +0000">
-<title lang="en">Fox Business Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T060000 +0000" stop="20260622T090000 +0000">
-<title lang="en">Mornings with Maria</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T090000 +0000" stop="20260622T120000 +0000">
-<title lang="en">Varney &amp; Co.</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T120000 +0000" stop="20260622T140000 +0000">
-<title lang="en">Cavuto: Coast to Coast</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T140000 +0000" stop="20260622T160000 +0000">
-<title lang="en">The Claman Countdown</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T160000 +0000" stop="20260622T170000 +0000">
-<title lang="en">Making Money</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T170000 +0000" stop="20260622T180000 +0000">
-<title lang="en">The Bottom Line</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T180000 +0000" stop="20260622T190000 +0000">
-<title lang="en">Fox Business Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T190000 +0000" stop="20260622T220000 +0000">
-<title lang="en">Kudlow</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T220000 +0000" stop="20260622T230000 +0000">
-<title lang="en">The Big Money Show</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260622T230000 +0000" stop="20260622T060000 +0000">
-<title lang="en">Fox Business Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T060000 +0000" stop="20260623T090000 +0000">
-<title lang="en">Mornings with Maria</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T090000 +0000" stop="20260623T120000 +0000">
-<title lang="en">Varney &amp; Co.</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T120000 +0000" stop="20260623T140000 +0000">
-<title lang="en">Cavuto: Coast to Coast</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T140000 +0000" stop="20260623T160000 +0000">
-<title lang="en">The Claman Countdown</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T160000 +0000" stop="20260623T170000 +0000">
-<title lang="en">Making Money</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T170000 +0000" stop="20260623T180000 +0000">
-<title lang="en">The Bottom Line</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T180000 +0000" stop="20260623T190000 +0000">
-<title lang="en">Fox Business Tonight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T190000 +0000" stop="20260623T220000 +0000">
-<title lang="en">Kudlow</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T220000 +0000" stop="20260623T230000 +0000">
-<title lang="en">The Big Money Show</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
-<programme channel="FoxBusiness.us" start="20260623T230000 +0000" stop="20260623T060000 +0000">
-<title lang="en">Fox Business Overnight</title>
-<desc lang="en">Live news coverage</desc>
-</programme>
+<tv date="20260704100207" generator-info-name="JCTV EPG Fix">
+  <channel id="ABCNewsLive.us">
+    <display-name lang="en">ABC News Live</display-name>
+    <icon src="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" />
+  </channel>
+  <channel id="FoxNewsChannel.us">
+    <display-name lang="en">Fox News Channel</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2727a4e5-e7cb-40b6-bebb-cb06e3dc7e3f/adc0efd6-e90f-4f85-a053-cb0e71969813/1280x720/match/400/225/image.jpg" />
+  </channel>
+  <channel id="FoxBusiness.us">
+    <display-name lang="en">Fox Business</display-name>
+    <icon src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&amp;tl=1" />
+  </channel>
+  <channel id="CBSNews.us">
+    <display-name lang="en">CBS News 24/7</display-name>
+    <icon src="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" />
+  </channel>
+  <programme channel="ABCNewsLive.us" start="20260704T060000 +0000" stop="20260704T090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T090000 +0000" stop="20260704T120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T120000 +0000" stop="20260704T130000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T130000 +0000" stop="20260704T170000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T170000 +0000" stop="20260704T180000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T180000 +0000" stop="20260704T220000 +0000">
+    <title lang="en">ABC News Prime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T220000 +0000" stop="20260704T230000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260704T230000 +0000" stop="20260704T060000 +0000">
+    <title lang="en">ABC World News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T060000 +0000" stop="20260705T090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T090000 +0000" stop="20260705T120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T120000 +0000" stop="20260705T130000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T130000 +0000" stop="20260705T170000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T170000 +0000" stop="20260705T180000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T180000 +0000" stop="20260705T220000 +0000">
+    <title lang="en">ABC News Prime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T220000 +0000" stop="20260705T230000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260705T230000 +0000" stop="20260705T060000 +0000">
+    <title lang="en">ABC World News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T060000 +0000" stop="20260706T090000 +0000">
+    <title lang="en">Good Morning America</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T090000 +0000" stop="20260706T120000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T120000 +0000" stop="20260706T130000 +0000">
+    <title lang="en">ABC World News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T130000 +0000" stop="20260706T170000 +0000">
+    <title lang="en">ABC News Live</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T170000 +0000" stop="20260706T180000 +0000">
+    <title lang="en">World News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T180000 +0000" stop="20260706T220000 +0000">
+    <title lang="en">ABC News Prime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T220000 +0000" stop="20260706T230000 +0000">
+    <title lang="en">Nightline</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="ABCNewsLive.us" start="20260706T230000 +0000" stop="20260706T060000 +0000">
+    <title lang="en">ABC World News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T060000 +0000" stop="20260704T090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T090000 +0000" stop="20260704T120000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T120000 +0000" stop="20260704T140000 +0000">
+    <title lang="en">The Story with Martha MacCallum</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T140000 +0000" stop="20260704T160000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T160000 +0000" stop="20260704T170000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T170000 +0000" stop="20260704T180000 +0000">
+    <title lang="en">Special Report with Bret Baier</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T180000 +0000" stop="20260704T200000 +0000">
+    <title lang="en">Fox News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T200000 +0000" stop="20260704T210000 +0000">
+    <title lang="en">Jesse Watters Primetime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T210000 +0000" stop="20260704T220000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T220000 +0000" stop="20260704T230000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T230000 +0000" stop="20260704T010000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260704T010000 +0000" stop="20260704T060000 +0000">
+    <title lang="en">Overnight Programming</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T060000 +0000" stop="20260705T090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T090000 +0000" stop="20260705T120000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T120000 +0000" stop="20260705T140000 +0000">
+    <title lang="en">The Story with Martha MacCallum</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T140000 +0000" stop="20260705T160000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T160000 +0000" stop="20260705T170000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T170000 +0000" stop="20260705T180000 +0000">
+    <title lang="en">Special Report with Bret Baier</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T180000 +0000" stop="20260705T200000 +0000">
+    <title lang="en">Fox News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T200000 +0000" stop="20260705T210000 +0000">
+    <title lang="en">Jesse Watters Primetime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T210000 +0000" stop="20260705T220000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T220000 +0000" stop="20260705T230000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T230000 +0000" stop="20260705T010000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260705T010000 +0000" stop="20260705T060000 +0000">
+    <title lang="en">Overnight Programming</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T060000 +0000" stop="20260706T090000 +0000">
+    <title lang="en">Fox &amp; Friends</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T090000 +0000" stop="20260706T120000 +0000">
+    <title lang="en">America's Newsroom</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T120000 +0000" stop="20260706T140000 +0000">
+    <title lang="en">The Story with Martha MacCallum</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T140000 +0000" stop="20260706T160000 +0000">
+    <title lang="en">Your World with Neil Cavuto</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T160000 +0000" stop="20260706T170000 +0000">
+    <title lang="en">The Five</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T170000 +0000" stop="20260706T180000 +0000">
+    <title lang="en">Special Report with Bret Baier</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T180000 +0000" stop="20260706T200000 +0000">
+    <title lang="en">Fox News Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T200000 +0000" stop="20260706T210000 +0000">
+    <title lang="en">Jesse Watters Primetime</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T210000 +0000" stop="20260706T220000 +0000">
+    <title lang="en">Hannity</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T220000 +0000" stop="20260706T230000 +0000">
+    <title lang="en">The Ingraham Angle</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T230000 +0000" stop="20260706T010000 +0000">
+    <title lang="en">Fox News @ Night</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxNewsChannel.us" start="20260706T010000 +0000" stop="20260706T060000 +0000">
+    <title lang="en">Overnight Programming</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T060000 +0000" stop="20260704T090000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T090000 +0000" stop="20260704T120000 +0000">
+    <title lang="en">Varney &amp; Co.</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T120000 +0000" stop="20260704T140000 +0000">
+    <title lang="en">Cavuto: Coast to Coast</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T140000 +0000" stop="20260704T160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T160000 +0000" stop="20260704T170000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T170000 +0000" stop="20260704T180000 +0000">
+    <title lang="en">The Bottom Line</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T180000 +0000" stop="20260704T190000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T190000 +0000" stop="20260704T220000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T220000 +0000" stop="20260704T230000 +0000">
+    <title lang="en">The Big Money Show</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260704T230000 +0000" stop="20260704T060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T060000 +0000" stop="20260705T090000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T090000 +0000" stop="20260705T120000 +0000">
+    <title lang="en">Varney &amp; Co.</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T120000 +0000" stop="20260705T140000 +0000">
+    <title lang="en">Cavuto: Coast to Coast</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T140000 +0000" stop="20260705T160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T160000 +0000" stop="20260705T170000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T170000 +0000" stop="20260705T180000 +0000">
+    <title lang="en">The Bottom Line</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T180000 +0000" stop="20260705T190000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T190000 +0000" stop="20260705T220000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T220000 +0000" stop="20260705T230000 +0000">
+    <title lang="en">The Big Money Show</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260705T230000 +0000" stop="20260705T060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T060000 +0000" stop="20260706T090000 +0000">
+    <title lang="en">Mornings with Maria</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T090000 +0000" stop="20260706T120000 +0000">
+    <title lang="en">Varney &amp; Co.</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T120000 +0000" stop="20260706T140000 +0000">
+    <title lang="en">Cavuto: Coast to Coast</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T140000 +0000" stop="20260706T160000 +0000">
+    <title lang="en">The Claman Countdown</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T160000 +0000" stop="20260706T170000 +0000">
+    <title lang="en">Making Money</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T170000 +0000" stop="20260706T180000 +0000">
+    <title lang="en">The Bottom Line</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T180000 +0000" stop="20260706T190000 +0000">
+    <title lang="en">Fox Business Tonight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T190000 +0000" stop="20260706T220000 +0000">
+    <title lang="en">Kudlow</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T220000 +0000" stop="20260706T230000 +0000">
+    <title lang="en">The Big Money Show</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="FoxBusiness.us" start="20260706T230000 +0000" stop="20260706T060000 +0000">
+    <title lang="en">Fox Business Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T060000 +0000" stop="20260704T090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T090000 +0000" stop="20260704T120000 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T120000 +0000" stop="20260704T130000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T130000 +0000" stop="20260704T170000 +0000">
+    <title lang="en">CBS News 24/7</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T170000 +0000" stop="20260704T180000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T180000 +0000" stop="20260704T200000 +0000">
+    <title lang="en">CBS News Prime Time</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T200000 +0000" stop="20260704T230000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T230000 +0000" stop="20260704T010000 +0000">
+    <title lang="en">CBS News Nightwatch</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260704T010000 +0000" stop="20260704T060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T060000 +0000" stop="20260705T090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T090000 +0000" stop="20260705T120000 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T120000 +0000" stop="20260705T130000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T130000 +0000" stop="20260705T170000 +0000">
+    <title lang="en">CBS News 24/7</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T170000 +0000" stop="20260705T180000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T180000 +0000" stop="20260705T200000 +0000">
+    <title lang="en">CBS News Prime Time</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T200000 +0000" stop="20260705T230000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T230000 +0000" stop="20260705T010000 +0000">
+    <title lang="en">CBS News Nightwatch</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260705T010000 +0000" stop="20260705T060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T060000 +0000" stop="20260706T090000 +0000">
+    <title lang="en">CBS Morning News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T090000 +0000" stop="20260706T120000 +0000">
+    <title lang="en">CBS News Mornings</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T120000 +0000" stop="20260706T130000 +0000">
+    <title lang="en">CBS News Midday</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T130000 +0000" stop="20260706T170000 +0000">
+    <title lang="en">CBS News 24/7</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T170000 +0000" stop="20260706T180000 +0000">
+    <title lang="en">CBS Evening News</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T180000 +0000" stop="20260706T200000 +0000">
+    <title lang="en">CBS News Prime Time</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T200000 +0000" stop="20260706T230000 +0000">
+    <title lang="en">CBS News Special</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T230000 +0000" stop="20260706T010000 +0000">
+    <title lang="en">CBS News Nightwatch</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
+  <programme channel="CBSNews.us" start="20260706T010000 +0000" stop="20260706T060000 +0000">
+    <title lang="en">CBS News Overnight</title>
+    <desc lang="en">Live news coverage</desc>
+  </programme>
 </tv>

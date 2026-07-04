@@ -297,7 +297,7 @@ def generate_epg_xml():
         logo = ch_def['tvg_logo']
         lines.append(f'  <channel id="{tvg_id}">')
         lines.append(f'    <display-name lang="en">{name}</display-name>')
-        lines.append(f'    <icon src="{logo}" />')
+        lines.append(f'    <icon src="{logo.replace("&","&amp;")}" />')
         lines.append(f'  </channel>')
     
     for ch_id, programs in PROGRAM_SCHEDULES.items():
