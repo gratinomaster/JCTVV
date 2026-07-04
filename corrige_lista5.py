@@ -19,7 +19,7 @@ CHANNEL_MAP = {
 }
 
 FALLBACK_URLS = {
-    "Fox News Channel": "http://41.205.93.154/FOX-NEWS/index.m3u8",
+    "Fox News Channel": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
     "Fox Business": "http://41.205.93.154/FOXBUSINESS/index.m3u8",
     "CBS News 24/7": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
 }
@@ -254,7 +254,7 @@ def main():
     # 6. Generate M3U
     log("\nGerando M3U corrigido...")
     epg_urls_str = " ".join(EPG_URLS)
-    lines = [f'#EXTM3U x-tvg-url="{epg_urls_str}"']
+    lines = [f'#EXTM3U url-tvg="{epg_urls_str}"']
 
     for ch_type, v in clean_channels.items():
         ch = v["ch"]
@@ -303,8 +303,8 @@ def main():
 
     if not lines[0].startswith("#EXTM3U"):
         issues.append("  Linha 1: sem #EXTM3U")
-    elif "x-tvg-url=" not in lines[0]:
-        issues.append("  Linha 1: sem x-tvg-url")
+    elif "url-tvg=" not in lines[0]:
+        issues.append("  Linha 1: sem url-tvg")
 
     if issues:
         log("PROBLEMAS:")

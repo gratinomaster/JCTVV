@@ -1,63 +1,17 @@
-======================================================================
-RELATORIO CORRECAO lista5.m3u - 2026-07-02 02:11
-======================================================================
-Backup: /home/runner/work/JCTVV/JCTVV/lista5.m3u.bak.20260702_021143
-Stream ABC News Live: OK (HTTP 200)
-Stream Fox Business: OFFLINE (HTTP 403)
-Stream ABCNL: OK (HTTP 200)
-Stream Fox News Channel: OFFLINE (HTTP 403)
-Stream CBS News 24/7: OK (HTTP 200)
-EPG ABC News Live: OK (H=36 A=36 D=11)
-EPG Fox News Channel: OK (H=24 A=24 D=16)
-EPG Fox Business: OK (H=28 A=27 D=18)
-EPG CBS News 24/7: OK (H=26 A=26 D=21)
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-07-04 01:55
+==================================================
+Entries lidas: 51
+Canais unicos: 4
+Streams OK: 4/4
+  VirusTotal ABC News Live (Disney): nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+Canais limpos: 4/4
 EPG Funcional: SIM
-Canal adicionado: ABC News Live
-Canal adicionado: Fox News Channel
-Canal adicionado: Fox Business
-Canal adicionado: CBS News 24/7
-Verificacao final: OK
-Canais: 4 | EPG: 1776progs | EPG_ok: True | Streams: 3/5 | Problemas: 0
-======================================================================
-======================================================================
-RELATORIO CORRECAO lista5.m3u v5
-Data: 2026-07-03 01:53
-======================================================================
-
-Canal: ABC News Live
-  tvg-id: ABCNewsLive.us
-  EPG: Hoje=37 Amanha=15 Depois=26 - OK
-Canal: Fox News Channel
-  tvg-id: FoxNewsChannel.us
-  EPG: Hoje=24 Amanha=23 Depois=24 - OK
-Canal: Fox Business
-  tvg-id: FoxBusiness.us
-  EPG: Hoje=27 Amanha=24 Depois=32 - OK
-Canal: CBS News 24/7
-  tvg-id: CBSNews.us
-  EPG: Hoje=26 Amanha=31 Depois=25 - OK
-  EPG salvo: 2225 programas
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OFFLINE
-  Stream Fox Business: OFFLINE
-  Stream CBS News 24/7: OFFLINE
-  Incluido: ABC News Live
-    tvg-id: ABCNewsLive.us
-    logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
-  Incluido: Fox News Channel
-    tvg-id: FoxNewsChannel.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg
-  Incluido: Fox Business
-    tvg-id: FoxBusiness.us
-    logo: https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg
-  Incluido: CBS News 24/7
-    tvg-id: CBSNews.us
-    logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
 
 Total canais: 4
-Programas EPG: 2225
-Cobertura EPG: Hoje=114 Amanha=93 Depois=107
-EPG Completo: SIM
-Streams: ABC News Live=OK, Fox News Channel=OFF, Fox Business=OFF, CBS News 24/7=OFF
+EPG URLs: https://iptv-epg.org/files/epg-us.xml.gz
 Problemas: 0
-======================================================================
+==================================================
