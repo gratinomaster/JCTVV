@@ -1,0 +1,5 @@
+#EXTM3U url-tvg="https://epg.pw/api/epg.xml?channel_id=465150 https://epg.pw/api/epg.xml?channel_id=465372 https://epg.pw/api/epg.xml?channel_id=464766 https://epg.pw/api/epg.xml?channel_id=464941 https://i.mjh.nz/Plex/us.xml.gz"
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" tvg-chno="1" tvg-url="https://epg.pw/api/epg.xml?channel_id=465150" group-title="NEWS WORLD",ABC News Live
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" tvg-chno="4" tvg-url="https://epg.pw/api/epg.xml?channel_id=464941" group-title="NEWS WORLD",CBS News 24/7
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e3618347-04ad-4817-b0c3-1bdadf97e9c4:TUL/master.m3u8
