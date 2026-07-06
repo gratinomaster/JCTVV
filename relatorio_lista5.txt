@@ -1,28 +1,18 @@
-======================================================================
-RELATORIO CORRECAO lista5.m3u v6
-Data: 2026-07-05 02:02
-======================================================================
-
-Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=16 Amanha=16 Depois=16 | OK
-Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=17 Amanha=17 Depois=17 | OK
-Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=16 Amanha=16 Depois=16 | OK
-Canal: CBS News 24/7 | tvg-id: 464941 | EPG: Hoje=17 Amanha=17 Depois=17 | OK
-  Stream ABC News Live: OK
-  Stream Fox News Channel: OK
-  Stream Fox Business: OK
-  Stream CBS News 24/7: OK
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-07-06 02:04
+==================================================
+Entries lidas: 60
+Canais unicos: 5
+Streams OK: 5/5
+  VirusTotal ABC News Live (Disney): nao_verificado
   VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
   VirusTotal Fox Business: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
   VirusTotal CBS News 24/7: nao_verificado
-  ABC News Live: INCLUIDO | ID=465150
-  Fox News Channel: INCLUIDO | ID=465372
-  Fox Business: INCLUIDO | ID=464766
-  CBS News 24/7: INCLUIDO | ID=464941
+Canais limpos: 5/5
+EPG Funcional: SIM
 
-Total canais: 4
-Programas EPG: 429
-Cobertura EPG: 20260705=66, 20260706=66, 20260707=66
-EPG Completo: SIM
+Total canais: 5
+EPG URLs: https://iptv-epg.org/files/epg-us.xml.gz
 Problemas: 0
-======================================================================
+==================================================
