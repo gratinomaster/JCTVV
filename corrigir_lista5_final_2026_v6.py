@@ -32,7 +32,10 @@ EPG_PW_TO_NAME = {
 
 # Additional EPG URLs to include in the M3U
 ADDITIONAL_EPG_URLS = [
+    "https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg.xml",
     "https://i.mjh.nz/Plex/us.xml.gz",
+    "https://epg.pw/xmltv/epg_US.xml.gz",
+    "https://epg.pw/xmltv/epg_BR.xml.gz",
 ]
 
 # Main channels - one entry each, best stream
@@ -48,18 +51,18 @@ CHANNELS = OrderedDict([
     ("Fox News Channel", {
         "tvg-id": "465372",
         "tvg-name": "Fox News Channel",
-        "tvg-logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/6b73c12d-76c5-4cf0-9475-c4490e393bee/32532dd6-13ea-4194-a742-a546311cf7ca/1280x720/match/400/225/image.jpg",
+        "tvg-logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/82e089ee-858d-46df-86c0-b8bfafd6b34b/11a55bf1-2fe1-4db5-a5ee-5a2de3a4694c/1280x720/match/400/225/image.jpg",
         "group-title": "NEWS WORLD",
         "tvg-chno": "2",
-        "stream": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1783217943~acl=/*~hmac=3ca69dbbc15ca4815a350a6bc9bfb90fe5af18e48e7ea1565452072f46d73051",
+        "stream": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1783420560~acl=/*~hmac=a99922e136392b4bae37b2a5194e67393ca364b8b0eb176e4864e308ead5f3ae",
     }),
     ("Fox Business", {
         "tvg-id": "464766",
         "tvg-name": "Fox Business",
-        "tvg-logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+        "tvg-logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/82e089ee-858d-46df-86c0-b8bfafd6b34b/11a55bf1-2fe1-4db5-a5ee-5a2de3a4694c/1280x720/match/400/225/image.jpg",
         "group-title": "NEWS WORLD",
         "tvg-chno": "3",
-        "stream": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1783217943~acl=/*~hmac=3ca69dbbc15ca4815a350a6bc9bfb90fe5af18e48e7ea1565452072f46d73051",
+        "stream": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1783420560~acl=/*~hmac=a99922e136392b4bae37b2a5194e67393ca364b8b0eb176e4864e308ead5f3ae",
     }),
     ("CBS News 24/7", {
         "tvg-id": "464941",
@@ -67,7 +70,7 @@ CHANNELS = OrderedDict([
         "tvg-logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
         "group-title": "NEWS WORLD",
         "tvg-chno": "4",
-        "stream": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e3618347-04ad-4817-b0c3-1bdadf97e9c4:TUL/master.m3u8",
+        "stream": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffb766a0-728e-4f43-9f64-426fdbc598ec:ATL/master.m3u8",
     }),
 ])
 

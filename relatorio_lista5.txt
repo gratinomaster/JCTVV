@@ -1,18 +1,28 @@
-RELATORIO CORRECAO lista5.m3u
-Data: 2026-07-06 02:04
-==================================================
-Entries lidas: 60
-Canais unicos: 5
-Streams OK: 5/5
-  VirusTotal ABC News Live (Disney): nao_verificado
-  VirusTotal ABC News Live: nao_verificado
-  VirusTotal Fox Business: nao_verificado
-  VirusTotal Fox News Channel: nao_verificado
-  VirusTotal CBS News 24/7: nao_verificado
-Canais limpos: 5/5
-EPG Funcional: SIM
+======================================================================
+RELATORIO CORRECAO lista5.m3u v6
+Data: 2026-07-06 11:55
+======================================================================
 
-Total canais: 5
-EPG URLs: https://iptv-epg.org/files/epg-us.xml.gz
+Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=50 Amanha=53 Depois=16 | OK
+Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=26 Amanha=26 Depois=18 | OK
+Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=32 Amanha=30 Depois=17 | OK
+Canal: CBS News 24/7 | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+  Stream ABC News Live: OK
+  Stream Fox News Channel: OFFLINE (403)
+  Stream Fox Business: OFFLINE (403)
+  Stream CBS News 24/7: OK
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  ABC News Live: INCLUIDO | ID=465150
+  Fox News Channel: PULADO (stream offline)
+  Fox Business: PULADO (stream offline)
+  CBS News 24/7: INCLUIDO | ID=464941
+
+Total canais: 2
+Programas EPG: 355
+Cobertura EPG: 20260706=143, 20260707=144, 20260708=68
+EPG Completo: SIM
 Problemas: 0
-==================================================
+======================================================================
