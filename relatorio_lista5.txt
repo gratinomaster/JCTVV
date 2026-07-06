@@ -1,28 +1,96 @@
 ======================================================================
 RELATORIO CORRECAO lista5.m3u v6
-Data: 2026-07-06 11:55
+Data: 2026-07-06 18:05
 ======================================================================
 
 Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=50 Amanha=53 Depois=16 | OK
 Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=26 Amanha=26 Depois=18 | OK
 Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=32 Amanha=30 Depois=17 | OK
 Canal: CBS News 24/7 | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: Fox Weather | tvg-id: 6229 | EPG: Hoje=8 Amanha=8 Depois=8 | OK
+Canal: CBS News (US) | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News 24/7 Backup | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS NEWS 2 | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Bay Area | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Chicago | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Miami | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News New York | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Colorado | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Los Angeles | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Minnesota | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Dallas Ft Worth | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Pittsburgh | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Sacramento | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Detroit | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBS News Philadelphia | tvg-id: 464941 | EPG: Hoje=35 Amanha=35 Depois=17 | OK
+Canal: CBSN Boston | tvg-id: 464910 | EPG: Hoje=31 Amanha=30 Depois=1 | OK
   Stream ABC News Live: OK
-  Stream Fox News Channel: OFFLINE (403)
-  Stream Fox Business: OFFLINE (403)
+  Stream Fox News Channel: OK
+  Stream Fox Business: OK
   Stream CBS News 24/7: OK
+  Stream Fox Weather: OK
+  Stream CBS News (US): OK
+  Stream CBS News 24/7 Backup: OK
+  Stream CBS NEWS 2: OK
+  Stream CBS News Bay Area: OK
+  Stream CBS News Chicago: OK
+  Stream CBS News Miami: OK
+  Stream CBS News New York: OK
+  Stream CBS News Colorado: OK
+  Stream CBS News Los Angeles: OK
+  Stream CBS News Minnesota: OK
+  Stream CBS News Dallas Ft Worth: OK
+  Stream CBS News Pittsburgh: OK
+  Stream CBS News Sacramento: OK
+  Stream CBS News Detroit: OK
+  Stream CBS News Philadelphia: OK
+  Stream CBSN Boston: OK
   VirusTotal ABC News Live: nao_verificado
   VirusTotal Fox News Channel: nao_verificado
   VirusTotal Fox Business: nao_verificado
   VirusTotal CBS News 24/7: nao_verificado
+  VirusTotal Fox Weather: nao_verificado
+  VirusTotal CBS News (US): nao_verificado
+  VirusTotal CBS News 24/7 Backup: nao_verificado
+  VirusTotal CBS NEWS 2: nao_verificado
+  VirusTotal CBS News Bay Area: nao_verificado
+  VirusTotal CBS News Chicago: nao_verificado
+  VirusTotal CBS News Miami: nao_verificado
+  VirusTotal CBS News New York: nao_verificado
+  VirusTotal CBS News Colorado: nao_verificado
+  VirusTotal CBS News Los Angeles: nao_verificado
+  VirusTotal CBS News Minnesota: nao_verificado
+  VirusTotal CBS News Dallas Ft Worth: nao_verificado
+  VirusTotal CBS News Pittsburgh: nao_verificado
+  VirusTotal CBS News Sacramento: nao_verificado
+  VirusTotal CBS News Detroit: nao_verificado
+  VirusTotal CBS News Philadelphia: nao_verificado
+  VirusTotal CBSN Boston: nao_verificado
   ABC News Live: INCLUIDO | ID=465150
-  Fox News Channel: PULADO (stream offline)
-  Fox Business: PULADO (stream offline)
+  Fox News Channel: INCLUIDO | ID=465372
+  Fox Business: INCLUIDO | ID=464766
   CBS News 24/7: INCLUIDO | ID=464941
+  Fox Weather: INCLUIDO | ID=6229
+  CBS News (US): INCLUIDO | ID=464941
+  CBS News 24/7 Backup: INCLUIDO | ID=464941
+  CBS NEWS 2: INCLUIDO | ID=464941
+  CBS News Bay Area: INCLUIDO | ID=464941
+  CBS News Chicago: INCLUIDO | ID=464941
+  CBS News Miami: INCLUIDO | ID=464941
+  CBS News New York: INCLUIDO | ID=464941
+  CBS News Colorado: INCLUIDO | ID=464941
+  CBS News Los Angeles: INCLUIDO | ID=464941
+  CBS News Minnesota: INCLUIDO | ID=464941
+  CBS News Dallas Ft Worth: INCLUIDO | ID=464941
+  CBS News Pittsburgh: INCLUIDO | ID=464941
+  CBS News Sacramento: INCLUIDO | ID=464941
+  CBS News Detroit: INCLUIDO | ID=464941
+  CBS News Philadelphia: INCLUIDO | ID=464941
+  CBSN Boston: INCLUIDO | ID=464910
 
-Total canais: 2
-Programas EPG: 355
-Cobertura EPG: 20260706=143, 20260707=144, 20260708=68
+Total canais: 21
+Programas EPG: 441
+Cobertura EPG: 20260706=182, 20260707=182, 20260708=77
 EPG Completo: SIM
 Problemas: 0
 ======================================================================
