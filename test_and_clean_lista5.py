@@ -1,79 +1,82 @@
 #!/usr/bin/env python3
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import sys
+import os
 
-M3U_FILE = "lista5.m3u"
+M3U_FILE = 'lista5.m3u'
+BACKUP_FILE = 'lista5.m3u.bak.' + os.path.splitext(M3U_FILE)[0]
 
 def parse_m3u(filepath):
+    entries = []
     with open(filepath, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
-    header = lines[0] if lines else ""
-    entries = []
-    i = 1
+    i = 0
     while i < len(lines):
-        line = lines[i]
-        if line.startswith("#EXTINF"):
-            if i + 1 < len(lines) and not lines[i+1].startswith("#"):
-                extinf = line.rstrip("\n")
-                url = lines[i+1].rstrip("\n")
-                entries.append((extinf, url))
-                i += 2
-            else:
-                i += 1
-        elif line.startswith("#"):
+        line = lines[i].strip()
+        if line == '#EXTM3U':
             i += 1
-        else:
-            i += 1
-    return header, entries
+            continue
+        if line.startswith('#EXTINF'):
+            extinf = line
+            if i + 1 < len(lines):
+                url = lines[i + 1].strip()
+                if url and not url.startswith('#'):
+                    entries.append((extinf, url))
+                    i += 2
+                    continue
+        i += 1
+    return entries
 
-def check_url(url, timeout=10):
+def test_url(url, timeout=10):
     try:
         resp = requests.head(url, timeout=timeout, allow_redirects=True, headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         })
-        return url, resp.status_code == 200
-    except Exception:
-        return url, False
+        if resp.status_code < 400:
+            return True
+        return False
+    except:
+        return False
 
 def main():
-    print("Parsing lista5.m3u...")
-    header, entries = parse_m3u(M3U_FILE)
+    print(f"Reading {M3U_FILE}...")
+    entries = parse_m3u(M3U_FILE)
     print(f"Found {len(entries)} entries")
 
-    print("Testing URLs...")
-    working = []
-    failed = []
+    urls = [url for _, url in entries]
+    unique = len(set(urls))
+    print(f"Unique URLs: {unique}")
+
+    print("\nTesting URLs...")
+    results = {}
     with ThreadPoolExecutor(max_workers=20) as executor:
-        future_map = {executor.submit(check_url, url): (extinf, url) for extinf, url in entries}
-        for i, future in enumerate(as_completed(future_map)):
-            url, ok = future.result()
-            extinf, _ = future_map[future]
-            if ok:
-                working.append((extinf, url))
-            else:
-                failed.append((extinf, url))
-            if (i + 1) % 10 == 0 or i == len(entries) - 1:
-                print(f"  Progress: {i+1}/{len(entries)}")
+        futures = {executor.submit(test_url, url): url for url in set(urls)}
+        for i, future in enumerate(as_completed(futures)):
+            url = futures[future]
+            ok = future.result()
+            results[url] = ok
+            if (i + 1) % 5 == 0:
+                print(f"Progress: {i+1}/{len(set(urls))}")
 
-    print(f"\nWorking: {len(working)}")
-    print(f"Failed: {len(failed)}")
+    working_urls = {url for url, ok in results.items() if ok}
+    failed_urls = {url for url, ok in results.items() if not ok}
+    print(f"\nWorking URLs: {len(working_urls)}")
+    print(f"Failed URLs: {len(failed_urls)}")
 
-    if failed:
-        print("\nRemoved channels:")
-        for extinf, url in failed:
-            name = extinf.split(",")[-1] if "," in extinf else extinf
-            print(f"  {name}")
+    for url in sorted(failed_urls):
+        print(f"  FAILED: {url[:80]}")
 
-    print(f"\nWriting cleaned file ({len(working)} entries)...")
+    good_entries = [(e, u) for e, u in entries if u in working_urls]
+    print(f"\nEntries to keep: {len(good_entries)}")
+
     with open(M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write(header)
-        for extinf, url in working:
-            f.write(extinf + "\n")
-            f.write(url + "\n")
+        f.write('#EXTM3U\n')
+        for extinf, url in good_entries:
+            f.write(extinf + '\n')
+            f.write(url + '\n')
 
-    print("Done! lista5.m3u updated.")
+    print(f"Written {len(good_entries)} entries to {M3U_FILE}")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
