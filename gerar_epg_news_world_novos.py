@@ -54,6 +54,17 @@ for match in re.finditer(r'tvg-id="([^"]*)"', m3u_content):
 
 m3u_norm = {norm(t): t for t in m3u_ids}
 m3u_norm_set = set(m3u_norm.keys())
+
+m3u_names = {}
+for line in m3u_content.splitlines():
+    m = re.search(r'tvg-id="([^"]*)"', line)
+    name_match = re.search(r',([^,]+)$', line)
+    if m and name_match:
+        tid = m.group(1).strip()
+        name = name_match.group(1).strip()
+        name_base = re.sub(r'\s*\(.*$', '', name).strip()
+        m3u_names[tid] = name_base
+
 print(f"  Encontrados {len(m3u_ids)} tvg-ids no M3U")
 
 epg_urls_from_m3u = []
@@ -70,6 +81,26 @@ matched_ids = set()
 seen_progs = set()
 all_channels = OrderedDict()
 all_programmes = OrderedDict()
+
+def fuzzy_match_m3u_id(epg_cid, epg_display_name):
+    nc = norm(epg_cid)
+    if nc in m3u_norm_set:
+        return m3u_norm[nc]
+    for m3u_id in m3u_ids:
+        nm = norm(m3u_id)
+        if nm in nc or nc in nm:
+            return m3u_id
+    if epg_display_name:
+        ndn = norm(epg_display_name)
+        for tid, base_name in m3u_names.items():
+            nb = norm(base_name)
+            if nb == ndn or ndn in nb or nb in ndn:
+                return tid
+    for tid, base_name in m3u_names.items():
+        nb = norm(base_name)
+        if nb in nc:
+            return tid
+    return None
 
 def download_epg(url):
     print(f"  Baixando EPG: {url}")
@@ -105,12 +136,9 @@ def process_epg_xml(xml_bytes):
                 if not cid:
                     elem.clear()
                     continue
-                nc = norm(cid)
-                m3u_id = None
-                if cid in m3u_ids:
-                    m3u_id = cid
-                elif nc in m3u_norm_set:
-                    m3u_id = m3u_norm[nc]
+                dn = elem.find('display-name')
+                display_name = dn.text.strip() if dn is not None and dn.text else ''
+                m3u_id = fuzzy_match_m3u_id(cid, display_name)
 
                 if m3u_id:
                     id_remap[cid] = m3u_id
@@ -127,11 +155,7 @@ def process_epg_xml(xml_bytes):
                     continue
                 m3u_id = id_remap.get(ch)
                 if m3u_id is None:
-                    nc = norm(ch)
-                    if ch in m3u_ids:
-                        m3u_id = ch
-                    elif nc in m3u_norm_set:
-                        m3u_id = m3u_norm[nc]
+                    m3u_id = fuzzy_match_m3u_id(ch, '')
                 if m3u_id:
                     start = elem.get('start', '')
                     stop = elem.get('stop', '')
