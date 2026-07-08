@@ -90,5 +90,5 @@ def verify_epg(filename):
         return False
 
 if __name__ == '__main__':
-    create_epg('lista5_epg.xml', days=3)
+    create_epg('lista5_epg.xml', days=4)
     verify_epg('lista5_epg.xml')
