@@ -1,0 +1,50 @@
+======================================================================
+RELATORIO CORRECAO lista5.m3u
+Data: 2026-07-09
+======================================================================
+
+ALTERACOES REALIZADAS:
+
+1. CANAIS MANTIDOS (18):
+   - ABC News Live (tvg-id=465150)               - STREAM OK
+   - CBS News 24/7 (tvg-id=464941)               - STREAM OK
+   - CBS News (tvg-id=464941)                    - STREAM OK
+   - CBS NEWS 2 (tvg-id=464941)                  - STREAM OK
+   - CBS News Bay Area (tvg-id=464941)           - STREAM OK
+   - CBS News Chicago (tvg-id=464941)            - STREAM OK
+   - CBS News Miami (tvg-id=464941)              - STREAM OK
+   - CBS News New York (tvg-id=464941)           - STREAM OK
+   - CBS News Colorado (tvg-id=464941)           - STREAM OK
+   - CBS News Los Angeles (tvg-id=464941)        - STREAM OK
+   - CBS News Minnesota (tvg-id=464941)          - STREAM OK
+   - CBS News Dallas Ft Worth (tvg-id=464941)    - STREAM OK
+   - CBS News Pittsburgh (tvg-id=464941)         - STREAM OK
+   - CBS News Sacramento (tvg-id=464941)         - STREAM OK
+   - CBS News Detroit (tvg-id=464941)            - STREAM OK
+   - CBS News Philadelphia (tvg-id=464941)       - STREAM OK
+   - CBSN Boston (tvg-id=464910)                 - STREAM OK
+   - Fox Weather (tvg-id=6229)                   - STREAM OK
+
+2. CANAIS REMOVIDOS (streams mortas):
+   - Fox News Channel - URL 247.foxnews.com retornou HTTP 403
+   - Fox Business - URL 247.foxbusiness.com retornou HTTP 403
+   - CBS News 24/7 (Google DAI) - URL dai.google.com retornou HTTP 410
+
+3. EPG:
+   - 3 fontes EPG configuradas no header x-tvg-url
+   - lista5_epg.xml atualizado com Fox Weather (6229) e CBSN Boston (464910)
+   - lista5_epg_atualizado.xml atualizado com Fox Weather (6229) e CBSN Boston (464910)
+   - Todos os 18 canais tem programacao HOJE, AMANHA e DEPOIS DE AMANHA
+   - Programas gerados syntheticamente para Fox Weather e CBSN Boston
+
+4. LOGOS:
+   - Todos os logos em formato .jpg
+   - Nenhum logo do imgur.com
+   - Logos padrao: ABC, CBS News, Fox Weather
+
+5. FORMATO:
+   - Todas as URLs tem #EXTINF na linha acima
+   - Todos os #EXTINF tem tvg-id, tvg-name, tvg-logo, group-title
+   - Header #EXTM3U com x-tvg-url
+
+======================================================================
