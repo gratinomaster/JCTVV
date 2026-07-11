@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import re, gzip, io, copy, sys
+import re, gzip, io, copy, sys, os
 import xml.etree.ElementTree as ET
 import requests
 from collections import OrderedDict
@@ -32,6 +32,9 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_SE1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_NO1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AL1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml",
@@ -195,13 +198,10 @@ xml_data = buf.getvalue()
 with gzip.open(OUTPUT, 'wb') as f:
     f.write(xml_data)
 
-file_size = 0
-import os
 file_size = os.path.getsize(OUTPUT)
 print(f"\n5. Salvo: {OUTPUT} ({file_size} bytes)")
 
 print("\n6. Testando EPG gerado...")
-from datetime import datetime, timedelta
 
 with gzip.open(OUTPUT, 'rb') as f:
     test_xml = f.read().decode('utf-8', errors='ignore')
@@ -218,20 +218,25 @@ amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
 
 prog_hoje = 0
 prog_amanha = 0
+canais_hoje = set()
+canais_amanha = set()
 
 for prog in programas:
     start = prog.get("start", "")[:8]
+    ch = prog.get("channel", "")
     if start == hoje:
         prog_hoje += 1
+        canais_hoje.add(ch)
     elif start == amanha:
         prog_amanha += 1
+        canais_amanha.add(ch)
 
-print(f"  Programas hoje ({hoje}): {prog_hoje}")
-print(f"  Programas amanhã ({amanha}): {prog_amanha}")
+print(f"  Programas hoje ({hoje}): {prog_hoje} em {len(canais_hoje)} canais")
+print(f"  Programas amanhã ({amanha}): {prog_amanha} em {len(canais_amanha)} canais")
 
 if prog_hoje > 0 and prog_amanha > 0:
-    print("\n✓ EPG FUNCIONANDO! Programas para hoje e amanhã disponíveis.")
+    print("\nEPG FUNCIONANDO! Programas para hoje e amanhã disponíveis.")
     sys.exit(0)
 else:
-    print("\n✗ EPG COM PROBLEMAS! Faltam programas para hoje ou amanhã.")
+    print("\nEPG COM PROBLEMAS! Faltam programas para hoje ou amanhã.")
     sys.exit(1)
