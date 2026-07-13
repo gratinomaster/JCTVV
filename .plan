@@ -1,0 +1,71 @@
+# Plan: Test and Filter lista5.m3u Channels
+
+## Objective
+Access lista5.m3u, test all channels, remove non-working ones, and overwrite the file.
+
+## Current File Analysis
+- File: `/home/runner/work/JCTVV/JCTVV/lista5.m3u`
+- Total lines: 85
+- Format: M3U playlist with EXTINF metadata and stream URLs
+
+## Channel Breakdown
+The file contains multiple entries for the same channels with different stream qualities/URLs:
+
+1. **ABC News Live - ABC News** (20 entries)
+   - Multiple URLs from Disney/ABC News CDN
+   - Various stream qualities (audio 64K, 128K, video 1700K, 2400K)
+
+2. **Fox Business Go | Fox News Video** (1 entry)
+   - Single URL from foxbusiness.com
+
+3. **Watch Fox News Channel Online | Stream Fox News** (1 entry)
+   - Single URL from foxnews.com
+
+4. **Watch CBS News 24/7** (23 entries)
+   - Multiple URLs from Google DAI
+   - Many duplicate URLs (same bandwidth/variant)
+
+## Testing Approach
+To test HLS streams, we need to:
+1. Parse the M3U file to extract EXTINF lines and URLs
+2. For each URL, perform an HTTP HEAD request to check:
+   - HTTP status code (200 = working, 4xx/5xx = not working)
+   - Response headers (Content-Type should be application/vnd.apple.mpegurl or similar)
+3. Optionally, fetch a small portion to verify HLS structure
+4. Keep only entries that return valid responses
+
+## Implementation Plan
+
+### Step 1: Create a test script
+Write a bash script that:
+- Reads the M3U file line by line
+- Identifies EXTINF lines and their corresponding URLs
+- Tests each URL with curl (HTTP HEAD or GET)
+- Records which URLs are working
+
+### Step 2: Execute the test
+Run the script to get a list of working channels
+
+### Step 3: Filter the file
+Create a new version of the M3U file with only working channels
+
+### Step 4: Overwrite original
+Replace lista5.m3u with the filtered version
+
+## Technical Details
+
+### Testing Method
+```bash
+# For each URL, test with:
+curl -s -o /dev/null -w "%{http_code}" -I --max-time 10 "$URL"
+```
+
+### M3U Structure
+- Line 1: `#EXTM3U` (header)
+- Lines 2+: `#EXTINF:-1 ...` followed by URL on next line
+- Keep the EXTINF line only if the URL returns HTTP 200
+
+## Expected Outcome
+- Remove all non-functional stream URLs
+- Keep one working URL per channel (or multiple if different qualities are needed)
+- Maintain M3U format integrity
