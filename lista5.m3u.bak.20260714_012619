@@ -1,0 +1,5 @@
+#EXTM3U url-x-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
+#EXTINF:-1 tvg-id="ABC.News.Live.us2" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-id="CBS.News.National.Stream.us2" tvg-name="CBS News 24/7" tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2db756c6-2f15-45a9-9509-d1e9f6c3f825:TUL/master.m3u8
