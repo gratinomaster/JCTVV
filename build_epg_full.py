@@ -14,23 +14,16 @@ M3U_LOCAL = "NEWSWORLDNOVOS.m3u"
 OUTPUT = "EPGFULL.xml.gz"
 
 EPG_SOURCES = [
-    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_KR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
-    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
 ]
 
 
@@ -38,7 +31,7 @@ def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
 
 
-def download(url, timeout=120):
+def download(url, timeout=300):
     print(f"  Baixando: {url.split('/')[-1]}", end=" ", flush=True)
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
