@@ -10,7 +10,8 @@ from collections import OrderedDict
 from datetime import datetime, timedelta
 import urllib.request
 
-M3U_LOCAL = "NEWSWORLDNOVOS.m3u"
+M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
+M3U_LOCAL = "/tmp/NEWSWORLDNOVOS.m3u"
 OUTPUT = "EPGFULL.xml.gz"
 
 EPG_SOURCES = [
@@ -48,11 +49,19 @@ def download(url, timeout=300):
 
 
 print("=" * 60)
-print("1. Carregando lista M3U")
+print("0. Baixando lista M3U do GitHub")
 print("=" * 60)
 
-with open(M3U_LOCAL, "r", encoding="utf-8", errors="replace") as f:
-    m3u_text = f.read()
+m3u_data = download(M3U_URL)
+if m3u_data is None:
+    print("ERRO: Nao foi possivel baixar a M3U")
+    sys.exit(1)
+m3u_text = m3u_data.decode("utf-8", errors="replace")
+
+print()
+print("=" * 60)
+print("1. Carregando lista M3U")
+print("=" * 60)
 
 m3u_tvg_ids = set()
 for m in re.finditer(r'tvg-id="([^"]*)"', m3u_text):
@@ -123,6 +132,8 @@ def process_epg_bytes(raw_bytes):
         context = ET.iterparse(f, events=('end',))
         for event, elem in context:
             tag = elem.tag
+            if tag not in ('channel', 'programme'):
+                continue
             if tag == 'channel':
                 cid = elem.get('id', '')
                 if not cid:
@@ -158,7 +169,7 @@ def process_epg_bytes(raw_bytes):
                         pr.set('channel', m3u_id)
                         all_programmes[key] = pr
                         new_pr += 1
-            elem.clear()
+                elem.clear()
     except ET.ParseError as e:
         print(f"    Erro XML: {e}")
     return new_ch, new_pr
