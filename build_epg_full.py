@@ -15,6 +15,7 @@ M3U_LOCAL = "/tmp/NEWSWORLDNOVOS.m3u"
 OUTPUT = "EPGFULL.xml.gz"
 
 EPG_SOURCES = [
+    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
@@ -24,7 +25,31 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_ZA1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_KR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml",
+    "https://iptv-epg.org/files/epg-us.xml.gz",
+    "https://iptv-epg.org/files/epg-br.xml.gz",
+    "https://iptv-epg.org/files/epg-ar.xml.gz",
+    "https://iptv-epg.org/files/epg-mx.xml.gz",
+    "https://iptv-epg.org/files/epg-ve.xml.gz",
+    "https://iptv-epg.org/files/epg-by.xml.gz",
+    "https://iptv-epg.org/files/epg-ru.xml.gz",
+    "https://iptv-epg.org/files/epg-ua.xml.gz",
+    "https://iptv-epg.org/files/epg-nl.xml.gz",
+    "https://iptv-epg.org/files/epg-jp.xml.gz",
+    "https://iptv-epg.org/files/epg-th.xml.gz",
+    "https://iptv-epg.org/files/epg-au.xml.gz",
+    "https://iptv-epg.org/files/epg-qa.xml.gz",
 ]
 
 
@@ -95,8 +120,40 @@ all_channels = OrderedDict()
 all_programmes = OrderedDict()
 
 
+MANUAL_ID_MAP = {
+    "aljazeeraenglish.qa": "AlJazeera.qa",
+    "aljazeera.qa": "AlJazeera.qa",
+    "nhkworld.japan": "NHKWorld.jp",
+    "nhkworld.jp": "NHKWorld.jp",
+    "nhkworld.jpn": "NHKWorld.jp",
+    "thaipbs.th": "ThaiPBS.th",
+    "thai.pbs.th": "ThaiPBS.th",
+    "rtvnoord.nl": "RTVNoord.nl",
+    "rtvoost.nl": "RTVOost.nl",
+    "rtvutrecht.nl": "RTVUtrecht.nl",
+    "rtvdrenthe.nl": "RTVDrenthe.nl",
+    "rtvmaastricht.nl": "RTVMaastricht.nl",
+    "rtvrijnmond.nl": "RTVRijnmond.nl",
+    "rtvpurmerend.nl": "RTVPurmerend.nl",
+    "rtvwesterwolde.nl": "RTVWesterwolde.nl",
+    "rtvrijnstreektv.nl": "RTVRijnstreekTV.nl",
+    "mtvvolgograd.ru": "MTVVolgograd.ru",
+    "maturtv.ru": "MaturTV.ru",
+    "muzsoyuz.ru": "MuzSoyuz.ru",
+    "ntm.ru": "NTM.ru",
+    "nts.ru": "NTS.ru",
+    "nizhniynovgorod24.ru": "NizhniyNovgorod24.ru",
+    "prosveshchenie.ru": "Prosveshchenie.ru",
+    "firstmusicchannel.by": "FirstMusicChannel.by",
+    "lanettv.ua": "LanetTV.ua",
+    "horseandcountry.au": "HorseandCountry.au",
+}
+
+
 def fuzzy_match(epg_cid, epg_display_name):
     nc = norm(epg_cid)
+    if nc in MANUAL_ID_MAP:
+        return MANUAL_ID_MAP[nc]
     if nc in m3u_norm_set:
         return m3u_norm[nc]
     for m3u_id in m3u_tvg_ids:
@@ -105,6 +162,8 @@ def fuzzy_match(epg_cid, epg_display_name):
             return m3u_id
     if epg_display_name:
         ndn = norm(epg_display_name)
+        if ndn in MANUAL_ID_MAP:
+            return MANUAL_ID_MAP[ndn]
         if ndn in m3u_display_all:
             return m3u_display_all[ndn]
         for tid, base_name in m3u_names.items():
