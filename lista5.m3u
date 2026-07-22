@@ -1,11 +1,11 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz"
-#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
-https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1784764099~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=82c23cbc-b8c5-4f0e-9192-9a4f2e713ae6~did=eed53a6b-8ec3-4ef6-80af-6e5a03c1f5f8~country=US~kid=k02~hmac=e7382329678e5d3491576fdfd7dab28ccc1ec19336ec235b3f7fbbdbe8092a15/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
-#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",ABC News NL
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
+https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1784770986~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=48b20190-ce80-4742-a3ee-e0b122c9e9a8~did=9a7df919-d6cc-4591-b25a-1c91fafdc854~country=US~kid=k02~hmac=5905a6120bafc53739c94607ac1c37be20c847680e83bf7979e6e0ed6b7132d5/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+#EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEWS WORLD",Video Severe storms and flash flood threat for 85 million in Northeast; tracking extreme heat and Tropical Storm Bertha | Watch Live News on ABCNL
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2f7fd3b7-13c3-4a55-84ae-9c3881147f3c/a1e26beb-be84-4161-a809-4e126048b23c/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox News Channel
-http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
-#EXTINF:-1 tvg-id="FoxBusiness.us" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2f7fd3b7-13c3-4a55-84ae-9c3881147f3c/a1e26beb-be84-4161-a809-4e126048b23c/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox Business
-http://41.205.93.154/FOXBUSINESS/index.m3u8
-#EXTINF:-1 tvg-id="CBSNews.us" tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1784688185~acl=/*~hmac=9f8ef694970a916520076d224e4d25bd1de117ffc8edbb7c8b3fecd09d1a711b
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/2f7fd3b7-13c3-4a55-84ae-9c3881147f3c/a1e26beb-be84-4161-a809-4e126048b23c/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1784688185~acl=/*~hmac=9f8ef694970a916520076d224e4d25bd1de117ffc8edbb7c8b3fecd09d1a711b
+#EXTINF:-1 tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",Watch CBS News 24/7, our free live news stream
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/718e5adb-0a7b-4b00-bda1-266f30c85466:TUL/master.m3u8
