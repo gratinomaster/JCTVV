@@ -1,9 +1,3 @@
 #EXTM3U url-tvg="https://epg.pw/api/epg.xml?channel_id=465150,https://epg.pw/api/epg.xml?channel_id=470504,https://epg.pw/api/epg.xml?channel_id=464766,https://epg.pw/api/epg.xml?channel_id=464941"
 #EXTINF:-1 tvg-id="465150" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="470504" tvg-name="Fox News Channel" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/416c4f54-bd69-487b-a01a-e217359e112b/d66fb8e7-51cd-4052-9b1b-3fa92e03c989/1280x720/match/400/225/image.jpg" group-title="NEWS WORLD",Fox News Channel
-https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1784718217~acl=/*~hmac=f2110682e2bb7184915558d3ffc7267ebe1cc7b540d3d0f3f61d4b67cb9ea7bd
-#EXTINF:-1 tvg-id="464766" tvg-name="Fox Business" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg" group-title="NEWS WORLD",Fox Business
-https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1784718216~acl=/*~hmac=379ef51b02a74c964fe59fd5f9844dc68b3758259b12650762d1361d8d3b49ee
-#EXTINF:-1 tvg-id="464941" tvg-name="CBS News" tvg-logo="https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/019ef104-a710-48e4-99f6-1cb88e069f95:CHS/master.m3u8
