@@ -14,15 +14,21 @@ M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNO
 OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 
 EPG_SOURCES = [
+    "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
+    "https://epg.pw/xmltv/epg_RU.xml.gz",
+    "https://epg.pw/xmltv/epg_AU.xml.gz",
+    "https://epg.pw/xmltv/epg_FR.xml.gz",
+    "https://epg.pw/xmltv/epg_GB.xml.gz",
+    "https://epg.pw/xmltv/epg_DE.xml.gz",
+    "https://epg.pw/xmltv/epg_US.xml.gz",
+    "https://epg.pw/xmltv/epg_BR.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
+    "https://www.programtv.ru/xmltv.xml.gz",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/claro.xml",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
@@ -87,6 +93,9 @@ all_channels = OrderedDict()
 all_programmes = OrderedDict()
 seen_progs = set()
 
+def strip_suffixes(s):
+    return re.sub(r'(tv|channel|television|televisión|noticias|news|channel\s*\d*)$', '', s).strip()
+
 def fuzzy_match(epg_cid, display_name):
     nc = norm(epg_cid)
     if nc in tvg_norm_set:
@@ -101,9 +110,21 @@ def fuzzy_match(epg_cid, display_name):
             nb = norm(base_name)
             if nb == ndn or ndn in nb or nb in ndn:
                 return tid
+        ndn2 = strip_suffixes(ndn)
+        for tid, base_name in m3u_names.items():
+            nb = norm(base_name)
+            nb2 = strip_suffixes(nb)
+            if ndn2 == nb2 or ndn2 in nb2 or nb2 in ndn2:
+                return tid
     for tid, base_name in m3u_names.items():
         nb = norm(base_name)
         if nb in nc:
+            return tid
+    nc2 = strip_suffixes(nc)
+    for tid, base_name in m3u_names.items():
+        nb = norm(base_name)
+        nb2 = strip_suffixes(nb)
+        if nc2 == nb2 or nc2 in nb2 or nb2 in nc2:
             return tid
     return None
 
