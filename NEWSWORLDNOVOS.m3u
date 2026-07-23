@@ -41,12 +41,8 @@ http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Aire_de_Santa_Fe_logo.png/200px-Aire_de_Santa_Fe_logo.png",Aire de Santa Fe
 https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/5TV_Corrientes_logo.png/200px-5TV_Corrientes_logo.png",5TV Corrientes
-http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Unife_TV_logo.png/200px-Unife_TV_logo.png",UNIFE 25.1 - TDA 25.1
 https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/mono.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f2/Logo-Canal-9-bahia-blanca-telefe.png" group-title="ARGENTINA",Norte | Bahía Blanca | Argentina
-http://icecast.hostingbahia.com.ar:8002/live?28344
 #EXTINF:-1 tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="ARGENTINA",Camaras de Villa Gesell (Av. 3 y 104)
 http://cam104y3.gesell.com.ar/playlist.m3u8
 #EXTINF:-1 tvg-id="NetTV.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a5/Net_TV_logo.png" group-title="ARGENTINA",NET TV HD
@@ -64,10 +60,6 @@ https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qB6I274.png" group-title="ARGENTINA",CANAL 8 SAN JUAN
 https://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/canal-5-mx.png" group-title="ARGENTINA",CANAL 5 ROSARIO
-https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/CEuPoqG.png" group-title="ARGENTINA",CANAL 6 DIGITAL
-https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://canal79tv.com.ar/wp-content/uploads/2025/10/canal79.webp" group-title="ARGENTINA",CANAL 79 MAR DEL PLATA
 https://streamconex.com:19360/mardelplata/mardelplata.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/canal-22-mx.png" group-title="ARGENTINA",CANAL 22
@@ -94,8 +86,6 @@ https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m
 https://tv.alterna.ar/stream/hls/live.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TV_Mana_logo.png/200px-TV_Mana_logo.png" group-title="ARGENTINA",TV MANÁ ARGENTINA
 https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/San_Pedro_TV_logo.png/200px-San_Pedro_TV_logo.png" group-title="ARGENTINA",SAN PEDRO TV
-https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TV_Solidaria_logo.png/200px-TV_Solidaria_logo.png" group-title="ARGENTINA",TV SOLIDARIA
 https://canadaremar2.todostreaming.es/live/argentina-web.m3u8
 #EXTINF:-1 tvg-id="AMC.ar" tvg-name="AMC Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/amc-ar.png" group-title="ARGENTINA", AMC Latin America (1080p) AR
@@ -126,8 +116,6 @@ http://45.185.163.75:8000/play/a016/index.m3u8
 http://179.60.51.134:8888/DISNEY-JR/index.m3u8
 #EXTINF:-1 tvg-name="Disney Jr. Latin America South HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America South HD (1080p) RAW
 http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-#EXTINF:-1 tvg-name="E! Latin America (1080p) AR" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png" group-title="ARGENTINA", E! Latin America (1080p) AR
-http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/entertainment.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="El Gourmet (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/el-gourmet-lam.png" group-title="ARGENTINA", El Gourmet (1080p)
 http://177.234.249.178:8888/EL-GOURMET/index.m3u8
 #EXTINF:-1 tvg-name="MTV Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/mtv-ar.png" group-title="ARGENTINA", MTV Latin America (1080p) AR
@@ -156,31 +144,29 @@ https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 #EXTINF:-1 tvg-id="ImagenTV.mx" group-title="MÉXICO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/imagen-television-mx.png",Imagen TV+ (720p)
 https://jmp2.uk/plu-64e35aff6b1fdb0008ea8441.m3u8
-#EXTINF:-1 tvg-id="Canal5.mx" group-title="MÉXICO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/canal-5-mx.png",Canal 5 TV Cozumel (1080p)
-https://video0.rogohosting.com:19360/tvcozumel/tvcozumel.m3u8
-#EXTINF:-1 tvg-id="MilenioTV.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Milenio_Televisi%C3%B3n_logo.svg/240px-Milenio_Televisi%C3%B3n_logo.svg.png",Milenio Televisión (720p)
+#EXTINF:-1 tvg-id="MilenioTV.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/TG1T5Oh.png",Milenio Televisión (720p)
 https://jmp2.uk/plu-652e922db4b047000825f975.m3u8
-#EXTINF:-1 tvg-id="Canal14.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Canal_Catorce_logo.svg/240px-Canal_Catorce_logo.svg.png",Canal 14 (1080p)
+#EXTINF:-1 tvg-id="Canal14.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Canal_14_M%C3%A9xico.svg/330px-Logo_Canal_14_M%C3%A9xico.svg.png",Canal 14 (1080p)
 https://s5.mexside.net:1936/canal14/canal14/chunklist.m3u8
-#EXTINF:-1 tvg-id="TVUNAM.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/TV_UNAM_logo.svg/240px-TV_UNAM_logo.svg.png",TV UNAM (1080p)
+#EXTINF:-1 tvg-id="TVUNAM.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/ayg5kRM.png",TV UNAM (1080p)
 https://5fc584f3f19c9.streamlock.net/tvunam/videotvunam/chunklist_w372205069_DVR.m3u8
-#EXTINF:-1 tvg-id="CanalDelCongreso.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Canal_del_Congreso_logo.svg/240px-Canal_del_Congreso_logo.svg.png",Canal del Congreso
+#EXTINF:-1 tvg-id="CanalDelCongreso.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/xAC6gQO.png",Canal del Congreso
 https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="JusticiaTV.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Justicia_TV_logo.svg/240px-Justicia_TV_logo.svg.png",Justicia TV
+#EXTINF:-1 tvg-id="JusticiaTV.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Justicia_TV.png",Justicia TV
 https://live-scjn.ovp-vivaro.digital/ovp-origin/638a22b47746d/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalMexiquense.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mexiquense_TV_logo.svg/240px-Mexiquense_TV_logo.svg.png",Mexiquense TV (720p)
+#EXTINF:-1 tvg-id="CanalMexiquense.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/iVfzakA.png",Mexiquense TV (720p)
 https://5e50264bd6766.streamlock.net/mexiquense/videomexiquense/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCuatro.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/TV_Cuatro_logo.svg/240px-TV_Cuatro_logo.svg.png",TV Cuatro 4.1
+#EXTINF:-1 tvg-id="TVCuatro.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/Of044Jx.png",TV Cuatro 4.1
 https://5f1af61612fb5.streamlock.net/tv4/videotv4/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCuatro.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/TV_Cuatro_logo.svg/240px-TV_Cuatro_logo.svg.png",TV Cuatro 4.2
+#EXTINF:-1 tvg-id="TVCuatro.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/Of044Jx.png",TV Cuatro 4.2
 https://5f2c1b0d880e5.streamlock.net/tv42/videotv42/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal44-udgtv.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Canal_44_udgtv_logo.svg/240px-Canal_44_udgtv_logo.svg.png",CANAL 44 Chihuahua
+#EXTINF:-1 tvg-id="Canal44-udgtv.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/YDp8MlN.png",CANAL 44 Chihuahua
 https://5e50264bd6766.streamlock.net/canal442/videocanal442/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal44-udgtv.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Canal_44_udgtv_logo.svg/240px-Canal_44_udgtv_logo.svg.png",Canal 44 Ciudad Juárez (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal44-udgtv.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/YDp8MlN.png",Canal 44 Ciudad Juárez (720p) [Not 24/7]
 https://5e50264bd6766.streamlock.net/canal44/videocanal44/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jalisco_TV_logo.svg/240px-Jalisco_TV_logo.svg.png",Jalisco TV (720p)
+#EXTINF:-1 tvg-id="Canal4.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/N4meE8I.png",Jalisco TV (720p)
 https://video0.rogohosting.com:19360/sisjalisciense/sisjalisciense.m3u8
-#EXTINF:-1 tvg-id="Canal4.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Jalisco_TV_logo.svg/240px-Jalisco_TV_logo.svg.png",SQCS Canal 4 (1080p)
+#EXTINF:-1 tvg-id="Canal4.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/N4meE8I.png",SQCS Canal 4 (1080p)
 https://video0.rogohosting.com:19360/4982/4982.m3u8
 #EXTINF:-1 tvg-id="Sony.mx" group-title="MÉXICO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cine-sony-us.png",Cine Sony
 https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8
@@ -200,13 +186,13 @@ https://estrella-games-oando.amagi.tv/playlist.m3u8
 https://estrella-news-oando.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTN.mx" group-title="MÉXICO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/ewtn-int.png",MX EWTN
 https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RussiaToday.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/RT_logo.svg/240px-RT_logo.svg.png",RT Noticias (1080p)
+#EXTINF:-1 tvg-id="RussiaToday.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/55SK22l.png",RT Noticias (1080p)
 https://rt-esp.rttv.com/dvr/rtesp/playlist_1600Kb.m3u8
-#EXTINF:-1 tvg-id="Canal12TelevisaTijuana.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Canal_12_Televisa_Tijuana_logo.svg/240px-Canal_12_Televisa_Tijuana_logo.svg.png",Canal 33 Tijuana (720p)
+#EXTINF:-1 tvg-id="Canal12TelevisaTijuana.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/UIykEd6.png",Canal 33 Tijuana (720p)
 https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8
 #EXTINF:-1 tvg-id="AztecaInternacional.us" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Azteca_Internacional_logo_2023.png",Azteca Internacional (1080p)
 https://azt-mun.otteravision.com/azt/mun/mun.m3u8
-#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/TV_M%C3%A1s_logo.svg/240px-TV_M%C3%A1s_logo.svg.png",TVMÁS Veracruz (1080p)
+#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://i.imgur.com/lhI8Rs0.png",TVMÁS Veracruz (1080p)
 https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/bFG4Rqz.png" group-title="MÉXICO",Presumiendo México (720p)
 https://60417ddeaf0d9.streamlock.net/telemetrika/smil:telemetrika.smil/playlist.m3u8
@@ -332,22 +318,10 @@ http://vcp1.myplaytv.com:1935/promar/promar/playlist.m3u8
 http://45.173.198.59:8080/hls/nginx3.m3u8?tla=
 #EXTINF:-1 tvg-logo="https://i.ibb.co/HG2DM8G/IMG-20230705-153952.jpg" group-title="VENEZUELA",Inter TV
 https://streamtv.intervenhosting.net:3439/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/%C3%81vila_TV_logo.png/200px-%C3%81vila_TV_logo.png" group-title="VENEZUELA",Avila TV
-http://181.78.8.199:8000/play/a0ad/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/TV_FANB_logo.png/200px-TV_FANB_logo.png" group-title="VENEZUELA",TV FANB
-http://181.78.8.199:8000/play/a0af/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/ConCiencia_TV_logo.png/200px-ConCiencia_TV_logo.png" group-title="VENEZUELA",ConCiencia TV
-http://181.78.8.199:8000/play/a0ag/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ve_Plus_logo.png/200px-Ve_Plus_logo.png" group-title="VENEZUELA",Ve Plus
 http://181.78.8.199:8000/play/a0ah/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/38/Logo_Colombeia.png" group-title="VENEZUELA",Colombeia
-http://181.78.8.199:8000/play/a0ai/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Canal_Orbe_21_logo.png/200px-Canal_Orbe_21_logo.png" group-title="VENEZUELA",Canal Orbe 21
 http://181.78.8.199:8000/play/a0ak/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Buena_TV_logo.png/200px-Buena_TV_logo.png" group-title="VENEZUELA",Buena TV
-http://181.78.8.199:8000/play/a0al/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vive_TV_logo.png/200px-Vive_TV_logo.png" group-title="VENEZUELA",Vive TV
-http://181.78.8.199:8000/play/a0am/index.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" tvg-logo="https://redevida.com.br/wp-content/uploads/2024/07/logo-redevida.png.webp" group-title="REDE VIDA",Rede Vida
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" tvg-logo="https://redevida.com.br/wp-content/uploads/2024/07/logo-redevida.png.webp" group-title="REDE VIDA",Rede Vida (Oficial 480p)
@@ -359,3 +333,5 @@ https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2wOe3bM.png" group-title="NEWS WORLD",Al Jazeera English
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=10841
+#EXTINF:-1 tvg-logo="https://i.imgur.com/55SK22l.png" group-title="NEWS WORLD",TRT World
+https://tv-trtworld.medya.trt.com.tr/master.m3u8
