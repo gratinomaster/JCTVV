@@ -1,71 +1,120 @@
 #!/usr/bin/env python3
-import requests
-import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+"""Test all streams in lista5.m3u - deeper validation."""
+
+import subprocess
+import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-EPG_URL = "https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg_news_fixed.xml"
-
-def test_stream_url(url):
-    """Testa se o stream URL está acessível"""
+def test_url_deep(url, timeout=20):
+    """Test if an HLS stream URL returns valid m3u8 content."""
     try:
-        # Remove params from URL for testing
-        base_url = url.split('?')[0] if '?' in url else url
-        resp = requests.head(base_url, timeout=10, allow_redirects=True)
-        if resp.status_code < 400:
-            return True, resp.status_code
-        return False, resp.status_code
+        result = subprocess.run(
+            ['curl', '-s', '-L', '--max-time', str(timeout),
+             '--connect-timeout', '10', url],
+            capture_output=True, text=True, timeout=timeout + 5
+        )
+        if result.returncode != 0:
+            return False, f"curl error {result.returncode}"
+
+        body = result.stdout.strip()
+        if not body:
+            return False, "empty response"
+
+        # Check for HTTP error in body
+        if body.startswith('HTTP/') and '403' in body[:200]:
+            return False, "403 Forbidden"
+        if body.startswith('HTTP/') and '404' in body[:200]:
+            return False, "404 Not Found"
+
+        # Valid m3u8 content indicators
+        if '#EXTM3U' in body or '#EXT-X-' in body or '#EXTINF' in body:
+            return True, "valid m3u8"
+        if '.ts' in body or '.m3u8' in body:
+            return True, "valid m3u8 (variant)"
+
+        # Check if it's an error page
+        if '<html' in body.lower() or '<!doctype' in body.lower():
+            return False, "HTML error page"
+
+        return False, f"unknown content: {body[:100]}"
+
+    except subprocess.TimeoutExpired:
+        return False, "timeout"
     except Exception as e:
         return False, str(e)
 
-def check_epg_available():
-    """Verifica se o EPG está disponível e tem dados de hoje, amanhã e depois de amanhã"""
-    try:
-        resp = requests.get(EPG_URL, timeout=15)
-        if resp.status_code != 200:
-            return False, f"EPG status: {resp.status_code}"
-        
-        root = ET.fromstring(resp.text)
-        
-        today = datetime.now()
-        tomorrow = today + timedelta(days=1)
-        after_tomorrow = today + timedelta(days=2)
-        
-        dates_found = set()
-        for prog in root.findall('.//programme'):
-            start = prog.get('start', '')[:8]
-            if len(start) >= 8:
-                try:
-                    dt = datetime.strptime(start[:8], '%Y%m%d')
-                    if dt.date() == today.date():
-                        dates_found.add('today')
-                    elif dt.date() == tomorrow.date():
-                        dates_found.add('tomorrow')
-                    elif dt.date() == after_tomorrow.date():
-                        dates_found.add('after_tomorrow')
-                except:
-                    pass
-        
-        return True, f"Dates found: {dates_found}"
-    except Exception as e:
-        return False, str(e)
+def parse_m3u(filepath):
+    entries = []
+    with open(filepath, 'r') as f:
+        lines = [l.rstrip('\n') for l in f.readlines()]
+    i = 0
+    while i < len(lines):
+        if lines[i].startswith('#EXTINF:'):
+            extinf = lines[i]
+            i += 1
+            if i < len(lines) and lines[i].strip() and not lines[i].startswith('#'):
+                url = lines[i].strip()
+                entries.append((extinf, url))
+            else:
+                i -= 1
+        i += 1
+    return entries
 
 def main():
-    print("=== Testando EPG ===")
-    epg_ok, msg = check_epg_available()
-    print(f"EPG Status: {epg_ok}")
-    print(f"Mensagem: {msg}")
-    
-    print("\n=== Testando Streams da lista5.m3u ===")
-    streams = [
-        "https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1777307045~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1776861675071%2F~psid=aed17fa7-fa25-4454-85b2-c9ea5bb5e7db~did=cb2150e2-9870-472c-a57d-d7a537fa8b2e~country=US~kid=k02~hmac=b13f3fb44230b594a62c96b98bdc2ee5063140f9faf64f4fe7e3428a9796c453/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1776861675071/ctr-all-hdri-sliding.m3u8",
-        "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
-    ]
-    
-    for url in streams:
-        ok, status = test_stream_url(url)
-        print(f"Stream: {url[:60]}...")
-        print(f"  Result: {ok}, Status: {status}")
+    filepath = '/home/runner/work/JCTVV/JCTVV/lista5.m3u'
+    entries = parse_m3u(filepath)
+    print(f"Total de entradas: {len(entries)}")
 
-if __name__ == "__main__":
+    unique_urls = list(set(url for _, url in entries))
+    print(f"URLs únicas para testar: {len(unique_urls)}")
+
+    results = {}
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        future_to_url = {executor.submit(test_url_deep, url): url for url in unique_urls}
+        for i, future in enumerate(as_completed(future_to_url)):
+            url = future_to_url[future]
+            ok, msg = future.result()
+            results[url] = ok
+            name = ""
+            for extinf, u in entries:
+                if u == url:
+                    m = re.search(r',(.+)$', extinf)
+                    if m:
+                        name = m.group(1).strip()[:60]
+                    break
+            status = "OK" if ok else f"FALHOU ({msg})"
+            print(f"  [{i+1}/{len(unique_urls)}] {status} - {name}")
+
+    new_entries = []
+    removed = 0
+    for extinf, url in entries:
+        if results.get(url, False):
+            new_entries.append((extinf, url))
+        else:
+            removed += 1
+
+    print(f"\nRemovidas: {removed} entradas mortas")
+    print(f"Mantidas: {len(new_entries)} entradas")
+
+    with open(filepath, 'w') as f:
+        f.write('#EXTM3U\n')
+        for extinf, url in new_entries:
+            f.write(extinf + '\n')
+            f.write(url + '\n')
+
+    print(f"Arquivo {filepath} sobrescrito com sucesso!")
+
+    if removed > 0:
+        print(f"\nCanais removidos:")
+        seen = set()
+        for extinf, url in entries:
+            if not results.get(url, False) and url not in seen:
+                m = re.search(r',(.+)$', extinf)
+                name = m.group(1).strip() if m else url[:80]
+                _, reason = test_url_deep(url)
+                print(f"  - {name} ({reason})")
+                seen.add(url)
+
+if __name__ == '__main__':
     main()
