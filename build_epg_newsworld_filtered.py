@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 import requests
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
+LOCAL_M3U = "NEWSWORLDNOVOS.m3u"
 OUTPUT = "EPGFULL.xml.gz"
 
 EPG_SOURCES = [
@@ -34,13 +35,25 @@ def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
 
 print("1. Baixando M3U...")
+m3u_text = ""
 try:
     r = requests.get(M3U_URL, timeout=60, allow_redirects=True)
     r.raise_for_status()
     m3u_text = r.text
+    if m3u_text.count('#EXTINF') == 0:
+        print("  M3U remoto sem canais, usando local...")
+        m3u_text = ""
 except Exception as e:
-    print(f"  ERRO ao baixar M3U: {e}")
-    sys.exit(1)
+    print(f"  ERRO ao baixar M3U remoto: {e}")
+
+if not m3u_text or m3u_text.count('#EXTINF') == 0:
+    if os.path.exists(LOCAL_M3U):
+        print(f"  Usando arquivo local: {LOCAL_M3U}")
+        with open(LOCAL_M3U, 'r', encoding='utf-8') as f:
+            m3u_text = f.read()
+    else:
+        print("  ERRO: Nenhum M3U disponivel!")
+        sys.exit(1)
 
 m3u_entries = []
 seen_display = set()
