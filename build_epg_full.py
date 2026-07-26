@@ -11,8 +11,8 @@ from datetime import datetime, timedelta
 import urllib.request
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
-M3U_LOCAL = "/tmp/NEWSWORLDNOVOS.m3u"
-OUTPUT = "EPGFULL.xml.gz"
+M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
+OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 
 EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
@@ -74,14 +74,20 @@ def download(url, timeout=300):
 
 
 print("=" * 60)
-print("0. Baixando lista M3U do GitHub")
+print("0. Carregando lista M3U")
 print("=" * 60)
 
-m3u_data = download(M3U_URL)
-if m3u_data is None:
-    print("ERRO: Nao foi possivel baixar a M3U")
-    sys.exit(1)
-m3u_text = m3u_data.decode("utf-8", errors="replace")
+if os.path.exists(M3U_LOCAL):
+    print(f"  Usando arquivo local: {M3U_LOCAL}")
+    with open(M3U_LOCAL, "r", encoding="utf-8", errors="replace") as f:
+        m3u_text = f.read()
+else:
+    print(f"  Baixando do GitHub: {M3U_URL}")
+    m3u_data = download(M3U_URL)
+    if m3u_data is None:
+        print("ERRO: Nao foi possivel baixar a M3U")
+        sys.exit(1)
+    m3u_text = m3u_data.decode("utf-8", errors="replace")
 
 print()
 print("=" * 60)
