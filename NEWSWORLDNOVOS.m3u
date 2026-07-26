@@ -39,8 +39,6 @@ https://stream.arcast.live/ahora/ahora/playlist.m3u8
 http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Canal_E_logo.png/200px-Canal_E_logo.png",Canal E
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Aire_de_Santa_Fe_logo.png/200px-Aire_de_Santa_Fe_logo.png",Aire de Santa Fe
-https://unlimited1-us.dps.live/airedesantafetv/airedesantafetv.smil/playlist.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Unife_TV_logo.png/200px-Unife_TV_logo.png",UNIFE 25.1 - TDA 25.1
 https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="ARGENTINA",Camaras de Villa Gesell (Av. 3 y 104)
@@ -80,8 +78,6 @@ https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8
 https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/vBsry35.png" group-title="ARGENTINA",CADENA 103
 http://arcast.net:1935/cadena103/cadena103/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/CEuPoqG.png" group-title="ARGENTINA",CATAMARCA TV
-https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tv.alterna.ar/logoalternatv2.png" group-title="ARGENTINA",ALTERNA TV
 https://tv.alterna.ar/stream/hls/live.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TV_Mana_logo.png/200px-TV_Mana_logo.png" group-title="ARGENTINA",TV MANÁ ARGENTINA
@@ -132,8 +128,6 @@ https://iptv.ixfo.com.ar:30443/live/RadioUpTvStreaming/playlist.m3u8
 http://138.121.15.230:9002/SONY/index.m3u8
 #EXTINF:-1 tvg-name="Telemundo Internacional (1080p) AR" tvg-logo="https://i.imgur.com/j2O4ndp.png" group-title="ARGENTINA", Telemundo Internacional (1080p) AR
 http://138.121.15.230:9002/TELEMUNDO/index.m3u8
-#EXTINF:-1 tvg-name="Unife TV" tvg-logo="https://i.imgur.com/TLM592m.png" group-title="ARGENTINA", Unife TV
-https://5dcabf026b188.streamlock.net/StreamUnife/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="VTV.ar" tvg-name="VTV" tvg-logo="https://i.imgur.com/FeRTDqz.png" group-title="ARGENTINA", VTV
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
 #EXTINF:-1 tvg-id="AztecaUno.mx" group-title="MÉXICO" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/azteca-uno-mx.png",Azteca Uno (-1h)
@@ -226,10 +220,6 @@ https://servilive.com:3879/live/telesaltillolive.m3u8
 https://5f2c1b0d880e5.streamlock.net/zacatecas/videozacatecas/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/aZCTkjU.jpg" group-title="MÉXICO",Nayarit Comunica (1080p)
 https://live.iplanay.gob.mx/hls/nayarittv.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="MÉXICO",IERTBCS Canal 8 La Paz (1080p) [Not 24/7]
-https://s5.mexside.net:1936/xhbzc81/xhbzc81/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="MÉXICO",IERTBCS Canal 8.2 La Paz (1080p) [Not 24/7]
-https://s5.mexside.net:1936/xhbzc82/xhbzc82/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/5qlVblr.png" group-title="MÉXICO",VB Media TV (1080p)
 https://capomo01-enitv.eninetworks.com/locales_vbmedia_publico/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qEk0QGa.png" group-title="MÉXICO",Conecta TV (720p)
@@ -330,8 +320,9 @@ https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/in
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_3.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/france-24-english-int.png" group-title="NEWS WORLD",France 24 English
 https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
-
 #EXTINF:-1 tvg-logo="https://i.imgur.com/2wOe3bM.png" group-title="NEWS WORLD",Al Jazeera English
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=10841
 #EXTINF:-1 tvg-logo="https://i.imgur.com/55SK22l.png" group-title="NEWS WORLD",TRT World
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/Asu5pE9.png" group-title="NEWS WORLD",Arirang TV
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
