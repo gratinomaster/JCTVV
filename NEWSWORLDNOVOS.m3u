@@ -19,7 +19,7 @@ https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-id="AmericaTV.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png",América TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-id="Canal26.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Canal_26_Argentina.png",Canal 26 HD
+#EXTINF:-1 group-title="ARGENTINA" tvg-id="Canal26.ar" tvg-logo="https://i.imgur.com/canal26-logo.png",Canal 26 HD
 https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8
 #EXTINF:-1 group-title="ARGENTINA" tvg-id="24/7CanaldeNoticias.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Logo_24_7_Canal_de_Noticias.png",24/7 Canal de Noticias
 https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
@@ -27,19 +27,19 @@ https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8
 https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream1/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xFgJawa.png" group-title="ARGENTINA" tvg-id="ArgentinisimaSatelital.ar",Argentinísima Satelital
 https://stream1.sersat.com/hls/argentinisima.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-id="Telemax.ar" tvg-logo="https://www.lyngsat.com/logo/tv/tt/telemax.png",Telemax
+#EXTINF:-1 group-title="ARGENTINA" tvg-id="Telemax.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Telemax_logo.png",Telemax
 https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-id="ElGarageTv.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Garage_TV_logo.png/200px-Garage_TV_logo.png",GARAGE TV
+#EXTINF:-1 group-title="ARGENTINA" tvg-id="ElGarageTv.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8a/Garage_TV_logo.png",GARAGE TV
 https://stream1.sersat.com/hls/garagetv.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/TV_Universidad_logo.png/200px-TV_Universidad_logo.png",TV Universidad
+#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/TV_Universidad_logo.png",TV Universidad
 https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Canal_9_Litoral_logo.png/200px-Canal_9_Litoral_logo.png",Canal 9 Litoral
+#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/Canal_9_Litoral_logo.png",Canal 9 Litoral
 https://stream.arcast.live/ahora/ahora/playlist.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canal_4_Posadas_logo.png/200px-Canal_4_Posadas_logo.png",América Canal 4 Posadas | AR
+#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/08/Canal_4_Posadas_logo.png",América Canal 4 Posadas | AR
 http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Canal_E_logo.png/200px-Canal_E_logo.png",Canal E
+#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Canal_E_logo.png",Canal E
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
-#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Unife_TV_logo.png/200px-Unife_TV_logo.png",UNIFE 25.1 - TDA 25.1
+#EXTINF:-1 group-title="ARGENTINA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Unife_TV_logo.png",UNIFE 25.1 - TDA 25.1
 https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/mono.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/SsNFudZ.png" group-title="ARGENTINA",Camaras de Villa Gesell (Av. 3 y 104)
 http://cam104y3.gesell.com.ar/playlist.m3u8
@@ -47,14 +47,14 @@ http://cam104y3.gesell.com.ar/playlist.m3u8
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/bravo-us.png" group-title="ARGENTINA",BRAVO TV
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TN.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/05/TN_logo_2019.png" group-title="ARGENTINA",TN
+#EXTINF:-1 tvg-id="TN.ar" tvg-logo="https://i.imgur.com/tn-logo.png" group-title="ARGENTINA",TN
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36
 https://genoa-player-api.vodgc.net/content/manifest/1879139?pid=1&.m3u8
 #EXTINF:-1 tvg-id="TyCSports.ar" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/tyc-sports-ar.png" group-title="ARGENTINA",TYC SPORTS
 https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Canal_Orbe_21_logo.png/200px-Canal_Orbe_21_logo.png" group-title="ARGENTINA",CANAL ORBE 21
+#EXTINF:-1 tvg-logo="https://iptv-epg.org/images/HHwGGRTLlxdtiXyxCCISjObQFE3DFeD_Azt_sLOckk-8ns3TZqI3XBdQgeZOVf5HVEKh9YVBIi6iOHdowPJlQuuvy-RVZHfgd8wr9h2Xi2hTixQ" tvg-id="Canal21.ar" group-title="ARGENTINA",CANAL ORBE 21
 https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Canal_E_logo.png/200px-Canal_E_logo.png" group-title="ARGENTINA",CANAL E
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7a/Canal_E_logo.png" group-title="ARGENTINA",CANAL E
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunks.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/qB6I274.png" group-title="ARGENTINA",CANAL 8 SAN JUAN
 https://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8
@@ -70,63 +70,61 @@ https://stream.arcast.com.ar/c3lapampa/ngrp:c3lapampa_all/playlist.m3u8
 https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/TOlncyp.png" group-title="ARGENTINA",CANAL 2 GUALEGUAY
 https://stream.arcast.net:4443/gualeguay/gualeguay/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalDeLaCiudad.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9f/Logo_Canal_de_la_Ciudad.png" group-title="ARGENTINA",CANAL DE LA CIUDAD
+#EXTINF:-1 tvg-id="CanalDeLaCiudad.ar" tvg-logo="https://i.imgur.com/ciudad-logo.png" group-title="ARGENTINA",CANAL DE LA CIUDAD
 https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Caras_TV_logo.png/200px-Caras_TV_logo.png" group-title="ARGENTINA",CARAS TV
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/df/Caras_TV_logo.png" group-title="ARGENTINA",CARAS TV
 https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Eco_TV_logo.png/200px-Eco_TV_logo.png" group-title="ARGENTINA",ECO TV
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9e/Eco_TV_logo.png" group-title="ARGENTINA",ECO TV
 https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/vBsry35.png" group-title="ARGENTINA",CADENA 103
 http://arcast.net:1935/cadena103/cadena103/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tv.alterna.ar/logoalternatv2.png" group-title="ARGENTINA",ALTERNA TV
 https://tv.alterna.ar/stream/hls/live.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TV_Mana_logo.png/200px-TV_Mana_logo.png" group-title="ARGENTINA",TV MANÁ ARGENTINA
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8d/TV_Mana_logo.png" group-title="ARGENTINA",TV MANÁ ARGENTINA
 https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/TV_Solidaria_logo.png/200px-TV_Solidaria_logo.png" group-title="ARGENTINA",TV SOLIDARIA
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/04/TV_Solidaria_logo.png" group-title="ARGENTINA",TV SOLIDARIA
 https://canadaremar2.todostreaming.es/live/argentina-web.m3u8
 #EXTINF:-1 tvg-id="AMC.ar" tvg-name="AMC Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/amc-ar.png" group-title="ARGENTINA", AMC Latin America (1080p) AR
 http://45.162.193.35:80/AMC/index.m3u8
 #EXTINF:-1 tvg-name="Bravo TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/bravo-us.png" group-title="ARGENTINA", Bravo TV
 https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8?did=b2201035844768f58630b7eef
-#EXTINF:-1 tvg-name="Comedy Central Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/comedy-central-ar.png" group-title="ARGENTINA", Comedy Central Latin America (1080p) AR
+#EXTINF:-1 tvg-name="Comedy Central Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/comedy-central-ar.png" tvg-id="ComedyCentral.ar" group-title="ARGENTINA", Comedy Central Latin America (1080p) AR
 http://181.119.93.83:8000/play/a1di/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.ar" tvg-name="Disney Channel Latin America" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" group-title="ARGENTINA", Disney Channel Latin America
 http://138.121.15.230:9002/DISNEY-CHANNEL/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel Latin America (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" group-title="ARGENTINA", Disney Channel Latin America (1080p) RAW
+#EXTINF:-1 tvg-name="Disney Channel Latin America (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" tvg-id="DisneyChannel.ar" group-title="ARGENTINA", Disney Channel Latin America (1080p) RAW
 http://45.171.108.253:8888/DISNEY_CHANNEL/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel Latin America Center (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" group-title="ARGENTINA", Disney Channel Latin America Center (1080p)
+#EXTINF:-1 tvg-name="Disney Channel Latin America Center (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" tvg-id="DisneyChannel.ar" group-title="ARGENTINA", Disney Channel Latin America Center (1080p)
 http://181.78.8.199:8000/play/a0dn/index.m3u8
-#EXTINF:-1 tvg-name="Disney Channel Latin America Panregional HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" group-title="ARGENTINA", Disney Channel Latin America Panregional HD (1080p)
+#EXTINF:-1 tvg-name="Disney Channel Latin America Panregional HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" tvg-id="DisneyChannel.ar" group-title="ARGENTINA", Disney Channel Latin America Panregional HD (1080p)
 http://190.11.225.124:5000/live/disney_hd/playlist.m3u8
-#EXTINF:-1 tvg-name="Disney Channel Latin America Panregional HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" group-title="ARGENTINA", Disney Channel Latin America Panregional HD (1080p) RAW
+#EXTINF:-1 tvg-name="Disney Channel Latin America Panregional HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-channel-lam.png" tvg-id="DisneyChannel.ar" group-title="ARGENTINA", Disney Channel Latin America Panregional HD (1080p) RAW
 http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
 #EXTINF:-1 tvg-id="DisneyJunior.ar" tvg-name="Disney Jr. Latin America" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America
 http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD
-#EXTINF:-1 tvg-name="Disney Jr. Latin America North HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America North HD (1080p)
+#EXTINF:-1 tvg-name="Disney Jr. Latin America North HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" tvg-id="DisneyJunior.ar" group-title="ARGENTINA", Disney Jr. Latin America North HD (1080p)
 http://190.11.225.124:5000/live/disney_jr_hd/playlist.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. Latin America North HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America North HD (1080p) RAW
+#EXTINF:-1 tvg-name="Disney Jr. Latin America North HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" tvg-id="DisneyJunior.ar" group-title="ARGENTINA", Disney Jr. Latin America North HD (1080p) RAW
 http://181.78.14.26:4000/play/a073/index.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. Latin America South (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America South (1080p)
+#EXTINF:-1 tvg-name="Disney Jr. Latin America South (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" tvg-id="DisneyJunior.ar" group-title="ARGENTINA", Disney Jr. Latin America South (1080p)
 http://45.185.163.75:8000/play/a016/index.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. Latin America South HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America South HD (1080p)
+#EXTINF:-1 tvg-name="Disney Jr. Latin America South HD (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" tvg-id="DisneyJunior.ar" group-title="ARGENTINA", Disney Jr. Latin America South HD (1080p)
 http://179.60.51.134:8888/DISNEY-JR/index.m3u8
-#EXTINF:-1 tvg-name="Disney Jr. Latin America South HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" group-title="ARGENTINA", Disney Jr. Latin America South HD (1080p) RAW
+#EXTINF:-1 tvg-name="Disney Jr. Latin America South HD (1080p) RAW" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/disney-jr-lam.png" tvg-id="DisneyJunior.ar" group-title="ARGENTINA", Disney Jr. Latin America South HD (1080p) RAW
 http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8
-#EXTINF:-1 tvg-name="El Gourmet (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/el-gourmet-lam.png" group-title="ARGENTINA", El Gourmet (1080p)
+#EXTINF:-1 tvg-name="El Gourmet (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/el-gourmet-lam.png" tvg-id="ElGourmet.ar" group-title="ARGENTINA", El Gourmet (1080p)
 http://177.234.249.178:8888/EL-GOURMET/index.m3u8
-#EXTINF:-1 tvg-name="MTV Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/mtv-ar.png" group-title="ARGENTINA", MTV Latin America (1080p) AR
+#EXTINF:-1 tvg-name="MTV Latin America (1080p) AR" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/mtv-ar.png" tvg-id="MTV.ar" group-title="ARGENTINA", MTV Latin America (1080p) AR
 http://179.60.51.134:8888/MTV/index.m3u8
-#EXTINF:-1 tvg-name="Quiero Musica en mi Idioma (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/master/countries/argentina/quiero-musica-en-mi-idioma-ar.png" group-title="ARGENTINA", Quiero Musica en mi Idioma (1080p)
+#EXTINF:-1 tvg-name="Quiero Musica en mi Idioma (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/master/countries/argentina/quiero-musica-en-mi-idioma-ar.png" tvg-id="Quiero.ar" group-title="ARGENTINA", Quiero Musica en mi Idioma (1080p)
 http://177.234.249.178:8888/MTV/index.m3u8
 #EXTINF:-1 tvg-name="Radio Maria TV (1080p)" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/1/1f/Radio_Maria_logo.png" group-title="ARGENTINA", Radio Maria TV (1080p)
 https://radiomaria.inovanex.stream/stream.m3u8
-#EXTINF:-1 tvg-name="Radio Sublime Gracia TV" tvg-logo="https://i.ibb.co/P9jgTz4/c49b986afb751882bcbee57f9c9b20d7-350x210.png" group-title="ARGENTINA", Radio Sublime Gracia TV
-https://5f700d5b2c46f.streamlock.net/sublime/sublime/playlist.m3u8
 #EXTINF:-1 tvg-name="Radio UP" tvg-logo="https://i.imgur.com/vBsry35.png" group-title="ARGENTINA", Radio UP
 https://iptv.ixfo.com.ar:30443/live/RadioUpTvStreaming/playlist.m3u8
 #EXTINF:-1 tvg-id="Sony.ar" tvg-name="Sony Channel (1080p)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-latin-america/sony-channel-lam.png" group-title="ARGENTINA", Sony Channel (1080p)
 http://138.121.15.230:9002/SONY/index.m3u8
-#EXTINF:-1 tvg-name="Telemundo Internacional (1080p) AR" tvg-logo="https://i.imgur.com/j2O4ndp.png" group-title="ARGENTINA", Telemundo Internacional (1080p) AR
+#EXTINF:-1 tvg-name="Telemundo Internacional (1080p) AR" tvg-logo="https://i.imgur.com/j2O4ndp.png" tvg-id="TelemundoInternacional.ar" group-title="ARGENTINA", Telemundo Internacional (1080p) AR
 http://138.121.15.230:9002/TELEMUNDO/index.m3u8
 #EXTINF:-1 tvg-id="VTV.ar" tvg-name="VTV" tvg-logo="https://i.imgur.com/FeRTDqz.png" group-title="ARGENTINA", VTV
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
@@ -140,7 +138,7 @@ https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
 https://jmp2.uk/plu-64e35aff6b1fdb0008ea8441.m3u8
 #EXTINF:-1 tvg-id="MilenioTV.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/TG1T5Oh.png",Milenio Televisión (720p)
 https://jmp2.uk/plu-652e922db4b047000825f975.m3u8
-#EXTINF:-1 tvg-id="Canal14.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Canal_14_M%C3%A9xico.svg/330px-Logo_Canal_14_M%C3%A9xico.svg.png",Canal 14 (1080p)
+#EXTINF:-1 tvg-id="Canal14.mx" group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c0/Canal14Mexico.jpg",Canal 14 (1080p)
 https://s5.mexside.net:1936/canal14/canal14/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVUNAM.mx" group-title="MÉXICO" tvg-logo="https://i.imgur.com/ayg5kRM.png",TV UNAM (1080p)
 https://5fc584f3f19c9.streamlock.net/tvunam/videotvunam/chunklist_w372205069_DVR.m3u8
@@ -208,9 +206,9 @@ https://5fc584f3f19c9.streamlock.net/tvmarlapaz/smil:tvmarlapaz.smil/playlist.m3
 https://5fc584f3f19c9.streamlock.net/tvmarloscabos/smil:tvmarloscabos.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/z9iVlMn.png" group-title="MÉXICO",TV Mar Puerto Vallarta (1080p)
 https://5ca9af4645e15.streamlock.net/tvmarvallarta/videotvmarvallarta/playlist.m3u8
-#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Canal_26_Argentina.png",SET Televisión Canal 26.1 (720p) [Not 24/7]
+#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://i.imgur.com/canal26-logo.png",SET Televisión Canal 26.1 (720p) [Not 24/7]
 https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8
-#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Canal_26_Argentina.png",SET Televisión Canal 26.2 (720p) [Not 24/7]
+#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://i.imgur.com/canal26-logo.png",SET Televisión Canal 26.2 (720p) [Not 24/7]
 https://5d0d1d7a6be9e.streamlock.net/sicom/canal2/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/kYtAR26.png" group-title="MÉXICO",RCG TV (1080p)
 https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8
@@ -256,7 +254,7 @@ https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8
 https://5f1af61612fb5.streamlock.net/trc/videotrc/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/JBsLuZ9.png" group-title="MÉXICO",CHIAP CANAL 10
 https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8
-#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/30/Canal_26_Argentina.png",AGS CANAL 26
+#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://i.imgur.com/canal26-logo.png",AGS CANAL 26
 https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://canal28.mx/wp-content/uploads/2025/03/Logo2.png" group-title="MÉXICO",Canal 28 Nuevo León (720p)
 https://s5.mexside.net:1936/canal28/canal28/playlist.m3u8
@@ -264,7 +262,7 @@ https://s5.mexside.net:1936/canal28/canal28/playlist.m3u8
 https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/7MXF4Fd.png" group-title="MÉXICO",Sistema Michoacano de TV (1080p)
 https://s5.mexside.net:1936/enlinea/enlinea/playlist.m3u8
-#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Telemax_logo.png/200px-Telemax_logo.png",Telemax (XEWH-TDT) (1080p)
+#EXTINF:-1 group-title="MÉXICO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5e/Telemax_logo.png",Telemax (XEWH-TDT) (1080p)
 https://s5.mexside.net:1936/telemax/telemax/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/W4xwCdl.png" group-title="MÉXICO",TRC Televisión (720p)
 https://5fe2654d6127d.streamlock.net/trc/videotrc/playlist.m3u8
@@ -284,19 +282,19 @@ https://the-pet-collective-international-mx.samsung.wurl.tv/playlist.m3u8
 http://181.78.8.199:8000/play/a0if/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/FeRTDqz.png" group-title="VENEZUELA",VTV Venezolana de Television
 http://181.78.8.199:8000/play/a091/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Globovisi%C3%B3n_logo.png/200px-Globovisi%C3%B3n_logo.png" group-title="VENEZUELA",Globovision
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/35/Globovisi%C3%B3n_logo.png" group-title="VENEZUELA",Globovision
 http://181.78.8.199:8000/play/a09k/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Vale_TV_logo.png/200px-Vale_TV_logo.png" group-title="VENEZUELA",Vale TV
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/Vale_TV_logo.png" group-title="VENEZUELA",Vale TV
 https://59d39900ebfb8.streamlock.net/valetv_480/valetv_480/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/82/TeleSUR.png" group-title="VENEZUELA",Telesur
 https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Meridiano_TV_logo.png/200px-Meridiano_TV_logo.png" group-title="VENEZUELA",Meridiano TV
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/Meridiano_TV_logo.png" group-title="VENEZUELA",Meridiano TV
 http://181.78.8.199:8000/play/a0fr/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Canal_I_logo.png/200px-Canal_I_logo.png" group-title="VENEZUELA",Canal I
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/Canal_I_logo.png" group-title="VENEZUELA",Canal I
 https://streaming.canal-i.com/canal-i/live/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/vvqk2hw/LOGO-HORIZONTAL-text.png" group-title="VENEZUELA",La Tele Tuya
 http://181.78.8.199:8000/play/a0fs/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/ANTV_logo.png/200px-ANTV_logo.png" group-title="VENEZUELA",ANTV Asamblea Nacional
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0e/ANTV_logo.png" group-title="VENEZUELA",ANTV Asamblea Nacional
 http://181.78.8.199:8000/play/a0ac/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/87/Venevisi%C3%B3n_logo_2023.png" group-title="VENEZUELA",Venevision Internacional
 https://vod2live.univtec.com/manifest/4c41c0d8-e2e4-43cc-bd43-79afe715e1b3.m3u8
@@ -308,9 +306,9 @@ http://vcp1.myplaytv.com:1935/promar/promar/playlist.m3u8
 http://45.173.198.59:8080/hls/nginx3.m3u8?tla=
 #EXTINF:-1 tvg-logo="https://i.ibb.co/HG2DM8G/IMG-20230705-153952.jpg" group-title="VENEZUELA",Inter TV
 https://streamtv.intervenhosting.net:3439/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Ve_Plus_logo.png/200px-Ve_Plus_logo.png" group-title="VENEZUELA",Ve Plus
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/83/Ve_Plus_logo.png" group-title="VENEZUELA",Ve Plus
 http://181.78.8.199:8000/play/a0ah/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Canal_Orbe_21_logo.png/200px-Canal_Orbe_21_logo.png" group-title="VENEZUELA",Canal Orbe 21
+#EXTINF:-1 tvg-logo="https://iptv-epg.org/images/HHwGGRTLlxdtiXyxCCISjObQFE3DFeD_Azt_sLOckk-8ns3TZqI3XBdQgeZOVf5HVEKh9YVBIi6iOHdowPJlQuuvy-RVZHfgd8wr9h2Xi2hTixQ" group-title="VENEZUELA",Canal Orbe 21
 http://181.78.8.199:8000/play/a0ak/index.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" tvg-logo="https://redevida.com.br/wp-content/uploads/2024/07/logo-redevida.png.webp" group-title="REDE VIDA",Rede Vida
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8
@@ -320,9 +318,11 @@ https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/in
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_3.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/france-24-english-int.png" group-title="NEWS WORLD",France 24 English
 https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/2wOe3bM.png" group-title="NEWS WORLD",Al Jazeera English
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2wOe3bM.png" tvg-id="AlJazeera.us" group-title="NEWS WORLD",Al Jazeera English
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=10841
 #EXTINF:-1 tvg-logo="https://i.imgur.com/55SK22l.png" group-title="NEWS WORLD",TRT World
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/Asu5pE9.png" group-title="NEWS WORLD",Arirang TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Asu5pE9.png" group-title="NEWS WORLD",Arirang TV
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCWorldNews.us" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-world-news-uk.png" group-title="NEWS WORLD",BBC World News
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
