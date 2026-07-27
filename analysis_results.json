@@ -1,0 +1,1199 @@
+{
+  "total_channels": 162,
+  "orphaned_count": 0,
+  "missing_logo_count": 0,
+  "missing_tvgid_count": 93,
+  "svg_logo_count": 0,
+  "online_count": 160,
+  "offline_count": 2,
+  "orphaned": [],
+  "missing_logo": [],
+  "missing_tvgid": [
+    {
+      "line": 8,
+      "name": "Telefe Jujuy"
+    },
+    {
+      "line": 10,
+      "name": "Telefe Neuquén"
+    },
+    {
+      "line": 12,
+      "name": "Telefe Santiago del Estero"
+    },
+    {
+      "line": 14,
+      "name": "Telefe San Luis"
+    },
+    {
+      "line": 34,
+      "name": "TV Universidad"
+    },
+    {
+      "line": 36,
+      "name": "Canal 9 Litoral"
+    },
+    {
+      "line": 38,
+      "name": "América Canal 4 Posadas | AR"
+    },
+    {
+      "line": 40,
+      "name": "Canal E"
+    },
+    {
+      "line": 42,
+      "name": "UNIFE 25.1 - TDA 25.1"
+    },
+    {
+      "line": 44,
+      "name": "Camaras de Villa Gesell (Av. 3 y 104)"
+    },
+    {
+      "line": 48,
+      "name": "BRAVO TV"
+    },
+    {
+      "line": 57,
+      "name": "CANAL E"
+    },
+    {
+      "line": 59,
+      "name": "CANAL 8 SAN JUAN"
+    },
+    {
+      "line": 61,
+      "name": "CANAL 79 MAR DEL PLATA"
+    },
+    {
+      "line": 63,
+      "name": "CANAL 22"
+    },
+    {
+      "line": 65,
+      "name": "CANAL 4 JUJUY"
+    },
+    {
+      "line": 67,
+      "name": "CANAL 3 LA PAMPA"
+    },
+    {
+      "line": 69,
+      "name": "CANAL 3 LAS HERAS"
+    },
+    {
+      "line": 71,
+      "name": "CANAL 2 GUALEGUAY"
+    },
+    {
+      "line": 75,
+      "name": "CARAS TV"
+    },
+    {
+      "line": 77,
+      "name": "ECO TV"
+    },
+    {
+      "line": 79,
+      "name": "CADENA 103"
+    },
+    {
+      "line": 81,
+      "name": "ALTERNA TV"
+    },
+    {
+      "line": 83,
+      "name": "TV MANÁ ARGENTINA"
+    },
+    {
+      "line": 85,
+      "name": "TV SOLIDARIA"
+    },
+    {
+      "line": 89,
+      "name": "Bravo TV"
+    },
+    {
+      "line": 121,
+      "name": "Radio Maria TV (1080p)"
+    },
+    {
+      "line": 123,
+      "name": "Radio UP"
+    },
+    {
+      "line": 187,
+      "name": "TVMÁS Veracruz (1080p)"
+    },
+    {
+      "line": 189,
+      "name": "Presumiendo México (720p)"
+    },
+    {
+      "line": 191,
+      "name": "8NTV (1080p)"
+    },
+    {
+      "line": 193,
+      "name": "Expresa TV (720p)"
+    },
+    {
+      "line": 195,
+      "name": "TVP Culiacán (720p) [Not 24/7]"
+    },
+    {
+      "line": 197,
+      "name": "TVP Los Mochis (720p) [Not 24/7]"
+    },
+    {
+      "line": 199,
+      "name": "TVP Mazatlán (720p) [Not 24/7]"
+    },
+    {
+      "line": 201,
+      "name": "TVP Obregón (720p) [Not 24/7]"
+    },
+    {
+      "line": 203,
+      "name": "TV Mar La Paz (1080p)"
+    },
+    {
+      "line": 205,
+      "name": "TV Mar Los Cabos (1080p)"
+    },
+    {
+      "line": 207,
+      "name": "TV Mar Puerto Vallarta (1080p)"
+    },
+    {
+      "line": 209,
+      "name": "SET Televisión Canal 26.1 (720p) [Not 24/7]"
+    },
+    {
+      "line": 211,
+      "name": "SET Televisión Canal 26.2 (720p) [Not 24/7]"
+    },
+    {
+      "line": 213,
+      "name": "RCG TV (1080p)"
+    },
+    {
+      "line": 215,
+      "name": "Tele Saltillo"
+    },
+    {
+      "line": 217,
+      "name": "SIZART Canal 24 (XHZHZ-TDT) (720p)"
+    },
+    {
+      "line": 219,
+      "name": "Nayarit Comunica (1080p)"
+    },
+    {
+      "line": 221,
+      "name": "VB Media TV (1080p)"
+    },
+    {
+      "line": 223,
+      "name": "Conecta TV (720p)"
+    },
+    {
+      "line": 225,
+      "name": "CreaLaTV (1080p)"
+    },
+    {
+      "line": 227,
+      "name": "Lobo TV (720p)"
+    },
+    {
+      "line": 229,
+      "name": "Raly TV (720p)"
+    },
+    {
+      "line": 231,
+      "name": "ICRTV Colima (1080p)"
+    },
+    {
+      "line": 233,
+      "name": "RTQ Querétaro (1080p)"
+    },
+    {
+      "line": 235,
+      "name": "ITV Deportes"
+    },
+    {
+      "line": 237,
+      "name": "PSN"
+    },
+    {
+      "line": 239,
+      "name": "AMX Noticias (720p) [Not 24/7]"
+    },
+    {
+      "line": 241,
+      "name": "Super Channel 12"
+    },
+    {
+      "line": 245,
+      "name": "Antena TV"
+    },
+    {
+      "line": 247,
+      "name": "QOO: SIPSE"
+    },
+    {
+      "line": 249,
+      "name": "YUC: SIPSE"
+    },
+    {
+      "line": 251,
+      "name": "TAB TV UJAT"
+    },
+    {
+      "line": 253,
+      "name": "CAM TRC"
+    },
+    {
+      "line": 255,
+      "name": "CHIAP CANAL 10"
+    },
+    {
+      "line": 257,
+      "name": "AGS CANAL 26"
+    },
+    {
+      "line": 259,
+      "name": "Canal 28 Nuevo León (720p)"
+    },
+    {
+      "line": 261,
+      "name": "María Visión (360p) [Not 24/7]"
+    },
+    {
+      "line": 263,
+      "name": "Sistema Michoacano de TV (1080p)"
+    },
+    {
+      "line": 265,
+      "name": "Telemax (XEWH-TDT) (1080p)"
+    },
+    {
+      "line": 267,
+      "name": "TRC Televisión (720p)"
+    },
+    {
+      "line": 269,
+      "name": "TV Lobo Durango (720p)"
+    },
+    {
+      "line": 271,
+      "name": "Canal ViX (1080p)"
+    },
+    {
+      "line": 273,
+      "name": "TV Migrante (720p)"
+    },
+    {
+      "line": 275,
+      "name": "MyTime Movie Network México"
+    },
+    {
+      "line": 277,
+      "name": "WeatherSpy (720p)"
+    },
+    {
+      "line": 279,
+      "name": "The Pet Collective (720p)"
+    },
+    {
+      "line": 281,
+      "name": "Venevision"
+    },
+    {
+      "line": 283,
+      "name": "VTV Venezolana de Television"
+    },
+    {
+      "line": 285,
+      "name": "Globovision"
+    },
+    {
+      "line": 287,
+      "name": "Vale TV"
+    },
+    {
+      "line": 289,
+      "name": "Telesur"
+    },
+    {
+      "line": 291,
+      "name": "Meridiano TV"
+    },
+    {
+      "line": 293,
+      "name": "Canal I"
+    },
+    {
+      "line": 295,
+      "name": "La Tele Tuya"
+    },
+    {
+      "line": 297,
+      "name": "ANTV Asamblea Nacional"
+    },
+    {
+      "line": 299,
+      "name": "Venevision Internacional"
+    },
+    {
+      "line": 301,
+      "name": "Latina TV"
+    },
+    {
+      "line": 303,
+      "name": "Promar TV"
+    },
+    {
+      "line": 305,
+      "name": "TeleAragua"
+    },
+    {
+      "line": 307,
+      "name": "Inter TV"
+    },
+    {
+      "line": 309,
+      "name": "Ve Plus"
+    },
+    {
+      "line": 311,
+      "name": "Canal Orbe 21"
+    },
+    {
+      "line": 319,
+      "name": "France 24 English"
+    },
+    {
+      "line": 323,
+      "name": "TRT World"
+    },
+    {
+      "line": 325,
+      "name": "Arirang TV"
+    }
+  ],
+  "offline": [
+    {
+      "line": 247,
+      "name": "QOO: SIPSE",
+      "error": "URL Error: _ssl.c:983: The handshake operation timed out"
+    },
+    {
+      "line": 249,
+      "name": "YUC: SIPSE",
+      "error": "URL Error: _ssl.c:983: The handshake operation timed out"
+    }
+  ],
+  "online": [
+    {
+      "line": 2,
+      "name": "ABC News Live",
+      "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8"
+    },
+    {
+      "line": 4,
+      "name": "DW News - Deutsche Welle",
+      "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8"
+    },
+    {
+      "line": 6,
+      "name": "Telefe Buenos Aires",
+      "url": "http://190.7.19.197:232/play/a059/index.m3u8"
+    },
+    {
+      "line": 8,
+      "name": "Telefe Jujuy",
+      "url": "https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8"
+    },
+    {
+      "line": 10,
+      "name": "Telefe Neuquén",
+      "url": "https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8"
+    },
+    {
+      "line": 12,
+      "name": "Telefe Santiago del Estero",
+      "url": "https://stream.arcast.com.ar/envivo/castv/playlist.m3u8"
+    },
+    {
+      "line": 14,
+      "name": "Telefe San Luis",
+      "url": "https://stream.radiosmundiales.com:19360/sanluismas/sanluismas.m3u8"
+    },
+    {
+      "line": 16,
+      "name": "El Trece",
+      "url": "https://livetrx01.vodgc.net/eltrecetv/index.m3u8"
+    },
+    {
+      "line": 19,
+      "name": "América TV",
+      "url": "https://prepublish.f.qaotic.net/a07/americahls-100056/playlist_720p.m3u8"
+    },
+    {
+      "line": 22,
+      "name": "Canal 26 HD",
+      "url": "https://stream-gtlc.telecentro.net.ar/hls/canal26hls/main.m3u8"
+    },
+    {
+      "line": 24,
+      "name": "24/7 Canal de Noticias",
+      "url": "https://panel.host-live.com:19360/cn247tv/cn247tv.m3u8"
+    },
+    {
+      "line": 26,
+      "name": "NET TV 27.2 - TDA 27.2",
+      "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/nettv/livestream1/playlist.m3u8"
+    },
+    {
+      "line": 28,
+      "name": "Argentinísima Satelital",
+      "url": "https://stream1.sersat.com/hls/argentinisima.m3u8"
+    },
+    {
+      "line": 30,
+      "name": "Telemax",
+      "url": "https://stream-gtlc.telecentro.net.ar/hls/telemaxhls/main.m3u8"
+    },
+    {
+      "line": 32,
+      "name": "GARAGE TV",
+      "url": "https://stream1.sersat.com/hls/garagetv.m3u8"
+    },
+    {
+      "line": 34,
+      "name": "TV Universidad",
+      "url": "https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8"
+    },
+    {
+      "line": 36,
+      "name": "Canal 9 Litoral",
+      "url": "https://stream.arcast.live/ahora/ahora/playlist.m3u8"
+    },
+    {
+      "line": 38,
+      "name": "América Canal 4 Posadas | AR",
+      "url": "http://iptv.ixfo.com.ar:8081/live/C4POS/playlist.m3u8"
+    },
+    {
+      "line": 40,
+      "name": "Canal E",
+      "url": "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8"
+    },
+    {
+      "line": 42,
+      "name": "UNIFE 25.1 - TDA 25.1",
+      "url": "https://cdn.mycloudstream.io/hls/live/broadcast/pgv5kerk/mono.m3u8"
+    },
+    {
+      "line": 44,
+      "name": "Camaras de Villa Gesell (Av. 3 y 104)",
+      "url": "http://cam104y3.gesell.com.ar/playlist.m3u8"
+    },
+    {
+      "line": 46,
+      "name": "NET TV HD",
+      "url": "https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8"
+    },
+    {
+      "line": 48,
+      "name": "BRAVO TV",
+      "url": "https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8"
+    },
+    {
+      "line": 50,
+      "name": "TN",
+      "url": "https://genoa-player-api.vodgc.net/content/manifest/1879139?pid=1&.m3u8"
+    },
+    {
+      "line": 53,
+      "name": "TYC SPORTS",
+      "url": "https://amg26268-amg26268c14-freelivesports-emea-10267.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg26268-sportsstudio-tycsports-freelivesportsemea/playlist.m3u8"
+    },
+    {
+      "line": 55,
+      "name": "CANAL ORBE 21",
+      "url": "https://stream.arcast.net:4443/canal21/ngrp:canal21_all/playlist.m3u8"
+    },
+    {
+      "line": 57,
+      "name": "CANAL E",
+      "url": "https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/perfiltv/livestream2/chunks.m3u8"
+    },
+    {
+      "line": 59,
+      "name": "CANAL 8 SAN JUAN",
+      "url": "https://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8"
+    },
+    {
+      "line": 61,
+      "name": "CANAL 79 MAR DEL PLATA",
+      "url": "https://streamconex.com:19360/mardelplata/mardelplata.m3u8"
+    },
+    {
+      "line": 63,
+      "name": "CANAL 22",
+      "url": "https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8"
+    },
+    {
+      "line": 65,
+      "name": "CANAL 4 JUJUY",
+      "url": "https://5cd577a3dd8ec.streamlock.net/CANAL4/smil:CANAL4.smil/playlist.m3u8"
+    },
+    {
+      "line": 67,
+      "name": "CANAL 3 LA PAMPA",
+      "url": "https://stream.arcast.com.ar/c3lapampa/ngrp:c3lapampa_all/playlist.m3u8"
+    },
+    {
+      "line": 69,
+      "name": "CANAL 3 LAS HERAS",
+      "url": "https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8"
+    },
+    {
+      "line": 71,
+      "name": "CANAL 2 GUALEGUAY",
+      "url": "https://stream.arcast.net:4443/gualeguay/gualeguay/playlist.m3u8"
+    },
+    {
+      "line": 73,
+      "name": "CANAL DE LA CIUDAD",
+      "url": "https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8"
+    },
+    {
+      "line": 75,
+      "name": "CARAS TV",
+      "url": "https://unlimited1-us.dps.live/carastv/carastv.smil/playlist.m3u8"
+    },
+    {
+      "line": 77,
+      "name": "ECO TV",
+      "url": "https://stream.arcast.com.ar/ecotv/ngrp:ecotv_all/playlist.m3u8"
+    },
+    {
+      "line": 79,
+      "name": "CADENA 103",
+      "url": "http://arcast.net:1935/cadena103/cadena103/playlist.m3u8"
+    },
+    {
+      "line": 81,
+      "name": "ALTERNA TV",
+      "url": "https://tv.alterna.ar/stream/hls/live.m3u8"
+    },
+    {
+      "line": 83,
+      "name": "TV MANÁ ARGENTINA",
+      "url": "https://w2.manasat.com/tvmana-ar/smil:tvmana-ar.smil/playlist.m3u8"
+    },
+    {
+      "line": 85,
+      "name": "TV SOLIDARIA",
+      "url": "https://canadaremar2.todostreaming.es/live/argentina-web.m3u8"
+    },
+    {
+      "line": 87,
+      "name": "AMC Latin America (1080p) AR",
+      "url": "http://45.162.193.35:80/AMC/index.m3u8"
+    },
+    {
+      "line": 89,
+      "name": "Bravo TV",
+      "url": "https://redirector.rudo.video/hls-video/c54ac2799874375c81c1672abb700870537c5223/bravo/bravo.smil/playlist.m3u8?did=b2201035844768f58630b7eef"
+    },
+    {
+      "line": 91,
+      "name": "Comedy Central Latin America (1080p) AR",
+      "url": "http://181.119.93.83:8000/play/a1di/index.m3u8"
+    },
+    {
+      "line": 93,
+      "name": "Disney Channel Latin America",
+      "url": "http://138.121.15.230:9002/DISNEY-CHANNEL/index.m3u8"
+    },
+    {
+      "line": 95,
+      "name": "Disney Channel Latin America (1080p) RAW",
+      "url": "http://45.171.108.253:8888/DISNEY_CHANNEL/index.m3u8"
+    },
+    {
+      "line": 97,
+      "name": "Disney Channel Latin America Center (1080p)",
+      "url": "http://181.78.8.199:8000/play/a0dn/index.m3u8"
+    },
+    {
+      "line": 99,
+      "name": "Disney Channel Latin America Panregional HD (1080p)",
+      "url": "http://190.11.225.124:5000/live/disney_hd/playlist.m3u8"
+    },
+    {
+      "line": 101,
+      "name": "Disney Channel Latin America Panregional HD (1080p) RAW",
+      "url": "http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8"
+    },
+    {
+      "line": 103,
+      "name": "Disney Jr. Latin America",
+      "url": "http://tr.live.clarovtrcdn.vtrplay.com/disneyjrhdchi/vxfmt=dp/playlist.m3u8?device_profile=STB_HLS_VCAS_LIVE_HD"
+    },
+    {
+      "line": 105,
+      "name": "Disney Jr. Latin America North HD (1080p)",
+      "url": "http://190.11.225.124:5000/live/disney_jr_hd/playlist.m3u8"
+    },
+    {
+      "line": 107,
+      "name": "Disney Jr. Latin America North HD (1080p) RAW",
+      "url": "http://181.78.14.26:4000/play/a073/index.m3u8"
+    },
+    {
+      "line": 109,
+      "name": "Disney Jr. Latin America South (1080p)",
+      "url": "http://45.185.163.75:8000/play/a016/index.m3u8"
+    },
+    {
+      "line": 111,
+      "name": "Disney Jr. Latin America South HD (1080p)",
+      "url": "http://179.60.51.134:8888/DISNEY-JR/index.m3u8"
+    },
+    {
+      "line": 113,
+      "name": "Disney Jr. Latin America South HD (1080p) RAW",
+      "url": "http://45.134.141.161:2200/ARG/Disney_Junior/index.m3u8"
+    },
+    {
+      "line": 115,
+      "name": "El Gourmet (1080p)",
+      "url": "http://177.234.249.178:8888/EL-GOURMET/index.m3u8"
+    },
+    {
+      "line": 117,
+      "name": "MTV Latin America (1080p) AR",
+      "url": "http://179.60.51.134:8888/MTV/index.m3u8"
+    },
+    {
+      "line": 119,
+      "name": "Quiero Musica en mi Idioma (1080p)",
+      "url": "http://177.234.249.178:8888/MTV/index.m3u8"
+    },
+    {
+      "line": 121,
+      "name": "Radio Maria TV (1080p)",
+      "url": "https://radiomaria.inovanex.stream/stream.m3u8"
+    },
+    {
+      "line": 123,
+      "name": "Radio UP",
+      "url": "https://iptv.ixfo.com.ar:30443/live/RadioUpTvStreaming/playlist.m3u8"
+    },
+    {
+      "line": 125,
+      "name": "Sony Channel (1080p)",
+      "url": "http://138.121.15.230:9002/SONY/index.m3u8"
+    },
+    {
+      "line": 127,
+      "name": "Telemundo Internacional (1080p) AR",
+      "url": "http://138.121.15.230:9002/TELEMUNDO/index.m3u8"
+    },
+    {
+      "line": 129,
+      "name": "VTV",
+      "url": "https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8"
+    },
+    {
+      "line": 131,
+      "name": "Azteca Uno (-1h)",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=4833"
+    },
+    {
+      "line": 133,
+      "name": "Azteca Uno - 1H",
+      "url": "https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8"
+    },
+    {
+      "line": 135,
+      "name": "ADN 40 (1080p)",
+      "url": "https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8"
+    },
+    {
+      "line": 137,
+      "name": "Imagen TV+ (720p)",
+      "url": "https://jmp2.uk/plu-64e35aff6b1fdb0008ea8441.m3u8"
+    },
+    {
+      "line": 139,
+      "name": "Milenio Televisión (720p)",
+      "url": "https://jmp2.uk/plu-652e922db4b047000825f975.m3u8"
+    },
+    {
+      "line": 141,
+      "name": "Canal 14 (1080p)",
+      "url": "https://s5.mexside.net:1936/canal14/canal14/chunklist.m3u8"
+    },
+    {
+      "line": 143,
+      "name": "TV UNAM (1080p)",
+      "url": "https://5fc584f3f19c9.streamlock.net/tvunam/videotvunam/chunklist_w372205069_DVR.m3u8"
+    },
+    {
+      "line": 145,
+      "name": "Canal del Congreso",
+      "url": "https://60417ddeaf0d9.streamlock.net/srtc/smil:srtc.smil/playlist.m3u8"
+    },
+    {
+      "line": 147,
+      "name": "Justicia TV",
+      "url": "https://live-scjn.ovp-vivaro.digital/ovp-origin/638a22b47746d/playlist.m3u8"
+    },
+    {
+      "line": 149,
+      "name": "Mexiquense TV (720p)",
+      "url": "https://5e50264bd6766.streamlock.net/mexiquense/videomexiquense/playlist.m3u8"
+    },
+    {
+      "line": 151,
+      "name": "TV Cuatro 4.1",
+      "url": "https://5f1af61612fb5.streamlock.net/tv4/videotv4/playlist.m3u8"
+    },
+    {
+      "line": 153,
+      "name": "TV Cuatro 4.2",
+      "url": "https://5f2c1b0d880e5.streamlock.net/tv42/videotv42/playlist.m3u8"
+    },
+    {
+      "line": 155,
+      "name": "CANAL 44 Chihuahua",
+      "url": "https://5e50264bd6766.streamlock.net/canal442/videocanal442/playlist.m3u8"
+    },
+    {
+      "line": 157,
+      "name": "Canal 44 Ciudad Juárez (720p) [Not 24/7]",
+      "url": "https://5e50264bd6766.streamlock.net/canal44/videocanal44/playlist.m3u8"
+    },
+    {
+      "line": 159,
+      "name": "Jalisco TV (720p)",
+      "url": "https://video0.rogohosting.com:19360/sisjalisciense/sisjalisciense.m3u8"
+    },
+    {
+      "line": 161,
+      "name": "SQCS Canal 4 (1080p)",
+      "url": "https://video0.rogohosting.com:19360/4982/4982.m3u8"
+    },
+    {
+      "line": 163,
+      "name": "Cine Sony",
+      "url": "https://a-cdn.klowdtv.com/live1/cine_720p/playlist.m3u8"
+    },
+    {
+      "line": 165,
+      "name": "TELEVISA NOVELAS",
+      "url": "https://televisa-televisa-1-it.samsung.wurl.tv/playlist.m3u8?"
+    },
+    {
+      "line": 167,
+      "name": "De Película Latin America",
+      "url": "http://181.119.93.83:8000/play/a1jw/index.m3u8"
+    },
+    {
+      "line": 169,
+      "name": "Telemundo",
+      "url": "https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8"
+    },
+    {
+      "line": 171,
+      "name": "UNIVISION NOTICIAS VX",
+      "url": "https://linear-254.frequency.stream/mt/studio/254/hls/master/playlist.m3u8"
+    },
+    {
+      "line": 173,
+      "name": "Estrella TV (1080p)",
+      "url": "https://estrellatv-oando.amagi.tv/playlist.m3u8"
+    },
+    {
+      "line": 175,
+      "name": "Estrella Games (1080p)",
+      "url": "https://estrella-games-oando.amagi.tv/playlist.m3u8"
+    },
+    {
+      "line": 177,
+      "name": "Estrella News (1080p)",
+      "url": "https://estrella-news-oando.amagi.tv/playlist.m3u8"
+    },
+    {
+      "line": 179,
+      "name": "MX EWTN",
+      "url": "https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/live/playlist.m3u8"
+    },
+    {
+      "line": 181,
+      "name": "RT Noticias (1080p)",
+      "url": "https://rt-esp.rttv.com/dvr/rtesp/playlist_1600Kb.m3u8"
+    },
+    {
+      "line": 183,
+      "name": "Canal 33 Tijuana (720p)",
+      "url": "https://5f2c1b0d880e5.streamlock.net/canal33tijuana/videocanal33tijuana/playlist.m3u8"
+    },
+    {
+      "line": 185,
+      "name": "Azteca Internacional (1080p)",
+      "url": "https://azt-mun.otteravision.com/azt/mun/mun.m3u8"
+    },
+    {
+      "line": 187,
+      "name": "TVMÁS Veracruz (1080p)",
+      "url": "https://5ca9af4645e15.streamlock.net/rtv/videortv/playlist.m3u8"
+    },
+    {
+      "line": 189,
+      "name": "Presumiendo México (720p)",
+      "url": "https://60417ddeaf0d9.streamlock.net/telemetrika/smil:telemetrika.smil/playlist.m3u8"
+    },
+    {
+      "line": 191,
+      "name": "8NTV (1080p)",
+      "url": "https://60417ddeaf0d9.streamlock.net/ntv/videontv/playlist.m3u8"
+    },
+    {
+      "line": 193,
+      "name": "Expresa TV (720p)",
+      "url": "https://5ca9af4645e15.streamlock.net/teleradio/smil:teleradio.smil/playlist.m3u8"
+    },
+    {
+      "line": 195,
+      "name": "TVP Culiacán (720p) [Not 24/7]",
+      "url": "https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3u8"
+    },
+    {
+      "line": 197,
+      "name": "TVP Los Mochis (720p) [Not 24/7]",
+      "url": "https://5ca3e84a76d30.streamlock.net/gpacifico2/mochis.smil/playlist.m3u8"
+    },
+    {
+      "line": 199,
+      "name": "TVP Mazatlán (720p) [Not 24/7]",
+      "url": "https://5ca3e84a76d30.streamlock.net/gpacifico4/smil:mazatlan.smil/playlist.m3u8"
+    },
+    {
+      "line": 201,
+      "name": "TVP Obregón (720p) [Not 24/7]",
+      "url": "https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8"
+    },
+    {
+      "line": 203,
+      "name": "TV Mar La Paz (1080p)",
+      "url": "https://5fc584f3f19c9.streamlock.net/tvmarlapaz/smil:tvmarlapaz.smil/playlist.m3u8"
+    },
+    {
+      "line": 205,
+      "name": "TV Mar Los Cabos (1080p)",
+      "url": "https://5fc584f3f19c9.streamlock.net/tvmarloscabos/smil:tvmarloscabos.smil/playlist.m3u8"
+    },
+    {
+      "line": 207,
+      "name": "TV Mar Puerto Vallarta (1080p)",
+      "url": "https://5ca9af4645e15.streamlock.net/tvmarvallarta/videotvmarvallarta/playlist.m3u8"
+    },
+    {
+      "line": 209,
+      "name": "SET Televisión Canal 26.1 (720p) [Not 24/7]",
+      "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8"
+    },
+    {
+      "line": 211,
+      "name": "SET Televisión Canal 26.2 (720p) [Not 24/7]",
+      "url": "https://5d0d1d7a6be9e.streamlock.net/sicom/canal2/playlist.m3u8"
+    },
+    {
+      "line": 213,
+      "name": "RCG TV (1080p)",
+      "url": "https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8"
+    },
+    {
+      "line": 215,
+      "name": "Tele Saltillo",
+      "url": "https://servilive.com:3879/live/telesaltillolive.m3u8"
+    },
+    {
+      "line": 217,
+      "name": "SIZART Canal 24 (XHZHZ-TDT) (720p)",
+      "url": "https://5f2c1b0d880e5.streamlock.net/zacatecas/videozacatecas/playlist.m3u8"
+    },
+    {
+      "line": 219,
+      "name": "Nayarit Comunica (1080p)",
+      "url": "https://live.iplanay.gob.mx/hls/nayarittv.m3u8"
+    },
+    {
+      "line": 221,
+      "name": "VB Media TV (1080p)",
+      "url": "https://capomo01-enitv.eninetworks.com/locales_vbmedia_publico/index.m3u8"
+    },
+    {
+      "line": 223,
+      "name": "Conecta TV (720p)",
+      "url": "https://stream8.mexiserver.com:19360/conectatvx/conectatvx.m3u8"
+    },
+    {
+      "line": 225,
+      "name": "CreaLaTV (1080p)",
+      "url": "https://stream.crealatv.com/live.m3u8"
+    },
+    {
+      "line": 227,
+      "name": "Lobo TV (720p)",
+      "url": "https://5ca3e84a76d30.streamlock.net/tvlobo/videotvlobo/playlist.m3u8"
+    },
+    {
+      "line": 229,
+      "name": "Raly TV (720p)",
+      "url": "https://cloudvideo.servers10.com:8081/8072/index.m3u8"
+    },
+    {
+      "line": 231,
+      "name": "ICRTV Colima (1080p)",
+      "url": "https://5fc584f3f19c9.streamlock.net/icrtvcolima/smil:icrtvcolima.smil/playlist.m3u8"
+    },
+    {
+      "line": 233,
+      "name": "RTQ Querétaro (1080p)",
+      "url": "https://59d39900ebfb8.streamlock.net/rytqrolive/rytqrolive/playlist.m3u8?PlaylistM3UCL"
+    },
+    {
+      "line": 235,
+      "name": "ITV Deportes",
+      "url": "https://thm-it-roku.otteravision.com/thm/it/it.m3u8"
+    },
+    {
+      "line": 237,
+      "name": "PSN",
+      "url": "https://srspsn.live/live/livestream.m3u8"
+    },
+    {
+      "line": 239,
+      "name": "AMX Noticias (720p) [Not 24/7]",
+      "url": "https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8"
+    },
+    {
+      "line": 241,
+      "name": "Super Channel 12",
+      "url": "https://servilive.com:3263/live/channel12live.m3u8"
+    },
+    {
+      "line": 243,
+      "name": "Telemundo Noticias Ahora",
+      "url": "https://xumo-xumoent-ch827-uj0ch.fast.nbcuni.com/live/master.m3u8"
+    },
+    {
+      "line": 245,
+      "name": "Antena TV",
+      "url": "https://5ca9af4645e15.streamlock.net/grd/videogrd/playlist.m3u8"
+    },
+    {
+      "line": 251,
+      "name": "TAB TV UJAT",
+      "url": "https://5e50264bd6766.streamlock.net/ujat/videoujat/playlist.m3u8"
+    },
+    {
+      "line": 253,
+      "name": "CAM TRC",
+      "url": "https://5f1af61612fb5.streamlock.net/trc/videotrc/playlist.m3u8"
+    },
+    {
+      "line": 255,
+      "name": "CHIAP CANAL 10",
+      "url": "https://5ca9af4645e15.streamlock.net/chiapas/videochiapas/playlist.m3u8"
+    },
+    {
+      "line": 257,
+      "name": "AGS CANAL 26",
+      "url": "https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8"
+    },
+    {
+      "line": 259,
+      "name": "Canal 28 Nuevo León (720p)",
+      "url": "https://s5.mexside.net:1936/canal28/canal28/playlist.m3u8"
+    },
+    {
+      "line": 261,
+      "name": "María Visión (360p) [Not 24/7]",
+      "url": "https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/master.m3u8"
+    },
+    {
+      "line": 263,
+      "name": "Sistema Michoacano de TV (1080p)",
+      "url": "https://s5.mexside.net:1936/enlinea/enlinea/playlist.m3u8"
+    },
+    {
+      "line": 265,
+      "name": "Telemax (XEWH-TDT) (1080p)",
+      "url": "https://s5.mexside.net:1936/telemax/telemax/playlist.m3u8"
+    },
+    {
+      "line": 267,
+      "name": "TRC Televisión (720p)",
+      "url": "https://5fe2654d6127d.streamlock.net/trc/videotrc/playlist.m3u8"
+    },
+    {
+      "line": 269,
+      "name": "TV Lobo Durango (720p)",
+      "url": "https://5ca9af4645e15.streamlock.net/lobodurango/videolobodurango/playlist.m3u8"
+    },
+    {
+      "line": 271,
+      "name": "Canal ViX (1080p)",
+      "url": "https://streaming-live-fcdn.api.prd.univisionnow.com/vix/vix.isml/hls/vix.m3u8"
+    },
+    {
+      "line": 273,
+      "name": "TV Migrante (720p)",
+      "url": "https://s5.mexside.net:1936/tvmigrante/tvmigrante/playlist.m3u8"
+    },
+    {
+      "line": 275,
+      "name": "MyTime Movie Network México",
+      "url": "https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8"
+    },
+    {
+      "line": 277,
+      "name": "WeatherSpy (720p)",
+      "url": "https://jukin-weatherspy-2-mx.samsung.wurl.tv/playlist.m3u8"
+    },
+    {
+      "line": 279,
+      "name": "The Pet Collective (720p)",
+      "url": "https://the-pet-collective-international-mx.samsung.wurl.tv/playlist.m3u8"
+    },
+    {
+      "line": 281,
+      "name": "Venevision",
+      "url": "http://181.78.8.199:8000/play/a0if/index.m3u8"
+    },
+    {
+      "line": 283,
+      "name": "VTV Venezolana de Television",
+      "url": "http://181.78.8.199:8000/play/a091/index.m3u8"
+    },
+    {
+      "line": 285,
+      "name": "Globovision",
+      "url": "http://181.78.8.199:8000/play/a09k/index.m3u8"
+    },
+    {
+      "line": 287,
+      "name": "Vale TV",
+      "url": "https://59d39900ebfb8.streamlock.net/valetv_480/valetv_480/playlist.m3u8"
+    },
+    {
+      "line": 289,
+      "name": "Telesur",
+      "url": "https://mblesmain01.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8"
+    },
+    {
+      "line": 291,
+      "name": "Meridiano TV",
+      "url": "http://181.78.8.199:8000/play/a0fr/index.m3u8"
+    },
+    {
+      "line": 293,
+      "name": "Canal I",
+      "url": "https://streaming.canal-i.com/canal-i/live/master.m3u8"
+    },
+    {
+      "line": 295,
+      "name": "La Tele Tuya",
+      "url": "http://181.78.8.199:8000/play/a0fs/index.m3u8"
+    },
+    {
+      "line": 297,
+      "name": "ANTV Asamblea Nacional",
+      "url": "http://181.78.8.199:8000/play/a0ac/index.m3u8"
+    },
+    {
+      "line": 299,
+      "name": "Venevision Internacional",
+      "url": "https://vod2live.univtec.com/manifest/4c41c0d8-e2e4-43cc-bd43-79afe715e1b3.m3u8"
+    },
+    {
+      "line": 301,
+      "name": "Latina TV",
+      "url": "https://streamtv.latinamedios.com:3413/live/latinatvlive.m3u8"
+    },
+    {
+      "line": 303,
+      "name": "Promar TV",
+      "url": "http://vcp1.myplaytv.com:1935/promar/promar/playlist.m3u8"
+    },
+    {
+      "line": 305,
+      "name": "TeleAragua",
+      "url": "http://45.173.198.59:8080/hls/nginx3.m3u8?tla="
+    },
+    {
+      "line": 307,
+      "name": "Inter TV",
+      "url": "https://streamtv.intervenhosting.net:3439/hybrid/play.m3u8"
+    },
+    {
+      "line": 309,
+      "name": "Ve Plus",
+      "url": "http://181.78.8.199:8000/play/a0ah/index.m3u8"
+    },
+    {
+      "line": 311,
+      "name": "Canal Orbe 21",
+      "url": "http://181.78.8.199:8000/play/a0ak/index.m3u8"
+    },
+    {
+      "line": 313,
+      "name": "Rede Vida",
+      "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8"
+    },
+    {
+      "line": 315,
+      "name": "Rede Vida (Oficial 480p)",
+      "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_2.m3u8"
+    },
+    {
+      "line": 317,
+      "name": "Rede Vida (Oficial 240p)",
+      "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_3.m3u8"
+    },
+    {
+      "line": 319,
+      "name": "France 24 English",
+      "url": "https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8"
+    },
+    {
+      "line": 321,
+      "name": "Al Jazeera English",
+      "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=10841"
+    },
+    {
+      "line": 323,
+      "name": "TRT World",
+      "url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8"
+    },
+    {
+      "line": 325,
+      "name": "Arirang TV",
+      "url": "https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8"
+    },
+    {
+      "line": 327,
+      "name": "BBC World News",
+      "url": "https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8"
+    }
+  ]
+}

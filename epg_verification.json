@@ -1,0 +1,151 @@
+{
+  "found_in_epg": {
+    "Telefe.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "ELTrece.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "AmericaTV.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "Canal26.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "24/7CanaldeNoticias.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "NetTV.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "ArgentinisimaSatelital.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "Telemax.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "ElGarageTv.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "CanalDeLaCiudad.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "TN.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "TyCSports.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "Canal21.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "AMC.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "ComedyCentral.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "DisneyChannel.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "DisneyJunior.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "ElGourmet.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "MTV.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "Quiero.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "Sony.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "TelemundoInternacional.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "VTV.ar": [
+      "https://iptv-epg.org/files/epg-ar.xml.gz"
+    ],
+    "AztecaUno.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "adn40.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "ImagenTV.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "MilenioTV.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Canal14.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "TVUNAM.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "CanalDelCongreso.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "JusticiaTV.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "CanalMexiquense.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "TVCuatro.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Canal44-udgtv.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Canal4.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Sony.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "TLNovelas.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "DePelícula.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Telemundo.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Univision.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "EWTN.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "RussiaToday.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "Canal12TelevisaTijuana.mx": [
+      "https://iptv-epg.org/files/epg-mx.xml.gz"
+    ],
+    "RedeVida.br": [
+      "https://iptv-epg.org/files/epg-br.xml.gz"
+    ]
+  },
+  "not_found": [
+    "ABCNewsLive.us",
+    "DWEnglish.us",
+    "EstrellaTV.us",
+    "AztecaInternacional.us",
+    "NoticiasTelemundoAHORA.us",
+    "AlJazeera.us",
+    "BBCWorldNews.us"
+  ],
+  "epg_ids_count": {
+    "https://iptv-epg.org/files/epg-br.xml.gz": 182,
+    "https://iptv-epg.org/files/epg-ar.xml.gz": 183,
+    "https://iptv-epg.org/files/epg-mx.xml.gz": 174,
+    "https://iptv-epg.org/files/epg-ve.xml.gz": 56
+  }
+}
