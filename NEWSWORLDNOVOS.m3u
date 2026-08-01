@@ -1,10 +1,10 @@
-#EXTM3U x-tvg-url="https://github.com/gratinomaster/JCTV/raw/refs/heads/main/EPGFULL.xml.gz"
+#EXTM3U x-tvg-url="https://github.com/gratinomaster/JCTVV/raw/refs/heads/main/EPGFULL.xml.gz"
 
-#EXTINF:-1 tvg-id="KoreanCentralTelevision.kp" tvg-name="KCTV (Korean Central TV)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/KCTV_Logo.png" group-title="🇰🇵 Coreia do Norte",KCTV (Korean Central TV)
-https://kctv.koryofront.org/stream/index.m3u8
-
-#EXTINF:-1 tvg-id="CBS.Streaming.SD.East.feed.us2" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/CBS_logo_%282020%29.svg/960px-CBS_logo_%282020%29.svg.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
+#EXTINF:-1 tvg-id="CBS.Streaming.SD.East.feed.us2" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c1/Cbs_logo.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
 
 #EXTINF:-1 tvg-id="Canal.Telefé.(Argentina).ar" tvg-name="Telefe (Argentina)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
-http://45.134.141.161:2200/ARG/TELEFE_HD/index.m3u8
+https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8
+
+#EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/cnn-brasil-br.png" group-title="🇧🇷 CNN Brasil",CNN Brasil
+https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
