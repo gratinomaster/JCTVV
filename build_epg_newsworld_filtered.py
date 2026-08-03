@@ -31,8 +31,10 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
 ]
 
+
 def norm(s):
     return re.sub(r'[\s\-_\.]+', '', s).lower()
+
 
 print("1. Baixando M3U...")
 m3u_text = ""
@@ -62,47 +64,46 @@ for line in m3u_text.splitlines():
         continue
     tid_m = re.search(r'tvg-id="([^"]*)"', line)
     tname_m = re.search(r'tvg-name="([^"]*)"', line)
+    logo_m = re.search(r'tvg-logo="([^"]*)"', line)
     comma_m = re.search(r',([^,]+)$', line)
     if not comma_m:
         continue
     tvg_id = (tid_m.group(1) if tid_m else "").strip()
     tvg_name = (tname_m.group(1) if tname_m else "").strip()
+    logo = (logo_m.group(1) if logo_m else "").strip()
     display = comma_m.group(1).strip()
     if display in seen_display:
         continue
     seen_display.add(display)
-    m3u_entries.append({'tvg_id': tvg_id, 'tvg_name': tvg_name, 'display': display})
+    m3u_entries.append({'tvg_id': tvg_id, 'tvg_name': tvg_name, 'logo': logo, 'display': display})
 
 tvg_ids = set(e['tvg_id'] for e in m3u_entries if e['tvg_id'])
 tvg_norm = {norm(t): t for t in tvg_ids}
-tvg_norm_set = set(tvg_norm.keys())
 
 m3u_names = {}
+m3u_logos = {}
+m3u_displays = {}
 for e in m3u_entries:
     if e['tvg_id']:
         name_base = re.sub(r'\s*\(.*$', '', e['display']).strip()
-        m3u_names[e['tvg_id']] = name_base
+        m3u_names[e['tvg_id']] = name_base or e['display']
+        m3u_logos[e['tvg_id']] = e['logo'] or e['tvg_name']
+        m3u_displays[e['tvg_id']] = e['display']
 
 print(f"  {len(m3u_entries)} canais, {len(tvg_ids)} tvg-ids unicos")
 
-def fuzzy_match(epg_cid, display_name):
+# Casamento ESTRITO: apenas igualdade exata (normalizada) do tvg-id do EPG
+# ou do display-name do EPG contra o nome base do canal no M3U.
+# Nada de substring: evita poluicao (ex: "TVI" em "UTV Iraq", "CTV" em "KCTV").
+def strict_match(epg_cid, display_name):
     nc = norm(epg_cid)
-    if nc in tvg_norm_set:
+    if nc in tvg_norm:
         return tvg_norm[nc]
-    for tid in tvg_ids:
-        nm = norm(tid)
-        if nm in nc or nc in nm:
-            return tid
     if display_name:
         ndn = norm(display_name)
-        for tid, base_name in m3u_names.items():
-            nb = norm(base_name)
-            if nb == ndn or ndn in nb or nb in ndn:
+        for tid in tvg_ids:
+            if norm(m3u_names.get(tid, '')) == ndn:
                 return tid
-    for tid, base_name in m3u_names.items():
-        nb = norm(base_name)
-        if nb in nc:
-            return tid
     return None
 
 print("\n2. Baixando e filtrando fontes EPG...")
@@ -110,6 +111,8 @@ matched_ids = set()
 all_channels = OrderedDict()
 all_programmes = OrderedDict()
 seen_progs = set()
+id_remap = {}
+
 
 def download(url, timeout=180):
     try:
@@ -128,10 +131,10 @@ def download(url, timeout=180):
         print(f"    Erro: {e}")
         return None
 
+
 def process_epg(raw_bytes):
     ch_count = 0
     pr_count = 0
-    id_remap = {}
     try:
         if raw_bytes[:2] == b'\x1f\x8b':
             f = gzip.GzipFile(fileobj=io.BytesIO(raw_bytes))
@@ -148,24 +151,18 @@ def process_epg(raw_bytes):
                     continue
                 dn = elem.find('display-name')
                 display_name = dn.text.strip() if dn is not None and dn.text else ''
-                m3u_id = fuzzy_match(cid, display_name)
-                if m3u_id:
+                m3u_id = strict_match(cid, display_name)
+                if m3u_id and m3u_id not in id_remap:
                     id_remap[cid] = m3u_id
-                    if m3u_id not in matched_ids:
-                        matched_ids.add(m3u_id)
-                        ch = copy.deepcopy(elem)
-                        ch.set('id', m3u_id)
-                        all_channels[m3u_id] = ch
-                        ch_count += 1
+                    matched_ids.add(m3u_id)
+                    ch = copy.deepcopy(elem)
+                    ch.set('id', m3u_id)
+                    all_channels[m3u_id] = ch
+                    ch_count += 1
                 elem.clear()
             elif tag == 'programme':
                 ch = elem.get('channel', '')
-                if not ch:
-                    elem.clear()
-                    continue
                 m3u_id = id_remap.get(ch)
-                if m3u_id is None:
-                    m3u_id = fuzzy_match(ch, '')
                 if m3u_id:
                     start = elem.get('start', '')
                     stop = elem.get('stop', '')
@@ -180,6 +177,7 @@ def process_epg(raw_bytes):
     except Exception as e:
         print(f"    Erro parse: {e}")
     return ch_count, pr_count
+
 
 for url in EPG_SOURCES:
     print(f"  {url.split('/')[-1]}:")
@@ -199,6 +197,18 @@ print(f"  Canais com EPG: {matched_list}")
 missing = sorted(set(tvg_ids) - matched_ids)
 if missing:
     print(f"  Sem EPG ({len(missing)}): {missing}")
+
+# Canais do M3U sem dados no EPG entram como <channel> simples (sem programas
+# inventados), para que o guia reconheca o canal sem poluir a programacao.
+for tid in sorted(tvg_ids):
+    if tid not in all_channels:
+        ch = ET.Element("channel", attrib={"id": tid})
+        dn = ET.SubElement(ch, "display-name")
+        dn.text = m3u_displays.get(tid, m3u_names.get(tid, tid))
+        if m3u_logos.get(tid):
+            ET.SubElement(ch, "icon", attrib={"src": m3u_logos[tid]})
+        all_channels[tid] = ch
+        print(f"  Canal {tid} incluido sem programacao (sem dados disponiveis)")
 
 print("\n4. Salvando EPGFULL.xml.gz...")
 root_out = ET.Element("tv", attrib={"generator-info-name": "EPGFULL"})
