@@ -3,11 +3,14 @@
 #EXTINF:-1 tvg-id="CBS.Streaming.SD.East.feed.us2" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
 
-#EXTINF:-1 tvg-id="BigBrother.us" tvg-name="Big Brother 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/6661f11a41af6400080e90d8/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother 24/7 (Pluto TV)
+#EXTINF:-1 tvg-id="6661f11a41af6400080e90d8" tvg-name="Big Brother 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/6661f11a41af6400080e90d8/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother 24/7 (Pluto TV)
 https://jmp2.uk/plu-6661f11a41af6400080e90d8.m3u8
 
+#EXTINF:-1 tvg-id="64a766cd798def0008734695" tvg-name="Big Brother Quad View (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a766cd798def0008734695/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Quad View (Pluto TV)
+https://jmp2.uk/plu-64a766cd798def0008734695.m3u8
+
 #EXTINF:-1 tvg-id="TVI.HD.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
-https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8zLzIwMjYgNzo1OjIgUE0maGFzaF92YWx1ZT1vK1ByakNHTk55eUYrNzBSMFhUMXRRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9Nzk0OTQ4MjYtY2UxZi00OWQwLWFmNWUtYTg2YzE3Y2FmZmM4
+https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC81LzIwMjYgMjo1NDo1MiBBTSZoYXNoX3ZhbHVlPStRZ2RoRXJUb0U0WVJpbzluUlloR0E9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD0zMjI4NmI1My1jM2NkLTRkZTgtOGYwOS04NWViNzA3ZDJiOTQ%3D
 
 #EXTINF:-1 tvg-id="TVI.Reality.HD.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
 https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
