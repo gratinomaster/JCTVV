@@ -1,25 +1,22 @@
-#EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/EPGFULL.xml.gz"
+#EXTM3U x-tvg-url="https://github.com/gratinomaster/JCTV/raw/refs/heads/main/EPGFULL.xml.gz"
 
-#EXTINF:-1 tvg-id="CBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
+#EXTINF:-1 tvg-id="CBS.Streaming.SD.East.feed.us2" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
 
-#EXTINF:-1 tvg-id="TVIReality.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI Reality)",TVI Reality (Portugal)
+#EXTINF:-1 tvg-id="BigBrother.us" tvg-name="Big Brother 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/6661f11a41af6400080e90d8/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother 24/7 (Pluto TV)
+https://jmp2.uk/plu-6661f11a41af6400080e90d8.m3u8
+
+#EXTINF:-1 tvg-id="TVI.HD.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
+https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8zLzIwMjYgNzo1OjIgUE0maGFzaF92YWx1ZT1vK1ByakNHTk55eUYrNzBSMFhUMXRRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9Nzk0OTQ4MjYtY2UxZi00OWQwLWFmNWUtYTg2YzE3Y2FmZmM4
+
+#EXTINF:-1 tvg-id="TVI.Reality.HD.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
 https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
 
-#EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe (Argentina)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
+#EXTINF:-1 tvg-id="Canal.Telefé.(Argentina).ar" tvg-name="Telefe (Argentina)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
 
-#EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/las-estrellas-mx.png" group-title="🇲🇽 La Casa de los Famosos 4 (Las Estrellas)",Las Estrellas (México)
+#EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC (França)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/T%C3%A9l%C3%A9-Monte-Carlo.png" group-title="🇫🇷 Secret Story 14 (TMC)",TMC (França)
+http://151.80.18.177:86/TMC/index.m3u8
+
+#EXTINF:-1 tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-name="Las Estrellas (México)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Las_Estrellas_logo_%282016%29.png" group-title="🇲🇽 La Casa de los Famosos 4 (Las Estrellas)",Las Estrellas (México)
 http://177.234.249.135:8888/LasEstrellas/index.m3u8
-
-#EXTINF:-1 tvg-id="Telemundo.us" tvg-name="Telemundo (EUA)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (EUA)
-https://nbculocallive.akamaized.net/hls/live/2037092/denver/stream1/master.m3u8
-
-#EXTINF:-1 tvg-id="AztecaUno.mx" tvg-name="Azteca Uno (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/azteca-uno-mx.png" group-title="🇲🇽 Reality (Azteca Uno)",Azteca Uno (México)
-https://azt-oo.otteravision.com/out/v1/da53d7d388be437e92bf8f464018eb48/index.m3u8
-
-#EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/cnn-brasil-br.png" group-title="🇧🇷 NEWS WORLD (CNN Brasil)",CNN Brasil
-https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8
-
-#EXTINF:-1 tvg-id="TVGloboSaoPaulo.br" tvg-name="TV Globo São Paulo (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/globo-br.png" group-title="🇧🇷 Big Brother Brasil (Globo)",TV Globo São Paulo (Brasil)
-http://45.190.28.50/GLOBO_HD/index.m3u8
