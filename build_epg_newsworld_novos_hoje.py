@@ -5,6 +5,7 @@ import re
 import os
 import sys
 import copy
+import unicodedata
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 from datetime import datetime, timedelta
@@ -28,6 +29,8 @@ MANUAL_REMAP = {
 
 
 def norm(s):
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
     return re.sub(r'[\s\-_\.]+', '', s).lower()
 
 
@@ -184,16 +187,6 @@ missing = sorted(set(tvg_ids) - matched_ids)
 if missing:
     print(f"  Sem dados ({len(missing)}): {missing}")
 
-for tid in sorted(tvg_ids):
-    if tid not in all_channels:
-        ch = ET.Element("channel", attrib={"id": tid})
-        dn = ET.SubElement(ch, "display-name", attrib={"lang": "pt"})
-        dn.text = m3u_names.get(tid, tid)
-        if m3u_logos.get(tid):
-            ET.SubElement(ch, "icon", attrib={"src": m3u_logos[tid]})
-        all_channels[tid] = ch
-        print(f"  Canal {tid} incluido sem programacao")
-
 print("\n4. Salvando EPGFULL.xml.gz...")
 root_out = ET.Element("tv", attrib={"generator-info-name": "EPGFULL (NEWSWORLDNOVOS)"})
 for ch in all_channels.values():
@@ -256,5 +249,7 @@ for ch in canais:
 print()
 if prog_hoje > 0 and prog_amanha > 0:
     print("EPG FUNCIONANDO! Programas para hoje e amanha disponiveis.")
+    sys.exit(0)
 else:
     print("AVISO: Faltam programas para hoje ou amanha.")
+    sys.exit(1)
