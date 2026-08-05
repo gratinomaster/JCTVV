@@ -15,41 +15,16 @@ M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
 OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 
 EPG_SOURCES = [
-    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_ES1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_IT1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_NL1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_JP1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AU1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_IN1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_ZA1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_KR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_TR1.xml.gz",
-    "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml",
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml",
     "https://iptv-epg.org/files/epg-us.xml.gz",
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-ar.xml.gz",
     "https://iptv-epg.org/files/epg-mx.xml.gz",
-    "https://iptv-epg.org/files/epg-ve.xml.gz",
-    "https://iptv-epg.org/files/epg-by.xml.gz",
-    "https://iptv-epg.org/files/epg-ru.xml.gz",
-    "https://iptv-epg.org/files/epg-ua.xml.gz",
-    "https://iptv-epg.org/files/epg-nl.xml.gz",
-    "https://iptv-epg.org/files/epg-jp.xml.gz",
-    "https://iptv-epg.org/files/epg-th.xml.gz",
-    "https://iptv-epg.org/files/epg-au.xml.gz",
-    "https://iptv-epg.org/files/epg-qa.xml.gz",
 ]
 
 
@@ -77,17 +52,15 @@ print("=" * 60)
 print("0. Carregando lista M3U")
 print("=" * 60)
 
-if os.path.exists(M3U_LOCAL):
-    print(f"  Usando arquivo local: {M3U_LOCAL}")
-    with open(M3U_LOCAL, "r", encoding="utf-8", errors="replace") as f:
-        m3u_text = f.read()
-else:
-    print(f"  Baixando do GitHub: {M3U_URL}")
-    m3u_data = download(M3U_URL)
-    if m3u_data is None:
-        print("ERRO: Nao foi possivel baixar a M3U")
-        sys.exit(1)
-    m3u_text = m3u_data.decode("utf-8", errors="replace")
+print(f"  Baixando do GitHub: {M3U_URL}")
+m3u_data = download(M3U_URL)
+if m3u_data is None:
+    print("ERRO: Nao foi possivel baixar a M3U")
+    sys.exit(1)
+m3u_text = m3u_data.decode("utf-8", errors="replace")
+if m3u_text.startswith("<"):
+    print("ERRO: Resposta do M3U nao parece uma playlist")
+    sys.exit(1)
 
 print()
 print("=" * 60)
