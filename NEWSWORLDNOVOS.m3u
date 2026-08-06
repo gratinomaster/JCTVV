@@ -12,20 +12,17 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64a766cd7
 #EXTINF:-1 tvg-id="BigBrotherCamera1.us" tvg-name="Big Brother Camera 1 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a765c04ea480000823917a/colorLogoPNG_1749506871042.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 1 (Pluto TV)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/64a765c04ea480000823917a/master.m3u8?advertisingId=&appName=web&appVersion=8.10.6-0cb8d4a52674&bundleId=web&configVersion=8.10.6-0cb8d4a52674&deviceDNT=0&deviceId=unknown&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&platform=web&us_privacy=1YNY
 
-#EXTINF:-1 tvg-id="TVI.HD.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
-https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC81LzIwMjYgMjo1NDo1MiBBTSZoYXNoX3ZhbHVlPStRZ2RoRXJUb0U0WVJpbzluUlloR0E9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD0zMjI4NmI1My1jM2NkLTRkZTgtOGYwOS04NWViNzA3ZDJiOTQ%3D
-
 #EXTINF:-1 tvg-id="TVI.Reality.HD.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
 https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
 
 #EXTINF:-1 tvg-id="Canal.Telefé.(Argentina).ar" tvg-name="Telefe (Argentina)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
 
-#EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC (França)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/T%C3%A9l%C3%A9-Monte-Carlo.png" group-title="🇫🇷 Secret Story 14 (TMC)",TMC (França)
-http://151.80.18.177:86/TMC/index.m3u8
-
 #EXTINF:-1 tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-name="Las Estrellas (México)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Las_Estrellas_logo_%282016%29.png" group-title="🇲🇽 La Casa de los Famosos 4 (Las Estrellas)",Las Estrellas (México)
 http://177.234.249.135:8888/LasEstrellas/index.m3u8
 
 #EXTINF:-1 tvg-id="Telemundo.pr" tvg-name="Telemundo (Porto Rico)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (Porto Rico)
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+#EXTINF:-1 tvg-id="Survivor.pluto" tvg-name="Survivor (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/5f21e7b24744c60007c1f6fc/colorLogoPNG.png" group-title="🇺🇸 Survivor (Pluto TV)",Survivor (Pluto TV)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f21e7b24744c60007c1f6fc/master.m3u8?advertisingId=&appName=web&appVersion=8.10.6-0cb8d4a52674&bundleId=web&configVersion=8.10.6-0cb8d4a52674&deviceDNT=0&deviceId=unknown&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&platform=web&us_privacy=1YNY
