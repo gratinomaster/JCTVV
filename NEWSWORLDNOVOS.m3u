@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://github.com/gratinomaster/JCTVV/raw/refs/heads/main/EPGFULL.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
 
 #EXTINF:-1 tvg-id="CBSEast_WCBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
@@ -9,20 +9,20 @@ https://jmp2.uk/plu-6661f11a41af6400080e90d8.m3u8
 #EXTINF:-1 tvg-id="BigBrotherCamera1.us" tvg-name="Big Brother Camera 1 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a765c04ea480000823917a/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 1 (Pluto TV)
 https://jmp2.uk/plu-64a765c04ea480000823917a.m3u8
 
+#EXTINF:-1 tvg-id="BigBrotherCameraQ.us" tvg-name="Big Brother Quad View (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a766cd798def0008734695/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Quad View (Pluto TV)
+https://jmp2.uk/plu-64a766cd798def0008734695.m3u8
+
 #EXTINF:-1 tvg-id="Survivor.pluto" tvg-name="Survivor 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/5f21e7b24744c60007c1f6fc/colorLogoPNG.png" group-title="🇺🇸 Survivor 24/7 (Pluto TV)",Survivor 24/7 (Pluto TV)
 https://jmp2.uk/plu-5f21e7b24744c60007c1f6fc.m3u8
 
 #EXTINF:-1 tvg-id="TVI.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
-https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC83LzIwMjYgMTI6NTM6NTkgQU0maGFzaF92YWx1ZT15VEpGYXRwYmVoRlVYbGVCdDcvKzFRPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9ZGMyNTJlOGEtY2U2Ni00ZTVmLThjYjAtMTk1YmJlMmI3NDc4
+https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
 
 #EXTINF:-1 tvg-id="TVIReality.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
-https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
+https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI_Reality.m3u8
 
 #EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe (Argentina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/telefe-ar.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
-
-#EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Las_Estrellas_logo_%282016%29.png" group-title="🇲🇽 La Casa de los Famosos 4 (Las Estrellas)",Las Estrellas (México)
-http://177.234.249.135:8888/LasEstrellas/index.m3u8
 
 #EXTINF:-1 tvg-id="Telemundo.us" tvg-name="Telemundo (Porto Rico)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (Porto Rico)
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
