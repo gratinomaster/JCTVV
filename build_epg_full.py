@@ -25,6 +25,7 @@ EPG_SOURCES = [
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-ar.xml.gz",
     "https://iptv-epg.org/files/epg-mx.xml.gz",
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
 ]
 
 
@@ -100,6 +101,7 @@ all_programmes = OrderedDict()
 
 
 MANUAL_ID_MAP = {
+    "6661f11a41af6400080e90d8": "BigBrother.us",
     "aljazeeraenglish.qa": "AlJazeera.qa",
     "aljazeera.qa": "AlJazeera.qa",
     "nhkworld.japan": "NHKWorld.jp",
