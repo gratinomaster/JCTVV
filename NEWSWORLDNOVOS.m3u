@@ -24,5 +24,8 @@ https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI_Reality.m3u8
 #EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe (Argentina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/telefe-ar.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
 
-#EXTINF:-1 tvg-id="Telemundo.us" tvg-name="Telemundo (Porto Rico)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (Porto Rico)
+#EXTINF:-1 tvg-id="Telemundo.pr" tvg-name="Telemundo (Porto Rico)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (Porto Rico)
 https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+
+#EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/las-estrellas-mx.png" group-title="🇲🇽 La Casa de los Famosos (Las Estrellas)",Las Estrellas (México)
+http://209.14.115.253:8081/LAS-ESTRELLAS/index.m3u8
