@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-fr.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
 
 #EXTINF:-1 tvg-id="CBSEast_WCBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
@@ -23,6 +23,9 @@ https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
 
 #EXTINF:-1 tvg-id="TVIReality.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
 https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI_Reality.m3u8
+
+#EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC (França)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/T%C3%A9l%C3%A9-Monte-Carlo.png" group-title="🇫🇷 Secret Story 14 (TMC)",TMC (França)
+http://151.80.18.177:86/TMC/index.m3u8
 
 #EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe (Argentina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/telefe-ar.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
