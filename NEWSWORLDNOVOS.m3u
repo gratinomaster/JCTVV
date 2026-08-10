@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-fr.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-fr.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz,https://iptv-epg.org/files/epg-br.xml.gz"
 
 #EXTINF:-1 tvg-id="CBSEast_WCBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
@@ -35,3 +35,6 @@ https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m
 
 #EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/las-estrellas-mx.png" group-title="🇲🇽 La Casa de los Famosos (Las Estrellas)",Las Estrellas (México)
 http://209.14.115.253:8081/LAS-ESTRELLAS/index.m3u8
+
+#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo São Paulo (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/globo-br.png" group-title="🇧🇷 Big Brother Brasil (Globo)",Globo São Paulo (Brasil)
+https://live-as-10-02.video.globo.com/j/eyJhbGciOiJSUzUxMiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJjb3VudHJ5X2NvZGUiOiJVUyIsImRvbWFpbiI6ImxpdmUtYXMtMTAtMDIudmlkZW8uZ2xvYm8uY29tIiwiZXhwIjoxNzg2Mzk5MzE2LCJpYXQiOjE3ODYzNzc3MTYsImlzcyI6InBsYXliYWNrLWFwaS1wcm9kLWdjcCIsIm93bmVyIjoiIiwicGF0aCI6Ii9saXZlL2YoaT0yKS9zcG8xMjRoYS9wbGF5bGlzdC5tM3U4In0.oxnAASRR4TiZw2Y6lqAV1LOrPfIQrdRwNOKSOzovYDujfrVlK_-0r5FkMnc_ehwltVCse0NH9xHqUpCEvLCgAP083cSqMTkJ8tOzvKFCiCpGxyB1rL6iEiT5fCMW50xJ4fMOeUbwquNE_cnU-lxdy7dtG-XdDCsuBBav6Ekg4EG1n1InXAzQL4euXB10c3d-JZgMcZdpMSSiIQ0HgnnAKJjv7fblhK_QZ76IDc7wb4DHqv63uZUAwXujnsgdkEloToRX0nJmQ4MX4ZyTjYi3Xkf7v_Zy_gPm_pTGFYRBKxshpRKhjzNEjiQfmPLVbW5913Qy4sXGGOhFyX487_8fgQ/live/f(i=2)/spo124ha/spo124ha-audio_1=96000-video=3632000.m3u8
