@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz,https://iptv-epg.org/files/epg-br.xml.gz"
 
 #EXTINF:-1 tvg-id="CBSEast_WCBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
@@ -41,3 +41,6 @@ https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m
 
 #EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/las-estrellas-mx.png" group-title="🇲🇽 La Casa de los Famosos (Las Estrellas)",Las Estrellas (México)
 http://209.14.115.253:8081/LAS-ESTRELLAS/index.m3u8
+
+#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/globo-br.png" group-title="🇧🇷 Big Brother Brasil (Globo)",Globo (Brasil)
+http://170.84.165.204/Globo_HD/index.m3u8
