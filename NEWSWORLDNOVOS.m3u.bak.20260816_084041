@@ -56,6 +56,3 @@ http://170.84.165.204/Globo_HD/index.m3u8
 
 #EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="Record (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/record-br.png" group-title="🇧🇷 A Fazenda (Record)",Record (Brasil)
 https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
-
-#EXTINF:-1 tvg-id="SBTBrasil.br" tvg-name="SBT (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/sbt-br.png" group-title="🇧🇷 Reality Shows (SBT)",SBT (Brasil)
-http://45.190.28.50/SBT_HD/index.m3u8
