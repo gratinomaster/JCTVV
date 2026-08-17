@@ -1,61 +1,22 @@
-#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz,https://iptv-epg.org/files/epg-pt.xml.gz,https://iptv-epg.org/files/epg-ar.xml.gz,https://iptv-epg.org/files/epg-mx.xml.gz,https://iptv-epg.org/files/epg-br.xml.gz"
+#EXTM3U url-tvg="https://github.com/gratinomaster/JCTV/raw/refs/heads/main/EPGFULL.xml.gz"
 
-#EXTINF:-1 tvg-id="CBSEast_WCBS.us" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
+#EXTINF:-1 tvg-id="CBS.Streaming.SD.East.feed.us2" tvg-name="CBS (EUA)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/88/CBS_2018.png" group-title="🇺🇸 Big Brother 28 (CBS)",CBS (EUA)
 http://stream.cammonitorplus.net/1783/index.m3u8
 
-#EXTINF:-1 tvg-id="BigBrother.pluto" tvg-name="Big Brother 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/6661f11a41af6400080e90d8/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother 24/7 (Pluto TV)
-https://jmp2.uk/plu-6661f11a41af6400080e90d8.m3u8
+#EXTINF:-1 tvg-id="BigBrother.us" tvg-name="Big Brother 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/6661f11a41af6400080e90d8/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother 24/7 (Pluto TV)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6661f11a41af6400080e90d8/master.m3u8?advertisingId=&appName=web&appStoreName=web&appVersion=5.14.0&deviceDNT=0&deviceId=a41f6b9e-0d6b-4e1a-b7f5-9a2d0d5c8a72&deviceMake=Chrome&deviceModel=Chrome&deviceType=web&deviceVersion=125.0.6422.26&includeExtendedEvents=false&marketingRegion=US&serverSideAds=true&sid=a41f6b9e-0d6b-4e1a-b7f5-9a2d0d5c8a72&startTime=0&terminate=false
 
-#EXTINF:-1 tvg-id="BigBrotherCamera1.us" tvg-name="Big Brother Camera 1 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a765c04ea480000823917a/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 1 (Pluto TV)
-https://jmp2.uk/plu-64a765c04ea480000823917a.m3u8
+#EXTINF:-1 tvg-id="TVI.HD.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
+https://video-auth6.iol.pt/live_tvi/live_tvi/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OC8xNS8yMDI2IDQ6NTc6MzQgUE0maGFzaF92YWx1ZT03MlY2SXlqRzBVL1BzdStRdmxrcldnPT0mdmFsaWRtaW51dGVzPTE0NDAmaWQ9dXBkYXRl
 
-#EXTINF:-1 tvg-id="BigBrotherCamera2.us" tvg-name="Big Brother Camera 2 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a765fb798def0008734632/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 2 (Pluto TV)
-https://jmp2.uk/plu-64a765fb798def0008734632.m3u8
+#EXTINF:-1 tvg-id="TVI.Reality.HD.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
+https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
 
-#EXTINF:-1 tvg-id="BigBrotherCamera3.us" tvg-name="Big Brother Camera 3 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a7665b902f2300085d7901/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 3 (Pluto TV)
-https://jmp2.uk/plu-64a7665b902f2300085d7901.m3u8
-
-#EXTINF:-1 tvg-id="BigBrotherCamera4.us" tvg-name="Big Brother Camera 4 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a766a794635e0008626601/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Camera 4 (Pluto TV)
-https://jmp2.uk/plu-64a766a794635e0008626601.m3u8
-
-#EXTINF:-1 tvg-id="BigBrotherCameraQ.us" tvg-name="Big Brother Quad View (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/64a766cd798def0008734695/colorLogoPNG.png" group-title="🇺🇸 Big Brother 28 (CBS)",Big Brother Quad View (Pluto TV)
-https://jmp2.uk/plu-64a766cd798def0008734695.m3u8
-
-#EXTINF:-1 tvg-id="Survivor.pluto" tvg-name="Survivor 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/5f21e7b24744c60007c1f6fc/colorLogoPNG.png" group-title="🇺🇸 Survivor 24/7 (Pluto TV)",Survivor 24/7 (Pluto TV)
-https://jmp2.uk/plu-5f21e7b24744c60007c1f6fc.m3u8
-
-#EXTINF:-1 tvg-id="TheAmazingRace.pluto" tvg-name="The Amazing Race 24/7 (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/5f21e8a6e2f12b000755afdb/colorLogoPNG.png" group-title="🇺🇸 The Amazing Race (Pluto TV)",The Amazing Race 24/7 (Pluto TV)
-https://jmp2.uk/plu-5f21e8a6e2f12b000755afdb.m3u8
-
-#EXTINF:-1 tvg-id="TheChallenge.pluto" tvg-name="The Challenge (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/5d48685da7e9f476aa8a1888/colorLogoPNG.png" group-title="🇺🇸 The Challenge (Pluto TV)",The Challenge (Pluto TV)
-https://jmp2.uk/plu-5d48685da7e9f476aa8a1888.m3u8
-
-#EXTINF:-1 tvg-id="MTV.ar" tvg-name="MTV (América Latina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/mtv-ar.png" group-title="🎬 Reality Shows (MTV)",MTV (América Latina)
-http://179.60.51.134:8888/MTV/index.m3u8
-
-#EXTINF:-1 tvg-id="WorldofLoveIsland.pluto" tvg-name="World of Love Island (Pluto TV)" tvg-logo="https://images.pluto.tv/channels/69699b6d23ea437206f4a036/colorLogoPNG.png" group-title="🇺🇸 Love Island (Pluto TV)",World of Love Island (Pluto TV)
-https://jmp2.uk/plu-69699b6d23ea437206f4a036.m3u8
-
-#EXTINF:-1 tvg-id="TVI.pt" tvg-name="TVI (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Log%C3%B3tipo_TVI.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI (Portugal)
-https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI.m3u8
-
-#EXTINF:-1 tvg-id="TVIReality.pt" tvg-name="TVI Reality (Portugal)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e4/TVI_Reality_%282017%29.png" group-title="🇵🇹 Big Brother Verão (TVI)",TVI Reality (Portugal)
-https://github.com/LITUATUI/M3UPT/raw/main/M3U/TVI_Reality.m3u8
-
-#EXTINF:-1 tvg-id="Telefe.ar" tvg-name="Telefe (Argentina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/telefe-ar.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
+#EXTINF:-1 tvg-id="Canal.Telefé.(Argentina).ar" tvg-name="Telefe (Argentina)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/argentina/telefe-ar.png" group-title="🇦🇷 Gran Hermano (Telefe)",Telefe (Argentina)
 http://200.91.32.158:8080/telefehdvalle/index.m3u8
 
-#EXTINF:-1 tvg-id="Telemundo.pr" tvg-name="Telemundo (Porto Rico)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/telemundo-us.png" group-title="🇺🇸 La Casa de los Famosos (Telemundo)",Telemundo (Porto Rico)
-https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+#EXTINF:-1 tvg-id="Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx" tvg-name="Las Estrellas (México)" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4f/Las_Estrellas_logo_%282016%29.png" group-title="🇲🇽 La Casa de los Famosos 4 (Las Estrellas)",Las Estrellas (México)
+http://190.93.224.42/CANAL-LAS-ESTRELLAS/index.m3u8
 
-#EXTINF:-1 tvg-id="LasEstrellas.mx" tvg-name="Las Estrellas (México)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/mexico/las-estrellas-mx.png" group-title="🇲🇽 La Casa de los Famosos (Las Estrellas)",Las Estrellas (México)
-http://209.14.115.253:8081/LAS-ESTRELLAS/index.m3u8
-
-#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/globo-br.png" group-title="🇧🇷 Big Brother Brasil (Globo)",Globo (Brasil)
-http://170.84.165.204/Globo_HD/index.m3u8
-
-#EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="Record (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/record-br.png" group-title="🇧🇷 A Fazenda (Record)",Record (Brasil)
-https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
-
-#EXTINF:-1 tvg-id="SBTBrasil.br" tvg-name="SBT (Brasil)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/sbt-br.png" group-title="🇧🇷 Reality Shows (SBT)",SBT (Brasil)
-http://45.190.28.50/SBT_HD/index.m3u8
+#EXTINF:-1 tvg-id="TMC.fr" tvg-name="TMC (França)" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/france/tmc-fr.png" group-title="🇫🇷 Secret Story 14 (TMC)",TMC (França)
+http://151.80.18.177:86/TMC/index.m3u8
