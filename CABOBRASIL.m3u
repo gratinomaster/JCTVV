@@ -3,3 +3,5 @@
 http://170.84.165.204:80/Globo_HD/index.m3u8
 #EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT" tvg-logo="http://channelart.8b90287dn2.online/images/logos/SBT.png" group-title="TV ABERTA",SBT
 https://media.cdntvms.com.br/sbt_sat/index.m3u8
+#EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://i.imgur.com/1r5T6Pw.png" group-title="TV ABERTA",Band SP
+http://45.190.28.50/BAND_HD/index.m3u8
