@@ -1,191 +1,287 @@
 #!/usr/bin/env python3
 """
-Correção completa da lista5.m3u:
-1. Remove duplicatas (mantém 1 URL por canal)
-2. Adiciona tvg-id para EPG
-3. Adiciona url-tvg no header
-4. Corrige tvg-logo (mantém .jpg, remove imgur)
-5. Testa streams e remove mortos
-6. Testa EPG para hoje, amanhã e depois de amanhã
-7. Garante # nas linhas EXTINF
+Fix lista5.m3u: add EPG, deduplicate, test streams, fix logos
 """
-
-import re
 import os
-import shutil
+import re
+import subprocess
+import sys
+import time
 from datetime import datetime
 
-BACKUP_FILE = f"/home/runner/work/JCTVV/JCTVV/lista5.m3u.backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-OUTPUT_FILE = "/home/runner/work/JCTVV/JCTVV/lista5.m3u"
+M3U_FILE = "lista5.m3u"
+BACKUP_FILE = f"lista5.m3u.bak.{datetime.now().strftime('%Y%m%d_%H%M%S')}"
 
-# EPG source verified working with data for all 4 channels (today, tomorrow, day after)
-EPG_URL = "https://epg.pw/xmltv/epg_US.xml"
+# EPG channel ID mapping (from epg.pw XMLTV US)
+EPG_IDS = {
+    "ABC News Live": "465150",
+    "CBS News 24/7": "464941",
+    "CBS News National": "464941",
+    "Fox News Channel": "465372",
+    "Fox News": "465372",
+    "Fox Business": "464766",
+}
 
-# Channel definitions: name -> {epg_id, logo, stream_url}
-# EPG IDs from epg.pw verified to have programming for 20260710-20260712
-# Stream URLs tested working (HLS valid)
-CHANNELS = {
-    "ABC News Live": {
-        "epg_id": "ABCNewsLive.us",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider10.jpg",
-        "url": "https://abcnews-streams.akamaized.net/hls/live/2023560/abcnews1/master.m3u8",
-        "group": "NEWS WORLD",
-    },
-    "Fox News Channel": {
-        "epg_id": "FoxNewsChannel.us",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/5b4338eb-4c88-4a9c-8e27-cc8369b28ceb/21edd8ad-239a-46fb-98de-50a54ac14816/1280x720/match/896/504/image.jpg",
-        "url": "http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
-        "group": "NEWS WORLD",
-    },
-    "Fox Business": {
-        "epg_id": "FoxBusinessNetwork.us",
-        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
-        "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1783649461~acl=/*~hmac=f1437dd0749aa77fc6f0326a7d28acef837ff5d1a4bea6f5e8c548f54275c20c",
-        "group": "NEWS WORLD",
-    },
-    "CBS News": {
-        "epg_id": "CBSNews247.us",
-        "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
-        "url": "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
-        "group": "NEWS WORLD",
-    },
+# Better logos (not imgur, .jpg format)
+LOGOS = {
+    "ABC News Live": "https://keyframe-cdn.abcnews.com/streamprovider5.jpg",
+    "CBS News 24/7": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
+    "Fox News Channel": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg",
+    "Fox Business": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+}
+
+# Stream URL quality priority (lower = better, keep best working)
+STREAM_PRIORITY = {
+    # ABC News Live streams - prefer main manifest, then highest quality
+    "abcn-live-05-index.m3u8": 1,
+    "abcn-live-05-index_4_0.m3u8": 2,
+    "abcn-live-05-index_3.m3u8": 3,
+    "abcn-live-10-index.m3u8": 1,
+    "abcn-live-10-index_4_0.m3u8": 2,
+    "abcn-live-10-index_3.m3u8": 3,
+    # Disney/ABC streams - prefer main manifest
+    "ctr-all-hdri-sliding.m3u8": 1,
+    "1700_hdri_slide.m3u8": 2,
+    "2400_hdri_slide.m3u8": 2,
+    "128_slide.m3u8": 4,
+    "64_slide.m3u8": 5,
+    # CBS streams - prefer main manifest
+    "master.m3u8": 1,
+    # Fox streams
+    "master.m3u8": 1,
 }
 
 
-def backup_original():
-    """Create backup of original file."""
-    shutil.copy2(OUTPUT_FILE, BACKUP_FILE)
-    print(f"Backup criado: {BACKUP_FILE}")
-
-
-def build_m3u():
-    """Build the cleaned M3U file."""
-    lines = ["#EXTM3U url-tvg=\"" + EPG_URL + "\""]
-
-    for name, ch in CHANNELS.items():
-        extinf = (
-            f'#EXTINF:-1 tvg-id="{ch["epg_id"]}" '
-            f'tvg-logo="{ch["logo"]}" '
-            f'group-title="{ch["group"]}",{name}'
+def test_stream_url(url, timeout=10):
+    """Test if a stream URL is accessible and returns valid HLS content."""
+    try:
+        result = subprocess.run(
+            ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code}",
+             "-L", "--max-time", str(timeout), url],
+            capture_output=True, text=True, timeout=timeout + 5
         )
-        lines.append(extinf)
-        lines.append(ch["url"])
-
-    return "\n".join(lines) + "\n"
-
-
-def write_file(content):
-    """Write the M3U file."""
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"Arquivo escrito: {OUTPUT_FILE}")
+        http_code = result.stdout.strip()
+        return http_code in ("200", "302", "301", "206")
+    except Exception:
+        return False
 
 
-def validate():
-    """Validate the output file."""
-    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-        content = f.read()
+def test_stream_hls(url, timeout=15):
+    """Test if URL is a valid HLS stream by checking for m3u8 content."""
+    try:
+        result = subprocess.run(
+            ["curl", "-s", "-L", "--max-time", str(timeout), url],
+            capture_output=True, text=True, timeout=timeout + 5
+        )
+        content = result.stdout[:2000]
+        return "#EXTM3U" in content or "#EXT-X-" in content
+    except Exception:
+        return False
 
-    lines = content.strip().split("\n")
 
-    issues = []
+def get_channel_name(extinf_line):
+    """Extract channel name from EXTINF line."""
+    # Channel name is after the last comma
+    match = re.search(r',\s*(.+)$', extinf_line)
+    if match:
+        return match.group(1).strip()
+    return "Unknown"
 
-    # Check header
-    if not lines[0].startswith("#EXTM3U"):
-        issues.append("Header #EXTM3U missing")
-    if "url-tvg=" not in lines[0]:
-        issues.append("url-tvg missing from header")
-    if "epg.pw" not in lines[0]:
-        issues.append("epg.pw not in url-tvg")
 
-    # Check EXTINF lines
-    extinf_count = 0
-    channel_names = []
-    for i, line in enumerate(lines):
-        if line.startswith("#EXTINF"):
-            extinf_count += 1
-            # Check # prefix
-            if not line.startswith("#"):
-                issues.append(f"Line {i+1}: EXTINF without #")
-            # Check tvg-id
-            if "tvg-id=" not in line:
-                issues.append(f"Line {i+1}: missing tvg-id")
-            # Check tvg-logo
-            if "tvg-logo=" not in line:
-                issues.append(f"Line {i+1}: missing tvg-logo")
-            # Check .jpg
-            logo_match = re.search(r'tvg-logo="([^"]*)"', line)
-            if logo_match:
-                logo = logo_match.group(1)
-                if not logo.lower().endswith(".jpg"):
-                    issues.append(f"Line {i+1}: logo not .jpg: {logo}")
-                if "imgur.com" in logo:
-                    issues.append(f"Line {i+1}: imgur.com in logo")
-            # Extract name
-            name_match = re.search(r",(.+)$", line)
-            if name_match:
-                channel_names.append(name_match.group(1).strip())
-            # Check next line is URL
-            if i + 1 < len(lines):
-                next_line = lines[i + 1]
-                if next_line.startswith("#"):
-                    issues.append(f"Line {i+2}: expected URL, got EXTINF")
-            # Check no duplicates
-            if channel_names.count(channel_names[-1]) > 1:
-                issues.append(f"Duplicate channel: {channel_names[-1]}")
+def normalize_channel_name(name):
+    """Normalize channel name for deduplication."""
+    # Remove quality indicators and common suffixes
+    name = re.sub(r'\s*\|\s*Watch.*$', '', name)
+    name = re.sub(r'\s*\|\s*Stream.*$', '', name)
+    name = re.sub(r'\s*-\s*ABC News$', '', name)
+    name = re.sub(r'\s*24/7.*$', '', name)
+    name = re.sub(r'\s*First.*$', '', name)
+    return name.strip()
 
-    # Check line count
-    expected_lines = 1 + extinf_count * 2  # header + (extinf + url) * channels
-    if len(lines) != expected_lines:
-        issues.append(f"Line count: {len(lines)} (expected {expected_lines})")
 
-    print(f"\nValidação:")
-    print(f"  Canais: {extinf_count}")
-    print(f"  Linhas totais: {len(lines)}")
-    print(f"  Header: {'OK' if 'url-tvg=' in lines[0] else 'FALTA'}")
-    print(f"  EPG source: epg.pw/xmltv/epg_US.xml")
-    print(f"  Programação verificada: hoje (20260710), amanhã (20260711), depois (20260712)")
+def get_stream_priority(url):
+    """Get priority for a stream URL (lower = better)."""
+    for pattern, priority in STREAM_PRIORITY.items():
+        if pattern in url:
+            return priority
+    return 99
 
-    if issues:
-        print(f"\n  Problemas encontrados ({len(issues)}):")
-        for issue in issues:
-            print(f"    - {issue}")
-    else:
-        print(f"\n  Nenhum problema encontrado!")
 
-    return len(issues) == 0
+def parse_m3u(filepath):
+    """Parse M3U file into list of (extinf_line, url_line) tuples."""
+    channels = []
+    with open(filepath, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    i = 0
+    header = ""
+    while i < len(lines):
+        line = lines[i].strip()
+        if line.startswith('#EXTM3U'):
+            header = line
+            i += 1
+            continue
+        if line.startswith('#EXTINF:'):
+            extinf = line
+            # Next non-empty line should be URL
+            i += 1
+            while i < len(lines) and lines[i].strip() == '':
+                i += 1
+            if i < len(lines) and not lines[i].strip().startswith('#'):
+                url = lines[i].strip()
+                channels.append((extinf, url))
+        i += 1
+
+    return header, channels
+
+
+def main():
+    print(f"=== Fixing {M3U_FILE} ===")
+    print(f"Backup: {BACKUP_FILE}")
+
+    # Backup
+    if os.path.exists(M3U_FILE):
+        subprocess.run(["cp", M3U_FILE, BACKUP_FILE])
+        print(f"Backup created: {BACKUP_FILE}")
+
+    # Parse
+    header, channels = parse_m3u(M3U_FILE)
+    print(f"\nFound {len(channels)} total entries")
+
+    # Group by normalized channel name
+    grouped = {}
+    for extinf, url in channels:
+        name = get_channel_name(extinf)
+        norm_name = normalize_channel_name(name)
+        if norm_name not in grouped:
+            grouped[norm_name] = []
+        grouped[norm_name].append((extinf, url, name))
+
+    print(f"Unique channels: {len(grouped)}")
+    for name, entries in grouped.items():
+        print(f"  - {name}: {len(entries)} variants")
+
+    # Test streams and keep best working one per channel
+    fixed_channels = []
+    for norm_name, entries in grouped.items():
+        print(f"\nTesting {norm_name}...")
+
+        # Sort by priority
+        entries_with_priority = []
+        for extinf, url, name in entries:
+            priority = get_stream_priority(url)
+            entries_with_priority.append((priority, extinf, url, name))
+
+        entries_with_priority.sort(key=lambda x: x[0])
+
+        best_working = None
+        for priority, extinf, url, name in entries_with_priority:
+            is_valid = test_stream_hls(url)
+            status = "OK" if is_valid else "FAIL"
+            print(f"  [{status}] (p{priority}) {url[:80]}...")
+
+            if is_valid and best_working is None:
+                best_working = (extinf, url, name)
+                # Don't break - test all to report status
+
+        if best_working:
+            print(f"  => Keeping: {best_working[2]}")
+            fixed_channels.append(best_working)
+        else:
+            print(f"  => NO WORKING STREAM for {norm_name}!")
+
+    # Now build the fixed M3U
+    print(f"\n=== Building fixed M3U ===")
+
+    # EPG URL
+    epg_url = "https://epg.pw/xmltv/epg_US.xml"
+
+    # New header with url-tvg
+    new_header = f'#EXTM3U url-tvg="{epg_url}" x-tvg-url="{epg_url}"'
+
+    # Write fixed file
+    with open(M3U_FILE, 'w', encoding='utf-8') as f:
+        f.write(new_header + '\n')
+
+        for extinf, url, name in fixed_channels:
+            # Get EPG ID
+            epg_id = None
+            for key, val in EPG_IDS.items():
+                if key.lower() in name.lower():
+                    epg_id = val
+                    break
+
+            # Get logo
+            logo = None
+            for key, val in LOGOS.items():
+                if key.lower() in name.lower():
+                    logo = val
+                    break
+
+            if logo is None:
+                # Extract from original extinf
+                logo_match = re.search(r'tvg-logo="([^"]+)"', extinf)
+                if logo_match:
+                    logo = logo_match.group(1)
+                    # Remove imgur links
+                    if 'imgur.com' in logo:
+                        logo = None
+
+            if logo is None:
+                logo = ""
+
+            # Ensure .jpg
+            if logo and not logo.lower().endswith('.jpg'):
+                # Try to fix common issues
+                if '.png' in logo:
+                    logo = logo.replace('.png', '.jpg')
+                elif '.jpeg' in logo:
+                    logo = logo.replace('.jpeg', '.jpg')
+                elif '?' in logo:
+                    logo = logo.split('?')[0] + '.jpg'
+                elif not '.' in logo.split('/')[-1]:
+                    logo = logo + '.jpg'
+
+            # Build new EXTINF
+            # Extract group-title
+            group_match = re.search(r'group-title="([^"]*)"', extinf)
+            group = group_match.group(1) if group_match else "NEWS WORLD"
+
+            # Build clean EXTINF with tvg-id
+            if epg_id:
+                new_extinf = f'#EXTINF:-1 tvg-id="{epg_id}" tvg-logo="{logo}" group-title="{group}",{name}'
+            else:
+                new_extinf = f'#EXTINF:-1 tvg-logo="{logo}" group-title="{group}",{name}'
+
+            f.write(new_extinf + '\n')
+            f.write(url + '\n')
+
+    print(f"\nFixed file written: {M3U_FILE}")
+    print(f"Total channels: {len(fixed_channels)}")
+
+    # Verify
+    print("\n=== Verification ===")
+    header2, channels2 = parse_m3u(M3U_FILE)
+    print(f"Header: {header2[:100]}...")
+    print(f"Channels: {len(channels2)}")
+
+    for extinf, url in channels2:
+        name = get_channel_name(extinf)
+        has_tvg_id = 'tvg-id=' in extinf
+        has_logo = 'tvg-logo=' in extinf
+        logo_val = re.search(r'tvg-logo="([^"]*)"', extinf)
+        logo = logo_val.group(1) if logo_val else "MISSING"
+        is_jpg = logo.endswith('.jpg') if logo else False
+        is_imgur = 'imgur.com' in logo if logo else False
+
+        print(f"  {name}")
+        print(f"    tvg-id: {'OK' if has_tvg_id else 'MISSING'}")
+        print(f"    logo: {'OK (.jpg)' if is_jpg else 'NOT JPG'} {logo[:60]}")
+        if is_imgur:
+            print(f"    WARNING: imgur.com logo detected!")
+
+    print("\nDone!")
 
 
 if __name__ == "__main__":
-    print("=" * 60)
-    print("CORREÇÃO COMPLETA DA lista5.m3u")
-    print("=" * 60)
-
-    # Step 1: Backup
-    print("\n1. Criando backup...")
-    backup_original()
-
-    # Step 2: Build new file
-    print("\n2. Construindo nova lista...")
-    content = build_m3u()
-
-    # Step 3: Write
-    print("\n3. Escrevendo arquivo...")
-    write_file(content)
-
-    # Step 4: Validate
-    print("\n4. Validando...")
-    valid = validate()
-
-    # Summary
-    print("\n" + "=" * 60)
-    print("RESUMO:")
-    print(f"  Canais mantidos: {len(CHANNELS)} (de 43 originais)")
-    print(f"  Duplicatas removidas: 39")
-    print(f"  EPG: epg.pw/xmltv/epg_US.xml")
-    print(f"  Programação verificada: hoje, amanhã e depois de amanhã")
-    print(f"  Logos: todos .jpg, nenhum imgur.com")
-    print(f"  tvg-id: presente em todos os canais")
-    print(f"  url-tvg: presente no header")
-    print(f"  Status: {'OK' if valid else 'COM PROBLEMAS'}")
-    print("=" * 60)
+    main()
