@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 import urllib.request
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
+M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
 OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 FALLBACK_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
@@ -43,9 +44,16 @@ print("=" * 60)
 
 data = download(M3U_URL, timeout=60)
 if data is None:
-    print("ERROR: could not download M3U")
-    sys.exit(1)
-m3u_text = data.decode("utf-8", errors="replace")
+    print(f"  Trying local file: {M3U_LOCAL}")
+    if os.path.exists(M3U_LOCAL):
+        with open(M3U_LOCAL, 'r', encoding='utf-8', errors='replace') as f:
+            m3u_text = f.read()
+        print(f"    Loaded local M3U ({len(m3u_text)} bytes)")
+    else:
+        print("ERROR: could not download M3U")
+        sys.exit(1)
+else:
+    m3u_text = data.decode("utf-8", errors="replace")
 
 tvg_ids = set()
 for m in re.finditer(r'tvg-id="([^"]*)"', m3u_text):
