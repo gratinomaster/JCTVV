@@ -15,9 +15,19 @@ M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
 OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 FALLBACK_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
     "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
+    "https://iptv-epg.org/files/epg-us.xml.gz",
+    "https://iptv-epg.org/files/epg-br.xml.gz",
+    "https://iptv-epg.org/files/epg-ar.xml.gz",
+    "https://iptv-epg.org/files/epg-mx.xml.gz",
 ]
 
 def norm(s):
@@ -65,17 +75,51 @@ tvg_norm = {norm(t): t for t in tvg_ids}
 tvg_norm_set = set(tvg_norm.keys())
 
 m3u_names = {}
+m3u_display_all = {}
 for line in m3u_text.splitlines():
     m = re.search(r'tvg-id="([^"]*)"', line)
     name_match = re.search(r',([^,]+)$', line)
-    if m and name_match:
-        tid = m.group(1).strip()
+    if name_match:
         name = name_match.group(1).strip()
-        name_base = re.sub(r'\s*\(.*$', '', name).strip()
-        m3u_names[tid] = name_base
+        display_norm = norm(name)
+        if m:
+            tid = m.group(1).strip()
+            name_base = re.sub(r'\s*\(.*$', '', name).strip()
+            m3u_names[tid] = name_base
+            m3u_display_all[display_norm] = tid
 
 print(f"  Found {len(tvg_ids)} tvg-ids: {sorted(tvg_ids)}")
 print(f"  M3U names: {m3u_names}")
+
+MANUAL_ID_MAP = {
+    "6661f11a41af6400080e90d8": "BigBrother.us",
+    "aljazeeraenglish.qa": "AlJazeera.qa",
+    "aljazeera.qa": "AlJazeera.qa",
+    "nhkworld.japan": "NHKWorld.jp",
+    "nhkworld.jp": "NHKWorld.jp",
+    "nhkworld.jpn": "NHKWorld.jp",
+    "thaipbs.th": "ThaiPBS.th",
+    "thai.pbs.th": "ThaiPBS.th",
+    "rtvnoord.nl": "RTVNoord.nl",
+    "rtvoost.nl": "RTVOost.nl",
+    "rtvutrecht.nl": "RTVUtrecht.nl",
+    "rtvdrenthe.nl": "RTVDrenthe.nl",
+    "rtvmaastricht.nl": "RTVMaastricht.nl",
+    "rtvrijnmond.nl": "RTVRijnmond.nl",
+    "rtvpurmerend.nl": "RTVPurmerend.nl",
+    "rtvwesterwolde.nl": "RTVWesterwolde.nl",
+    "rtvrijnstreektv.nl": "RTVRijnstreekTV.nl",
+    "mtvvolgograd.ru": "MTVVolgograd.ru",
+    "maturtv.ru": "MaturTV.ru",
+    "muzsoyuz.ru": "MuzSoyuz.ru",
+    "ntm.ru": "NTM.ru",
+    "nts.ru": "NTS.ru",
+    "nizhniynovgorod24.ru": "NizhniyNovgorod24.ru",
+    "prosveshchenie.ru": "Prosveshchenie.ru",
+    "firstmusicchannel.by": "FirstMusicChannel.by",
+    "lanettv.ua": "LanetTV.ua",
+    "horseandcountry.au": "HorseandCountry.au",
+}
 
 epg_urls_from_m3u = []
 for match in re.finditer(r'(?:url-tvg|x-tvg-url)="([^"]*)"', m3u_text):
@@ -101,6 +145,8 @@ seen_progs = set()
 
 def fuzzy_match(epg_cid, display_name):
     nc = norm(epg_cid)
+    if nc in MANUAL_ID_MAP:
+        return MANUAL_ID_MAP[nc]
     if nc in tvg_norm_set:
         return tvg_norm[nc]
     for tid in tvg_ids:
@@ -109,6 +155,10 @@ def fuzzy_match(epg_cid, display_name):
             return tid
     if display_name:
         ndn = norm(display_name)
+        if ndn in MANUAL_ID_MAP:
+            return MANUAL_ID_MAP[ndn]
+        if ndn in m3u_display_all:
+            return m3u_display_all[ndn]
         for tid, base_name in m3u_names.items():
             nb = norm(base_name)
             if nb == ndn or ndn in nb or nb in ndn:
@@ -147,6 +197,13 @@ def process_epg_bytes(raw_bytes):
                         matched_ids.add(m3u_id)
                         ch = copy.deepcopy(elem)
                         ch.set('id', m3u_id)
+                        m3u_display_name = m3u_names.get(m3u_id, display_name)
+                        dn_elem = ch.find('display-name')
+                        if dn_elem is not None:
+                            dn_elem.text = m3u_display_name
+                        else:
+                            dn_new = ET.SubElement(ch, 'display-name')
+                            dn_new.text = m3u_display_name
                         all_channels[m3u_id] = ch
                         ch_count += 1
                 elem.clear()
