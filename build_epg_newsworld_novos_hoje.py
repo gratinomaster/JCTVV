@@ -20,6 +20,8 @@ EPG_SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_CL1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
 ]
 
