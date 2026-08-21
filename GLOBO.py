@@ -1,3 +1,6 @@
+import re
+from urllib.parse import unquote
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -110,9 +113,29 @@ def extract_globoplay_data(url):
             driver.quit()
 
 
+def obter_tvg_id(m3u8_url, title):
+    texto = unquote(m3u8_url)
+    match = re.search(r"/live/f[^/]*/([^/]+)/", texto)
+    canal = match.group(1).lower() if match else ""
+    titulo = title.lower()
+
+    if canal.startswith("spo") or "sportv" in titulo:
+        return "sportv"
+    if canal == "gehd":
+        return "ge-tv"
+    if canal.startswith("cbn"):
+        return ""
+
+    return "tv-globo"
+
+
 def generate_m3u():
     with open("lista1.m3u", "w", encoding="utf-8") as output_file:
-        output_file.write("#EXTM3U\n")
+        output_file.write(
+            '#EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,'
+            'https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,'
+            'https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"\n'
+        )
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
             futures = {
@@ -130,7 +153,7 @@ def generate_m3u():
                         thumbnail_url = thumbnail_url or ""
 
                         output_file.write(
-                            f'#EXTINF:-1 tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
+                            f'#EXTINF:-1 tvg-id="{obter_tvg_id(m3u8_url, title)}" tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
                         )
                         output_file.write(f"{m3u8_url}\n")
 
