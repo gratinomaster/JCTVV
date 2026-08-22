@@ -25,6 +25,9 @@ EPG_SOURCES = [
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-ar.xml.gz",
     "https://iptv-epg.org/files/epg-mx.xml.gz",
+    "https://iptv-epg.org/files/epg-cl.xml.gz",
+    "https://iptv-epg.org/files/epg-ve.xml.gz",
+    "https://iptv-epg.org/files/epg-il.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
 ]
 
