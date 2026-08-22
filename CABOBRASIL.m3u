@@ -11,3 +11,5 @@ https://media.cdntvms.com.br/record_nacional_sat/index.m3u8
 https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 #EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TV_Cultura_logo.png" group-title="TV ABERTA",TV Cultura
 http://45.162.64.114/TV_CULTURA/index.m3u8
+#EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" group-title="TV ABERTA",TV Brasil
+http://45.162.64.114/TV_BRASIL/index.m3u8
