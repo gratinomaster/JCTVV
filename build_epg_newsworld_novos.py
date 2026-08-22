@@ -40,6 +40,8 @@ ALIASES = {
     'Canal.Telefé.(Argentina).ar': 'Telefe.ar',
     'Rede.Vida.br': 'RedeVida.br',
     'Telesur.ve': 'teleSUR.ar',
+    # Canal Pluto TV "Big Brother" (id interno do Pluto) atende BigBrother.us
+    'BigBrother.us': '6661f11a41af6400080e90d8',
 }
 
 
