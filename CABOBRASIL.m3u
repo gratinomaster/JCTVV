@@ -7,6 +7,8 @@ https://media.cdntvms.com.br/sbt_sat/index.m3u8
 http://45.190.28.50/BAND_HD/index.m3u8
 #EXTINF:-1 tvg-id="RecordTVSP.br" tvg-name="Record TV SP" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/0/0e/Logotipo_da_Record_%28rede_de_televis%C3%A3o%29.png" group-title="TV ABERTA",Record TV SP
 https://media.cdntvms.com.br/record_nacional_sat/index.m3u8
+#EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Record_News_Logo_2023.png/960px-Record_News_Logo_2023.png" group-title="TV ABERTA",Record News
+http://45.162.64.114/RECORD_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RedeTVSP.br" tvg-name="RedeTV!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/11/RedeTV%21_2019_logo.png" group-title="TV ABERTA",RedeTV!
 https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 #EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TV_Cultura_logo.png" group-title="TV ABERTA",TV Cultura
