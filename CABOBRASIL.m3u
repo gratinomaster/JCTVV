@@ -17,3 +17,5 @@ http://45.162.64.114/TV_CULTURA/index.m3u8
 http://45.162.64.114/TV_BRASIL/index.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Band_News_TV_2021_Logo.png" group-title="TV ABERTA",Band News
 http://45.162.64.114/BAND_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/TV_Gazeta_2026.svg/960px-TV_Gazeta_2026.svg.png" group-title="TV ABERTA",TV Gazeta
+http://45.162.64.114/GAZETA/index.m3u8
