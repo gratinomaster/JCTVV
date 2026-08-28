@@ -1,23 +1,25 @@
 #EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
-#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo SP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Tv_Globo_logo_2021.png/960px-Tv_Globo_logo_2021.png" group-title="TV ABERTA",Globo SP
+#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo SP" tvg-logo="https://iptv-epg.org/images/01rjJoLdzu5R2q7G59AXz3Zs8JGtCDJHabPPPUbB0HeV_Du_5efYc-6ikeblWxI6HLefQpkWzA8b9j9DG9S80PeB_DaLt3GG4EpGR7RdiMc" group-title="TV ABERTA",Globo SP
 http://170.84.165.204:80/Globo_HD/index.m3u8
-#EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d0/SBT-Logotipo-2021.png" group-title="TV ABERTA",SBT
+#EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT" tvg-logo="https://iptv-epg.org/images/A0kYAfxRpwrbJAB92vhNd_vmyYXG4IEbk_01SdKSJ5LQ6OMgX6AEBiyn4Xfy1SCFPvfcNhBQ8HMuZXgEzfzgqPOFPWqb2-SfUR8Fa-s-" group-title="TV ABERTA",SBT
 https://media.cdntvms.com.br/sbt_sat/index.m3u8
-#EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Logo_Bandeirantes_2019_RBG.png/960px-Logo_Bandeirantes_2019_RBG.png" group-title="TV ABERTA",Band SP
+#EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://iptv-epg.org/images/OBnFhqow34YSUCoODefaQmri12i_Z3trxMfeGIUpVS5otHchIAEACrrxEx1WLgYVKgeUBdqcahnd58WAiJBtQdGEB0Q1jPCnlof4uzjbpg" group-title="TV ABERTA",Band SP
 http://45.190.28.50/BAND_HD/index.m3u8
-#EXTINF:-1 tvg-id="RecordTVSP.br" tvg-name="Record TV SP" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/0/0e/Logotipo_da_Record_%28rede_de_televis%C3%A3o%29.png" group-title="TV ABERTA",Record TV SP
+#EXTINF:-1 tvg-id="RecordTVSP.br" tvg-name="Record TV SP" tvg-logo="https://iptv-epg.org/images/n2pgXBRANnF8sb4oIvRG4brt_-kKiARdAV4YgIGXOI3VgROPwv44xTj7UJM2mLt0BYG3m3EKAaSwCRm0xRmOorwM7gO1sjsSBhXC0x02OMSoVfw" group-title="TV ABERTA",Record TV SP
 https://media.cdntvms.com.br/record_nacional_sat/index.m3u8
-#EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Record_News_Logo_2023.png/960px-Record_News_Logo_2023.png" group-title="TV ABERTA",Record News
+#EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://iptv-epg.org/images/OzF7kxJ7GDpi4gIS5jhY7rTNJ6XaXw8QqUxazuN_pboR6a3cWUD3DShshABx9-O3nDbygJZiI898whmS57M4ijfaTLpLlYbaehnMSBQWsi0wirU" group-title="TV ABERTA",Record News
 http://45.162.64.114/RECORD_NEWS/index.m3u8
-#EXTINF:-1 tvg-id="RedeTVSP.br" tvg-name="RedeTV!" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/11/RedeTV%21_2019_logo.png" group-title="TV ABERTA",RedeTV!
+#EXTINF:-1 tvg-id="RedeTVSP.br" tvg-name="RedeTV!" tvg-logo="https://iptv-epg.org/images/Xrnc3_HBczyG9F8jWlsgDZ0n6T4bkfMmAoy0zr4YhPYMM4SyHTNylSdjGP-TE1QeHcFua3V0AEm_C2h2KYc1rOIuUU6pVa8FFU2d7PFrhZI9" group-title="TV ABERTA",RedeTV!
 https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
-#EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/TV_Cultura_logo.png" group-title="TV ABERTA",TV Cultura
+#EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://iptv-epg.org/images/967qTR_xsZZK1d658iBmm-NIXKXfhZENRfZzGbI4iIlTLc4bF83bjJPY8R-DkB9OdrEuYM8QN1JDet-Xhp0RvRNmcBmpFrm8rkikjn-2LNs" group-title="TV ABERTA",TV Cultura
 http://45.162.64.114/TV_CULTURA/index.m3u8
-#EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png" group-title="TV ABERTA",TV Brasil
+#EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://iptv-epg.org/images/nkMmDpfmwLfPJafOYbhSCCwe05CiXYdKMJtcO2oCwM62oBkKr1pv-bZoe8BoQ-vutfd6_UDx-sfoBUe2FYJyo_Q5nRhZR-JIOgm3Ey1jthrI" group-title="TV ABERTA",TV Brasil
 http://45.162.64.114/TV_BRASIL/index.m3u8
-#EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/85/Band_News_TV_2021_Logo.png" group-title="TV ABERTA",Band News
+#EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
 http://45.162.64.114/BAND_NEWS/index.m3u8
-#EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/TV_Gazeta_2026.svg/960px-TV_Gazeta_2026.svg.png" group-title="TV ABERTA",TV Gazeta
+#EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://iptv-epg.org/images/Bet2Q6EqVR25j4cO8IfWzX5VpFMwhO0mHL4MIjuhPQiN7W02L6U5emv9zXcU8Bhz7qGkN3TQHx7Fa3S0l-CnG24Q7aqrvUpI7VZttC_bi2v7" group-title="TV ABERTA",TV Gazeta
 http://45.162.64.114/GAZETA/index.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/CNN_Brasil.svg/960px-CNN_Brasil.svg.png" group-title="TV ABERTA",CNN Brasil
+#EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://iptv-epg.org/images/tBVpwfYcZK2qy8NBFMQX46Z6CN7sAi2HRHwTABmHCS24NTsLxOihM88JSWb7_wyEtPvghbZcQ3fdPMjNC_qbd3ZVcDaQkM_aRqdrqf7u5rI4qA" group-title="TV ABERTA",CNN Brasil
 https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8
+#EXTINF:-1 tvg-id="TVAparecida.br" tvg-name="TV Aparecida" tvg-logo="https://iptv-epg.org/images/kYT6RRrdTnnihZU7AYqoa8_cAQifZoENzKSNOLu5Qv3KCEj1B81PY2H6xvBNFNLh-U6SDlao72P8bBF44ZWNegXukBye4Deo67Mcy8h3mnaBtQ3B" group-title="TV ABERTA",TV Aparecida
+https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
