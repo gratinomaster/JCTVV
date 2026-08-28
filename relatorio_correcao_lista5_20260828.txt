@@ -1,0 +1,74 @@
+======================================================================
+RELATÓRIO DE CORREÇÃO - lista5.m3u
+Data: 2026-08-28
+======================================================================
+
+1) O QUE FOI ENCONTRADO
+   - 30 entradas no arquivo original (61 linhas), mas apenas 5 canais
+     únicos - o resto eram DUPLICATAS (mesmo canal, vários links:
+     ABC News Live x6, ABC News x5, CBS News 24/7 x17).
+   - NENHUM canal tinha tvg-id (impossível casar EPG).
+   - O #EXTM3U não declarava nenhuma URL de EPG (url-tvg).
+   - Nenhum tvg-logo era imgur.com; todos eram .jpg.
+
+2) CANAIS REMOVIDOS (falharam no teste de link / anti-vírus)
+   - Fox News (247.foxnews.com)  -> HTTP 403 (token hmac EXPIRADO)
+   - Fox Business (247.foxbusiness.com) -> HTTP 403 (token hmac EXPIRADO)
+     Os tokens embutidos na URL (exp=...) já venceram; os canais não
+     abrem em nenhum player. Por isso foram excluídos, conforme pedido.
+   - Todas as DUPLICATAS de ABC/CBS também foram removidas (eram apenas
+     variantes de qualidade/áudio do mesmo canal).
+
+3) CANAIS MANTIDOS (testados e funcionando)
+   - ABC News Live
+     URL: https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+     Teste: master playlist válida, variantes presentes, segmentos de
+     vídeo sendo gerados (mediasequence avançando). OK
+     (Usei o link estável da akamaized; os links antigos da Disney/dssott
+     tinham token com validade de ~24h e quebravam no dia seguinte.)
+   - CBS News 24/7
+     URL: https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1bb6602f-aaf0-4d5b-b246-60c35b1c320f:CHS/master.m3u8
+     Teste: master playlist válida + segmento de vídeo baixado (139 KB). OK
+
+4) EPG - URLs INSERIDAS no header do .m3u
+   #EXTM3U url-tvg="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+
+   - lista5_epg.xml.gz (gerado neste repositório, ~10 KB)
+       Subconjunto com APENAS os 2 canais da lista (ABC News Live,
+       CBS News 24/7). Dados extraídos de fonte pública verídica.
+   - epgshare01 ALL_SOURCES1 (fonte pública externa, atualizada diariamente)
+       Contém os mesmos canais com os mesmos tvg-ids (cobrindo a lista
+       mesmo que o arquivo local fique desatualizado).
+
+   tvg-ids USADOS (reais, não inventados - são os IDs da fonte epgshare01):
+       ABC News Live   -> tvg-id="ABC.News.Live.us2"
+       CBS News 24/7   -> tvg-id="CBS.News.National.Stream.us2"
+
+5) TESTE DE PROGRAMACÃO (hoje / amanhã / depois de amanhã)
+   Programas encontrados NO EPG para cada canal:
+                  hoje (28/08)  amanhã (29/08)  depois (30/08)
+   ABC News Live       40            33              31
+   CBS News 24/7       26            29              28
+   Amostras reais:
+   - ABC News Live [28/08 12:00]: "ABC News Live First"
+   - CBS News 24/7 [28/08 12:00]: "CBS Mornings"
+   Resultado: TODOS os canais têm programação para os 3 dias. OK
+
+6) tvg-logo
+   - ABC News Live: https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg  (.jpg, HTTP 200, imagem válida)
+   - CBS News 24/7: https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg  (.jpg, HTTP 200, imagem válida)
+   - Nenhum imgur.com. Todos .jpg.
+
+7) FORMATO
+   - Todo link de canal tem a linha #EXTINF imediatamente acima. OK
+   - Nenhum #EXTINF órfão. OK
+   - Não foram deixados links sem o # na linha de cima.
+
+8) ARQUIVOS GERADOS
+   - lista5.m3u  (corrigido)
+   - lista5_epg.xml      (EPG custom, legível)
+   - lista5_epg.xml.gz   (EPG custom compactado - usado no url-tvg)
+
+======================================================================
+TODOS OS TESTES PASSARAM.
+======================================================================
