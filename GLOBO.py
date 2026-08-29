@@ -121,7 +121,7 @@ def obter_tvg_id(m3u8_url, title):
 
     if canal.startswith("spo") or "sportv" in titulo:
         return "sportv"
-    if canal == "gehd":
+    if canal in ("gehd", "ber1"):
         return "ge-tv"
     if canal.startswith("cbn"):
         return ""
