@@ -1,4 +1,6 @@
 #EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo" tvg-logo="https://iptv-epg.org/images/01rjJoLdzu5R2q7G59AXz3Zs8JGtCDJHabPPPUbB0HeV_Du_5efYc-6ikeblWxI6HLefQpkWzA8b9j9DG9S80PeB_DaLt3GG4EpGR7RdiMc" group-title="TV ABERTA",Globo
+http://45.190.28.50/GLOBO_HD/index.m3u8
 #EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT" tvg-logo="https://iptv-epg.org/images/A0kYAfxRpwrbJAB92vhNd_vmyYXG4IEbk_01SdKSJ5LQ6OMgX6AEBiyn4Xfy1SCFPvfcNhBQ8HMuZXgEzfzgqPOFPWqb2-SfUR8Fa-s-" group-title="TV ABERTA",SBT
 https://media.cdntvms.com.br/sbt_sat/index.m3u8
 #EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://iptv-epg.org/images/OBnFhqow34YSUCoODefaQmri12i_Z3trxMfeGIUpVS5otHchIAEACrrxEx1WLgYVKgeUBdqcahnd58WAiJBtQdGEB0Q1jPCnlof4uzjbpg" group-title="TV ABERTA",Band SP
