@@ -1,113 +1,157 @@
 #!/usr/bin/env python3
-"""Test all unique streams in lista5.m3u, keep working channels, rewrite file."""
-import subprocess
+import requests
 import re
-import os
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 M3U_FILE = 'lista5.m3u'
-TIMEOUT = 25
+TIMEOUT = 15
+MAX_WORKERS = 10
+
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': '*/*',
+    'Accept-Language': 'en-US,en;q=0.9',
+}
+
+
+def check_url(url):
+    try:
+        r = requests.get(url, timeout=TIMEOUT, stream=True, headers=HEADERS)
+        content = b''
+        for chunk in r.iter_content(chunk_size=4096):
+            content += chunk
+            if len(content) >= 4096:
+                break
+        r.close()
+
+        if r.status_code != 200:
+            return False, f'HTTP {r.status_code}'
+
+        if len(content) == 0:
+            return False, 'empty_response'
+
+        text = content.decode('utf-8', errors='replace')
+
+        if '#EXTM3U' in text or '#EXT-X-' in text:
+            if '#EXT-X-ENDLIST' in text and len(content) < 1000:
+                return False, 'ended_stream'
+            return True, 'hls_playlist'
+        if text.strip().startswith('{') or text.strip().startswith('<'):
+            return False, 'not_stream'
+
+        if len(content) >= 100:
+            return True, 'binary_data'
+
+        return False, f'too_small_{len(content)}b'
+
+    except requests.exceptions.Timeout:
+        return False, 'timeout'
+    except requests.exceptions.ConnectionError as e:
+        err = str(e).lower()
+        if 'refused' in err:
+            return False, 'connection_refused'
+        if 'reset' in err:
+            return False, 'connection_reset'
+        return False, 'connection_error'
+    except requests.exceptions.TooManyRedirects:
+        return False, 'too_many_redirects'
+    except Exception as e:
+        return False, str(e)[:40]
+
 
 def parse_m3u(filepath):
-    entries = []
     with open(filepath, 'r', encoding='utf-8') as f:
-        lines = [l.rstrip('\n') for l in f.readlines()]
-    i = 0
-    while i < len(lines):
-        if lines[i].startswith('#EXTINF:'):
-            extinf = lines[i]
-            i += 1
-            if i < len(lines) and lines[i].strip() and not lines[i].startswith('#'):
-                url = lines[i].strip()
-                entries.append((extinf, url))
-        i += 1
-    return entries
+        raw = f.read()
+    lines = raw.splitlines()
 
-def test_url(url):
-    try:
-        result = subprocess.run(
-            ['curl', '-s', '-L', '--max-time', str(TIMEOUT),
-             '--connect-timeout', '10', '-A',
-             'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-             '-w', '\n__HTTP_CODE:%{http_code}__', url],
-            capture_output=True, text=True, timeout=TIMEOUT + 5
-        )
-        body = result.stdout
-        m = re.search(r'__HTTP_CODE:(\d+)__$', body)
-        code = int(m.group(1)) if m else 0
-        content = body[:m.start()] if m else body
-        if code == 200:
-            if '#EXTM3U' in content or '#EXT-X-' in content or '#EXTINF' in content:
-                return True, 'm3u8 válido'
-            if content and '<html' not in content.lower() and '<!doctype' not in content.lower():
-                return True, 'respondeu'
-            return False, 'página HTML de erro'
-        if code == 403:
-            return False, '403 Forbidden'
-        if code == 404:
-            return False, '404 Not Found'
-        return False, f'HTTP {code}'
-    except subprocess.TimeoutExpired:
-        return False, 'timeout'
-    except Exception as e:
-        return False, str(e)[:50]
+    channels = []
+    cur = None
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('#EXTM3U'):
+            continue
+        if stripped.startswith('#EXTINF:'):
+            if cur is not None:
+                channels.append(cur)
+            cur = {'extinf': stripped, 'urls': []}
+        elif stripped.startswith('http') and cur is not None:
+            cur['urls'].append(stripped)
+
+    if cur is not None:
+        channels.append(cur)
+
+    return channels
+
+
+def channel_name(extinf):
+    m = re.search(r',(.+)$', extinf)
+    return m.group(1).strip() if m else 'Unknown'
+
 
 def main():
-    if not os.path.exists(M3U_FILE):
-        print(f'{M3U_FILE} não encontrado')
-        return
+    channels = parse_m3u(M3U_FILE)
+    print(f'Canais/entradas: {len(channels)}')
 
-    backup = f"{M3U_FILE}.bak.{time.strftime('%Y%m%d_%H%M%S')}"
-    os.system(f'cp {M3U_FILE} {backup}')
-    print(f'Backup: {backup}')
-
-    entries = parse_m3u(M3U_FILE)
-    print(f'Total de entradas: {len(entries)}')
-
-    unique_urls = list(dict.fromkeys(url for _, url in entries))
-    print(f'URLs únicas a testar: {len(unique_urls)}')
+    all_urls = []
+    for ci, ch in enumerate(channels):
+        for url in ch['urls']:
+            all_urls.append((ci, url))
 
     results = {}
-    print('Testando streams...')
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        future_to_url = {executor.submit(test_url, url): url for url in unique_urls}
-        for i, future in enumerate(as_completed(future_to_url)):
-            url = future_to_url[future]
-            ok, msg = future.result()
-            results[url] = (ok, msg)
-            name = ''
-            for extinf, u in entries:
-                if u == url:
-                    m2 = re.search(r',(.+)$', extinf)
-                    if m2:
-                        name = m2.group(1).strip()[:50]
-                    break
-            print(f'  [{i+1}/{len(unique_urls)}] {"OK" if ok else "FALHOU"} ({msg}) - {name}')
+    print(f'Testando {len(all_urls)} URLs (workers={MAX_WORKERS}, timeout={TIMEOUT}s)...')
 
-    new_entries = []
-    removed = []
-    for extinf, url in entries:
-        ok, msg = results.get(url, (False, 'não testado'))
-        if ok:
-            new_entries.append((extinf, url))
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(check_url, url): (ci, url) for ci, url in all_urls}
+        done = 0
+        for future in as_completed(futures):
+            ci, url = futures[future]
+            ok, reason = future.result()
+            results[(ci, url)] = (ok, reason)
+            done += 1
+
+    working = sum(1 for v in results.values() if v[0])
+    failed = sum(1 for v in results.values() if not v[0])
+    print(f'Funcionando: {working} | Com erro: {failed}')
+
+    removed = 0
+    kept = 0
+    removed_entries = []
+
+    header = '#EXTM3U'
+    new_lines = [header]
+
+    for ci, ch in enumerate(channels):
+        working_urls = []
+        for url in ch['urls']:
+            ok, reason = results.get((ci, url), (False, 'not_tested'))
+            if ok:
+                working_urls.append(url)
+            else:
+                print(f'  REMOVE [{reason}] {channel_name(ch["extinf"])} | {url[:90]}...')
+
+        if working_urls:
+            kept += 1
+            new_lines.append(ch['extinf'])
+            for wu in working_urls:
+                new_lines.append(wu)
         else:
-            m2 = re.search(r',(.+)$', extinf)
-            name = m2.group(1).strip() if m2 else url[:80]
-            removed.append((name, msg))
-
-    print(f'\nCanais mantidos: {len(new_entries)}')
-    print(f'Canais removidos: {len(removed)}')
-    for name, msg in removed:
-        print(f'  - {name} ({msg})')
+            removed += 1
+            removed_entries.append(channel_name(ch['extinf']))
 
     with open(M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n')
-        for extinf, url in new_entries:
-            f.write(extinf + '\n')
-            f.write(url + '\n')
+        f.write('\n'.join(new_lines) + '\n')
 
-    print(f'\n{os.path.abspath(M3U_FILE)} sobrescrito!')
+    print(f'\nMantidos:  {kept}')
+    print(f'Removidos: {removed}')
+    if removed_entries:
+        print('Entradas removidas:')
+        for n in removed_entries:
+            print(f'  - {n}')
+    print(f'Arquivo {M3U_FILE} sobrescrito.')
+
 
 if __name__ == '__main__':
     main()
