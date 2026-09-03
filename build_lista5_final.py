@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Gera lista5.m3u corrigido: canais unicos, com EPG valido (epg.pw), logos .jpg, streams funcionais."""
+
+EPG_URL = "https://epg.pw/xmltv/epg.xml"
+
+channels = [
+    {
+        "name": "ABC News Live - ABC News",
+        "tvg_id": "465150",
+        "logo": "https://keyframe-cdn.abcnews.com/streamprovider11.jpg",
+        "group": "NEWS WORLD",
+        "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
+    },
+    {
+        "name": "CBS News 24/7 -CBS News",
+        "tvg_id": "464941",
+        "logo": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg",
+        "group": "NEWS WORLD",
+        "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/9e3d1938-6aad-499a-9b84-4a9e75b9b464:TUL/master.m3u8",
+    },
+    {
+        "name": "Watch Fox News Channel Online | Stream Fox News",
+        "tvg_id": "465372",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg",
+        "group": "NEWS WORLD",
+        "url": "https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8",
+    },
+    {
+        "name": "Fox Business Go | Fox News Video",
+        "tvg_id": "464766",
+        "logo": "https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg",
+        "group": "NEWS WORLD",
+        "url": "https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8",
+    },
+]
+
+
+def build():
+    lines = []
+    lines.append(f'#EXTM3U x-tvg-url="{EPG_URL}" url-tvg="{EPG_URL}"')
+    for ch in channels:
+        lines.append(
+            '#EXTINF:-1 tvg-id="{id}" tvg-logo="{logo}" group-title="{group}",{name}'.format(
+                id=ch["tvg_id"], logo=ch["logo"], group=ch["group"], name=ch["name"]
+            )
+        )
+        lines.append(ch["url"])
+    return "\n".join(lines) + "\n"
+
+
+if __name__ == "__main__":
+    out = build()
+    with open("lista5.m3u", "w", encoding="utf-8") as f:
+        f.write(out)
+    print(out)
