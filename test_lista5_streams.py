@@ -70,12 +70,14 @@ def main():
     print(f"URLs únicas para testar: {len(unique_urls)}")
 
     results = {}
+    reasons = {}
     with ThreadPoolExecutor(max_workers=8) as executor:
         future_to_url = {executor.submit(test_url_deep, url): url for url in unique_urls}
         for i, future in enumerate(as_completed(future_to_url)):
             url = future_to_url[future]
             ok, msg = future.result()
             results[url] = ok
+            reasons[url] = msg
             name = ""
             for extinf, u in entries:
                 if u == url:
@@ -112,8 +114,7 @@ def main():
             if not results.get(url, False) and url not in seen:
                 m = re.search(r',(.+)$', extinf)
                 name = m.group(1).strip() if m else url[:80]
-                _, reason = test_url_deep(url)
-                print(f"  - {name} ({reason})")
+                print(f"  - {name} ({reasons.get(url, '')})")
                 seen.add(url)
 
 if __name__ == '__main__':
