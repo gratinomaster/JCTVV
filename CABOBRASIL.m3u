@@ -37,5 +37,7 @@ http://45.190.28.50/REDE_TV_HD/index.m3u8
 http://45.162.64.114/CANCAO_NOVA/index.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
 https://stream3.camara.gov.br/tv1/manifest.m3u8
+#EXTINF:-1 tvg-id="TVSenado.br" tvg-name="TV Senado" tvg-logo="https://iptv-epg.org/images/V-Sm0BsB8HA2rAZAH4I_FIG68eVlxXGILiaXyQKN93ug1b5h6RJVPBrExhENupUq9OgLj1YG2nZgm0pxdzbOHsuxbyTajpZjPqSwFKYOerF-" group-title="TV ABERTA",TV Senado
+http://45.190.28.50/TV_SENADO/index.m3u8
 #EXTINF:-1 tvg-id="RITtv.br" tvg-name="RIT TV" tvg-logo="https://i.imgur.com/Unjs1wi.png" group-title="TV ABERTA",RIT TV
 https://acesso.ecast.site:3648/live/ritlive.m3u8
