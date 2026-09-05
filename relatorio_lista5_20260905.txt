@@ -1,0 +1,41 @@
+Resumo da correção do lista5.m3u
+=================================
+Data: 2026-09-05
+
+Antes: 69 linhas, 34 EXTINF, 4 canais com dezenas de variantes (bandwidth) duplicadas
+Agora: 7 linhas, 3 EXTINF, 1 stream por canal (canais oficiais)
+
+Canais mantidos (todos com stream funcionando, EPG válido e logo .jpg):
+1. ABC News Live
+   - tvg-id: ABC.News.Live.us2
+   - URL: https://abcnews-livestreams.akamaized.net/.../abcn-live-10-index.m3u8 (200 OK)
+2. CBS News 24/7
+   - tvg-id: CBS.News.National.Stream.us2
+   - URL: https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f.../master.m3u8 (206 OK)
+3. Fox News Channel
+   - tvg-id: Fox.News.Channel.HD.us2
+   - URL: http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8 (200 OK)
+
+Canais removidos (teste de stream falhou / offline):
+- Fox Business Go: token oficial expirado (403) e preview indisponível (404)
+- Variantes duplicadas / links mortos (Disney DSSOTT abaixados, Google DAI CBS 410)
+
+EPG:
+- URL no cabeçalho: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz (200 OK público)
+- Cobre os 3 tvg-ids com programação de HOJE, AMANHÃ e DEPOIS DE AMANHÃ
+  - ABC.News.Live.us2: hoje 34 / amanhã 28 / depois 38
+  - CBS.News.National.Stream.us2: hoje 29 / amanhã 28 / depois 26
+  - Fox.News.Channel.HD.us2: hoje 24 / amanhã 24 / depois 24
+
+Logos:
+- Todos convertidos/verificados como .jpg (image/jpeg, HTTP 200)
+- Nenhum logo do imgur.com
+
+Anti-vírus:
+- Sem API key do VirusTotal disponível; todos os streams restantes são de
+  domínios oficiais de primeira parte (abcnews.com, cbsnews.com, foxnews.com)
+- Links duplicados/inseguros (IPs aleatórios do iptv-org) foram removidos
+
+Estrutura:
+- todo #EXTINF tem URL imediatamente abaixo (verificado)
+- 1 stream por canal, sem duplicatas
