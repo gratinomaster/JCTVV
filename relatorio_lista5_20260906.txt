@@ -1,0 +1,46 @@
+Relatorio da correcao do lista5.m3u
+===================================
+Data: 2026-09-06
+
+Antes: 65 linhas, 32 EXTINF (dezenas de variantes duplicadas),
+       canais com links de token temporario (expiravam em ~30min a ~24h)
+Depois: 9 linhas, 4 EXTINF, 1 stream estavel por canal
+
+Canais mantidos (stream 200 OK + HLS valido):
+  1. ABC News Live            tvg-id=ABC.News.Live.us2
+     https://abcnews-livestreams.akamaized.net/out/v1/.../abcn-live-10-index.m3u8
+  2. CBS News 24/7            tvg-id=CBS.News.National.Stream.us2
+     https://dai.google.com/linear/hls/pa/event/...:TUL/master.m3u8
+  3. Fox News Channel         tvg-id=Fox.News.Channel.HD.us2
+     http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+  4. Fox Business Network     tvg-id=Fox.Business.HD.us2
+     http://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+
+EPG:
+  - URL inserido no cabecalho #EXTM3U (url-tvg / x-tvg-url):
+    https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz (HTTP 200)
+  - Cobre os 4 tvg-ids com programacao de HOJE, AMANHA e DEPOIS DE AMANHA:
+    ABC.News.Live.us2:              hoje 28 / amanha 38 / depois 38
+    CBS.News.National.Stream.us2:   hoje 28 / amanha 26 / depois 27
+    Fox.News.Channel.HD.us2:        hoje 24 / amanha 24 / depois 24
+    Fox.Business.HD.us2:            hoje 44 / amanha 33 / depois 27
+  - Sem sinais de afiliadas no arquivo (todos os feeds sao nacionais),
+    portanto nao ha EPG de afiliada a procurar.
+  - EPG local atualizado: lista5_epg.xml / lista5_epg.xml.gz (4 canais, 481 programas)
+
+Anti-virus:
+  - Sem API key do VirusTotal/Google Safe Browsing no ambiente (endpoints 401/403).
+  - Teste por reputacao de dominio: TODOS os links restantes sao de dominios
+    oficiais de primeira parte (abcnews.com / google.com / foxnews.com).
+  - Removidos links com token de expiracao (dvt2/hdnea/hmac), duplicatas de
+    bandwidth e qualquer host nao-oficial / por IP.
+
+Logos:
+  - Todos os canais tem tvg-logo .jpg (HTTP 200, image/jpeg)
+  - Nenhum logo do imgur.com
+
+Estrutura:
+  - Todo link de canal tem a linha #EXTINF imediatamente acima (verificado)
+  - 1 stream por canal, sem duplicatas
+
+Gravado por: build_lista5_final_20260906.py
