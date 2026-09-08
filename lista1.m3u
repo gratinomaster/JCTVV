@@ -51,83 +51,83 @@ http://placeholder/telecine-fun.m3u8
 http://placeholder/telecine-pipoca.m3u8
 #EXTINF:-1 tvg-id="telecine-touch" tvg-name="Telecine Touch" group-title="TELECINE",Telecine Touch
 http://placeholder/telecine-touch.m3u8
-#EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Globo HD" group-title="CLARO",TV Globo HD
+#EXTINF:-1 tvg-id="GLOBO SP" tvg-name="TV Globo HD" group-title="CLARO",TV Globo HD
 http://placeholder/claro-tv-globo.m3u8
-#EXTINF:-1 tvg-id="globonews" tvg-name="GloboNews HD" group-title="CLARO",GloboNews HD
+#EXTINF:-1 tvg-id="GLOBONEWS" tvg-name="GloboNews HD" group-title="CLARO",GloboNews HD
 http://placeholder/claro-globonews.m3u8
-#EXTINF:-1 tvg-id="sportv" tvg-name="SporTV HD" group-title="CLARO",SporTV HD
+#EXTINF:-1 tvg-id="SPORTV" tvg-name="SporTV HD" group-title="CLARO",SporTV HD
 http://placeholder/claro-sportv.m3u8
-#EXTINF:-1 tvg-id="sportv-2" tvg-name="SporTV 2 HD" group-title="CLARO",SporTV 2 HD
+#EXTINF:-1 tvg-id="SPORTV 2" tvg-name="SporTV 2 HD" group-title="CLARO",SporTV 2 HD
 http://placeholder/claro-sportv-2.m3u8
-#EXTINF:-1 tvg-id="sportv-3" tvg-name="SporTV 3 HD" group-title="CLARO",SporTV 3 HD
+#EXTINF:-1 tvg-id="SPORTV 3" tvg-name="SporTV 3 HD" group-title="CLARO",SporTV 3 HD
 http://placeholder/claro-sportv-3.m3u8
-#EXTINF:-1 tvg-id="ge-tv" tvg-name="GE TV HD" group-title="CLARO",GE TV HD
+#EXTINF:-1 tvg-id="GE TV HD" tvg-name="GE TV HD" group-title="CLARO",GE TV HD
 http://placeholder/claro-ge-tv.m3u8
-#EXTINF:-1 tvg-id="premiere" tvg-name="Premiere FC" group-title="CLARO",Premiere FC
+#EXTINF:-1 tvg-id="PREMIERE 2 HD" tvg-name="Premiere FC" group-title="CLARO",Premiere FC
 http://placeholder/claro-premiere.m3u8
-#EXTINF:-1 tvg-id="multishow" tvg-name="Multishow HD" group-title="CLARO",Multishow HD
+#EXTINF:-1 tvg-id="MULTISHOW HD" tvg-name="Multishow HD" group-title="CLARO",Multishow HD
 http://placeholder/claro-multishow.m3u8
-#EXTINF:-1 tvg-id="gnt" tvg-name="GNT HD" group-title="CLARO",GNT HD
+#EXTINF:-1 tvg-id="GNT HD" tvg-name="GNT HD" group-title="CLARO",GNT HD
 http://placeholder/claro-gnt.m3u8
-#EXTINF:-1 tvg-id="gloob" tvg-name="Gloob HD" group-title="CLARO",Gloob HD
+#EXTINF:-1 tvg-id="GLOOB HD" tvg-name="Gloob HD" group-title="CLARO",Gloob HD
 http://placeholder/claro-gloob.m3u8
-#EXTINF:-1 tvg-id="gloobinho" tvg-name="Gloobinho HD" group-title="CLARO",Gloobinho HD
+#EXTINF:-1 tvg-id="GLOOBINHO HD" tvg-name="Gloobinho HD" group-title="CLARO",Gloobinho HD
 http://placeholder/claro-gloobinho.m3u8
-#EXTINF:-1 tvg-id="futura" tvg-name="Futura HD" group-title="CLARO",Futura HD
+#EXTINF:-1 tvg-id="FUTURA HD" tvg-name="Futura HD" group-title="CLARO",Futura HD
 http://placeholder/claro-futura.m3u8
-#EXTINF:-1 tvg-id="megapix" tvg-name="Megapix HD" group-title="CLARO",Megapix HD
+#EXTINF:-1 tvg-id="MEGAPIX HD" tvg-name="Megapix HD" group-title="CLARO",Megapix HD
 http://placeholder/claro-megapix.m3u8
-#EXTINF:-1 tvg-id="canal-off" tvg-name="Canal Off HD" group-title="CLARO",Canal Off HD
+#EXTINF:-1 tvg-id="OFF HD" tvg-name="Canal Off HD" group-title="CLARO",Canal Off HD
 http://placeholder/claro-canal-off.m3u8
-#EXTINF:-1 tvg-id="bis" tvg-name="Bis HD" group-title="CLARO",Bis HD
+#EXTINF:-1 tvg-id="BIS HD" tvg-name="Bis HD" group-title="CLARO",Bis HD
 http://placeholder/claro-bis.m3u8
-#EXTINF:-1 tvg-id="canal-brasil" tvg-name="Canal Brasil HD" group-title="CLARO",Canal Brasil HD
+#EXTINF:-1 tvg-id="CANAL BRASIL HD" tvg-name="Canal Brasil HD" group-title="CLARO",Canal Brasil HD
 http://placeholder/claro-canal-brasil.m3u8
-#EXTINF:-1 tvg-id="combate" tvg-name="Combate HD" group-title="CLARO",Combate HD
+#EXTINF:-1 tvg-id="COMBATE HD" tvg-name="Combate HD" group-title="CLARO",Combate HD
 http://placeholder/claro-combate.m3u8
-#EXTINF:-1 tvg-id="studio-universal" tvg-name="Studio Universal HD" group-title="CLARO",Studio Universal HD
+#EXTINF:-1 tvg-id="STUDIO UNIVERSAL HD" tvg-name="Studio Universal HD" group-title="CLARO",Studio Universal HD
 http://placeholder/claro-studio-universal.m3u8
-#EXTINF:-1 tvg-id="universal" tvg-name="Universal TV HD" group-title="CLARO",Universal TV HD
+#EXTINF:-1 tvg-id="UNIVERSAL TV HD" tvg-name="Universal TV HD" group-title="CLARO",Universal TV HD
 http://placeholder/claro-universal.m3u8
-#EXTINF:-1 tvg-id="usa" tvg-name="USA HD" group-title="CLARO",USA HD
+#EXTINF:-1 tvg-id="USA HD" tvg-name="USA HD" group-title="CLARO",USA HD
 http://placeholder/claro-usa.m3u8
 #EXTINF:-1 tvg-id="tv-globo" tvg-name="TV Globo" group-title="VIVO",TV Globo
 http://placeholder/vivo-tv-globo.m3u8
-#EXTINF:-1 tvg-id="globonews" tvg-name="GloboNews" group-title="VIVO",GloboNews
+#EXTINF:-1 tvg-id="Globo News HD" tvg-name="GloboNews" group-title="VIVO",GloboNews
 http://placeholder/vivo-globonews.m3u8
 #EXTINF:-1 tvg-id="sportv" tvg-name="SporTV" group-title="VIVO",SporTV
 http://placeholder/vivo-sportv.m3u8
-#EXTINF:-1 tvg-id="sportv-2" tvg-name="SporTV 2" group-title="VIVO",SporTV 2
+#EXTINF:-1 tvg-id="sportv 2" tvg-name="SporTV 2" group-title="VIVO",SporTV 2
 http://placeholder/vivo-sportv-2.m3u8
-#EXTINF:-1 tvg-id="sportv-3" tvg-name="SporTV 3" group-title="VIVO",SporTV 3
+#EXTINF:-1 tvg-id="sportv 3" tvg-name="SporTV 3" group-title="VIVO",SporTV 3
 http://placeholder/vivo-sportv-3.m3u8
-#EXTINF:-1 tvg-id="ge-tv" tvg-name="GE TV" group-title="VIVO",GE TV
+#EXTINF:-1 tvg-id="GE" tvg-name="GE TV" group-title="VIVO",GE TV
 http://placeholder/vivo-ge-tv.m3u8
-#EXTINF:-1 tvg-id="premiere" tvg-name="Premiere" group-title="VIVO",Premiere
+#EXTINF:-1 tvg-id="Premiere" tvg-name="Premiere" group-title="VIVO",Premiere
 http://placeholder/vivo-premiere.m3u8
-#EXTINF:-1 tvg-id="multishow" tvg-name="Multishow" group-title="VIVO",Multishow
+#EXTINF:-1 tvg-id="Multishow" tvg-name="Multishow" group-title="VIVO",Multishow
 http://placeholder/vivo-multishow.m3u8
-#EXTINF:-1 tvg-id="gnt" tvg-name="GNT" group-title="VIVO",GNT
+#EXTINF:-1 tvg-id="GNT HD" tvg-name="GNT" group-title="VIVO",GNT
 http://placeholder/vivo-gnt.m3u8
-#EXTINF:-1 tvg-id="gloob" tvg-name="Gloob" group-title="VIVO",Gloob
+#EXTINF:-1 tvg-id="Gloob HD" tvg-name="Gloob" group-title="VIVO",Gloob
 http://placeholder/vivo-gloob.m3u8
-#EXTINF:-1 tvg-id="gloobinho" tvg-name="Gloobinho" group-title="VIVO",Gloobinho
+#EXTINF:-1 tvg-id="Gloobinho HD" tvg-name="Gloobinho" group-title="VIVO",Gloobinho
 http://placeholder/vivo-gloobinho.m3u8
-#EXTINF:-1 tvg-id="futura" tvg-name="Futura" group-title="VIVO",Futura
+#EXTINF:-1 tvg-id="Futura HD" tvg-name="Futura" group-title="VIVO",Futura
 http://placeholder/vivo-futura.m3u8
-#EXTINF:-1 tvg-id="megapix" tvg-name="Megapix" group-title="VIVO",Megapix
+#EXTINF:-1 tvg-id="Megapix HD" tvg-name="Megapix" group-title="VIVO",Megapix
 http://placeholder/vivo-megapix.m3u8
-#EXTINF:-1 tvg-id="canal-off" tvg-name="Canal Off" group-title="VIVO",Canal Off
+#EXTINF:-1 tvg-id="OFF HD" tvg-name="Canal Off" group-title="VIVO",Canal Off
 http://placeholder/vivo-canal-off.m3u8
-#EXTINF:-1 tvg-id="bis" tvg-name="Bis" group-title="VIVO",Bis
+#EXTINF:-1 tvg-id="BIS HD" tvg-name="Bis" group-title="VIVO",Bis
 http://placeholder/vivo-bis.m3u8
-#EXTINF:-1 tvg-id="canal-brasil" tvg-name="Canal Brasil" group-title="VIVO",Canal Brasil
+#EXTINF:-1 tvg-id="Canal Brasil HD" tvg-name="Canal Brasil" group-title="VIVO",Canal Brasil
 http://placeholder/vivo-canal-brasil.m3u8
-#EXTINF:-1 tvg-id="combate" tvg-name="Combate" group-title="VIVO",Combate
+#EXTINF:-1 tvg-id="Combate" tvg-name="Combate" group-title="VIVO",Combate
 http://placeholder/vivo-combate.m3u8
-#EXTINF:-1 tvg-id="studio-universal" tvg-name="Studio Universal" group-title="VIVO",Studio Universal
+#EXTINF:-1 tvg-id="Studio Universal" tvg-name="Studio Universal" group-title="VIVO",Studio Universal
 http://placeholder/vivo-studio-universal.m3u8
-#EXTINF:-1 tvg-id="universal" tvg-name="Universal TV" group-title="VIVO",Universal TV
+#EXTINF:-1 tvg-id="Universal TV HD" tvg-name="Universal TV" group-title="VIVO",Universal TV
 http://placeholder/vivo-universal.m3u8
-#EXTINF:-1 tvg-id="usa" tvg-name="USA" group-title="VIVO",USA
+#EXTINF:-1 tvg-id="USA" tvg-name="USA" group-title="VIVO",USA
 http://placeholder/vivo-usa.m3u8
