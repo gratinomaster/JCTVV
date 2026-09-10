@@ -4,6 +4,7 @@ from collections import OrderedDict
 from datetime import datetime, timedelta
 import urllib.request
 
+M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
 M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
 OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
 
@@ -35,13 +36,21 @@ def download(url, timeout=120):
         print(f"(erro: {e})")
         return None
 
-print("Carregando M3U...")
-if os.path.exists(M3U_LOCAL):
-    with open(M3U_LOCAL, "r", encoding="utf-8", errors="replace") as f:
-        m3u_text = f.read()
+print("Baixando M3U remoto...")
+m3u_data = download(M3U_URL, timeout=60)
+if m3u_data is None:
+    print("Falha ao baixar M3U remoto, tentando local...")
+    if os.path.exists(M3U_LOCAL):
+        with open(M3U_LOCAL, "r", encoding="utf-8", errors="replace") as f:
+            m3u_text = f.read()
+    else:
+        print("M3U local nao encontrado")
+        sys.exit(1)
 else:
-    print("M3U local nao encontrado")
-    sys.exit(1)
+    m3u_text = m3u_data.decode("utf-8", errors="replace")
+    with open(M3U_LOCAL, "w", encoding="utf-8") as f:
+        f.write(m3u_text)
+    print(f"  Salvo localmente: {len(m3u_text)} chars")
 
 m3u_tvg_ids = set()
 for m in re.finditer(r'tvg-id="([^"]*)"', m3u_text):
