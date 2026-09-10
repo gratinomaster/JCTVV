@@ -1,114 +1,113 @@
 #!/usr/bin/env python3
-"""Test all channels in lista5.m3u and remove dead ones."""
-
 import subprocess
-import re
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import concurrent.futures
 
-FILEPATH = '/home/runner/work/JCTVV/JCTVV/lista5.m3u'
+INPUT = "lista5.m3u"
+OUTPUT = "lista5.m3u"
+TIMEOUT = 30
 
 
-def test_url(url, timeout=20):
-    """Test if an HLS stream URL returns valid m3u8 content."""
+def parse_m3u(path):
+    groups = []
+    cur = None
+    with open(path, "r", encoding="utf-8") as f:
+        for raw in f:
+            line = raw.rstrip("\n")
+            if line.startswith("#EXTM3U"):
+                continue
+            if line.startswith("#EXTINF:"):
+                if cur:
+                    groups.append(cur)
+                cur = {"extinf": line, "urls": []}
+            elif line.startswith("http://") or line.startswith("https://"):
+                if cur:
+                    cur["urls"].append(line)
+    if cur:
+        groups.append(cur)
+    return groups
+
+
+def test_url(url):
+    cmd = [
+        "curl", "-s", "-L", "-o", "/tmp/opencode/test_chunk.bin",
+        "-r", "0-262143", "-w", "%{http_code} %{content_type}",
+        "--connect-timeout", "10", "--max-time", "25",
+        "-H", "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        "-H", "Accept: */*",
+        url,
+    ]
     try:
-        result = subprocess.run(
-            ['curl', '-s', '-L', '--max-time', str(timeout),
-             '--connect-timeout', '10',
-             '-H', 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-             url],
-            capture_output=True, text=True, timeout=timeout + 5
-        )
-        if result.returncode != 0:
-            return False, f"curl error {result.returncode}"
-        body = result.stdout.strip()
-        if not body:
-            return False, "empty response"
-        if '#EXTM3U' in body or '#EXT-X-' in body or '#EXTINF' in body:
-            return True, "valid m3u8"
-        if '.ts' in body or '.m3u8' in body:
-            return True, "valid m3u8 (variant)"
-        if '<html' in body.lower() or '<!doctype' in body.lower():
-            return False, "HTML error page"
-        if re.search(r'HTTP/\S+\s+(4|5)\d\d', body[:200]):
-            return False, "HTTP error in body"
-        return False, f"unknown content: {body[:80]}"
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=30)
+        meta = proc.stdout.strip().strip("\n")
+        code = meta.split()[0] if meta else ""
+        ctype = meta.split()[1] if len(meta.split()) > 1 else ""
+        ok = False
+        reason = f"http={code} type={ctype}"
+        if code in ("200", "206", "201", "202", "203"):
+            try:
+                with open("/tmp/opencode/test_chunk.bin", "rb") as fh:
+                    chunk = fh.read()
+                head = chunk[:2048].decode("utf-8", errors="ignore")
+                if "#EXTM3U" in head or "#EXT-X-STREAM-INF" in head or "EXT-X-TARGETDURATION" in head:
+                    ok = True
+                    reason += " [HLS-OK]"
+                elif len(chunk) > 0 and (("video" in ctype) or ("audio" in ctype) or ("mpegurl" in ctype) or ("application" in ctype)):
+                    ok = True
+                    reason += f" [BODY {len(chunk)}B]"
+                else:
+                    reason += f" [NOT-HLS BODY {len(chunk)}B: {head[:80]!r}]"
+            except FileNotFoundError:
+                reason += " [NO-BODY]"
+        return url, ok, reason
     except subprocess.TimeoutExpired:
-        return False, "timeout"
-    except Exception as e:
-        return False, str(e)[:80]
-
-
-def parse_m3u(filepath):
-    entries = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        lines = [l.rstrip('\n') for l in f.readlines()]
-    i = 0
-    while i < len(lines):
-        if lines[i].startswith('#EXTINF:'):
-            extinf = lines[i]
-            i += 1
-            while i < len(lines) and lines[i].strip() and not lines[i].startswith('#'):
-                entries.append((extinf, lines[i].strip()))
-                i += 1
-            i -= 1
-        i += 1
-    return entries
-
-
-def name_of(extinf):
-    m = re.search(r',(.+)$', extinf)
-    return m.group(1).strip() if m else extinf
+        return url, False, "TIMEOUT"
 
 
 def main():
-    entries = parse_m3u(FILEPATH)
-    print(f"Total de entradas: {len(entries)}")
+    groups = parse_m3u(INPUT)
+    print(f"Parsed {len(groups)} entries from {INPUT}")
 
-    unique_urls = list(dict.fromkeys(url for _, url in entries))
-    print(f"URLs únicas para testar: {len(unique_urls)}")
+    all_urls = sorted({u for g in groups for u in g["urls"]})
+    print(f"Testing {len(all_urls)} unique URLs...")
 
     results = {}
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        future_to_url = {executor.submit(test_url, url): url for url in unique_urls}
-        for i, future in enumerate(as_completed(future_to_url)):
-            url = future_to_url[future]
-            ok, msg = future.result()
-            results[url] = (ok, msg)
-            status = "OK" if ok else f"FALHOU ({msg})"
-            print(f"  [{i+1}/{len(unique_urls)}] {status} - {name_of(next(e for e, u in entries if u == url))[:60]}")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
+        futures = {ex.submit(test_url, u): u for u in all_urls}
+        for i, fut in enumerate(concurrent.futures.as_completed(futures), 1):
+            url, ok, reason = fut.result()
+            results[url] = ok
+            status = "OK  " if ok else "FAIL"
+            name = next(
+                (g["extinf"].split(",")[-1] for g in groups if url in g["urls"]),
+                "?",
+            )
+            print(f"[{i}/{len(all_urls)}] {status} {reason} | {name} | {url[:80]}")
 
-    working = sum(1 for ok, _ in results.values() if ok)
-    failed = sum(1 for ok, _ in results.values() if not ok)
-    print(f"\nFuncionando: {working} URLs | Falhando: {failed} URLs")
-
+    good_groups = []
     removed = 0
-    kept = 0
-    lines = ['#EXTM3U']
-    for extinf, url in entries:
-        if results.get(url, (False, 'not_tested'))[0]:
-            lines.append(extinf)
-            lines.append(url)
-            kept += 1
+    for g in groups:
+        good_urls = [u for u in g["urls"] if results.get(u)]
+        if good_urls:
+            g["urls"] = good_urls
+            good_groups.append(g)
+            print(f"KEEP: {g['extinf'].split(',')[-1]} ({len(good_urls)} URL(s))")
         else:
             removed += 1
+            print(f"REMOVE: {g['extinf'].split(',')[-1]}")
 
-    print(f"\nMantidas: {kept} entradas | Removidas: {removed} entradas")
+    with open(OUTPUT, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for g in good_groups:
+            f.write(g["extinf"] + "\n")
+            for u in g["urls"]:
+                f.write(u + "\n")
 
-    with open(FILEPATH, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(lines) + '\n')
-
-    print(f"Arquivo {FILEPATH} sobrescrito com sucesso!")
-
-    if removed:
-        print("\nCanais removidos:")
-        seen = set()
-        for extinf, url in entries:
-            ok, msg = results.get(url, (False, 'not_tested'))
-            if not ok and url not in seen:
-                print(f"  - {name_of(extinf)} ({msg})")
-                seen.add(url)
+    print("")
+    print(f"Working entries kept: {len(good_groups)}")
+    print(f"Removed entries: {removed}")
+    print(f"Overwrote {OUTPUT}")
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    sys.exit(main())
