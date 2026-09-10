@@ -1,12 +1,12 @@
 #EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
 #EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo" tvg-logo="https://iptv-epg.org/images/01rjJoLdzu5R2q7G59AXz3Zs8JGtCDJHabPPPUbB0HeV_Du_5efYc-6ikeblWxI6HLefQpkWzA8b9j9DG9S80PeB_DaLt3GG4EpGR7RdiMc" group-title="TV ABERTA",Globo
-http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
+http://45.190.28.50/GLOBO_HD/index.m3u8
 #EXTINF:-1 tvg-id="GloboBrasil.br" tvg-name="Globo Paraná" tvg-logo="https://iptv-epg.org/images/01rjJoLdzu5R2q7G59AXz3Zs8JGtCDJHabPPPUbB0HeV_Du_5efYc-6ikeblWxI6HLefQpkWzA8b9j9DG9S80PeB_DaLt3GG4EpGR7RdiMc" group-title="TV ABERTA",Globo Paraná
-https://media2.cdntvms.com.br/tv_morena_dorados/index.m3u8
+http://45.190.28.50/GLOBO_PR/index.m3u8
 #EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT" tvg-logo="https://iptv-epg.org/images/A0kYAfxRpwrbJAB92vhNd_vmyYXG4IEbk_01SdKSJ5LQ6OMgX6AEBiyn4Xfy1SCFPvfcNhBQ8HMuZXgEzfzgqPOFPWqb2-SfUR8Fa-s-" group-title="TV ABERTA",SBT
-https://media.cdntvms.com.br/sbt_sat/index.m3u8
+http://45.190.28.50/SBT_HD/index.m3u8
 #EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://iptv-epg.org/images/OBnFhqow34YSUCoODefaQmri12i_Z3trxMfeGIUpVS5otHchIAEACrrxEx1WLgYVKgeUBdqcahnd58WAiJBtQdGEB0Q1jPCnlof4uzjbpg" group-title="TV ABERTA",Band SP
-https://media.cdntvms.com.br/band_sat/index.m3u8
+http://45.190.28.50/BAND_HD/index.m3u8
 #EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="Record TV" tvg-logo="https://iptv-epg.org/images/f43hW01Gq8qBhpM2lenZ8LXIxg7ygUOKz96zS0XXRUjO15nQzl3U75CRhpRQrfYvjSaIycUfPaX26QkIZfN3RENIAMavVgmMrLclwYVrz9mCIoHS9qjS" group-title="TV ABERTA",Record TV
 https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
 #EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://iptv-epg.org/images/OzF7kxJ7GDpi4gIS5jhY7rTNJ6XaXw8QqUxazuN_pboR6a3cWUD3DShshABx9-O3nDbygJZiI898whmS57M4ijfaTLpLlYbaehnMSBQWsi0wirU" group-title="TV ABERTA",Record News
@@ -34,20 +34,18 @@ http://45.162.64.114/CNT/index.m3u8
 #EXTINF:-1 tvg-id="Futura.br" tvg-name="Canal Futura" tvg-logo="https://iptv-epg.org/images/FKN4lgD56Xso6jJkAEGJ2p4qtCwk9mcU9olZ2jZHYhVNrVKaVl5Zp8ezZsRpyZ1YxXMBNZykVhSI7vifmNsOsk_Px7WyFy7GlZw6LnzsGA" group-title="TV ABERTA",Canal Futura
 http://45.162.64.114/FUTURA/index.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br" tvg-name="Jovem Pan News" tvg-logo="https://iptv-epg.org/images/v4bwhmiP-BUI5JWSqroZL3YWVUwHyakv6q5z4B6ElOI_9H2XMQVJfsdIYiJGGkoU4wO5_m1EBH5HxeESqfr02w1BFZmDdgAgyVv53iCtuLNTq3BbgQ" group-title="TV ABERTA",Jovem Pan News
-http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
+http://45.190.28.50/JP_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RedeTV.br" tvg-name="RedeTV!" tvg-logo="https://iptv-epg.org/images/wHL4M3uHZOQLY2wg1RpWKz-uBP4D6IYRk0c4rkZQhO5xQof_qrSdO5JsHPuiklEopUqodef7dLJtFebtwdOR8_Zk7LYVyXS84H6QzdIWsw" group-title="TV ABERTA",RedeTV!
-http://45.162.64.114/REDE_TV/index.m3u8
+http://45.190.28.50/REDE_TV_HD/index.m3u8
 #EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
 http://45.162.64.114/CANCAO_NOVA/index.m3u8
 #EXTINF:-1 tvg-id="TVJustica.br" tvg-name="TV Justiça" tvg-logo="https://iptv-epg.org/images/T262A2ppr393PJK_33HOEvngW3ZjDQOWwzhHWTV8q8ZYwRPw9bAPjt7paKftvsWmrVr0yEqnJfnzhW132sNSUsNUylIEK0GDNESHOKMZlHSAGg" group-title="TV ABERTA",TV Justiça
 http://45.162.64.114/TV_JUSTICA/index.m3u8
 #EXTINF:-1 tvg-id="TVSenado.br" tvg-name="TV Senado" tvg-logo="https://iptv-epg.org/images/V-Sm0BsB8HA2rAZAH4I_FIG68eVlxXGILiaXyQKN93ug1b5h6RJVPBrExhENupUq9OgLj1YG2nZgm0pxdzbOHsuxbyTajpZjPqSwFKYOerF-" group-title="TV ABERTA",TV Senado
-http://168.197.104.22/TV_SENADO/index.m3u8
+http://45.190.28.50/TV_SENADO/index.m3u8
 #EXTINF:-1 tvg-id="RITtv.br" tvg-name="RIT TV" tvg-logo="https://i.imgur.com/Unjs1wi.png" group-title="TV ABERTA",RIT TV
 https://acesso.ecast.site:3648/live/ritlive.m3u8
 #EXTINF:-1 tvg-id="RedeGospel.br" tvg-name="Rede Gospel" tvg-logo="https://iptv-epg.org/images/-1tNpn9mF3bytrIqXi_yZe_PLFbw48MS_pZWlcmXyYtR1LaPLSVO948YG0uB5RLLOAtSvaKxLHWdxgltqKH9iBHHtqZbqrTe7Rdt6FQXhBViwZU" group-title="TV ABERTA",Rede Gospel
 https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
 http://45.162.64.114/TV_CAMARA/index.m3u8
-#EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV ABERTA",Arte 1
-http://45.162.64.114/ARTE1/index.m3u8
