@@ -1,187 +1,165 @@
 #!/usr/bin/env python3
+"""Build EPGFULL.xml.gz containing ONLY the channels present in NEWSWORLDNOVOS.m3u,
+with programmes for today and tomorrow. Overwrites the output if it exists."""
+
 import gzip
 import io
-import re
 import os
+import re
 import sys
 import copy
+import unicodedata
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
 from datetime import datetime, timedelta
 import urllib.request
 
 M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
-M3U_LOCAL = "/home/runner/work/JCTVV/JCTVV/NEWSWORLDNOVOS.m3u"
-OUTPUT = "/home/runner/work/JCTVV/JCTVV/EPGFULL.xml.gz"
-FALLBACK_SOURCES = [
-    "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+OUTPUT = "EPGFULL.xml.gz"
+
+# Fontes EPG (pequenas primeiro; a mais pesada por ultimo, so se faltar canal)
+EPG_SOURCES = [
+    "https://iptv-epg.org/files/epg-ar.xml.gz",
+    "https://iptv-epg.org/files/epg-cl.xml.gz",
+    "https://iptv-epg.org/files/epg-mx.xml.gz",
+    "https://iptv-epg.org/files/epg-il.xml.gz",
+    "https://iptv-epg.org/files/epg-br.xml.gz",
+    "https://iptv-epg.org/files/epg-ve.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
-    "https://fastly.jsdelivr.net/gh/limaalef/BrazilTVEPG@main/epg.xml",
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
+    "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
+    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
     "https://iptv-epg.org/files/epg-us.xml.gz",
-    "https://iptv-epg.org/files/epg-br.xml.gz",
-    "https://iptv-epg.org/files/epg-ar.xml.gz",
-    "https://iptv-epg.org/files/epg-mx.xml.gz",
 ]
 
-def norm(s):
-    return re.sub(r'[\s\-_\.]+', '', s).lower()
+# tvg-id do M3U -> id equivalente nas fontes (quando a grafia difere)
+ALIASES = {
+    'כאן.11.il': 'כאן11.il',
+    'CGTNSpanish.cn': 'CGTNEspanol.us',
+    'AlJazeera.Arabic.net': 'AlJazeera.us',
+    'Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx': 'LasEstrellas.mx',
+    'Canal.Telefé.(Argentina).ar': 'Telefe.ar',
+    'Rede.Vida.br': 'RedeVida.br',
+    'Telesur.ve': 'teleSUR.ar',
+    'BigBrother.us': '6661f11a41af6400080e90d8',
+    'TVChile.cl': 'TV.Chile.cl',
+}
 
-def download(url, timeout=300):
-    print(f"  Downloading: {url}")
+
+def norm(s):
+    s = unicodedata.normalize('NFD', s)
+    s = ''.join(c for c in s if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[\s\-_\.\+]+', '', s).lower()
+
+
+def download(url, timeout=600):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            data = resp.read()
-        if len(data) < 100:
-            print(f"    Skipped (too small: {len(data)} bytes)")
-            return None
-        print(f"    Got {len(data):,} bytes")
-        return data
+            return resp.read()
     except Exception as e:
-        print(f"    Error: {e}")
+        print(f"    Erro ao baixar {url.split('/')[-1]}: {e}")
         return None
 
-print("=" * 60)
-print("1. Loading M3U channel list")
-print("=" * 60)
 
-data = download(M3U_URL, timeout=60)
-if data is None:
-    print(f"  Trying local file: {M3U_LOCAL}")
-    if os.path.exists(M3U_LOCAL):
-        with open(M3U_LOCAL, 'r', encoding='utf-8', errors='replace') as f:
-            m3u_text = f.read()
-        print(f"    Loaded local M3U ({len(m3u_text)} bytes)")
-    else:
-        print("ERROR: could not download M3U")
-        sys.exit(1)
-else:
-    m3u_text = data.decode("utf-8", errors="replace")
+print("1. Baixando M3U do GitHub...")
+m3u_text = ""
+try:
+    req = urllib.request.Request(M3U_URL, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        m3u_text = resp.read().decode('utf-8', errors='replace')
+    if m3u_text.count('#EXTINF') == 0:
+        m3u_text = ""
+except Exception as e:
+    print(f"  ERRO ao baixar M3U: {e}")
 
-tvg_ids = set()
-for m in re.finditer(r'tvg-id="([^"]*)"', m3u_text):
-    tid = m.group(1).strip()
-    if tid and tid != "0" and tid != "(no tvg-id)":
-        tvg_ids.add(tid)
+if not m3u_text or m3u_text.count('#EXTINF') == 0:
+    print("  ERRO: M3U sem canais!")
+    sys.exit(1)
 
-tvg_norm = {norm(t): t for t in tvg_ids}
-tvg_norm_set = set(tvg_norm.keys())
+m3u_entries = []
+seen = set()
+for line in m3u_text.splitlines():
+    if not line.startswith('#EXTINF'):
+        continue
+    tid_m = re.search(r'tvg-id="([^"]*)"', line)
+    tname_m = re.search(r'tvg-name="([^"]*)"', line)
+    logo_m = re.search(r'tvg-logo="([^"]*)"', line)
+    comma_m = re.search(r',([^,]+)$', line)
+    tvg_id = (tid_m.group(1) if tid_m else "").strip()
+    if not tvg_id or tvg_id in seen:
+        continue
+    seen.add(tvg_id)
+    m3u_entries.append({
+        'tvg_id': tvg_id,
+        'tvg_name': (tname_m.group(1) if tname_m else "").strip(),
+        'logo': (logo_m.group(1) if logo_m else "").strip(),
+        'display': (comma_m.group(1) if comma_m else "").strip(),
+    })
+
+tvg_ids = set(e['tvg_id'] for e in m3u_entries)
 
 m3u_names = {}
-m3u_display_all = {}
-for line in m3u_text.splitlines():
-    m = re.search(r'tvg-id="([^"]*)"', line)
-    name_match = re.search(r',([^,]+)$', line)
-    if name_match:
-        name = name_match.group(1).strip()
-        display_norm = norm(name)
-        if m:
-            tid = m.group(1).strip()
-            name_base = re.sub(r'\s*\(.*$', '', name).strip()
-            m3u_names[tid] = name_base
-            m3u_display_all[display_norm] = tid
+m3u_logos = {}
+for e in m3u_entries:
+    name_base = re.sub(r'\s*\(.*$', '', e['display']).strip()
+    m3u_names[e['tvg_id']] = name_base or e['display']
+    m3u_logos[e['tvg_id']] = e['logo'] or e['tvg_name']
 
-print(f"  Found {len(tvg_ids)} tvg-ids: {sorted(tvg_ids)}")
-print(f"  M3U names: {m3u_names}")
+print(f"  {len(m3u_entries)} canais no M3U, {len(tvg_ids)} tvg-ids unicos")
 
-MANUAL_ID_MAP = {
-    "6661f11a41af6400080e90d8": "BigBrother.us",
-    "aljazeeraenglish.qa": "AlJazeera.qa",
-    "aljazeera.qa": "AlJazeera.qa",
-    "nhkworld.japan": "NHKWorld.jp",
-    "nhkworld.jp": "NHKWorld.jp",
-    "nhkworld.jpn": "NHKWorld.jp",
-    "thaipbs.th": "ThaiPBS.th",
-    "thai.pbs.th": "ThaiPBS.th",
-    "rtvnoord.nl": "RTVNoord.nl",
-    "rtvoost.nl": "RTVOost.nl",
-    "rtvutrecht.nl": "RTVUtrecht.nl",
-    "rtvdrenthe.nl": "RTVDrenthe.nl",
-    "rtvmaastricht.nl": "RTVMaastricht.nl",
-    "rtvrijnmond.nl": "RTVRijnmond.nl",
-    "rtvpurmerend.nl": "RTVPurmerend.nl",
-    "rtvwesterwolde.nl": "RTVWesterwolde.nl",
-    "rtvrijnstreektv.nl": "RTVRijnstreekTV.nl",
-    "mtvvolgograd.ru": "MTVVolgograd.ru",
-    "maturtv.ru": "MaturTV.ru",
-    "muzsoyuz.ru": "MuzSoyuz.ru",
-    "ntm.ru": "NTM.ru",
-    "nts.ru": "NTS.ru",
-    "nizhniynovgorod24.ru": "NizhniyNovgorod24.ru",
-    "prosveshchenie.ru": "Prosveshchenie.ru",
-    "firstmusicchannel.by": "FirstMusicChannel.by",
-    "lanettv.ua": "LanetTV.ua",
-    "horseandcountry.au": "HorseandCountry.au",
-}
+# Mapa: id na fonte -> lista de tvg-ids do M3U que ele atende
+source_to_targets = {}
+for tid in tvg_ids:
+    src_id = ALIASES.get(tid, tid)
+    source_to_targets.setdefault(src_id, []).append(tid)
 
-epg_urls_from_m3u = []
-for match in re.finditer(r'(?:url-tvg|x-tvg-url)="([^"]*)"', m3u_text):
-    for u in match.group(1).replace(',', ' ').split():
-        u = u.strip()
-        if u and u not in epg_urls_from_m3u:
-            epg_urls_from_m3u.append(u)
+tvg_norm = {norm(t): t for t in tvg_ids}
 
-all_sources = epg_urls_from_m3u + [u for u in FALLBACK_SOURCES if u not in epg_urls_from_m3u]
-print(f"\n  EPG sources: {len(all_sources)} URLs")
-for s in all_sources:
-    print(f"    - {s}")
 
-print()
-print("=" * 60)
-print("2. Downloading and filtering EPG sources")
-print("=" * 60)
+def source_match(cid, display_name):
+    """Retorna lista de tvg-ids do M3U atendidos por um canal da fonte."""
+    if cid in source_to_targets:
+        return list(source_to_targets[cid])
+    if display_name:
+        ndn = norm(display_name)
+        for tid in tvg_ids:
+            if norm(m3u_names.get(tid, '')) == ndn:
+                return [tid]
+    return []
 
+
+print("\n2. Baixando e filtrando fontes EPG...")
 matched_ids = set()
 all_channels = OrderedDict()
 all_programmes = OrderedDict()
 seen_progs = set()
 
-def fuzzy_match(epg_cid, display_name):
-    nc = norm(epg_cid)
-    if nc in MANUAL_ID_MAP:
-        return MANUAL_ID_MAP[nc]
-    if nc in tvg_norm_set:
-        return tvg_norm[nc]
-    for tid in tvg_ids:
-        nm = norm(tid)
-        if nm in nc or nc in nm:
-            return tid
-    if display_name:
-        ndn = norm(display_name)
-        if ndn in MANUAL_ID_MAP:
-            return MANUAL_ID_MAP[ndn]
-        if ndn in m3u_display_all:
-            return m3u_display_all[ndn]
-        for tid, base_name in m3u_names.items():
-            nb = norm(base_name)
-            if nb == ndn or ndn in nb or nb in ndn:
-                return tid
-    for tid, base_name in m3u_names.items():
-        nb = norm(base_name)
-        if nb in nc:
-            return tid
-    return None
+# Janela de datas: programacao de hoje e amanha (em UTC, como o formato XMLTV)
+agora = datetime.utcnow()
+hoje_dt = agora.replace(hour=0, minute=0, second=0, microsecond=0)
+fim_dt = hoje_dt + timedelta(days=2)
 
-def process_epg_bytes(raw_bytes):
+
+def parse_start(start_str):
+    try:
+        return datetime.strptime(start_str[:14], "%Y%m%d%H%M%S")
+    except Exception:
+        return None
+
+
+def process_epg(raw_bytes):
     ch_count = 0
     pr_count = 0
-    id_remap = {}
     try:
-        is_gz = raw_bytes[:2] == b'\x1f\x8b'
-        if is_gz:
+        if raw_bytes[:2] == b'\x1f\x8b':
             f = gzip.GzipFile(fileobj=io.BytesIO(raw_bytes))
         else:
             f = io.BytesIO(raw_bytes)
 
-        context = ET.iterparse(f, events=('end',))
-        for event, elem in context:
+        for event, elem in ET.iterparse(f, events=('end',)):
             tag = elem.tag
             if tag == 'channel':
                 cid = elem.get('id', '')
@@ -190,35 +168,34 @@ def process_epg_bytes(raw_bytes):
                     continue
                 dn = elem.find('display-name')
                 display_name = dn.text.strip() if dn is not None and dn.text else ''
-                m3u_id = fuzzy_match(cid, display_name)
-                if m3u_id:
-                    id_remap[cid] = m3u_id
-                    if m3u_id not in matched_ids:
-                        matched_ids.add(m3u_id)
-                        ch = copy.deepcopy(elem)
-                        ch.set('id', m3u_id)
-                        m3u_display_name = m3u_names.get(m3u_id, display_name)
-                        dn_elem = ch.find('display-name')
-                        if dn_elem is not None:
-                            dn_elem.text = m3u_display_name
-                        else:
-                            dn_new = ET.SubElement(ch, 'display-name')
-                            dn_new.text = m3u_display_name
-                        all_channels[m3u_id] = ch
-                        ch_count += 1
+                targets = source_match(cid, display_name)
+                for m3u_id in targets:
+                    if m3u_id in matched_ids and m3u_id in all_channels:
+                        continue
+                    matched_ids.add(m3u_id)
+                    ch = copy.deepcopy(elem)
+                    ch.set('id', m3u_id)
+                    for d in ch.findall('display-name'):
+                        d.set('lang', 'pt')
+                    if not ch.findall('icon') and m3u_logos.get(m3u_id):
+                        ET.SubElement(ch, 'icon', attrib={'src': m3u_logos[m3u_id]})
+                    all_channels[m3u_id] = ch
+                    ch_count += 1
                 elem.clear()
             elif tag == 'programme':
                 ch = elem.get('channel', '')
-                if not ch:
+                m3u_ids = source_to_targets.get(ch, [])
+                if not m3u_ids:
                     elem.clear()
                     continue
-                m3u_id = id_remap.get(ch)
-                if m3u_id is None:
-                    m3u_id = fuzzy_match(ch, '')
-                if m3u_id:
-                    start = elem.get('start', '')
-                    stop = elem.get('stop', '')
-                    pkey = f"{m3u_id}|{start}|{stop}"
+                start_dt = parse_start(elem.get('start', ''))
+                if start_dt is None:
+                    start_dt = parse_start(elem.get('stop', ''))
+                if start_dt is None or not (hoje_dt <= start_dt < fim_dt):
+                    elem.clear()
+                    continue
+                for m3u_id in m3u_ids:
+                    pkey = f"{m3u_id}|{elem.get('start', '')}|{elem.get('stop', '')}"
                     if pkey not in seen_progs:
                         seen_progs.add(pkey)
                         pr = copy.deepcopy(elem)
@@ -227,37 +204,45 @@ def process_epg_bytes(raw_bytes):
                         pr_count += 1
                 elem.clear()
     except Exception as e:
-        print(f"    Parse error: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"    Erro parse: {e}")
     return ch_count, pr_count
 
-for url in all_sources:
+
+for url in EPG_SOURCES:
+    nome = url.split('/')[-1]
+    falta = len(tvg_ids - matched_ids)
+    if falta == 0:
+        print(f"  Todos os {len(tvg_ids)} canais encontrados - parando antes de {nome}")
+        break
+    print(f"  {nome} (faltam {falta}):")
     raw = download(url)
     if raw is None:
         continue
-    ch, pr = process_epg_bytes(raw)
-    print(f"    -> {ch} new channels, {pr} new programmes")
+    ch, pr = process_epg(raw)
+    print(f"    -> +{ch} canais, +{pr} programas")
 
-print()
-print("=" * 60)
-print(f"3. Results: {len(matched_ids)} channels matched, {len(all_programmes)} programmes")
-print("=" * 60)
-
-matched_list = sorted(matched_ids)
-print(f"  Matched: {matched_list}")
-missing = sorted(set(tvg_ids) - matched_ids)
+print(f"\n3. Resultado: {len(matched_ids)}/{len(tvg_ids)} canais com EPG, {len(all_programmes)} programas")
+missing = sorted(tvg_ids - matched_ids)
 if missing:
-    print(f"  Missing (no EPG data): {missing}")
+    print(f"  SEM DADOS ({len(missing)}): {missing}")
 
-print()
-print("=" * 60)
-print("4. Writing filtered EPG")
-print("=" * 60)
-
-root_out = ET.Element("tv", attrib={"generator-info-name": "EPGFULL"})
+print("\n4. Salvando EPGFULL.xml.gz (sobrescrevendo)...")
+root_out = ET.Element("tv", attrib={"generator-info-name": "EPGFULL (NEWSWORLDNOVOS)"})
 for ch in all_channels.values():
     root_out.append(ch)
+
+# Garante uma entrada <channel> para TODO tvg-id do M3U (mesmo sem programas),
+# usando nome/logo da propria lista, para o guia nunca exceder o playable.
+if len(all_channels) < len(tvg_ids):
+    stub_ids = sorted(tvg_ids - set(all_channels.keys()))
+    for m3u_id in stub_ids:
+        ch_el = ET.SubElement(root_out, "channel", attrib={"id": m3u_id})
+        dn_el = ET.SubElement(ch_el, "display-name")
+        dn_el.text = m3u_names.get(m3u_id, m3u_id)
+        logo = m3u_logos.get(m3u_id)
+        if logo:
+            ET.SubElement(ch_el, "icon", attrib={"src": logo})
+
 for prog in all_programmes.values():
     root_out.append(prog)
 
@@ -269,23 +254,14 @@ xml_data = buf.getvalue()
 with gzip.open(OUTPUT, 'wb') as f:
     f.write(xml_data)
 
-file_size = os.path.getsize(OUTPUT)
-print(f"  Written: {OUTPUT} ({file_size:,} bytes compressed, {len(xml_data):,} uncompressed)")
+print(f"  {OUTPUT}: {os.path.getsize(OUTPUT):,} bytes (gzip), {len(xml_data):,} bytes (raw)")
 
-print()
-print("=" * 60)
-print("5. Testing EPG")
-print("=" * 60)
-
+print("\n5. Testando EPG...")
 with gzip.open(OUTPUT, 'rb') as f:
-    test_xml = f.read().decode('utf-8', errors='ignore')
+    test_root = ET.fromstring(f.read())
 
-test_root = ET.fromstring(test_xml)
 canais = test_root.findall("channel")
 programas = test_root.findall("programme")
-
-print(f"  Channels in EPG: {len(canais)}")
-print(f"  Programmes in EPG: {len(programas)}")
 
 hoje = datetime.now().strftime("%Y%m%d")
 amanha = (datetime.now() + timedelta(days=1)).strftime("%Y%m%d")
@@ -305,17 +281,17 @@ for prog in programas:
         prog_amanha += 1
         canais_amanha.add(ch)
 
-print(f"  Programmes today ({hoje}): {prog_hoje} in {len(canais_hoje)} channels")
-print(f"  Programmes tomorrow ({amanha}): {prog_amanha} in {len(canais_amanha)} channels")
+print(f"  Canais no EPG: {len(canais)}")
+print(f"  Programas no EPG: {len(programas)}")
+print(f"  Programas hoje ({hoje}): {prog_hoje} em {len(canais_hoje)} canais")
+print(f"  Programas amanha ({amanha}): {prog_amanha} em {len(canais_amanha)} canais")
 
-if canais_hoje:
-    print(f"  Channels with today's data: {sorted(canais_hoje)[:10]}{'...' if len(canais_hoje) > 10 else ''}")
-if canais_amanha:
-    print(f"  Channels with tomorrow's data: {sorted(canais_amanha)[:10]}{'...' if len(canais_amanha) > 10 else ''}")
-
-if prog_hoje > 0 and prog_amanha > 0:
-    print("\n  EPG OK! Programmes available for today and tomorrow.")
+print()
+if len(canais) > 0 and prog_hoje > 0 and prog_amanha > 0:
+    print(f"EPG FUNCIONANDO! {len(canais)}/{len(tvg_ids)} canais do M3U presentes, "
+          f"programacao de hoje ({prog_hoje}) e amanha ({prog_amanha}) disponivel.")
+    print(f"Nenhum canal fora do M3U incluido: {len(canais)} canais, todos no M3U.")
     sys.exit(0)
 else:
-    print("\n  EPG WARNING! Missing programmes for today or tomorrow.")
+    print("AVISO: EPG incompleto.")
     sys.exit(1)
