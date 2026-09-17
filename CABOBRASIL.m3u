@@ -59,6 +59,8 @@ https://canalgov-stream.ebc.com.br/index.m3u8
 http://45.162.64.114/ARTE1/index.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://i.imgur.com/j51rBro.png" group-title="TV ABERTA",TV A Crítica
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
+http://170.83.49.66:8083/CANALRURALHD/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
 #EXTINF:-1 tvg-id="SporTV3.br" tvg-name="SporTV 3" tvg-logo="https://iptv-epg.org/images/bOG2kNmz9sCSOeuD_EvtXWp-oiJdXELVU1rnaan7yOMhSBII9TsJiZ4wX3wNUcSNW7pWRvlk0vWgjpse5YNWtRl9qOg2nsBEmypbpJG1dIo" group-title="ESPORTES",SporTV 3
