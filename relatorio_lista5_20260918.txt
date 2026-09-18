@@ -1,0 +1,25 @@
+======================================================================
+RELATORIO CORRECAO lista5.m3u - 2026-09-18
+======================================================================
+Fonte EPG: https://iptv-epg.org/files/epg-us.xml.gz
+EPG hoje/amanha/depois para todos os canais: SIM
+
+  ABC News Live [ABCNewsLive.us]
+    hoje=40 amanha=15 depois=4 | EPG OK
+    stream: OK (segmento HTTP 206)
+    logo:   OK (https://keyframe-cdn.abcnews.com/streamprovider11.jpg)
+  Fox News Channel [FoxNewsChannel.us]
+    hoje=24 amanha=24 depois=24 | EPG OK
+    stream: OK (segmento HTTP 206)
+    logo:   OK (https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static)
+  Fox Business [FoxBusiness.us]
+    hoje=29 amanha=19 depois=25 | EPG OK
+    stream: OK (segmento HTTP 206)
+    logo:   OK (https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static)
+  CBS News 24/7 [CBSNews.us]
+    hoje=28 amanha=30 depois=24 | EPG OK
+    stream: OK (segmento HTTP 206)
+    logo:   OK (https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44b)
+
+Total canais na lista: 4
+Anti-virus (sem API key VirusTotal -> validacao HLS/stream): canais aprovados: 4/4
