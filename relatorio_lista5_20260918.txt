@@ -1,28 +1,39 @@
 ======================================================================
 RELATORIO CORRECAO lista5.m3u - 2026-09-18 (correcao executada)
 ======================================================================
-Fonte EPG: https://iptv-epg.org/files/epg-us.xml.gz
+Fonte EPG: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
 EPG hoje/amanha/depois para todos os canais mantidos: SIM
 
-  ABC News Live [ABCNewsLive.us]
-    hoje=40 amanha=15 depois=4 | EPG OK
-    stream: OK (8 URLs ativas: dssott HLS + akamaized HLS, HTTP 200)
-    logo:   OK (https://s.abcnews.com/...jpg e https://keyframe-cdn.abcnews.com/streamprovider11.jpg)
-  CBS News 24/7 [CBSNews.us]
+  ABC News Live [ABC.News.Live.us2]
+    hoje=40 amanha=34 depois=28 | EPG OK
+    stream: OK (2 URLs ativas: dssott/HLS ctr-all-hdri + akamaized seamles, HTTP 200,
+            master->variantes->segmentos validos)
+    logo:   OK (https://keyframe-cdn.abcnews.com/streamprovider11.jpg)
+
+  CBS News 24/7 [CBS.News.National.Stream.us2]
     hoje=28 amanha=30 depois=24 | EPG OK
-    stream: OK (2 URLs renovadas via Google DAI: TUL fresco + event auto-renovavel, HTTP 200)
+    stream: OK (1 URL via Google DAI master.m3u8, HTTP 200,
+            variantes/segmentos validos)
     logo:   OK (https://assets2.cbsnewsstatic.com/...jpg)
 
   Fox News Channel [FoxNewsChannel.us] -> REMOVIDO
-    motivo: stream 403 (token Akamai expirado em 2026-09-18 11:00 UTC;
-    o hdnea e assinado com chave secreta do player - sem renovacao possivel neste ambiente)
+    motivo: stream 403 Access Denied (token Akamai hdnea expirado em
+    2026-09-18 18:48 UTC; sem renovacao possivel neste ambiente)
   Fox Business [FoxBusiness.us] -> REMOVIDO
-    motivo: stream 403 (token Akamai expirado, mesmo caso acima)
+    motivo: stream 403 Access Denied (token Akamai hdnea expirado, mesmo caso)
+
+Canais removidos tambem por redundancia/falha de teste:
+  - Variantes dssott cmaf-cenc (ctype slid/audio) sem segmentos validos
+  - Variantes CBS bandwidth/* sem seguranca de reproducao
+  (todas as URLs mantidas foram validadas ate o nivel de segmento)
 
 Total canais na lista: 2 (ABC News Live + CBS News 24/7)
-Total entradas EXTINF+URL: 10 | Orphan links (sem #EXTINF): 0
+Total entradas EXTINF+URL: 3 | Orphan links (sem #EXTINF): 0
 tvg-logo: todas .jpg, sem imgur.com
-Anti-virus (sem API key VirusTotal -> validacao HLS/stream): aprovados 10/10 entradas
-Observacao: as URLs da FOX precisam ser regeneradas por sesso ao vivo do player
-(nao sao estaticas); remover/reinserir quando um cliente reproduzir o canal.
+url-tvg: inserida no cabecalho #EXTM3U
+Anti-virus (sem API key VirusTotal -> validacao HLS/stream profunda):
+  aprovadas 3/3 entradas
+Observacao: URLs da FOX precisam ser regeneradas por sessao ao vivo do
+player (nao sao estaticas); reconectar/reinserir quando um cliente
+reproduzir o canal.
 ======================================================================

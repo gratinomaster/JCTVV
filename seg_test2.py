@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+"""Inspect segment fetch with headers."""
+import subprocess, urllib.parse
+
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+
+def curl_h(url, extra=None, t=25):
+    cmd = ["curl", "-sL", "--max-time", str(t), "-A", UA, "-D", "-", "-o", "/dev/null"]
+    if extra: cmd += extra
+    cmd.append(url)
+    try:
+        return subprocess.run(cmd, capture_output=True, text=True, timeout=t+10).stdout
+    except Exception as e:
+        return str(e)
+
+def curl_b(url, t=25):
+    try:
+        return subprocess.run(["curl","-sL","--max-time",str(t),"-A",UA,url],capture_output=True,text=True,timeout=t+10).stdout
+    except Exception as e:
+        return ""
+
+def get_first_seg(master_url):
+    m = curl_b(master_url)
+    if "#EXTM3U" not in m[:300]:
+        return None, m[:80]
+    vurl = None
+    for l in m.splitlines():
+        l = l.strip()
+        if l and not l.startswith("#"):
+            vurl = urllib.parse.urljoin(master_url, l) if not l.startswith("http") else l
+            break
+    v = curl_b(vurl)
+    segs = [l.strip() for l in v.splitlines() if l.strip() and not l.startswith("#") and "#EXT-X-MAP" not in l]
+    if not segs:
+        return None, "sem segmentos, variante %dB: %s" % (len(v), v[:200].replace("\n"," | "))
+    s = segs[0]
+    # prefer a .ts / .m4s / .aac / .mp4 seg over #EXT-X-MAP URL
+    # try the last real seg
+    surl = urllib.parse.urljoin(vurl, s) if not s.startswith("http") else s
+    return surl, "variante %dB %d segs; seg=%s" % (len(v), len(segs), surl)
+
+tests = {
+ "ABC dssott": "https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1789840108~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=441d7251-c40e-4736-a771-0d8c6ec1b66b~did=d720d615-cd19-4a2d-ad5b-9e087bf8efcd~country=US~kid=k02~hmac=3d6572843347faa43d07f261d315601c5dc20fb50f5a815dcb70f262ecb15816/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=c00ca54a5fd625c2ce1a442c983e81561832da94",
+ "ABC akamaized": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
+ "CBS": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/58e749d3-de16-4c7a-99fd-6f5bc0954ada:CHS/master.m3u8",
+}
+
+for label, murl in tests.items():
+    print("="*60)
+    print(label)
+    surl, info = get_first_seg(murl)
+    print("  info:", info)
+    if not surl:
+        continue
+    print("  -- com UA --")
+    h = curl_h(surl)
+    print("  ", h.split(chr(10))[0:6])
+    print("  -- com UA + Referer --")
+    h2 = curl_h(surl, ["-e", "https://www.cbsnews.com/"] )
+    print("  ", h2.split(chr(10))[0:6])
