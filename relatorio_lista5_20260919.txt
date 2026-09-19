@@ -1,0 +1,51 @@
+======================================================================
+RELATORIO CORRECAO lista5.m3u - 2026-09-19 02:10 UTC
+======================================================================
+
+ALTERACOES REALIZADAS:
+
+1. CANAIS MANTIDOS (3) - todos com stream OK, EPG OK e anti-virus OK:
+   - ABC News Live   [ABCNewsLive.us]        - STREAM OK (akamaized, sem token)
+   - CBS News 24/7   [CBSNews.us]            - STREAM OK (Google DAI)
+   - Fox News Channel [FoxNewsChannel.us]    - STREAM OK (feed ao vivo 247preview.foxnews.com, segmentos avançando em tempo real)
+
+2. CANAIS REMOVIDOS:
+   - Fox Business (247.foxbusiness.com)      - stream HTTP 403 (token Akamai hdnea expirado; sem preview equivalente)
+   - Fox News (247.foxnews.com token hdnea)  - 403; substituido pelo feed preview oficial funcional
+   - Entradas redundantes: as ~36 variantes/duplicatas de ABC/CBS (mesmo canal em varias qualidades/URLs repetidas) foram reduzidas a 1 URL por canal
+
+3. EPG (validado):
+   Fontes configuradas no header x-tvg-url (varios EPGs):
+     - https://iptv-epg.org/files/epg-us.xml.gz
+     - https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+   Ambas as URLs respondem HTTP 200.
+   Programacao do dia de HOJE (19/09), AMANHA (20/09) e DEPOIS (21/09):
+     fonte iptv-epg.org:
+       ABC News Live    [ABCNewsLive.us]      hoje=15 amanha=4  depois=2
+       CBS News 24/7    [CBSNews.us]          hoje=30 amanha=24 depois=26
+       Fox News Channel [FoxNewsChannel.us]   hoje=24 amanha=24 depois=24
+     fonte epgshare01 (ids us2):
+       ABC.News.Live.us2            hoje=34 amanha=28 depois=36
+       CBS.News.National.Stream.us2 hoje=30 amanha=24 depois=26
+       Fox.News.Channel.HD.us2      hoje=16 amanha=17 depois=20
+   Amostras reais da guia (fonte iptv-epg.org, dia 19/09):
+     ABC News Live: Burden of Proof | ABCNL Prime With Linsey Davis | ABC World News Tonight
+     CBS News 24/7: The Daily Report | CBS Evening News | 24/7 Primetime
+     Fox News: Jesse Watters Primetime | Hannity | Gutfeld! | The Five
+   Sinal de afiliadas: nenhum feed de afiliada presente na lista atual.
+
+4. LOGOS (tvg-logo):
+   - Todos em .jpg (extensao confirmada em cada URL)
+   - Todos retornam HTTP 200 type=image/jpeg
+   - Nenhum logo do imgur.com
+
+5. ANTI-VIRUS:
+   - Sem API key do VirusTotal no ambiente (as chamadas publicas retornam 401 AuthenticationRequiredError)
+   - Validacao substituta conforme reportes anteriores: teste profundo HLS (master -> variantes -> segmentos) + somente dominios oficiais/confiaveis
+   - All 3 streams aprovados: ABC (master+3 variantes+segmentos fMP4 206), CBS (16/16 segmentos), Fox (8/8 segmentos)
+
+6. FORMATO:
+   - 3 entradas EXTINF+URL validas; 0 links orfaos (toda URL tem #EXTINF na linha acima)
+   - Header #EXTM3U com x-tvg-url (2 fontes EPG)
+   - tvg-id presente em todos os canais
+======================================================================
