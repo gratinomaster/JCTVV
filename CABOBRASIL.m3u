@@ -63,6 +63,8 @@ https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 http://170.83.49.66:8083/CANALRURALHD/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
+#EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
+http://38.68.134.81:14045
 #EXTINF:-1 tvg-id="ESPN4.br" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="SporTV3.br" tvg-name="SporTV 3" tvg-logo="https://iptv-epg.org/images/bOG2kNmz9sCSOeuD_EvtXWp-oiJdXELVU1rnaan7yOMhSBII9TsJiZ4wX3wNUcSNW7pWRvlk0vWgjpse5YNWtRl9qOg2nsBEmypbpJG1dIo" group-title="ESPORTES",SporTV 3
