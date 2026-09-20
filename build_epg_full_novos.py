@@ -24,6 +24,7 @@ EPG_SOURCES = [
     "https://iptv-epg.org/files/epg-br.xml.gz",
     "https://iptv-epg.org/files/epg-pt.xml.gz",
     "https://iptv-epg.org/files/epg-fr.xml.gz",
+    "https://iptv-epg.org/files/epg-us.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
