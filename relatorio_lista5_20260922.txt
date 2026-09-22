@@ -1,0 +1,45 @@
+======================================================================
+RELATORIO CORRECAO lista5.m3u - 2026-09-22
+======================================================================
+
+1. CANAIS MANTIDOS (3) - todos com stream OK, EPG OK (3 dias) e deep-test OK:
+   - ABC News Live     [ABCNewsLive.us]     - STREAM OK (abcnews-livestreams.akamaized.net, sem token, segments mp4 ao vivo)
+   - CBS News 24/7     [CBSNews.us]         - STREAM OK (Google DAI, :TUL, segments TS reais)
+   - Fox News Channel  [FoxNewsChannel.us]  - STREAM OK (247preview.foxnews.com, segments TS avancando em tempo real)
+
+2. CANAL REMOVIDO:
+   - Fox Business      [FoxBusiness.us]     - REMOVIDO: assets/programa em 247.foxbusiness.com retornam HTTP 403
+     (token hdnea necessario por sessao; ja expirado) - nao passou no teste profundo
+
+3. EPG (2 fontes configuradas no header #EXTM3U):
+   - url-tvg:   https://iptv-epg.org/files/epg-us.xml.gz
+   - x-tvg-url: https://iptv-epg.org/files/epg-us.xml.gz | https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+   Programacao de HOJE (22/09), AMANHA (23/09) e DEPOIS (24/09) validada nas duas fontes:
+       ABC News Live     hoje=40 amanha=40 depois=40   (referencia iptv-epg.org)
+       CBS News 24/7     hoje=28 amanha=28 depois=28
+       Fox News Channel  hoje=20 amanha=20 depois=20
+   Amostras reais da guia (22/09, fonte epgshare01):
+       ABC News Live: Burden of Proof | Live: ABCNL Prime With Linsey Davis | ABC World News Tonight
+       CBS News 24/7: The Daily Report | CBS Evening News | 24/7 Primetime
+       Fox News: Live: Jesse Watters Primetime | Live: Hannity | Gutfeld! | Fox News at Night
+   Afiliadas: nao ha feeds de afiliadas nessa lista (apenas redes nacionais);
+     tvg-ids mapeados para os ids correspondentes de cada EPG.
+
+4. LOGOS (tvg-logo):
+   - Todos .jpg (extensao confirmada) e retornando HTTP 200 type=image/jpeg
+   - Nenhum logo do imgur.com
+   - Fox News: usa logo oficial hospedado em raw.githubusercontent.com/gratinomaster/JCTVV/main/fox_news.jpg
+
+5. ANTI-VIRUS:
+   - API key do VirusTotal NAO disponivel no ambiente (HTTP 401 AuthenticationRequiredError)
+   - Validacao substituta (mesma dos reportes anteriores): teste profundo HLS
+     (master -> variante -> segmento real) + apenas dominios oficiais/confiaveis
+   - Resultado: 3/3 canais aprovados com video real (MP2T/fMP4) e sequencias avancando
+
+6. FORMATO:
+   - 3 entradas EXTINF+URL validas; 1 URL por canal (variantes duplicadas removidas)
+   - 0 links orfaos (toda URL tem #EXTINF na linha acima)
+   - Header #EXTM3U com url-tvg e x-tvg-url (2 fontes EPG)
+   - tvg-id presente em todos os canais
+   - Backup do arquivo original criado com carimbo de tempo prefixo pre_tarefa_
+======================================================================
