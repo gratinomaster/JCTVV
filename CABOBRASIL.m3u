@@ -61,6 +61,8 @@ http://45.162.64.114/ARTE1/index.m3u8
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
 http://170.83.49.66:8083/CANALRURALHD/index.m3u8
+#EXTINF:-1 tvg-id="UOL.br" tvg-name="Canal UOL" tvg-logo="https://iptv-epg.org/images/LYWORdKXYxofqLtK_BXg_y7NJhsJ6_-jvbvmfmX-bjxg_ewEm1vhS9Byb4iLXjxF7bK6nXVanIXev_lDLHTinP6IbPbNvCilHNOqYA" group-title="TV ABERTA",Canal UOL
+https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
 #EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
