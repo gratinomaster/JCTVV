@@ -1,101 +1,142 @@
 #!/usr/bin/env python3
+"""Test all streams in lista5.m3u (deep: master->variant->segment),
+remove dead/degraded channels, and overwrite the file."""
+
 import subprocess
-import time
-import shutil
-import sys
+import re
+import urllib.parse
+import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-INPUT = "lista5.m3u"
-TIMEOUT = 45
-CONNECT_TIMEOUT = "10"
+FILEPATH = '/home/runner/work/JCTVV/JCTVV/lista5.m3u'
+UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36'
 
-def parse_playlist(path):
+
+def fetch(url, timeout=20, binary=False):
+    try:
+        r = subprocess.run(
+            ['curl', '-s', '-L', '--max-time', str(timeout), '--connect-timeout', '10',
+             '-H', f'User-Agent: {UA}', url],
+            capture_output=True, timeout=timeout + 5
+        )
+        if r.returncode != 0:
+            return None, f"curl error {r.returncode}"
+        return (r.stdout if binary else r.stdout.decode('utf-8', errors='replace')), None
+    except subprocess.TimeoutExpired:
+        return None, "timeout"
+    except Exception as e:
+        return None, str(e)[:80]
+
+
+def merge(base, ref):
+    parsed = urllib.parse.urlsplit(ref)
+    if not parsed.scheme:
+        ref = urllib.parse.urljoin(base, ref)
+        parsed = urllib.parse.urlsplit(ref)
+    if not parsed.query:
+        bq = urllib.parse.urlsplit(base).query
+        if bq:
+            ref = ref + ('?' if '?' not in ref else '&') + bq
+    return ref
+
+
+def parse_m3u(filepath):
     entries = []
-    with open(path, "r", encoding="utf-8") as f:
-        lines = f.read().splitlines()
+    with open(filepath, 'r', encoding='utf-8') as f:
+        lines = [l.rstrip('\n') for l in f.readlines()]
     i = 0
     while i < len(lines):
-        line = lines[i].strip()
-        if line.startswith("#EXTM3U"):
-            i += 1
-            continue
-        if line.startswith("#EXTINF"):
+        if lines[i].startswith('#EXTINF:'):
             extinf = lines[i]
-            url = ""
-            if i + 1 < len(lines):
-                url = lines[i + 1].strip()
-            entries.append((extinf, url))
-            i += 2
-        else:
             i += 1
+            while i < len(lines) and lines[i].strip() and not lines[i].startswith('#'):
+                entries.append((extinf, lines[i].strip()))
+                i += 1
+            i -= 1
+        i += 1
     return entries
 
-def test_url(url):
-    cmd = [
-        "timeout", str(TIMEOUT),
-        "ffprobe",
-        "-v", "error",
-        "-rw_timeout", "15000000",
-        "-user_agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-        "-show_entries", "format=format_name:stream=codec_type",
-        "-of", "default=noprint_wrappers=1",
-        url,
-    ]
-    try:
-        start = time.time()
-        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=TIMEOUT + 10)
-        elapsed = time.time() - start
-        out = proc.stdout
-        if proc.returncode == 0 and "format_name" in out:
-            return True, proc.returncode, elapsed
-        return False, proc.returncode, elapsed
-    except subprocess.TimeoutExpired:
-        return False, "TIMEOUT", TIMEOUT
-    except Exception as e:
-        return False, str(e), 0
+
+def deep_check(url):
+    body, err = fetch(url)
+    if body is None:
+        return False, err
+    if '#EXTM3U' not in body:
+        return False, "not m3u8"
+
+    variants = re.findall(r'^#EXT-X-STREAM-INF[^\n]*\n(\S+)', body, re.M)
+    media_url = url
+    if variants:
+        v_url = merge(url, variants[0])
+        vbody, verr = fetch(v_url)
+        if vbody is None:
+            return False, f"variant failed: {verr}"
+        if '#EXTM3U' not in vbody:
+            return False, f"variant not m3u8: {vbody[:60]}"
+        body = vbody
+        media_url = v_url
+
+    segs = re.findall(r'^[^#]\S+', body, re.M)
+    if not segs:
+        return False, "media playlist with no segments"
+
+    for seg in reversed(segs[-5:]):
+        s_url = merge(media_url, seg)
+        sbody, serr = fetch(s_url, timeout=25, binary=True)
+        if sbody is None:
+            continue
+        if len(sbody) >= 1000:
+            return True, f"segment OK ({len(sbody)} bytes)"
+    return False, "segments unavailable/small"
+
+
+def name_of(extinf):
+    m = re.search(r',(.+)$', extinf)
+    return m.group(1).strip() if m else extinf
+
 
 def main():
-    backup = f"{INPUT}.bak.{time.strftime('%Y%m%d_%H%M%S')}"
-    shutil.copy(INPUT, backup)
-    print(f"Backup criado: {backup}")
+    entries = parse_m3u(FILEPATH)
+    unique = list(dict.fromkeys(url for _, url in entries))
+    print(f"Total entradas: {len(entries)} | URLs únicas: {len(unique)}")
 
-    entries = parse_playlist(INPUT)
-    total = len(entries)
-    print(f"Total de entradas: {total}\n")
+    results = {}
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futs = {ex.submit(deep_check, u): u for u in unique}
+        for i, f in enumerate(as_completed(futs)):
+            u = futs[f]
+            ok, msg = f.result()
+            results[u] = (ok, msg)
+            name = name_of(next(e for e, uu in entries if uu == u))[:55]
+            status = "OK      " if ok else f"FALHOU  ({msg})"
+            print(f"  [{i+1}/{len(unique)}] {status} - {name}")
 
-    working = [("#EXTM3U", "")]
-    ok = 0
-    fail = 0
+    working_urls = set(u for u, (ok, _) in results.items() if ok)
+    kept, removed = [], 0
+    for extinf, url in entries:
+        if url in working_urls:
+            kept.append((extinf, url))
 
-    for idx, (extinf, url) in enumerate(entries, 1):
-        name = extinf.split(",", 1)[-1]
-        if not url or not url.startswith("http"):
-            print(f"[{idx}/{total}] SKIP (sem URL) {name}")
-            fail += 1
-            continue
-        good, rc, elapsed = test_url(url)
-        status = "OK" if good else "FAIL"
-        if good:
-            working.append((extinf, url))
-            ok += 1
-        else:
-            fail += 1
-        print(f"[{idx}/{total}] {status:4s} ({rc}, {elapsed:.1f}s) {name}")
+    # dedupe on URL keeping first occurrence
+    seen = set()
+    final = []
+    for extinf, url in kept:
+        if url not in seen:
+            final.append((extinf, url))
+            seen.add(url)
 
-    with open(INPUT + ".tmp", "w", encoding="utf-8") as f:
-        for extinf, url in working:
-            f.write(extinf)
-            if url:
-                f.write("\n" + url)
-            f.write("\n")
+    removed = len(entries) - sum(1 for _, url in entries if url in working_urls)
+    dups_removed = len(kept) - len(final)
 
-    if ok == 0 and fail > 0:
-        print("\nNenhum canal funcionou; lista nao foi alterada.")
-        sys.exit(1)
+    print(f"\nMantidas: {len(final)} entradas (dedupe: {dups_removed} duplicatas) | Removidas (mortas): {removed}")
 
-    shutil.move(INPUT + ".tmp", INPUT)
-    print("\n=== RESULTADO ===")
-    print(f"Total: {total} | OK: {ok} | FAIL: {fail}")
-    print(f"Lista atualizada em {INPUT}")
+    with open(FILEPATH, 'w', encoding='utf-8') as f:
+        f.write('#EXTM3U\n')
+        for extinf, url in final:
+            f.write(extinf + '\n')
+            f.write(url + '\n')
+    print(f"Arquivo sobrescrito: {FILEPATH}")
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     main()
