@@ -1,81 +1,97 @@
 #!/usr/bin/env python3
-import re
-import concurrent.futures
-import urllib.request
-import ssl
+"""Deep HLS test: master -> variante -> segmento real. Usado como validacao
+de stream e anti-virus substituta (dominios oficiais + video real)."""
+import subprocess, sys, re, urllib.parse
 
-INPUT = "lista5.m3u"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126.0 Safari/537.36"
 
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
+def fetch(url, timeout=25):
+    r = subprocess.run(["curl", "-sL", "--max-time", str(timeout), "-A", UA, url],
+                       capture_output=True, timeout=timeout + 10)
+    return r.stdout.decode("utf-8", "ignore")
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
-    "Accept": "*/*",
-}
+def http_code(url, timeout=25):
+    r = subprocess.run(["curl", "-sL", "--max-time", str(timeout), "-A", UA, "-o", "/dev/null",
+                        "-w", "%{http_code}", url], capture_output=True, timeout=timeout + 10)
+    return r.stdout.decode()
 
-def fetch(url, timeout=15):
-    req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout, context=ctx) as resp:
-        return resp.read(65536)
+def resolve_uri(base, uri):
+    return urllib.parse.urljoin(base, uri)
 
-def deep_test(url):
-    try:
-        body = fetch(url).decode("utf-8", errors="ignore")
-        if "#EXTM3U" not in body:
-            return False, "manifesto invalido"
-        lines = [l.strip() for l in body.splitlines() if l.strip()]
-        # se ja e media playlist, pega primeiro segmento
-        segs = [l for l in lines if l and not l.startswith("#")]
-        target = None
-        if "#EXT-X-TARGETDURATION" in body or "#EXTINF" in body:
-            if segs:
-                from urllib.parse import urljoin
-                target = urljoin(url, segs[0])
+def deep_test(url, name):
+    print(f"\n=== {name} ===")
+    master = fetch(url)
+    if "#EXTM3U" not in master:
+        print(f"  FALHA: master nao e HLS (size={len(master)})")
+        return False
+    variants = re.findall(r'(?m)^#EXT-X-STREAM-INF:.*\n(\S+)', master)
+    if not variants:
+        print("  master OK, sem variantes listadas (verificando segmentos diretos)")
+        segments = re.findall(r'^[^#][^\s]+(?:\?.*)?$', master, re.M)
+        seg = segments[0] if segments else None
+        if not seg:
+            return False
+        return check_segment(url, seg, name)
+    print(f"  master OK, {len(variants)} variantes")
+    ok_variants = 0
+    for v in variants[:4]:
+        vurl = resolve_uri(url, v.strip())
+        code = http_code(vurl)
+        vbody = fetch(vurl)
+        if code == "200" and "#EXTM3U" in vbody:
+            ok_variants += 1
         else:
-            # master playlist: pega primeira variante
-            variants = [l for l in lines if l and not l.startswith("#")]
-            if variants:
-                vurl = variants[0].split('"')[1] if '"' in variants[0] else variants[0]
-                vurl = re.sub(r"^.*?https?://", "https://", vurl) if not vurl.startswith("http") and "http" in vurl else vurl
-                from urllib.parse import urljoin
-                vfull = urljoin(url, vurl)
-                try:
-                    vbody = fetch(vfull).decode("utf-8", errors="ignore")
-                    vlines = [l.strip() for l in vbody.splitlines() if l.strip() and not l.startswith("#")]
-                    if vlines:
-                        from urllib.parse import urljoin as uj
-                        target = uj(vfull, vlines[0])
-                except Exception as e:
-                    return False, f"variante falhou: {str(e)[:50]}"
-        if target is None:
-            return False, "sem segmentos"
-        data = fetch(target)
-        # segmento HLS valido: ts (0x47 sync) ou fmp4 (ftyp/moof)
-        if len(data) > 1000 and (data[0:1] == b"\x47" or b"ftyp" in data[:32] or b"moof" in data[:1024]):
-            return True, f"OK segmento {len(data)}B ({data[0:1]==b'\x47' and 'ts' or 'fmp4'})"
-        return False, f"segmento suspeito ({len(data)}B)"
-    except Exception as e:
-        return False, str(e)[:70]
+            print(f"  variante {v} -> {code} FAIL")
+    print(f"  variantes OK: {ok_variants}/{min(len(variants),4)}")
+    if ok_variants == 0:
+        return False
+    # pega segmento de uma variante que funcionou
+    for v in variants[:4]:
+        vurl = resolve_uri(url, v.strip())
+        vbody = fetch(vurl)
+        if "#EXTM3U" not in vbody:
+            continue
+        seglines = [l.strip() for l in vbody.splitlines() if l.strip() and not l.startswith("#")]
+        if not seglines:
+            continue
+        # procura segmento com extensao ts/m4s
+        for sl in seglines:
+            if re.search(r'\.(ts|m4s|mp4)(\?|$)', resolve_uri(vurl, sl)):
+                return check_segment(url, vurl, name, sl)
+        # fallback: primeiro segmento
+        return check_segment(url, vurl, name, seglines[0])
+    return False
 
-with open(INPUT, encoding="utf-8") as f:
-    lines = f.read().splitlines()
+def check_segment(root_url, vurl, name, sl=None):
+    segurl = resolve_uri(vurl, sl) if sl else vurl
+    print(f"  segmento: {segurl[-80:]}")
+    r = subprocess.run(["curl", "-sL", "--max-time", "25", "-A", UA, "-o", "/tmp/opencode/seg.bin",
+                        "-w", "%{http_code}", segurl], capture_output=True, timeout=35)
+    code = r.stdout.decode()
+    data = open("/tmp/opencode/seg.bin", "rb").read()
+    is_ts = False
+    if data[:1] == b"\x47":
+        aligned = sum(1 for i in range(0, min(len(data) - 188, 188 * 8), 188) if data[i] == 0x47)
+        is_ts = aligned >= 6
+    boxes = re.findall(rb'[a-zA-Z0-9]{4}', data[:64])
+    is_mp4 = any(b in (b"ftyp", b"styp", b"moof", b"moov", b"mdat") for b in boxes)
+    hint = re.findall(rb'(ftyp|styp|moof|moov|mdat)', data[:64])
+    ok = code == "200" and len(data) > 1000 and (is_ts or is_mp4)
+    print(f"  segmento {code} size={len(data)} TS={is_ts} MP4={is_mp4} boxes={[b.decode() for b in hint]} -> {'OK' if ok else 'FAIL'}")
+    return ok
 
-urls = [l for l in lines if l.startswith("http")]
-
-results = {}
-with concurrent.futures.ThreadPoolExecutor(max_workers=10) as ex:
-    futs = {ex.submit(deep_test, u): u for u in urls}
-    for fut in concurrent.futures.as_completed(futs):
-        u = futs[fut]
-        ok, msg = fut.result()
-        results[u] = (ok, msg)
-
-ok_count = sum(1 for ok, _ in results.values() if ok)
-print(f"\n=== RESULTADO PROFUNDO ===")
-for u in urls:
-    ok, msg = results[u]
-    short = u[:60] + ("..." if len(u) > 60 else "")
-    print(f"[{'OK    ' if ok else 'FALHOU'}] {short} -> {msg}")
-print(f"\nTotal OK: {ok_count} / {len(urls)}")
+if __name__ == "__main__":
+    import json
+    urls = json.load(open(sys.argv[1])) if len(sys.argv) > 1 else None
+    items = urls or [
+        ("ABC akamaized", "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8"),
+        ("CBS Google DAI", "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e369630b-44dc-4e6d-a047-6e9bd6080f7d:ATL/master.m3u8"),
+        ("Fox News preview", "https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8"),
+        ("Fox Business preview", "https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8"),
+    ]
+    results = {}
+    for name, url in items:
+        ok = deep_test(url, name)
+        results[name] = "OK" if ok else "FAIL"
+        print(f"  >> {name}: {'OK' if ok else 'FAIL'}")
+    print("\nRESUMO:", json.dumps(results))
