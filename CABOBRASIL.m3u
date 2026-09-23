@@ -79,5 +79,7 @@ http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 https://media.cdntvms.com.br/sportv_sat/index.m3u8
 #EXTINF:-1 tvg-id="GETV.br" tvg-name="GE TV" tvg-logo="https://iptv-epg.org/images/780XH3jl2Z7XFvw4J5yUatI55adXe0H-GaG3DT_sDsb92nene2X4GLiA7oxtHYbvtgUISye5d9EPDa53Thytw6tLHDiY6eOMhyN7BoQ" group-title="ESPORTES",GE TV
 https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/world-latin-america/espn-3-lam.png" group-title="ESPORTES",ESPN 3
+#EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
 http://181.78.197.59:8000/play/a081/index.m3u8
+#EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
+http://45.162.64.114/TNT/index.m3u8
