@@ -50,7 +50,7 @@ http://45.162.64.114/TV_JUSTICA/index.m3u8
 #EXTINF:-1 tvg-id="TVSenado.br" tvg-name="TV Senado" tvg-logo="https://iptv-epg.org/images/V-Sm0BsB8HA2rAZAH4I_FIG68eVlxXGILiaXyQKN93ug1b5h6RJVPBrExhENupUq9OgLj1YG2nZgm0pxdzbOHsuxbyTajpZjPqSwFKYOerF-" group-title="TV ABERTA",TV Senado
 http://168.197.104.22/TV_SENADO/index.m3u8
 #EXTINF:-1 tvg-id="RITtv.br" tvg-name="RIT TV" tvg-logo="https://i.imgur.com/Unjs1wi.png" group-title="TV ABERTA",RIT TV
-https://acesso.ecast.site:3648/live/ritlive.m3u8
+http://45.177.114.115/RIT_TV/index.m3u8
 #EXTINF:-1 tvg-id="RedeGospel.br" tvg-name="Rede Gospel" tvg-logo="https://iptv-epg.org/images/-1tNpn9mF3bytrIqXi_yZe_PLFbw48MS_pZWlcmXyYtR1LaPLSVO948YG0uB5RLLOAtSvaKxLHWdxgltqKH9iBHHtqZbqrTe7Rdt6FQXhBViwZU" group-title="TV ABERTA",Rede Gospel
 https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
@@ -79,3 +79,5 @@ http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 https://media.cdntvms.com.br/sportv_sat/index.m3u8
 #EXTINF:-1 tvg-id="GETV.br" tvg-name="GE TV" tvg-logo="https://iptv-epg.org/images/780XH3jl2Z7XFvw4J5yUatI55adXe0H-GaG3DT_sDsb92nene2X4GLiA7oxtHYbvtgUISye5d9EPDa53Thytw6tLHDiY6eOMhyN7BoQ" group-title="ESPORTES",GE TV
 https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/refs/heads/main/countries/world-latin-america/espn-3-lam.png" group-title="ESPORTES",ESPN 3
+http://181.78.197.59:8000/play/a081/index.m3u8
