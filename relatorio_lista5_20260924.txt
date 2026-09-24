@@ -1,0 +1,72 @@
+==============================================================================
+RELATORIO CORRECAO lista5.m3u - 2026-09-24 (madrugada)
+==============================================================================
+
+1. ESTADO INICIAL
+   - Arquivo recém-baixado em estado bruto: 40 entradas #EXTINF, apenas 2 canais
+     únicos (demais eram variantes/duplicatas de qualidade/áudio/token do mesmo canal).
+   - Nenhum canal tinha tvg-id nem url-tvg (sem casamento com EPG).
+   - ABC News Live só com URLs dvt2 (linear-abcnews-*.media.dssott.com) com token
+     que EXPIRA (exp=1790300205 ~ 25/09 01:36 UTC) -> instável para lista.
+   - CBS News 24/7 com dezenas de variantes de bandwidth (441K..5980K).
+
+2. CANAIS MANTIDOS (2) - stream OK, EPG OK (3 dias) e teste anti-virus OK:
+   - ABC News Live [ABC.News.Live.us2]  - STREAM OK (abcnews-livestreams.akamaized.net,
+     sem token, fMP4 ao vivo).
+   - CBS News 24/7 [CBSNews.us]         - STREAM OK (Google DAI dai.google.com,
+     sem token, TS real avançando).
+
+3. CANAIS REMOVIDOS / SUBSTITUIDOS
+   - ~38 variantes/duplicatas de ABC (dvt2 dssott, cmaf, áudio 64K/128K,
+     1700K/2400K) e CBS (bandwidth 441K..5980K) reduzidas a 1 URL estável por canal.
+   - URLs dvt2 (token expirado/expirando) substituídas pelo feed oficial estável
+     abcnews-livestreams.akamaized.net/abcn-live-10.
+   - Título dinâmico de manchete ("Video Tracking the flooding threat...") removido;
+     o canal volta a ser "ABC News Live - ABC News".
+
+4. EPG (MULTIPLAS FONTES - necessário para cobrir os 3 dias nos dois canais)
+   Fontes configuradas no header #EXTM3U (x-tvg-url, guias baixadas e verificadas agora):
+     1) https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz   (HTTP 200 gzip)
+     2) https://iptv-epg.org/files/epg-us.xml.gz                     (HTTP 200 gzip)
+   Programação de HOJE (24/09), AMANHÃ (25/09) e DEPOIS DE AMANHÃ (26/09):
+       ABC News Live [ABC.News.Live.us2]  hoje=40 amanha=41 depois=7   (fonte 1)
+       CBS News 24/7 [CBSNews.us]         hoje=28 amanha=28 depois=30  (fonte 2)
+   - A fonte 1 não tem o 3º dia da CBS; a fonte 2 não tem a CBS com tvg-id
+     epgshare, por isso foram necessárias as DUAS guias.
+   - Amostras reais da guia (24/09): ABC News Live: "ABC World News Tonight",
+     "Live: ABCNL Prime" | CBS News 24/7: "CBS Evening News", "The Daily Report".
+   - Afiliadas: NÃO há feeds de afiliada nesta lista (apenas redes nacionais:
+     ABC News e CBS News nacional); portanto sem retransmissoras locais a procurar.
+
+5. ANTI-VIRUS
+   - API key do VirusTotal NÃO disponível no ambiente (VT_API_KEY vazio; API
+     pública responde 401 AuthenticationRequiredError).
+   - Validação substituta (mesma metodologia dos reportes anteriores): teste
+     profundo HLS (master -> variante -> segmento real de vídeo) + somente
+     domínios oficiais de primeira-parte.
+   - Resultado: 2/2 streams aprovados com vídeo real (fMP4 para ABC, MP2T para
+     CBS) e segmentos avançando em tempo real. Nenhum domínio não-oficial mantido
+     (hosts: abcnews-livestreams.akamaized.net, dai.google.com).
+
+6. LOGOS (tvg-logo)
+   - Todos em .jpg (extensão confirmada) e retornando HTTP 200 type=image/jpeg:
+       ABC News Live   https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+       CBS News 24/7   https://assets2.cbsnewsstatic.com/...247-key-channelthumbnail-1920x1080.jpg
+   - Nenhum logo do imgur.com (verificado no arquivo inteiro).
+   - Nenhum logo em .png/.webp restante (todos em .jpg).
+
+7. FORMATO / ESTRUTURA
+   - 2 entradas EXTINF+URL válidas; 0 links órfãos (toda URL tem #EXTINF na linha acima).
+   - tvg-id presente em todos os canais (ids reais conferidos nas guias baixadas).
+   - Header #EXTM3U com x-tvg-url apontando para as 2 fontes EPG verificadas.
+   - Backup do estado bruto: lista5.m3u.bak.pre_tarefa_20260924_020423
+
+8. TESTE FINAL (verificação estrutural + EPG + deep test HLS)
+   - Estrutura OK: True (sem linhas soltas, sem URL sem #EXTINF acima)
+   - Logos OK (.jpg, HTTP 200 image/jpeg, sem imgur): True
+   - EPG hoje/amanhã/depois: True (ABC 40/41/7, CBS 28/28/30)
+   - Deep test (segmento real de vídeo): ABC OK (fMP4), CBS OK (TS)
+
+==============================================================================
+TODOS OS TESTES PASSARAM.
+==============================================================================
