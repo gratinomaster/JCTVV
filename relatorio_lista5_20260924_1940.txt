@@ -1,0 +1,83 @@
+==============================================================================
+RELATORIO CORRECAO lista5.m3u - 2026-09-24 (19:40)
+==============================================================================
+
+1. ESTADO INICIAL
+   - Arquivo recém-baixado em estado bruto: 42 entradas #EXTINF, apenas 4 canais
+     únicos (demais eram variantes/duplicatas de qualidade/áudio/token do mesmo canal).
+   - Nenhum canal tinha tvg-id nem url-tvg (0 casamentos com EPG).
+   - ABC News Live com URLs dvt2 (linear-abcnews-*.media.dssott.com) com token que
+     expira -> instável para lista; substituído por feed oficial estável.
+   - CBS News 24/7 com 16 variantes de bandwidth do mesmo stream (só o master ficou).
+   - Fox News e Fox Business usavam 247.foxnews.com / 247.foxbusiness.com com token
+     hdnea EXPIRADO -> HTTP 403 (falharam no teste) -> substituídos pelos feeds
+     oficiais sem token 247preview.
+
+2. CANAIS MANTIDOS (4) - stream OK, EPG OK (3 dias) e teste anti-virus OK:
+   - ABC News Live     [ABC.News.Live.us2]            - STREAM OK (abcnews-livestreams.akamaized.net, fMP4 ao vivo)
+   - CBS News 24/7     [CBS.News.National.Stream.us2] - STREAM OK (Google DAI dai.google.com, TS real)
+   - Fox News Channel  [Fox.News.Channel.HD.us2]      - STREAM OK (247preview.foxnews.com, TS avançando)
+   - Fox Business      [Fox.Business.HD.us2]          - STREAM OK (247preview.foxbusiness.com, TS avançando)
+
+3. CANAIS REMOVIDOS / SUBSTITUIDOS
+   - ~38 variantes/duplicatas de ABC (dvt2 dssott, cmaf-cenc, áudio 64K/128K,
+     1700K/2400K, abcn-live-09/10) e CBS (bandwidth 441K..4231K) reduzidas a 1 URL
+     estável por canal.
+   - URLs dvt2 com token expirando substituídas pelo feed oficial estável
+     abcnews-livestreams.akamaized.net/abcn-live-05.
+   - Títulos dinâmicos de manchete ("Video Tracking the Nor'easter...", "Video
+     World leaders debate...") removidos; canal volta a se chamar "ABC News Live".
+
+4. EPG (MÚLTIPLAS FONTES - necessário para cobrir os 3 dias nos 4 canais)
+   Fontes configuradas no header #EXTM3U (x-tvg-url, guias baixadas e verificadas agora):
+     1) https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz  (HTTP 200 gzip, 768 canais)
+     2) https://iptv-epg.org/files/epg-us.xml.gz                    (HTTP 200 gzip, 12995 canais)
+   Programação de HOJE (24/09), AMANHÃ (25/09) e DEPOIS DE AMANHÃ (26/09):
+       ABC News Live     [ABC.News.Live.us2]            hoje=40 amanha=41 depois=33
+       CBS News 24/7     [CBS.News.National.Stream.us2] hoje=21 amanha=28 depois=30
+       Fox News Channel  [Fox.News.Channel.HD.us2]      hoje=20 amanha=20 depois=24
+       Fox Business      [Fox.Business.HD.us2]          hoje=22 amanha=29 depois=35
+   Amostras reais da guia (24/09):
+       ABC News Live: Burden of Proof | Live: ABCNL Prime With Linsey Davis | ABC World News Tonight With David Muir
+       CBS News 24/7: CBS News Roundup | CBS Evening News | The Daily Report
+       Fox News: Live: Jesse Watters Primetime | Live: Hannity | Gutfeld! | Live: Fox News at Night
+       Fox Business: Fox Business in Depth | How America Works
+   Afiliadas: NÃO há feeds de afiliada nesta lista (apenas redes nacionais: ABC
+     News, CBS News, Fox News e Fox Business); portanto não há retransmissoras
+     locais a procurar. tvg-ids conferidos nos XMLs baixados agora (ids reais).
+
+5. ANTI-VIRUS
+   - API key do VirusTotal NÃO disponível no ambiente (verificado: variável vazia).
+   - Validação substituta (mesma metodologia dos reportes anteriores): teste
+     profundo HLS (master -> variante -> segmento real de vídeo) + somente domínios
+     oficiais de primeira-parte.
+   - Resultado: 4/4 streams aprovados com vídeo real (fMP4/MP2T) e segmentos
+     avançando em tempo real. Nenhum domínio não-oficial mantido
+     (hosts: abcnews-livestreams.akamaized.net, dai.google.com,
+     247preview.foxnews.com, 247preview.foxbusiness.com).
+
+6. LOGOS (tvg-logo)
+   - Todos os 4 em .jpg, retornando HTTP 200 type=image/jpeg:
+       ABC News Live   https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+       CBS News 24/7   https://assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+       Fox News        https://raw.githubusercontent.com/gratinomaster/JCTVV/main/fox_news.jpg
+       Fox Business    https://raw.githubusercontent.com/gratinomaster/JCTVV/main/fox_business.jpg
+   - Nenhum logo do imgur.com (verificado no arquivo inteiro).
+   - Nenhum logo em .png/.webp restante (todos em .jpg).
+
+7. FORMATO / ESTRUTURA
+   - 4 entradas EXTINF+URL válidas; 0 links órfãos (toda URL tem #EXTINF na linha acima).
+   - tvg-id presente em todos os canais (ids reais conferidos nas guias baixadas).
+   - Header #EXTM3U com x-tvg-url apontando para as 2 fontes EPG verificadas.
+   - Backup do estado bruto: lista5.m3u.bak.pre_tarefa_20260924_193851
+
+8. TESTE FINAL (verificação estrutural + EPG + deep test HLS)
+   - Estrutura OK: True (EXTINF=4, URLs=4, 0 órfãos, 0 linhas soltas)
+   - Logo .jpg / HTTP 200 image/jpeg / sem imgur: True
+   - tvg-id 4/4; x-tvg-url no header: True
+   - EPG hoje/amanhã/depois: True (todos os 4 canais com guia nos 3 dias)
+   - Deep test (segmento real de vídeo): ABC OK, CBS OK, Fox News OK, Fox Business OK
+
+==============================================================================
+TODOS OS TESTES PASSARAM.
+==============================================================================
