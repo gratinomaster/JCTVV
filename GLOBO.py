@@ -113,29 +113,44 @@ def extract_globoplay_data(url):
             driver.quit()
 
 
+EPG_SPORTV = "sportv"
+EPG_GE = "ge-tv"
+EPG_GLOBO = "tv-globo"
+
+CANAIS_SPORTV = ("spo", "sportv", "sptv")
+CANAIS_GE = ("ge", "gehd", "ber1", "ge-hd")
+CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo")
+
+
 def obter_tvg_id(m3u8_url, title):
+    """Retorna o tvg-id existente no EPG do BrazilTVEPG ou "" quando o canal
+    não existe nas fontes (G1 regionais, CBN e afiliadas), evitando associá-lo
+    ao canal errado."""
     texto = unquote(m3u8_url)
     match = re.search(r"/live/f[^/]*/([^/]+)/", texto)
     canal = match.group(1).lower() if match else ""
-    titulo = title.lower()
+    titulo = (title or "").lower()
 
-    if canal.startswith("spo") or "sportv" in titulo:
-        return "sportv"
-    if canal in ("gehd", "ber1"):
-        return "ge-tv"
-    if canal.startswith("cbn"):
-        return ""
+    if any(canal.startswith(p) for p in CANAIS_SPORTV) or "sportv" in titulo:
+        return EPG_SPORTV
+    if canal in CANAIS_GE:
+        return EPG_GE
+    if canal in CANAIS_GLOBO:
+        return EPG_GLOBO
 
-    return "tv-globo"
+    return ""
+
+
+EPG_URLS = (
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,"
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,"
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
+)
 
 
 def generate_m3u():
     with open("lista1.m3u", "w", encoding="utf-8") as output_file:
-        output_file.write(
-            '#EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,'
-            'https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,'
-            'https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"\n'
-        )
+        output_file.write(f'#EXTM3U url-tvg="{EPG_URLS}" x-tvg-url="{EPG_URLS}"\n')
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
             futures = {
@@ -152,8 +167,11 @@ def generate_m3u():
                     if m3u8_url:
                         thumbnail_url = thumbnail_url or ""
 
+                        tvg_id = obter_tvg_id(m3u8_url, title)
+                        atributo_tvg_id = f' tvg-id="{tvg_id}"' if tvg_id else ""
+
                         output_file.write(
-                            f'#EXTINF:-1 tvg-id="{obter_tvg_id(m3u8_url, title)}" tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
+                            f'#EXTINF:-1{atributo_tvg_id} tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
                         )
                         output_file.write(f"{m3u8_url}\n")
 
