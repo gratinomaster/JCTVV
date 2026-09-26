@@ -1,0 +1,63 @@
+==============================================================================
+CORRECAO lista5.m3u - v10 - 2026-09-26 12:44:02
+==============================================================================
+
+1) EPG - testando 2 fonte(s) para hoje/amanha/depois de amanha
+   [OK] https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+        canais: 4 | dias: hoje, amanha, depois de amanha -> 100% OK
+
+   Amostra de programacao por canal:
+     ABC.News.Live.us2            20260926 (+0) 34 programas | Burden of Proof / Live: ABCNL Prime With Linsey Davis
+     ABC.News.Live.us2            20260927 (+1) 27 programas | Live: Her Last Broadcast: The Abduction of Jodi Huisentruit / 20/20
+     ABC.News.Live.us2            20260928 (+2) 36 programas | 20/20 / Live: ABC World News Tonight With David Muir
+     Fox.News.Channel.HD.us2      20260926 (+0) 16 programas | Live: Jesse Watters Primetime / Live: Hannity
+     Fox.News.Channel.HD.us2      20260927 (+1) 17 programas | Live: Life, Liberty & Levin / Live: My View With Lara Trump
+     Fox.News.Channel.HD.us2      20260928 (+2) 20 programas | Live: Life, Liberty & Levin / Live: Sunday Night in America With Trey Gowdy
+     Fox.Business.HD.us2          20260926 (+0) 35 programas | Cops / Cops
+     Fox.Business.HD.us2          20260927 (+1) 31 programas | American Gold: The Legend of Bear Gulch / American Gold: The Legend of Bear Gulch
+     Fox.Business.HD.us2          20260928 (+2) 28 programas | Cops / Cops
+     CBS.News.National.Stream.us2 20260926 (+0) 30 programas | The Daily Report / CBS Evening News
+     CBS.News.National.Stream.us2 20260927 (+1) 24 programas | 48 Hours / 48 Hours
+     CBS.News.National.Stream.us2 20260928 (+2) 25 programas | 60 Minutes / 60 Minutes
+
+2) Streams, logos e anti-abuso por canal
+
+   ABC News Live  [tvg-id=ABC.News.Live.us2]
+     logo  .jpg : OK (image/jpeg 38693 bytes)
+     stream    : OK -> variante abcn-live-10-index_1.m3u8 ok
+     antivirus : OK (URLhaus limpo, host oficial, https, sem IP literal)
+
+   Fox News Channel  [tvg-id=Fox.News.Channel.HD.us2]
+     logo  .jpg : OK (image/jpeg 21298 bytes)
+     stream    : OK -> variante primary_300.m3u8 ok
+     antivirus : OK (URLhaus limpo, host oficial, https, sem IP literal)
+
+   Fox Business  [tvg-id=Fox.Business.HD.us2]
+     logo  .jpg : OK (image/jpeg 26887 bytes)
+     stream    : OK -> variante primary_300.m3u8 ok
+     antivirus : OK (URLhaus limpo, host oficial, https, sem IP literal)
+
+   CBS News 24/7  [tvg-id=CBS.News.National.Stream.us2]
+     logo  .jpg : OK (image/jpeg 98190 bytes)
+     stream    : OK -> variante master_19.m3u8 ok
+     antivirus : OK (URLhaus limpo, host oficial, https, sem IP literal)
+
+3) Escrevendo lista5.m3u
+   backup: lista5.m3u.bak.pre_v10_20260926_124402
+   4 canais gravados | EPG: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+
+4) Validacao final do arquivo
+   [OK] estrutura valida: todo link tem #EXTINF acima, sem duplicatas,
+        todos os canais com tvg-id + tvg-logo .jpg, sem imgur,
+        EPG declarado no #EXTM3U.
+
+5) Resumo
+   canais mantidos : 4
+     - ABC News Live    ABC.News.Live.us2            abcnews-livestreams.akamaized.net
+     - Fox News Channel Fox.News.Channel.HD.us2      247preview.foxnews.com
+     - Fox Business     Fox.Business.HD.us2          247preview.foxbusiness.com
+     - CBS News 24/7    CBS.News.National.Stream.us2 cbsn-us.cbsnstream.cbsnews.com
+   canais removidos: 0
+   EPG  : https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+   Antivirus: URLhaus + allowlist de dominios oficiais + heuristicas
+              (VirusTotal sem API key neste ambiente)
