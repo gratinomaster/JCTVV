@@ -118,7 +118,7 @@ EPG_GE = "ge-tv"
 EPG_GLOBO = "tv-globo"
 
 CANAIS_SPORTV = ("spo", "sportv", "sptv")
-CANAIS_GE = ("ge", "gehd", "ber1", "ge-hd")
+CANAIS_GE = ("ge", "ber1", "ge-hd")
 CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo")
 
 
