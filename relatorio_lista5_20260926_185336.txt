@@ -1,0 +1,29 @@
+Correcao de lista5.m3u - 20260926_185336
+Entradas antes: 35 | Canais depois: 4
+
+FONTES DE EPG NO M3U
+- https://epg.pw/xmltv/epg_US.xml.gz
+
+CANAIS
+- ABC News Live
+    url    : https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790532626~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=5e00ee10-4ae6-46ed-b3fa-ba4475bb2a66~did=bd973273-bb3e-4924-8add-2e28e2dcfe98~country=US~kid=k02~hmac=61cf1e76ce80d61811d347f8cca22b4373d249ea7fefa7a358851bca58584e1d/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c [variante ok (8)]
+    tvg-id : 465150 (ABC News Live em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=36 amanha=30 depois=14
+    logo   : https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg (mantido)
+- Fox News
+    url    : https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1790449827~acl=/*~hmac=0a93af7f50808a5f10ec4ee010bee3be3a8360d5a9fd0d3af80c353492091546 [variante ok (8)]
+    tvg-id : 465372 (Fox News Channel HD em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=23 amanha=21 depois=9
+    logo   : https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1 (mantido)
+- Fox Business
+    url    : https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1790449827~acl=/*~hmac=0a93af7f50808a5f10ec4ee010bee3be3a8360d5a9fd0d3af80c353492091546 [variante ok (8)]
+    tvg-id : 464766 (Fox Business HD em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=33 amanha=25 depois=26
+    logo   : https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1 (mantido)
+- CBS News 24/7
+    url    : https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5bc34ca0-c932-43ac-a142-f076689a0cb6:CHS/master.m3u8 [variante ok (8)]
+    tvg-id : 464941 (CBS News National Stream em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=30 amanha=25 depois=12
+    logo   : https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg (mantido)
+
+AVISOS (0)

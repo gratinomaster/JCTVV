@@ -1,0 +1,29 @@
+Correcao de lista5.m3u - 20260926_185413
+Entradas antes: 35 | Mortas: 0 | Duplicadas removidas: 31 | Canais depois: 4
+
+FONTES DE EPG NO M3U
+- https://epg.pw/xmltv/epg_US.xml.gz
+
+CANAIS
+- ABC News Live
+    url    : https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8 [variante ok (3)]
+    tvg-id : 465150 (ABC News Live em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=36 amanha=30 depois=14
+    logo   : https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg (mantido)
+- Fox News
+    url    : https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1790449827~acl=/*~hmac=0a93af7f50808a5f10ec4ee010bee3be3a8360d5a9fd0d3af80c353492091546 [variante ok (8)]
+    tvg-id : 465372 (Fox News Channel HD em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=23 amanha=21 depois=9
+    logo   : https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1 (mantido)
+- Fox Business
+    url    : https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1790449827~acl=/*~hmac=0a93af7f50808a5f10ec4ee010bee3be3a8360d5a9fd0d3af80c353492091546 [variante ok (8)]
+    tvg-id : 464766 (Fox Business HD em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=33 amanha=25 depois=26
+    logo   : https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1 (mantido)
+- CBS News 24/7
+    url    : https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5bc34ca0-c932-43ac-a142-f076689a0cb6:CHS/master.m3u8 [variante ok (8)]
+    tvg-id : 464941 (CBS News National Stream em https://epg.pw/xmltv/epg_US.xml.gz)
+    guia   : hoje=30 amanha=25 depois=12
+    logo   : https://www.cbsnews.com/bundles/cbsnewsvideo/images/cbsn--main-bg.jpg (mantido)
+
+AVISOS (0)
