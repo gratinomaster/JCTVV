@@ -1,0 +1,147 @@
+Teste de canais - 2026-09-26 21:50:08
+Lista: /home/runner/work/JCTVV/JCTVV/lista5.m3u
+Passadas: final.json
+==============================================================================
+Total: 47 | Mantidos: 47 | Removidos: 0
+
+#1   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544294~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=9cc9eadc-33c1-4af9-8c46
+     - ok: ok nivel 1; 182 segs; 2879055B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 39686
+#2   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544294~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=9cc9eadc-33c1-4af9-8c46
+     - ok: ok nivel 0; 182 segs; 917556B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 119657
+#3   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544294~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=9cc9eadc-33c1-4af9-8c46
+     - ok: ok nivel 0; 182 segs; 39602B fMP4 ['emsg', 'moof', 'mdat']; 39459B fMP4 ['moof', 'm
+#4   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/7361ad2e-d02c-47c5-b38b-845c346df51a/unenc-all-7d0fef21-b821-4f65-93f4-e16d56bebe1c-1a682544-0fc0-4989-8c98-ab61fa8b1a1f.m3u8?a=1&
+     - ok: ok nivel 1; 4 segs; 4123520B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 3946298
+#5   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/b9ad5d78-90b4-4e74-a2b0-50eab5d177a6/unenc-all-afa52781-0385-46a6-a032-66d8e7982e4c-d30dc26b-d414-4dd6-b9a3-28c7853340b2.m3u8?a=1&
+     - ok: ok nivel 1; 4 segs; 4546385B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 4336595
+#6   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/b9ad5d78-90b4-4e74-a2b0-50eab5d177a6/r/60b8d0c2-29a1-4233-8c11-0d2e3c49a00d/720b-MAIN/03/1200_complete-8294e491-afa8-4595-92a1-632
+     - ok: ok nivel 0; 4 segs; 1254911B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 1331819
+#7   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/b9ad5d78-90b4-4e74-a2b0-50eab5d177a6/r/3ea762af-e937-4875-ae25-ff64727e0c5f/720b-MAIN/03/128_complete.m3u8
+     - ok: ok nivel 0; 4 segs; 127561B fMP4 ['moof', 'mdat']; 126795B fMP4 ['moof', 'mdat']; l
+#8   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/b9ad5d78-90b4-4e74-a2b0-50eab5d177a6/r/60b8d0c2-29a1-4233-8c11-0d2e3c49a00d/720b-MAIN/03/1800_complete-8294e491-afa8-4595-92a1-632
+     - ok: ok nivel 0; 4 segs; 1899857B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 1942104
+#9   manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1790544310~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=1c64184f-d77e-4a1a-a5e3
+     - ok: ok nivel 1; 182 segs; 3494420B fMP4 ['moof', 'mdat', 'moof', 'mdat']; 4405407B fMP4
+#10  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1790544310~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=1c64184f-d77e-4a1a-a5e3
+     - ok: ok nivel 0; 182 segs; 1132587B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 98890
+#11  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1790544310~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=1c64184f-d77e-4a1a-a5e3
+     - ok: ok nivel 0; 182 segs; 39702B fMP4 ['emsg', 'moof', 'mdat']; 39896B fMP4 ['emsg', 'm
+#12  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/unenc-all-ed86cf6e-6f3d-450f-850f-d194ab1d3dad-607b76d1-40af-4774-a54c-395ecfb163b4.m3u8?a=1&
+     - ok: ok nivel 1; 4 segs; 4089566B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 4588548
+#13  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/7361ad2e-d02c-47c5-b38b-845c346df51a/unenc-all-7d0fef21-b821-4f65-93f4-e16d56bebe1c-1a682544-0fc0-4989-8c98-ab61fa8b1a1f.m3u8?a=1&
+     - ok: ok nivel 1; 4 segs; 4123520B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 3946298
+#14  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/r/7cf5a845-26b7-4ab5-88a3-f6a0bd5f101d/f45c-MAIN/03/128_complete.m3u8
+     - ok: ok nivel 0; 4 segs; 127340B fMP4 ['moof', 'mdat']; 127017B fMP4 ['moof', 'mdat']; l
+#15  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/r/965a671c-2742-4513-8885-930fc472e9b7/f45c-MAIN/03/1200_complete-9c36558f-6d96-4f60-93aa-a41
+     - ok: ok nivel 0; 4 segs; 1200528B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 1344784
+#16  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 1; 182 segs; 3378620B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 34184
+#17  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 0; 182 segs; 1063363B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 12620
+#18  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 0; 182 segs; 39706B fMP4 ['emsg', 'moof', 'mdat']; 39893B fMP4 ['emsg', 'm
+#19  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 0; 182 segs; 1262047B fMP4 ['moof', 'mdat', 'moof', 'mdat', 'moof']; 79766
+#20  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 0; 182 segs; 80006B fMP4 ['emsg', 'moof', 'mdat']; 79990B fMP4 ['emsg', 'm
+#21  manter    funcionou em 1/1 passadas
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790544312~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=7d2bfdcf-a5ad-44a0-9491
+     - ok: ok nivel 0; 182 segs; 797665B fMP4 ['moof', 'mdat', 'moof', 'mdat']; 1133650B fMP4 
+#22  manter    funcionou em 1/1 passadas
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+     - ok: ok nivel 1; 10 segs; 3839180B fMP4 ['moof', 'mdat', 'styp', 'sidx']; 3685444B fMP4 
+#23  manter    funcionou em 1/1 passadas
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+     - ok: ok nivel 0; 10 segs; 1150207B fMP4 ['moof', 'mdat', 'styp', 'sidx']; 1091603B fMP4 
+#24  manter    funcionou em 1/1 passadas
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+     - ok: ok nivel 0; 10 segs; 97600B fMP4 ['moof', 'mdat', 'styp', 'sidx']; 97851B fMP4 ['mo
+#25  manter    funcionou em 1/1 passadas
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+     - ok: ok nivel 0; 10 segs; 1091603B fMP4 ['moof', 'mdat', 'styp', 'sidx']; 1164277B fMP4 
+#26  manter    funcionou em 1/1 passadas
+     https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1790461494~acl=/*~hmac=582400487d4fd42d2db945247c7c9fa14807b1be17582eb9a0e434ae3f2a134c
+     - ok: ok nivel 1; 6 segs; 3549064B mpeg-ts pids=[0, 480, 481, 482]; 3305228B mpeg-ts pids
+#27  manter    funcionou em 1/1 passadas
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1790461494~acl=/*~hmac=582400487d4fd42d2db945247c7c9fa14807b1be17582eb9a0e434ae3f2a134c
+     - ok: ok nivel 1; 6 segs; 3443596B mpeg-ts pids=[0, 480, 481, 482]; 3512780B mpeg-ts pids
+#28  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/master.m3u8
+     - ok: ok nivel 1; 25 segs; 2641400B mpeg-ts pids=[0, 32, 33, 34]; 2370680B mpeg-ts pids=[
+#29  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+     - ok: ok nivel 0; 25 segs; 168824B mpeg-ts pids=[0, 32, 33, 34]; 189880B mpeg-ts pids=[0,
+#30  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+     - ok: ok nivel 0; 25 segs; 168824B mpeg-ts pids=[0, 32, 33, 34]; 189880B mpeg-ts pids=[0,
+#31  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+     - ok: ok nivel 0; 25 segs; 313208B mpeg-ts pids=[0, 32, 33, 34]; 364344B mpeg-ts pids=[0,
+#32  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/e45ac8e413a627d436bba392e6f69412/bandwidth/1549000.m3u8
+     - ok: ok nivel 0; 25 segs; 499704B mpeg-ts pids=[0, 32, 33, 34]; 382392B mpeg-ts pids=[0,
+#33  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     - ok: ok nivel 0; 25 segs; 737336B mpeg-ts pids=[0, 32, 33, 34]; 583928B mpeg-ts pids=[0,
+#34  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1242680B mpeg-ts pids=[0, 32, 33, 34]; 349304B mpeg-ts pids=[0
+#35  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 349304B mpeg-ts pids=[0, 32, 33, 34]; 1137400B mpeg-ts pids=[0
+#36  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1137400B mpeg-ts pids=[0, 32, 33, 34]; 1305848B mpeg-ts pids=[
+#37  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     - ok: ok nivel 0; 25 segs; 620024B mpeg-ts pids=[0, 32, 33, 34]; 767416B mpeg-ts pids=[0,
+#38  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     - ok: ok nivel 0; 25 segs; 887736B mpeg-ts pids=[0, 32, 33, 34]; 836600B mpeg-ts pids=[0,
+#39  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1305848B mpeg-ts pids=[0, 32, 33, 34]; 1699896B mpeg-ts pids=[
+#40  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1699896B mpeg-ts pids=[0, 32, 33, 34]; 1570552B mpeg-ts pids=[
+#41  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1570552B mpeg-ts pids=[0, 32, 33, 34]; 1690872B mpeg-ts pids=[
+#42  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1570552B mpeg-ts pids=[0, 32, 33, 34]; 1690872B mpeg-ts pids=[
+#43  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1570552B mpeg-ts pids=[0, 32, 33, 34]; 1690872B mpeg-ts pids=[
+#44  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1690872B mpeg-ts pids=[0, 32, 33, 34]; 1456248B mpeg-ts pids=[
+#45  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1456248B mpeg-ts pids=[0, 32, 33, 34]; 1588600B mpeg-ts pids=[
+#46  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1588600B mpeg-ts pids=[0, 32, 33, 34]; 996024B mpeg-ts pids=[0
+#47  manter    funcionou em 1/1 passadas
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2235591f-9b04-4c4d-b95e-dacb54feea31:CHS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+     - ok: ok nivel 0; 25 segs; 1588600B mpeg-ts pids=[0, 32, 33, 34]; 996024B mpeg-ts pids=[0
