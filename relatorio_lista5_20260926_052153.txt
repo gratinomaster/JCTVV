@@ -1,0 +1,44 @@
+Teste de canais em lista5.m3u - 20260926_052153
+Total: 33 | Funcionando: 26 | Removidos: 7
+
+REMOVIDOS (7)
+- [manifest sem segmentos] Video Tracking the Nor'easter impacting the East Coast this weekend; Hurricane Nolo impact
+  https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1790486363~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=da8de592-bbf5-4f4b-9eea-ea77b74c2c1d~did=eea75fbc-e991-449b-8cae-10de21f726c7~country=US~kid=k02~hmac=208e8bedc1aebd9e6a623390231baa363ce631ad2e17dd78feb5e668d8531c09/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
+- [manifest sem segmentos] Video Tracking the Nor'easter impacting the East Coast this weekend; Hurricane Nolo impact
+  https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1790486363~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=da8de592-bbf5-4f4b-9eea-ea77b74c2c1d~did=eea75fbc-e991-449b-8cae-10de21f726c7~country=US~kid=k02~hmac=208e8bedc1aebd9e6a623390231baa363ce631ad2e17dd78feb5e668d8531c09/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+- [manifest sem segmentos] Video Tracking the Nor'easter impacting the East Coast this weekend; Hurricane Nolo impact
+  https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+- [manifest sem segmentos] Watch Fox News Channel Online | Stream Fox News
+  https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1790403564~acl=/*~hmac=3e97080bbda6139bc1775dd9d9e00290970408c48e0d8db0654d4609acf3b98c
+- [manifest sem segmentos] Fox Business Go | Fox News Video
+  https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1790403564~acl=/*~hmac=3e97080bbda6139bc1775dd9d9e00290970408c48e0d8db0654d4609acf3b98c
+- [manifest sem segmentos] our free live news stream
+  https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/master.m3u8
+
+MANTIDOS (26)
+- [segmento ok] https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1790486363~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=da8de592-bbf5-4f4b-9eea-ea77b74c2c1d~did=eea75fbc-e991-449b-8cae-10de21f726c7~country=US~kid=k02~hmac=208e8bedc1aebd9e6a623390231baa363ce631ad2e17dd78feb5e668d8531c09/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+- [segmento ok] https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1790486363~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=da8de592-bbf5-4f4b-9eea-ea77b74c2c1d~did=eea75fbc-e991-449b-8cae-10de21f726c7~country=US~kid=k02~hmac=208e8bedc1aebd9e6a623390231baa363ce631ad2e17dd78feb5e668d8531c09/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+- [segmento ok] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/e45ac8e413a627d436bba392e6f69412/bandwidth/1549000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
+- [segmento ok] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/f39a1a6f-abcf-4b7b-90e7-b36b2796388b:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
