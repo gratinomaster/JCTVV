@@ -26,7 +26,7 @@ http://45.162.64.114/NOVO_TEMPO/index.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
 http://45.162.64.114/BAND_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://iptv-epg.org/images/Bet2Q6EqVR25j4cO8IfWzX5VpFMwhO0mHL4MIjuhPQiN7W02L6U5emv9zXcU8Bhz7qGkN3TQHx7Fa3S0l-CnG24Q7aqrvUpI7VZttC_bi2v7" group-title="TV ABERTA",TV Gazeta
-http://45.162.64.114/GAZETA/index.m3u8
+http://45.162.64.114/TV_GAZETA/index.m3u8
 #EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://iptv-epg.org/images/tBVpwfYcZK2qy8NBFMQX46Z6CN7sAi2HRHwTABmHCS24NTsLxOihM88JSWb7_wyEtPvghbZcQ3fdPMjNC_qbd3ZVcDaQkM_aRqdrqf7u5rI4qA" group-title="TV ABERTA",CNN Brasil
 https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8
 #EXTINF:-1 tvg-id="GloboNews.br" tvg-name="GloboNews" tvg-logo="https://iptv-epg.org/images/6VmLGSQLTCoNcHsEV9hO5y_2jgkPaNsomn7Mlt6qJ2_PTMb3e_ORoF2PoTyyDxnuIy0m69CyPpiWzLcyQ0unVrRsIRPMFLsCq1YTXJOHxMCyFg" group-title="TV ABERTA",GloboNews
@@ -56,7 +56,7 @@ https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
 http://45.162.64.114/TV_CAMARA/index.m3u8
 #EXTINF:-1 tvg-id="CanalGov.br" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
-https://canalgov-stream.ebc.com.br/index.m3u8
+http://45.177.114.115/TV_BRASIL_2/index.m3u8
 #EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV ABERTA",Arte 1
 http://45.162.64.114/ARTE1/index.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://i.imgur.com/j51rBro.png" group-title="TV ABERTA",TV A Crítica
@@ -79,11 +79,11 @@ http://170.83.49.66:8083/SPORTV3HD/index.m3u8
 http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 #EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
 https://media.cdntvms.com.br/sportv_sat/index.m3u8
-#EXTINF:-1 tvg-id="GETV.br" tvg-name="GE TV" tvg-logo="https://iptv-epg.org/images/780XH3jl2Z7XFvw4J5yUatI55adXe0H-GaG3DT_sDsb92nene2X4GLiA7oxtHYbvtgUISye5d9EPDa53Thytw6tLHDiY6eOMhyN7BoQ" group-title="ESPORTES",GE TV
-https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
 http://181.78.197.59:8000/play/a081/index.m3u8
 #EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
 http://45.162.64.114/TNT/index.m3u8
 #EXTINF:-1 tvg-id="HistoryChannel.br" tvg-name="History" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/The_History_Channel_logo.png" group-title="TV PAGA",History
 http://45.177.114.114/HISTORY/index.m3u8
+#EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
+http://170.83.49.66:8083/AXNHD/index.m3u8
