@@ -6,6 +6,7 @@ Janela: de HOJE-1 ate HOJE+7 dias, para o guia nao ficar maior do que o necessar
 O arquivo EPGFULL.xml.gz e sobrescrito (via temporario + os.replace).
 """
 import gzip
+import html
 import os
 import re
 import sys
@@ -38,6 +39,15 @@ def norm(s):
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     return re.sub(r"[\W_]+", "", s.lower(), flags=re.UNICODE)
+
+
+def sem_sufixo(nome):
+    """Nome do canal sem os sufixos entre parenteses/colchetes.
+
+    Ex.: 'TVI (Portugal)' -> 'TVI', 'TV Chile [Geo-bloqueado]' -> 'TV Chile'.
+    """
+    limpo = re.sub(r"\s*[\(\[][^()\[\]]*[\)\]]", " ", nome)
+    return re.sub(r"\s{2,}", " ", limpo).strip()
 
 
 def pais_de(cid):
@@ -153,6 +163,9 @@ re_disp = re.compile(r"<display-name[^>]*>(.*?)</display-name>", re.S)
 re_icon = re.compile(r'<icon\s+src="([^"]*)"')
 re_atr = re.compile(r'(\w[\w-]*)="([^"]*)"')
 NOME_MIN = 4
+# o indice guarda tambem nomes de 3 letras (ex.: TVI); o casamento entre paises
+# continua exigindo NOME_MIN, o curto so passa no proprio pais
+INDICE_MIN = 3
 
 # --- PASSO A: indexa os canais de todas as fontes -------------------------
 print("  passo A: indexando canais das fontes...")
@@ -171,15 +184,15 @@ for cc, caminho in fontes:
             if s.startswith("<icon ") or s.startswith("<display-name"):
                 bloco.append(s)
             elif s.startswith("</channel>"):
-                cid = re_chan.search(bloco[0]).group(1).replace("&amp;", "&").strip()
+                cid = html.unescape(re_chan.search(bloco[0]).group(1)).strip()
                 dm = re_disp.search("\n".join(bloco))
                 im = re_icon.search("\n".join(bloco))
-                disp = dm.group(1).strip() if dm else cid
+                disp = html.unescape(dm.group(1)).strip() if dm else cid
                 icone = im.group(1).strip() if im else ""
                 if cid not in fonte:
                     fonte[cid] = {"pais": pais_de(cid), "display": disp, "icone": icone}
                     rot = norm(disp.split(" - ")[-1])
-                    if len(rot) >= NOME_MIN:
+                    if len(rot) >= INDICE_MIN:
                         nome_indice.setdefault((pais_de(cid), rot), []).append(cid)
                     n += 1
                 bloco = None
@@ -196,23 +209,32 @@ for tvg in canais:                                   # 1) tvg-id exato
         usados.add(tvg)
         origem[tvg] = "id"
 
-for rotulo, restricao in (("mesmo pais", True), ("qualquer pais", False)):  # 2) por nome
-    for tvg in canais:
-        if tvg in usados:
-            continue
-        nn = norm(canais[tvg]["nome"])
-        if len(nn) < NOME_MIN:
-            continue
-        chaves = [(pais_de(tvg), nn)] if restricao else [
-            k for k in nome_indice if k[1] == nn
-        ]
-        for k in chaves:
-            cands = nome_indice.get(k, [])
-            if len(cands) == 1 and cands[0] not in mapeia.values():
-                mapeia[cands[0]] = tvg
-                usados.add(tvg)
-                origem[tvg] = f"nome/{rotulo}"
-                break
+# 2) por nome. Ordem de preferencia: pais proprio, nome completo, sem sufixo e
+# por fim qualquer pais. Exatamente um candidato, para nunca casar por
+# semelhanca parcial (T13 nao pode cair em Canal13).
+for rotulo, restricao in (("mesmo pais", True), ("qualquer pais", False)):
+    for modo in ("completo", "sem sufixo"):
+        for tvg in canais:
+            if tvg in usados:
+                continue
+            nome = canais[tvg]["nome"]
+            if modo == "sem sufixo":
+                nome = sem_sufixo(nome)
+            nn = norm(nome)
+            # nome curto so passa no casamento exato dentro do proprio pais
+            # (ex.: 'TVI (Portugal)' -> TVI.pt); entre paises exige 4+ caracteres
+            if len(nn) < (INDICE_MIN if restricao else NOME_MIN):
+                continue
+            chaves = [(pais_de(tvg), nn)] if restricao else [
+                k for k in nome_indice if k[1] == nn
+            ]
+            for k in chaves:
+                cands = nome_indice.get(k, [])
+                if len(cands) == 1 and cands[0] not in mapeia.values():
+                    mapeia[cands[0]] = tvg
+                    usados.add(tvg)
+                    origem[tvg] = f"nome/{modo}/{rotulo}"
+                    break
 
 for cid_fonte, tvg in mapeia.items():
     c = canais[tvg]
@@ -246,7 +268,7 @@ for cc, caminho in fontes:
                 continue
             dentro = False
             at = dict(re_atr.findall(segs[0]))
-            tvg = mapeia.get(at.get("channel", "").replace("&amp;", "&").strip())
+            tvg = mapeia.get(html.unescape(at.get("channel", "")).strip())
             st = at.get("start", "")
             if not tvg or not st or not (inicio <= st < fim):
                 continue
