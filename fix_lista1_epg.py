@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
-"""Corrige o lista1.m3u: header url-tvg e tvg-ids validos contra as 3 fontes EPG."""
+"""Corrige o lista1.m3u: header url-tvg e tvg-ids validos contra as 3 fontes EPG.
+
+- url-tvg/x-tvg-url com as 3 fontes BrazilTVEPG separadas por virgula.
+- Se a lista estiver sem canais (cabecalho apenas), recupera de `git show HEAD`
+  ou do backup integral mais recente.
+- tvg-id so e mantido/criado com ids que existem de fato nas 3 fontes XMLTV.
+"""
 import datetime
+import glob
 import os
 import re
 import shutil
 import ssl
+import subprocess
 import time
 import unicodedata
 import urllib.request
@@ -13,7 +21,7 @@ import xml.etree.ElementTree as ET
 M3U = "lista1.m3u"
 BASE = "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/"
 EPG_URLS = [BASE + "globo.xml", BASE + "claro.xml", BASE + "vivoplay.xml"]
-CACHE = "/tmp/opencode/epg_cache"
+CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".epg_cache")
 SSL_CTX = ssl.create_default_context()
 SSL_CTX.check_hostname = False
 SSL_CTX.verify_mode = ssl.CERT_NONE
@@ -96,11 +104,42 @@ def melhor_id(titulo, nome_attr, canais):
     return None, "sem correspondencia nas 3 fontes EPG"
 
 
+def recuperar_canais():
+    """Se a lista ficou so com o cabecalho, traz os canais de uma versao integra."""
+    if any(l.startswith("#EXTINF") for l in open(M3U, encoding="utf-8", errors="ignore")):
+        return "a lista ja tem canais"
+
+    candidatas = []
+    try:
+        head = subprocess.run(["git", "show", "HEAD:" + M3U], capture_output=True,
+                              text=True, timeout=30, check=True).stdout
+        if "#EXTINF" in head:
+            with open(M3U, "w", encoding="utf-8") as fh:
+                fh.write(head)
+            return "canais recuperados de git HEAD (%d)" % head.count("#EXTINF")
+    except Exception:
+        pass
+
+    for bak in sorted(glob.glob(M3U + ".bak*"), key=os.path.getmtime, reverse=True):
+        try:
+            txt = open(bak, encoding="utf-8", errors="ignore").read()
+        except OSError:
+            continue
+        if "#EXTINF" not in txt:
+            continue
+        with open(M3U, "w", encoding="utf-8") as fh:
+            fh.write(txt)
+        return "canais recuperados de %s (%d)" % (os.path.basename(bak), txt.count("#EXTINF"))
+    return "ERRO: nao ha canais em nenhuma versao anterior"
+
+
 def main():
     ts = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     bak = "%s.bak.pre_epg_ids_%s" % (M3U, ts)
     shutil.copy2(M3U, bak)
     print("Backup: %s" % bak)
+
+    print(recuperar_canais())
 
     print("\nFontes EPG:")
     canais = load_epg_ids()
@@ -109,7 +148,7 @@ def main():
     linhas = open(M3U, encoding="utf-8", errors="ignore").read().split("\n")
 
     header = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (
-        " ".join(EPG_URLS),
+        ",".join(EPG_URLS),
         ",".join(EPG_URLS),
     )
 
