@@ -1,21 +1,21 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20260927_142546)
+lista1.m3u - correcao de url-tvg e tvg-ids (20260927_212736)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-Sportv ao vivo | sportv -> sportv | atual valido nas 3 fontes EPG
-Teste Live CDN Google | tv-globo -> tv-globo | atual valido nas 3 fontes EPG
-Transmissão Ao Vivo ABTV - Alagoas | tv-globo -> tv-globo | atual valido nas 3 fontes EPG
-Assistir ge.globo - Transmissão ao vivo online | ge-tv -> ge-tv | atual valido nas 3 fontes EPG
-Assistir G1 ao vivo - g1 ao vivo: Transmissão ao vivo online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 Caruaru - Transmissão ao vivo do ABTV online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 RS - Assista aos telejornais da RBS TV online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 SC - AO VIVO: Assista aos telejornais da NSC TV online | globonews -> globonews | atual valido nas 3 fontes EPG
-G1 TV Vanguarda Ao Vivo | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 CE - Assista à TV Verdes Mares ao vivo online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 ES - Transmissão ao vivo do jornal Regional no g1 ES online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 Triângulo Mineiro - TV Integração Uberlândia - Transmissão ao vivo online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 AP - Assista ao vivo aos telejornais da Rede Amazônica online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 AC - Assista aos jornais da Rede Amazônica online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 PA - Assista aos telejornais da TV Liberal online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir G1 ao vivo - Agora no g1 online | globonews -> globonews | atual valido nas 3 fontes EPG
-Assistir CBN - CBN SP online | - -> (removido) | sem correspondencia nas 3 fontes EPG
-Assistir CBN - CBN RJ online | - -> (removido) | sem correspondencia nas 3 fontes EPG
+Sportv ao vivo | sportv -> sportv | ok
+Globo SP | tv-globo -> tv-globo | ok
+Transmissão Ao Vivo ABTV - Alagoas | tv-globo -> tv-globo | ok
+Assistir ge.globo - Transmissão ao vivo online | ge-tv -> ge-tv | ok
+Assistir G1 ao vivo - g1 ao vivo: Transmissão ao vivo online | globonews -> globonews | ok
+Assistir G1 Caruaru - Transmissão ao vivo do ABTV online | globonews -> globonews | ok
+Assistir G1 RS - Assista aos telejornais da RBS TV online | globonews -> globonews | ok
+Assistir G1 SC - AO VIVO: Assista aos telejornais da NSC TV online | globonews -> globonews | ok
+G1 TV Vanguarda Ao Vivo | globonews -> globonews | ok
+Assistir G1 CE - Assista à TV Verdes Mares ao vivo online | globonews -> globonews | ok
+Assistir G1 ES - Transmissão ao vivo do jornal Regional no g1 ES online | globonews -> globonews | ok
+Assistir G1 Triângulo Mineiro - TV Integração Uberlândia - Transmissão ao vivo online | globonews -> globonews | ok
+Assistir G1 AP - Assista ao vivo aos telejornais da Rede Amazônica online | globonews -> globonews | ok
+Assistir G1 AC - Assista aos jornais da Rede Amazônica online | globonews -> globonews | ok
+Assistir G1 PA - Assista aos telejornais da TV Liberal online | globonews -> globonews | ok
+Assistir G1 ao vivo - Agora no g1 online | globonews -> globonews | ok
+Assistir CBN - CBN SP online | - -> - | sem id (nao existe nas 3 fontes)
+Assistir CBN - CBN RJ online | - -> - | sem id (nao existe nas 3 fontes)
