@@ -5,12 +5,21 @@ import io
 import os
 import re
 import sys
+import urllib.request
 import xml.etree.ElementTree as ET
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 
+M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNOVOS.m3u"
 M3U = "NEWSWORLDNOVOS.m3u"
 EPG = "EPGFULL.xml.gz"
+
+if not os.path.exists(M3U):
+    print(f"Baixando {M3U_URL}")
+    req = urllib.request.Request(M3U_URL, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        with open(M3U, "wb") as f:
+            f.write(resp.read())
 
 falhas = []
 
