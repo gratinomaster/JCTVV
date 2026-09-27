@@ -116,15 +116,17 @@ def extract_globoplay_data(url):
 EPG_SPORTV = "sportv"
 EPG_GE = "ge-tv"
 EPG_GLOBO = "tv-globo"
+EPG_G1 = "globonews"
 
 CANAIS_SPORTV = ("spo", "sportv", "sptv")
 CANAIS_GE = ("ge", "ber1", "ge-hd")
-CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo")
+CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo", "abtv")
+CANAIS_G1_PREFIXO = ("g1", "rede", "tvl", "nsc", "tvvm", "vanguarda")
 
 
 def obter_tvg_id(m3u8_url, title):
     """Retorna o tvg-id existente no EPG do BrazilTVEPG ou "" quando o canal
-    não existe nas fontes (G1 regionais, CBN e afiliadas), evitando associá-lo
+    não existe nas fontes (CBN e canais sem equivalente), evitando associá-lo
     ao canal errado."""
     texto = unquote(m3u8_url)
     match = re.search(r"/live/f[^/]*/([^/]+)/", texto)
@@ -133,9 +135,11 @@ def obter_tvg_id(m3u8_url, title):
 
     if any(canal.startswith(p) for p in CANAIS_SPORTV) or "sportv" in titulo:
         return EPG_SPORTV
-    if canal in CANAIS_GE:
+    if canal in CANAIS_GE or "ge.globo" in titulo:
         return EPG_GE
-    if canal in CANAIS_GLOBO:
+    if re.search(r"\bg1\b", titulo) or canal.startswith(CANAIS_G1_PREFIXO):
+        return EPG_G1
+    if any(canal.startswith(p) for p in CANAIS_GLOBO) or "abtv" in titulo:
         return EPG_GLOBO
 
     return ""
@@ -171,7 +175,8 @@ def generate_m3u():
                         atributo_tvg_id = f' tvg-id="{tvg_id}"' if tvg_id else ""
 
                         output_file.write(
-                            f'#EXTINF:-1{atributo_tvg_id} tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
+                            f'#EXTINF:-1{atributo_tvg_id} tvg-name="{title}" '
+                            f'tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
                         )
                         output_file.write(f"{m3u8_url}\n")
 

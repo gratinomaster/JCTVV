@@ -81,8 +81,15 @@ def load_epg_ids():
     return canais
 
 
+MIN_LEN = 3
+
+
 def melhor_id(titulo, nome_attr, canais):
-    """Procura um id do EPG que case com o canal. Retorna (id|None, motivo)."""
+    """Procura um id do EPG que case com o canal. Retorna (id|None, motivo).
+
+    Casos parciais/contidos so valem para ids com 3+ caracteres, senao ids curtos
+    como "E!" casariam com qualquer nome de canal.
+    """
     for candidato, origem in ((titulo, "titulo"), (nome_attr, "tvg-name")):
         if not candidato:
             continue
@@ -96,11 +103,15 @@ def melhor_id(titulo, nome_attr, canais):
             if any(norm(x) == alvo for x in nomes):
                 return cid, "display-name via %s" % origem
         for cid in canais:
-            if alvo in norm(cid):
+            if len(norm(cid)) >= MIN_LEN and alvo in norm(cid):
                 return cid, "parcial via %s" % origem
         for cid, nomes in canais.items():
-            if any(alvo in norm(x) or norm(x) in alvo for x in nomes if norm(x)):
-                return cid, "contido via %s" % origem
+            for nome in nomes:
+                alvo_nome = norm(nome)
+                if len(alvo_nome) < MIN_LEN or not alvo_nome:
+                    continue
+                if alvo_nome in alvo or (len(alvo) >= MIN_LEN and alvo in alvo_nome):
+                    return cid, "contido via %s" % origem
     return None, "sem correspondencia nas 3 fontes EPG"
 
 
@@ -168,9 +179,15 @@ def main():
             else:
                 novo, motivo = melhor_id(titulo, nome_attr, canais)
 
-            novo_attrs = re.sub(r'\s*tvg-id="[^"]*"', "", attrs).rstrip()
-            if novo:
-                novo_attrs += ' tvg-id="%s"' % novo
+            if id_atual:
+                novo_attrs = re.sub(r'tvg-id="[^"]*"', 'tvg-id="%s"' % (novo or ""), attrs, count=1)
+                novo_attrs = re.sub(r'\s{2,}', " ", novo_attrs)
+                if not novo:
+                    novo_attrs = re.sub(r'\s*tvg-id=""', "", novo_attrs, count=1)
+            elif novo:
+                novo_attrs = 'tvg-id="%s" %s' % (novo, attrs)
+            else:
+                novo_attrs = attrs
             relatorio.append({
                 "canal": titulo.strip(),
                 "tvg_id_anterior": id_atual,
