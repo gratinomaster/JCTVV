@@ -24,7 +24,8 @@ H = {
     "(KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
     "Accept": "*/*",
 }
-MAGIC = (b"\xff\xd8\xff", b"ftyp", b"styp", b"moof", b"mdat", b"sidx")
+MAGIC = (b"\xff\xd8\xff", b"ftyp", b"styp", b"moof", b"mdat", b"sidx",
+         b"emsg", b"free", b"skip", b"prft")
 
 
 def pares():
