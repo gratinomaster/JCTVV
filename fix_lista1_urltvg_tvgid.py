@@ -34,7 +34,13 @@ URL_TVG = ",".join(EPG_SOURCES.values())
 HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
 
 # Fontes integrais, da mais recente para a mais antiga.
+# "git:HEAD" usa a ultima versao commiteada (tokens mais atuais).
 CANDIDATES = [
+    "git:HEAD",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_044120",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_043613",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_021005",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260926_231408",
     "lista1.m3u.bak.pre_corrigir_tvgid_20260924_135651",
     "lista1.m3u.bak.pre_corrigir_tvgid_20260923_080635",
     "lista1.m3u.bak.pre_corrigir_tvgid_20260922_182555",
@@ -53,7 +59,7 @@ RULES = [
     (r"\bg1\b|globo news|jornal nacional|bonfim", "globonews"),
     (r"cbn", None),  # CBN nao existe em nenhuma das 3 fontes -> sem id
     (r"gnt|multishow|universal|telecine|premiere|bis\b|combate|gnt", "gnt"),
-    (r"globo|abtv|record", "tv-globo"),
+    (r"cdn\s*google|teste live|globo|abtv|record", "tv-globo"),
 ]
 
 EXTINF_RE = re.compile(r'^#EXTINF:(?P<dur>-?[\d.]+)\s*(?P<attrs>.*?),(?P<name>.*)$')
@@ -83,11 +89,9 @@ def download_epg_ids(cache_dir):
     return ids
 
 
-def parse_entries(path):
-    """Extrai (attrs, nome, url) de cada #EXTINF do arquivo."""
+def parse_text(lines):
+    """Extrai (attrs, nome, url) de cada #EXTINF de uma lista de linhas."""
     entries = []
-    with open(path, encoding="utf-8", errors="replace") as fh:
-        lines = fh.read().splitlines()
     i = 0
     while i < len(lines):
         m = EXTINF_RE.match(lines[i].strip())
@@ -101,6 +105,26 @@ def parse_entries(path):
         entries.append((m.group("attrs"), m.group("name").strip(), url))
         i += 1
     return entries
+
+
+def parse_entries(path):
+    """Extrai (attrs, nome, url) de cada #EXTINF do arquivo."""
+    with open(path, encoding="utf-8", errors="replace") as fh:
+        return parse_text(fh.read().splitlines())
+
+
+def parse_git(ref):
+    """Extrai os canais da versao commiteada da lista."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", BASE, "show", "%s:lista1.m3u" % ref],
+            capture_output=True,
+            check=True,
+        ).stdout.decode("utf-8", "replace")
+    except (OSError, subprocess.CalledProcessError) as exc:
+        print("  ! git %s indisponivel: %s" % (ref, exc))
+        return []
+    return parse_text(out.splitlines())
 
 
 def resolve_tvg_id(name, available):
@@ -123,10 +147,13 @@ def main():
     source = None
     entries = []
     for cand in CANDIDATES:
-        path = os.path.join(BASE, cand)
-        if not os.path.exists(path):
-            continue
-        found = parse_entries(path)
+        if cand.startswith("git:"):
+            found = parse_git(cand[4:])
+        else:
+            path = os.path.join(BASE, cand)
+            if not os.path.exists(path):
+                continue
+            found = parse_entries(path)
         if len(found) > len(entries):
             source, entries = cand, found
     if not entries:
