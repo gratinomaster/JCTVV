@@ -1,0 +1,111 @@
+Backup: lista5.m3u.bak.pre_corrigir_20260927_133614
+
+========================================================================
+AUDITORIA DO ARQUIVO ORIGINAL (83 linhas)
+========================================================================
+  [x] header sem x-tvg-url/url-tvg (nenhum EPG informado)
+  entradas #EXTINF: 41 | links: 41 | links unicos: 24
+  duplicados: 17
+  sem tvg-id: 41 | sem tvg-logo: 0 | logo nao .jpg: 0 | logo imgur: 0
+  link sem #EXTINF na linha de cima: 0
+
+  Links do original testados (HTTP + tipo de rendition):
+    OK       HTTP 200 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-
+    OK       HTTP 200 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-
+    OK       HTTP 200 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    MORTO    HTTP 410 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/ffaeb5d9-8376-4a2b-
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=%2Fclt1%2Fva02
+    SO AUDIO HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584194~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584194~url=%2Fclt1%2Fva02
+    SO AUDIO HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584194~url=%2Fclt1%2Fva02
+    SO AUDIO HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584194~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584194~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1790584176~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1790584176~url=%2Fclt1%2Fva02
+    SO AUDIO HTTP 200 https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1790584176~url=%2Fclt1%2Fva02
+    SO AUDIO HTTP 200 https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1790584176~url=%2Fclt1%2Fva02
+    OK       HTTP 200 https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1790584176~url=%2Fclt1%2Fva02
+
+========================================================================
+1) FONTES DE EPG TESTADAS (precisam cobrir ABCNewsLive.us, CBSNews.us)
+========================================================================
+  [+] iptv-epg.org US (XMLTV)      epg-us.xml.gz
+        ABCNewsLive.us     hoje=27 amanha=36 depois=41 OK
+        CBSNews.us         hoje=24 amanha=25 depois=28 OK
+  [+] epg.pw US                    epg_US.xml.gz
+        ABCNewsLive.us     hoje=0 amanha=0 depois=0 INCOMPLETO
+        CBSNews.us         hoje=0 amanha=0 depois=0 INCOMPLETO
+  [+] epgshare01 US2               epg_ripper_US2.xml.gz
+        ABCNewsLive.us     hoje=0 amanha=0 depois=0 INCOMPLETO
+        CBSNews.us         hoje=0 amanha=0 depois=0 INCOMPLETO
+  [+] AqFad2811 epg                epg.xml.gz
+        ABCNewsLive.us     hoje=0 amanha=0 depois=0 INCOMPLETO
+        CBSNews.us         hoje=0 amanha=0 depois=0 INCOMPLETO
+  [x] iptv-org guide (descontinuado) us.xml.gz -> descartada (HTTP 404)
+  [x] kutappa mirror               us.xml.gz -> descartada (HTTP 404)
+
+  EPG(s) final(is) no header: https://iptv-epg.org/files/epg-us.xml.gz
+
+========================================================================
+2) tvg-logo (.jpg, sem imgur, testado)
+========================================================================
+  https://keyframe-cdn.abcnews.com/s OK    image/jpeg
+  https://upload.wikimedia.org/wikip FALHA nao termina em .jpg
+  https://keyframe-cdn.abcnews.com/s OK    image/jpeg
+  https://keyframe-cdn.abcnews.com/s OK    image/jpeg
+  https://keyframe-cdn.abcnews.com/s OK    image/jpeg
+  https://keyframe-cdn.abcnews.com/s OK    image/jpeg
+  https://assets2.cbsnewsstatic.com/ OK    image/jpeg
+
+========================================================================
+3) TESTE DE STREAM (manifesto -> variante -> segmento) e ANTI-VIRUS
+========================================================================
+  OK   Disney+ / DSSOTT       OK        https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=
+       stream: 8 variante(s), segmento video/mp4 262144 bytes | anti-virus: sem chave VT e OTX sem dados (regra local ok)
+  OK   Akamai                 OK        https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+       stream: 4 variante(s), segmento video/MP2T 262144 bytes | anti-virus: OTX 0 pulso(s) rep=0 | VT sem chave
+  OK   Akamai                 OK        https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a
+       stream: 3 variante(s), segmento video/mp4 262144 bytes | anti-virus: OTX 0 pulso(s) rep=0 | VT sem chave
+  RUIM Akamai                 variante  https://abcnews-streams.akamaized.net/hls/live/2023569/abcnewshudson10/master.
+       stream: 10 variante(s), segmento 0 0 bytes | anti-virus: OTX 0 pulso(s) rep=0 | VT sem chave
+  OK   CBS oficial (cbsnstrea OK        https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca
+       stream: 6 variante(s), segmento video/MP2T 254928 bytes | anti-virus: OTX 0 pulso(s) rep=0 | VT sem chave
+
+  REMOVIDOS (1):
+    - ABC News Live 10 [Akamai] https://abcnews-streams.akamaized.net/hls/live/2023569/abcnewshudson10 (variante HTTP 404 / OTX 0 pulso(s) rep=0 | VT sem chave)
+
+========================================================================
+RESULTADO: 4 entradas gravadas em lista5.m3u
+========================================================================
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-us.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-us.xml.gz"
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live (Disney+ / DSSOTT)" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-...
+https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1790584173~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b...
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live (Akamai)" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="NEW...
+https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live 10 (Akamai)" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="...
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-name="CBS News 24/7 (CBS oficial)" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44b...
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+
+========================================================================
+RESUMO
+========================================================================
+  EPG no header : https://iptv-epg.org/files/epg-us.xml.gz
+  tvg-id usados : ABCNewsLive.us, CBSNews.us
+ -removidos do original: 7 links Google DAI (HTTP 410, CBS News 24/7),
+                        17 duplicados e as renderizacoes so de audio (audio-aac-*),
+                        1 master Akamai de backup (variantes em 404).
+  +CBS News 24/7 (Google DAI morto) -> stream oficial CBS (cbsnstream), mesmo tvg-id.
+  +ABC News Live  (Akamai oficial)  -> fonte estavel sem token, mesma afiliada Disney.
+  Anti-virus    : VirusTotal sem chave (401). Usado AlienVault OTX + heuristica local.
+  ATENCAO       : token Disney+/DSSOTT de Disney+ / DSSOTT expira em 2026-09-28 08:29 UTC (renovar a cada uso ou usar a fonte Akamai).
+  Como reexecutar: python3 corrigir_lista5_20260927.py e depois python3 validar_lista5_20260927.py
