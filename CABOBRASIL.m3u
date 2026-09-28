@@ -89,3 +89,5 @@ http://45.177.114.114/HISTORY/index.m3u8
 http://170.83.16.50/SONY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
 http://45.162.64.114/TNT/index.m3u8
+#EXTINF:-1 tvg-id="Space.br" tvg-name="Space" tvg-logo="https://iptv-epg.org/images/Z1zXYTAVvdMMCm70DaTpi5d37Ffi0_IdSYyhBbpJGeN-5DDm8ORsuKB9_3-Ze3mHNyQs_lT1nM6fd-jqQB_X1j9T5UnHt14vjNGT8xVv" group-title="TV PAGA",Space
+http://45.162.64.114/SPACE/index.m3u8
