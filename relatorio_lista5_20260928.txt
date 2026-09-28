@@ -1,0 +1,139 @@
+Backup: lista5.m3u.bak.pre_corrigir_20260928_162128
+
+Correcao do lista5.m3u - 2026-09-28 16:21:12 (UTC)
+chave VirusTotal: ausente -> triagem local
+
+========================================================================
+1) AUDITORIA DO ARQUIVO ORIGINAL
+========================================================================
+  linhas: 71 | #EXTINF: 35 | links: 35 | links unicos: 19
+  duplicados exatos: 16
+  link sem #EXTINF na linha de cima: 0
+  entradas sem tvg-id: 35
+  entradas sem tvg-logo: 0
+  logos nao .jpg: 0
+  logos em imgur: 0
+  header #EXTM3U: #EXTM3U
+
+========================================================================
+2) TESTE DOS LINKS (playlist + rendition + segmento + anti-virus)
+========================================================================
+  OK       206 master fMP4/moof+mdat [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790684424~url=%2Flas1%2Fva01%2Fd
+          stream: OK | anti-virus: triagem local ( VirusTotal sem chave )
+  OK       206  media fMP4/moof+mdat [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790684424~url=%2Flas1%2Fva01%2Fd
+          stream: OK | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media fMP4/emsg+moof+mdat [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790684424~url=%2Flas1%2Fva01%2Fd
+          stream: somente audio (init segment so tem faixa de audio) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206 master 7 variantes, melhor 1280x720 [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0
+          stream: VOD gravado (todas as variantes tem ENDLIST) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206 master 7 variantes, melhor 1280x720 [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/7361ad2e-d02c-47c5-b38b-84
+          stream: VOD gravado (todas as variantes tem ENDLIST) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media 4 segmentos, endlist=True [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0
+          stream: VOD gravado (nao e canal ao vivo) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media 4 segmentos, endlist=True [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0
+          stream: VOD gravado (nao e canal ao vivo) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media 4 segmentos, endlist=True [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0
+          stream: VOD gravado (nao e canal ao vivo) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media 4 segmentos, endlist=True [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/7361ad2e-d02c-47c5-b38b-84
+          stream: VOD gravado (nao e canal ao vivo) | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  206  media 4 segmentos, endlist=True [ABC News Live] https://linear-abcnews-ftc-na-west-1.media.dssott.com/int/ps01/disney/7361ad2e-d02c-47c5-b38b-84
+          stream: VOD gravado (nao e canal ao vivo) | anti-virus: triagem local ( VirusTotal sem chave )
+  OK       206 master fMP4/moof+mdat [ABC News Live] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-c
+          stream: OK | anti-virus: triagem local ( VirusTotal sem chave )
+  OK       206  media fMP4/moof+mdat [ABC News Live] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-c
+          stream: OK | anti-virus: triagem local ( VirusTotal sem chave )
+  OK       206  media fMP4/moof+mdat [ABC News Live] https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-c
+          stream: OK | anti-virus: triagem local ( VirusTotal sem chave )
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+  REMOVER  410                     [CBS News 24/7] https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a
+          stream: HTTP 410 | anti-virus: content-type inesperado: text/html; charset=utf-8
+
+========================================================================
+3) ESCOLHA DO LINK POR CANAL E POR AFILIADA
+========================================================================
+  ABC News Live / Akamai/CDN ABC (akamaized.net)
+    master sim | 3 variantes, melhor 1920x1080 | container fMP4/moof+mdat | faixas - | segmento 400001 bytes
+    dispensado (rendition da mesma afiliada, coberta pelo master): 2dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+    dispensado (rendition da mesma afiliada, coberta pelo master): a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+  ABC News Live / Disney+/ABC (dssott.com)
+    master sim | 8 variantes, melhor 1280x720 | container fMP4/moof+mdat | faixas - | segmento 400001 bytes
+    dispensado (rendition da mesma afiliada, coberta pelo master): 3c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+  CBS News 24/7: NENHUM link aprovado no teste -> canal removido da lista
+
+========================================================================
+4) LOGOS (tem que ser .jpg, funcional e fora do imgur)
+========================================================================
+  [ABC News Live] OK    https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+           http=200 ct=image/jpeg bytes=15216 -> JPEG ok
+
+========================================================================
+5) FONTES DE EPG (hoje / amanha / depois de amanha)
+========================================================================
+  dias verificados (UTC): 20260928, 20260929, 20260930
+  testando epgshare01 US2: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+    (gzip em 1 camada(s), 6.3 MB lidos de 6.3 MB)
+    HTTP ok=True | last-modified=Mon, 28 Sep 2026 10:38:27 GMT
+    canais encontrados: ['ABC.News.Live.us2']
+      ABC.News.Live.us2: 20260928=36 | 20260929=41 | 20260930=40
+
+  testando epgshare01 ALL_SOURCES1: https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz
+    (gzip em 1 camada(s), 188.1 MB lidos de 188.1 MB)
+    HTTP ok=True | last-modified=Mon, 28 Sep 2026 10:38:09 GMT
+    canais encontrados: ['ABC.News.Live.us2']
+      ABC.News.Live.us2: 20260928=36 | 20260929=41 | 20260930=40
+    -> validada, mas NAO inserida: os mesmos canais ja vem de uma EPG aprovada e esta pesa 188 MB (pesada demais para o player)
+
+  testando epg.pw US: https://epg.pw/xmltv/epg_US.xml.gz
+    (gzip em 1 camada(s), 20.8 MB lidos de 20.8 MB)
+    HTTP ok=False | last-modified=Mon, 28 Sep 2026 00:08:01 GMT
+    canais encontrados: []
+    -> descartada: faltou canal ou dia sem programa
+
+  EPGs aprovadas: 1
+    - https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+
+========================================================================
+6) GRAVACAO
+========================================================================
+  backup: lista5.m3u.bak.pre_corrigir_20260928_162128
+  entradas gravadas: 2 | links: 2
+  link sem #EXTINF na linha de cima: 0
+  entradas sem tvg-id: 0
+  entradas sem tvg-logo: 0
+  logos nao .jpg: 0
+  logos imgur: 0
+  entradas sem url-tvg: 0
+
+  lista5.m3u gravado (1133 bytes)
+
+========================================================================
+RESUMO
+========================================================================
+  antes: 35 entradas (19 links unicos)
+  depois: 2 entradas
+    ABC News Live | Akamai/CDN ABC (akamaized.net) | tvg-id=ABC.News.Live.us2 | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+    ABC News Live (Disney+/ABC) | Disney+/ABC (dssott.com) | tvg-id=ABC.News.Live.us2 | logo=https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  links reprovados: 14 de 19 testados
+    - somente audio (init segment so tem faixa de audio) | 449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+    - VOD gravado (todas as variantes tem ENDLIST) | b4.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+    - VOD gravado (todas as variantes tem ENDLIST) | 1f.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+    - VOD gravado (nao e canal ao vivo) | cba014d2/r/7cf5a845-26b7-4ab5-88a3-f6a0bd5f101d/f45c-MAIN/03/128_complete.m3u8
+    - VOD gravado (nao e canal ao vivo) | fc472e9b7/f45c-MAIN/03/1200_complete-9c36558f-6d96-4f60-93aa-a415b5d09129.m3u8
+    - VOD gravado (nao e canal ao vivo) | fc472e9b7/f45c-MAIN/03/1800_complete-9c36558f-6d96-4f60-93aa-a415b5d09129.m3u8
+    - VOD gravado (nao e canal ao vivo) | 346df51a/r/e7351f40-a64e-42d0-951d-cd58e877a454/b763-MAIN/03/128_complete.m3u8
+    - VOD gravado (nao e canal ao vivo) | 5966e0467/b763-MAIN/03/1200_complete-e9ec9d34-b3e9-4872-9e5c-bd46d2519c87.m3u8
+    - HTTP 410 | xiTQTkCT1SLu6rjUSQ/stream/6bd61014-78a7-46e6-a29a-b713cf9f802d:DLS/master.m3u8
+    - HTTP 410 | 713cf9f802d:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+    - HTTP 410 | 13cf9f802d:DLS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+    - HTTP 410 | 13cf9f802d:DLS/variant/e45ac8e413a627d436bba392e6f69412/bandwidth/1549000.m3u8
+    - HTTP 410 | 13cf9f802d:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+    - HTTP 410 | 13cf9f802d:DLS/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8
