@@ -37,29 +37,28 @@ HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
 # "git:HEAD" usa a ultima versao commiteada (tokens mais atuais).
 CANDIDATES = [
     "git:HEAD",
-    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_044120",
-    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_043613",
-    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_021005",
-    "lista1.m3u.bak.pre_urltvg_tvgid_20260926_231408",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260924_135651",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260923_080635",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260922_182555",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260922_134507",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260921_152704",
-    "lista1.m3u.bak.pre_corrigir_tvgid_20260921_123036",
-    "lista1.m3u.bak.pre_tvg_20260926_021625",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260928_090328",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_164626",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_184531",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260927_212736",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260928_043636",
+    "lista1.m3u.bak.pre_urltvg_tvgid_20260928_132515",
+    "lista1.m3u.bak.pre_epg_ids_20260926_205903",
+    "lista1.m3u.bak.pre_fix_20260926_110909",
+    "lista1.m3u.bak.pre_fix_20260926_162638",
+    "lista1.m3u.bak.pre_tvgid_20260929_050636",
     "lista1.m3u.bak",
 ]
 
 # Regras de tvg-id, avaliadas em ordem sobre o nome do canal.
 # Cada id precisa existir em alguma das tres fontes XMLTV.
 RULES = [
-    (r"sportv|sports?\b", "sportv"),
-    (r"\bge\.?globo\b|globo esporte|globo\.com/ge", "ge-tv"),
+    (r"sportv", "sportv"),
     (r"\bg1\b|globo news|jornal nacional|bonfim", "globonews"),
+    (r"\bge\b\s*\.?\s*globo|ge\.globo|globo esporte|\bge\b", "ge-tv"),
     (r"cbn", None),  # CBN nao existe em nenhuma das 3 fontes -> sem id
-    (r"gnt|multishow|universal|telecine|premiere|bis\b|combate|gnt", "gnt"),
-    (r"cdn\s*google|teste live|globo|abtv|record", "tv-globo"),
+    (r"gnt|multishow|universal|telecine|premiere|bis\b|combate", "gnt"),
+    (r"globo|abtv|record", "tv-globo"),
 ]
 
 EXTINF_RE = re.compile(r'^#EXTINF:(?P<dur>-?[\d.]+)\s*(?P<attrs>.*?),(?P<name>.*)$')
