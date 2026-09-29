@@ -75,14 +75,12 @@ http://181.78.197.59:8000/play/a081/index.m3u8
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
-#EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
-https://media.cdntvms.com.br/sportv_sat/index.m3u8
 #EXTINF:-1 tvg-id="SporTV2.br" tvg-name="SporTV 2" tvg-logo="https://iptv-epg.org/images/O0vl3DDlxIW_ZYHRAQeQEA0UFAy8D4HoqkbHNhEFb5df_9Vojx3LID2PS8fDtLdTforfr384Oej4hCMQ9H2Az0UkPHWJPMQg1nbLu7cNnmQ" group-title="ESPORTES",SporTV 2
 http://45.185.11.126:8000/play/a05f/index.m3u8
-#EXTINF:-1 tvg-id="SporTV3.br" tvg-name="SporTV 3" tvg-logo="https://iptv-epg.org/images/bOG2kNmz9sCSOeuD_EvtXWp-oiJdXELVU1rnaan7yOMhSBII9TsJiZ4wX3wNUcSNW7pWRvlk0vWgjpse5YNWtRl9qOg2nsBEmypbpJG1dIo" group-title="ESPORTES",SporTV 3
-http://170.83.49.66:8083/SPORTV3HD/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.49.66:8083/AXNHD/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannel.br" tvg-name="Discovery Channel" tvg-logo="https://iptv-epg.org/images/SbRrdzf5tDGVxBFJC17uE9or6cRL5CYwzHa4b1yhFVnHwg2UaVlgqW2mSpMMwkqSSoUydIMtNQm_HkWtSMpmeRznaB4v5OWxp-RYDnUS0U8wUytxlSgQLkU" group-title="TV PAGA",Discovery Channel
+http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="HistoryChannel.br" tvg-name="History" tvg-logo="https://iptv-epg.org/images/8m6SBtz70xf67rDPSfE86lLbflXemQf7B-4llxXfdj2WNYagZ4HTEK8nHuoJQ_-bLDQ-KA7u7A4fr7NbBXw5V_9qUjcDiOAbxZwfQBCNh8s9EWnAeo1i" group-title="TV PAGA",History
 http://45.177.114.114/HISTORY/index.m3u8
 #EXTINF:-1 tvg-id="SonyChannel.br" tvg-name="Sony Channel" tvg-logo="https://iptv-epg.org/images/LO3qTgCeVH3ABTNJ5suw8qfY0QkmuCMAZOTl7D_UQJNnAsFkGHWlp-NfJjDgtPvhRZCMT1vMDHgTEvh0ko_28Zy2D0XMFVnRXwZcgEaXm_qNh5k0" group-title="TV PAGA",Sony Channel
