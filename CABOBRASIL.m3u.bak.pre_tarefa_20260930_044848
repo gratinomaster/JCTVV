@@ -33,7 +33,7 @@ http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
 http://45.162.64.114/RECORD_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="Record TV" tvg-logo="https://iptv-epg.org/images/f43hW01Gq8qBhpM2lenZ8LXIxg7ygUOKz96zS0XXRUjO15nQzl3U75CRhpRQrfYvjSaIycUfPaX26QkIZfN3RENIAMavVgmMrLclwYVrz9mCIoHS9qjS" group-title="TV ABERTA",Record TV
 https://cdn.live.br1.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeBrasil.br" tvg-name="Rede Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Rede_Brasil_De_Televis%C3%A3o_2023.png/500px-Rede_Brasil_De_Televis%C3%A3o_2023.png" group-title="TV ABERTA",Rede Brasil
+#EXTINF:-1 tvg-id="RedeBrasil.br" tvg-name="Rede Brasil" tvg-logo="https://i.imgur.com/TXJKwzZ.png" group-title="TV ABERTA",Rede Brasil
 https://redebrasil.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="RedeGospel.br" tvg-name="Rede Gospel" tvg-logo="https://iptv-epg.org/images/-1tNpn9mF3bytrIqXi_yZe_PLFbw48MS_pZWlcmXyYtR1LaPLSVO948YG0uB5RLLOAtSvaKxLHWdxgltqKH9iBHHtqZbqrTe7Rdt6FQXhBViwZU" group-title="TV ABERTA",Rede Gospel
 https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
@@ -47,7 +47,7 @@ http://45.177.114.115/RIT_TV/index.m3u8
 https://media.cdntvms.com.br/sbt_sat/index.m3u8
 #EXTINF:-1 tvg-id="SBTBrasil.br" tvg-name="SBT Brasil" tvg-logo="https://iptv-epg.org/images/IhBKr6if2CmQWb4O9DngapOUoo7bGtlqM3TsFCSexSMCbstvFdICum_7n2UKzhZdD6CnMQrcQb0iQ1AWgiwT8OX_FDjp31cTGaG4WolTB2wVHw" group-title="TV ABERTA",SBT Brasil
 https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
-#EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Logomarca_da_TV_A_Cr%C3%ADtica_-_2024.png/500px-Logomarca_da_TV_A_Cr%C3%ADtica_-_2024.png" group-title="TV ABERTA",TV A Crítica
+#EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://i.imgur.com/j51rBro.png" group-title="TV ABERTA",TV A Crítica
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" tvg-name="TV Aparecida" tvg-logo="https://iptv-epg.org/images/kYT6RRrdTnnihZU7AYqoa8_cAQifZoENzKSNOLu5Qv3KCEj1B81PY2H6xvBNFNLh-U6SDlao72P8bBF44ZWNegXukBye4Deo67Mcy8h3mnaBtQ3B" group-title="TV ABERTA",TV Aparecida
 https://cdn.live.br1.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
@@ -79,8 +79,6 @@ http://45.162.64.114/ESPN_BRASIL/index.m3u8
 http://45.185.11.126:8000/play/a05f/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.49.66:8083/AXNHD/index.m3u8
-#EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network" tvg-logo="https://iptv-epg.org/images/s2rzARxRZTIsYneNcs7czDS_E6LoaTzg50a5g8Vtu5SJDJElCs7jaX_LxUMUkfULRT-p95AYIgpEwLwYniDJ439i8wzjkFALx9yMJbFy1bZzF_0q0QH-" group-title="TV PAGA",Cartoon Network
-http://45.162.64.114/CARTOON_NETWORK/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryChannel.br" tvg-name="Discovery Channel" tvg-logo="https://iptv-epg.org/images/SbRrdzf5tDGVxBFJC17uE9or6cRL5CYwzHa4b1yhFVnHwg2UaVlgqW2mSpMMwkqSSoUydIMtNQm_HkWtSMpmeRznaB4v5OWxp-RYDnUS0U8wUytxlSgQLkU" group-title="TV PAGA",Discovery Channel
 http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="HistoryChannel.br" tvg-name="History" tvg-logo="https://iptv-epg.org/images/8m6SBtz70xf67rDPSfE86lLbflXemQf7B-4llxXfdj2WNYagZ4HTEK8nHuoJQ_-bLDQ-KA7u7A4fr7NbBXw5V_9qUjcDiOAbxZwfQBCNh8s9EWnAeo1i" group-title="TV PAGA",History
