@@ -1,0 +1,110 @@
+CORRECAO lista5.m3u - 2026-09-30 14:30 UTC
+EPG inserido no header: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+Dias verificados: hoje=20260930  amanha=20261001  depois=20261002
+Backup do arquivo original: lista5.m3u.bak.20260930_142938
+ClamAV 1.5.4 (db 28139, 30-Sep-2026 06:24): 28 artefatos + o proprio .m3u -> 0 infeccao
+
+ESTADO ANTERIOR (o que estava errado)
+  35 entradas, mas so 4 canais reais. 31 delas eram lixo de scrape:
+    - 14x a MESMA url de variante da CBS (a mesma string repetida)
+    - 8x streams da Disney/ABC (dssott), incluindo o audio-aac 64k como "canal"
+    - 6x as renditions abcn-live-10-index_3 / _4_0 (audio isolado) como canais
+    - variantes de banda (441k/733k/1549k/2249k/4231k) listadas como canais
+  - nenhum tvg-id, nenhum url-tvg no header => ZERO guia
+  - nomes quebrados: "Video Multi-day flood threat from the Southwest...",
+    "News Live - ABC News" (raspagem de <title>/og:title)
+  - tvg-logo apontando para imagem de fundo da CBS, nao o logo
+  - 0 entradas com URL de master valida apos remover duplicatas
+
+CANAIS FINAIS (5 entradas, 1 master por canal, # na linha de cima em todas)
+  chno tvg-id                          nome                     EPG 30/09  01/10  02/10
+  1    ABC.News.Live.us2                ABC News Live            40      40      40
+  2    ABC.News.Live.us2                ABC News Live (Reserva)  40      40      40
+  3    CBS.News.National.Stream.us2     CBS News 24/7            28      28      28
+  4    Fox.News.Channel.HD.us2          Fox News Channel         20      20      20
+  5    Fox.Business.HD.us2              Fox Business             22      22      29
+
+SINAIS DE AFILIADAS E COMO FORAM RESOLVIDOS
+  ABC News -> 3 origens diferentes (a mesma afiliada em 3 CDNs):
+    a) abcnews-livestreams.akamaized.net  (CDN publico, fMP4)          -> ESCOLHIDA
+    b) pb-0n3n2ej0w8pl9.akamaized.net     (Disney, MPEG-TS)           -> mantida como Reserva
+    c) linear-abcnews...media.dssott.com  (Disney autenticado)        -> DESCARTADA
+       Motivo: o token hdnea expira em 2026-10-01 01:44 UTC, ou seja,
+       quebraria sozinho em ~11 horas. Nao serve para lista.
+    EPG das 3 = o mesmo: ABC.News.Live.us2
+  Fox News Channel -> 247.foxnews.com (HTTP 403, token hdnea morto)
+                   -> 247preview.foxnews.com (master estavel)         -> ESCOLHIDA
+    EPG = Fox.News.Channel.HD.us2
+  Fox Business -> 247.foxbusiness.com (HTTP 403, token hdnea morto)
+               -> 247preview.foxbusiness.com (master estavel)         -> ESCOLHIDA
+    EPG = Fox.Business.HD.us2
+  CBS News 24/7 -> dai.google.com/linear/hls/pa/event/... (DAI Google,
+    evento de insercao dinamica de anuncio) -> HTTP 410 Gone
+               -> cbsn-us.cbsnstream.cbsnews.com (master oficial)      -> ESCOLHIDA
+    EPG = CBS.News.National.Stream.us2
+
+TESTE DE STREAM (master -> variante -> segmento de midia real baixado)
+  ABC News Live            HTTP 200  3 variantes  seg 200 524288B MPEG-TS
+  ABC News Live (Reserva)  HTTP 200  4 variantes  seg 200 524288B MPEG-TS
+  CBS News 24/7            HTTP 200  6 variantes  seg 200 524288B MPEG-TS
+  Fox News Channel         HTTP 200  2 variantes  seg 200 524288B MPEG-TS
+  Fox Business             HTTP 200  2 variantes  seg 200 524288B MPEG-TS
+  Descartados: 247.foxnews.com 403 | 247.foxbusiness.com 403 | dai.google.com 410
+
+ANTI-VIRUS
+  ClamAV 1.5.4, assinaturas: main.cvd + daily.cvd(28139) + bytecode.cvd
+  Varridos 28 arquivos: 5 manifests master, 5 variantes, 1 init fMP4,
+  10 segmentos de video, 1 segmento de audio, 4 logos, 2 playlists auxiliares
+  Resultado: 0 infeccao. O proprio lista5.m3u tambem: OK.
+  Sanidade dos containers: sync byte 0x47 em todos os .ts (MPEG-TS real);
+  init fMP4 com caixas ftyp+moov. Nada de executavel/HTML/script.
+  Reputacao de URL (dumps publicos, sem API key):
+    URLhaus recent + URLhaus online  -> 0 ocorrencias dos 13 hosts
+    OpenPhish (feed.txt)             -> 0 ocorrencias
+    SURBL (updates.txt)              -> 0 ocorrencias
+  Todos os hosts pertencem a CDN oficial das redes (akamaized.net, cbsnews.com,
+  cbsnewsstatic.com, foxnews.com, foxbusiness.com, abcnewsfe.com).
+  Obs: Spamhaus DBL via DNS neutra nao foi concludente (retorna NXDOMAIN ate
+  para o dominio de teste da propria Spamhaus), entao nao foi usado como prova.
+
+LOGOS - todos .jpg de verdade, nenhum no imgur
+  ABC News Live / Reserva  i.abcnewsfe.com  og:image de abcnews.go.com/live
+                           3072x1728  299808B  image/jpeg
+  CBS News 24/7            assets2.cbsnewsstatic.com  thumbnail oficial
+                           "247-key-channelthumbnail" do player da CBS
+                           640x360     32399B  image/jpeg
+  Fox News Channel         a57.foxnews.com (Boltdowns) asset da pagina /live
+                           676x380     21298B  image/jpeg
+  Fox Business             a57.foxnews.com (Boltdowns) asset da pagina FBN
+                           676x380     17992B  image/jpeg
+  Os 4 foram baixados e conferidos: magic FFD8FF, Content-Type image/jpeg e
+  dimensoes extraidas do SOF do JPEG. Os 4 URLs terminam literalmente em .jpg.
+  Os assets da Fox foram conferidos por dHash: o asset do Fox Business tem
+  distancia 61 da og-image do Fox Business e 139 da do Fox News (ou seja, e
+  mesmo o Fox Business, nao o Fox News trocado).
+  Descartados como logo: cbsn--main-bg.jpg (era imagem de fundo, nao logo),
+  s.abcnews.com/...16x9_608.jpg (frame de programa, nao a marca),
+  dtil.tmsimg.com (png), tv-logo/tv-logos (png), iptv-org/logos (png),
+  logowik (403), TVGarden (404), abcnews.go.com/images/... (403).
+
+FONTES DE EPG TESTADAS
+  epgshare01.online/epg_ripper_US2.xml.gz   200  6,4MB  -> USADA (4/4 canais)
+      janela do guia 2026-09-29 00:00 -> 2026-10-03 12:00, arquivo regravado
+      no servidor em 30-Sep-2026 05:37 (ou seja, atualizada hoje).
+  epg.pw/xmltv/epg_US.xml.gz                200  20,8MB -> 3/4 canais e so com
+      id numerico (465150 ABC / 465372 FNC / 464766 FBN), sem CBS News 24/7.
+      Nao serve como tvg-id, portanto nao foi usada.
+  epgshare01 US1, US3                       404
+  epgshare01_ALL_SOURCES1                   existe mas 194MB (so para 4 canais
+                                             de news nao compensa)
+  epgshare02.online                         DNS nao resolve
+  iptv-org.github.io/epg/guides/us/*.xml    404 (guia por canal nao existe)
+  AqFad2811/epg, memunez/epg, epg.pw/all   404
+  now2s4.com/epg                            DNS nao resolve
+  So existe UM guia US no epgshare01, entao uma unica url-tvg cobre a lista
+  inteira. A segunda fonte foi descartada de proposito: com id numerico ela
+  quebraria o casamento tvg-id em vez de servir de reserva.
+
+RESULTADO FINAL: 5 entradas, 0 duplicatas, 0 link orfao, 0 logo nao-jpg,
+0 imgur, 4/4 canais com EPG nos 3 dias, 5/5 streams reproduzindo midia real,
+0 deteccao de antivirus.
