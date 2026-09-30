@@ -1,4 +1,48 @@
-Teste lista5.m3u - 2026-09-30 01:50:58
-Total: 39 | funcionando: 39 | removidos: 0
+CORRECAO lista5.m3u - 2026-09-30 02:55:10
+EPG: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+Dias verificados: hoje=20260930 amanha=20261001 depois=20261002
+Backup: lista5.m3u.bak.20260930_025510
+ClamAV: 56 arquivo(s) varrido(s), 0-infecao(oes)
+
+CANAIS NOVO (5):
+  - ABC News Live              tvg-id=ABC.News.Live.us2              hoje=40 amanha=40 depois=40
+      https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+  - ABC News Live (Reserva)    tvg-id=ABC.News.Live.us2              hoje=40 amanha=40 depois=40
+      https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+  - Fox News Channel           tvg-id=Fox.News.Channel.HD.us2        hoje=20 amanha=20 depois=20
+      https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+  - Fox Business               tvg-id=Fox.Business.HD.us2            hoje=22 amanha=22 depois=29
+      https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+  - CBS News 24/7              tvg-id=CBS.News.National.Stream.us2   hoje=28 amanha=28 depois=28
+      https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
 
 REMOVIDOS:
+  - 30 entradas duplicadas/variantes (13x CBS News 24/7, 8x ABC Disney dssott,
+    6x ABC akamai index_3/index_4_0, 2x Fox e 1x CBS DAI): mantidas so as masters
+    estaveis verificadas.
+  - 247.foxnews.com e 247.foxbusiness.com com token hdnea: HTTP 403 (token expirado)
+  - linear-abcnews...media.dssott.com: token expira 2026-10-01 01:44 UTC
+  - dai.google.com/linear/...: URL de evento DAI, efemera
+
+SINAIS DE AFILIADAS ENCONTRADOS (e como foram resolvidos):
+  - ABC News Live: dssott.com (Disney Streaming) e pb-0n3n2ej0w8pl9.akamaized.net
+    (mesmo conteudo no CDN Disney). EPGachado: ABC.News.Live.us2
+  - Fox News Channel: 247.foxnews.com (token hdnea morto) -> 247preview.foxnews.com.
+    EPG achado: Fox.News.Channel.HD.us2
+  - Fox Business: 247.foxbusiness.com (token hdnea morto) -> 247preview.foxbusiness.com.
+    EPG achado: Fox.Business.HD.us2
+  - CBS News 24/7: cbsnstream.cbsnews.com e dai.google.com (feed DAI). EPG achado:
+    CBS.News.National.Stream.us2
+
+ANTI-VIRUS (ClamAV 1.4.6, assinaturas de hoje: main 63 / daily 28138 / bytecode 339):
+  56 arquivos varridos (manifestos, variantes, init e segmentos reais + logos) -> 0 endian
+  Reputacao: URLhaus + OpenPhish + Phishing.Database + Spamhaus DBL -> todos CLEAN
+
+FONTE EPG (uma unica, pois e a unica que contem os 4 tvg-id desta lista):
+  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+  Cobre 2026-09-29 a 2026-10-03, entao hoje + amanha + depois de amanha.
+  Alternativa testada: https://epg.pw/xmltv/epg_US.xml.gz tambem cobre os mesmos
+  4 canais, mas com ids numericos (465150 / 465372 / 464766 / 464941) e titulos
+  genericos ("ABC News Live" em vez do nome do programa), por isso nao foi usada.
+  epgshare01 US1/US3, epgshare02 e epg_all nao existem (404).
+
