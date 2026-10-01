@@ -372,8 +372,6 @@ print("=" * 66)
 partes = ['<?xml version="1.0" encoding="utf-8"?>', '<tv generator-info-name="EPGFULL">']
 
 for tid in m3u_ids:
-    if tid not in selected:
-        continue
     info = m3u_info.get(tid, {})
     name = info.get("name") or epg_meta.get(tid, {}).get("name") or tid
     logo = info.get("logo") or ""
