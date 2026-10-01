@@ -1,0 +1,37 @@
+[
+ {
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1790907521~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=4643b1f0-55f2-431c-8f1d-dadc52c90216~did=4202edbe-d442-4af9-bcc7-2299c9b94e2b~country=US~kid=k02~hmac=7b5f2eddf815c5a425bd68c9776582c2a75af4f6c8083dcbd7f9a6322156d905/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c",
+  "achados": [],
+  "ok": true,
+  "seg_bytes": 973244,
+  "virustotal": null
+ },
+ {
+  "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
+  "achados": [],
+  "ok": true,
+  "seg_bytes": 1500001,
+  "virustotal": null
+ },
+ {
+  "url": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1790824723~acl=/*~hmac=b97134c268be4cdd632011973d0a05bf8decc96b855a0055f3b9bb4da50c220c",
+  "achados": [],
+  "ok": true,
+  "seg_bytes": 1500001,
+  "virustotal": null
+ },
+ {
+  "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1790824723~acl=/*~hmac=b97134c268be4cdd632011973d0a05bf8decc96b855a0055f3b9bb4da50c220c",
+  "achados": [],
+  "ok": true,
+  "seg_bytes": 1500001,
+  "virustotal": null
+ },
+ {
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/596cf7e1-e559-4a39-a7e7-4df85d785394:DLS/master.m3u8",
+  "achados": [],
+  "ok": true,
+  "seg_bytes": 174840,
+  "virustotal": null
+ }
+]

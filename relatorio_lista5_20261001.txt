@@ -1,0 +1,125 @@
+RELATORIO lista5.m3u - 2026-10-01 03:15
+==========================================
+
+RESUMO
+  Antes : 40 entradas / 23 URLs unicas / 5 canais sem tvg-id e sem EPG
+  Depois:  5 entradas /  5 URLs unicas / 4 canais com tvg-id + EPG (3 dias)
+  Backup : lista5.m3u.bak.20261001_031143
+
+--------------------------------------------------------------------
+1. TESTE DOS STREAMS
+--------------------------------------------------------------------
+Todas as 23 URLs unicas foram testadas de verdade: HTTP + manifesto HLS +
+download de 1 segmento de midia. Resultado: 23/23 reproduzem.
+
+Bugs do proprio arquivo corrigidos durante o teste:
+  - URLs relativas de segmento (../) nao eram resolvidas -> 14 URLs davam 404
+  - token ?hdnea= do master Fox nao era herdado pelo filho -> 2 URLs davam
+    "Access Denied"
+Nenhum canal foi removido por estar quebrado; as 18 URLs redundantes
+(mesmo canal em varias qualidades/bitrates, 16 delas repetidas) foram
+descartadas e ficou 1 URL master por canal, que deixa o player escolher
+a qualidade.
+
+--------------------------------------------------------------------
+2. SINAIS DE AFILIADA IDENTIFICADOS
+--------------------------------------------------------------------
+  a) ABC News via Disney+  -> host linear-*.media.dssott.com com token
+     assinado dvt2=exp=...~hmac=... (playback de afiliado Disney+)
+  b) CBS News 24/7 via Pluto TV -> dai.google.com/linear/hls/pa/event/...
+     (DAI = Digital Ad Insertion do Pluto TV; confirmado pelo cabeçalho
+     "Created with Unified Streaming Platform", stack do Pluto)
+  c) FOX News e FOX Business -> token hdnea=exp=...~hmac=... (Fastly,
+     token de autorizacao/geo)
+  d) ABC News via Akamai -> origem oficial, sem token
+
+Para cada afiliada foi procurado EPG proprio. Resultado:
+  Disney+/dssott e Akamai  -> mesmo canal (ABC News Live), mesmo EPG
+  Pluto TV (DAI)          -> CBS News 24/7 tem EPG proprio no Pluto,
+                             mas so com D0/D+1; o com D0/D+1/D+2 vem do
+                             EPG US abaixo
+  FOX                      -> EPG US abaixo
+
+--------------------------------------------------------------------
+3. EPGs ESCOLHIDOS E TESTADOS
+--------------------------------------------------------------------
+  epg.pw/xmltv/epg_US.xml.gz (20 MB, ids numericos)          4/4 canais, D0+D1+D2
+  iptv-epg.org/files/epg-us.xml.gz (60 MB, ids legiveis)     4/4 canais, D0+D1+D2  <-- ESCOLHIDO
+  epgshare01.../epg_ripper_ALL_SOURCES1.xml.gz (187 MB)      4/4 canais, D0+D1+D2
+
+  => 1 EPG (iptv-epg.org) ja cobre 100% dos canais nos 3 dias.
+     O epgshare01 foi mantido como 2a fonte de redundancia no url-tvg,
+     mas ele usa outro esquema de tvg-id (ABC.News.Live.us2, Fox.News.Channel.HD.us2,
+     plex.tv.CBS.News.24/7.plex), entao o guia efetivo vem do iptv-epg.org.
+
+  Fallback offline exato gerado: l5_epg.xml (197 KB, 357 programas,
+  mesmos 4 tvg-id, D0+D1+D2) - usavel se o iptv-epg.org cair.
+
+--------------------------------------------------------------------
+4. PROGRAMACAO POR CANAL (lida do EPG que esta na url-tvg)
+--------------------------------------------------------------------
+  ABCNewsLive.us      [US - ABC News Live]     HOJE=40  AMANHA=40  DEPOIS=34
+      hoje: Burden of Proof / ABCNL Prime With Linsey Davis /
+            ABC World News Tonight With David Muir
+  CBSNews.us          [US - CBS News]           HOJE=28  AMANHA=28  DEPOIS=30
+      hoje: The Daily Report / CBS Evening News / 24/7 Primetime
+  FoxBusiness.us      [US - Fox Business]       HOJE=22  AMANHA=29  DEPOIS=42
+      hoje: Legends & Lies: The Patriots / Paid Programming / 1776 Gold & Silver!
+  FoxNewsChannel.us   [US - FOX NEWS]           HOJE=20  AMANHA=20  DEPOIS=24
+      hoje: Jesse Watters Primetime / Hannity / Gutfeld!
+
+--------------------------------------------------------------------
+5. ANTI-VIRUS
+--------------------------------------------------------------------
+ATENCAO: nao existe VIRUSTOTAL_API_KEY no ambiente, entao a VirusTotal nao
+foi consultada. Foi rodado um motor local (l5_step5_antivirus.py) com:
+  - assinatura EICAR em qualquer byte baixado
+  - magic bytes de malware (MZ/ELF/RAR/ZIP/script/Mach-O)
+  - injecao no manifesto HLS (<script>, javascript:, data:, .exe/.dll/.ps1...)
+  - integridade do segmento (MPEG-TS 188/bytes, fMP4, AAC)
+  - heuristica de URL (punycode, host IP cru, credencial na URL, CRLF, esquema)
+Resultado: 23/23 URLs limpas -> NENHUM canal removido por isso.
+
+O motor foi validado com controle positivo: detecta EICAR, PE/MZ, <script>,
+.exe, .ps1, punycode, credencial e CRLF, e nao acusa falso positivo nos
+dominios legítimos (foxnews.com, cbsnewsstatic.com).
+Se voce quiser a VirusTotal de verdade, exporte VIRUSTOTAL_API_KEY e rode
+`python3 l5_step5_antivirus.py` de novo.
+
+--------------------------------------------------------------------
+6. LOGOS
+--------------------------------------------------------------------
+Todos os 5 canais tem tvg-logo, todos em .jpg, todos validados baixando
+os bytes e checando a assinatura JPEG (FFD8FF). Nenhum link de imgur.com
+(no arquivo original ja nao havia nenhum).
+  ABC News (dssott)  -> s.abcnews.com/.../abc_news_live...16x9_608.jpg
+  ABC News (akamai)  -> keyframe-cdn.abcnews.com/streamprovider10.jpg
+  FOX News           -> a57.foxnews.com/cf-images.../image.jpg
+  FOX Business       -> a57.foxnews.com/cf-images.../image.jpg
+  CBS News 24/7      -> assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+
+--------------------------------------------------------------------
+7. FORMATO
+--------------------------------------------------------------------
+  - header #EXTM3U com url-tvg + x-tvg-url (padrao EPGLite do repo),
+    catchup="append" e catchup-days="3"
+  - toda URL tem #EXTINF imediatamente na linha de cima: 5/5 conferidas
+  - sem URLs duplicadas
+  - cada canal ganhou tvg-id, tvg-chno, tvg-name e group-title
+  - nomes antigos eram titulos de pagina web ("World News Tonight with
+    David Muir | Watch Live News on ABCNL", "Video Multi-day flood threat...",
+    "Watch Fox News Channel Online | Stream Fox News", etc.) e foram
+    trocados pelo nome do canal, com a origem entre colchetes
+
+--------------------------------------------------------------------
+8. VALIDACAO FINAL (l5_step7_validate.py)
+--------------------------------------------------------------------
+  [ok] header #EXTM3U presente
+  [ok] as 5 URLs tem #EXTINF na linha de cima
+  [ok] sem URLs duplicadas
+  [ok] os 2 EPGs do url-tvg respondem HTTP 200
+  [ok] 5/5 logos .jpg e JPEG valido
+  [ok] 5/5 streams reproduzem (manifesto + segmento)
+  [ok] 4/4 tvg-id encontrados no EPG com D0, D+1 e D+2
+
+  RESULTADO: 0 falha(s), 0 aviso(s)
