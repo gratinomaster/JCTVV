@@ -7,8 +7,6 @@ https://streaming.gruporba.com.br/rba.m3u8
 http://45.162.64.114/BAND_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://iptv-epg.org/images/OBnFhqow34YSUCoODefaQmri12i_Z3trxMfeGIUpVS5otHchIAEACrrxEx1WLgYVKgeUBdqcahnd58WAiJBtQdGEB0Q1jPCnlof4uzjbpg" group-title="TV ABERTA",Band SP
 https://media.cdntvms.com.br/band_sat/index.m3u8
-#EXTINF:-1 tvg-id="CanaldoBoi.br" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
-https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
 #EXTINF:-1 tvg-id="Futura.br" tvg-name="Canal Futura" tvg-logo="https://iptv-epg.org/images/FKN4lgD56Xso6jJkAEGJ2p4qtCwk9mcU9olZ2jZHYhVNrVKaVl5Zp8ezZsRpyZ1YxXMBNZykVhSI7vifmNsOsk_Px7WyFy7GlZw6LnzsGA" group-title="TV ABERTA",Canal Futura
 http://45.162.64.114/FUTURA/index.m3u8
 #EXTINF:-1 tvg-id="CanalGov.br" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
@@ -77,10 +75,10 @@ http://181.78.197.59:8000/play/a081/index.m3u8
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
-#EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
-http://45.185.11.126:8000/play/a05g/index.m3u8
 #EXTINF:-1 tvg-id="SporTV2.br" tvg-name="SporTV 2" tvg-logo="https://iptv-epg.org/images/O0vl3DDlxIW_ZYHRAQeQEA0UFAy8D4HoqkbHNhEFb5df_9Vojx3LID2PS8fDtLdTforfr384Oej4hCMQ9H2Az0UkPHWJPMQg1nbLu7cNnmQ" group-title="ESPORTES",SporTV 2
 http://45.185.11.126:8000/play/a05f/index.m3u8
+#EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
+http://45.185.11.126:8000/play/a05g/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.49.66:8083/AXNHD/index.m3u8
 #EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network" tvg-logo="https://iptv-epg.org/images/s2rzARxRZTIsYneNcs7czDS_E6LoaTzg50a5g8Vtu5SJDJElCs7jaX_LxUMUkfULRT-p95AYIgpEwLwYniDJ439i8wzjkFALx9yMJbFy1bZzF_0q0QH-" group-title="TV PAGA",Cartoon Network
@@ -91,9 +89,9 @@ http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8
 http://45.177.114.114/HISTORY/index.m3u8
 #EXTINF:-1 tvg-id="SonyChannel.br" tvg-name="Sony Channel" tvg-logo="https://iptv-epg.org/images/LO3qTgCeVH3ABTNJ5suw8qfY0QkmuCMAZOTl7D_UQJNnAsFkGHWlp-NfJjDgtPvhRZCMT1vMDHgTEvh0ko_28Zy2D0XMFVnRXwZcgEaXm_qNh5k0" group-title="TV PAGA",Sony Channel
 http://170.83.16.50/SONY_CHANNEL/index.m3u8
-#EXTINF:-1 tvg-id="Space.br" tvg-name="Space" tvg-logo="https://iptv-epg.org/images/Z1zXYTAVvdMMCm70DaTpi5d37Ffi0_IdSYyhBbpJGeN-5DDm8ORsuKB9_3-Ze3mHNyQs_lT1nM6fd-jqQB_X1j9T5UnHt14vjNGT8xVv" group-title="TV PAGA",Space
-http://45.162.64.114/SPACE/index.m3u8
 #EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
 http://45.162.64.114/TNT/index.m3u8
+#EXTINF:-1 tvg-id="Space.br" tvg-name="Space" tvg-logo="https://iptv-epg.org/images/Z1zXYTAVvdMMCm70DaTpi5d37Ffi0_IdSYyhBbpJGeN-5DDm8ORsuKB9_3-Ze3mHNyQs_lT1nM6fd-jqQB_X1j9T5UnHt14vjNGT8xVv" group-title="TV PAGA",Space
+http://45.162.64.114/SPACE/index.m3u8
 #EXTINF:-1 tvg-id="WarnerChannel.br" tvg-name="Warner Channel" tvg-logo="https://iptv-epg.org/images/sVMeHQhJ5YrtDgeSepgxSHZJurZfncQc8wY1wwdxCuGzmUjEwgRPwpRvoNS7hRiVvz3Gh_V-U-R_DBu8KoQU25wtrPlI2kl-SrbKbJjMt4ScryP1X-w" group-title="TV PAGA",Warner Channel
 http://45.177.114.115/WARNER_CHANNEL/index.m3u8
