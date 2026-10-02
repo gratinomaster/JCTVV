@@ -281,6 +281,43 @@ for cc, caminho in fontes:
             n_prog += 1
     print(f"  {PAIS_NOME.get(cc, cc):<12} {n_prog:>6} programas aceitos (total {len(programas):,})")
 
+# --- PASSO C: remove sobreposicao de horarios ------------------------------
+# As fontes trazem programmes que se sobrepoem no mesmo canal (ex.: TVCuatro.mx
+# com um noticiario de 30 min dentro de um programa de 3 h). Encurta o programa
+# anterior para terminar no inicio do seguinte; quando o programa fica sem tempo
+# util (mesmo start, stop menor) ele e descartado.
+print("  passo C: corrigindo sobreposicao de horarios...")
+re_stop = re.compile(r'(stop=")\d{14}([^"]*")')
+por_canal = {}
+for (tvg, st, sp), bloco in programas.items():
+    por_canal.setdefault(tvg, []).append((st, sp, bloco))
+
+ajustados = 0
+descartados = 0
+corrigidos = OrderedDict()
+for tvg, itens in por_canal.items():
+    # mesmo start: o de maior stop vem primeiro e vence
+    itens.sort(key=lambda it: (it[0], tuple(-int(c) for c in it[1] if c.isdigit())))
+    anterior = None                      # (start, stop, bloco) ja aceito
+    for st, sp, bloco in itens:
+        if anterior is not None:
+            st_ant, sp_ant, bloco_ant = anterior
+            if st <= st_ant:             # contido no anterior: descarta
+                descartados += 1
+                continue
+            if st < sp_ant:              # sobrepoe: encurta o anterior
+                bloco_ant = re_stop.sub(
+                    lambda m: m.group(1) + st + m.group(2), bloco_ant, count=1)
+                sp_ant = st
+                ajustados += 1
+            corrigidos[(tvg, st_ant, sp_ant)] = bloco_ant
+        anterior = (st, sp, bloco)
+    if anterior is not None:
+        corrigidos[(tvg, anterior[0], anterior[1])] = anterior[2]
+
+programas = corrigidos
+print(f"  sobreposicao: {ajustados} encurtados, {descartados} descartados")
+
 # ---------------------------------------------------------------- 5. SAIDA
 barra("5. GRAVANDO EPGFULL.xml.gz")
 
