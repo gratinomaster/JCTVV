@@ -119,9 +119,11 @@ EPG_GLOBO = "tv-globo"
 EPG_G1 = "globonews"
 
 CANAIS_SPORTV = ("spo", "sportv", "sptv")
-CANAIS_GE = ("ge", "ber1", "ge-hd")
+CANAIS_GE = ("ge", "gehd", "ge-hd", "ber1")
 CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo", "abtv")
 CANAIS_G1_PREFIXO = ("g1", "rede", "tvl", "nsc", "tvvm", "vanguarda")
+# slugs G1 regionais que comecam por "globo" e cairiam em CANAIS_GLOBO
+CANAIS_G1_EXATOS = ("globo-rs1",)
 
 
 def obter_tvg_id(m3u8_url, title):
@@ -135,9 +137,11 @@ def obter_tvg_id(m3u8_url, title):
 
     if any(canal.startswith(p) for p in CANAIS_SPORTV) or "sportv" in titulo:
         return EPG_SPORTV
-    if canal in CANAIS_GE or "ge.globo" in titulo:
+    if any(canal == p or canal.startswith(p + "-") for p in CANAIS_GE) or "ge.globo" in titulo:
         return EPG_GE
-    if re.search(r"\bg1\b", titulo) or canal.startswith(CANAIS_G1_PREFIXO):
+    if canal in CANAIS_G1_EXATOS or canal.startswith(CANAIS_G1_PREFIXO):
+        return EPG_G1
+    if re.search(r"\bg1\b", titulo):
         return EPG_G1
     if any(canal.startswith(p) for p in CANAIS_GLOBO) or "abtv" in titulo:
         return EPG_GLOBO
