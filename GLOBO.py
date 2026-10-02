@@ -150,47 +150,57 @@ def obter_tvg_id(m3u8_url, title):
 
 
 EPG_URLS = (
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,"
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,"
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml "
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml "
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
 )
 
 
 def generate_m3u():
+    linhas = [f'#EXTM3U url-tvg="{EPG_URLS}" x-tvg-url="{EPG_URLS}"']
+    canais = 0
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {
+            executor.submit(extract_globoplay_data, url): url
+            for url in globoplay_urls
+        }
+
+        for future in concurrent.futures.as_completed(futures):
+            url = futures[future]
+
+            try:
+                title, m3u8_url, thumbnail_url = future.result()
+
+                if m3u8_url:
+                    thumbnail_url = thumbnail_url or ""
+
+                    tvg_id = obter_tvg_id(m3u8_url, title)
+                    atributo_tvg_id = f' tvg-id="{tvg_id}"' if tvg_id else ""
+
+                    linhas.append(
+                        f'#EXTINF:-1{atributo_tvg_id} tvg-name="{title}" '
+                        f'tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}'
+                    )
+                    linhas.append(m3u8_url)
+                    canais += 1
+
+                    print(f"Processado: {url}")
+
+                else:
+                    print(f"M3U8 não encontrado: {url}")
+
+            except Exception as e:
+                print(f"Erro ao finalizar {url}: {e}")
+
+    if not canais:
+        print("Nenhum canal encontrado: lista1.m3u mantida sem alterações.")
+        return
+
     with open("lista1.m3u", "w", encoding="utf-8") as output_file:
-        output_file.write(f'#EXTM3U url-tvg="{EPG_URLS}" x-tvg-url="{EPG_URLS}"\n')
+        output_file.write("\n".join(linhas) + "\n")
 
-        with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-            futures = {
-                executor.submit(extract_globoplay_data, url): url
-                for url in globoplay_urls
-            }
-
-            for future in concurrent.futures.as_completed(futures):
-                url = futures[future]
-
-                try:
-                    title, m3u8_url, thumbnail_url = future.result()
-
-                    if m3u8_url:
-                        thumbnail_url = thumbnail_url or ""
-
-                        tvg_id = obter_tvg_id(m3u8_url, title)
-                        atributo_tvg_id = f' tvg-id="{tvg_id}"' if tvg_id else ""
-
-                        output_file.write(
-                            f'#EXTINF:-1{atributo_tvg_id} tvg-name="{title}" '
-                            f'tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}\n'
-                        )
-                        output_file.write(f"{m3u8_url}\n")
-
-                        print(f"Processado: {url}")
-
-                    else:
-                        print(f"M3U8 não encontrado: {url}")
-
-                except Exception as e:
-                    print(f"Erro ao finalizar {url}: {e}")
+    print(f"lista1.m3u gerado com {canais} canais.")
 
 
 # Executa
