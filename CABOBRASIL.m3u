@@ -17,7 +17,7 @@ http://45.177.114.115/TV_BRASIL_2/index.m3u8
 http://170.83.49.66:8083/CANALRURALHD/index.m3u8
 #EXTINF:-1 tvg-id="UOL.br" tvg-name="Canal UOL" tvg-logo="https://iptv-epg.org/images/LYWORdKXYxofqLtK_BXg_y7NJhsJ6_-jvbvmfmX-bjxg_ewEm1vhS9Byb4iLXjxF7bK6nXVanIXev_lDLHTinP6IbPbNvCilHNOqYA" group-title="TV ABERTA",Canal UOL
 https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/chunklist_w98353333_b1000000_slen.m3u8
-#EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
+#EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/cancao-nova-tv-br.png" group-title="TV ABERTA",Canção Nova
 http://45.162.64.114/CANCAO_NOVA/index.m3u8
 #EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://iptv-epg.org/images/tBVpwfYcZK2qy8NBFMQX46Z6CN7sAi2HRHwTABmHCS24NTsLxOihM88JSWb7_wyEtPvghbZcQ3fdPMjNC_qbd3ZVcDaQkM_aRqdrqf7u5rI4qA" group-title="TV ABERTA",CNN Brasil
 https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8
@@ -31,6 +31,8 @@ https://media2.cdntvms.com.br/tv_morena_dorados/index.m3u8
 http://79.127.238.228:14093/
 #EXTINF:-1 tvg-id="JovemPanNews.br" tvg-name="Jovem Pan News" tvg-logo="https://iptv-epg.org/images/v4bwhmiP-BUI5JWSqroZL3YWVUwHyakv6q5z4B6ElOI_9H2XMQVJfsdIYiJGGkoU4wO5_m1EBH5HxeESqfr02w1BFZmDdgAgyVv53iCtuLNTq3BbgQ" group-title="TV ABERTA",Jovem Pan News
 http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
+#EXTINF:-1 tvg-id="NHK.br" tvg-name="NHK" tvg-logo="https://iptv-epg.org/images/OBhsGoIGYrGGiygXP4JGKnKXc89V-x2AgD-szeAzVs5VYSqsYX3SoL1AnNehw5rSagdfJrbWv_7HmPGxfgX7O8W-RFTCKMCLB7LK9Q" group-title="TV ABERTA",NHK World
+https://nhk.lls.pbs.org/index.m3u8
 #EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://iptv-epg.org/images/OzF7kxJ7GDpi4gIS5jhY7rTNJ6XaXw8QqUxazuN_pboR6a3cWUD3DShshABx9-O3nDbygJZiI898whmS57M4ijfaTLpLlYbaehnMSBQWsi0wirU" group-title="TV ABERTA",Record News
 http://45.162.64.114/RECORD_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="Record TV" tvg-logo="https://iptv-epg.org/images/f43hW01Gq8qBhpM2lenZ8LXIxg7ygUOKz96zS0XXRUjO15nQzl3U75CRhpRQrfYvjSaIycUfPaX26QkIZfN3RENIAMavVgmMrLclwYVrz9mCIoHS9qjS" group-title="TV ABERTA",Record TV
@@ -53,7 +55,7 @@ https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" tvg-name="TV Aparecida" tvg-logo="https://iptv-epg.org/images/kYT6RRrdTnnihZU7AYqoa8_cAQifZoENzKSNOLu5Qv3KCEj1B81PY2H6xvBNFNLh-U6SDlao72P8bBF44ZWNegXukBye4Deo67Mcy8h3mnaBtQ3B" group-title="TV ABERTA",TV Aparecida
 https://cdn.live.br1.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://iptv-epg.org/images/nkMmDpfmwLfPJafOYbhSCCwe05CiXYdKMJtcO2oCwM62oBkKr1pv-bZoe8BoQ-vutfd6_UDx-sfoBUe2FYJyo_Q5nRhZR-JIOgm3Ey1jthrI" group-title="TV ABERTA",TV Brasil
+#EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-brasil-br.png" group-title="TV ABERTA",TV Brasil
 http://45.162.64.114/TV_BRASIL/index.m3u8
 #EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://iptv-epg.org/images/967qTR_xsZZK1d658iBmm-NIXKXfhZENRfZzGbI4iIlTLc4bF83bjJPY8R-DkB9OdrEuYM8QN1JDet-Xhp0RvRNmcBmpFrm8rkikjn-2LNs" group-title="TV ABERTA",TV Cultura
 http://45.162.64.114/TV_CULTURA/index.m3u8
@@ -77,10 +79,6 @@ http://181.78.197.59:8000/play/a081/index.m3u8
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN Brasil" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN Brasil
 http://45.162.64.114/ESPN_BRASIL/index.m3u8
-#EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
-http://45.185.11.126:8000/play/a05g/index.m3u8
-#EXTINF:-1 tvg-id="SporTV2.br" tvg-name="SporTV 2" tvg-logo="https://iptv-epg.org/images/O0vl3DDlxIW_ZYHRAQeQEA0UFAy8D4HoqkbHNhEFb5df_9Vojx3LID2PS8fDtLdTforfr384Oej4hCMQ9H2Az0UkPHWJPMQg1nbLu7cNnmQ" group-title="ESPORTES",SporTV 2
-http://45.185.11.126:8000/play/a05f/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.49.66:8083/AXNHD/index.m3u8
 #EXTINF:-1 tvg-id="CartoonNetwork.br" tvg-name="Cartoon Network" tvg-logo="https://iptv-epg.org/images/s2rzARxRZTIsYneNcs7czDS_E6LoaTzg50a5g8Vtu5SJDJElCs7jaX_LxUMUkfULRT-p95AYIgpEwLwYniDJ439i8wzjkFALx9yMJbFy1bZzF_0q0QH-" group-title="TV PAGA",Cartoon Network
