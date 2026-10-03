@@ -1,0 +1,167 @@
+RELATORIO lista5.m3u - 2026-10-03 19:05 UTC
+======================================================================
+
+RESUMO
+  Antes : 20 entradas / 4 canais / 0 tvg-id / 0 EPG no header / 0 guia
+          2 canais MORTOPS (403) + 8 URLs com token que expira <24h
+          20 entradas = 4 canais repetidos em 5 qualidades diferentes
+          0 logos .jpg limpos (2 deles com query string apos o .jpg)
+  Depois:  4 entradas / 4 canais / 4 tvg-id (com fallback) / 2 EPG no header
+          4/4 canais reproduzindo, 4/4 com guia HOJE+AMANHA+DEPOIS
+          4/4 logos .jpg validos, nenhum imgur.com
+  Backup : lista5.m3u.bak.pre_corrigir_20261003_025137
+  Status : 0 falhas / 0 avisos na validacao final
+
+----------------------------------------------------------------------
+1. TESTE REAL DAS 20 URLs ANTIGAS (master -> variante -> segmento)
+----------------------------------------------------------------------
+  [MORTO] FOX News Channel  247.foxnews.com/...  HTTP 403
+          token hdnea=exp=1791052888 expirou em 03/10 18:41 UTC
+  [MORTO] FOX Business      247.foxbusiness.com  HTTP 403 (mesmo token)
+  [MORTO x8] ABC via Disney+  linear-*.media.dssott.com  dvt2=exp=1791135688
+          -> expirava em 04/10 17:41 UTC (<24h) e exige sessao Disney+
+  [OK] ABC via Akamai  abcnews-livestreams.akamaized.net  ate 1920x1080
+  [OK] CBS via Pluto/DAI  dai.google.com/linear/hls/pa/event/...  ate 1080p
+
+  Resumo do teste: das 20 URLs, 2 respondiam 403 e 8 eram tokens assinados
+  com menos de 24h de vida. As 10 restantes eram o mesmo canal repetido
+  (mesmo host, mesma midia, so mudando o bitrate) -> nao ha informacao
+  nova em manter duplicata.
+
+----------------------------------------------------------------------
+2. SINAIS DE AFILIADA E O EPG DE CADA UMA
+----------------------------------------------------------------------
+  a) ABC News via Disney+  -> linear-*-abcnews.media.dssott.com
+     dvt2=exp=...~hmac=... = playback de afiliada (Disney+ / Hotstar)
+     EPG procurado: e o MESMO canal (ABC News Live), um guia so.
+  b) CBS News 24/7 via Pluto TV -> dai.google.com/linear/hls/pa/event/...
+     DAI = Digital Ad Insertion, stack Unified Streaming da Pluto
+     EPG procurado: ids Pluto (ABCNewsLive.pluto / CBSNews24/7.pluto) e
+     o oficial (CBSNews.us). O oficial tem D0/D+1/D+2 em 2 bases.
+  c) FOX News e FOX Business -> 247.foxnews.com / 247.foxbusiness.com
+     token hdnea=exp=...~acl=/*~hmac=... (Fastly, token de autorizacao + geo)
+     EPG procurado: FoxNewsChannel.us / FoxBusiness.us (oficiais FOX).
+  d) ABC via Akamai (oficial) e FOX via 247preview (oficial sem token).
+
+  Conclusao: Disney+/Pluto/FOX sao MEIOS diferentes do mesmo canal, nao
+  canais diferentes. Nenhuma afiliada precisa de EPG separado - o EPG e
+  do canal, e ele foi localizado nas duas bases de EPG.
+
+----------------------------------------------------------------------
+3. URLS ESCOLHIDAS (todas testadas, sem token, sem expiracao)
+----------------------------------------------------------------------
+  ABC News Live  -> abcnews-livestreams.akamaized.net/.../abcn-live-10-index.m3u8
+                    3 variantes, 1920x1080, fMP4/CMAF, oficial
+  FOX News Ch.   -> 247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+                    2 variantes, 426x240, MPEG-TS, oficial FOX sem token
+  FOX Business    -> 247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+                    2 variantes, 426x240, MPEG-TS, oficial FOX sem token
+  CBS News 24/7  -> dai.google.com/linear/hls/pa/event/Sid4xiTQ.../master.m3u8
+                    8 variantes, 1920x1080, MPEG-TS, Pluto/DAI
+
+  Troca do FOX: a rota 247.* com token esta em 403 e o token hdnea nao e
+  reproduzivel (expirou). A rota 247preview.* e a mesma programacao ao
+  vivo, sem token e sem expiracao - testei tambem 247.*/fncv3preview
+  (403), chunklist (404) e ovp.* (DNS inexistente).
+
+----------------------------------------------------------------------
+4. EPG: DUAS FONTES NO url-tvg, CADA CANAL COM 2 tvg-id
+----------------------------------------------------------------------
+  Header (padrao do repo):
+    url-tvg="https://iptv-epg.org/files/epg-us.xml.gz
+             https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+    x-tvg-url="mesmas duas, separadas por virgula"
+
+  Ambas respondem HTTP 200 e foram baixadas inteiras na conferidencia
+  (61,7 MB e 205 MB, arquivo de 03/10/2026 - atualizados).
+
+  tvg-id por canal (o 1o e o principal, o 2o e o fallback):
+    ABC News Live    ABCNewsLive.us         , ABC.News.Live.us2
+    FOX News Channel FoxNewsChannel.us      , Fox.News.Channel.HD.us2
+    FOX Business     FoxBusiness.us         , Fox.Business.HD.us2
+    CBS News 24/7    CBSNews.us             , plex.tv.CBS.News.24/7.plex
+
+  Cobertura conferida nos XML baixados (hoje = 03/10):
+    ABCNewsLive.us          HOJE 35 | AMANHA 29 | DEPOIS 38   OK
+    ABC.News.Live.us2       HOJE 35 | AMANHA 29 | DEPOIS 38   OK
+    FoxNewsChannel.us       HOJE 16 | AMANHA 17 | DEPOIS 20   OK
+    Fox.News.Channel.HD.us2 HOJE 16 | AMANHA 17 | DEPOIS 20   OK
+    FoxBusiness.us          HOJE 42 | AMANHA 42 | DEPOIS 28   OK
+    Fox.Business.HD.us2     HOJE 42 | AMANHA 42 | DEPOIS 28   OK
+    CBSNews.us              HOJE 30 | AMANHA 24 | DEPOIS 26   OK
+    plex.tv.CBS.News.24/7.plex HOJE 29 | AMANHA 24 | DEPOIS 26 OK
+  => 8/8 ids com programacao nos 3 dias, nas 2 bases.
+
+  Amostra do que aparece na guia:
+    ABC News Live  03/10 ABCNL Prime / Burden of Proof / ABC World News
+                   04/10 Wild Crime: Blood Mountain / 20/20
+                   05/10 20/20 / ABC World News Tonight
+    FOX News       03/10 Jesse Watters / Hannity / Gutfeld!
+                   04/10 Hannity / Gutfeld! / Life, Liberty & Levin
+                   05/10 Sunday Night in America / One Nation
+    FOX Business   03/10 Cops (42 programas)   04/10 American Dream Home
+                   05/10 Cops
+    CBS News 24/7  03/10 The Daily Report / CBS Evening News
+                   04/10 48 Hours / 60 Minutes
+                   05/10 60 Minutes / CBS Weekend News
+
+----------------------------------------------------------------------
+5. ANTI-VIRUS
+----------------------------------------------------------------------
+  A API do VirusTotal agora exige X-Apikey: a consulta sem chave retorna
+  HTTP 401 "X-Apikey header is missing", entao nao da para usar a VT
+  publica. Rodei motor local sobre os BYTES REAIS baixados de cada canal:
+    - assinatura EICAR em qualquer byte
+    - magic bytes de malware (PE/EXE, ELF, Mach-O, ZIP, RAR, PHP, PDF, HTML)
+    - injecao de <script>/javascript:/data:text/html/.exe/powershell no
+      manifesto HLS
+    - integridade do container (MPEG-TS / fMP4-CMAF / AAC)
+  Resultado: 4/4 canais LIMPO (manifesto + variante + 2 segmentos cada),
+  0 canal removido. Os 2 EPGs tambem limpos (5 MB inspecionados cada).
+  Nenhum canal foi excluido por AV - os 2 que sairam da lista sairam por
+  403/token, nao por malware.
+
+----------------------------------------------------------------------
+6. LOGOS
+----------------------------------------------------------------------
+  4/4 canais com tvg-logo, TODOS em .jpg (terminam em .jpg, sem query),
+  TODOS com JPEG valido (bytes FFD8FF conferidos baixando o arquivo),
+  NENHUM link de imgur.com.
+    ABC News Live  -> keyframe-cdn.abcnews.com/streamprovider10.jpg   74 KB
+    FOX News Ch.   -> a57.foxnews.com/cf-images.../image.jpg          21 KB
+    FOX Business    -> a57.foxnews.com/cf-images.../image.jpg          18 KB
+    CBS News 24/7  -> assets2.cbsnewsstatic.com/...-1920x1080.jpg      91 KB
+  Os 2 logos da FOX estavam com "?ve=1&tl=1" depois do .jpg; testei sem a
+  query string e o mesmo CDN devolve o JPEG identico, entao ficaram limpos.
+  Nenhum .png/.svg foi aceito. (O sportshub.cbsistatic.com que constava no
+  relatorio anterior esta em 404 hoje e foi descartado.)
+
+----------------------------------------------------------------------
+7. FORMATO
+----------------------------------------------------------------------
+  [ok] header #EXTM3U com url-tvg e x-tvg-url (padrao do repo)
+  [ok] 4/4 URLs tem #EXTINF imediatamente na linha de cima
+  [ok] sem URL duplicada, sem URL sem #EXTINF
+  [ok] arquivo termina com quebra de linha
+  [ok] nenhuma URL com token expiravel (nada de hdnea/dvt2/exp=)
+  [ok] nome de canal no lugar do titulo de pagina web
+       ("Watch Fox News Channel Online | Stream Fox News" -> "FOX News Channel")
+  [ok] cada canal com tvg-id, tvg-name, tvg-logo e group-title="NEWS WORLD"
+
+----------------------------------------------------------------------
+8. VALIDACAO FINAL
+----------------------------------------------------------------------
+  [ok] header, quebra de linha, #EXTINF acima de cada URL, sem duplicata
+  [ok] 2/2 EPGs do url-tvg respondem HTTP 200
+  [ok] 4/4 logos .jpg + JPEG valido + sem imgur
+  [ok] 4/4 streams: master 200, variante 200, segmento 200 reproduzivel
+  [ok] 4/4 streams AVANCAM (media-seq): 5288516->5288517 (ABC),
+       294841->294842 (FOX News), 295444->295445 (FOX Business),
+       447316222->447316224 (CBS) = transmissao ao vivo de verdade
+  [ok] 4/4 canais com tvg-id tendo guia em HOJE, AMANHA e DEPOIS DE AMANHA
+  RESULTADO: 0 falha(s), 0 aviso(s)
+
+  Observacao honesta sobre qualidade: os 2 canais FOX saem no feed de
+  preview 426x240, porque a rota de resolucao cheia da FOX exige token
+  hdnea que ja expirou e nao tem como ser reproduzido. ABC (1080p) e CBS
+  (1080p) estao em resolucao cheia.
