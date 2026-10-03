@@ -1,189 +1,351 @@
 #!/usr/bin/env python3
-"""Testa todos os canais do lista5.m3u (HLS) e reescreve o arquivo sem os que nao funcionam.
+"""Testa todos os canais do lista5.m3u, remove os que nao funcionam e
+sobrescreve o arquivo original (com backup previo)."""
 
-Criterio de "funcionando":
-  - a URL responde 200 e devolve um manifest HLS valido;
-  - playlists master sao seguidas ate uma playlist de midia;
-  - a playlist de midia entrega segmentos baixaveis (init map + segmentos) com volume real.
-"""
-import asyncio
+import concurrent.futures as cf
+import json
+import os
 import re
 import shutil
+import sys
+import threading
 import time
-import urllib.parse
+from datetime import datetime
+from urllib.parse import urljoin, urlparse
 
-import aiohttp
+import requests
 
-ARQ = "lista5.m3u"
-BAK = "lista5.m3u.bak.pre_teste_hoje"
-REL = "relatorio_lista5_teste_hoje.txt"
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
-HEADERS = {
-    "User-Agent": UA,
-    "Accept": "*/*",
-    "Accept-Language": "en-US,en;q=0.9",
-}
-TIMEOUT = aiohttp.ClientTimeout(total=25, connect=12)
-MIN_BYTES = 3000
+PLAYLIST = "lista5.m3u"
+RESULTS = "l5_test_results_now.json"
+REPORT = "relatorio_lista5_teste_now.txt"
+
+UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+)
+TIMEOUT = 12
+RETRIES = 2
+
+_local = threading.local()
 
 
-def parse(path):
-    with open(path, encoding="utf-8", errors="replace") as f:
-        raw = f.read().splitlines()
-    header, entries, cur = [], [], []
-    for line in raw:
-        s = line.strip()
-        if not s:
-            continue
-        if s.startswith("#EXTM3U"):
-            header.append(line)
-        elif s.startswith("#EXTINF"):
-            cur = [line]
-        elif s.startswith("#"):
-            continue
+def session():
+    s = getattr(_local, "s", None)
+    if s is None:
+        s = requests.Session()
+        s.headers.update({
+            "User-Agent": UA,
+            "Accept": "*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+        })
+        _local.s = s
+    return s
+
+
+# ---------------------------------------------------------------- playlist io
+def parse_m3u(path):
+    """Retorna lista de (info_line, url) preservando a ordem do arquivo."""
+    entries = []
+    info = None
+    with open(path, "r", encoding="utf-8", errors="replace") as fh:
+        for raw in fh:
+            line = raw.rstrip("\r\n")
+            if not line.strip():
+                continue
+            if line.startswith("#EXTINF"):
+                info = line
+            elif line.startswith("#"):
+                continue
+            else:
+                entries.append((info or "#EXTINF:-1,Canal", line.strip()))
+                info = None
+    return entries
+
+
+def write_m3u(path, entries):
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write("#EXTM3U\n")
+        for info, url in entries:
+            fh.write(info + "\n")
+            fh.write(url + "\n")
+
+
+# ------------------------------------------------------------------ hls logic
+def _resolve(base, ref):
+    if ref.startswith(("http://", "https://")):
+        return ref
+    if ref.startswith("//"):
+        return "https:" + ref
+    return urljoin(base, ref)
+
+
+def _attr(line, name):
+    m = re.search(r'%s=(?:"([^"]*)"|([^,]*))' % re.escape(name), line)
+    return (m.group(1) if m and m.group(1) is not None
+            else (m.group(2).strip() if m else None))
+
+
+def parse_manifest(text):
+    """Retorna (media_urls, is_media) a partir de um manifesto HLS."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    if not lines or not lines[0].startswith("#EXTM3U"):
+        raise ValueError("manifesto invalido (sem #EXTM3U)")
+
+    variants, media = [], []
+    extinf = None
+    is_media_playlist = False
+    for line in lines[1:]:
+        if line.startswith("#EXT-X-STREAM-INF"):
+            extinf = line
+            is_media_playlist = False
+        elif line.startswith("#EXTINF"):
+            extinf = line
+        elif line.startswith("#EXT-X-MEDIA"):
+            if 'URI="' in line:
+                m = re.search(r'URI="([^"]+)"', line)
+                if m:
+                    variants.append(m.group(1))
+        elif line.startswith("#"):
+            if line.startswith("#EXT-X-TARGETDURATION") or \
+               line.startswith("#EXT-X-MEDIA-SEQUENCE"):
+                is_media_playlist = True
         else:
-            cur.append(s)
-            entries.append((cur[0], s))
-            cur = []
-    return header, entries
+            if extinf is not None:
+                variants.append(line)
+                extinf = None
+            media.append(line)
+
+    if is_media_playlist and not variants:
+        variants = media
+    return variants, media, is_media_playlist
 
 
-def map_uri(text):
-    m = re.search(r'#EXT-X-MAP:.*?URI="([^"]+)"', text)
-    return m.group(1) if m else None
+def _looks_media(data):
+    if not data or len(data) < 8:
+        return False
+    # MPEG-TS: sync byte 0x47
+    if data[0] == 0x47:
+        return True
+    # fMP4: ....ftyp / ....moof / ....styp
+    if data[4:8] in (b"ftyp", b"styp", b"moof"):
+        return True
+    # AAC/MP3 ID3
+    if data[0:3] == b"ID3" or data[0:2] in (b"\xff\xfb", b"\xff\xf3", b"\xff\xf2"):
+        return True
+    return False
 
 
-def segment_uris(text, limit=3):
-    segs, out = None, []
-    for line in text.splitlines():
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        if segs is None:
-            segs = []
-        segs.append(line)
-        if len(segs) >= limit:
-            break
-    return segs or []
+def check_media(url, hdrs=None):
+    r = session().get(url, timeout=TIMEOUT, stream=True,
+                      headers=hdrs or {}, allow_redirects=True)
+    code = r.status_code
+    ctype = (r.headers.get("Content-Type") or "").lower()
+    r.close()
+    if code != 200:
+        return False, "HTTP %d no manifest" % code
+    if "mpegurl" not in ctype and "audio" not in ctype and \
+       "video" not in ctype and "octet-stream" not in ctype and \
+       "vnd.apple" not in ctype:
+        # alguns CDNs devolvem text/plain para m3u8
+        if "text/plain" not in ctype:
+            return False, "content-type inesperado: %s" % ctype
+    return True, "ok"
 
 
-async def get(session, url, referer=None):
-    h = {"Referer": referer} if referer else {}
-    async with session.get(url, headers=h) as r:
-        return r.status, str(r.url), await r.content.read(600000)
-
-
-async def check_media(session, base, media_text, page):
-    """Valida init map + segmentos de uma playlist de midia."""
-    total = 0
-    init = map_uri(media_text)
-    targets = ([init] if init else []) + segment_uris(media_text, 3)
-    if not targets:
-        return False, f"{page}: playlist sem segmentos", 0
-
-    for t in targets:
-        url = urllib.parse.urljoin(base, t)
+def test_url(url):
+    """Retorna (ok, motivo, detalhe)."""
+    last_err = "desconhecido"
+    for attempt in range(RETRIES):
         try:
-            st, _, data = await get(session, url, referer=page)
-        except Exception as e:  # noqa: BLE001
-            return False, f"{page}: {t.split('/')[-1]} {type(e).__name__}", total
-        if st != 200:
-            return False, f"{page}: {t.split('/')[-1]} HTTP {st}", total
-        total += len(data)
-        if len(data) < 200:
-            return False, f"{page}: {t.split('/')[-1]} vazio", total
+            r = session().get(url, timeout=TIMEOUT, allow_redirects=True)
+            if r.status_code != 200:
+                last_err = "HTTP %d" % r.status_code
+                time.sleep(0.5)
+                continue
+            text = r.text
+            variants, media, is_media = parse_manifest(text)
+            if not variants and not media:
+                last_err = "manifesto sem variantes/segmentos"
+                time.sleep(0.5)
+                continue
 
-    if total < MIN_BYTES:
-        return False, f"{page}: dados insuficientes ({total} bytes)", total
-    return True, f"{page}: {total} bytes ok", total
+            # 1) ja e media playlist -> testa um segmento
+            if is_media and media:
+                seg = _resolve(url, media[-1])
+                seg_ok, seg_err = _probe_segment(seg)
+                if not seg_ok:
+                    last_err = "segmento invalido: %s" % seg_err
+                    time.sleep(0.5)
+                    continue
+                return True, "OK (media playlist)", {
+                    "tipo": "media",
+                    "segmento": seg,
+                    "bytes": r.content.__len__(),
+                }
+
+            # 2) master playlist -> testa variantes ate uma responder
+            tested, errors = 0, []
+            # ordena por bandwidth descendente (melhor qualidade primeiro)
+            def bw(u):
+                seg = [l for l in text.splitlines() if u in l]
+                for l in seg:
+                    if l.startswith("#EXT-X-STREAM-INF"):
+                        v = _attr(l, "BANDWIDTH")
+                        if v and v.isdigit():
+                            return int(v)
+                return 0
+            cands = sorted(dict.fromkeys(variants), key=bw, reverse=True)
+            for v in cands:
+                vu = _resolve(url, v)
+                try:
+                    vr = session().get(vu, timeout=TIMEOUT)
+                    if vr.status_code != 200:
+                        errors.append("HTTP %d" % vr.status_code)
+                        continue
+                    vv, vm, vmedia = parse_manifest(vr.text)
+                    if vmedia and vm:
+                        seg_ok, seg_err = _probe_segment(_resolve(vu, vm[-1]))
+                        if seg_ok:
+                            return True, "OK (master, %d variante(s) ok)" % (tested + 1), {
+                                "tipo": "master",
+                                "variante": vu,
+                                "segmento": _resolve(vu, vm[-1]),
+                                "variantes_total": len(cands),
+                            }
+                        errors.append("segmento: %s" % seg_err)
+                    elif vv:
+                        errors.append("sub-manifesto sem segmentos")
+                    else:
+                        errors.append("vazio")
+                except Exception as exc:  # noqa: BLE001
+                    errors.append(type(exc).__name__)
+                tested += 1
+            last_err = "variantes falharam: %s" % ", ".join(errors[:4])
+            time.sleep(0.5)
+        except requests.exceptions.SSLError as exc:
+            last_err = "SSL: %s" % str(exc)[:80]
+            break
+        except requests.exceptions.Timeout:
+            last_err = "timeout"
+            time.sleep(0.5)
+        except Exception as exc:  # noqa: BLE001
+            last_err = "%s: %s" % (type(exc).__name__, str(exc)[:80])
+            time.sleep(0.5)
+    return False, last_err, {}
 
 
-async def check(session, url, depth=0):
+def _probe_segment(seg_url, bytes_needed=120000):
     try:
-        st, final, body = await get(session, url)
-    except asyncio.TimeoutError:
-        return False, "timeout", 0
-    except Exception as e:  # noqa: BLE001
-        return False, type(e).__name__, 0
-
-    if st != 200:
-        return False, f"HTTP {st}", 0
-
-    text = body.decode("utf-8", "replace")
-    if "#EXTM3U" not in text[:500]:
-        return False, "resposta nao e m3u8", 0
-
-    if "#EXTINF" in text:
-        ok, det, n = await check_media(session, final, text, url)
-        return ok, det, n
-
-    if depth >= 3:
-        return False, "master sem variantes", 0
-
-    variants = segment_uris(text, 6)
-    if not variants:
-        return False, "master vazio", 0
-
-    errors = []
-    for v in variants:
-        sub = urllib.parse.urljoin(final, v)
-        ok, det, n = await check(session, sub, depth + 1)
-        if ok:
-            return True, det, n
-        errors.append(det)
-    return False, "variantes falharam: " + " | ".join(errors[:3]), 0
+        r = session().get(seg_url, timeout=TIMEOUT, stream=True,
+                          allow_redirects=True)
+        if r.status_code != 200:
+            return False, "HTTP %d" % r.status_code
+        buf = b""
+        for chunk in r.iter_content(65536):
+            buf += chunk
+            if len(buf) >= bytes_needed:
+                break
+        r.close()
+        if len(buf) < 100:
+            return False, "segmento curto (%d bytes)" % len(buf)
+        if not _looks_media(buf):
+            return False, "conteudo nao e midia (nao TS/fMP4)"
+        return True, "ok"
+    except Exception as exc:  # noqa: BLE001
+        return False, "%s" % type(exc).__name__
 
 
-async def main():
-    header, entries = parse(ARQ)
-    urls = [u for _, u in entries]
-    uniq = sorted(set(urls))
-    print(f"Entradas: {len(entries)} | URLs unicas: {len(uniq)}\n")
+# --------------------------------------------------------------------- driver
+def main():
+    if not os.path.exists(PLAYLIST):
+        sys.exit("arquivo %s nao encontrado" % PLAYLIST)
 
-    result, detail = {}, {}
-    connector = aiohttp.TCPConnector(limit=6, ssl=False)
-    async with aiohttp.ClientSession(headers=HEADERS, timeout=TIMEOUT,
-                                     connector=connector) as session:
-        sem = asyncio.Semaphore(6)
+    entries = parse_m3u(PLAYLIST)
+    total_raw = len(entries)
 
-        async def one(u):
-            async with sem:
-                for attempt in range(2):
-                    ok, det, _ = await check(session, u)
-                    if ok:
-                        break
-                    await asyncio.sleep(2)
-                result[u] = ok
-                detail[u] = det
-                print(f"[{'OK ' if ok else 'ERR'}] {det[:60]:<60} {u[:80]}")
+    # remove URLs duplicadas (mantem a primeira ocorrencia / melhor master)
+    seen, uniq = set(), []
+    dups = 0
+    for info, url in entries:
+        key = url.strip()
+        if key in seen:
+            dups += 1
+            continue
+        seen.add(key)
+        uniq.append((info, url))
+    entries = uniq
 
-        await asyncio.gather(*(one(u) for u in uniq))
+    print("=" * 68)
+    print("TESTE DE CANAIS - %s" % PLAYLIST)
+    print("entradas: %d | duplicadas removidas do teste: %d | a testar: %d"
+          % (total_raw, dups, len(entries)))
+    print("=" * 68)
 
-    keep = [e for e in entries if result.get(e[1])]
-    drop = [e for e in entries if not result.get(e[1])]
+    results = []
+    with cf.ThreadPoolExecutor(max_workers=8) as pool:
+        futs = {pool.submit(test_url, u): (i, u) for i, (_, u) in enumerate(entries)}
+        for n, fut in enumerate(cf.as_completed(futs), 1):
+            idx, url = futs[fut]
+            ok, reason, detail = fut.result()
+            info = entries[idx][0]
+            name = info.split(",", 1)[1] if "," in info else url
+            results.append({
+                "url": url, "name": name, "info": info,
+                "ok": ok, "reason": reason, "detail": detail,
+            })
+            print("[%2d/%2d] %-4s %-38s %s"
+                  % (n, len(entries), "OK" if ok else "FAIL",
+                     name[:38], reason[:70]))
 
-    shutil.copy2(ARQ, BAK)
-    with open(ARQ, "w", encoding="utf-8") as f:
-        f.write("\n".join(header) + "\n")
-        for ext, url in keep:
-            f.write(ext + "\n" + url + "\n")
+    results.sort(key=lambda r: entries.index(
+        next(x for x in entries if x[1] == r["url"])))
 
-    with open(REL, "w", encoding="utf-8") as f:
-        f.write(f"Teste: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write(f"Total entradas: {len(entries)}\n")
-        f.write(f"Funcionais: {len(keep)}\n")
-        f.write(f"Removidos: {len(drop)}\n\n")
-        f.write("=== REMOVIDOS ===\n")
-        for ext, url in drop:
-            f.write(f"{ext}\n  {url}\n  -> {detail.get(url)}\n\n")
-        f.write("=== MANTIDOS ===\n")
-        for ext, url in keep:
-            f.write(f"{ext}\n  {url}  [{detail.get(url)}]\n\n")
+    with open(RESULTS, "w", encoding="utf-8") as fh:
+        json.dump({
+            "arquivo": PLAYLIST,
+            "data": datetime.now().isoformat(timespec="seconds"),
+            "total_original": total_raw,
+            "duplicadas": dups,
+            "total_testado": len(results),
+            "funcionando": sum(1 for r in results if r["ok"]),
+            "resultados": results,
+        }, fh, indent=2, ensure_ascii=False)
 
-    print(f"\nTotal: {len(entries)} | Mantidos: {len(keep)} | Removidos: {len(drop)}")
-    print(f"Backup: {BAK} | Relatorio: {REL}")
+    ok_entries = [(r["info"], r["url"]) for r in results if r["ok"]]
+
+    with open(REPORT, "w", encoding="utf-8") as fh:
+        fh.write("RELATORIO DE TESTE - %s\n" % PLAYLIST)
+        fh.write("data: %s\n" % datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+        fh.write("=" * 70 + "\n")
+        fh.write("canais no arquivo original : %d\n" % total_raw)
+        fh.write("urls duplicadas             : %d\n" % dups)
+        fh.write("urls testadas               : %d\n" % len(results))
+        fh.write("funcionando                 : %d\n" % len(ok_entries))
+        fh.write("removidos                   : %d\n"
+                 % (len(results) - len(ok_entries)))
+        fh.write("=" * 70 + "\n\nFUNCIONANDO\n" + "-" * 70 + "\n")
+        for r in results:
+            if r["ok"]:
+                fh.write("  OK   %-40s %s\n" % (r["name"][:40], r["reason"]))
+        fh.write("\nREMOVIDOS\n" + "-" * 70 + "\n")
+        for r in results:
+            if not r["ok"]:
+                fh.write("  FAIL %-40s %s\n" % (r["name"][:40], r["reason"]))
+                fh.write("       %s\n" % r["url"][:150])
+
+    if ok_entries:
+        stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        backup = "%s.bak.pre_teste_%s" % (PLAYLIST, stamp)
+        shutil.copy2(PLAYLIST, backup)
+        write_m3u(PLAYLIST, ok_entries)
+        print("\nbackup: %s" % backup)
+        print("lista5.m3u sobrescrito: %d canais mantidos" % len(ok_entries))
+    else:
+        print("\nNENHUM canal funcionando - arquivo NAO foi alterado.")
+
+    print("relatorio: %s | json: %s" % (REPORT, RESULTS))
+    print("funcionando %d / %d testados" % (len(ok_entries), len(results)))
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

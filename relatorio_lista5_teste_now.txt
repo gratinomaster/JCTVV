@@ -1,0 +1,39 @@
+RELATORIO DE TESTE - lista5.m3u
+data: 2026-10-03 17:44:53
+======================================================================
+canais no arquivo original : 43
+urls duplicadas             : 21
+urls testadas               : 22
+funcionando                 : 20
+removidos                   : 2
+======================================================================
+
+FUNCIONANDO
+----------------------------------------------------------------------
+  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   Watch Fox News Channel Online | Stream F OK (master, 1 variante(s) ok)
+  OK   Fox Business Go | Fox News Video         OK (master, 1 variante(s) ok)
+  OK   Watch CBS News 24/7, our free live news  OK (master, 1 variante(s) ok)
+  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
+  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
+  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
+  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
+
+REMOVIDOS
+----------------------------------------------------------------------
+  FAIL Fox Business Go | Fox News Video         HTTP 403
+       https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_792.m3u8
+  FAIL Fox Business Go | Fox News Video         HTTP 403
+       https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
