@@ -1,0 +1,47 @@
+==========================================================================
+VALIDACAO FINAL - lista5.m3u
+==========================================================================
+
+1) ESTRUTURA / SINTAXE
+  [OK ] primeira linha e #EXTM3U
+  [OK ] cabecalho tem url-tvg
+  [OK ] cabecalho tem x-tvg-url (fallback)
+  [OK ] ha canais (2)
+  [OK ] toda URL tem #EXTINF na linha de cima (orfas=0)
+  [OK ] sem URLs duplicadas (dup=0)
+  [OK ] todas com group-title
+  [OK ] todas com nome de exibicao
+
+2) tvg-id / tvg-name
+  [OK ] todas com tvg-id
+  [OK ] todas com tvg-name
+  [OK ] tvg-id unicos (2/2)
+
+3) LOGOS (.jpg, sem imgur, HTTP 200 + JPEG real)
+  [OK ] todas as tvg-logo terminam em .jpg
+  [OK ] nenhum logo em imgur.com
+  [OK ] logo ABCNewsLive.us: 200 38936b image/jpeg 
+  [OK ] logo CBSNews.us: 200 91408b image/jpeg 
+
+4) ANTI-VIRUS + STREAM (video+audio)
+  [OK ] stream ABCNewsLive.us: tipo=VIDEO+AUDIO formato=TS seg=900001b 
+  [OK ] stream CBSNews.us: tipo=VIDEO+AUDIO formato=TS seg=207928b 
+
+   URLs unicas a escanear: 2
+   AVISO: sem VIRUSTOTAL_API_KEY -> usando motor local
+   
+   [LIMPO] https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8
+   [LIMPO] https://news20e7hhcb.airspace-cdn.cbsivideo.com/index.m3u8
+   
+   ANTIVIRUS: 2/2 URLs limpas, 0 rejeitadas
+  [OK ] todos os streams limpos no anti-virus
+
+5) EPG: URL acessivel + programming D0/D+1/D+2 por tvg-id
+  [OK ] EPG acessivel 200 (seguindo redirects): https://iptv-epg.org/files/epg-us.xml.gz
+  [OK ] EPG acessivel 200 (seguindo redirects): https://epg.pw/xmltv/epg_US.xml.gz
+   (baixando EPGs para conferir a grade...)
+  [OK ] ABCNewsLive.us: D0=35 D+1=29 D+2=38 programas (epg-us.xml.gz)
+  [OK ] CBSNews.us: D0=30 D+1=24 D+2=26 programas (epg-us.xml.gz)
+
+==========================================================================
+RESULTADO: TODAS AS VERIFICACOES PASSARAM

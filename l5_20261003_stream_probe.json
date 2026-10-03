@@ -1,0 +1,30 @@
+[
+ {
+  "url": "https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney.m3u8",
+  "manifest_bytes": 906,
+  "nivel": "master",
+  "variants": 4,
+  "codecs": "hvc1.1.6.L120.B0,mp4a.40.2",
+  "bandwidth": "3872000",
+  "resolucao": "1920x1080",
+  "segmento": "https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney_1_2629580.ts",
+  "seg_bytes": 900001,
+  "formato": "TS",
+  "tipo": "VIDEO+AUDIO",
+  "ok": true
+ },
+ {
+  "url": "https://news20e7hhcb.airspace-cdn.cbsivideo.com/index.m3u8",
+  "manifest_bytes": 2990,
+  "nivel": "master",
+  "variants": 8,
+  "codecs": "mp4a.40.2,avc1.64000D",
+  "bandwidth": "441000",
+  "resolucao": "400x224",
+  "segmento": "https://news20e7hhcb.airspace-cdn.cbsivideo.com/index-audio_eng=128000-video=249984-447310779.ts",
+  "seg_bytes": 165816,
+  "formato": "TS",
+  "tipo": "VIDEO+AUDIO",
+  "ok": true
+ }
+]
