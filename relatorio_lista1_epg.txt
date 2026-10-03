@@ -1,26 +1,41 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261003_023703)
-Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
+lista1.m3u - verificacao url-tvg e tvg-ids (20261003_140700)
+Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-url-tvg/x-tvg-url: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
+As 3 fontes foram baixadas novamente e respondem HTTP 200 (globo.xml 2354787 B,
+claro.xml 13783793 B, vivoplay.xml 13133057 B).
 
-| SporTV | sportv -> sportv | globo, vivoplay |
-| Globo São Paulo | tv-globo -> tv-globo | globo |
-| Globo Alagoas | tv-globo -> tv-globo | globo |
-| ge | ge-tv -> ge-tv | globo |
-| G1 Rio de Janeiro | globonews -> globonews | globo |
-| G1 Caruaru | globonews -> globonews | globo |
-| G1 Rio Grande do Sul | globonews -> globonews | globo |
-| G1 Santa Catarina | globonews -> globonews | globo |
-| G1 Vanguarda | globonews -> globonews | globo |
-| G1 Ceará | globonews -> globonews | globo |
-| G1 Espírito Santo | globonews -> globonews | globo |
-| G1 Triângulo Mineiro | globonews -> globonews | globo |
-| G1 Amapá | globonews -> globonews | globo |
-| G1 Acre | globonews -> globonews | globo |
-| G1 Pará | globonews -> globonews | globo |
-| ge HD | ge-tv -> ge-tv | globo |
-| CBN São Paulo | (sem id) -> (sem id) | sem id nas 3 fontes |
-| CBN Rio de Janeiro | (sem id) -> (sem id) | sem id nas 3 fontes |
+url-tvg/x-tvg-url conferido no cabecalho: identico ao solicitado (3 URLs separadas
+por espaco). Nenhuma alteracao necessaria.
 
-Canais: 18 | ids alterados: 0
-Nenhuma alteracao necessaria nos tvg-ids.
+tvg-id por canal (todos os ids usados existem nas fontes, com programa):
+| SporTV                | sportv    | globo.xml (96) / vivoplay.xml 'sportv' (127) |
+| Globo Sao Paulo       | tv-globo  | globo.xml (107) / claro.xml 'GLOBO SP' (131) |
+| Globo Alagoas         | tv-globo  | globo.xml (107) - afiliada, sem id proprio |
+| ge                    | ge-tv     | globo.xml (42) / claro.xml 'GE TV HD' (77) / vivoplay.xml 'GE' (76) |
+| ge HD                 | ge-tv     | idem |
+| G1 Rio de Janeiro    | globonews | globo.xml (79) - sem id de G1 nas 3 fontes |
+| G1 Caruaru            | globonews | idem |
+| G1 Rio Grande do Sul  | globonews | idem |
+| G1 Santa Catarina     | globonews | idem |
+| G1 Vanguarda          | globonews | idem |
+| G1 Ceara              | globonews | idem |
+| G1 Espirito Santo     | globonews | idem |
+| G1 Triangulo Mineiro  | globonews | idem |
+| G1 Amapa              | globonews | idem |
+| G1 Acre               | globonews | idem |
+| G1 Para               | globonews | idem |
+| CBN Sao Paulo         | (sem id)  | CBN nao existe em nenhuma das 3 fontes |
+| CBN Rio de Janeiro    | (sem id)  | CBN nao existe em nenhuma das 3 fontes |
+
+Canais: 18 | com tvg-id: 16 | ids alterados: 0
+ids inexistentes nas fontes: 0
+
+Observacoes:
+- Nenhuma das 3 fontes XMLTV publica canal G1; o id 'globonews' do globo.xml e a
+  GloboNews (noticia), portanto as 11 afiliadas G1 ficam com a programacao da
+  GloboNews como aproximacao. E o unico id existente para essas emissoras.
+- CBN (SP/RJ) continua sem tvg-id: nao ha equivalente em globo.xml, claro.xml,
+  vivoplay.xml nem nos demais xmls do repositorio (epg.xml esta vazio).
+- Problema critico fora do escopo: os 18 tokens JWT das URLs de stream expiraram
+  em 07/08/2026 (iat 07/08 05:00, exp 07/08 11:00 UTC). A lista precisa ser
+  regerada (GLOBO.py) para Getting streams; os tvg-id/url-tvg permanecem validos.
