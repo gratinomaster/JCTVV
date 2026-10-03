@@ -23,6 +23,10 @@ https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
 #EXTINF:-1 tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791038253~acl=/*~hmac=c5c716e4f837cc52c53308dbb2d49ad4a9d5f7a9a9669b0bec64eaa80bb3471d
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791038252~acl=/*~hmac=09cafafb8c305e78b299b97c9f4023e4658cb621af6c227e46e80c63fb734e18
 #EXTINF:-1 tvg-logo="https://sportshub.cbsistatic.com/i/2025/03/14/3c7eb092-1e44-467e-9afb-2413da9c43af/image-1741915116294.jpg" group-title="NEWS WORLD",Watch CBS News 24/7, our free live news stream
 https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/047b9d8f-95d6-4e54-a2e0-6baeafb6f7ea:DLS/master.m3u8
 #EXTINF:-1 tvg-logo="https://sportshub.cbsistatic.com/i/2025/03/14/3c7eb092-1e44-467e-9afb-2413da9c43af/image-1741915116294.jpg" group-title="NEWS WORLD",Watch CBS News 24/7, our free live news stream
