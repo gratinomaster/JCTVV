@@ -1,21 +1,26 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261002_213138)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261003_023703)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-SporTV | sportv -> sportv | ok (globo,vivoplay)
-Globo São Paulo | tv-globo -> tv-globo | ok (globo)
-Globo Alagoas | tv-globo -> tv-globo | ok (globo)
-ge | ge-tv -> ge-tv | ok (globo)
-G1 Rio de Janeiro | globonews -> globonews | ok (globo)
-G1 Caruaru | globonews -> globonews | ok (globo)
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo)
-G1 Santa Catarina | globonews -> globonews | ok (globo)
-G1 Vanguarda | globonews -> globonews | ok (globo)
-G1 Ceará | globonews -> globonews | ok (globo)
-G1 Espírito Santo | globonews -> globonews | ok (globo)
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo)
-G1 Amapá | globonews -> globonews | ok (globo)
-G1 Acre | globonews -> globonews | ok (globo)
-G1 Pará | globonews -> globonews | ok (globo)
-ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
-CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+url-tvg/x-tvg-url: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
+
+| SporTV | sportv -> sportv | globo, vivoplay |
+| Globo São Paulo | tv-globo -> tv-globo | globo |
+| Globo Alagoas | tv-globo -> tv-globo | globo |
+| ge | ge-tv -> ge-tv | globo |
+| G1 Rio de Janeiro | globonews -> globonews | globo |
+| G1 Caruaru | globonews -> globonews | globo |
+| G1 Rio Grande do Sul | globonews -> globonews | globo |
+| G1 Santa Catarina | globonews -> globonews | globo |
+| G1 Vanguarda | globonews -> globonews | globo |
+| G1 Ceará | globonews -> globonews | globo |
+| G1 Espírito Santo | globonews -> globonews | globo |
+| G1 Triângulo Mineiro | globonews -> globonews | globo |
+| G1 Amapá | globonews -> globonews | globo |
+| G1 Acre | globonews -> globonews | globo |
+| G1 Pará | globonews -> globonews | globo |
+| ge HD | ge-tv -> ge-tv | globo |
+| CBN São Paulo | (sem id) -> (sem id) | sem id nas 3 fontes |
+| CBN Rio de Janeiro | (sem id) -> (sem id) | sem id nas 3 fontes |
+
+Canais: 18 | ids alterados: 0
+Nenhuma alteracao necessaria nos tvg-ids.
