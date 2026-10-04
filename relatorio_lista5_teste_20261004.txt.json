@@ -1,0 +1,266 @@
+{
+ "saude": {
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c": [
+   true,
+   "master->mp4(moof), 181 segs"
+  ],
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8": [
+   true,
+   "mp4(moof), 181 segs"
+  ],
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8": [
+   true,
+   "mp4(moof), 181 segs"
+  ],
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8": [
+   true,
+   "mp4(moof), 181 segs"
+  ],
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8": [
+   true,
+   "mp4(moof), 181 segs"
+  ],
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8": [
+   true,
+   "master->mp4(moof), 10 segs"
+  ],
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8": [
+   true,
+   "mp4(moof), 10 segs"
+  ],
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8": [
+   true,
+   "mp4(moof), 10 segs"
+  ],
+  "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7": [
+   true,
+   "master->ts(sync 5/5), 6 segs"
+  ],
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7": [
+   true,
+   "master->ts(sync 5/5), 6 segs"
+  ],
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/master.m3u8": [
+   true,
+   "master->ts(sync 5/5), 25 segs"
+  ],
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8": [
+   true,
+   "ts(sync 5/5), 25 segs"
+  ],
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8": [
+   true,
+   "ts(sync 5/5), 25 segs"
+  ],
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8": [
+   true,
+   "ts(sync 5/5), 25 segs"
+  ]
+ },
+ "decisoes": [
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c",
+   "alive": true,
+   "kind": "master",
+   "motivo": "OK - canal master verificado"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8",
+   "alive": true,
+   "kind": "audio",
+   "motivo": "RENDICAO SO DE AUDIO (sem video)"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8",
+   "alive": true,
+   "kind": "audio",
+   "motivo": "RENDICAO SO DE AUDIO (sem video)"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8",
+   "alive": true,
+   "kind": "audio",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
+   "alive": true,
+   "kind": "master",
+   "motivo": "OK - canal master verificado"
+  },
+  {
+   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8",
+   "alive": true,
+   "kind": "audio",
+   "motivo": "RENDICAO SO DE AUDIO (sem video)"
+  },
+  {
+   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8",
+   "alive": true,
+   "kind": "audio",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7",
+   "alive": true,
+   "kind": "master",
+   "motivo": "OK - canal master verificado"
+  },
+  {
+   "url": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7",
+   "alive": true,
+   "kind": "master",
+   "motivo": "OK - canal master verificado"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/master.m3u8",
+   "alive": true,
+   "kind": "master",
+   "motivo": "OK - canal master verificado"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "RENDICAO DE VIDEO redundante (existe master do canal)"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  },
+  {
+   "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+   "alive": true,
+   "kind": "media",
+   "motivo": "URL DUPLICADA"
+  }
+ ]
+}
