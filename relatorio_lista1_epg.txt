@@ -1,27 +1,21 @@
-lista1.m3u - verificacao de url-tvg e tvg-ids (20261004_030805)
-Fontes: globo.xml, claro.xml, vivoplay.xml (https://github.com/limaalef/BrazilTVEPG)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261004_165620)
+Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-url-tvg correto: SIM  (3 URLs, globo primeiro)
-x-tvg-url presente: SIM
-
-Canais / tvg-id / fonte(s) onde o id existe:
-SporTV | sportv | claro,globo,vivoplay
-Globo São Paulo | tv-globo | globo
-Globo Alagoas | tv-globo | globo
-ge | ge-tv | globo
-G1 Rio de Janeiro | globonews | claro,globo
-G1 Caruaru | globonews | claro,globo
-G1 Rio Grande do Sul | globonews | claro,globo
-G1 Santa Catarina | globonews | claro,globo
-G1 Vanguarda | globonews | claro,globo
-G1 Ceará | globonews | claro,globo
-G1 Espírito Santo | globonews | claro,globo
-G1 Triângulo Mineiro | globonews | claro,globo
-G1 Amapá | globonews | claro,globo
-G1 Acre | globonews | claro,globo
-G1 Pará | globonews | claro,globo
-ge HD | ge-tv | globo
-CBN São Paulo | (sem id) | sem EPG nas 3 fontes
-CBN Rio de Janeiro | (sem id) | sem EPG nas 3 fontes
-
-Total canais: 18 | com tvg-id valido: 16 | sem EPG disponivel: 2
+SporTV | sportv -> sportv | ok (globo,vivoplay)
+Globo São Paulo | tv-globo -> tv-globo | ok (globo)
+Globo Alagoas | tv-globo -> tv-globo | ok (globo)
+ge | ge-tv -> ge-tv | ok (globo)
+G1 Rio de Janeiro | globonews -> globonews | ok (globo)
+G1 Caruaru | globonews -> globonews | ok (globo)
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo)
+G1 Santa Catarina | globonews -> globonews | ok (globo)
+G1 Vanguarda | globonews -> globonews | ok (globo)
+G1 Ceará | globonews -> globonews | ok (globo)
+G1 Espírito Santo | globonews -> globonews | ok (globo)
+G1 Triângulo Mineiro | globonews -> globonews | ok (globo)
+G1 Amapá | globonews -> globonews | ok (globo)
+G1 Acre | globonews -> globonews | ok (globo)
+G1 Pará | globonews -> globonews | ok (globo)
+ge HD | ge-tv -> ge-tv | ok (globo)
+CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
