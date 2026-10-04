@@ -287,7 +287,7 @@ for cc, caminho in fontes:
 # anterior para terminar no inicio do seguinte; quando o programa fica sem tempo
 # util (mesmo start, stop menor) ele e descartado.
 print("  passo C: corrigindo sobreposicao de horarios...")
-re_stop = re.compile(r'(stop=")\d{14}([^"]*")')
+re_stop = re.compile(r'(stop=")(\d{14})')
 por_canal = {}
 for (tvg, st, sp), bloco in programas.items():
     por_canal.setdefault(tvg, []).append((st, sp, bloco))
@@ -306,8 +306,9 @@ for tvg, itens in por_canal.items():
                 descartados += 1
                 continue
             if st < sp_ant:              # sobrepoe: encurta o anterior
+                # troca so os 14 digitos: o fuso (+0000) do stop original e preservado
                 bloco_ant = re_stop.sub(
-                    lambda m: m.group(1) + st + m.group(2), bloco_ant, count=1)
+                    lambda m: m.group(1) + st[:14], bloco_ant, count=1)
                 sp_ant = st
                 ajustados += 1
             corrigidos[(tvg, st_ant, sp_ant)] = bloco_ant
