@@ -1,0 +1,51 @@
+RELATORIO FINAL - lista5.m3u
+Data: 2026-10-04 (hoje/amanha/+2 = 20261004, 20261005, 20261006)
+Backup: lista5.m3u.bak.pre_tarefa_20261004
+Fontes de EPG no cabecalho: 1/2
+
+FONTES DE EPG NO ARQUIVO:
+  - iptv-org US (iptv-epg.org): https://iptv-epg.org/files/epg-us.xml.gz
+  - (nao declarada) epg.pw US: https://epg.pw/xmltv/epg_US.xml.gz usa tvg-id proprios ['464766', '464941', '465150', '465372'] - jogadores casam o EPG pelo tvg-id, entao nao serviria a lista
+
+CANAL: ABC News Live
+  [MANTIDO] 5641kbps 1920x1080 (3 segmentos) video+audio OK, audio=grupo
+            https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+  [DESCARTADO] falha: nao testado
+              https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79
+  ANTIVIRUS: LIMPO []
+  LOGO: JPEG ok (56473 bytes) https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  EPG iptv-org US (iptv-epg.org): id=ABCNewsLive.us programas=260 cobertura=['20261004', '20261005', '20261006']
+  EPG epg.pw US: id=465150 programas=85 cobertura=['20261004', '20261005', '20261006']
+
+CANAL: Fox News Channel
+  [MANTIDO] 415kbps 426x240 (3 segmentos) so video (sem audio no CDN)
+            https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+  [DESCARTADO] falha: todas as variantes rejeitadas: 2806k http=403; 2806k http=403; 1457k http=403
+              https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44
+  ANTIVIRUS: LIMPO []
+  LOGO: JPEG ok (21298 bytes) https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a
+  EPG iptv-org US (iptv-epg.org): id=FoxNewsChannel.us programas=138 cobertura=['20261004', '20261005', '20261006']
+  EPG epg.pw US: id=465372 programas=46 cobertura=['20261004', '20261005', '20261006']
+
+CANAL: Fox Business
+  [MANTIDO] 415kbps 426x240 (3 segmentos) so video (sem audio no CDN)
+            https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+  [DESCARTADO] falha: todas as variantes rejeitadas: 2806k http=403; 2806k http=403; 1457k http=403
+              https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa535298
+  ANTIVIRUS: LIMPO []
+  LOGO: JPEG ok (17992 bytes) https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-43
+  EPG iptv-org US (iptv-epg.org): id=FoxBusiness.us programas=215 cobertura=['20261004', '20261005', '20261006']
+  EPG epg.pw US: id=464766 programas=96 cobertura=['20261004', '20261005', '20261006']
+
+CANAL: CBS News 24/7
+  [MANTIDO] 2121kbps 1280x720 (3 segmentos) video+audio OK, audio=AAC-ADTS
+            https://cbsn-us-vtt.cbsnstream.cbsnews.com/out/v1/ef868690d34144509eda696884bf1619/master.m3u8
+  [DESCARTADO] falha: nao testado
+              https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+  [DESCARTADO] falha: nao testado
+              https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/master
+  ANTIVIRUS: LIMPO []
+  LOGO: JPEG ok (91408 bytes) https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/
+  EPG iptv-org US (iptv-epg.org): id=CBSNews.us programas=193 cobertura=['20261004', '20261005', '20261006']
+  EPG epg.pw US: id=464941 programas=65 cobertura=['20261004', '20261005', '20261006']
+

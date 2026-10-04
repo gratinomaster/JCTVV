@@ -1,0 +1,22 @@
+{
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/2ee78a98-bf67-49a1-84e9-d5e887d78f7c:ATL/master.m3u8": {
+    "ok": true,
+    "reason": "master->variante 5436kbps | [video+audio] segmentos 3/3 ok"
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8": {
+    "ok": true,
+    "reason": "master->variante 5641kbps | [video] segmentos 3/3 ok"
+  },
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7": {
+    "ok": false,
+    "reason": "master ok mas variantes inacessiveis [http=403, http=403, http=403]"
+  },
+  "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791142080~acl=/*~hmac=461aeb941b838aa5352985a44f62a1c56384676cf9e892c26370dfa90f537ae7": {
+    "ok": false,
+    "reason": "master ok mas variantes inacessiveis [http=403, http=403, http=403]"
+  },
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791224880~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=e3eb06da-b185-437c-9bb4-a2e05aa18c33~did=2a1a3662-1796-4d94-b688-ed8433d622ca~country=US~kid=k02~hmac=0bbb464ff259c3759f4325942635de58af41041668f2370f7e932248d8128c66/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c": {
+    "ok": false,
+    "reason": "master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 4876kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 3136kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)]"
+  }
+}
