@@ -1,0 +1,115 @@
+RELATORIO lista5.m3u - 2026-10-05
+==================================
+
+ESTADO ANTERIOR
+---------------
+29 canais, todos sem tvg-id e sem nenhuma URL de EPG no arquivo.
+Nomes de canal errados: 22 entradas chamavam "20/20: Home Alone |
+Watch Live News on ABCNL" (titulo de filme como nome de canal).
+As 6 entradas do CBS News 24/7 apontavam para dai.google.com e
+responderam HTTP 410 (Gone) em todas as variacoes de banda.
+
+TESTE DE STREAM (manifest -> variante -> segmento real)
+------------------------------------------------------
+Metodo: baixa o master.m3u8, resolve a variante, baixa 1 segmento e
+confere o container (0x47 = MPEG-TS, moof/mdat = fMP4, ID3/ADTS =
+AAC). So passa quem entrega midia decodificavel.
+
+  ABC News / ABC News Live (dssott Disney, 22 entradas)  OK  fMP4
+  ABC News Live (abcnews-livestreams.akamaized.net)    OK  fMP4 1080p
+  CBS News 24/7 (dai.google.com, 6 entradas)            FALHOU HTTP 410
+
+Resultado: 23/29 passaram. As 6 do dai.google.com foram removidas.
+
+Canais duplicados: das 22 entradas ABC News havia 8 variantes de
+bitrate do mesmo feed (2400/1800/1200 kbps) e varias repeticoes do
+mesmo CDN akc/ftc. Reduzidas para 5 fontes distintas e funcionais,
+mantendo redundancia.
+
+TESTE ANTI-VIRUS
+----------------
+Nao ha VIRUSTOTAL_API_KEY no ambiente e a API publica do VirusTotal
+exige chave, entao foi usada conferencia contra as listas publicas do
+URLhaus (abuse.ch): hostfile de hosts maliciosos + CSV de URLs
+recentes, alem de heuristicas (TLD de risco, IP cru no host, host
+ofuscado).
+
+  403 hosts maliciosos + 16333 URLs conferidos
+  0 URLs da lista reprovadas
+  Nenhuma URL da lista usa imgur.com nem TLD suspeito
+
+Os 33 hosts usados (dssott.com, akamaized.net, akaihd.net,
+cbsnews.com, cbsnstream.cbsnews.com, tubi.video) sao CDN/rede
+oficial das emissoras. Limpo.
+
+EPG
+---
+Fontes testadas: iptv-org/epg (sem canal ABC/CBS US), iptv-org API
+guides (404), epg.pw, epgshare01, tvlistings, zap2it - a maioria
+morta ou inexistente para o caso US/ABC/CBS.
+
+Duas fontes responderam com programacao real:
+
+  PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+           6,5 MB gz, 769 canais, atualizado 2026-10-04
+  BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+           22 MB gz, 5477 canais, atualizado 2026-10-05
+
+Ambas tem os dois canais com tvg-id proprio:
+  ABC.News.Live.us2          -> "ABC News Live"
+  CBS.News.National.Stream.us2 -> "CBS News National Stream"
+
+As duas URLs foram inseridas no #EXTM3U, a primeira em url-tvg e
+ambas em xurl-tvg, para que o player use a principal e caia na
+segunda se a primeira falhar.
+
+PROGRAMACAO CONFIRMADA (guia epgshare01, 2026-10-05 UTC)
+---------------------------------------------------------
+ABC News Live (tvg-id ABC.News.Live.us2) - 150 programas
+  hoje  2026-10-05: 38  20/20, Live: ABC World News Tonight...
+  amanha 2026-10-06: 41  Live: All Access With Linsey Davis...
+  depois 2026-10-07: 40  Burden of Proof, Live: ABCNL Prime...
+
+CBS News 24/7 (tvg-id CBS.News.National.Stream.us2) - 108 programas
+  hoje  2026-10-05: 26  60 Minutes, CBS Weekend News
+  amanha 2026-10-06: 28  The Daily Report, CBS Evening News, 24/7
+  depois 2026-10-07: 28  The Daily Report, CBS Evening News, 24/7
+
+Os tres dias estao cobertos nos dois canais. Nao ha sinais de
+afiliada nesta lista: sao apenas 2 emissoras nacionais, sem
+estacoes locais para needing EPG separado.
+
+LOGOS
+-----
+Todos os tvg-logo em .jpg, todos verificados com HTTP 200 e
+content-type image/jpeg:
+
+  ABC News Live   https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg
+  CBS News 24/7   https://sportshub.cbsistatic.com/i/2026/07/01/ffc2bcb4-69b8-4f07-904b-9c36e0dffb6b/a12cc04a-3614-451b-aa43-15f5e9d49380.jpg
+
+O logo antigo do ABC (keyframe-cdn.abcnews.com/streamprovider11.jpg)
+foi mantido no formato, mas as 22 entradas duplicadas que o usavam
+foram reduzidas. Nenhum logo vem de imgur.com.
+
+ESTRUTURA
+---------
+Validado por script: 7 canais, cada um com #EXTINF na linha de cima,
+tvg-id, tvg-logo .jpg e URL http/https imediatamente depois.
+Nenhum link de canal sem o # na linha anterior.
+
+VERIFICACAO FINAL DOS 7 CANAIS
+------------------------------
+  OK  3824KB  ABC News Live  abcnews-livestreams.akamaized.net
+  OK  1038KB  ABC News Live  pb-0n3n2ej0w8pl9.akamaized.net
+  OK  1547KB  ABC News Live  aegis-cloudfront-1.tubi.video
+  OK  2060KB  ABC News Live  linear-abcnews-akc-na-west-1.media.dssott.com
+  OK  2305KB  ABC News Live  linear-abcnews-ftc-na-west-1.media.dssott.com
+  OK   245KB  CBS News 24/7  cbsn-us.cbsnstream.cbsnews.com
+  OK   230KB  CBS News 24/7  cbsn-us-vtt.cbsnstream.cbsnews.com
+
+7/7 entregaram midia real no teste final.
+
+ARQUIVO
+-------
+lista5.m3u - 7 canais, 15 linhas
+Backup da versao anterior: lista5.m3u.bak.pre_corrigir_epg_20261005_030631
