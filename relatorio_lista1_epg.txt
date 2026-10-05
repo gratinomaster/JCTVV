@@ -1,21 +1,30 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261004_165620)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261005_024211)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-SporTV | sportv -> sportv | ok (globo,vivoplay)
-Globo São Paulo | tv-globo -> tv-globo | ok (globo)
-Globo Alagoas | tv-globo -> tv-globo | ok (globo)
-ge | ge-tv -> ge-tv | ok (globo)
-G1 Rio de Janeiro | globonews -> globonews | ok (globo)
-G1 Caruaru | globonews -> globonews | ok (globo)
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo)
-G1 Santa Catarina | globonews -> globonews | ok (globo)
-G1 Vanguarda | globonews -> globonews | ok (globo)
-G1 Ceará | globonews -> globonews | ok (globo)
-G1 Espírito Santo | globonews -> globonews | ok (globo)
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo)
-G1 Amapá | globonews -> globonews | ok (globo)
-G1 Acre | globonews -> globonews | ok (globo)
-G1 Pará | globonews -> globonews | ok (globo)
-ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+url-tvg/x-tvg-url: 3 URLs separadas por espaco (globo.xml, claro.xml, vivoplay.xml)
+tvg-ids: multi-id por virgula, com o id equivalente de cada fonte (ids conferidos no XML de cada fonte)
+
+SporTV | sportv -> sportv,SPORTV | ok (globo/vivoplay, claro)
+Globo São Paulo | tv-globo -> tv-globo,GLOBO SP | ok (globo, claro)
+Globo Alagoas | tv-globo -> tv-globo,GLOBO SP | ok (globo, claro) - afiliada regional, usa programacao nacional
+ge | ge-tv -> ge-tv,GE TV HD,GE | ok (globo, claro, vivoplay)
+G1 Rio de Janeiro | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Caruaru | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Rio Grande do Sul | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Santa Catarina | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Vanguarda | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Ceara | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Espirito Santo | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Triangulo Mineiro | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Amapa | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Acre | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+G1 Para | globonews -> globonews,GLOBONEWS,Globo News HD | ok (globo, claro, vivoplay)
+ge HD | ge-tv -> ge-tv,GE TV HD,GE | ok (globo, claro, vivoplay)
+CBN Sao Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+
+Canais verificados: 18 | ids alterados: 18 | URLs de stream inalteradas: 18
+Backup: lista1.m3u.bak.pre_tvgids_20261005_024211
+Observacao: as 3 fontes nao possuem canais regionais (G1 Caruaru, G1 Ceara, Globo Alagoas etc.);
+as afiliadas regionais usam o id do canal nacional (globonews / tv-globo), que corresponde
+a programacao exibida (simultaneo nacional com blocos locais). CBN nao tem EPG em nenhuma fonte.
