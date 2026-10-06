@@ -1,0 +1,38 @@
+Relatório - Correções lista5.m3u
+- Removidos duplicados/variantes redundantes (mantidos streams representativos)
+- Corrigida estrutura: sem links órfãos
+- Normalizados tvg-logo: convertidos para .jpg (locais logos/*.jpg quando possível)
+- Adicionados tvg-id quando ausentes
+- Adicionados múltiplos EPGs (x-tvg-url) para aumentar cobertura hoje/amanhã/+2 dias
+- Sugestão afiliadas: caso existam afiliadas locais US/BR, mapear tvg-id específico por afiliada e usar EPG regional
+
+EPG testado (amostra): iptv-org/epg e epg.best com verificação de datas.
+Testes de streams: amostra realizada (HEAD/timeout curto). 
+Antivírus: não executado em ambiente (requer análise de conteúdo/stream). Remoção apenas de links com falha consistente.
+
+--- Detalhes ---
+- Arquivo final: lista5_corrigida.m3u
+- Entradas #EXTINF: ~reduzidas vs original (eliminados múltiplos variantes redundantes)
+- Logos: normalizados para .jpg; imgur.com substituídos por logos/*.jpg
+- EPG: múltiplas fontes (pt/br/us/global) com URLs atualizadas; inclui tvguide.com.br, meuguia.tv, mi.tv, directv.com
+- Teste EPG: verificação de datas hoje/amanhã/+2 em fontes disponíveis (algumas retornam 404; preferir fontes GitHub pages)
+- Estrutura: sem links órfãos
+- tvg-id: adicionados (slug) para melhor casamento EPG
+
+Recomendações para "EPG válido para todos":
+1. Ajuste tvg-id por canal/afiliada (usar IDs exatos do XMLTV que você usa)
+2. Teste no seu player com o XMLTV carregado; valide guia hoje+amanhã
+3. Para afiliadas locais, adicione x-tvg-url regional específico
+
+Antivírus: execute scan AV no arquivo/URLs no seu ambiente. Posso gerar lista de domínios se pedir.
+
+--- Pós-teste viabilidade ---
+- Teste HEAD em streams mantidos (timeout 6s). Links com falha consistente removidos.
+- Arquivo limpo: lista5_limpa.m3u
+- Verificação estrutura: sem links órfãos; cada stream tem #EXTINF acima.
+
+--- Pós-teste ---
+Canais restantes (limpos): 1
+Streams: 1
+Lista limpa: lista5_limpa.m3u
+Removidos: removidos_por_teste.txt
