@@ -3,6 +3,7 @@ import gzip
 import os
 import re
 import sys
+import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import defaultdict
@@ -26,17 +27,31 @@ def norm(value):
     return re.sub(r"[\s\-_.]+", "", value or "").lower()
 
 
+def slug(value):
+    value = unicodedata.normalize("NFD", value or "")
+    value = "".join(c for c in value if unicodedata.category(c) != "Mn")
+    value = re.sub(r"[^0-9A-Za-z]+", ".", value).strip(".")
+    return value or "x"
+
+
 def minutes(stamp):
-    digits = re.sub(r"[^0-9]", "", stamp or "")
-    if len(digits) < 12:
+    """Instante absoluto em minutos. Sem isto, "+0000" e "-0500" com o mesmo
+    digito pareciam o mesmo horario e marcava sobreposicao inexistente."""
+    match = re.match(r"^(\d{14})\s*([+-]\d{4})?$", (stamp or "").strip())
+    if not match:
         return None
-    return (
+    digits, offset = match.group(1), match.group(2)
+    total = (
         int(digits[0:4]) * 525600
         + int(digits[4:6]) * 43200
         + int(digits[6:8]) * 1440
         + int(digits[8:10]) * 60
         + int(digits[10:12])
     )
+    if offset:
+        sinal = 1 if offset[0] == "+" else -1
+        total -= sinal * (int(offset[1:3]) * 60 + int(offset[3:5]))
+    return total
 
 
 print("=" * 66)
@@ -55,27 +70,44 @@ except Exception as exc:
 
 m3u_ids = []
 m3u_info = {}
-for line in m3u_text.splitlines():
-    if not line.startswith("#EXTINF"):
-        continue
+sinteticos = {}
+vistos, nomes_vistos = set(), set()
+m3u_linhas = [l for l in m3u_text.splitlines() if l.startswith("#EXTINF")]
+for line in m3u_linhas:
     found = re.search(r'tvg-id="([^"]*)"', line)
-    name = line.split(",", 1)[1].strip() if "," in line else ""
+    grupo = re.search(r'group-title="([^"]*)"', line)
+    nome = re.search(r",([^,]+)$", line)
+    nome = nome.group(1).strip() if nome else ""
     if found and found.group(1).strip() not in ("", "0", "(no tvg-id)"):
         tid = found.group(1).strip()
-        if tid not in m3u_info:
+        if tid not in vistos:
+            vistos.add(tid)
             m3u_ids.append(tid)
-            m3u_info[tid] = name
+        m3u_info.setdefault(tid, nome)
     else:
-        m3u_ids.append(None)
-        m3u_info.setdefault(None, name)
+        # entrada sem tvg-id: o EPG deriva um id M3U.<grupo>.<nome>
+        if norm(nome) in nomes_vistos:
+            continue
+        nomes_vistos.add(norm(nome))
+        base = "M3U." + (slug(grupo.group(1).strip()) + "." if grupo and grupo.group(1).strip() else "") + slug(nome)
+        key, n = base, 2
+        while key in vistos:
+            key = f"{base}.{n}"
+            n += 1
+        vistos.add(key)
+        sinteticos[key] = nome
+        m3u_ids.append(key)
+        m3u_info.setdefault(key, nome)
 
 m3u_norm = {}
 for tid in m3u_ids:
     if tid:
         m3u_norm.setdefault(norm(tid), tid)
 
-print(f"   entradas na M3U .. {len(m3u_ids)}")
-print(f"   com tvg-id ....... {sum(1 for t in m3u_ids if t)} ({len(set(t for t in m3u_ids if t))} unicos)")
+print(f"   entradas na M3U .. {len(m3u_linhas)}")
+print(f"   canais esperados . {len(m3u_ids)}")
+print(f"   com tvg-id ....... {len(m3u_ids) - len(sinteticos)}")
+print(f"   id sintetico ..... {len(sinteticos)} (entradas sem tvg-id)")
 
 print()
 print("=" * 66)
@@ -117,13 +149,14 @@ if extras:
     print(f"      {extras[:20]}")
 
 com_programa = {p.get("channel") for p in programas}
-fora = sorted(cid for cid in ids_xml if norm(cid) not in m3u_norm)
-print(f"   canais declarados .. {len(ids_xml)} (M3U com tvg-id: {len(m3u_norm)})")
+print(f"   canais declarados .. {len(ids_xml)} (M3U espera {len(m3u_ids)})")
 print(f"   canais com grade ... {len(com_programa)}")
 
-faltando = sorted(set(t for t in m3u_ids if t) - ids_xml)
+faltando = sorted(set(m3u_ids) - ids_xml)
+check(not faltando, "todo canal da M3U declarado no EPG",
+      f"{len(faltando)} faltando" if faltando else f"{len(m3u_ids)}/{len(m3u_ids)}")
 if faltando:
-    print(f"   INFO: {len(faltando)} tvg-ids da M3U sem <channel> no EPG: {faltando[:10]}")
+    print(f"      {faltando[:10]}")
 
 orfas = [p for p in programas if p.get("channel") not in ids_xml]
 check(not orfas, "programas sem <channel> correspondente", f"{len(orfas)} orfaos" if orfas else "0")
@@ -134,22 +167,26 @@ print("4. QUALIDADE DA GRADE")
 print("=" * 66)
 
 invalidos = 0
-conflitos = 0
-ultimo_stop = {}
+por_canal = defaultdict(list)
 for prog in programas:
     start = minutes(prog.get("start", ""))
     stop = minutes(prog.get("stop", ""))
     if start is None or stop is None or stop <= start:
         invalidos += 1
         continue
-    cid = prog.get("channel")
-    anterior = ultimo_stop.get(cid)
-    if anterior is not None and start < anterior:
-        conflitos += 1
-    ultimo_stop[cid] = stop
+    por_canal[prog.get("channel")].append((start, stop))
 
+conflitos = 0
+for itens in por_canal.values():
+    itens.sort()
+    for (_, stop_anterior), (start, _) in zip(itens, itens[1:]):
+        if start < stop_anterior:
+            conflitos += 1
+
+fusos = {(p.get("start") or "")[-5:] for p in programas}
 check(invalidos == 0, "horarios validos (stop > start)", f"{invalidos} invalidos" if invalidos else "todos ok")
 check(conflitos == 0, "sem sobreposicao de horarios", f"{conflitos} conflitos" if conflitos else "0")
+check(len(fusos) == 1, "fuso horario unico", f"{sorted(fusos)}" if len(fusos) != 1 else sorted(fusos)[0])
 
 vazios = [p for p in programas if not (p.findtext("title") or "").strip()]
 check(not vazios, "todos os programas tem titulo", f"{len(vazios)} sem titulo" if vazios else "0")
