@@ -65,6 +65,8 @@ http://45.162.64.114/TV_JUSTICA/index.m3u8
 http://45.162.64.114/NOVO_TEMPO/index.m3u8
 #EXTINF:-1 tvg-id="TVSenado.br" tvg-name="TV Senado" tvg-logo="https://iptv-epg.org/images/V-Sm0BsB8HA2rAZAH4I_FIG68eVlxXGILiaXyQKN93ug1b5h6RJVPBrExhENupUq9OgLj1YG2nZgm0pxdzbOHsuxbyTajpZjPqSwFKYOerF-" group-title="TV ABERTA",TV Senado
 https://janus-tv-ply.senado.cl/playlist/playlist.m3u8
+#EXTINF:-1 tvg-id="WooHoo.br" tvg-name="WooHoo" tvg-logo="https://iptv-epg.org/images/4z4hOyiNwVo971sMoKZ6rVJi34nN3WLDG1lPIuFL7iuMJOYJ4GlfKFZ17OWSbe4e2-J4Zkk7nExfsU6IShsFFBFQRUMyfpyeJTaJsqnFyA" group-title="TV ABERTA",WooHoo
+http://45.162.64.114/WOOHOO/index.m3u8
 #EXTINF:-1 tvg-id="BandSports.br" tvg-name="Band Sports" tvg-logo="https://iptv-epg.org/images/aKjFji2hePSWEkx2Jz5ZI06xBzgYSTzJYz64wKp4GDCHuWBm6dfFhAPYBy9NNRavTyfhwCS-wM9H7-QpNU4qZV7dE3KqCwyF3zwXqCpT_1U4vNQ" group-title="ESPORTES",Band Sports
 http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 #EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
