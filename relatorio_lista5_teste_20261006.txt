@@ -1,0 +1,71 @@
+RELATORIO DE TESTE - lista5.m3u
+Data: 2026-10-06 02:35:55
+IP de saida: datacenter Azure US (us-east) - pode haver geo/bloqueio por IP
+
+Entradas originais : 37
+URLs unicas        : 20
+Mantidas (funcionam): 9
+Removidas          : 28
+
+========================================================================
+MANTIDOS
+========================================================================
+[OK] ABC News Live - ABC News
+     host    : abcnews-livestreams.akamaized.net
+     tipo    : master 1920x1080 -> abcn-live-10-index_1.m3u8
+     segmento: abcn-live-10-mp-channel_video_1_5321795.mp4 -> fMP4 262144B
+[OK] ABC News Live - ABC News
+     host    : abcnews-livestreams.akamaized.net
+     tipo    : media 
+     segmento: abcn-live-10-mp-channel_audio_4_0_5321795.mp4 -> fMP4 97529B
+[OK] ABC News Live - ABC News
+     host    : abcnews-livestreams.akamaized.net
+     tipo    : media 
+     segmento: abcn-live-10-mp-channel_video_3_5321795.mp4 -> fMP4 262144B
+[OK] Fox Business Go | Fox News Video
+     host    : 247.foxbusiness.com
+     tipo    : master 1280x720 -> primary_2692.m3u8
+     segmento: primary_2692_20261006T023423_316440.ts -> MPEG-TS 1394 pacotes
+[OK] Watch Fox News Channel Online | Stream Fox News
+     host    : 247.foxnews.com
+     tipo    : master 1280x720 -> primary_2692.m3u8
+     segmento: primary_2692_20261006T023423_315973.ts -> MPEG-TS 1394 pacotes
+[OK] Watch CBS News 24/7, our free live news stream
+     host    : dai.google.com
+     tipo    : master 1920x1080 -> 5980000.m3u8
+     segmento: index-audio_eng=128000-video=5000000-447366141.ts -> MPEG-TS 1394 pacotes
+[OK] Watch CBS News 24/7, our free live news stream
+     host    : dai.google.com
+     tipo    : media 
+     segmento: index-audio_eng=128000-video=249984-447366142.ts -> MPEG-TS 1058 pacotes
+[OK] Watch CBS News 24/7, our free live news stream
+     host    : dai.google.com
+     tipo    : media 
+     segmento: index-audio_eng=128000-video=1200000-447366142.ts -> MPEG-TS 1394 pacotes
+[OK] Watch CBS News 24/7, our free live news stream
+     host    : dai.google.com
+     tipo    : media 
+     segmento: index-audio_eng=128000-video=3499968-447366141.ts -> MPEG-TS 1394 pacotes
+
+========================================================================
+REMOVIDOS
+========================================================================
+
+[DRM Widevine/PlayReady - nao toca em player comum]  host=linear-abcnews-ftc-na-west-1.media.dssott.com  (8 entradas)
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+
+[rendicao somente audio (sem video)]  host=linear-abcnews-ftc-na-west-1.media.dssott.com  (4 entradas)
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+
+[manifesto HTTP 403]  host=247.foxnews.com  (1 entradas)
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/primary_2692.m3u8
