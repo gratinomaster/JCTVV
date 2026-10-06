@@ -1,71 +1,165 @@
-RELATORIO DE TESTE - lista5.m3u
-Data: 2026-10-06 02:35:55
-IP de saida: datacenter Azure US (us-east) - pode haver geo/bloqueio por IP
+==============================================================================
+CORRECAO lista5.m3u - 2026-10-06 03:57:57 UTC
+==============================================================================
 
-Entradas originais : 37
-URLs unicas        : 20
-Mantidas (funcionam): 9
-Removidas          : 28
+[0] ESTRUTURA ORIGINAL
+    entradas #EXTINF+URL: 4
+    linhas URL sem '#' na linha de cima: 0
+    canais distintos: 4 | itens duplicados: nenhum
 
-========================================================================
-MANTIDOS
-========================================================================
-[OK] ABC News Live - ABC News
-     host    : abcnews-livestreams.akamaized.net
-     tipo    : master 1920x1080 -> abcn-live-10-index_1.m3u8
-     segmento: abcn-live-10-mp-channel_video_1_5321795.mp4 -> fMP4 262144B
-[OK] ABC News Live - ABC News
-     host    : abcnews-livestreams.akamaized.net
-     tipo    : media 
-     segmento: abcn-live-10-mp-channel_audio_4_0_5321795.mp4 -> fMP4 97529B
-[OK] ABC News Live - ABC News
-     host    : abcnews-livestreams.akamaized.net
-     tipo    : media 
-     segmento: abcn-live-10-mp-channel_video_3_5321795.mp4 -> fMP4 262144B
-[OK] Fox Business Go | Fox News Video
-     host    : 247.foxbusiness.com
-     tipo    : master 1280x720 -> primary_2692.m3u8
-     segmento: primary_2692_20261006T023423_316440.ts -> MPEG-TS 1394 pacotes
-[OK] Watch Fox News Channel Online | Stream Fox News
-     host    : 247.foxnews.com
-     tipo    : master 1280x720 -> primary_2692.m3u8
-     segmento: primary_2692_20261006T023423_315973.ts -> MPEG-TS 1394 pacotes
-[OK] Watch CBS News 24/7, our free live news stream
-     host    : dai.google.com
-     tipo    : master 1920x1080 -> 5980000.m3u8
-     segmento: index-audio_eng=128000-video=5000000-447366141.ts -> MPEG-TS 1394 pacotes
-[OK] Watch CBS News 24/7, our free live news stream
-     host    : dai.google.com
-     tipo    : media 
-     segmento: index-audio_eng=128000-video=249984-447366142.ts -> MPEG-TS 1058 pacotes
-[OK] Watch CBS News 24/7, our free live news stream
-     host    : dai.google.com
-     tipo    : media 
-     segmento: index-audio_eng=128000-video=1200000-447366142.ts -> MPEG-TS 1394 pacotes
-[OK] Watch CBS News 24/7, our free live news stream
-     host    : dai.google.com
-     tipo    : media 
-     segmento: index-audio_eng=128000-video=3499968-447366141.ts -> MPEG-TS 1394 pacotes
+[1] TRIAGEM ANTI-VIRUS
+    feed URLhaus (URLs online)    13635 entradas
+    feed URLhaus (hosts)          397 entradas
+    feed OpenPhish                300 entradas
+    (sem chave VirusTotal no ambiente: triagem por intel de amecas publica + validacao de carga util)
 
-========================================================================
-REMOVIDOS
-========================================================================
+    ABC News Live
+      [OK] URLhaus/OpenPhish: host malicioso      host=abcnews-livestreams.akamaized.net
+      [OK] URLhaus/OpenPhish: URL maliciosa       nao consta nas feeds
+      [OK] esquema https                          https
+      [OK] host nao e IP literal                  abcnews-livestreams.akamaized.net
+      [OK] host sem punycode                      abcnews-livestreams.akamaized.net
+      [OK] manifesto responde HTTP 200            HTTP 200
+      [OK] manifesto HLS valido (#EXTM3U)         727 bytes
+      [OK] sem EICAR no manifesto                 ausente
+      [OK] manifesto tem streams                  variantes=3 midia=3
+      [OK] resolucao maxima informada             1920x1080
+      [OK] playlist de midia HTTP 200             HTTP 200
+      [OK] playlist de midia tem segmentos        10 segmentos
+      [OK] segmento HTTP 200                      HTTP 200 (abcn-live-10-mp-channel_video_1_5322627.mp4?m=175805)
+      [OK] segmento e midia valida                49 pacotes TS / 3000000 bytes (fMP4)
+      [OK] segmento sem EICAR                     ausente
+      [OK] content-type de midia aceito           video/mp4
+      => APROVADO
+    Fox News Channel
+      [OK] URLhaus/OpenPhish: host malicioso      host=247preview.foxnews.com
+      [OK] URLhaus/OpenPhish: URL maliciosa       nao consta nas feeds
+      [OK] esquema https                          https
+      [OK] host nao e IP literal                  247preview.foxnews.com
+      [OK] host sem punycode                      247preview.foxnews.com
+      [OK] manifesto responde HTTP 200            HTTP 200
+      [OK] manifesto HLS valido (#EXTM3U)         815 bytes
+      [OK] sem EICAR no manifesto                 ausente
+      [OK] manifesto tem streams                  variantes=0 midia=6
+      [OK] playlist de midia tem segmentos        6 segmentos
+      [OK] segmento HTTP 200                      HTTP 200 (primary_400_20261006T035738_316513.ts)
+      [OK] segmento e midia valida                2871 pacotes TS / 539748 bytes
+      [OK] segmento sem EICAR                     ausente
+      [OK] content-type de midia aceito           video/mp2t
+      => APROVADO
+    Fox Business
+      [OK] URLhaus/OpenPhish: host malicioso      host=247preview.foxbusiness.com
+      [OK] URLhaus/OpenPhish: URL maliciosa       nao consta nas feeds
+      [OK] esquema https                          https
+      [OK] host nao e IP literal                  247preview.foxbusiness.com
+      [OK] host sem punycode                      247preview.foxbusiness.com
+      [OK] manifesto responde HTTP 200            HTTP 200
+      [OK] manifesto HLS valido (#EXTM3U)         838 bytes
+      [OK] sem EICAR no manifesto                 ausente
+      [OK] manifesto tem streams                  variantes=0 midia=6
+      [OK] playlist de midia tem segmentos        6 segmentos
+      [OK] segmento HTTP 200                      HTTP 200 (primary_400_20261006T035748_316969.ts)
+      [OK] segmento e midia valida                3020 pacotes TS / 567760 bytes
+      [OK] segmento sem EICAR                     ausente
+      [OK] content-type de midia aceito           video/mp2t
+      => APROVADO
+    CBS News 24/7
+      [OK] URLhaus/OpenPhish: host malicioso      host=dai.google.com
+      [OK] URLhaus/OpenPhish: URL maliciosa       nao consta nas feeds
+      [OK] esquema https                          https
+      [OK] host nao e IP literal                  dai.google.com
+      [OK] host sem punycode                      dai.google.com
+      [OK] manifesto responde HTTP 200            HTTP 200
+      [OK] manifesto HLS valido (#EXTM3U)         5083 bytes
+      [OK] sem EICAR no manifesto                 ausente
+      [OK] manifesto tem streams                  variantes=8 midia=8
+      [OK] resolucao maxima informada             1920x1080
+      [OK] playlist de midia HTTP 200             HTTP 200
+      [OK] playlist de midia tem segmentos        25 segmentos
+      [OK] segmento HTTP 200                      HTTP 200 (index-audio_eng=128000-video=249984-447367401.ts)
+      [OK] segmento e midia valida                930 pacotes TS / 174840 bytes
+      [OK] segmento sem EICAR                     ausente
+      [OK] content-type de midia aceito           video/mp2t
+      => APROVADO
 
-[DRM Widevine/PlayReady - nao toca em player comum]  host=linear-abcnews-ftc-na-west-1.media.dssott.com  (8 entradas)
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+[2] EPG - PROGRAMACAO DE HOJE / AMANHA / DEPOIS DE AMANHA
+    1) guia minimo por canal : https://epg.pw/api/epg.xml?channel_id={tvg_id}
+    2) reserva, mesmo esquema: https://epg.pw/xmltv/epg_US.xml.gz
+    3) reserva, outro host  : https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+       (o 2 e o 3 sao concatena no url-tvg, separados por espaco)
 
-[rendicao somente audio (sem video)]  host=linear-abcnews-ftc-na-west-1.media.dssott.com  (4 entradas)
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791339992~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
-     https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1791340009~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b
+    guia completo: 5477 canais / 160936004 bytes / last-modified Tue, 06 Oct 2026 00:11:39 GMT
 
-[manifesto HTTP 403]  host=247.foxnews.com  (1 entradas)
-     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/primary_2692.m3u8
+    ABC News Live      tvg-id=465150
+      canal declarado no EPG: True | last-modified: Tue, 06 Oct 2026 02:26:06 GMT
+      2026-10-06  minimo=41  completo=41  ex.: Live: All Access With Linsey Davis
+      2026-10-07  minimo=40  completo=40  ex.: Burden of Proof
+      2026-10-08  minimo= 0  completo=20  ex.: ABC News Live
+      esquema alternativo (epgshare01): ABC.News.Live.us2
+      => 3 dias com guia
+    Fox News Channel   tvg-id=465372
+      canal declarado no EPG: True | last-modified: Tue, 06 Oct 2026 02:26:05 GMT
+      2026-10-06  minimo=20  completo=20  ex.: Live: Jesse Watters Primetime
+      2026-10-07  minimo=20  completo=20  ex.: Live: Jesse Watters Primetime
+      2026-10-08  minimo= 1  completo=12  ex.: Live: Jesse Watters Primetime
+      esquema alternativo (epgshare01): Fox.News.Channel.HD.us2
+      => 3 dias com guia
+    Fox Business       tvg-id=464766
+      canal declarado no EPG: True | last-modified: Tue, 06 Oct 2026 02:26:05 GMT
+      2026-10-06  minimo=28  completo=28  ex.: American Built
+      2026-10-07  minimo=22  completo=22  ex.: Legends & Lies: The Real West
+      2026-10-08  minimo= 1  completo=12  ex.: How America Works
+      esquema alternativo (epgshare01): Fox.Business.HD.us2
+      => 3 dias com guia
+    CBS News 24/7      tvg-id=464941
+      canal declarado no EPG: True | last-modified: Tue, 06 Oct 2026 02:26:06 GMT
+      2026-10-06  minimo=28  completo=28  ex.: The Daily Report
+      2026-10-07  minimo=28  completo=28  ex.: The Daily Report
+      2026-10-08  minimo= 0  completo=15  ex.: CBS News 24/7
+      esquema alternativo (epgshare01): CBS.News.National.Stream.us2
+      => 3 dias com guia
+
+[3] LOGOS tvg-logo (.jpg, funcionais, sem imgur.com)
+    ABC News Live      https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+      [OK] extensao .jpg/.jpeg      streamprovider11.jpg
+      [OK] nao e imgur.com          keyframe-cdn.abcnews.com
+      [OK] HTTP 200                 HTTP 200
+      [OK] content-type image/jpeg  image/jpeg
+      [OK] assinatura JPEG (FFD8FF) ffd8ff
+    Fox News Channel   https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3
+      [OK] extensao .jpg/.jpeg      image.jpg
+      [OK] nao e imgur.com          cf-images.us-east-1.prod.boltdns.net
+      [OK] HTTP 200                 HTTP 200
+      [OK] content-type image/jpeg  image/jpeg
+      [OK] assinatura JPEG (FFD8FF) ffd8ff
+    Fox Business       https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/6949400
+      [OK] extensao .jpg/.jpeg      image.jpg
+      [OK] nao e imgur.com          a57.foxnews.com
+      [OK] HTTP 200                 HTTP 200
+      [OK] content-type image/jpeg  image/jpeg
+      [OK] assinatura JPEG (FFD8FF) ffd8ff
+    CBS News 24/7      https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-8
+      [OK] extensao .jpg/.jpeg      247-key-channelthumbnail-1920x1080.jpg
+      [OK] nao e imgur.com          assets2.cbsnewsstatic.com
+      [OK] HTTP 200                 HTTP 200
+      [OK] content-type image/jpeg  image/jpeg
+      [OK] assinatura JPEG (FFD8FF) ffd8ff
+
+[4] SINAIS DE AFILIADAS
+    hosts usados: 247preview.foxbusiness.com, 247preview.foxnews.com, abcnews-livestreams.akamaized.net, dai.google.com
+    .ts cru / IP-literal / porta alta / proxy de terceiro: nenhum
+    todos os streams sao de primeira parte (Akamai ABC, Akamai Fox, Google DAI/CBS)
+
+[5] GRAVACAO
+    backup: lista5.m3u.bak.pre_corrigir_epg_20261006_035757
+    escrito: lista5.m3u com 4 canais
+    canais removidos (stream/triagem): nenhum
+    canais removidos (sem EPG): nenhum
+
+[6] VALIDACAO FINAL DO ARQUIVO
+    entradas: 4
+    links sem '#' na linha de cima: 0 (OK)
+    entradas sem tvg-logo .jpg ou sem EPG: 0 (OK)
+    logos imgur.com: 0 (OK)
+
+==============================================================================
