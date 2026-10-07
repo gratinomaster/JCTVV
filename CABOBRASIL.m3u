@@ -13,8 +13,6 @@ https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
 http://45.162.64.114/FUTURA/index.m3u8
 #EXTINF:-1 tvg-id="CanalGov.br" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
 https://canalgov-stream.ebc.com.br/index.m3u8
-#EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
-http://170.83.49.66:8083/CANALRURALHD/index.m3u8
 #EXTINF:-1 tvg-id="UOL.br" tvg-name="Canal UOL" tvg-logo="https://iptv-epg.org/images/LYWORdKXYxofqLtK_BXg_y7NJhsJ6_-jvbvmfmX-bjxg_ewEm1vhS9Byb4iLXjxF7bK6nXVanIXev_lDLHTinP6IbPbNvCilHNOqYA" group-title="TV ABERTA",Canal UOL
 https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/chunklist_w98353333_b1000000_slen.m3u8
 #EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
@@ -95,5 +93,6 @@ http://170.83.16.50/SONY_CHANNEL/index.m3u8
 http://45.162.64.114/SPACE/index.m3u8
 #EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
 http://45.162.64.114/TNT/index.m3u8
-#EXTINF:-1 tvg-id="Universal.br" tvg-name="Universal" tvg-logo="https://iptv-epg.org/images/PcYvPhtWzz0XIknN0E-07pkCBiPhrbg_PRxIX8lFjxFs12CLS5CfG4JRkk66Vazarr2rPmZnLxKRPqjos1CvwFEWlIJVlsfy6whIaq1sQ28dpg" group-title="TV PAGA",Universal
-http://15.204.246.24:8080/UniversalHD/index.m3u8
+#EXTINF:-1 tvg-id="EPTVCampinas.br" tvg-name="EPTV" tvg-logo="https://logodix.com/logo/1997325.png" group-title="TV ABERTA",EPTV
+https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8
+
