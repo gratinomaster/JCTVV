@@ -106,8 +106,21 @@ def resolve_ch_id(ch_id, m3u_ids, id_mapping, name_to_tvgid):
     return None
 
 
-def parse_epg_file(path, m3u_ids, id_mapping, name_to_tvgid, matched, chans, progs, seen_progs, now, lo, hi):
-    kind = "local" if not path.startswith("http") else "remote"
+def minutes(stamp):
+    m = re.match(r"^(\d{14})\s*([+-]\d{4})?$", (stamp or "").strip())
+    if not m:
+        return None
+    d = m.group(1)
+    total = (int(d[0:4]) * 525600 + int(d[4:6]) * 43200 + int(d[6:8]) * 1440
+             + int(d[8:10]) * 60 + int(d[10:12]))
+    off = m.group(2)
+    if off:
+        sign = 1 if off[0] == "+" else -1
+        total -= sign * (int(off[1:3]) * 60 + int(off[3:5]))
+    return total
+
+
+def parse_epg_file(path, label, m3u_ids, id_mapping, name_to_tvgid, matched, chans, ch_src, progs, seen_progs, now, lo, hi):
     ch_count = 0
     prog_count = 0
     openf = gzip.open if path.endswith(".gz") else open
@@ -122,6 +135,7 @@ def parse_epg_file(path, m3u_ids, id_mapping, name_to_tvgid, matched, chans, pro
                 new.set("id", real)
                 chans[real] = new
                 matched.add(real)
+                ch_src[real] = label
                 ch_count += 1
             elem.clear()
         elif elem.tag == "programme":
@@ -143,7 +157,7 @@ def parse_epg_file(path, m3u_ids, id_mapping, name_to_tvgid, matched, chans, pro
                     ser = ET.tostring(elem, encoding="unicode")
                     p = ET.fromstring(ser)
                     p.set("channel", real)
-                    progs.append(p)
+                    progs.append((label, p))
                     prog_count += 1
             elem.clear()
     f.close()
@@ -161,6 +175,7 @@ def main():
 
     matched = set()
     chans = OrderedDict()
+    ch_src = {}
     progs = []
     seen_progs = set()
 
@@ -196,13 +211,12 @@ def main():
                 continue
         print(f"  Parsing {label}...", flush=True)
         ch_count, prog_count = parse_epg_file(
-            path, tvg_ids, id_mapping, name_to_tvgid,
-            matched, chans, progs, seen_progs, now, lo, hi)
+            path, label, tvg_ids, id_mapping, name_to_tvgid,
+            matched, chans, ch_src, progs, seen_progs, now, lo, hi)
         print(f"    matched {ch_count} new channels, {prog_count} programmes "
               f"| total {len(matched)}/{len(tvg_ids)} channels")
         if len(matched) >= len(tvg_ids):
             print("  All channels matched!")
-            break
 
     print()
     print("=" * 60)
@@ -214,12 +228,43 @@ def main():
     if missing:
         print(f"  Missing: {missing}")
 
+    by_ch = OrderedDict()
+    for src_label, p in progs:
+        by_ch.setdefault(p.get("channel"), {}).setdefault(src_label, []).append(p)
+
+    def dedup(items):
+        items = sorted(items, key=lambda p: (minutes(p.get("start")) or 0,
+                                             minutes(p.get("stop")) or 0))
+        kept, last_stop = [], None
+        for p in items:
+            s, e = minutes(p.get("start")), minutes(p.get("stop"))
+            if s is None or e is None:
+                continue
+            if last_stop is not None and s < last_stop:
+                continue
+            kept.append(p)
+            last_stop = e
+        return kept
+
+    final_progs = []
+    ignored = 0
+    dropped = 0
+    for cid, src_map in by_ch.items():
+        primary = ch_src.get(cid)
+        options = {s: dedup(v) for s, v in src_map.items()}
+        best = max(options, key=lambda s: (len(options[s]), s == primary))
+        ignored += sum(len(v) for s, v in options.items() if s != best)
+        dropped += sum(len(v) for v in options.values()) - len(options[best])
+        final_progs.extend(options[best])
+    print(f"  Programmes: {len(progs)} collected -> {len(final_progs)} kept "
+          f"({ignored} from other sources ignored, {dropped} overlapping/duplicate dropped)")
+
     lines = ['<?xml version="1.0" encoding="UTF-8"?>']
     lines.append('<tv generator-info-name="JCTVV EPG Builder">')
     for cid in sorted(chans.keys()):
         lines.append(ET.tostring(chans[cid], encoding="unicode"))
-    progs.sort(key=lambda p: p.get("start", ""))
-    for p in progs:
+    final_progs.sort(key=lambda p: p.get("start", ""))
+    for p in final_progs:
         lines.append(ET.tostring(p, encoding="unicode"))
     lines.append("</tv>")
     xml_str = "\n".join(lines)
