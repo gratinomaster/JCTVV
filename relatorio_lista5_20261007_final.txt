@@ -1,0 +1,124 @@
+RELATORIO lista5.m3u - 2026-10-07 (final)
+==========================================
+
+ESTADO ANTERIOR
+---------------
+Backup: lista5.m3u.bak.pre_tarefa_20261007_031024 (54 entradas).
+Nenhuma URL de EPG (url-tvg) no arquivo; varios tvg-id ausentes ou
+antigos (tvg-ids de epg da semana passada).
+
+TESTE DE STREAM (v2)
+--------------------
+Metodo: manifest -> variante -> segmento real (confere container).
+
+Dos 54 links do backup, 18 respondiam com midia real. Motivos de falha:
+  Fox News / Fox Business (247.foxnews.com / 247.foxbusiness.com)
+     -> HTTP 403 (token hdnea expirado, exp=1791338247)
+  CBS News 24/7 (dai.google.com)
+     -> HTTP 410 Gone em todas as bandas
+
+SUBSTITUICOES ENCONTRADAS (todas testadas em 3 camadas)
+-------------------------------------------------------
+  ABC News Live:   abcnews-livestreams.akamaized.net (1080p, 5641 kbps)
+                   dssott Disney unenc  ftc/akc, east/west (4117-4368 kbps)
+  CBS News 24/7:   cbsn-us  / cbsn-2  (cbsnstream.cbsnews.com, 2561/2270 kbps)
+  Fox News:        247preview.foxnews.com   (415 kbps)
+  Fox Business:    247preview.foxbusiness.com (415 kbps)
+
+Candidatos recusados:
+  http://138.121.15.230:9002/FOX-NEWS/index.m3u8 -> reprovado no anti-virus
+     (IP cru + porta 9002) mesmo com stream funcional
+  https://tvsen6.aynaott.com/foxbusiness/index.m3u8 -> HTTP 404
+
+TESTE ANTI-VIRUS
+----------------
+Sem VIRUSTOTAL_API_KEY: conferencia contra listas publicas do URLhaus
+(abuse.ch) + heuristicas (IP cru, porta incomum, TLD de risco,
+encurtador, imgur, dominio spoof de marca, executavel):
+
+  396 hosts + 27.628 URLs maliciosas carregadas   (atualizacao 2026-10-07 03:02/03:09)
+  17 URLs da lista5 testadas -> 17 aprovadas, 0 reprovadas
+
+Controle (sanity test) para provar que o detector funciona:
+  URL da propria base URLhaus  -> REPROVADA (urlhaus_url_maliciosa, host_ip_cru)
+  imgur.com/a/xyz              -> REPROVADA (imgur_proibido)
+  foxnews.com.evil-tld.tk      -> REPROVADA (tld_risco, dominio_nao_oficial)
+  epg.pw/xmltv/epg_US.xml.gz   -> APROVADA
+
+EPG (URLs inseridas no #EXTM3U)
+-------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+         6,5 MB gz | 769 canais | 80.752 programas | janela 10/06-10/10
+         atualizado 2026-10-06 22:39 UTC
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+         20 MB gz | 5.484 canais | 429.667 programas | janela 10/07-10/14
+         atualizado 2026-10-07 00:11 UTC
+
+Os 4 canais existem com tvg-id proprio no primario e o nome do canal
+(tvg-name) e identico nos dois guias -> se o player ler so o backup,
+o casamento por nome funciona. O backup tambem da mais dias de guia
+(ate 10/14); no instante do download o dia 10/09 so ia ate ~13:00,
+enquanto o primario cobre 10/07-10/10 completo.
+
+PROGRAMACAO CONFIRMADA (guia primario, 2026-10-07 UTC)
+------------------------------------------------------
+ABC News Live (tvg-id ABC.News.Live.us2)
+  hoje   10/07: 41  Live: Collapse / Burden of Proof / ABCNL Prime
+  amanha 10/08: 40  Burden of Proof / ABCNL Prime / ABC World News Tonight
+  depois 10/09: 40  Burden of Proof / ABCNL Prime / ABC World News Tonight
+
+CBS News National Stream (tvg-id CBS.News.National.Stream.us2)
+  hoje   10/07: 28  The Daily Report / CBS Evening News / 24/7 Primetime
+  amanha 10/08: 28  idem
+  depois 10/09: 28  idem
+
+Fox News Channel HD (tvg-id Fox.News.Channel.HD.us2)
+  hoje   10/07: 20  Jesse Watters Primetime / Hannity / Gutfeld!
+  amanha 10/08: 20  idem
+  depois 10/09: 20  idem
+
+Fox Business HD (tvg-id Fox.Business.HD.us2)
+  hoje   10/07: 22  Legends & Lies: The Real West
+  amanha 10/08: 22  How America Works
+  depois 10/09: 29  Cops
+
+NAO ha afiliadas locais nesta lista: apenas 4 redes nacionais,
+sem estacao regional para buscar EPG separado.
+
+LOGOS
+-----
+4 logos unicos, todos .jpg, verificados HTTP 200 + image/jpeg,
+nenhum de imgur.com:
+  ABC News Live   s.abcnews.com/.../abc_news_live-...-hpMain_16x9_608.jpg
+  CBS News 24/7   assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+  Fox News        a57.foxnews.com/.../15de0523.../image.jpg
+  Fox Business    a57.foxnews.com/.../c9b2e2eb.../image.jpg
+
+ESTRUTURA
+---------
+Header: #EXTM3U com url-tvg e x-tvg-url (as duas fontes, espaco).
+11 entradas, cada uma com #EXTINF logo acima do link (validado por
+script), tvg-id, tvg-name, tvg-logo .jpg e group-title "NEWS WORLD".
+
+VERIFICACAO FINAL DOS 11 CANAIS
+-------------------------------
+  OK  5641 kbps  ABC News Live   abcnews-livestreams.akamaized.net
+  OK  4117 kbps  ABC News Live   dssott ftc east
+  OK  4117 kbps  ABC News Live   dssott ftc west
+  OK  4240 kbps  ABC News Live   dssott ftc-2 east
+  OK  4172 kbps  ABC News Live   dssott akc east
+  OK  4368 kbps  ABC News Live   dssott akc west
+  OK  4335 kbps  ABC News Live   dssott akc-2 east
+  OK  2561 kbps  CBS News 24/7   cbsn-us.cbsnstream.cbsnews.com
+  OK  2270 kbps  CBS News 24/7   cbsn-2.cbsnstream.cbsnews.com
+  OK   415 kbps  Fox News       247preview.foxnews.com
+  OK   415 kbps  Fox Business   247preview.foxbusiness.com
+
+11/11 entregaram midia real no teste final (segmento 3/3 ok).
+Anti-virus pos-gravacao: 17 URLs (streams + logos + EPGs), 17 aprovadas.
+
+ARQUIVO
+-------
+lista5.m3u - 11 canais, 23 linhas
+Backup do original: lista5.m3u.bak.pre_tarefa_20261007_031024
+Scripts desta sessao: validar_lista5_epg_20261007.py, av_check_20261007.py
