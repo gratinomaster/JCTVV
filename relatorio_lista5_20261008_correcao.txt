@@ -1,0 +1,87 @@
+RELATORIO lista5.m3u - 2026-10-08 (correcao de EPG + higiene)
+==============================================================
+
+ESTADO ANTERIOR
+---------------
+Backup: lista5.m3u.bak.pre_correcao_20261008_205507 (69 linhas, 34 entradas).
+Problemas encontrados:
+  - NENHUMA url-tvg no #EXTM3U -> nenhum canal tinha guia.
+  - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
+  - 34 entradas para apenas 4 canais distintos (duplicatas massivas).
+  - Nomes eram titulos de programa ("Video USS Abraham Lincoln... | Watch..."
+    e "our free live news stream") em vez do nome da rede.
+  - Streams mortos: dai.google.com (CBS) HTTP 410; 247.foxnews/foxbusiness
+    com token hdnea expirado -> HTTP 403; dssott dvt2 -> DRM
+    SAMPLE-AES-CTR ou somente-audio (nao tocam em player comum).
+
+TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
+-----------------------------------------------------------------
+18 URLs unicas testadas: 2 OK / 16 FALHA.
+  Motivos: DRM SAMPLE-AES-CTR, somente_audio, somente_video, HTTP 403, HTTP 410.
+Substituicoes (7/7 aprovadas video+audio sem DRM):
+  CBS News    cbsn-us / cbsn-2 / cbsn-us-vtt .cbsnstream.cbsnews.com  2561/2270/2561 kbps
+  Fox News    247preview.foxnews.com/fncv3preview/primary|index        415/330 kbps
+  Fox Business 247preview.foxbusiness.com/fbnv3preview/primary|index   415/330 kbps
+ABC News Live mantido nos masters abcn-live-10-index e abcn-live-05-index
+(CODECS avc1+mp4a, video+audio comprovados).
+
+TESTE ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais)
+--------------------------------------------------------
+URLhaus: 394 hosts / 72.755 URLs maliciosas (2026-10-08).
+  15 URLs finais (9 streams + 4 logos + 2 EPG) -> 15 aprovadas, 0 reprovadas.
+  Controles negativos do detector OK (imgur e URLhaus reprovados).
+
+EPG (url-tvg no #EXTM3U - 2 fontes)
+-----------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+         769 canais | 80.429 programas | janela 07/10-11/10
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+         5.484 canais | 427.920 programas | janela 08/10-15/10
+Cada entrada leva tvg-id (casa na primaria) + tvg-name (casa na backup).
+
+PROGRAMACAO CONFIRMADA (hoje 08/10, amanha 09/10, depois 10/10)
+----------------------------------------------------------------
+ABC News Live            hoje=40 amanha=40 depois=35
+  hoje: Burden of Proof / Live: ABCNL Prime With Linsey Davis
+  depois: Collapse: The Forgotten Mines Under America / Burden of Proof
+CBS News National Stream hoje=28 amanha=28 depois=30
+  hoje/amanha/depois: The Daily Report / CBS Evening News
+Fox News Channel HD      hoje=20 amanha=20 depois=16
+  hoje: Live: Jesse Watters Primetime / Live: Hannity
+Fox Business HD          hoje=22 amanha=29 depois=40
+  hoje: How America Works | amanha/depois: Cops
+=> 4/4 canais com os 3 dias cobertos.
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais: sao 4 redes nacionais,
+grupo "NEWS WORLD". Nenhuma busca de EPG por afiliada foi necessaria.
+
+LOGOS (4 unicos, todos .jpg, zero imgur, HTTP 200 + image/jpeg)
+---------------------------------------------------------------
+ABC News Live   keyframe-cdn.abcnews.com/streamprovider11.jpg
+CBS News        assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+Fox News        a57.foxnews.com/.../15de0523.../image.jpg   (query ?ve=1&tl=1 removida)
+Fox Business    a57.foxnews.com/.../c9b2e2eb.../image.jpg   (query ?ve=1&tl=1 removida)
+
+ESTRUTURA
+---------
+  #EXTM3U url-tvg="...US2.xml.gz ...epg_US.xml.gz" x-tvg-url="(iguais)"
+  9 entradas, 19 linhas = 1 cabecalho + 9 (#EXTINF + URL).
+  Validado: toda linha http tem #EXTINF imediatamente acima; toda entrada
+  tem tvg-id, tvg-name, tvg-logo .jpg e group-title; nenhuma URL do imgur.
+
+VERIFICACAO FINAL (validar_lista5_final_20261008.py)
+----------------------------------------------------
+  estrutura ............ OK (0 erros)
+  anti-virus ........... 15/15 aprovadas
+  logos ................ 4/4 HTTP 200 image/jpeg
+  streams .............. 9/9 entregaram midia real
+  EPG .................. 2/2 fontes legiveis, 4/4 canais com hoje+amanha+depois
+  resultado ............ TUDO OK - sem problemas
+
+ARQUIVO
+-------
+  lista5.m3u - 9 entradas (ABC 2, CBS 3, Fox News 2, Fox Business 2).
+  Backup do original: lista5.m3u.bak.pre_correcao_20261008_205507
+  Script desta sessao: corrigir_lista5_20261008.py
