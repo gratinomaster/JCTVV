@@ -1,0 +1,128 @@
+RELATORIO lista5.m3u - 2026-10-08 (correcao de EPG + higiene)
+==============================================================
+
+ESTADO ANTERIOR
+---------------
+Backup: lista5.m3u.bak.pre_correcao_epg_20261008_032552 (119 linhas, 60 entradas).
+Problemas encontrados:
+  - NENHUMA url-tvg no #EXTM3U -> nenhum canal tinha guia.
+  - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
+  - 41 duplicatas de ABC News Live + 14 duplicatas de CBS.
+  - Fox News e Fox Business com token hdnea expirado (HTTP 403).
+  - CBS News em dai.google.com com HTTP 410 Gone.
+  - Varios links DRM (SAMPLE-AES-CTR) ou somente-audio (nao tocam em player).
+  - Nomes de canal eram titulos de programa ("ABC News Live Prime With
+    Linsey Davis | Watch Live News on ABCNL"), o que impede match por nome.
+
+TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
+-------------------------------------------------------------------
+42 URLs unicas testadas: 23 OK / 19 FALHA.
+  Motivos de falha:
+    247.foxnews.com / 247.foxbusiness.com -> HTTP 403 (hdnea expirado)
+    dai.google.com (CBS)                  -> HTTP 410 Gone
+    dssott dvt2=exp=...                   -> DRM SAMPLE-AES-CTR / somente-audio
+    abcn-live-10-index_3 / _4_0           -> playlist de audio ou de video puro
+                                             (erradas como link de canal)
+
+SUBSTITUICOES TESTADAS (7/7 aprovadas nas 3 camadas)
+-----------------------------------------------------
+  CBS News 24/7   cbsn-us.cbsnstream     2561 kbps video+audio
+                  cbsn-2.cbsnstream      2270 kbps video+audio
+                  cbsn-us-vtt.cbsnstream 2561 kbps video+audio
+  Fox News        247preview.foxnews.com/fncv3preview/primary.m3u8  415 kbps
+                  247preview.foxnews.com/fncv3preview/index.m3u8    330 kbps
+  Fox Business    247preview.foxbusiness.com/fbnv3preview/primary   415 kbps
+                  247preview.foxbusiness.com/fbnv3preview/index     330 kbps
+
+TESTE ANTI-VIRUS (sem API key do VirusTotal)
+--------------------------------------------
+Fonte: abuse.ch URLhaus (hostfile 399 hosts + CSV 70.909 URLs, atualizado
+2026-10-08 03:32 UTC, descompactado do .zip) + heuristicas locais
+(IP cru, porta incomum, TLD de risco, encurtador, imgur, spoof de marca,
+arquivo executavel). Script: av_check_20261008.py.
+
+  42 URLs originais            -> 42 aprovadas, 0 reprovadas
+  36 URLs finais (30 stream + 4 logos + 2 EPG) -> 36 aprovadas, 0 reprovadas
+
+Controles negativos (prova que o detector funciona):
+  https://imgur.com/a/xyz            -> REPROVADA (imgur_proibido)
+  https://foxnews.com.evil-tld.tk/x  -> REPROVADA (tld_risco, dominio spoof)
+  http://138.121.15.230:9002/FOX...  -> REPROVADA (host_ip_cru, porta 9002)
+  URL tirada da propria base URLhaus -> REPROVADA (urlhaus_url_maliciosa)
+
+Os canais removidos NAO foram por virus: foram por stream morto (403/410/DRM).
+
+EPG (url-tvg no #EXTM3U - 2 fontes, espaco)
+--------------------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+         6,5 MB | 769 canais | 80.429 programas | janela 07/10-11/10
+         atualizado 2026-10-07 22:35 UTC   <- casamento por tvg-id
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+         20 MB | 5.484 canais | 427.920 programas | janela 08/10-15/10
+         atualizado 2026-10-08 00:10 UTC   <- casamento por tvg-name
+
+Os dois guias trazem os 4 canais. As fontes usam ids diferentes, por isso
+cada entrada leva tvg-id (fonte primaria) + tvg-name (igual ao display-name
+das duas fontes) => o player casa por id na primaria e por nome na backup.
+
+PROGRAMACAO CONFIRMADA (hoje 08/10, amanha 09/10, depois 10/10)
+----------------------------------------------------------------
+                        fonte        hoje  amanha  depois
+ABC News Live           primario      40     40     35
+  hoje: Burden of Proof / Live: ABCNL Prime With Linsey Davis
+  depois: Collapse: The Forgotten Mines Under America / Burden of Proof
+ABC News Live           backup        40     40     21   (match por nome)
+
+CBS News National Stream primario     28     28     30
+  hoje/amanha/depois: The Daily Report / CBS Evening News / 24/7 Primetime
+CBS News National Stream backup       28     28     14   (match por nome)
+
+Fox News Channel HD      primario     20     20     16
+  hoje: Live: Jesse Watters Primetime / Live: Hannity
+Fox News Channel HD      backup       20     20     12   (match por nome)
+
+Fox Business HD          primario     22     29     40
+  hoje: How America Works | amanha/depois: Cops
+Fox Business HD          backup       22     28     18   (match por nome)
+
+=> 8/8 combinacoes (4 canais x 2 EPGs) com os 3 dias cobertos.
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais na lista5.m3u: sao apenas 4
+redes nacionais (ABC News Live, CBS News, Fox News, Fox Business),
+grupo "NEWS WORLD". Nenhuma busca de EPG por afiliada foi necessaria.
+
+LOGOS (4 unicos, todos .jpg, zero imgur, HTTP 200 + image/jpeg)
+----------------------------------------------------------------
+  ABC News Live   keyframe-cdn.abcnews.com/streamprovider11.jpg
+  CBS News        assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+  Fox News        a57.foxnews.com/.../15de0523.../image.jpg   (query removida)
+  Fox Business    a57.foxnews.com/.../c9b2e2eb.../image.jpg   (query removida)
+Os dois logos da Fox terminavam em ".jpg?ve=1&tl=1"; a query foi removida
+para o link terminar literalmente em .jpg. Todos passaram no anti-virus.
+
+ESTRUTURA
+---------
+  #EXTM3U url-tvg="...US2.xml.gz ...epg_US.xml.gz" x-tvg-url="(iguais)"
+  30 entradas, 61 linhas = 1 cabecalho + 30 (#EXTINF + URL).
+  Validado: toda linha http tem #EXTINF imediatamente acima; toda entrada
+  tem tvg-id, tvg-name, tvg-logo .jpg e group-title; nenhuma URL do imgur.
+
+VERIFICACAO FINAL (validar_lista5_final_20261008.py)
+-----------------------------------------------------
+  estrutura ............ OK (0 erros)
+  anti-virus ........... 36/36 aprovadas
+  logos ................ 4/4 HTTP 200 image/jpeg
+  streams .............. 30/30 entregaram midia real (segmento 3/3)
+  EPG .................. 2/2 fontes legiveis, 4/4 canais com hoje+amanha+depois
+  resultado ............ TUDO OK - sem problemas
+
+ARQUIVO
+-------
+  lista5.m3u - 30 entradas (ABC News Live 23 links de redundancia,
+  CBS 3, Fox News 2, Fox Business 2), 12.575 bytes.
+  Backup do original: lista5.m3u.bak.pre_correcao_epg_20261008_032552
+  Scripts desta sessao: fase1_streams_20261008.py, fase2_candidatos_20261008.py,
+  fase3_monta_lista_20261008.py, epg_analise_20261008.py,
+  av_check_20261008.py, validar_lista5_final_20261008.py

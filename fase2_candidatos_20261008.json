@@ -1,0 +1,30 @@
+{
+ "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8": {
+  "ok": true,
+  "reason": "master->variante 2561kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://cbsn-2.cbsnstream.cbsnews.com/out/v1/a6a897e8f4f74cfc896223dfd822482f/master.m3u8": {
+  "ok": true,
+  "reason": "master->variante 2270kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://cbsn-us-vtt.cbsnstream.cbsnews.com/out/v1/ef868690d34144509eda696884bf1619/master.m3u8": {
+  "ok": true,
+  "reason": "master->variante 2561kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8": {
+  "ok": true,
+  "reason": "master->variante 415kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://247preview.foxnews.com/hls/live/2020027/fncv3preview/index.m3u8": {
+  "ok": true,
+  "reason": "master->variante 330kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8": {
+  "ok": true,
+  "reason": "master->variante 415kbps | [video+audio] segmentos 3/3 ok"
+ },
+ "https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/index.m3u8": {
+  "ok": true,
+  "reason": "master->variante 330kbps | [video+audio] segmentos 3/3 ok"
+ }
+}

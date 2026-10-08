@@ -1,0 +1,45 @@
+entradas=59 urls_unicas=42
+[1/42] OK   master->variante 4050kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[2/42] OK   master->variante 4216kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[3/42] OK   master->variante 4240kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[4/42] OK   master->variante 4445kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[5/42] OK   master->variante 3904kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[6/42] OK   master->variante 4156kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[7/42] OK   master->variante 3934kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[8/42] OK   master->variante 4809kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[9/42] OK   master->variante 3859kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[10/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[11/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[12/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[13/42] FALHA protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[14/42] FALHA somente_audio (sem video) | https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[15/42] OK   master->variante 4216kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[16/42] OK   master->variante 4762kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[17/42] FALHA somente_audio (sem video) | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[18/42] FALHA master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (n | https://linear-abcnews-ftc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[19/42] OK   master->variante 3904kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[20/42] OK   master->variante 4240kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[21/42] FALHA somente_audio (sem video) | https://linear-abcnews-ftc-na-east-1.media.dssott.com/int/ps01/disney/
+[22/42] OK   master->variante 4310kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[23/42] OK   master->variante 4338kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[24/42] OK   master->variante 4156kbps | [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[25/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[26/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[27/42] OK   [desconhecido] segmentos 3/3 ok | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[28/42] FALHA somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[29/42] FALHA protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[30/42] FALHA master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (n | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791505
+[31/42] OK   master->variante 5641kbps | [video] segmentos 3/3 ok | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc1
+[32/42] FALHA somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[33/42] FALHA somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/
+[34/42] FALHA somente_audio (sem video) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc1
+[35/42] FALHA http=403 (possivel bloqueio geografico) | https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=ex
+[36/42] FALHA http=403 (possivel bloqueio geografico) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdne
+[37/42] FALHA somente_video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc1
+[38/42] FALHA http=410 | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stre
+[39/42] FALHA http=410 | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stre
+[40/42] FALHA http=410 | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stre
+[41/42] FALHA http=410 | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stre
+[42/42] FALHA http=410 | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stre
+
+OK=23/42 -> /home/runner/work/JCTVV/JCTVV/fase1_streams_20261008.json
