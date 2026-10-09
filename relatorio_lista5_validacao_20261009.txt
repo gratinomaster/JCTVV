@@ -1,0 +1,33 @@
+================================================================================
+VALIDACAO FINAL lista5.m3u  -  2026-10-09 14:49:07
+================================================================================
+   url-tvg: 2 fontes -> epg_ripper_US2.xml.gz | epg_US.xml.gz
+   entradas=9 | canais(tvg-id)=4 | logos distintos=4
+   links por canal: ABC.News.Live.us2=2, CBS.News.National.Stream.us2=3, Fox.News.Channel.HD.us2=2, Fox.Business.HD.us2=2
+   anti-virus: 15 URLs testadas, 0 reprovadas (URLhaus: 395 hosts / 72637 URLs maliciosas)
+   controles negativos do detector: OK (imgur + URLhaus reprovados)
+   logo OK   200 image/jpeg https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static
+   logo OK   200 image/jpeg https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static
+   logo OK   200 image/jpeg https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44b
+   logo OK   200 image/jpeg https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+   streams: 9/9 entregaram midia real
+   EPG epg_ripper_US2.xml.gz: OK (769 canais, 79569 programas)
+   EPG epg_US.xml.gz: OK (5484 canais, 414900 programas)
+     [OK ] ABC.News.Live.us2 (ABC News Live) via epg_ripper_US2.xml.gz: hoje=40 amanha=35 depois=28
+           hoje  20261009: Burden of Proof / Live: ABCNL Prime With Linsey Davis
+           amanha 20261010: Collapse: The Forgotten Mines Under America / Burden of Proof
+           depois 20261011: Live: Chilean Mine Rescue: Race Against Time / 20/20
+     [OK ] CBS.News.National.Stream.us2 (CBS News National Stream) via epg_ripper_US2.xml.gz: hoje=28 amanha=30 depois=28
+           hoje  20261009: The Daily Report / CBS Evening News
+           amanha 20261010: The Daily Report / CBS Evening News
+           depois 20261011: 48 Hours / 48 Hours
+     [OK ] Fox.Business.HD.us2 (Fox Business HD) via epg_ripper_US2.xml.gz: hoje=29 amanha=38 depois=32
+           hoje  20261009: Cops / Cops
+           amanha 20261010: Cops / Cops
+           depois 20261011: Duck Family Treasure / Duck Family Treasure
+     [OK ] Fox.News.Channel.HD.us2 (Fox News Channel HD) via epg_ripper_US2.xml.gz: hoje=20 amanha=16 depois=17
+           hoje  20261009: Live: Jesse Watters Primetime / Live: Hannity
+           amanha 20261010: Live: Jesse Watters Primetime / Live: Hannity
+           depois 20261011: Live: Life, Liberty & Levin / Live: My View With Lara Trump
+--------------------------------------------------------------------------------
+TUDO OK - sem problemas
