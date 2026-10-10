@@ -19,26 +19,37 @@ def inherit(base, ref):
 
 def test_stream(url, name):
     try:
-        r = requests.get(url, headers=H, timeout=30)
+        r = requests.get(url, headers=H, timeout=40)
         if r.status_code != 200:
             return False, f'HTTP {r.status_code}'
         if '#EXTM3U' not in r.text:
-            # maybe direct? try to see if playable? but often HLS
             return False, 'not m3u8'
-        # find variant
-        var = re.findall(r'(?m)^(?!#)(\S+\.m3u8\S*)$', r.text)
-        if not var:
+        # look for variants (.m3u8) but not AUDIO URI in media
+        lines = r.text.splitlines()
+        var_urls = []
+        for line in lines:
+            if line.startswith('#'):
+                continue
+            if line.strip().endswith('.m3u8') and not line.strip().startswith('audio-'):
+                var_urls.append(line.strip())
+        if not var_urls:
+            # fallback
+            var = re.findall(r'(?m)^(?!\s*#)(\S+\.m3u8\S*)$', r.text)
+            var_urls = var
+        if not var_urls:
             return False, 'no variant'
-        vurl = inherit(urljoin(url, var[0]), url)
-        vr = requests.get(vurl, headers=H, timeout=30)
+        vurl = inherit(urljoin(url, var_urls[0]), url)
+        vr = requests.get(vurl, headers=H, timeout=40)
         if vr.status_code != 200:
             return False, f'var HTTP {vr.status_code}'
-        # find segment
-        seg = re.findall(r'(?m)^(?!#)(\S+\.(?:ts|m4s|mp4|mp4a|aac))\S*$', vr.text)
+        seg = re.findall(r'(?m)^(?!\s*#)(\S+\.(?:ts|m4s))\S*$', vr.text)
+        if not seg:
+            # maybe mp4
+            seg = re.findall(r'(?m)^(?!\s*#)(\S+\.(?:mp4|aac))\S*$', vr.text)
         if not seg:
             return False, 'no segment'
         surl = inherit(urljoin(vurl, seg[-1]), vurl)
-        sr = requests.get(surl, headers=H, timeout=40, stream=True)
+        sr = requests.get(surl, headers=H, timeout=60, stream=True)
         if sr.status_code != 200:
             return False, f'seg HTTP {sr.status_code}'
         b = next(sr.iter_content(65536), b'')
@@ -63,9 +74,8 @@ def main():
         if l.startswith('#EXTINF'):
             pending = l
         elif l.startswith('#'):
-            continue  # skip other comments if any
+            continue
         elif pending is not None:
-            # URL line
             url = l.strip()
             name = re.search(r'tvg-name="([^"]+)"', pending)
             n = name.group(1) if name else (re.search(r',(.+)$', pending).group(1).strip() if ',' in pending else pending)
@@ -76,9 +86,8 @@ def main():
                 removed.append((n, reason))
             pending = None
         else:
-            pending = None  # orphan
+            pending = None
 
-    # write
     out = [hdr]
     for extinf, url in kept:
         out.append(extinf)
@@ -86,11 +95,9 @@ def main():
     with open(PL, 'w', encoding='utf-8') as f:
         f.write('\n'.join(out) + ('\n' if out else ''))
 
-    print(f'total kept={len(kept)} removed={len(removed)}')
-    for r in removed[:20]:
+    print(f'kept={len(kept)} removed={len(removed)}')
+    for r in removed[:10]:
         print('REM:', r[0], r[1])
-    if len(removed) > 20:
-        print(f'... and {len(removed)-20} more')
 
 if __name__ == '__main__':
     main()
