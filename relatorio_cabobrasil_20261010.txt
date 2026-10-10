@@ -1,5 +1,5 @@
-RELATORIO CABOBRASIL.m3u - 2026-10-10
-=====================================
+RELATORIO CABOBRASIL.m3u - 2026-10-10 (execucao final)
+======================================================
 
 ESCOPO DA TAREFA
 ----------------
@@ -9,110 +9,116 @@ ESCOPO DA TAREFA
 - Remover #EXTINF sem link.
 - Testar links contra virus.
 - Corrigir EPG; tvg-id reais (nao inventados), .xml/.xml.gz com programacao
-  de hoje, link https, testado em navegador real.
+  de hoje, link https, testado em navegador real (Chromium).
 
-ESTADO INICIAL
---------------
-Arquivo: 49 canais / 99 linhas.
-Cabecalho: #EXTM3U com url-tvg e x-tvg-url, ambos https:
-  https://iptv-epg.org/files/epg-br.xml.gz
-
-CABECALHO (mantido/corrigido)
+ESTADO INICIAL DESTA EXECUCAO
 -----------------------------
-#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
-Link do EPG inicia com https e funciona em navegador comum (ver teste).
+Arquivo: 50 canais / 101 linhas. Cabecalho com url-tvg e x-tvg-url https.
+(CABOBRASIL.m3u.bak.pre_tarefa_20261010_200323)
 
-TESTE DE STREAM (manifest -> variante -> segmento real, 3 tentativas)
----------------------------------------------------------------------
-50 URLs testadas:
-  OK (entregando midia real): 50
+CABECALHO (mantido)
+-------------------
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+Link do EPG inicia com https e funciona em navegador comum (ver teste abaixo).
+
+TESTE DE STREAM (HTTP -> master -> variante/media real, ate 3 tentativas)
+-------------------------------------------------------------------------
+51 URLs testadas:
+  OK (entregando midia real m3u8/TS): 51
   OFFLINE: 0
-  Obs.: Rede Brasil (https://redebrasil.nuvemplay.live/hls/stream.m3u8)
-  retornou HTTP 500 uma vez (transitorio); no reteste deu 200 em 6/6
-  tentativas entregando segmentos -> MANTIDO.
+  Obs.: Rede Brasil (https://redebrasil.nuvemplay.live/hls/stream.m3u8) deu
+  HTTP 500 uma vez (transitorio); no reteste deu 200 em 8/8 tentativas
+  entregando playlist de midia -> MANTIDO.
+  Nenhum #EXTINF sem link; nenhuma URL orfa.
 
 CANAL ADICIONADO (1, mais relevante, mesmo estilo)
 --------------------------------------------------
-  SporTV 3  (group-title="ESPORTES")
-  tvg-id="SporTV3.br"  tvg-name="SporTV 3"
-  URL: http://195.178.110.110/sportv3/index.m3u8
-       (mesmo host/fornecedor do SporTV e SporTV 2 ja presentes -> estavel)
-  tvg-logo: icone OFICIAL do EPG (iptv-epg.org), PNG.
-  EPG: 16 programas hoje, cobertura confirmada no XMLTV.
-  Motivo: canal esportivo de grande relevancia ausente; completa a familia
-  SporTV (1, 2 ja existiam) no mesmo estilo/grupo e com EPG real.
-  Verificado segmento ao vivo (2026-10-10T15:11 UTC).
+  ESPN 2  (group-title="ESPORTES")
+  tvg-id="ESPN2.br"  tvg-name="ESPN 2"
+  URL: http://181.78.197.59:8000/play/a080/index.m3u8
+       (mesmo host/fornecedor de ESPN 3 e ESPN 4 ja presentes -> estavel)
+  tvg-logo: icone OFICIAL do EPG (iptv-epg.org), PNG 512x95.
+  EPG: 15 programas hoje, cobertura confirmada no XMLTV.
+  Motivo: a familia ESPN ja tinha ESPN Brasil, ESPN 3 e ESPN 4; faltava a
+  ESPN 2, canal esportivo de grande relevancia (mesmo grupo/estilo) e com
+  EPG real. Verificado segmento ao vivo (2026-10-10T20:0x UTC).
+  Observacao: todos os canais de TV aberta nacional relevante ja estavam
+  presentes (Globo, SBT, Record, Band, RedeTV!, Cultura, Gazeta, Brasil,
+  CNT, Camara/Senado/Justica, Aparecida, Cancao Nova, Novo Tempo, RIT,
+  Rede Vida/Gospel/Brasil, A Critica, WooHoo, UOL...), por isso a adicao
+  se deu no grupo ESPORTES, ja existente na lista.
 
 LOGOS (sem .svg)
 ----------------
-50 logos verificados:
+51 logos verificados:
   - Todos HTTP 200, content-type image/png, assinatura PNG valida.
   - 0 arquivos .svg (nenhum).
-  - 46/49 logos byte-a-byte IDENTICOS ao <icon> oficial do EPG para cada
-    tvg-id (confirmacao de que o logo corresponde ao canal).
-  - 3 canais nao possuem icone no EPG e usam logo externo PNG valido:
+  - 48/51 logos byte-a-byte IDENTICOS ao <icon> oficial do EPG para cada
+    tvg-id (confirmacao de correspondencia com o canal).
+  - 3 canais nao possuem icone no EPG e usam logo EXTERNO PNG valido e
+    OFICIAL:
       RedeBrasil.br  upload.wikimedia.org (logo oficial)
       RITtv.br       raw.githubusercontent.com/tv-logo (PNG)
       TVACritica.br  upload.wikimedia.org (logo oficial)
-  - SporTV3.br (novo): logo oficial do EPG, PNG 512x114.
+  - ESPN2.br (novo): logo oficial do EPG, PNG 512x95.
 
-LIMITACAO HONESTA DO AMBIENTE
------------------------------
+LIMITACAO HONESTA DO AMBIENTE (leitor de imagens)
+-------------------------------------------------
 O modelo desta sessao NAO suporta entrada de imagem (image reader
 indisponivel: "this model does not support image input"). Portanto a
 verificacao visual pixel-a-pixel nao pode ser feita aqui. A validacao do
 logo "correto" foi feita de forma programatica e rigorosa:
-  (1) arquivo e PNG/JPG valido (assinatura + content-type);
-  (2) byte-a-byte igual ao icone oficial do proprio EPG para o tvg-id;
+  (1) arquivo e PNG valido (assinatura + content-type + dimensoes);
+  (2) byte-a-byte igual ao icone oficial do proprio EPG para o tvg-id
+      (48/51 canais); os 3 restantes usam logo oficial externo em PNG;
   (3) nenhum .svg. Nenhum logo ausente ou invalido.
 
 ANTI-VIRUS
 ----------
 Sem API key nao ha VirusTotal/Google Safe Browsing. Usado:
-  - URLhaus hostfile (abuse.ch), atualizado 2026-10-10: 397 hosts malignos.
-  - StevenBlack unified hosts (malware/adware): 72.309 entradas.
-99 URLs do .m3u (streams + logos + EPG) x 27 hosts: 0 listados.
-Heuristicas: sem encurtadores, sem DNS dinamico, sem dominio suspeito.
-Inspecao de conteudo: streams retornam m3u8/TS, logos PNG, EPG gzip XML;
-nenhum HTML/executavel servido pelos links.
+  - URLhaus hostfile (abuse.ch), atualizado 2026-10-10 19:44 UTC: 399 dominios.
+  - StevenBlack unified hosts (malware/adware/...): 157.693 entradas.
+  103 URLs do .m3u (51 streams + 51 logos + EPG) x 27 hosts: 0 listados.
+  Heuristicas: sem encurtadores; inspecao de conteudo: streams retornam
+  m3u8/TS, logos PNG, EPG gzip XML; nenhum HTML/executavel servido.
 
 EPG
 ---
 Fonte: https://iptv-epg.org/files/epg-br.xml.gz  (https, gzip/XMLTV)
-TESTE EM NAVEGADOR REAL (Playwright + Chromium, contexto novo):
-  - Download do arquivo pelo Chromium: epg-br.xml.gz
-  - 3.397.745 bytes, gzip valido
+TESTE EM NAVEGADOR REAL (Playwright + Chromium headless, contexto novo):
+  - Navegacao para o link do EPG: HTTP 200, content-type application/gzip.
+  - Download pelo navegador: 3.397.745 bytes, gzip valido.
   - gunzip: 16.371.875 bytes -> XMLTV com 182 canais.
+  - Programacao total: 29.789 programas; 4.895 no dia 10/10/2026.
   - A fonte usa CDN publica (Cloudflare) + redirect 302 -> funciona
     fora deste ambiente (qualquer navegador/player). Link https.
-Programacao: 29.789 programas no XMLTV; 5.4k+ no dia 10/10/2026.
-TODOS os 50 tvg-ids existem no EPG e tem programacao HOJE confirmada
-(menor cobertura: Canal do Boi/Canal Gov/Canal Rural/Rede Gospel/RIT/TV
-Aparecida/TV Novo Tempo = 10; maior: TV Ra Tim Bum = 92).
+TODOS os 51 tvg-ids existem no EPG e tem programacao HOJE confirmada
+(menor cobertura: Canal do Boi/Canal Gov/Canal Rural/Rede Gospel/RIT/
+TV Aparecida/TV Novo Tempo = 10; maior: TV Ra Tim Bum = 92).
 Nenhum tvg-id inventado: todos existem no XMLTV da fonte.
 
 ESTRUTURA FINAL
 ---------------
-  50 canais / 101 linhas = 1 cabecalho + 50 pares (#EXTINF + URL).
+  51 canais / 103 linhas = 1 cabecalho + 51 pares (#EXTINF + URL).
   Toda URL tem #EXTINF imediatamente acima.
   Nenhuma #EXTINF sem link.
   Toda entrada possui tvg-id, tvg-name, tvg-logo (.png) e group-title.
-  Nenhum .svg.
+  Nenhum .svg. Nenhum tvg-id duplicado. Nenhum nome duplicado.
 
 RESULTADO
 ---------
   cabecalho ............ url-tvg + x-tvg-url https OK
-  canais ............... 50 (eram 49)
+  canais ............... 51 (entrada: 50)
   removidos offline .... 0
-  adicionado ........... SporTV 3 (ESPORTES)
-  logos ................ 50/50 PNG validos, 0 svg
-  anti-virus ........... 99/99 URLs limpas (URLhaus + StevenBlack)
-  EPG .................. 50/50 tvg-ids casando com hoje
-  streams .............. 50/50 entregando midia
+  adicionado ........... ESPN 2 (ESPORTES)
+  logos ................ 51/51 PNG validos, 0 svg
+  anti-virus ........... 103/103 URLs limpas (URLhaus + StevenBlack)
+  EPG .................. 51/51 tvg-ids casando com hoje
+  streams .............. 51/51 entregando midia
   TUDO OK.
 
 ARQUIVO / BACKUP
 ----------------
-  CABOBRASIL.m3u (50 canais)
-  Backup: CABOBRASIL.m3u.bak.pre_tarefa_20261010_142103
+  CABOBRASIL.m3u (51 canais)
+  Backup: CABOBRASIL.m3u.bak.pre_tarefa_20261010_200323
   Nenhum arquivo .py gerado/salvo no repositorio (scripts apenas em /tmp).
