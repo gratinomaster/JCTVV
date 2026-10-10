@@ -33,7 +33,8 @@ ABC05 = "https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc
 CANAIS = [
     ("abc",  "ABC.News.Live.us2",            "ABC News Live",             [ABC10, ABC05]),
     ("cbs",  "CBS.News.National.Stream.us2", "CBS News National Stream",
-     ["https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
+     ["https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/0f33f6fa-fdad-4c5e-b6fe-59e5fb5884c6:DLS/master.m3u8",
+      "https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8",
       "https://cbsn-2.cbsnstream.cbsnews.com/out/v1/a6a897e8f4f74cfc896223dfd822482f/master.m3u8",
       "https://cbsn-us-vtt.cbsnstream.cbsnews.com/out/v1/ef868690d34144509eda696884bf1619/master.m3u8"]),
     ("foxn", "Fox.News.Channel.HD.us2",      "Fox News Channel HD",
