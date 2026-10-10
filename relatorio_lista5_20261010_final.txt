@@ -1,9 +1,9 @@
-RELATORIO lista5.m3u - 2026-10-10 03:14 (EPG valido 3 dias + higiene + anti-virus)
+RELATORIO lista5.m3u - 2026-10-10 14:05 (EPG valido 3 dias + higiene + anti-virus)
 ============================================================================
 
 ESTADO ANTERIOR (lista baixada)
 -------------------------------
-Backup: lista5.m3u.bak.pre_correcao_20261010_031113 (77 linhas, 38 entradas).
+Backup: lista5.m3u.bak.pre_fix_20261010_140525 (77 linhas, 38 entradas).
 Problemas encontrados:
   - NENHUMA url-tvg no #EXTM3U -> nenhum canal tinha guia.
   - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
@@ -16,10 +16,9 @@ Problemas encontrados:
 
 TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
 -----------------------------------------------------------------
-27 URLs testadas (19 unicas da lista + 8 candidatos): 9 OK / 18 FALHA.
+23 URLs testadas (16 unicas da lista + 7 candidatos): 9 OK / 14 FALHA.
 Candidatos de reposicao aprovados (master com audio ou video+audio, sem DRM):
   ABC News Live   abcn-live-10-index.m3u8 / abcn-live-05-index.m3u8
-                    (master com grupo de audio EXT-X-MEDIA; variante 5641kbps OK)
   CBS News        cbsn-us / cbsn-2 / cbsn-us-vtt .cbsnstream.cbsnews.com
   Fox News        247preview.foxnews.com/fncv3preview/primary|index
   Fox Business    247preview.foxbusiness.com/fbnv3preview/primary|index
@@ -27,7 +26,7 @@ Total final: 9 streams aprovados.
 
 ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais, sem API key)
 --------------------------------------------------------------
-URLhaus: 394 hosts / 72.704 URLs maliciosas.
+URLhaus: 399 hosts / 72.747 URLs maliciosas.
   15 URLs finais (9 streams + 4 logos + 2 EPG) -> 15 aprovadas, 0 reprovadas.
   Controles negativos OK: imgur.com reprovado (imgur_proibido);
   bit.ly reprovado (encurtador); IP cru URLhaus reprovado
@@ -51,12 +50,12 @@ ABC News Live            hoje=35 amanha=30 depois=36
   amanha: Live: Chilean Mine Rescue: Race Against Time / 20/20
   depois: 20/20 / Live: ABC World News Tonight With David Muir
 CBS News National Stream hoje=30 amanha=28 depois=26
-  hoje: The Daily Report / CBS Evening News | amanha/12: 48 Hours / 60 Minutes
+  hoje: The Daily Report / CBS Evening News | amanha: 48 Hours | depois: 60 Minutes
 Fox News Channel HD      hoje=11 amanha=17 depois=20
   hoje: Live: Jesse Watters Primetime / Live: Hannity
   amanha/depois: Life Liberty & Levin / Sunday Night In America
 Fox Business HD          hoje=36 amanha=32 depois=28
-  hoje/12: Cops | 11/10: Duck Family Treasure
+  hoje/12: Cops | amanha: Duck Family Treasure
 => 4/4 canais com os 3 dias cobertos na fonte primaria e na backup.
 
 AFILIADAS
@@ -90,8 +89,7 @@ VERIFICACAO FINAL (validar_lista5_final_20261008.py)
 ARQUIVO
 -------
   lista5.m3u - 9 entradas (ABC 2, CBS 3, Fox News 2, Fox Business 2), 19 linhas.
-  Backup do original: lista5.m3u.bak.pre_correcao_20261010_031113
-  Backup pre-fix:     lista5.m3u.bak.pre_fix_20261010_031343
+  Backup do original: lista5.m3u.bak.pre_fix_20261010_140525
   Scripts desta sessao: sessao_streams_20261010.py, sessao_epg_20261010.py,
                         sessao_av_20261010.py, corrigir_lista5_20261010_final.py,
                         validar_lista5_final_20261008.py
