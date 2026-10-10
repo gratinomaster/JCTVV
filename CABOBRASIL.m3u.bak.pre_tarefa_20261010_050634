@@ -1,10 +1,12 @@
-#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+#EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
 #EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV ABERTA",Arte 1
 http://45.162.64.114/ARTE1/index.m3u8
 #EXTINF:-1 tvg-id="BandBrasil.br" tvg-name="Band Brasil" tvg-logo="https://iptv-epg.org/images/r8TJn3roHVpdnzdCytiUuP4uyNMv13_NgMUnHV875XL_BHU6ZdZ3gzoUuCslReBXVu2l-z_jwGfl1rzOL0m4e7qOSrADOUEB14gp3tUD7lbphsc" group-title="TV ABERTA",Band Brasil
 https://streaming.gruporba.com.br/rba.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
 http://45.162.64.114/BAND_NEWS/index.m3u8
+#EXTINF:-1 tvg-id="BandSP.br" tvg-name="Band SP" tvg-logo="https://iptv-epg.org/images/OBnFhqow34YSUCoODefaQmri12i_Z3trxMfeGIUpVS5otHchIAEACrrxEx1WLgYVKgeUBdqcahnd58WAiJBtQdGEB0Q1jPCnlof4uzjbpg" group-title="TV ABERTA",Band SP
+https://media.cdntvms.com.br/band_sat/index.m3u8
 #EXTINF:-1 tvg-id="CanaldoBoi.br" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
 https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
 #EXTINF:-1 tvg-id="Futura.br" tvg-name="Canal Futura" tvg-logo="https://iptv-epg.org/images/FKN4lgD56Xso6jJkAEGJ2p4qtCwk9mcU9olZ2jZHYhVNrVKaVl5Zp8ezZsRpyZ1YxXMBNZykVhSI7vifmNsOsk_Px7WyFy7GlZw6LnzsGA" group-title="TV ABERTA",Canal Futura
@@ -25,6 +27,8 @@ http://45.162.64.114/CNT/index.m3u8
 https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo" tvg-logo="https://iptv-epg.org/images/01rjJoLdzu5R2q7G59AXz3Zs8JGtCDJHabPPPUbB0HeV_Du_5efYc-6ikeblWxI6HLefQpkWzA8b9j9DG9S80PeB_DaLt3GG4EpGR7RdiMc" group-title="TV ABERTA",Globo
 http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
+#EXTINF:-1 tvg-id="GloboBrasil.br" tvg-name="Globo Brasil" tvg-logo="https://iptv-epg.org/images/chPC0al374ZMvPrbvU0_d_NK2mEQ76lHLnC5fSuAXU11aDqBf6pW6ZOhOYLv6OuIPlswKle3bw38E4-lGMYUUXLNT75465vKeTQRv8tQsaOaNW4X" group-title="TV ABERTA",Globo Brasil
+https://media2.cdntvms.com.br/tv_morena_dorados/index.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br" tvg-name="Jovem Pan News" tvg-logo="https://iptv-epg.org/images/v4bwhmiP-BUI5JWSqroZL3YWVUwHyakv6q5z4B6ElOI_9H2XMQVJfsdIYiJGGkoU4wO5_m1EBH5HxeESqfr02w1BFZmDdgAgyVv53iCtuLNTq3BbgQ" group-title="TV ABERTA",Jovem Pan News
 http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
 #EXTINF:-1 tvg-id="GloboNews.br" tvg-name="GloboNews" tvg-logo="https://iptv-epg.org/images/6VmLGSQLTCoNcHsEV9hO5y_2jgkPaNsomn7Mlt6qJ2_PTMb3e_ORoF2PoTyyDxnuIy0m69CyPpiWzLcyQ0unVrRsIRPMFLsCq1YTXJOHxMCyFg" group-title="TV ABERTA",GloboNews
@@ -73,8 +77,6 @@ http://45.162.64.114/WOOHOO/index.m3u8
 http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 #EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
 http://195.178.110.110/sportv/index.m3u8
-#EXTINF:-1 tvg-id="SporTV2.br" tvg-name="SporTV 2" tvg-logo="https://iptv-epg.org/images/O0vl3DDlxIW_ZYHRAQeQEA0UFAy8D4HoqkbHNhEFb5df_9Vojx3LID2PS8fDtLdTforfr384Oej4hCMQ9H2Az0UkPHWJPMQg1nbLu7cNnmQ" group-title="ESPORTES",SporTV 2
-http://195.178.110.110/sportv2/index.m3u8
 #EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
 http://181.78.197.59:8000/play/a081/index.m3u8
 #EXTINF:-1 tvg-id="ESPN4.br" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4

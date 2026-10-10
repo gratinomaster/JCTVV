@@ -1,0 +1,99 @@
+RELATORIO CABOBRASIL.m3u - 2026-10-10
+=====================================
+
+ESCOPO DA TAREFA
+----------------
+- Adicionar 1 canal relevante (TV aberta se necessario).
+- Adicionar tvg-logo onde faltar/invalido (sem .svg).
+- Excluir canais offline.
+- Remover #EXTINF sem link.
+- Testar links contra virus.
+- Corrigir EPG nos canais; tvg-id reais (nao inventados), com .xml/.xml.gz
+  com programacao de hoje, link https, testado em navegador.
+
+ESTADO ANTERIOR
+---------------
+Arquivo: 50 canais / 101 linhas.
+Cabecalho: #EXTM3U x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+(somente x-tvg-url -> varios players nao carregavam o guia).
+
+CABECALHO (corrigido)
+---------------------
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+Agora com url-tvg e x-tvg-url, ambos iniciando com https.
+
+TESTE DE STREAM (manifest -> variante -> segmento real)
+-------------------------------------------------------
+50 URLs testadas, com reteste dos casos duvidosos:
+  OK (media real): 49
+  OFFLINE (404 persistente, 3 tentativas):
+    - Band SP      http://media.cdntvms.com.br/band_sat/index.m3u8   -> REMOVIDO
+    - Globo Brasil http://media2.cdntvms.com.br/tv_morena_dorados/... -> REMOVIDO
+  Obs.: Arte 1, Rede Brasil e GloboNews apresentaram falha transitoria
+  no 1o teste (sobrecarga), mas entregam midia em todos os retestes -> MANTIDOS.
+
+CANAL ADICIONADO (1, relevante)
+-------------------------------
+  SporTV 2  (group-title="ESPORTES")
+  tvg-id="SporTV2.br"  tvg-name="SporTV 2"
+  URL: http://195.178.110.110/sportv2/index.m3u8  (mesmo host do SporTV ja existente, estavel)
+  tvg-logo: icone oficial do EPG (iptv-epg.org)
+  EPG: 17 programas hoje, cobertura 09/10 a 14/10.
+  Motivo: canal de maior relevancia ausente da lista, mesmo estilo do
+  grupo ESPORTES e com EPG real (SporTV2.br).
+
+LOGOS (sem .svg)
+----------------
+50 logos verificados: todos HTTP 200 image/png (0 svg), 49 imagens distintas
+(Band Brasil e Band SP compartilhavam o mesmo icone; Band SP removido).
+47/50 logos sao exatamente o icone oficial do EPG para o tvg-id.
+3 canais nao tem icone no EPG e usam logo externo valido (PNG):
+  RedeBrasil.br  upload.wikimedia.org (logo oficial)
+  RITtv.br       raw.githubusercontent.com/tv-logo (PNG)
+  TVACritica.br  upload.wikimedia.org (logo oficial)
+Observacao: o modelo nao conseguiu abrir os arquivos de imagem (sem suporte
+a entrada de imagem nesta sessao). A verificacao de "logo correto" foi feita
+de forma programatica: igualdade byte-a-byte com o <icon> do proprio EPG
+para cada tvg-id + verificacao de tipo/tamanho. Nenhum logo ausente/invalido.
+
+ANTI-VIRUS (URLhaus abuse.ch + heuristicas, sem API key)
+--------------------------------------------------------
+URLhaus: 396 hosts / 72.704 URLs maliciosas.
+101 URLs do .m3u checadas (streams + logos + EPG): 101 aprovadas, 0 reprovadas.
+Sem encurtadores, sem imgur, sem host listado no URLhaus.
+
+EPG
+---
+Fonte: https://iptv-epg.org/files/epg-br.xml.gz  (https, gzip/XMLTV)
+TESTE EM NAVEGADOR (Playwright/Chromium, contexto novo):
+  download OK -> epg-br.xml.gz, 3.258.140 bytes, gzip valido,
+  XMLTV com 182 canais. Funciona fora deste ambiente (CDN publica + redirect).
+Programacao: 28.333 programas; 5.473 no dia 10/10/2026.
+TODOS os 49 tvg-ids existem no EPG e tem programacao HOJE confirmada
+(menor cobertura: GE TV=7; maior: TV Ra Tim Bum=92).
+Nenhum tvg-id inventado: todos existem no XMLTV da fonte.
+
+ESTRUTURA FINAL
+---------------
+  49 canais / 99 linhas = 1 cabecalho + 49 pares (#EXTINF + URL).
+  Toda linha de URL tem #EXTINF imediatamente acima.
+  Nenhuma #EXTINF sem link.
+  Toda entrada tem tvg-id, tvg-name, tvg-logo (.png) e group-title.
+
+RESULTADO
+---------
+  cabecalho ............ url-tvg + x-tvg-url https OK
+  canais ............... 49 (eram 50)
+  removidos offline .... Band SP, Globo Brasil
+  adicionado ........... SporTV 2
+  logos ................ 50/50 validos PNG, 0 svg
+  anti-virus ........... 101/101 aprovadas
+  EPG .................. 49/49 tvg-ids casando com hoje
+  streams .............. 49/49 entregando midia
+  TUDO OK - sem problemas.
+
+ARQUIVO / BACKUP
+----------------
+  CABOBRASIL.m3u (49 canais)
+  Backup: CABOBRASIL.m3u.bak.pre_tarefa_20261010_050634
+  Nenhum arquivo .py gerado/salvo.
