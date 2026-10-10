@@ -1,7 +1,5 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261010_095119)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261010_235809)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
-
-Header #EXTM3U url-tvg e x-tvg-url: as 3 fontes presentes e corretas.
 
 SporTV | sportv -> sportv | ok (globo,vivoplay)
 Globo São Paulo | tv-globo -> tv-globo | ok (globo)
@@ -19,7 +17,5 @@ G1 Amapá | globonews -> globonews | ok (globo)
 G1 Acre | globonews -> globonews | ok (globo)
 G1 Pará | globonews -> globonews | ok (globo)
 ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | cbn_sp -> (removido) | cbn_sp nao existe nas 3 fontes
-CBN Rio de Janeiro | cbn_rj -> (removido) | cbn_rj nao existe nas 3 fontes
-
-Validacao final: 16/16 tvg-ids existem nas fontes; 0 ids invalidos.
+CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
