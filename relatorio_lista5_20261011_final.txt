@@ -1,22 +1,21 @@
-RELATORIO lista5.m3u - 2026-10-11 14:30 (EPG valido 3 dias + higiene + anti-virus)
+RELATORIO lista5.m3u - 2026-10-11 19:50 (EPG valido 3 dias + higiene + anti-virus)
 ============================================================================
 
 ENTRADA (lista baixada)
 -----------------------
-Backup: lista5.m3u.bak.pre_fix_20261011_142836 (67 linhas, 33 entradas).
+Backup desta sessao: lista5.m3u.bak.pre_fix_20261011_194806 (41 linhas, 16 entradas unicas).
 Problemas encontrados:
   - NENHUMA url-tvg no #EXTM3U -> nenhum canal tinha guia.
   - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
-  - 33 entradas para 4 redes (duplicatas massivas: ABC x12, CBS x19).
+  - 16 entradas para 4 redes (duplicatas massivas: ABC x3, CBS x11).
   - Streams reprovados no teste de 3 camadas:
-      dssott dvt2=exp=...            -> DRM SAMPLE-AES-CTR / somente-audio
-      dai.google.com (CBS)           -> HTTP 410 Gone
-      247.foxnews / 247.foxbusiness  -> HTTP 403 (token hdnea expirado)
+      247.foxnews / 247.foxbusiness  -> master ok, variantes HTTP 403 (token hdnea expirado)
+      dai.google.com 0f33f6fa...:DLS -> HTTP 410 Gone
       abcn-live-10-index_3 / _4_0    -> sub-playlist somente-video / somente-audio
 
 TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
 -----------------------------------------------------------------
-25 URLs testadas (16 unicas da lista + 9 candidatos): 9 OK / 16 FALHA.
+16 URLs testadas (7 unicas da lista + 9 candidatos): 13 OK / 3 FALHA.
 Candidatos de reposicao aprovados (master com video/audio, sem DRM):
   ABC News Live   abcn-live-10-index.m3u8 / abcn-live-05-index.m3u8
   CBS News        cbsn-us / cbsn-2 / cbsn-us-vtt .cbsnstream.cbsnews.com
@@ -26,7 +25,7 @@ Total final: 9 streams aprovados.
 
 ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais, sem API key)
 --------------------------------------------------------------
-URLhaus: 403 hosts / 72.813 URLs maliciosas.
+URLhaus: 413 hosts / 72.873 URLs maliciosas.
   15 URLs finais (9 streams + 4 logos + 2 EPG) -> 15 aprovadas, 0 reprovadas.
   Controles negativos OK: imgur.com reprovado (imgur_proibido);
   bit.ly reprovado (encurtador); IP cru URLhaus reprovado
@@ -36,7 +35,7 @@ URLhaus: 403 hosts / 72.813 URLs maliciosas.
 EPG (url-tvg + x-tvg-url no #EXTM3U - 2 fontes)
 -----------------------------------------------
 PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
-         769 canais | 79.464 programas
+         769 canais | 79.995 programas
 BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
          5.492 canais | 535.967 programas
 Cada entrada leva tvg-id (casa na primaria) + tvg-name igual ao display-name
@@ -45,18 +44,16 @@ ABC=465150, CBS=464941, FoxNews=465372, FoxBiz=464766).
 
 PROGRAMACAO CONFIRMADA (hoje 11/10, amanha 12/10, depois 13/10)
 ---------------------------------------------------------------
-ABC News Live            hoje=30 amanha=36 depois=41
-  hoje: Live: Chilean Mine Rescue: Race Against Time / 20/20
-  amanha: 20/20 / Live: ABC World News Tonight With David Muir
-  depois: Live: All Access With Linsey Davis / Burden of Proof
-CBS News National Stream hoje=28 amanha=26 depois=28
-  hoje: 48 Hours / CBS Weekend News | amanha: 60 Minutes | depois: The Daily Report
-Fox News Channel HD      hoje=17 amanha=20 depois=20
-  hoje: Live: Life, Liberty & Levin / Live: My View With Lara Trump
-  amanha: Live: Sunday Night in America With Trey Gowdy | depois: Live: Hannity
-Fox Business HD          hoje=32 amanha=28 depois=22
-  hoje: Duck Family Treasure | amanha/depois: Cops / Legends & Lies
-=> 4/4 canais com os 3 dias cobertos na fonte primaria e na backup.
+ABC News Live            hoje=24 amanha=36 depois=41 (backup 30/32/21)
+  hoje: 20/20 | amanha: 20/20 / ABC World News Tonight | depois: All Access With Linsey Davis
+CBS News National Stream hoje=21 amanha=26 depois=28 (backup 29/25/15)
+  hoje: 60 Minutes / CBS Weekend News | amanha: 60 Minutes | depois: The Daily Report
+Fox News Channel HD      hoje=12 amanha=20 depois=20 (backup 17/17/12)
+  hoje: My View With Lara Trump / FOX News Saturday Night | amanha: Sunday Night in America
+  depois: Jesse Watters Primetime / Hannity
+Fox Business HD          hoje=27 amanha=28 depois=22 (backup 30/37/12)
+  hoje: Duck Family Treasure | amanha: Cops | depois: Legends & Lies
+=> 4/4 canais com os 3 dias cobertos na fonte primaria E na backup.
 
 AFILIADAS
 ---------
@@ -89,8 +86,8 @@ VERIFICACAO FINAL (validar_lista5_final_20261008.py)
 ARQUIVO
 -------
   lista5.m3u - 9 entradas (ABC 2, CBS 3, Fox News 2, Fox Business 2), 19 linhas.
-  Backups desta sessao: lista5.m3u.bak.pre_fix_20261011_142836,
-                        lista5.m3u.bak.pre_fix_20261011_143003
+  Backups desta sessao: lista5.m3u.bak.pre_fix_20261011_194806 (entrada),
+                        lista5.m3u.bak.pre_fix_20261011_194900 (pre-reescrita)
   Scripts: sessao_streams_20261011.py, sessao_av_20261011.py,
-           corrigir_lista5_20261011_final.py,
-           validar_lista5_final_20261008.py, sessao_epg_20261010.py
+           corrigir_lista5_20261011_final.py, sessao_epg_20261010.py,
+           validar_lista5_final_20261008.py
