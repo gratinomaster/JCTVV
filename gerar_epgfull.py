@@ -41,6 +41,14 @@ def norm(s):
     return re.sub(r"[\W_]+", "", s.lower(), flags=re.UNICODE)
 
 
+
+def slug(value):
+    value = unicodedata.normalize("NFD", value or "")
+    value = "".join(c for c in value if unicodedata.category(c) != "Mn")
+    value = re.sub(r"[^0-9A-Za-z]+", ".", value).strip(".")
+    return value or "x"
+
+
 def sem_sufixo(nome):
     """Nome do canal sem os sufixos entre parenteses/colchetes.
 
@@ -93,27 +101,51 @@ except Exception as e:
 # ordem dos canais conforme o .m3u, para saida estavel
 canais = OrderedDict()
 nome_para_id = {}
+nomes_vistos_sinteticos = set()
 for linha in conteudo.splitlines():
     if not linha.startswith("#EXTINF"):
         continue
     mt = re.search(r'tvg-id="([^"]*)"', linha)
     tvg = mt.group(1).strip() if mt else ""
     nome = linha.split(",")[-1].strip()
-    if not tvg:
-        continue
-    if tvg in canais:
-        continue
     ml = re.search(r'tvg-logo="([^"]*)"', linha)
-    canais[tvg] = {
-        "tvg_id": tvg,
-        "nome": nome,
-        "logo": ml.group(1).strip() if ml else "",
-        "display": "",
-        "icone": "",
-    }
-    nome_para_id.setdefault(norm(nome), tvg)
+    grupo = re.search(r'group-title="([^"]*)"', linha)
+    if tvg and tvg not in ("", "0", "(no tvg-id)"):
+        if tvg in canais:
+            pass
+        else:
+            canais[tvg] = {
+                "tvg_id": tvg,
+                "nome": nome,
+                "logo": ml.group(1).strip() if ml else "",
+                "display": "",
+                "icone": "",
+            }
+            nome_para_id.setdefault(norm(nome), tvg)
+    else:
+        # entrada sem tvg-id: deduplica por nome normalizado (igual ao teste)
+        if norm(nome) in nomes_vistos_sinteticos:
+            continue
+        nomes_vistos_sinteticos.add(norm(nome))
+        gn = slug(grupo.group(1).strip()) if grupo and grupo.group(1).strip() else ""
+        base = "M3U." + (gn + "." if gn else "") + slug(nome)
+        key, n = base, 2
+        while key in canais:
+            key = f"{base}.{n}"
+            n += 1
+        if key not in canais:
+            canais[key] = {
+                "tvg_id": key,
+                "nome": nome,
+                "logo": ml.group(1).strip() if ml else "",
+                "display": "",
+                "icone": "",
+            }
+            nome_para_id.setdefault(norm(nome), key)
 
-print(f"  canais com tvg-id: {len(canais)}")
+print(f"  canais com tvg-id: {sum(1 for c in canais.values() if c['tvg_id'] and not c['tvg_id'].startswith('M3U.'))}")
+print(f"  canais sem tvg-id (sinteticos): {sum(1 for c in canais.values() if c['tvg_id'].startswith('M3U.'))}")
+print(f"  total canais mapeados: {len(canais)}")
 
 # ---------------------------------------------------------------- 2. FONTES
 barra("2. FONTES EPG (IPTV-EPG.org)")
