@@ -1,74 +1,80 @@
 RELATORIO DE TESTE DE STREAM - lista5.m3u
-Data: 2026-10-11 19:11:29
-Backup: lista5.m3u.bak.pre_teste_20261011_191124
-Entradas testadas: 32 | URLs unicas: 14 | Funcionais: 7
-Canais mantidos: 20 | Canais removidos: 12
+Data: 2026-10-12 02:38:51
+Backup: lista5.m3u.bak.pre_teste_20261012_023840
+Entradas testadas: 35 | URLs unicas: 18 | Funcionais: 6
+Canais mantidos: 18 | Canais removidos: 17
 Metodo: manifest -> variante (herdando query/token do pai) -> segmento real
 
 === CANAIS MANTIDOS ===
-[OK] ABC News Live - ABC News
+[OK] Video Post-tropical Isaias impacts the Southeast with heavy rain and gusty winds; Tropical Storm Rachel bringing flood threat to the Southwest | Watch Live News on ABCNL
      master->variante 5641kbps | [video] segmentos 3/3 ok | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-[OK] Watch Fox News Channel Online | Stream Fox News
-     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791749263~acl=/*~hmac=560e4f5f69acc75f76f6808b424884446a5a24035d1223adbc604420ec264e84
 [OK] Fox Business Go | Fox News Video
-     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791749263~acl=/*~hmac=560e4f5f69acc75f76f6808b424884446a5a24035d1223adbc604420ec264e84
+     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1791776181~acl=/*~hmac=885b4da31f719bcffd0a372775a35e677570ed7d6aaf94a7a32782da8ddf86c1
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1791776182~acl=/*~hmac=88bda1c4a86b47d28bf39137e2d901778cc9a4fc86332163ba0500db14c44be6
 [OK] our free live news stream
-     master->variante 5436kbps | [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/master.m3u8
+     master->variante 5436kbps | [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/master.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 [OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
-[OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
-[OK] our free live news stream
-     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/dd4fbc44-5671-4a13-9d5f-5be9f5ac048e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+     [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/a64fb7aa-22bd-4653-b969-68066db8c7ee:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
 
 === CANAIS REMOVIDOS ===
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 4876kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 3136kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)] | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     somente_audio (sem video) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     somente_audio (sem video) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     somente_audio (sem video) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8
-[FALHA] ABC News Live Weekend: Sunday | Watch Live News on ABCNL
-     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1791832061~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=2eb086b8-812a-493f-9d1a-fcd5ad9b9219~did=889a587b-ec6e-48e5-a11a-6eeff30a90cf~country=US~kid=k02~hmac=fc2ef6d31a95496ccffcc32d3fd5511c64bb7f88e7efe9323b52a24d3734f1c3/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
 [FALHA] ABC News Live - ABC News
-     somente_video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+     master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 4876kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 3136kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)] | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=c00ca54a5fd625c2ce1a442c983e81561832da94
 [FALHA] ABC News Live - ABC News
+     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858982~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fce77dca-2049-4af7-9f51-a7b72e08b0a9~did=42f6d856-bbf6-4ceb-b3dc-cbc6a35d65c9~country=US~kid=k02~hmac=05e57617e398037a4077b750bc17e970e15bef48f860fbf4006938e76f64a9f7/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 4876kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 3136kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)] | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=c00ca54a5fd625c2ce1a442c983e81561832da94
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm=SAMPLE-AES-CTR (nao toca em player comum) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     somente_audio (sem video) | https://linear-abcnews-akc-na-east-1.media.dssott.com/dvt2=exp=1791858997~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=56a76ca5-38b6-4587-857e-e4e321091918~did=9e6c5e4d-a019-4314-acd0-1da567fefd1e~country=US~kid=k02~hmac=af4619f906e3bf8e96bf3cf0ffbf3b39ffb7a7e6fd876cd3bd91101da9f5abbb/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] Video Post-tropical Isaias impacts the Southeast with heavy rain and gusty winds; Tropical Storm Rachel bringing flood threat to the Southwest | Watch Live News on ABCNL
      somente_audio (sem video) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
-[FALHA] ABC News Live - ABC News
+[FALHA] Video Post-tropical Isaias impacts the Southeast with heavy rain and gusty winds; Tropical Storm Rachel bringing flood threat to the Southwest | Watch Live News on ABCNL
      somente_video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
-[FALHA] ABC News Live - ABC News
+[FALHA] Video Post-tropical Isaias impacts the Southeast with heavy rain and gusty winds; Tropical Storm Rachel bringing flood threat to the Southwest | Watch Live News on ABCNL
      somente_audio (sem video) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[FALHA] Video Post-tropical Isaias impacts the Southeast with heavy rain and gusty winds; Tropical Storm Rachel bringing flood threat to the Southwest | Watch Live News on ABCNL
+     somente_video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
