@@ -101,3 +101,5 @@ http://45.162.64.114/SPACE/index.m3u8
 http://45.162.64.114/TNT/index.m3u8
 #EXTINF:-1 tvg-id="EPTVCampinas.br" tvg-name="EPTV" tvg-logo="https://iptv-epg.org/images/g6U1Mbe-Sj8l5DiF_lvJMFvRTy7xzfbETePg-Aua58H0bYF_xTXLl2M8kqkca5g7zx8bHKm_1UjXvqlAqp9QYzvKMHIXD5e3YUZxlmhwKBE1XM9rLw" group-title="TV ABERTA",EPTV
 https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8
+#EXTINF:-1 tvg-id="DiscoveryKids.br" tvg-name="Discovery Kids" tvg-logo="https://iptv-epg.org/images/6yJ1WkbMYDidhOsDQp8inHZ6GMNXp6CUvMhr9f7VBBrPLl3cfSvsg6bdbfAU-gO6e5YZSVNir36NF238gD0E4jQ6SJDkeAZUacUmT9LOJ2ySu3uGPJ4" group-title="TV PAGA",Discovery Kids
+http://170.83.49.66:8083/DISCOVERYKIDSHD/index.m3u8
