@@ -1,0 +1,87 @@
+RELATORIO lista5.m3u - 2026-10-13 15:30 (EPG valido + anti-virus + logos)
+============================================================================
+
+ENTRADA (lista baixada)
+----------------------
+Backup desta sessao: lista5.m3u.bak.pre_fix_20261013_152321 (85 linhas, 42 entradas).
+Problemas encontrados:
+  - NENHUMA url-tvg / x-tvg-url no #EXTM3U -> nenhum canal tinha guia.
+  - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
+  - 42 entradas para apenas 4 redes (duplicatas massivas: ABC x14, CBS x21).
+  - 4 URLs CBS (dai.google.com) retornando HTTP 410 (Gone) -> canal morto.
+  - 2 URLs Fox (247.foxnews/foxbusiness) retornando HTTP 403 -> canal morto.
+  - tvg-logo ok (todos .jpg) mas sem tvg-id para o EPG.
+
+TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
+-----------------------------------------------------------------
+19 URLs unicas da lista testadas: 13 OK / 6 FALHA.
+  abcnews-livestreams.akamaized.net  3/3 OK
+  linear-abcnews...dssott.com        10/10 OK (token expira a cada execucao)
+  dai.google.com                     0/4  (HTTP 410 - morto)
+  foxnews/foxbusiness 247            0/2  (HTTP 403 - morto)
+Streams substitutos (mesmas redes, oficiais, testados com segmento real):
+  ABC    abcn-live-10-index.m3u8 (akamaized, estavel sem token)
+  CBS    cbsn-us.cbsnstream.cbsnews.com/.../master.m3u8 (estavel)
+  FOX N  247preview.foxnews.com/hls/live/2020027/fncv3preview/index.m3u8
+  FOX B  247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/index.m3u8
+Total final: 4 streams aprovados (ABC, CBS, Fox News, Fox Business) - 4/4 OK.
+
+ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais, sem API key)
+--------------------------------------------------------------
+URLhaus: 73.423 URLs maliciosas / hosts.
+  10 URLs finais (4 streams + 2 EPG + 4 logos) -> 10 aprovadas, 0 reprovadas.
+  Controles negativos OK: imgur.com reprovado (imgur_proibido);
+  bit.ly reprovado (encurtador); IP cru 185.220.101.5:8080 reprovado
+  (host_ip_cru + urlhaus). Nenhum canal removido por virus.
+
+EPG (url-tvg + x-tvg-url no #EXTM3U - 2 fontes)
+----------------------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz (6,4 MB)
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz (20 MB)
+Cada entrada leva tvg-id (casa na primaria) + tvg-name igual ao display-name
+das duas fontes (casa tambem na backup por nome). Nenhum EPG inventado.
+
+PROGRAMACAO CONFIRMADA (hoje 13/10, amanha 14/10, depois 15/10)
+--------------------------------------------------------------
+ABC.News.Live.us2                US2=[41,40,38]  epg.pw=[41,40,20]
+CBS.News.National.Stream.us2     US2=[28,28,28]  epg.pw=[28,28,15]
+Fox.News.Channel.HD.us2          US2=[20,20,20]  epg.pw=[20,20,12]
+Fox.Business.HD.us2              US2=[22,22,23]  epg.pw=[22,22,12]
+=> 4/4 canais com os 3 dias cobertos nas duas fontes.
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais: sao 4 redes nacionais
+(ABC News Live, CBS News, Fox News, Fox Business), grupo "NEWS WORLD".
+Nenhuma busca de EPG por afiliada foi necessaria.
+
+LOGOS (4 unicos, todos .jpg, zero imgur, HTTP 200 image/jpeg)
+------------------------------------------------------------
+  ABC News Live   keyframe-cdn.abcnews.com/streamprovider11.jpg
+  CBS News        assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+  Fox News        a57.foxnews.com/.../1280x720/match/676/380/image.jpg
+  Fox Business    a57.foxnews.com/.../1280x720/match/676/380/image.jpg
+Nenhum logo precisou ser adicionado (todos ja existiam e eram .jpg).
+
+ESTRUTURA
+---------
+  #EXTM3U url-tvg="(2 fontes)" x-tvg-url="(iguais)"
+  4 entradas, 9 linhas = 1 cabecalho + 4 (#EXTINF + URL).
+  Toda linha http tem #EXTINF imediatamente acima; toda entrada tem tvg-id,
+  tvg-name, tvg-logo .jpg e group-title; nenhuma URL do imgur.
+
+VERIFICACAO FINAL (final_validate.py)
+-------------------------------------
+  estrutura ............ OK (0 erros, 0 avisos)
+  anti-virus ........... 10/10 aprovadas + controles negativos reprovados
+  logos ................ 4/4 HTTP 200 image/jpeg
+  streams .............. 4/4 entregaram midia real (segmento)
+  EPG .................. 2/2 fontes com hoje+amanha+depois para 4/4 canais
+  resultado ............ TUDO OK - 0 falhas, 0 avisos
+
+ARQUIVO
+-------
+  lista5.m3u - 4 entradas (ABC 1, CBS 1, Fox News 1, Fox Business 1), 9 linhas.
+  Backups: lista5.m3u.bak.pre_fix_20261013_152321.
+  Scripts (fora do repo, em /tmp/opencode/l5): test_streams.py, av_check.py,
+  final_validate.py, urlhaus.txt.
