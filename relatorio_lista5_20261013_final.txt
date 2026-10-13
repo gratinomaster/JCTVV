@@ -1,0 +1,86 @@
+RELATORIO lista5.m3u - 2026-10-13 04:30 (EPG valido 3 dias + higiene + anti-virus)
+============================================================================
+
+ENTRADA (lista baixada)
+-----------------------
+Backup desta sessao: lista5.m3u.bak.pre_fix_20261013_042345 (57 linhas, 28 entradas).
+Problemas encontrados:
+  - NENHUMA url-tvg no #EXTM3U -> nenhum canal tinha guia.
+  - Nenhum tvg-id / tvg-name -> impossivel casar com XMLTV.
+  - 28 entradas para apenas 2 redes (duplicatas massivas: ABC x11, CBS x17).
+  - 12 URLs unicas, das quais 4 eram sub-playlists somente-video / somente-audio
+    (dssott audio-aac 64K/128K e cmaf-cenc-ctr; akamai abcn-live-10-index_3/_4_0).
+  - Stream dssott carregava token com expiracao (renovado a cada execucao do LINK.py).
+
+TESTE DE STREAM (3 camadas: manifest -> variante -> segmento real)
+-----------------------------------------------------------------
+12 URLs unicas da lista testadas: 12 OK / 0 FALHA (l5_step1_test_streams.py).
+  abcnews-livestreams.akamaized.net      3/3
+  dai.google.com                         4/4
+  linear-abcnews-ftc-na-central-1.dssott 5/5
+Masters estaveis escolhidos (video+audio, sem DRM):
+  ABC News Live   abcn-live-10-index.m3u8 (akamaized, estavel)
+                  ctr-all-hdri-sliding.m3u8 (Disney+, token renovado pelo LINK.py)
+  CBS News        cbsn-us-vtt.../ef868690.../master.m3u8 (cbsnstream, estavel)
+                  dai.google.com ...:TUL/master.m3u8 (Google DAI)
+Total final: 4 streams aprovados (ABC 2, CBS 2).
+
+ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais, sem API key)
+--------------------------------------------------------------
+URLhaus: 423 hosts / 73.403 URLs maliciosas.
+  8 URLs finais (4 streams + 2 logos + 2 EPG) -> 8 aprovadas, 0 reprovadas.
+  Controles negativos OK: imgur.com reprovado (imgur_proibido);
+  bit.ly reprovado (encurtador); IP cru URLhaus reprovado
+  (urlhaus_url_maliciosa, host_ip_cru, porta_incomum).
+  Nenhum canal removido por virus.
+
+EPG (url-tvg + x-tvg-url no #EXTM3U - 2 fontes)
+-----------------------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+Cada entrada leva tvg-id (casa na primaria) + tvg-name igual ao display-name
+das duas fontes (casa tambem na backup por id: ABC=465150, CBS=464941).
+
+PROGRAMACAO CONFIRMADA (hoje 13/10, amanha 14/10, depois 15/10)
+---------------------------------------------------------------
+ABC.News.Live.us2              hoje=41 amanha=40 depois=38
+  hoje: Live: All Access With Linsey Davis / Burden of Proof / ABCNL Prime
+CBS.News.National.Stream.us2   hoje=28 amanha=28 depois=28
+  hoje: The Daily Report / CBS Evening News / 24/7 Primetime
+=> 2/2 canais com os 3 dias cobertos na fonte primaria (42/42 nomes conferidos).
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais: sao 2 redes nacionais,
+grupo "NEWS WORLD". Nenhuma busca de EPG por afiliada foi necessaria.
+
+LOGOS (2 unicos, todos .jpg, zero imgur, HTTP 200 image/jpeg)
+------------------------------------------------------------
+  ABC News Live   keyframe-cdn.abcnews.com/streamprovider11.jpg
+  CBS News        assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+
+ESTRUTURA
+---------
+  #EXTM3U url-tvg="...epg_ripper_US2.xml.gz ...epg_US.xml.gz" x-tvg-url="(iguais)"
+  4 entradas, 9 linhas = 1 cabecalho + 4 (#EXTINF + URL).
+  Toda linha http tem #EXTINF imediatamente acima; toda entrada tem tvg-id,
+  tvg-name, tvg-logo .jpg e group-title; nenhuma URL do imgur.
+
+VERIFICACAO FINAL (l5_step7_validate.py)
+----------------------------------------
+  estrutura ............ OK (0 erros)
+  anti-virus ........... 8/8 aprovadas + controles negativos reprovados
+  logos ................ 4/4 HTTP 200 image/jpeg
+  streams .............. 4/4 entregaram midia real
+  EPG .................. 2/2 fontes legiveis, 2/2 canais com hoje+amanha+depois
+  resultado ............ TUDO OK - 0 falhas, 0 avisos
+
+ARQUIVO
+-------
+  lista5.m3u - 4 entradas (ABC 2, CBS 2), 9 linhas.
+  Backups desta sessao: lista5.m3u.bak.pre_fix_20261013_042345 (entrada),
+                        lista5.m3u.bak.pre_build_20261013_042552 (pre-reescrita)
+  Scripts: l5_step1_test_streams.py, l5_step7_validate.py (+ build em /tmp/opencode).
+  Correcao aplicada: l5_step7_validate.py - parser XMLTV agora reconhece o fecho
+  </programme> colado ao <desc> (a fonte US2 usa esse formato); antes o CBS
+  aparecia como "sem programacao" por falha de leitura, nao por falta de dados.

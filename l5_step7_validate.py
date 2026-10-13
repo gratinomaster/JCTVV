@@ -257,9 +257,9 @@ def main():
                 continue
             if cap:
                 buf.append(ls)
-                if ls.startswith("</channel>") or ls.startswith("</programme>"):
+                if "</channel>" in ls or "</programme>" in ls:
                     bloco = "\n".join(buf)
-                    if ls.startswith("</channel>"):
+                    if "<channel " in bloco:
                         if cid in ids:
                             achados.add(cid)
                             for t in re.findall(
