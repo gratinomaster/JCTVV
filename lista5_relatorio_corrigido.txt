@@ -1,0 +1,38 @@
+==========================================================================
+VALIDACAO FINAL - lista5.m3u  (2026-10-14)
+==========================================================================
+
+[1] ESTRUTURA M3U
+  [ok] header #EXTM3U presente
+  [ok] todas as 4 URLs tem #EXTINF na linha de cima
+  [ok] sem URLs duplicadas
+
+[2] EPGS DECLARADOS NO ARQUIVO
+  [ok] EPG acessivel (HTTP 200, ~6MB): https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+
+[3] LOGOS (.jpg, sem imgur, JPEG real)
+  [ok] FOX News Channel: logo JPEG ok
+  [ok] FOX Business: logo JPEG ok
+  [ok] ABC News Live: logo JPEG ok
+  [ok] CBS News 24/7: logo JPEG ok
+
+[4] STREAM (manifesto + segmento)
+  [ok] FOX News Channel: reproduz
+  [ok] FOX Business: reproduz
+  [ok] ABC News Live: reproduz
+  [ok] CBS News 24/7: reproduz
+
+[5] EPG: cobertura D0 / D+1 / D+2 por tvg-id
+    tvg-ids usados: ABC.News.Live.us2, CBS.News.National.Stream.us2, Fox.Business.HD.us2, Fox.News.Channel.HD.us2
+  [ok] ABC.News.Live.us2 [ABC News Live] HOJE=40 AMANHA=40 DEPOIS DE AMANHA=40
+        hoje: Burden of Proof / Live: ABCNL Prime With Linsey Davis / Live: ABC World News Tonight With David Muir
+  [ok] CBS.News.National.Stream.us2 [CBS News National Stream] HOJE=28 AMANHA=28 DEPOIS DE AMANHA=28
+        hoje: The Daily Report / CBS Evening News / 24/7 Primetime
+  [ok] Fox.Business.HD.us2 [Fox Business HD] HOJE=22 AMANHA=23 DEPOIS DE AMANHA=29
+        hoje: American Dynasty / 2026 Silver Eagle is here &amp; it is a once-in-a-lifetime coin! / Rare WWII Silver Set
+  [ok] Fox.News.Channel.HD.us2 [Fox News Channel HD] HOJE=20 AMANHA=20 DEPOIS DE AMANHA=20
+        hoje: Live: Jesse Watters Primetime / Live: Hannity / Gutfeld!
+
+==========================================================================
+RESULTADO: 0 falha(s), 0 aviso(s)
+==========================================================================
