@@ -98,53 +98,36 @@ except Exception as e:
     with open(M3U_LOCAL, encoding="utf-8", errors="replace") as f:
         conteudo = f.read()
 
-# ordem dos canais conforme o .m3u, para saida estavel
+# ordem dos canais conforme o .m3u, para saida estavel.
+# Somente canais com tvg-id valido entram: e o unico identificador que o player
+# usa para casar a grade. Entradas sem tvg-id nao teriam como ser exibidas e so
+# aumentariam o guia, entao ficam de fora.
 canais = OrderedDict()
 nome_para_id = {}
-nomes_vistos_sinteticos = set()
+sem_id = 0
 for linha in conteudo.splitlines():
     if not linha.startswith("#EXTINF"):
         continue
     mt = re.search(r'tvg-id="([^"]*)"', linha)
     tvg = mt.group(1).strip() if mt else ""
+    if not tvg or tvg in ("0", "(no tvg-id)"):
+        sem_id += 1
+        continue
+    if tvg in canais:
+        continue
     nome = linha.split(",")[-1].strip()
     ml = re.search(r'tvg-logo="([^"]*)"', linha)
-    grupo = re.search(r'group-title="([^"]*)"', linha)
-    if tvg and tvg not in ("", "0", "(no tvg-id)"):
-        if tvg in canais:
-            pass
-        else:
-            canais[tvg] = {
-                "tvg_id": tvg,
-                "nome": nome,
-                "logo": ml.group(1).strip() if ml else "",
-                "display": "",
-                "icone": "",
-            }
-            nome_para_id.setdefault(norm(nome), tvg)
-    else:
-        # entrada sem tvg-id: deduplica por nome normalizado (igual ao teste)
-        if norm(nome) in nomes_vistos_sinteticos:
-            continue
-        nomes_vistos_sinteticos.add(norm(nome))
-        gn = slug(grupo.group(1).strip()) if grupo and grupo.group(1).strip() else ""
-        base = "M3U." + (gn + "." if gn else "") + slug(nome)
-        key, n = base, 2
-        while key in canais:
-            key = f"{base}.{n}"
-            n += 1
-        if key not in canais:
-            canais[key] = {
-                "tvg_id": key,
-                "nome": nome,
-                "logo": ml.group(1).strip() if ml else "",
-                "display": "",
-                "icone": "",
-            }
-            nome_para_id.setdefault(norm(nome), key)
+    canais[tvg] = {
+        "tvg_id": tvg,
+        "nome": nome,
+        "logo": ml.group(1).strip() if ml else "",
+        "display": "",
+        "icone": "",
+    }
+    nome_para_id.setdefault(norm(nome), tvg)
 
-print(f"  canais com tvg-id: {sum(1 for c in canais.values() if c['tvg_id'] and not c['tvg_id'].startswith('M3U.'))}")
-print(f"  canais sem tvg-id (sinteticos): {sum(1 for c in canais.values() if c['tvg_id'].startswith('M3U.'))}")
+print(f"  entradas sem tvg-id (ignoradas): {sem_id}")
+print(f"  canais com tvg-id: {len(canais)}")
 print(f"  total canais mapeados: {len(canais)}")
 
 # ---------------------------------------------------------------- 2. FONTES
