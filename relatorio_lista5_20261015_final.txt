@@ -1,0 +1,90 @@
+RELATORIO lista5.m3u - 2026-10-15 (EPG valido 3 dias + higiene + anti-virus)
+============================================================================
+
+ENTRADA (lista recebida)
+------------------------
+Backup desta sessao: lista5.m3u.bak.pre_corrigir_20261015_021558 (4 entradas).
+Estado: 4 canais nacionais de noticias (grupo "NEWS WORLD") com tvg-id
+apontando para a fonte epgshare US2, porem sem EPG de backup e com tvg-name
+divergente do display-name real das fontes.
+
+TESTE DE STREAM (manifest -> variante -> segmento real)
+------------------------------------------------------
+4 URLs unicas testadas: 4 OK / 0 FALHA (test_l5_streams.py).
+  FOX News Channel   247preview.foxnews.com .... 200000B midia (video+audio)
+  FOX Business       247preview.foxbusiness.com 200000B midia (video+audio)
+  ABC News Live      abcnews-livestreams.akamaized.net ... ok
+  CBS News 24/7      cbsn-us-vtt.cbsnstream.cbsnews.com ... ok
+Nenhum canal removido por falha de stream.
+
+EPG (url-tvg + x-tvg-url no #EXTM3U - 2 fontes)
+-----------------------------------------------
+PRIMARY  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+BACKUP   https://epg.pw/xmltv/epg_US.xml.gz
+Cada entrada leva tvg-id (casa no primario por id) + tvg-name igual ao
+display-name das duas fontes (casa tambem no backup por nome).
+
+PROGRAMACAO CONFIRMADA (hoje 15/10, amanha 16/10, depois 17/10)
+---------------------------------------------------------------
+canal             primario(US2)                backup(epg.pw)
+FOX News Channel  15=20 16=20 17=16            15=20 16=20 17=12
+FOX Business      15=23 16=29 17=39            15=22 16=29 17=18
+ABC News Live     15=40 16=40 17=33            15=38 16=40 17=20
+CBS News 24/7     15=28 16=28 17=30            15=28 16=28 17=14
+=> 4/4 canais com os 3 dias cobertos nas DUAS fontes.
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais: sao 4 redes nacionais
+(Fox News, Fox Business, ABC News Live, CBS News 24/7), grupo "NEWS WORLD".
+Nenhuma busca de EPG por afiliada foi necessaria.
+
+ANTI-VIRUS (abuse.ch URLhaus + heuristicas locais, sem API key)
+--------------------------------------------------------------
+URLhaus: 418 hosts / 73551 URLs maliciosas.
+  10 URLs (4 streams + 4 logos + 2 EPG) -> 10 aprovadas, 0 reprovadas.
+  Heuristicas: imgur proibido, IP cru, porta incomum, TLD de risco,
+  encurtador, spoof de marca. Nenhum canal removido por virus.
+
+LOGOS (4/4 .jpg, zero imgur, HTTP 200 image/jpeg)
+-------------------------------------------------
+  FOX News Channel   a57.foxnews.com/.../image.jpg
+  FOX Business       a57.foxnews.com/.../image.jpg
+  ABC News Live      keyframe-cdn.abcnews.com/streamprovider11.jpg
+  CBS News 24/7      assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+
+ESTRUTURA
+---------
+  #EXTM3U url-tvg="(2 fontes)" x-tvg-url="(iguais)"
+  4 entradas, 9 linhas = 1 cabecalho + 4 (#EXTINF + URL).
+  Toda linha http tem #EXTINF imediatamente acima; toda entrada tem tvg-id,
+  tvg-name, tvg-logo .jpg e group-title; nenhuma URL do imgur.
+
+ALTERACOES APLICADAS
+--------------------
+  - Adicionada 2a fonte de EPG (epg.pw) alem da US2.
+  - tvg-name alinhado ao display-name das fontes:
+      "FOX News Channel" -> "Fox News Channel HD"
+      "FOX Business"     -> "Fox Business HD"
+      "CBS News 24/7"    -> "CBS News National Stream"
+  - Streams, logos e tvg-id mantidos (ja validos).
+
+VERIFICACAO FINAL
+-----------------
+l5_step7_validate.py (estrutura + streams + logos/JPEG + EPG primario):
+  estrutura ............ OK (0 erros, sem URLs duplicadas)
+  streams .............. 4/4 entregaram midia real
+  logos ................ 4/4 JPEG real, .jpg, sem imgur
+  EPG primario ......... 4/4 canais com hoje+amanha+depois
+  resultado ............ 0 falhas, 0 avisos
+l5_validar_backup_av_20261015.py (EPG de backup + anti-virus):
+  EPG backup ........... 4/4 canais com hoje+amanha+depois (epg.pw)
+  anti-virus ........... 10/10 aprovadas (0 imgur, 0 maliciosa)
+  resultado ............ 0 falhas
+
+ARQUIVO
+-------
+  lista5.m3u - 4 entradas (Fox News, Fox Business, ABC News Live, CBS 24/7).
+  Backups desta sessao: lista5.m3u.bak.pre_corrigir_20261015_021558.
+  Scripts: test_l5_streams.py, l5_step7_validate.py,
+           l5_validar_backup_av_20261015.py.
