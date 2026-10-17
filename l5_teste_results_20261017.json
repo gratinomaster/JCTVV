@@ -1,0 +1,54 @@
+{
+  "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792230974~acl=/*~hmac=f0fb9948089d82c9a8f737e305885a785d9a5392bd309364f83e18281bf3d188": {
+    "ok": true,
+    "reason": "master->variante 2806kbps | [video+audio] segmentos 3/3 ok"
+  },
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792230974~acl=/*~hmac=f0fb9948089d82c9a8f737e305885a785d9a5392bd309364f83e18281bf3d188": {
+    "ok": true,
+    "reason": "master->variante 2806kbps | [video+audio] segmentos 3/3 ok"
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1ca10834-c953-40ee-a2be-47f15a9150b7:TUL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8": {
+    "ok": true,
+    "reason": "[video+audio] segmentos 3/3 ok"
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8": {
+    "ok": true,
+    "reason": "master->variante 5641kbps | [video] segmentos 3/3 ok"
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1ca10834-c953-40ee-a2be-47f15a9150b7:TUL/master.m3u8": {
+    "ok": true,
+    "reason": "master->variante 5436kbps | [video+audio] segmentos 3/3 ok"
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1ca10834-c953-40ee-a2be-47f15a9150b7:TUL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8": {
+    "ok": true,
+    "reason": "[video+audio] segmentos 3/3 ok"
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1ca10834-c953-40ee-a2be-47f15a9150b7:TUL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8": {
+    "ok": true,
+    "reason": "[video+audio] segmentos 3/3 ok"
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1ca10834-c953-40ee-a2be-47f15a9150b7:TUL/variant/11a57601e846fd8dc9b5aeaa8e410e29/bandwidth/4231000.m3u8": {
+    "ok": true,
+    "reason": "[video+audio] segmentos 3/3 ok"
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8": {
+    "ok": false,
+    "reason": "somente_audio (sem video)"
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8": {
+    "ok": false,
+    "reason": "somente_video (sem audio)"
+  },
+  "https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792313772~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=8465b6c6-3e60-4d58-9f55-8b559483eeaf~did=01ddd3cf-1dec-4d07-b40f-23dfb899026e~country=US~kid=k02~hmac=7af65a452c4f7412fd8fd739752ddc078e000bd89f9310f9de46645bc02dec27/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8": {
+    "ok": false,
+    "reason": "somente_audio (sem video)"
+  },
+  "https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792313772~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=8465b6c6-3e60-4d58-9f55-8b559483eeaf~did=01ddd3cf-1dec-4d07-b40f-23dfb899026e~country=US~kid=k02~hmac=7af65a452c4f7412fd8fd739752ddc078e000bd89f9310f9de46645bc02dec27/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8": {
+    "ok": false,
+    "reason": "protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)"
+  },
+  "https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792313772~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=8465b6c6-3e60-4d58-9f55-8b559483eeaf~did=01ddd3cf-1dec-4d07-b40f-23dfb899026e~country=US~kid=k02~hmac=7af65a452c4f7412fd8fd739752ddc078e000bd89f9310f9de46645bc02dec27/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c": {
+    "ok": false,
+    "reason": "master->variantes rejeitadas [6173kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 4876kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum); 3136kbps:protegido_drm=SAMPLE-AES-CTR (nao toca em player comum)]"
+  }
+}
