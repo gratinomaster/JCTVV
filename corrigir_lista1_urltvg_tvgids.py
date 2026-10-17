@@ -40,7 +40,8 @@ HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
 RULES = [
     (r"\bspor ?tv\b|\bsportv\b", "sportv"),
     (r"^ge\b|\bge\s?hd\b|\bge\s?tv\b|globo\s?esporte", "ge-tv"),
-    (r"^g1\b|\bg1\b|jornal nacional|globo news", "globonews"),
+    (r"\bglobo\s?news\b|\bglobonews\b", "globonews"),
+    (r"^g1\b|\bg1\b|jornal nacional", "tv-globo"),
     (r"\bcbn\b", None),
     (r"\bglobo\b|\babtv\b|afiliad", "tv-globo"),
 ]

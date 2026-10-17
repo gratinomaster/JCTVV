@@ -116,7 +116,7 @@ def extract_globoplay_data(url):
 EPG_SPORTV = "sportv"
 EPG_GE = "ge-tv"
 EPG_GLOBO = "tv-globo"
-EPG_G1 = "globonews"
+EPG_G1 = "tv-globo"
 
 CANAIS_SPORTV = ("spo", "sportv", "sptv")
 CANAIS_GE = ("ge", "gehd", "ge-hd", "ber1")
