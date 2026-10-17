@@ -1,0 +1,128 @@
+RELATORIO CABOBRASIL.m3u - 2026-10-17
+======================================
+
+ESCOPO DA TAREFA
+----------------
+- Adicionar 1 canal relevante do mesmo estilo (TV aberta se necessario).
+- Adicionar tvg-logo onde faltar/invalido (sem .svg).
+- Excluir canais offline.
+- Remover #EXTINF sem link.
+- Testar links contra virus.
+- Corrigir EPG; tvg-id reais (nao inventados), .xml/.xml.gz, programacao de
+  hoje, link https, testado em navegador real (Chromium).
+
+ESTADO INICIAL
+--------------
+Arquivo: 51 canais / 103 linhas.
+Backup: CABOBRASIL.m3u.bak.pre_tarefa_20261017_120811
+
+CABECALHO (mantido)
+-------------------
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
+Link do EPG inicia com https e foi testado em navegador real (ver EPG).
+
+TESTE DE STREAM (HTTP -> master -> variante -> segmento de midia real)
+---------------------------------------------------------------------
+52 URLs testadas (ate 3 niveis, baixando o ultimo segmento de midia):
+  OK (entregando midia real m3u8/TS): 52
+  OFFLINE: 0
+  Obs.: GloboNews (http://79.127.238.228:14093) e TS direto (video/mp2t) -> MANTIDO.
+  CNN Brasil / Rede Vida / TV Cultura usam URLs de segmento com query string;
+  confirmados entregando segmento video/mp2t real. Nenhum #EXTINF sem link;
+  nenhuma URL orfa.
+
+CANAL ADICIONADO (1, mais relevante, mesmo estilo)
+--------------------------------------------------
+  TNT Series  (group-title="TV PAGA")
+  tvg-id="TNTSeries.br"  tvg-name="TNT Series"
+  URL: http://45.162.64.114/TNTSERIES/index.m3u8
+       (mesmo host/fornecedor do TNT, Space, Discovery Channel, Cartoon
+        Network, Animal Planet e ESPN Brasil ja presentes; testado ate o
+        segmento -> seg ~4,7 KB video/MP2T)
+  tvg-logo: icone OFICIAL do EPG (iptv-epg.org), PNG.
+  EPG: 34 programas hoje, cobertura confirmada no XMLTV.
+  Motivo: a lista ja cobre toda a TV aberta nacional presente no XMLTV da
+  fonte (Globo/SBT/Record/Band/RedeTV!/Cultura/Gazeta/Brasil/CNT/Camara/
+  Senado/Justica/Aparecida/Cancao Nova/Novo Tempo/RIT/Rede Vida/Gospel/
+  A Critica/WooHoo/UOL...). As demais emissoras abertas nao constam no EPG
+  (TV Pai Eterno, Rede 21, Loading etc.). O principal canal aberto sem fluxo
+  estavel (Band SP) teve todos os streams testados e offline (404/403) ->
+  nao adicionado por descumprir a regra de excluir offline. A adicao se deu
+  no grupo "TV PAGA" ja existente, com um canal factual/popular que
+  complementa o TNT ja presente.
+
+LOGOS (sem .svg)
+----------------
+52 logos verificados:
+  - Todos HTTP 200/206, content-type de imagem e assinatura PNG valida.
+  - 0 arquivos .svg (nenhum).
+  - 49/52 logos byte-a-byte IDENTICOS ao <icon> oficial do EPG para o
+    tvg-id (inclui o TNT Series novo).
+  - 3 canais nao possuem icone no EPG e usam logo externo PNG oficial:
+      RedeBrasil.br  upload.wikimedia.org (logo oficial)
+      RITtv.br       raw.githubusercontent.com/tv-logo (PNG)
+      TVACritica.br  upload.wikimedia.org (logo oficial)
+  - Nenhum logo ausente ou invalido; nada a corrigir.
+
+LIMITACAO HONESTA DO AMBIENTE (leitor de imagens)
+-------------------------------------------------
+O modelo desta sessao NAO suporta entrada de imagem (image reader
+indisponivel: "this model does not support image input") e o binario
+tesseract/OCR nao esta disponivel (sem permissao de root). Portanto a
+conferencia visual pixel-a-pixel do logo nao pode ser feita aqui. A
+validacao "logo correto" foi feita de forma programatica e rigorosa:
+  (1) PNG valido (assinatura + content-type + dimensoes);
+  (2) 49/52 byte-a-byte iguais ao icone oficial do proprio EPG para o
+      tvg-id; os 3 restantes usam logo oficial externo em PNG;
+  (3) nenhum .svg. Nenhum logo ausente/invalido.
+
+ANTI-VIRUS
+----------
+Sem API key nao ha VirusTotal/Google Safe Browsing. Usado:
+  - URLhaus hostfile (abuse.ch): 430 dominios maliciosos.
+  - phishing.army blocklist: 157.511 entradas.
+  - StevenBlack unified hosts: 72k+ entradas.
+  Total: ~216.749 dominios maliciosos.
+  103 URLs do .m3u (52 streams + 52 logos + EPG) x 26 hosts distintos:
+  0 sinalizados. Heuristicas: sem encurtadores; conteudo inspecionado
+  (streams retornam m3u8/TS, logos PNG, EPG gzip XML); nenhum HTML/executavel.
+
+EPG
+---
+Fonte: https://iptv-epg.org/files/epg-br.xml.gz  (https, gzip/XMLTV)
+TESTE EM NAVEGADOR REAL (Playwright + Chromium headless, contexto novo):
+  - Navegacao/fetch pelo navegador: HTTP 200.
+  - Redireciona 302 -> https://iptv-epg.org/files/<hash>/epg-br.xml.gz
+    (CDN publica Cloudflare) -> funciona fora deste ambiente, em qualquer
+    navegador/player. Link https.
+  - Download pelo navegador: 3.716.609 bytes, gzip valido (1f 8b 08).
+  - gunzip: 17.432.261 bytes -> XMLTV com 182 canais.
+  TODOS os 52 tvg-ids existem no EPG e tem programacao HOJE (2026-10-17)
+  confirmada. Nenhum tvg-id inventado. TNT Series: 34 programas hoje.
+
+ESTRUTURA FINAL
+---------------
+  52 canais / 105 linhas = 1 cabecalho + 52 pares (#EXTINF + URL).
+  Toda URL tem #EXTINF imediatamente acima.
+  Nenhuma #EXTINF sem link. Nenhum link orfao.
+  Toda entrada possui tvg-id, tvg-name, tvg-logo (.png) e group-title.
+  Nenhum .svg. Nenhum tvg-id duplicado. Nenhum nome duplicado.
+  Grupos: TV ABERTA=37, TV PAGA=10, ESPORTES=5.
+
+RESULTADO
+---------
+  cabecalho ............ url-tvg + x-tvg-url https OK
+  canais ............... 52 (entrada: 51)
+  removidos offline .... 0
+  adicionado ........... TNT Series (TV PAGA)
+  logos ................ 52/52 PNG validos, 0 svg
+  anti-virus ........... 103/103 URLs limpas (~216k dominios maliciosos)
+  EPG .................. 52/52 tvg-ids casando com hoje
+  streams .............. 52/52 entregando midia
+  TUDO OK.
+
+ARQUIVO / BACKUP
+----------------
+  CABOBRASIL.m3u (52 canais)
+  Backup: CABOBRASIL.m3u.bak.pre_tarefa_20261017_120811
+  Nenhum arquivo .py gerado/salvo no repositorio (scripts apenas via stdin /tmp).
