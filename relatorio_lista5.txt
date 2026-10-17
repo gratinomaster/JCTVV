@@ -1,26 +1,46 @@
+======================================================================
 RELATORIO CORRECAO lista5.m3u
-Data: 2026-09-08 19:13
-=======================================================
+Data: 2026-10-17 02:02
+======================================================================
+Canal: ABC News Live | tvg-id: 465150 | EPG: Hoje=33 Amanha=28 Depois=1
+Canal: Fox News Channel | tvg-id: 465372 | EPG: Hoje=16 Amanha=18 Depois=1
+Canal: Fox Business | tvg-id: 464766 | EPG: Hoje=39 Amanha=31 Depois=1
+Canal: CBS News 24/7 | tvg-id: USBA370000104 | EPG: Hoje=9 Amanha=18 Depois=18
+  VirusTotal ABC News Live: nao_verificado
+  VirusTotal Fox News Channel: nao_verificado
+  VirusTotal Fox Business: nao_verificado
+  VirusTotal CBS News 24/7: nao_verificado
+  VirusTotal CBS News Bay Area: nao_verificado
+  VirusTotal CBS News Chicago: nao_verificado
+  VirusTotal CBS News Miami: nao_verificado
+  VirusTotal CBS News New York: nao_verificado
+  VirusTotal CBS News Los Angeles: nao_verificado
+  VirusTotal CBS News Dallas Ft Worth: nao_verificado
+  VirusTotal CBS News Detroit: nao_verificado
+  VirusTotal CBS News Philadelphia: nao_verificado
+  VirusTotal CBS News Colorado: nao_verificado
+  VirusTotal CBS News Minnesota: nao_verificado
+  VirusTotal CBS News Pittsburgh: nao_verificado
+  VirusTotal CBSN Boston: nao_verificado
+  ABC News Live: INCLUIDO | ID=465150 | Stream=OK
+  Fox News Channel: PULADO (stream offline)
+  Fox Business: PULADO (stream offline)
+  CBS News 24/7: PULADO (stream offline)
+  CBS News Bay Area: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Chicago: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Miami: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News New York: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Los Angeles: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Dallas Ft Worth: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Detroit: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Philadelphia: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Colorado: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Minnesota: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBS News Pittsburgh: INCLUIDO | ID=USBA370000104 | Stream=OK
+  CBSN Boston: INCLUIDO | ID=USBA370000104 | Stream=OK
 
-[1] EPG
-  ABC.News.Live.us2: hoje=38 amanha=40 depois=40 -> OK
-  Fox.News.Channel.HD.us2: hoje=24 amanha=24 depois=22 -> OK
-  Fox.Business.HD.us2: hoje=27 amanha=27 depois=33 -> OK
-  CBS.News.National.Stream.us2: hoje=27 amanha=26 depois=26 -> OK
-  EPG usado: https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
-  EPG cobre hoje/amanha/depois de todos os canais: SIM
-
-[2] Canais (stream + logo + antivirus)
-  ABC News Live | stream=OK logo=OK antivirus=OK -> OK
-  Fox News Channel | stream=OK logo=OK antivirus=OK -> OK
-  Fox Business | stream=OK logo=OK antivirus=OK -> OK
-  CBS News 24/7 | stream=OK logo=OK antivirus=OK -> OK
-
-[3] Gerando M3U
-  + ABC News Live (tvg-id=ABC.News.Live.us2)
-  + Fox News Channel (tvg-id=Fox.News.Channel.HD.us2)
-  + Fox Business (tvg-id=Fox.Business.HD.us2)
-  + CBS News 24/7 (tvg-id=CBS.News.National.Stream.us2)
-  VALIDACAO: OK (todas as URLs tem #EXTINF acima; logos .jpg; sem imgur; tvg-id presente)
-  Salvo: /home/runner/work/JCTVV/JCTVV/lista5.m3u (1547 bytes, 4 canais)
-=======================================================
+Total canais: 13
+EPG cobertura: 20261017=97, 20261018=95, 20261019=21
+EPG OK: SIM
+Problemas: 0
+======================================================================
