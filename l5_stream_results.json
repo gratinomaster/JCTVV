@@ -1,6 +1,66 @@
 [
  {
   "idx": 1,
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c",
+  "http": "200",
+  "ctype": "audio/mpegurl",
+  "kind": "master",
+  "media": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c",
+  "seg_bytes": 900001,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
+ },
+ {
+  "idx": 2,
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8",
+  "http": "200",
+  "ctype": "audio/mpegurl",
+  "kind": "media-playlist",
+  "media": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8",
+  "seg_bytes": 39649,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
+ },
+ {
+  "idx": 3,
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8",
+  "http": "200",
+  "ctype": "audio/mpegurl",
+  "kind": "media-playlist",
+  "media": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8",
+  "seg_bytes": 900001,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
+ },
+ {
+  "idx": 6,
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8",
+  "http": "200",
+  "ctype": "audio/mpegurl",
+  "kind": "media-playlist",
+  "media": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8",
+  "seg_bytes": 79501,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
+ },
+ {
+  "idx": 7,
+  "url": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8",
+  "http": "200",
+  "ctype": "audio/mpegurl",
+  "kind": "media-playlist",
+  "media": "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792428283~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=35d369ef-8e81-43bf-a842-910d2e6e678c~did=56bad152-5287-4a26-8044-108d02c16313~country=US~kid=k02~hmac=3aee6dc7aa918aef2efc53d1dfa384954f5656ebff9a0c723122e8befccb2d1f/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8",
+  "seg_bytes": 900001,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
+ },
+ {
+  "idx": 8,
   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
   "http": "200",
   "ctype": "application/x-mpegURL",
@@ -12,51 +72,75 @@
   "motivo": "ok"
  },
  {
-  "idx": 2,
-  "url": "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792148608~acl=/*~hmac=e99c6f9c9ee119eb547e4ad78c41f0edccb7e1c57c265d617299ece8ed4b0736",
-  "http": "403",
-  "ctype": "text/html",
-  "ok": false,
-  "motivo": "http 403"
+  "idx": 9,
+  "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL",
+  "kind": "media-playlist",
+  "media": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8",
+  "seg_bytes": 97540,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  },
  {
-  "idx": 3,
-  "url": "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792148608~acl=/*~hmac=e99c6f9c9ee119eb547e4ad78c41f0edccb7e1c57c265d617299ece8ed4b0736",
-  "http": "403",
-  "ctype": "text/html",
-  "ok": false,
-  "motivo": "http 403"
+  "idx": 10,
+  "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL",
+  "kind": "media-playlist",
+  "media": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8",
+  "seg_bytes": 900001,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  },
  {
-  "idx": 4,
-  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/9b7420f7-6180-4637-850f-1f493e9405d7:ATL/master.m3u8",
-  "http": "410",
-  "ctype": "text/html;",
-  "ok": false,
-  "motivo": "http 410"
+  "idx": 13,
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/master.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL;",
+  "kind": "master",
+  "media": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8",
+  "seg_bytes": 132728,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  },
  {
-  "idx": 5,
-  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/9b7420f7-6180-4637-850f-1f493e9405d7:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8",
-  "http": "410",
-  "ctype": "text/html;",
-  "ok": false,
-  "motivo": "http 410"
+  "idx": 14,
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL;",
+  "kind": "media-playlist",
+  "media": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8",
+  "seg_bytes": 132728,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  },
  {
-  "idx": 6,
-  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/9b7420f7-6180-4637-850f-1f493e9405d7:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8",
-  "http": "410",
-  "ctype": "text/html;",
-  "ok": false,
-  "motivo": "http 410"
+  "idx": 15,
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL;",
+  "kind": "media-playlist",
+  "media": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8",
+  "seg_bytes": 210936,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  },
  {
-  "idx": 7,
-  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/9b7420f7-6180-4637-850f-1f493e9405d7:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
-  "http": "410",
-  "ctype": "text/html;",
-  "ok": false,
-  "motivo": "http 410"
+  "idx": 16,
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+  "http": "200",
+  "ctype": "application/x-mpegURL;",
+  "kind": "media-playlist",
+  "media": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8",
+  "seg_bytes": 454584,
+  "seg_ok": true,
+  "ok": true,
+  "motivo": "ok"
  }
 ]

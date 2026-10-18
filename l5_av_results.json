@@ -1,19 +1,5 @@
 [
  {
-  "url": "https://247preview.foxnews.com/hls/live/2020027/fncv3preview/index.m3u8",
-  "achados": [],
-  "ok": true,
-  "seg_bytes": 454396,
-  "virustotal": null
- },
- {
-  "url": "https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/index.m3u8",
-  "achados": [],
-  "ok": true,
-  "seg_bytes": 546892,
-  "virustotal": null
- },
- {
   "url": "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8",
   "achados": [],
   "ok": true,
@@ -21,10 +7,10 @@
   "virustotal": null
  },
  {
-  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/3fe00ffb-0a96-4a4d-a1fc-c449e4564e9d:CHS/master.m3u8",
+  "url": "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1c78703b-f963-4466-813c-08c13e0b0731:DLS/master.m3u8",
   "achados": [],
   "ok": true,
-  "seg_bytes": 210936,
+  "seg_bytes": 114680,
   "virustotal": null
  }
 ]

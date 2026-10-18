@@ -1,0 +1,90 @@
+RELATORIO lista5.m3u - 2026-10-18 (EPG 2 fontes, streams, logos .jpg, anti-virus)
+==================================================================================
+
+ENTRADA (lista recebida)
+------------------------
+Backup: lista5.m3u.bak.pre_correcao_20261018_182811
+Estado: 55 linhas, 27 entradas, mas so 2 canais reais (ABC News Live e CBS
+News 24/7) repetidos; 12 URLs unicas (15 entradas eram copia exata de outra).
+Problemas: nenhum tvg-id/tvg-name, nenhum url-tvg no #EXTM3U, nomes sujos
+("Watch CBS News 24/7, our free live news stream", "ABC News Live - ABC News").
+Todas as linhas URL ja tinham #EXTINF acima; nenhum imgur; logos ja em .jpg.
+
+TESTE DE STREAM (12 URLs unicas: manifest -> variante -> segmento real)
+------------------------------------------------------------------------
+12/12 funcionais (midia real entregue). Detalhe por origem:
+  ABC via Disney (dssott, 5 URLs) .... token assinado exp=2026-10-19 16:44 UTC
+                                       -> EXPIRA AMANHA, descartadas
+  ABC via Akamai oficial (3 URLs) .... 1080p/720p/480p + trilha de audio,
+                                       master permanente -> MANTIDA (master)
+  CBS via Google DAI (4 URLs) ........ master + 7 variantes (400x224..1080p)
+                                       -> MANTIDA (master; variantes sao o
+                                       mesmo canal, player escolhe sozinho)
+Nenhum canal removido por falha de stream.
+NOTA: as URLs dssott do Disney+ sao assinadas e morrem amanhã cedo; por isso
+ABC News Live ficou com o master permanente da Akamai (oficial, sem token).
+
+EPG (url-tvg + x-tvg-url no #EXTM3U - 2 fontes, URLs verificadas ao vivo)
+--------------------------------------------------------------------------
+PRIMARIA  https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+BACKUP    https://epg.pw/xmltv/epg_US.xml.gz
+(tambem testadas: iptv-epg.org/epg-us.xml.gz - cobre os canais, mas os
+display-names tem prefixo "US - " e nao casariam no backup -> nao usada)
+
+Cada entrada leva tvg-id da fonte primaria e tvg-name igual ao display-name
+das DUAS fontes, assim casa por id no primario e por nome no backup.
+
+PROGRAMACAO CONFIRMADA (hoje 18/10, amanha 19/10, depois 20/10 - UTC)
+-----------------------------------------------------------------------
+canais              primario (epgshare US2)     backup (epg.pw US)
+ABC News Live       D0=31 D+1=36 D+2=41         D0=30 D+1=31 D+2=20
+CBS News 24/7       D0=28 D+1=26 D+2=28         D0=29 D+1=25 D+2=15
+=> 2/2 canais com os 3 dias cobertos nas DUAS fontes.
+Programas de agora verificados: ABC "This Week With George Stephanopoulos"
+(18:00-19:00) e CBS "Face the Nation" (18:00-19:00) - guia ao vivo.
+
+AFILIADAS
+---------
+NAO ha sinais de afiliadas/estacoes locais na lista: os 2 canais sao redes
+nacionais em streaming (ABC News Live e CBS News 24/7), grupo "NEWS WORLD".
+Nenhuma busca de EPG por afiliada foi necessaria.
+
+ANTI-VIRUS (sem API key do VirusTotal no ambiente)
+---------------------------------------------------
+1) Motor local (l5_step5_antivirus.py) em cima das 2 URLs finais:
+   assinatura EICAR, magic bytes (PE/ELF/ZIP/...), injecao no manifesto HLS,
+   integridade do segmento (fMP4/MPEG-TS), heuristicas de URL.
+   -> 2/2 LIMPAS, 0 reprovadas.
+2) Reputacao de URL no Google Safe Browsing (Transparency Report, sem key):
+   -> 4/4 hosts APROVADOS, nenhum com ameaca:
+      abcnews-livestreams.akamaized.net, dai.google.com,
+      keyframe-cdn.abcnews.com, sportshub.cbsistatic.com
+Nenhum canal removido por virus.
+
+LOGOS (2/2 .jpg, HTTP 200/206, image/jpeg, magic FFD8FF, zero imgur)
+---------------------------------------------------------------------
+  ABC News Live   https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+  CBS News 24/7   https://sportshub.cbsistatic.com/.../image-1729639255591.jpg
+Nenhum logo precisou ser trocado para .jpg (todos ja eram .jpg e carregam).
+
+ESTRUTURA FINAL
+---------------
+  #EXTM3U url-tvg="(2 fontes)" x-tvg-url="(2 fontes)"
+  2 entradas = 5 linhas (1 cabecalho + 2x (#EXTINF + URL))
+  Toda linha URL tem #EXTINF imediatamente acima; toda entrada tem tvg-id,
+  tvg-name, tvg-logo .jpg e group-title; zero URLs duplicadas; zero imgur.
+
+VERIFICACAO FINAL (validar_lista5_20261018.py)
+-----------------------------------------------
+  estrutura .... 0 problemas (sem URL orfa, sem duplicata, campos completos)
+  streams ...... 2/2 entregaram midia real (ABC 900.001B fMP4 / CBS 219.960B TS)
+  logos ........ 2/2 JPEG real
+  EPG .......... 2/2 canais com D0+D+1+D+2 nas 2 fontes (remota gzip OK)
+  anti-virus ... 4/4 hosts aprovados + motor local 2/2 limpas
+  RESULTADO .... tudo OK (exit 0)
+
+ARQUIVO
+-------
+  lista5.m3u - 2 entradas: ABC News Live (Akamai 1080p master) e
+  CBS News 24/7 (Google DAI master, ate 1080p).
+  Backup: lista5.m3u.bak.pre_correcao_20261018_182811
