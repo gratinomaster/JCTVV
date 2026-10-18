@@ -27,6 +27,16 @@ FUTURE_DAYS = 7
 # paises do IPTV-EPG.org que cobrem os canais do .m3u
 PAISES = ["cl", "ar", "mx", "ve", "us", "br", "il", "pt", "fr", "es", "co", "gb"]
 
+# fontes extras: canais ausentes do IPTV-EPG.org. O casamento e SOMENTE pelo
+# id manual abaixo (sem indexar nomes), para nao criar falsos positivos.
+FONTES_EXTRAS = [
+    ("Pluto TV US", "pluto_us.xml",
+     "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml"),
+]
+MANUAL_ID = {
+    "BigBrother.us": "6661f11a41af6400080e90d8",
+}
+
 PAIS_NOME = {
     "cl": "Chile", "ar": "Argentina", "mx": "Mexico", "ve": "Venezuela",
     "us": "USA", "br": "Brasil", "il": "Israel", "pt": "Portugal",
@@ -79,6 +89,15 @@ def baixar(url, destino):
     with open(destino, "wb") as f:
         f.write(dados)
     return len(dados)
+
+
+def abrir_texto(caminho):
+    """Abre o XMLTV em modo texto, tanto comprimido (gzip) quanto puro."""
+    with open(caminho, "rb") as f:
+        magic = f.read(2)
+    if magic == b"\x1f\x8b":
+        return gzip.open(caminho, "rt", encoding="utf-8", errors="replace")
+    return open(caminho, "rt", encoding="utf-8", errors="replace")
 
 
 # ---------------------------------------------------------------- 1. M3U
@@ -150,6 +169,20 @@ for cc in PAISES:
         print(f"  {PAIS_NOME.get(cc, cc):<12} cache {os.path.getsize(caminho):,} bytes")
     fontes.append((cc, caminho))
 
+extras = []
+for rotulo, nome_arq, url in FONTES_EXTRAS:
+    caminho = os.path.join(SRC_DIR, nome_arq)
+    if not os.path.exists(caminho) or os.path.getsize(caminho) < 1024:
+        try:
+            n = baixar(url, caminho)
+            print(f"  {rotulo:<12} baixado {n:,} bytes")
+        except Exception as e:
+            print(f"  {rotulo:<12} FALHOU ({e})")
+            continue
+    else:
+        print(f"  {rotulo:<12} cache {os.path.getsize(caminho):,} bytes")
+    extras.append((rotulo, caminho))
+
 if not fontes:
     print("ERRO: nenhuma fonte disponivel")
     sys.exit(1)
@@ -213,6 +246,33 @@ for cc, caminho in fontes:
                 bloco = None
     print(f"  {PAIS_NOME.get(cc, cc):<12} {n:>6} canais")
 
+# fontes extras entram so no indice de ids (display/icone), sem indexar nomes,
+# para o casamento por nome nao alcancar canais de outro provedor.
+print("  passo A2: indexando fontes extras...")
+for rotulo, caminho in extras:
+    n = 0
+    with abrir_texto(caminho) as f:
+        bloco = None
+        for linha in f:
+            s = linha.strip()
+            if bloco is None:
+                if s.startswith("<channel "):
+                    bloco = [s]
+                continue
+            if s.startswith("<icon ") or s.startswith("<display-name"):
+                bloco.append(s)
+            elif s.startswith("</channel>"):
+                cid = html.unescape(re_chan.search(bloco[0]).group(1)).strip()
+                dm = re_disp.search("\n".join(bloco))
+                im = re_icon.search("\n".join(bloco))
+                disp = html.unescape(dm.group(1)).strip() if dm else cid
+                icone = im.group(1).strip() if im else ""
+                if cid not in fonte:
+                    fonte[cid] = {"pais": pais_de(cid), "display": disp, "icone": icone}
+                    n += 1
+                bloco = None
+    print(f"  {rotulo:<12} {n:>6} canais (somente ids manuais)")
+
 # --- resolve o casamento fonte -> tvg-id ----------------------------------
 mapeia = {}                # cid da fonte -> tvg-id do .m3u
 usados = set()
@@ -223,6 +283,12 @@ for tvg in canais:                                   # 1) tvg-id exato
         mapeia[tvg] = tvg
         usados.add(tvg)
         origem[tvg] = "id"
+
+for tvg, sid in MANUAL_ID.items():                   # 1b) remapeamento manual
+    if tvg in canais and sid in fonte and tvg not in usados:
+        mapeia[sid] = tvg
+        usados.add(tvg)
+        origem[tvg] = "manual"
 
 # 2) por nome. Ordem de preferencia: pais proprio, nome completo, sem sufixo e
 # por fim qualquer pais. Exatamente um candidato, para nunca casar por
@@ -257,8 +323,10 @@ for cid_fonte, tvg in mapeia.items():
     c["icone"] = c["icone"] or fonte[cid_fonte]["icone"]
 
 por_id = {t for t, o in origem.items() if o == "id"}
-por_nome = {t for t, o in origem.items() if o != "id"}
-print(f"  casamento por tvg-id: {len(por_id)} | por nome: {len(por_nome)}")
+por_manual = {t for t, o in origem.items() if o == "manual"}
+por_nome = {t for t, o in origem.items() if o not in ("id", "manual")}
+print(f"  casamento por tvg-id: {len(por_id)} | por nome: {len(por_nome)} | "
+      f"manual: {len(por_manual)}")
 
 # --- PASSO B: coleta os programas na janela -------------------------------
 print("  passo B: coletando programas na janela...")
@@ -266,9 +334,9 @@ programas = OrderedDict()   # (tvg, start, stop) -> xml
 datas = set()
 re_chan_attr = re.compile(r'(channel=")[^"]*(")')
 
-for cc, caminho in fontes:
+for cc, caminho in fontes + extras:
     n_prog = 0
-    with gzip.open(caminho, "rt", encoding="utf-8", errors="replace") as f:
+    with abrir_texto(caminho) as f:
         segs = []
         dentro = False
         for linha in f:
