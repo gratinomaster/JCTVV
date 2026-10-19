@@ -32,9 +32,12 @@ PAISES = ["cl", "ar", "mx", "ve", "us", "br", "il", "pt", "fr", "es", "co", "gb"
 FONTES_EXTRAS = [
     ("Pluto TV US", "pluto_us.xml",
      "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml"),
+    ("Epgshare CL", "epgshare_cl1.xml.gz",
+     "https://epgshare01.online/epgshare01/epg_ripper_CL1.xml.gz"),
 ]
 MANUAL_ID = {
     "BigBrother.us": "6661f11a41af6400080e90d8",
+    "T13.cl": "Canal.13.de.Chile.cl",
 }
 
 PAIS_NOME = {
