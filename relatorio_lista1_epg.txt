@@ -1,21 +1,23 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261018_035221)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261019_124950)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-SporTV | sportv -> sportv | ok (globo,vivoplay)
-Globo São Paulo | tv-globo -> tv-globo | ok (globo)
-Globo Alagoas | tv-globo -> tv-globo | ok (globo)
-ge | ge-tv -> ge-tv | ok (globo)
-G1 Rio de Janeiro | tv-globo -> tv-globo | ok (globo)
-G1 Caruaru | tv-globo -> tv-globo | ok (globo)
-G1 Rio Grande do Sul | tv-globo -> tv-globo | ok (globo)
-G1 Santa Catarina | tv-globo -> tv-globo | ok (globo)
-G1 Vanguarda | tv-globo -> tv-globo | ok (globo)
-G1 Ceará | tv-globo -> tv-globo | ok (globo)
-G1 Espírito Santo | tv-globo -> tv-globo | ok (globo)
-G1 Triângulo Mineiro | tv-globo -> tv-globo | ok (globo)
-G1 Amapá | tv-globo -> tv-globo | ok (globo)
-G1 Acre | tv-globo -> tv-globo | ok (globo)
-G1 Pará | tv-globo -> tv-globo | ok (globo)
-ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
-CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+SporTV | sportv | ok (globo,vivoplay) com programacao
+Globo São Paulo | tv-globo | ok (globo) com programacao
+Globo Alagoas | tv-globo | ok (globo) com programacao
+ge | ge-tv | ok (globo) com programacao
+G1 Rio de Janeiro | tv-globo | ok (globo) com programacao
+G1 Caruaru | tv-globo | ok (globo) com programacao
+G1 Rio Grande do Sul | tv-globo | ok (globo) com programacao
+G1 Santa Catarina | tv-globo | ok (globo) com programacao
+G1 Vanguarda | tv-globo | ok (globo) com programacao
+G1 Ceará | tv-globo | ok (globo) com programacao
+G1 Espírito Santo | tv-globo | ok (globo) com programacao
+G1 Triângulo Mineiro | tv-globo | ok (globo) com programacao
+G1 Amapá | tv-globo | ok (globo) com programacao
+G1 Acre | tv-globo | ok (globo) com programacao
+G1 Pará | tv-globo | ok (globo) com programacao
+ge HD | ge-tv | ok (globo) com programacao
+CBN São Paulo | (sem id) | sem id (canal inexistente nas 3 fontes)
+CBN Rio de Janeiro | (sem id) | sem id (canal inexistente nas 3 fontes)
+
+Total: 18 canais, 0 tvg-id invalidos
