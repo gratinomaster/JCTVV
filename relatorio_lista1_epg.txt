@@ -1,6 +1,11 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261019_124950)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261019_203850)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
+Cabecalho:
+#EXTM3U url-tvg="<globo.xml>,<claro.xml>,<vivoplay.xml>" x-tvg-url="<globo.xml>,<claro.xml>,<vivoplay.xml>"
+url-tvg: ok (exatamente as 3 fontes pedidas) | x-tvg-url: ok
+
+Validacao dos tvg-ids contra os 3 XMLs (326 canais no total nas fontes):
 SporTV | sportv | ok (globo,vivoplay) com programacao
 Globo São Paulo | tv-globo | ok (globo) com programacao
 Globo Alagoas | tv-globo | ok (globo) com programacao
@@ -17,7 +22,10 @@ G1 Amapá | tv-globo | ok (globo) com programacao
 G1 Acre | tv-globo | ok (globo) com programacao
 G1 Pará | tv-globo | ok (globo) com programacao
 ge HD | ge-tv | ok (globo) com programacao
-CBN São Paulo | (sem id) | sem id (canal inexistente nas 3 fontes)
-CBN Rio de Janeiro | (sem id) | sem id (canal inexistente nas 3 fontes)
+CBN São Paulo | (sem id) | sem id (canal inexistente nas 3 fontes, id inventado seria EPG errado)
+CBN Rio de Janeiro | (sem id) | sem id (canal inexistente nas 3 fontes, id inventado seria EPG errado)
 
-Total: 18 canais, 0 tvg-id invalidos
+Programacao hoje/amanha conferida: tv-globo=106, sportv=161, ge-tv=29 programas (cobertura 20261018 a 20261024)
+
+Total: 18 canais, 0 tvg-id invalidos, 2 sem id (CBN, sem equivalente nas fontes)
+Nenhuma alteracao necessaria no lista1.m3u.
