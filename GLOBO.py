@@ -150,8 +150,8 @@ def obter_tvg_id(m3u8_url, title):
 
 
 EPG_URLS = (
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml "
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml "
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,"
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,"
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
 )
 
