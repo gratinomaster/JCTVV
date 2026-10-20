@@ -1,0 +1,65 @@
+RELATORIO CORRECAO lista5.m3u - 2026-10-20 (19:5x UTC)
+=======================================================
+
+ARQUIVO: lista5.m3u (16 canais, 2 canais unicos: ABC News Live e CBS News 24/7)
+BACKUP : lista5.m3u.bak.pre_correcao_epg_20261020_195012
+
+1) EPG (guia)
+   URL inserida no cabecalho (#EXTM3U url-tvg=... x-tvg-url=...):
+   https://epg.pw/xmltv/epg_US.xml.gz   (HTTP 200, gzip/XMLTV, 20,7 MB)
+   last-modified: Tue, 20 Oct 2026 00:11:54 GMT  -> atualizado hoje
+   Testada sem autenticacao (abre em qualquer navegador/leitor).
+
+   tvg-id reais (obtidos do proprio EPG, nada inventado):
+     465150 -> "ABC News Live"          (em todos os EXTINF da ABC)
+     464941 -> "CBS News National Stream" (em todos os EXTINF da CBS)
+   tvg-name = display-name exato do EPG (reforca o casamento do guia).
+
+   Programacao encontrada (UTC):
+     canal            2026-10-20   2026-10-21   2026-10-22
+     ABC News Live    40 programas 40 programas 20 programas (ate 12:30)
+     CBS News         28 programas 28 programas 15 programas (ate 12:30)
+   -> hoje, amanha e depois de amanhã COM programacao nos dois canais.
+
+   Foram testadas outras fontes; nenhuma cobria melhor os 2 canais:
+     epg.pw global (51 MB, mesma janela), PlutoTV (dia 3 = 0),
+     SamsungTVPlus (dia 2 parcial, dia 3 = 0), Plex (dia 3 = 0),
+     epg.112114.xyz / tv tome / epgshare01 / epg-guide / iptv-org -> fora do ar.
+   Conclusao: UMA fonte basta (os 2 tvg-id existem la); nao ha afiliadas na
+   lista (apenas sinais nacionais ABC/CBS), logo nenhum EPG extra por afiliada.
+
+2) ANTI-VIRUS / SEGURANCA
+   VirusTotal: API exige chave (HTTP 401 sem chave; nenhuma VIRUSTOTAL_API_KEY
+   disponivel neste ambiente). Substituido por:
+     - abuse.ch URLhaus (hostfile 449 hosts + 56.007 URLs maliciosas)
+     - heuristicas: TLD de risco, encurtadores, IP cru, porta incomum, imgur
+     - varredura de conteudo: magic bytes PE(MZ)/ELF/PDF/ZIP
+   Resultado: 20/20 URLs LIMPAS (16 streams + 3 logos + 1 EPG).
+   -> NENHUM canal removido por falhar no teste.
+
+3) STREAMS (manifesto -> melhor variante -> segmento)
+   16/16 OK (segmentos de 39 KB a 3,5 MB baixados com HTTP 200).
+   Atencao: os links do ABC usam token assinado exp=1792611080, que expira
+   ~2026-10-21 19:31 UTC (a workflow NEWSWORLD renova a lista a cada 8h).
+   Links da CBS (dai.google.com) nao tem token.
+
+4) LOGOS
+   Todos ja existiam e estavam em .jpg; nenhum era imgur; nenhum precisou ser
+   trocado. Testados: HTTP 200 + Content-Type image/jpeg + magic bytes FFD8FF.
+     https://s.abcnews.com/.../abc_news_live-...jpg        (19.603 B)
+     https://keyframe-cdn.abcnews.com/streamprovider11.jpg (35.376 B)
+     https://assets2.cbsnewsstatic.com/.../247-key-channelthumbnail-1920x1080.jpg
+                                                           (91.408 B)
+   Canais sem tvg-logo: 0.
+
+5) ESTRUTURA
+   - 16 linhas #EXTINF e 16 linhas de URL (todo link tem o # em cima): OK
+   - EXTINF orfaos: 0 ; URLs sem EXTINF: 0
+   - URLs duplicadas: 0 ; URLs http:// (inseguras): 0 ; imgur: 0
+   - Titulos limpos: "ABC News Live" e "CBS News 24/7"
+     (antes: "Watch CBS News 24/7, our free live news stream" com virgula
+      solta no meio do titulo, que quebra parsers de M3U)
+   - group-title="NEWS WORLD" mantido em todos.
+
+VALIDACAO FINAL: 0 falha(s), 0 aviso(s)
+  (script: estrutura + logos + EPG 3 dias + streams + anti-virus)
