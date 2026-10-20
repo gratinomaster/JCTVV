@@ -1,29 +1,21 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261019_215200)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261020_191206)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-url-tvg/x-tvg-url: ok (as 3 fontes BrazilTVEPG, separadas por virgula)
-
-Validacao dos tvg-ids contra os 3 XMLs:
-SporTV | sportv | ok (globo,vivoplay) com programacao (189 programas)
-Globo São Paulo | tv-globo | ok (globo) com programacao (106 programas)
-Globo Alagoas | tv-globo | ok (globo) com programacao (106 programas)
-ge | ge-tv | ok (globo) com programacao (29 programas)
-G1 Rio de Janeiro | globonews | ok (globo) com programacao (73 programas)
-G1 Caruaru | globonews | ok (globo) com programacao (73 programas)
-G1 Rio Grande do Sul | globonews | ok (globo) com programacao (73 programas)
-G1 Santa Catarina | globonews | ok (globo) com programacao (73 programas)
-G1 Vanguarda | globonews | ok (globo) com programacao (73 programas)
-G1 Ceará | globonews | ok (globo) com programacao (73 programas)
-G1 Espírito Santo | globonews | ok (globo) com programacao (73 programas)
-G1 Triângulo Mineiro | globonews | ok (globo) com programacao (73 programas)
-G1 Amapá | globonews | ok (globo) com programacao (73 programas)
-G1 Acre | globonews | ok (globo) com programacao (73 programas)
-G1 Pará | globonews | ok (globo) com programacao (73 programas)
-ge HD | ge-tv | ok (globo) com programacao (29 programas)
-CBN São Paulo | (sem id) | sem equivalente nas 3 fontes
-CBN Rio de Janeiro | (sem id) | sem equivalente nas 3 fontes
-
-Correcao aplicada: canais G1 (streams de noticias 24h) migrados de tv-globo
-para globonews, para que a guia mostre grade de noticias em vez de
-entretenimento da TV Globo. CBN (radio-fonia) permanece sem tvg-id,
-pois nao existe em nenhuma das 3 fontes.
+SporTV | sportv -> sportv | ok (globo,vivoplay)
+Globo São Paulo | tv-globo -> tv-globo | ok (globo)
+Globo Alagoas | tv-globo -> tv-globo | ok (globo)
+ge | ge-tv -> ge-tv | ok (globo)
+G1 Rio de Janeiro | tv-globo -> tv-globo | ok (globo)
+G1 Caruaru | tv-globo -> tv-globo | ok (globo)
+G1 Rio Grande do Sul | tv-globo -> tv-globo | ok (globo)
+G1 Santa Catarina | tv-globo -> tv-globo | ok (globo)
+G1 Vanguarda | tv-globo -> tv-globo | ok (globo)
+G1 Ceará | tv-globo -> tv-globo | ok (globo)
+G1 Espírito Santo | tv-globo -> tv-globo | ok (globo)
+G1 Triângulo Mineiro | tv-globo -> tv-globo | ok (globo)
+G1 Amapá | tv-globo -> tv-globo | ok (globo)
+G1 Acre | tv-globo -> tv-globo | ok (globo)
+G1 Pará | tv-globo -> tv-globo | ok (globo)
+ge HD | ge-tv -> ge-tv | ok (globo)
+CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
