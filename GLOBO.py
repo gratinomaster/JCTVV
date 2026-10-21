@@ -1,4 +1,5 @@
 import re
+import unicodedata
 from urllib.parse import unquote
 
 from selenium import webdriver
@@ -116,11 +117,16 @@ def extract_globoplay_data(url):
 EPG_SPORTV = "sportv"
 EPG_GE = "ge-tv"
 EPG_GLOBO = "tv-globo"
-EPG_G1 = "tv-globo"
+# G1 (GloboNews) tem grade propria: nao usar a grade geral de TV
+EPG_G1 = "globonews"
+# grade da afiliada de Sao Paulo (claro.xml)
+EPG_GLOBO_SP = "GLOBO SP"
 
 CANAIS_SPORTV = ("spo", "sportv", "sptv")
 CANAIS_GE = ("ge", "gehd", "ge-hd", "ber1")
-CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globo-sp", "globorj", "globosp", "tv-globo", "abtv")
+CANAIS_GLOBO = ("glb", "globo", "globo-rj", "globorj", "tv-globo", "abtv")
+# slugs da afiliada de Sao Paulo (tem id proprio em claro.xml)
+CANAIS_GLOBO_SP = ("glb", "globo-sp", "globosp", "tv-globo-sp")
 CANAIS_G1_PREFIXO = ("g1", "rede", "tvl", "nsc", "tvvm", "vanguarda")
 # slugs G1 regionais que comecam por "globo" e cairiam em CANAIS_GLOBO
 CANAIS_G1_EXATOS = ("globo-rs1",)
@@ -134,6 +140,10 @@ def obter_tvg_id(m3u8_url, title):
     match = re.search(r"/live/f[^/]*/([^/]+)/", texto)
     canal = match.group(1).lower() if match else ""
     titulo = (title or "").lower()
+    # titulo sem acentos para comparar nomes ("Globo Sao Paulo")
+    titulo_simples = "".join(
+        c for c in unicodedata.normalize("NFKD", titulo) if not unicodedata.combining(c)
+    )
 
     if any(canal.startswith(p) for p in CANAIS_SPORTV) or "sportv" in titulo:
         return EPG_SPORTV
@@ -143,6 +153,8 @@ def obter_tvg_id(m3u8_url, title):
         return EPG_G1
     if re.search(r"\bg1\b", titulo):
         return EPG_G1
+    if canal in CANAIS_GLOBO_SP or "globo sao paulo" in titulo_simples:
+        return EPG_GLOBO_SP
     if any(canal.startswith(p) for p in CANAIS_GLOBO) or "abtv" in titulo:
         return EPG_GLOBO
 

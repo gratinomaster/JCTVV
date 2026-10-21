@@ -10,6 +10,7 @@ A lista atual (urls, logos, grupos e nomes) e preservada; apenas o cabecalho
 e o atributo tvg-id de cada #EXTINF sao reescritos.
 """
 
+import datetime
 import os
 import re
 import shutil
@@ -18,12 +19,13 @@ import time
 import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
-from collections import OrderedDict
+from collections import Counter, OrderedDict
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 LISTA = os.path.join(BASE, "lista1.m3u")
 CACHE = os.path.join(BASE, ".epg_cache")
 REPORT = os.path.join(BASE, "relatorio_lista1_epg.txt")
+CACHE_TTL = 6 * 3600
 
 EPG_SOURCES = OrderedDict(
     [
@@ -65,12 +67,25 @@ def normaliza(texto):
 
 
 def download_epg_sources():
-    """Baixa (se preciso) as 3 fontes e devolve {fonte: {channel ids}}."""
-    available = OrderedDict()
+    """Baixa (se necessario) as 3 fontes e devolve os ids e a programacao.
+
+    O cache em .epg_cache/ e reusado apenas enquanto estiver atualizado
+    (CACHE_TTL), para que a validacao use sempre o EPG mais recente.
+    """
+    fontes = OrderedDict()
     os.makedirs(CACHE, exist_ok=True)
+    hoje = datetime.date.today()
+    dias_interesse = [(hoje + datetime.timedelta(days=d)).strftime("%Y%m%d") for d in range(3)]
+
     for name, url in EPG_SOURCES.items():
         path = os.path.join(CACHE, "%s.xml" % name)
-        if not os.path.exists(path) or os.path.getsize(path) < 1000:
+        desatualizado = (
+            not os.path.exists(path)
+            or os.path.getsize(path) < 1000
+            or time.time() - os.path.getmtime(path) > CACHE_TTL
+        )
+        if desatualizado:
+            print("  baixando %s.xml ..." % name)
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=180) as resp:
                 data = resp.read()
@@ -80,20 +95,29 @@ def download_epg_sources():
             root = ET.parse(path).getroot()
         except ET.ParseError as exc:
             print("  ! %s.xml invalido: %s" % (name, exc))
-            available[name] = set()
+            fontes[name] = {"ids": set(), "dias": {}}
             continue
+
         ids = set(c.get("id") for c in root.iter("channel") if c.get("id"))
-        progs = set(p.get("channel") for p in root.iter("programme") if p.get("channel"))
-        available[name] = ids
-        print("  %-8s %4d canais (%d com programacao)" % (name, len(ids), len(progs & ids)))
-    return available
+        dias = {}
+        for prog in root.iter("programme"):
+            cid = prog.get("channel")
+            if not cid:
+                continue
+            dia = (prog.get("start") or "")[:8]
+            if dia in dias_interesse:
+                dias.setdefault(cid, Counter())[dia] += 1
+        fontes[name] = {"ids": ids, "dias": dias}
+        com_prog = len(set(dias) & ids)
+        print("  %-8s %4d canais (%d com programacao)" % (name, len(ids), com_prog))
+    return fontes
 
 
 def resolve_tvg_id(name, per_source, atual=None):
     """Descobre o tvg-id correto a partir do nome do canal, ou None."""
     available = set()
-    for ids in per_source.values():
-        available |= ids
+    for fonte in per_source.values():
+        available |= fonte["ids"]
     alvo = normaliza(name)
     for pattern, forced in REGRAS:
         if not re.search(pattern, alvo):
@@ -110,13 +134,25 @@ def resolve_tvg_id(name, per_source, atual=None):
     return None
 
 
+def programa_por_dia(per_source, cid):
+    """Contagem de programas por dia (hoje/amanha/depois) de um tvg-id."""
+    contagem = Counter()
+    for fonte in per_source.values():
+        for dia, qtd in fonte["dias"].get(cid, {}).items():
+            contagem[dia] += qtd
+    return contagem
+
+
 def main():
     print("Fontes EPG:")
     per_source = download_epg_sources()
     available = set()
-    for ids in per_source.values():
-        available |= ids
+    for fonte in per_source.values():
+        available |= fonte["ids"]
     print("Total de ids disponiveis: %d\n" % len(available))
+
+    hoje = datetime.date.today()
+    dias = [(hoje + datetime.timedelta(days=d)).strftime("%Y%m%d") for d in range(3)]
 
     with open(LISTA, encoding="utf-8", errors="replace") as fh:
         lines = fh.read().splitlines()
@@ -153,9 +189,10 @@ def main():
         else:
             changed.append("%s: %s -> %s" % (name, old_id or "(vazio)", new_id or "(vazio)"))
 
-        # De onde vem o id, em qual fonte ele existe.
-        found_in = [src for src, ids in per_source.items() if new_id and new_id in ids]
-        rows.append((name, old_id, new_id, found_in))
+        # De onde vem o id, em qual fonte ele existe e se ha programacao.
+        found_in = [src for src, fonte in per_source.items() if new_id and new_id in fonte["ids"]]
+        contagem = programa_por_dia(per_source, new_id) if new_id else Counter()
+        rows.append((name, old_id, new_id, found_in, contagem))
 
         fields = ['tvg-id="%s"' % new_id] if new_id else []
         fields.append('tvg-name="%s"' % name)
@@ -172,10 +209,12 @@ def main():
     with open(LISTA, "w", encoding="utf-8") as fh:
         fh.write("\n".join(out) + "\n")
 
-    canais = (len(out) - 1) // 2
+    canais = len(rows)
     print("Canais: %d (tvg-id mantido: %d, alterado: %d)" % (canais, kept, len(changed)))
     for line in changed:
         print("  * %s" % line)
+
+    com_prog = [r for r in rows if r[4].get(dias[0]) or r[4].get(dias[1])]
 
     with open(REPORT, "w", encoding="utf-8") as fh:
         fh.write("lista1.m3u - correcao de url-tvg e tvg-ids (%s)\n" % stamp)
@@ -184,14 +223,18 @@ def main():
         fh.write("  %s\n" % HEADER)
         fh.write("  3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.\n\n")
         fh.write("Validacao de tvg-id (ids existentes nas 3 fontes EPG):\n")
-        for name, old_id, new_id, found_in in rows:
+        for name, old_id, new_id, found_in, contagem in rows:
             if new_id:
                 status = "ok (%s)" % ",".join(found_in)
+                status += " | programas hoje=%d amanha=%d depois=%d" % (
+                    contagem.get(dias[0], 0), contagem.get(dias[1], 0), contagem.get(dias[2], 0))
             else:
                 status = "sem id (nao existe nas 3 fontes)"
             fh.write("%s | %s -> %s | %s\n" % (name, old_id or "(sem id)", new_id or "(sem id)", status))
         fh.write("\nResultado: %d/%d canais com tvg-id valido ou corretamente sem id.\n"
                  % (sum(1 for r in rows if r[2]), len(rows)))
+        fh.write("Programacao presente hoje ou amanha: %d/%d canais com tvg-id.\n"
+                 % (len(com_prog), sum(1 for r in rows if r[2])))
         fh.write("\nNotas:\n")
         fh.write("- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).\n")
         fh.write("  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.\n")
@@ -199,6 +242,8 @@ def main():
         fh.write("  que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.\n")
         fh.write("- Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;\n")
         fh.write("  as demais afiliadas sem id proprio usam tv-globo (globo.xml).\n")
+        fh.write("- Contagem de programas conferida nas 3 fontes em %s (hoje/amanha/depois).\n"
+                 % hoje.strftime("%Y-%m-%d"))
 
     print("\nRelatorio: %s" % os.path.basename(REPORT))
     return 0
