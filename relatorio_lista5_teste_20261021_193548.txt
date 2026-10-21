@@ -1,0 +1,30 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-21 19:35:55
+Backup: lista5.m3u.bak.pre_teste_20261021_193548
+Entradas testadas: 33 | URLs unicas: 16 | URLs funcionais: 6
+Canais mantidos: 3 | Canais removidos: 1
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Audio: muxado no segmento ou em rendition EXT-X-MEDIA TYPE=AUDIO (validado)
+DRM (CENC/SAMPLE-AES) e audio-only sao descartados: nao tocam em player comum
+
+=== CANAIS MANTIDOS ===
+[OK] ABC News Live - ABC News
+     usa: https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+     master->variante 5641kbps | segmentos 2/3 ok | video | audio_segmentos 2/3 ok
+[OK] Fox Business Go | Fox News Video
+     usa: https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792614615~acl=/*~hmac=c48e874d54a714f5e448aa9194b5f537c9ce5753af176cc5486ab8ab333bea4f
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+[OK] Watch CBS News 24/7, our free live news stream
+     usa: https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c5a34c65-cc86-4acb-86ec-bbbf91f90f97:DLS/master.m3u8
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+
+=== URLS ALTERNATIVAS FUNCIONAIS (descartadas por dedup) ===
+[OK] Watch CBS News 24/7, our free live news stream: playlist direta | segmentos 3/3 ok | video+audio | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c5a34c65-cc86-4acb-86ec-bbbf91f90f97:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream: playlist direta | segmentos 3/3 ok | video+audio | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c5a34c65-cc86-4acb-86ec-bbbf91f90f97:DLS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream: playlist direta | segmentos 3/3 ok | video+audio | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c5a34c65-cc86-4acb-86ec-bbbf91f90f97:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+
+=== CANAIS REMOVIDOS (sem URL funcional com video+audio) ===
+[FALHA] ABC News Live | Watch Live News on ABCNL
+     master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm] | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792697413~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=18d05c28-76bd-4b1a-b508-ac3edbbf4884~did=64e7a01b-feb8-4146-bba8-916dae3f61fe~country=US~kid=k02~hmac=a4414ed55184af112aee827fa0e26fee6fd0fd02733b8f5e46bc09ec03b772de/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792697413~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=18d05c28-76bd-4b1a-b508-ac3edbbf4884~did=64e7a01b-feb8-4146-bba8-916dae3f61fe~country=US~kid=k02~hmac=a4414ed55184af112aee827fa0e26fee6fd0fd02733b8f5e46bc09ec03b772de/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+     protegido_drm | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792697413~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=18d05c28-76bd-4b1a-b508-ac3edbbf4884~did=64e7a01b-feb8-4146-bba8-916dae3f61fe~country=US~kid=k02~hmac=a4414ed55184af112aee827fa0e26fee6fd0fd02733b8f5e46bc09ec03b772de/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
