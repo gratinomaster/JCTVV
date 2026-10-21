@@ -1,0 +1,18 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-21 22:40:08
+Backup: lista5.m3u.bak.pre_teste_20261021_224001
+Entradas testadas: 33 | URLs unicas: 16 | Funcionais: 8
+Canais mantidos: 4 | Canais removidos: 0
+Metodo: manifest -> variante (herdando query/token do pai) -> segmento real
+
+=== CANAIS MANTIDOS ===
+[OK] ABC News Live - ABC News
+     master->variante 5641kbps | [video] segmentos 3/3 ok | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792625814~acl=/*~hmac=1c935e351aae50884929c624c8ec6bae2984ce8e4a3e9caff781228e0fe5a4ba
+[OK] Fox Business Go | Fox News Video
+     master->variante 2806kbps | [video+audio] segmentos 3/3 ok | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792625814~acl=/*~hmac=1c935e351aae50884929c624c8ec6bae2984ce8e4a3e9caff781228e0fe5a4ba
+[OK] our free live news stream
+     master->variante 5436kbps | [video+audio] segmentos 3/3 ok | https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/d51acde6-ce26-412b-8e3c-2771054356bf:ATL/master.m3u8
+
+=== CANAIS REMOVIDOS ===
