@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Corrige o lista1.m3u:
 
-- Garante o cabecalho #EXTM3U com url-tvg/x-tvg-url apontando para as 3
+- Garante o cabecalho #EXTM3U com url-tvg apontando para as 3
   fontes XMLTV do BrazilTVEPG (globo, claro, vivoplay), separadas por espaco.
 - Corrige os tvg-id usando SOMENTE ids que existem de fato nas tres fontes
   XMLTV, verificados contra os XMLs baixados do repositorio.
@@ -15,6 +15,7 @@ import re
 import shutil
 import sys
 import time
+import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
 from collections import OrderedDict
@@ -36,18 +37,31 @@ URL_TVG = " ".join(EPG_SOURCES.values())
 HEADER = '#EXTM3U url-tvg="%s"' % URL_TVG
 
 # Ordem importa: a primeira regra que casar define o tvg-id.
+# Todos os ids abaixo foram conferidos nas 3 fontes XMLTV.
+#   sportv    -> globo.xml / vivoplay.xml
+#   ge-tv     -> globo.xml
+#   GLOBO SP  -> claro.xml (grade da afiliada de Sao Paulo)
+#   globonews -> globo.xml (G1 regionais sao canais de noticias)
+#   tv-globo  -> globo.xml (grade nacional, usada pelas afiliadas)
 # CBN nao existe em nenhuma das 3 fontes -> fica sem id.
-RULES = [
-    (r"\bspor ?tv\b|\bsportv\b", "sportv"),
-    (r"^ge\b|\bge\s?hd\b|\bge\s?tv\b|globo\s?esporte", "ge-tv"),
-    (r"\bglobo\s?news\b|\bglobonews\b", "globonews"),
-    (r"^g1\b|\bg1\b|jornal nacional", "tv-globo"),
-    (r"\bcbn\b", None),
-    (r"\bglobo\b|\babtv\b|afiliad", "tv-globo"),
+REGRAS = [
+    (r"^spor ?tv$|^sportv$", "sportv"),
+    (r"^ge$|^ge hd$|^gehd$", "ge-tv"),
+    (r"^cbn\b", None),
+    (r"^globo (sao paulo|sp)$", "GLOBO SP"),
+    (r"^g1\b", "globonews"),
+    (r"^globo\b", "tv-globo"),
 ]
 
 EXTINF_RE = re.compile(r'^#EXTINF:(?P<dur>-?[\d.]+)\s*(?P<attrs>.*?),(?P<name>.*)$')
 ATTR_RE = re.compile(r'([\w-]+)="([^"]*)"')
+
+
+def normaliza(texto):
+    """minusculas, sem acento e sem caracteres nao alfanumericos."""
+    texto = unicodedata.normalize("NFKD", str(texto))
+    texto = "".join(c for c in texto if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", " ", texto.lower()).strip()
 
 
 def download_epg_sources():
@@ -75,20 +89,24 @@ def download_epg_sources():
     return available
 
 
-def resolve_tvg_id(name, per_source):
+def resolve_tvg_id(name, per_source, atual=None):
     """Descobre o tvg-id correto a partir do nome do canal, ou None."""
     available = set()
     for ids in per_source.values():
         available |= ids
-    low = name.lower()
-    for pattern, forced in RULES:
-        if not re.search(pattern, low):
+    alvo = normaliza(name)
+    for pattern, forced in REGRAS:
+        if not re.search(pattern, alvo):
             continue
         if forced is None:
             return None
         if forced in available:
             return forced
         print("  ! id '%s' (regra %s) ausente nas fontes XMLTV" % (forced, pattern))
+        return None
+    # sem regra: mantem o id atual somente se ele existir nas 3 fontes
+    if atual and atual in available:
+        return atual
     return None
 
 
@@ -128,7 +146,7 @@ def main():
         old = dict(ATTR_RE.findall(m.group("attrs")))
         name = m.group("name").strip()
         old_id = old.get("tvg-id", "").strip()
-        new_id = resolve_tvg_id(name, per_source)
+        new_id = resolve_tvg_id(name, per_source, old_id or None)
 
         if new_id == (old_id or None):
             kept += 1
@@ -163,7 +181,7 @@ def main():
         fh.write("lista1.m3u - correcao de url-tvg e tvg-ids (%s)\n" % stamp)
         fh.write("Fontes: %s\n\n" % ", ".join(EPG_SOURCES.values()))
         fh.write("Estado do header: OK\n")
-        fh.write('  %s\n' % HEADER)
+        fh.write("  %s\n" % HEADER)
         fh.write("  3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.\n\n")
         fh.write("Validacao de tvg-id (ids existentes nas 3 fontes EPG):\n")
         for name, old_id, new_id, found_in in rows:
@@ -177,7 +195,10 @@ def main():
         fh.write("\nNotas:\n")
         fh.write("- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).\n")
         fh.write("  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.\n")
-        fh.write("- Canais G1 regionais usam tv-globo: nao ha id regional nas 3 fontes.\n")
+        fh.write("- G1 regionais: nao ha id regional nas 3 fontes; usam globonews (globo.xml),\n")
+        fh.write("  que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.\n")
+        fh.write("- Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;\n")
+        fh.write("  as demais afiliadas sem id proprio usam tv-globo (globo.xml).\n")
 
     print("\nRelatorio: %s" % os.path.basename(REPORT))
     return 0
