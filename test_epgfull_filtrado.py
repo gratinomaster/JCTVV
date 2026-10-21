@@ -99,15 +99,19 @@ for line in m3u_linhas:
         m3u_ids.append(key)
         m3u_info.setdefault(key, nome)
 
+# so os tvg-id sao exigidos no EPG: entrada sem tvg-id nao tem identificador
+# para o player casar a grade, entao fica de fora do guia (so inflaria o arquivo)
+ids_com_tvg = [t for t in m3u_ids if t not in sinteticos]
+
 m3u_norm = {}
-for tid in m3u_ids:
+for tid in ids_com_tvg:
     if tid:
         m3u_norm.setdefault(norm(tid), tid)
 
 print(f"   entradas na M3U .. {len(m3u_linhas)}")
-print(f"   canais esperados . {len(m3u_ids)}")
-print(f"   com tvg-id ....... {len(m3u_ids) - len(sinteticos)}")
-print(f"   id sintetico ..... {len(sinteticos)} (entradas sem tvg-id)")
+print(f"   canais esperados . {len(ids_com_tvg)}")
+print(f"   com tvg-id ....... {len(ids_com_tvg)}")
+print(f"   sem tvg-id ....... {len(sinteticos)} (sem identificador, fora do guia)")
 
 print()
 print("=" * 66)
@@ -149,12 +153,12 @@ if extras:
     print(f"      {extras[:20]}")
 
 com_programa = {p.get("channel") for p in programas}
-print(f"   canais declarados .. {len(ids_xml)} (M3U espera {len(m3u_ids)})")
+print(f"   canais declarados .. {len(ids_xml)} (M3U espera {len(ids_com_tvg)})")
 print(f"   canais com grade ... {len(com_programa)}")
 
-faltando = sorted(set(m3u_ids) - ids_xml)
-check(not faltando, "todo canal da M3U declarado no EPG",
-      f"{len(faltando)} faltando" if faltando else f"{len(m3u_ids)}/{len(m3u_ids)}")
+faltando = sorted(set(ids_com_tvg) - ids_xml)
+check(not faltando, "todo tvg-id da M3U declarado no EPG",
+      f"{len(faltando)} faltando" if faltando else f"{len(ids_com_tvg)}/{len(ids_com_tvg)}")
 if faltando:
     print(f"      {faltando[:10]}")
 
