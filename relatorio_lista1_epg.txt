@@ -1,33 +1,26 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261021_141542)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261021_170133)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-Estado do header: OK
-  #EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
-  3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
+Backup: lista1.m3u.bak.pre_urltvg_tvgids_20261021_170133
+Header: #EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
-SporTV | sportv -> sportv | ok (globo,vivoplay)
-Globo São Paulo | tv-globo -> tv-globo | ok (globo)
-Globo Alagoas | tv-globo -> tv-globo | ok (globo)
-ge | ge-tv -> ge-tv | ok (globo)
-G1 Rio de Janeiro | tv-globo -> tv-globo | ok (globo)
-G1 Caruaru | tv-globo -> tv-globo | ok (globo)
-G1 Rio Grande do Sul | tv-globo -> tv-globo | ok (globo)
-G1 Santa Catarina | tv-globo -> tv-globo | ok (globo)
-G1 Vanguarda | tv-globo -> tv-globo | ok (globo)
-G1 Ceará | tv-globo -> tv-globo | ok (globo)
-G1 Espírito Santo | tv-globo -> tv-globo | ok (globo)
-G1 Triângulo Mineiro | tv-globo -> tv-globo | ok (globo)
-G1 Amapá | tv-globo -> tv-globo | ok (globo)
-G1 Acre | tv-globo -> tv-globo | ok (globo)
-G1 Pará | tv-globo -> tv-globo | ok (globo)
-ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
-CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
-
-Resultado: 16/18 canais com tvg-id valido ou corretamente sem id.
-
-Notas:
-- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
-  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.
-- Canais G1 regionais usam tv-globo: nao ha id regional nas 3 fontes.
+  SporTV | sportv | ok (globo,vivoplay)
+  Globo São Paulo | tv-globo | ok (globo)
+  Globo Alagoas | tv-globo | ok (globo)
+  ge | ge-tv | ok (globo)
+  G1 Rio de Janeiro | tv-globo | ok (globo)
+  G1 Caruaru | tv-globo | ok (globo)
+  G1 Rio Grande do Sul | tv-globo | ok (globo)
+  G1 Santa Catarina | tv-globo | ok (globo)
+  G1 Vanguarda | tv-globo | ok (globo)
+  G1 Ceará | tv-globo | ok (globo)
+  G1 Espírito Santo | tv-globo | ok (globo)
+  G1 Triângulo Mineiro | tv-globo | ok (globo)
+  G1 Amapá | tv-globo | ok (globo)
+  G1 Acre | tv-globo | ok (globo)
+  G1 Pará | tv-globo | ok (globo)
+  ge HD | ge-tv | ok (globo)
+  CBN São Paulo | (sem id) | sem id (nao existe nas 3 fontes)
+  CBN Rio de Janeiro | (sem id) | sem id (nao existe nas 3 fontes)
+Alteracoes aplicadas: 0
