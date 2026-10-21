@@ -1,0 +1,52 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-21 15:37:17
+Backup: lista5.m3u.bak.pre_teste_20261021_153711
+Entradas testadas: 35 | URLs unicas: 16 | URLs funcionais: 6
+Canais mantidos: 4 | Canais removidos: 0
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Audio: muxado no segmento ou em rendition EXT-X-MEDIA TYPE=AUDIO (validado)
+
+=== CANAIS MANTIDOS ===
+[OK] ABC News Live  (tvg-id=465150)
+     logo: https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+     usa: https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+     master->variante 5641kbps | segmentos 2/3 ok | video | audio_segmentos 2/3 ok
+[OK] Fox Business HD  (tvg-id=464766)
+     logo: https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1
+     usa: https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792600237~acl=/*~hmac=f5bd342dfc4be7c4a57b983d77b4f5d2a73df337332690f13ac309ad31e19ae7
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+[OK] Fox News Channel HD  (tvg-id=465372)
+     logo: https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1
+     usa: https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792600238~acl=/*~hmac=dd881044daa5e765172f9cd6a7bd7fa048041018dd8ecc2517bc6d98551d8bf6
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+[OK] CBS News 24/7  (tvg-id=USBA370000104)
+     logo: https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+     usa: https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/fda4f3c3-0836-4b7a-aa13-e93feb90a160:DLS/master.m3u8
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+     (alternativa funcional) https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/fda4f3c3-0836-4b7a-aa13-e93feb90a160:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+     (alternativa funcional) https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/fda4f3c3-0836-4b7a-aa13-e93feb90a160:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+
+=== CANAIS REMOVIDOS (sem nenhuma URL funcional) ===
+(nenhum)
+
+=== URLS DESCARTADAS POR FALHAR ===
+[FALHA] ABC News Live
+     master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm] | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792683038~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=5b28c2de-fdec-41bb-9920-30da83d18de0~did=40c5a1f5-4b78-4d65-aa54-f4d4b024dc40~country=US~kid=k02~hmac=e0af69b5f1bee7ce3b0eee877e06736a8c2cae12861f7b2465bf3691a05f2fef/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=c00ca54a5fd625c2ce1a442c983e81561832da94
+[FALHA] ABC News Live
+     protegido_drm | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792683038~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=5b28c2de-fdec-41bb-9920-30da83d18de0~did=40c5a1f5-4b78-4d65-aa54-f4d4b024dc40~country=US~kid=k02~hmac=e0af69b5f1bee7ce3b0eee877e06736a8c2cae12861f7b2465bf3691a05f2fef/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1792683038~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=5b28c2de-fdec-41bb-9920-30da83d18de0~did=40c5a1f5-4b78-4d65-aa54-f4d4b024dc40~country=US~kid=k02~hmac=e0af69b5f1bee7ce3b0eee877e06736a8c2cae12861f7b2465bf3691a05f2fef/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live
+     master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm] | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792683056~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=c9c63877-f84d-4437-ad5c-ca450986bca7~did=4191108d-71a0-40a6-8b86-09604f953fe3~country=US~kid=k02~hmac=49b3e0a16c76f7cfb9df1c083d8d01cfa04bad56f825550bb9e124c2f9670e1a/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=c00ca54a5fd625c2ce1a442c983e81561832da94
+[FALHA] ABC News Live
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792683056~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=c9c63877-f84d-4437-ad5c-ca450986bca7~did=4191108d-71a0-40a6-8b86-09604f953fe3~country=US~kid=k02~hmac=49b3e0a16c76f7cfb9df1c083d8d01cfa04bad56f825550bb9e124c2f9670e1a/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792683056~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=c9c63877-f84d-4437-ad5c-ca450986bca7~did=4191108d-71a0-40a6-8b86-09604f953fe3~country=US~kid=k02~hmac=49b3e0a16c76f7cfb9df1c083d8d01cfa04bad56f825550bb9e124c2f9670e1a/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792683056~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=c9c63877-f84d-4437-ad5c-ca450986bca7~did=4191108d-71a0-40a6-8b86-09604f953fe3~country=US~kid=k02~hmac=49b3e0a16c76f7cfb9df1c083d8d01cfa04bad56f825550bb9e124c2f9670e1a/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792683056~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=c9c63877-f84d-4437-ad5c-ca450986bca7~did=4191108d-71a0-40a6-8b86-09604f953fe3~country=US~kid=k02~hmac=49b3e0a16c76f7cfb9df1c083d8d01cfa04bad56f825550bb9e124c2f9670e1a/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] ABC News Live
+     playlist direta | segmentos 2/3 ok | video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] ABC News Live
+     playlist direta | segmentos 2/3 ok | audio (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
