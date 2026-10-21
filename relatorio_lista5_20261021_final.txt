@@ -1,0 +1,134 @@
+==============================================================================
+RELATORIO FINAL - CORRECAO lista5.m3u (lista NEWS WORLD)
+Data: 2026-10-21 20:05 UTC
+Arquivo alvo : lista5.m3u
+Backup        : lista5.m3u.bak.pre_correcao_20261021_195947
+Scripts       : build_lista5_epg.py (regenera o EPG) / validar_lista5_completo.py (validacao)
+==============================================================================
+
+RESULTADO: 3 canais mantidos, 0 removidos, 0 falhas na validacao final.
+
+1) LISTA FINAL (lista5.m3u)
+   Cabecalho com 3 fontes de EPG:
+     #EXTM3U url-tvg="https://iptv-epg.org/files/epg-us.xml.gz \
+                      https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz \
+                      https://epg.pw/xmltv/epg.xml.gz"
+
+   [OK] ABC News Live
+        tvg-id    : ABCNewsLive.us
+        tvg-logo  : https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+        stream    : https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+   [OK] CBS News 24/7
+        tvg-id    : CBSNews.us
+        tvg-logo  : https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+        stream    : https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+   [OK] Fox Business
+        tvg-id    : FoxBusiness.us
+        tvg-logo  : https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg
+        stream    : https://tvsen6.aynaott.com/foxbusiness/index.m3u8
+
+   Requisitos do usuario verificados:
+     - todo link de canal tem #EXTINF imediatamente acima ......... SIM
+     - nenhuma entrada sem tvg-id / tvg-logo ...................... SIM
+     - todos os tvg-logo terminam em .jpg (JPEG real) ............ SIM
+     - nenhum link imgur.com ..................................... SIM
+     - todos os streams em https .................................. SIM
+     - sem entradas duplicadas ................................... SIM
+
+2) EPG - como foi chegou no EPG com programacao de hoje, amanha e depois de amanha
+
+   Fontes baixadas e analisadas (XMLTV):
+     a) https://iptv-epg.org/files/epg-us.xml.gz
+        HTTP 200 | last-modified: Wed, 21 Oct 2026 11:05:12 GMT
+        12.991 canais | 1.167.906 programas
+        -> COBERTURA COMPLETA (3+ dias) para os 3 canais com ids no padrao iptv-org
+     b) https://epg.pw/xmltv/epg_US.xml.gz
+        5.493 canais | apenas 2 dias de programacao para os canais alvo
+        -> descartada como fonte principal
+     c) https://epg.pw/xmltv/epg.xml.gz (global)
+        15.762 canais | 1.264.424 programas | last-modified Wed, 21 Oct 2026 00:06:07 GMT
+        -> mantida como 3a fonte e como origem dos aliases numericos
+     d) https://raw.githubusercontent.com/iptv-org/epg/master/guide.xml.gz ..... HTTP 404
+     e) EPGProviders / AqFad / epg-guide / 112114 / TVTome / epgshare01 ...... indisponiveis
+
+   Cobertura medida (hoje / amanha / depois de amanha) na fonte principal:
+     ABC News Live   id=ABCNewsLive.us  'US - ABC News Live'  [41, 40, 40]  OK
+     CBS News 24/7   id=CBSNews.us      'US - CBS News'       [28, 28, 28]  OK
+     Fox Business    id=FoxBusiness.us  'US - Fox Business'   [28, 23, 29]  OK
+
+   Aliases numericos (epg.pw) equivalentes, usados no EPG normalizado do repo:
+     ABC News Live : 465150 (2d), 408627 (3d), 3474 (3d)
+     CBS News      : 464941 (2d)
+     Fox Business  : 464766 (2d), 408654 (3d)
+
+   EPG normalizado gerado no repo:
+     lista5_epg.xml      9 canais | 1.308 programas | 590 KB  (janela de 5 dias)
+     lista5_epg.xml.gz   9 canais | 1.308 programas |  48 KB
+     Validacao: os 3 ids canonicos (.us) com cobertura [41,40,40] [28,28,28] [28,23,29]
+     (a URL raw do repositorio so passa a servir esta versao apos o commit/push do CI)
+
+3) ANTI-VIRUS
+   VirusTotal API exige chave (HTTP 401 - "X-Apikey header is missing"); nao ha
+   VIRUSTOTAL_API_KEY no ambiente e nao ha clamav instalado. Substituicao por
+   triagem multipla (mesma abordagem do relatorio anterior):
+     - blacklist URLhaus (mirror malware-filter) .... 24.365 hosts
+     - blacklist phishing.army ..................... 155.980 hosts
+     - blacklist ipsum (malware IPs) ............... 19.858 hosts
+     - blacklist Feodo Tracker .....................      5 hosts
+     - blacklist StevenBlack hosts .................      9 hosts
+     - heuristicas: TLD de risco, encurtador, IP cru, porta nao padrao,
+       credenciais na URL, extensao executavel, esquema sem TLS, imgur
+     - varredura de conteudo por magic bytes: PE/EXE, ELF, PDF, ZIP, RAR,
+       MS-OLE, 7Z, MACHO, HTML com <script>
+   Resultado: todos os canais, logos e fontes de EPG da lista passaram.
+   Ressalva: o runner sai por IP dos EUA (4.154.166.9 - Azure/Washington),
+   portanto bloqueio geografico para o usuario no Brasil nao e testavel aqui.
+
+4) STREAMS (manifest -> melhor variante -> 3 segmentos com bytes de midia)
+   [OK] ABC News Live   HTTP 200 | 3 variantes | 3/3 segmentos | 1920x1080
+        FRAME-RATE=29.970 | CODECS="avc1.4D4028,mp4a.40.2" | ~5,97 Mbps
+   [OK] CBS News 24/7   HTTP 200 | 6 variantes | 3/3 segmentos | 1280x720
+        FRAME-RATE=29.970 | CODECS="avc1.4D401F,mp4a.40.2" | ~3,02 Mbps
+   [OK] Fox Business    HTTP 200 | 1 variante  | 3/3 segmentos | 768x432
+        FRAME-RATE=59.940 | CODECS="avc1.64001f,mp4a.40.2" | ~1,09 Mbps
+
+   Alternativas testadas e guardadas:
+     ABC    : stream oficial Akamai (usado)
+     CBS    : https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/c5a34c65-cc86-4acb-86ec-bbbf91f90f97:DLS/master.m3u8
+     Fox Business:
+              - oficial tokenizado (NAO usado): expira em 2026-10-21T20:30:15Z e nao ha
+                endpoint publico para renovar o token (api.fox.com responde HTTP 422)
+              - preview estavel: https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8 (426x240)
+              - adotado: https://tvsen6.aynaott.com/foxbusiness/index.m3u8 (768x432, sem token)
+
+5) LOGOS (todos .jpg, JPEG real, sem imgur)
+   [OK] ABC News Live    55.672 B  image/jpeg
+        https://keyframe-cdn.abcnews.com/streamprovider11.jpg
+   [OK] CBS News 24/7    91.408 B  image/jpeg
+        https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg
+   [OK] Fox Business      17.992 B  image/jpeg
+        https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg
+
+6) CANAIS REMOVIDOS
+   Nenhum. Os 3 canais do download atual passaram em todas as etapas
+   (EPG 3 dias + logo .jpg + stream + triagem anti-virus).
+   Fox News Channel foi avaliado (FNC-preview e FNC-aynaott OK; p14.usnlive.com -> 403)
+   mas nao foi incluido: nao estava na lista do download atual (mantido o escopo).
+
+7) VALIDACAO FINAL (validar_lista5_completo.py)
+   [OK] estrutura M3U ............ 0 problemas
+   [OK] logos ................... 3/3
+   [OK] streams ................. 3/3 (3/3 segmentos cada)
+   [OK] EPG ..................... cobertura completa nos 3 canais
+   RESULTADO: 0 falha(s), 6 aviso(s) - avisos informativos sobre aliases com
+   cobertura parcial nas fontes epg.pw (o id canonico cobre os 3 dias).
+
+8) ARQUIVOS ALTERADOS/CRIADOS
+   M  lista5.m3u                     (3 canais com url-tvg, tvg-id e logos .jpg)
+   M  lista5_epg.xml                 (EPG normalizado: 9 canais, 1308 programas)
+   M  lista5_epg.xml.gz              (mesmo EPG comprimido)
+   ?? build_lista5_epg.py            (regenera o EPG normalizado a partir das fontes)
+   ?? validar_lista5_completo.py     (validacao independente do arquivo final)
+   ?? relatorio_lista5_20261021_final.txt
+   ?? lista5.m3u.bak.pre_correcao_20261021_195947 (backup do arquivo anterior)
+==============================================================================
