@@ -1,8 +1,13 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261020_191206)
+lista1.m3u - verificacao de url-tvg e tvg-ids (20261021_080500)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
+Estado do header: OK
+  #EXTM3U url-tvg="globo.xml claro.xml vivoplay.xml" (separados por espaco - formato canonico M3U)
+  Atributo obsoleto x-tvg-url removido.
+
+Validacao de tvg-id (ids existentes nas 3 fontes EPG):
 SporTV | sportv -> sportv | ok (globo,vivoplay)
-Globo São Paulo | tv-globo -> tv-globo | ok (globo)
+Globo Sao Paulo | tv-globo -> tv-globo | ok (globo)
 Globo Alagoas | tv-globo -> tv-globo | ok (globo)
 ge | ge-tv -> ge-tv | ok (globo)
 G1 Rio de Janeiro | tv-globo -> tv-globo | ok (globo)
@@ -10,12 +15,22 @@ G1 Caruaru | tv-globo -> tv-globo | ok (globo)
 G1 Rio Grande do Sul | tv-globo -> tv-globo | ok (globo)
 G1 Santa Catarina | tv-globo -> tv-globo | ok (globo)
 G1 Vanguarda | tv-globo -> tv-globo | ok (globo)
-G1 Ceará | tv-globo -> tv-globo | ok (globo)
-G1 Espírito Santo | tv-globo -> tv-globo | ok (globo)
-G1 Triângulo Mineiro | tv-globo -> tv-globo | ok (globo)
-G1 Amapá | tv-globo -> tv-globo | ok (globo)
+G1 Ceara | tv-globo -> tv-globo | ok (globo)
+G1 Espirito Santo | tv-globo -> tv-globo | ok (globo)
+G1 Triangulo Mineiro | tv-globo -> tv-globo | ok (globo)
+G1 Amapa | tv-globo -> tv-globo | ok (globo)
 G1 Acre | tv-globo -> tv-globo | ok (globo)
-G1 Pará | tv-globo -> tv-globo | ok (globo)
+G1 Para | tv-globo -> tv-globo | ok (globo)
 ge HD | ge-tv -> ge-tv | ok (globo)
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Sao Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+
+Resultado: 18/18 canais com tvg-id valido ou corretamente sem id. Nenhuma alteracao necessaria.
+
+Notas:
+- id CBN inexistente nas 3 fontes (grep "cbn" = 0 ocorrencias em globo/claro/vivoplay.xml).
+  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.
+- cobertura EPG das fontes: 19/10/2026 a 25/10/2026 (tv-globo, ge-tv, sportv) - dados atuais.
+- estrutura do arquivo: 18 pares #EXTINF/URL alternados, newline final OK.
+- PROBLEMA FORA DO ESCOPO: os 18 streams retornam HTTP 403. Tokens JWT expirados em 07/08/2026.
+  Necessita regeneracao de tokens (playback-api), nao e problema de url-tvg/tvg-id.
