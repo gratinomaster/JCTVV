@@ -1,0 +1,31 @@
+Teste: 2026-10-21 02:33:37.160486
+Arquivo: lista5.m3u
+Backup: lista5.m3u.bak.pre_teste_20261021_023335
+Blocos originais: 25 | URLs unicas: 8 | Funcionando: 6 | Removidos: 2
+
+=== REMOVIDOS ===
+[2] manifest_sem_resposta
+  https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8
+
+[3] manifest_sem_resposta
+  https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792547410~acl=/*~hmac=993a9a476c0d22acb8c645e4db157a66fb2228900f40e3d5a5ad685e65d4e21f
+
+=== MANTIDOS ===
+[0] OK manifest+segmento (1 disp.)
+  https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+
+[1] OK manifest+segmento (1 disp.)
+  https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+
+[4] OK manifest+segmento (1 disp.)
+  https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/09296323-8ac2-4edf-bb33-29f8617c67e7:DLS/master.m3u8
+
+[5] OK manifest+segmento (1 disp.)
+  https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/09296323-8ac2-4edf-bb33-29f8617c67e7:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+
+[6] OK manifest+segmento (1 disp.)
+  https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/09296323-8ac2-4edf-bb33-29f8617c67e7:DLS/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+
+[7] OK manifest+segmento (1 disp.)
+  https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/09296323-8ac2-4edf-bb33-29f8617c67e7:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+
