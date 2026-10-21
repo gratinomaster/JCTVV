@@ -31,8 +31,8 @@ EPG_SOURCES = OrderedDict(
     ]
 )
 
-URL_TVG = ",".join(EPG_SOURCES.values())
-HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
+URL_TVG = " ".join(EPG_SOURCES.values())
+HEADER = '#EXTM3U url-tvg="%s"' % URL_TVG
 
 # Ordem importa: a primeira regra que casar define o tvg-id.
 RULES = [

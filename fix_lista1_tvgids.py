@@ -31,8 +31,8 @@ EPG_SOURCES = OrderedDict(
     ]
 )
 
-URL_TVG = ",".join(EPG_SOURCES.values())
-HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
+URL_TVG = " ".join(EPG_SOURCES.values())
+HEADER = '#EXTM3U url-tvg="%s"' % URL_TVG
 
 # Redes -> id do XMLTV. Avaliadas em ordem sobre o nome/tvg-name do canal.
 NETWORKS = [

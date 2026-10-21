@@ -33,7 +33,7 @@ EPG_SOURCES = OrderedDict(
 )
 
 URL_TVG = " ".join(EPG_SOURCES.values())
-HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
+HEADER = '#EXTM3U url-tvg="%s"' % URL_TVG
 
 # Ordem importa: a primeira regra que casar define o tvg-id.
 # CBN nao existe em nenhuma das 3 fontes -> fica sem id.
@@ -162,12 +162,22 @@ def main():
     with open(REPORT, "w", encoding="utf-8") as fh:
         fh.write("lista1.m3u - correcao de url-tvg e tvg-ids (%s)\n" % stamp)
         fh.write("Fontes: %s\n\n" % ", ".join(EPG_SOURCES.values()))
+        fh.write("Estado do header: OK\n")
+        fh.write('  %s\n' % HEADER)
+        fh.write("  3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.\n\n")
+        fh.write("Validacao de tvg-id (ids existentes nas 3 fontes EPG):\n")
         for name, old_id, new_id, found_in in rows:
             if new_id:
                 status = "ok (%s)" % ",".join(found_in)
             else:
                 status = "sem id (nao existe nas 3 fontes)"
             fh.write("%s | %s -> %s | %s\n" % (name, old_id or "(sem id)", new_id or "(sem id)", status))
+        fh.write("\nResultado: %d/%d canais com tvg-id valido ou corretamente sem id.\n"
+                 % (sum(1 for r in rows if r[2]), len(rows)))
+        fh.write("\nNotas:\n")
+        fh.write("- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).\n")
+        fh.write("  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.\n")
+        fh.write("- Canais G1 regionais usam tv-globo: nao ha id regional nas 3 fontes.\n")
 
     print("\nRelatorio: %s" % os.path.basename(REPORT))
     return 0

@@ -30,8 +30,8 @@ EPG_SOURCES = OrderedDict(
     ]
 )
 
-URL_TVG = ",".join(EPG_SOURCES.values())
-HEADER = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (URL_TVG, URL_TVG)
+URL_TVG = " ".join(EPG_SOURCES.values())
+HEADER = '#EXTM3U url-tvg="%s"' % URL_TVG
 
 # Fontes integrais, da mais recente para a mais antiga.
 # "git:HEAD" usa a ultima versao commiteada (tokens mais atuais).

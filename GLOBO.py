@@ -150,14 +150,17 @@ def obter_tvg_id(m3u8_url, title):
 
 
 EPG_URLS = (
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml,"
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml,"
-    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
+    "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml",
 )
+
+# M3U canonico: url-tvg com as 3 fontes XMLTV separadas por espaco (sem x-tvg-url)
+HEADER = "#EXTM3U url-tvg=\"%s\"" % " ".join(EPG_URLS)
 
 
 def generate_m3u():
-    linhas = [f'#EXTM3U url-tvg="{EPG_URLS}" x-tvg-url="{EPG_URLS}"']
+    linhas = [HEADER]
     canais = 0
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Corrige o lista1.m3u: header url-tvg e tvg-ids validos contra as 3 fontes EPG.
 
-- url-tvg/x-tvg-url com as 3 fontes BrazilTVEPG separadas por virgula.
+- url-tvg com as 3 fontes BrazilTVEPG separadas por espaco.
 - Se a lista estiver sem canais (cabecalho apenas), recupera de `git show HEAD`
   ou do backup integral mais recente.
 - tvg-id so e mantido/criado com ids que existem de fato nas 3 fontes XMLTV.
@@ -158,10 +158,7 @@ def main():
 
     linhas = open(M3U, encoding="utf-8", errors="ignore").read().split("\n")
 
-    header = '#EXTM3U url-tvg="%s" x-tvg-url="%s"' % (
-        ",".join(EPG_URLS),
-        ",".join(EPG_URLS),
-    )
+    header = '#EXTM3U url-tvg="%s"' % " ".join(EPG_URLS)
 
     saida = [header]
     relatorio = []
