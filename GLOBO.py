@@ -1,5 +1,8 @@
+import json
 import re
+import tempfile
 import unicodedata
+import urllib.request
 from urllib.parse import unquote
 
 from selenium import webdriver
@@ -10,13 +13,26 @@ from selenium.webdriver.support import expected_conditions as EC
 import concurrent.futures
 import time
 
-# Configurações do Chrome
-options = Options()
-options.add_argument("--headless=new")
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-gpu")
-options.add_argument("--window-size=1280,720")
-options.add_argument("--disable-infobars")
+
+def criar_opcoes():
+    """Cria as opções do Chrome.
+
+    Cada instância usa um perfil próprio para poder rodar em paralelo sem
+    disputar o mesmo diretório de dados, e o log de performance do Chrome
+    DevTools fica habilitado para capturar a requisição do .m3u8.
+    """
+    opcoes = Options()
+    opcoes.add_argument("--headless=new")
+    opcoes.add_argument("--no-sandbox")
+    opcoes.add_argument("--disable-gpu")
+    opcoes.add_argument("--window-size=1920,1080")
+    opcoes.add_argument("--disable-dev-shm-usage")
+    opcoes.add_argument("--autoplay-policy=no-user-gesture-required")
+    opcoes.add_argument("--disable-blink-features=AutomationControlled")
+    opcoes.add_argument("--lang=pt-BR")
+    opcoes.add_argument("--user-data-dir=" + tempfile.mkdtemp(prefix="chrome-globo-"))
+    opcoes.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    return opcoes
 
 # URLs dos vídeos Globoplay
 globoplay_urls = [
@@ -64,54 +80,100 @@ globoplay_urls = [
 ]
 
 
-def extract_globoplay_data(url):
-    driver = None
-    try:
-        driver = webdriver.Chrome(options=options)
-        driver.get(url)
+def m3u8_valido(endereco):
+    """Aceita apenas manifests do Globo.
 
-        wait = WebDriverWait(driver, 20)
-
-        # tenta clicar no botão play se existir
-        try:
-            play_button = wait.until(
-                EC.element_to_be_clickable((By.CSS_SELECTOR, "button.poster__play-wrapper"))
-            )
-            play_button.click()
-        except:
-            pass
-
-        # aguarda o player carregar
-        time.sleep(10)
-
-        title = driver.title
-
-        # captura requisições da página
-        log_entries = driver.execute_script(
-            "return window.performance.getEntriesByType('resource');"
+    O player também carrega manifests de anúncio hospedados em
+    redirector.gvt1.com/googlevideo.com, que não transmitem o canal.
+    """
+    if any(
+        bloqueado in endereco
+        for bloqueado in (
+            "redirector.gvt1.com",
+            "googlevideo.com",
+            "dclk_video_ads",
+            "/api/manifest/",
         )
+    ):
+        return False
 
-        m3u8_url = None
-        thumbnail_url = None
+    return ".m3u8" in endereco
 
-        for entry in log_entries:
-            name = entry.get("name", "")
 
-            if ".m3u8" in name and not m3u8_url:
-                m3u8_url = name
+def capturar_requisicoes(driver):
+    """Lê o log de performance do Chrome e devolve (m3u8, thumbnail).
 
-            if ".jpg" in name and not thumbnail_url:
-                thumbnail_url = name
+    O player atual não registra o .m3u8 em performance.getEntriesByType(),
+    por isso a captura é feita pelas mensagens de rede do CDP.
+    """
+    m3u8_url = None
+    thumbnail_url = None
 
-        return title, m3u8_url, thumbnail_url
+    for entry in driver.get_log("performance"):
+        try:
+            mensagem = json.loads(entry["message"])["message"]
+        except Exception:
+            continue
 
-    except Exception as e:
-        print(f"Erro ao processar {url}: {e}")
-        return None, None, None
+        if mensagem.get("method") not in (
+            "Network.requestWillBeSent",
+            "Network.responseReceived",
+        ):
+            continue
 
-    finally:
-        if driver:
-            driver.quit()
+        parametros = mensagem["params"]
+        pedido = parametros.get("request") or parametros.get("response") or {}
+        endereco = pedido.get("url", "")
+
+        if ".m3u8" in endereco and not m3u8_url and m3u8_valido(endereco):
+            m3u8_url = endereco
+
+        if ".jpg" in endereco and not thumbnail_url:
+            thumbnail_url = endereco
+
+    return m3u8_url, thumbnail_url
+
+
+def extract_globoplay_data(url, tentativas=3):
+    for tentativa in range(tentativas):
+        driver = None
+        try:
+            driver = webdriver.Chrome(options=criar_opcoes())
+            driver.get(url)
+
+            wait = WebDriverWait(driver, 20)
+
+            # tenta clicar no botão play se existir
+            try:
+                play_button = wait.until(
+                    EC.element_to_be_clickable((By.CSS_SELECTOR, "button.poster__play-wrapper"))
+                )
+                play_button.click()
+            except:
+                pass
+
+            # aguarda o player carregar e fazer a requisição do .m3u8
+            time.sleep(15)
+
+            title = driver.title
+            m3u8_url, thumbnail_url = capturar_requisicoes(driver)
+
+            if m3u8_url:
+                return title, m3u8_url, thumbnail_url
+
+            print(f"M3U8 não capturado ({tentativa + 1}/{tentativas}): {url}")
+
+        except Exception as e:
+            print(f"Erro ao processar {url}: {e}")
+
+        finally:
+            if driver:
+                try:
+                    driver.quit()
+                except:
+                    pass
+
+    return None, None, None
 
 
 EPG_SPORTV = "sportv"
@@ -161,6 +223,56 @@ def obter_tvg_id(m3u8_url, title):
     return ""
 
 
+# Nome amigável de cada canal (o título da página do Globoplay é longo e
+# muda com frequência, por isso o nome é fixado pelo slug do stream).
+NOMES_CANAIS = {
+    "spo": "SporTV",
+    "glb": "Globo São Paulo",
+    "abtv": "Globo Alagoas",
+    "ber1": "ge",
+    "gehd": "ge HD",
+    "g1rj1": "G1 Rio de Janeiro",
+    "jb1": "G1 ao vivo",
+    "g1caruaru": "G1 Caruaru",
+    "globo-rs1": "G1 Rio Grande do Sul",
+    "rbsrsesporte": "G1 Rio Grande do Sul",
+    "nscscatarina": "G1 Santa Catarina",
+    "vanguarda1": "G1 Vanguarda",
+    "tvvmcefor2": "G1 Ceará",
+    "g1tvgazetaes": "G1 Espírito Santo",
+    "g1integramgube": "G1 Triângulo Mineiro",
+    "g1integramguba": "G1 Triângulo Mineiro - Uberaba",
+    "redeap": "G1 Amapá",
+    "redeac": "G1 Acre",
+    "tvliberal": "G1 Pará",
+    "cbnsp24ha": "CBN São Paulo",
+    "cbnrj24ha": "CBN Rio de Janeiro",
+}
+
+
+def obter_nome(m3u8_url, title):
+    """Nome amigável do canal a partir do slug; usa o título como fallback."""
+    texto = unquote(m3u8_url)
+    match = re.search(r"/live/f[^/]*/([^/]+)/", texto)
+    canal = match.group(1).lower() if match else ""
+
+    # o ge.globo e o "Agora no g1" usam o mesmo slug (gehd); mantém os dois nomes
+    if canal == "gehd" and "ge.globo" in (title or "").lower():
+        return "ge"
+
+    return NOMES_CANAIS.get(canal, title)
+
+
+def stream_ativo(m3u8_url):
+    """Confere se o manifest responde 200 antes de publicar o canal."""
+    try:
+        requisicao = urllib.request.Request(m3u8_url, method="GET")
+        with urllib.request.urlopen(requisicao, timeout=15) as resposta:
+            return resposta.status == 200
+    except Exception:
+        return False
+
+
 EPG_URLS = (
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml",
     "https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml",
@@ -188,14 +300,19 @@ def generate_m3u():
                 title, m3u8_url, thumbnail_url = future.result()
 
                 if m3u8_url:
+                    if not stream_ativo(m3u8_url):
+                        print(f"Stream indisponível, ignorado: {url}")
+                        continue
+
                     thumbnail_url = thumbnail_url or ""
 
                     tvg_id = obter_tvg_id(m3u8_url, title)
+                    nome = obter_nome(m3u8_url, title)
                     atributo_tvg_id = f' tvg-id="{tvg_id}"' if tvg_id else ""
 
                     linhas.append(
-                        f'#EXTINF:-1{atributo_tvg_id} tvg-name="{title}" '
-                        f'tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{title}'
+                        f'#EXTINF:-1{atributo_tvg_id} tvg-name="{nome}" '
+                        f'tvg-logo="{thumbnail_url}" group-title="GLOBO AO VIVO",{nome}'
                     )
                     linhas.append(m3u8_url)
                     canais += 1
