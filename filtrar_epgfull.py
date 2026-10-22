@@ -72,18 +72,26 @@ def ler_bruto(caminho):
 
 
 def melhor_fonte(exatos, normalizados):
-    """Escolhe o EPG de origem que cobre mais canais da .m3u, desempatando por programas."""
+    """Escolhe o EPG de origem mais recente que cobre canais da .m3u.
+
+    A prioridade e a ATUALIDADE da grade (maior data de programa), nao a
+    quantidade: um EPG antigo pode ter mais programas e mesmo assim estar
+    semanas atras, o que faria o guia regredir para datas ja passadas.
+    """
     alvo = "|".join(re.escape(t) for t in sorted(exatos | set(normalizados)))
     rx = re.compile(r'channel="(' + alvo + r')"')
-    melhor, score = None, (-1, -1)
+    melhor, score = None, ("", -1, -1)
     for caminho in FONTES:
         if not os.path.exists(caminho):
             continue
         texto = ler_bruto(caminho).decode("utf-8", errors="replace")
         casados = rx.findall(texto)
-        n = (len(set(casados)), len(casados))
+        datas = re.findall(r'<programme[^>]*\bstart="(\d{14})', texto)
+        data_final = max(datas) if datas else ""
+        n = (data_final, len(set(casados)), len(casados))
         log(f"   candidato {caminho:<18} {os.path.getsize(caminho):>12,} B"
-            f"  {n[0]:>4} canais com grade  {n[1]:>7,} programas uteis")
+            f"  {n[0] or 'sem data':>8} ate {n[1]:>4} canais com grade"
+            f"  {n[2]:>7,} programas uteis")
         if n > score:
             melhor, score = caminho, n
     return melhor, score
