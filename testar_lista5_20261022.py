@@ -184,11 +184,18 @@ def pick_segments(ptext, base):
             uri = ln.split("URI=", 1)[1].split(",")[0].strip().strip('"').strip("'")
             if uri:
                 segs.append(inherit_query(base, urljoin(base, uri)))
-    for i, ln in enumerate(lines):
-        if not ln.startswith("#") and i and lines[i - 1].startswith("#EXTINF"):
+    pending = False
+    for ln in lines:
+        if ln.startswith("#EXTINF"):
+            pending = True
+            continue
+        if ln.startswith("#"):
+            continue
+        if pending:
             segs.append(inherit_query(base, urljoin(base, ln)))
-        if len(segs) >= 3:
-            break
+            pending = False
+            if len(segs) >= 3:
+                break
     return segs[:3]
 
 
@@ -241,6 +248,8 @@ def media_kind(text):
     uris = [u.split("?")[0].lower() for u in media_uris(text)]
     if any(t.endswith((".ts", ".mpegts", ".m2ts", ".tsa")) for t in uris):
         return "video+audio"
+    if any(t.endswith(".mp4") for t in uris) and "TYPE=AUDIO" not in text:
+        return "video+audio"
     v = any(k in t for t in uris for k in ("_video", "/video", "-video", "_av", "/av_"))
     a = any(k in t for t in uris for k in ("_audio", "/audio", "-audio", "audio_", "audio-"))
     if v and a:
@@ -252,7 +261,7 @@ def media_kind(text):
     return "desconhecido"
 
 
-def validate_media_playlist(url, text):
+def validate_media_playlist(url, text, codecs_hint=None):
     if encrypted_keys(text):
         return False, "drm", "protegido_drm"
     segs = pick_segments(text, url)
@@ -260,6 +269,10 @@ def validate_media_playlist(url, text):
     if not nok:
         return False, "erro", f"segmentos_falharam({why})"
     kind = media_kind(text)
+    if kind == "desconhecido" and codecs_hint:
+        # master declara CODECS do variante: se traz video+audio, o variante e muxed
+        if has_video(codecs_hint) and has_audio(codecs_hint):
+            kind = "video+audio"
     return True, kind, f"segmentos {nok}/{total} ok | {kind}"
 
 
@@ -322,7 +335,7 @@ def test_url(url):
                         if pr.status_code != 200 or not is_hls_playlist(pr.text):
                             failures.append(f"{v['bw'] // 1000}kbps:http={pr.status_code}")
                             continue
-                        ok, kind, why = validate_media_playlist(pr.url, pr.text)
+                        ok, kind, why = validate_media_playlist(pr.url, pr.text, v.get("codecs"))
                         if not ok:
                             failures.append(f"{v['bw'] // 1000}kbps:{why}")
                             continue
