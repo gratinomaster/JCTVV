@@ -1,0 +1,218 @@
+RELATORIO FINAL - lista5 (20261022)
+Gerado em 2026-10-22T14:24:47Z UTC
+
+== 1. BUILD/VALIDACAO POR CANAL (EPG 3 dias + stream + logo + AV) ==
+[EPG] janela minima exigida: ['20261022', '20261023', '20261024']
+[EPG] cache local /tmp/opencode/epg_iptv_epg_us.xml.gz
+[AV] URLhaus+OpenPhish: 284 hosts, 300 URLs maliciosas
+[AV] aviso: URLhaus hostfile indisponivel (HTTP nao-dados: /tmp/opencode/urlhaus_hostfile.txt)
+[AV] aviso: URLhaus csv indisponivel (HTTP nao-dados: /tmp/opencode/urlhaus_csv.txt)
+[EPG] OK   ABCNewsLive.us         20261022:40, 20261023:40, 20261024:34
+[AV ] OK   ABC News Live          https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a
+[STR] OK   ABC News Live          master->variante 5641kbps | segmentos 2/3 ok | video+audio
+[LOG] OK   ABC News Live          JPEG 76018 bytes
+[EPG] OK   ABCNewsLive.us         20261022:40, 20261023:40, 20261024:34
+[AV ] OK   ABC News Live 2        https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899
+[STR] OK   ABC News Live 2        master->variante 5641kbps | segmentos 2/3 ok | video+audio
+[LOG] OK   ABC News Live 2        JPEG 39080 bytes
+[EPG] OK   CBSNews.us             20261022:28, 20261023:28, 20261024:30
+[AV ] OK   CBS News 24/7          https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca
+[STR] OK   CBS News 24/7          master->variante 2561kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   CBS News 24/7          JPEG 91408 bytes
+[EPG] OK   FoxNewsChannel.us      20261022:19, 20261023:19, 20261024:16
+[AV ] OK   Fox News Channel       https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+[STR] OK   Fox News Channel       master->variante 415kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Fox News Channel       JPEG 21298 bytes
+[EPG] OK   FoxBusiness.us         20261022:23, 20261023:29, 20261024:42
+[AV ] OK   Fox Business           https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+[STR] OK   Fox Business           master->variante 415kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Fox Business           JPEG 17992 bytes
+[EPG] OK   CNNinternational.us    20261022:30, 20261023:29, 20261024:32
+[AV ] OK   CNN International      https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da
+[STR] OK   CNN International      master->variante 8913kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   CNN International      JPEG 25316 bytes
+[EPG] OK   NBCNewsNow.us          20261022:26, 20261023:25, 20261024:22
+[AV ] OK   NBC News NOW           https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_
+[STR] OK   NBC News NOW           master->variante 5253kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   NBC News NOW           JPEG 36271 bytes
+[EPG] OK   DWEnglish.us           20261022:71, 20261023:70, 20261024:71
+[AV ] OK   DW English             https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
+[STR] OK   DW English             master->variante 5184kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   DW English             JPEG 11010 bytes
+[EPG] OK   Euronews.us            20261022:76, 20261023:78, 20261024:103
+[AV ] OK   Euronews               https://cdn-euronews.akamaized.net/live/eds/euronews-en/25080/index.m3u8
+[STR] OK   Euronews               master->variante 3642kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Euronews               JPEG 11445 bytes
+[EPG] OK   i24News.us             20261022:30, 20261023:28, 20261024:33
+[AV ] OK   i24 News               https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8
+[STR] OK   i24 News               master->variante 5640kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   i24 News               JPEG 16257 bytes
+[EPG] OK   NHKWorld.us            20261022:53, 20261023:58, 20261024:70
+[AV ] OK   NHK World              https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+[STR] OK   NHK World              master->variante 6740kbps | segmentos 2/3 ok | video+audio
+[LOG] OK   NHK World              JPEG 8998 bytes
+[EPG] OK   France24enEspanol.us   20261022:107, 20261023:112, 20261024:111
+[AV ] OK   France 24 en Espanol   https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
+[STR] OK   France 24 en Espanol   playlist direta | segmentos 3/3 ok | video+audio
+[LOG] OK   France 24 en Espanol   JPEG 35920 bytes
+[EPG] OK   NewsmaxTV.us           20261022:20, 20261023:20, 20261024:22
+[AV ] OK   Newsmax TV             https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
+[STR] OK   Newsmax TV             master->variante 5377kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Newsmax TV             JPEG 13394 bytes
+[EPG] OK   ReutersTV.us           20261022:12, 20261023:12, 20261024:12
+[AV ] OK   Reuters TV             https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/play
+[STR] OK   Reuters TV             master->variante 4540kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Reuters TV             JPEG 11959 bytes
+[EPG] OK   LiveNOWfromFOX.us      20261022:6, 20261023:6, 20261024:6
+[AV ] OK   Live NOW from FOX      https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+[STR] OK   Live NOW from FOX      master->variante 2780kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Live NOW from FOX      JPEG 14350 bytes
+[EPG] OK   ScrippsNews.us         20261022:26, 20261023:25, 20261024:31
+[AV ] OK   Scripps News           https://aegis-cloudfront-1.tubi.video/7e1c26b7-7975-4240-9a4f-480eaa8f3ea4/pla
+[STR] OK   Scripps News           master->variante 4730kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Scripps News           JPEG 20092 bytes
+[EPG] OK   CGTNCCTVNews.us        20261022:24, 20261023:24, 20261024:24
+[AV ] OK   CGTN CCTV News         https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+[STR] OK   CGTN CCTV News         master->variante 5640kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   CGTN CCTV News         JPEG 10242 bytes
+[EPG] OK   AlJazeera.us           20261022:37, 20261023:37, 20261024:37
+[AV ] OK   Al Jazeera             https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+[STR] OK   Al Jazeera             master->variante 4786kbps | segmentos 3/3 ok | video+audio
+[LOG] OK   Al Jazeera             JPEG 30419 bytes
+
+[EPG] canais publicados: 17 | programas: 4192
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz" url-tvg="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz"
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="news world",ABC News Live
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live 2" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider5.jpg" group-title="news world",ABC News Live 2
+https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/abcn-live-05-index.m3u8
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="news world",CBS News 24/7
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="Fox News Channel" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="news world",Fox News Channel
+https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+#EXTINF:-1 tvg-id="FoxBusiness.us" tvg-name="Fox Business" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="news world",Fox Business
+https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+#EXTINF:-1 tvg-id="CNNinternational.us" tvg-name="CNN International" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-cnn-international.jpg" group-title="news world",CNN International
+https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8
+#EXTINF:-1 tvg-id="NBCNewsNow.us" tvg-name="NBC News NOW" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-nbc-news-now.jpg" group-title="news world",NBC News NOW
+https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
+#EXTINF:-1 tvg-id="DWEnglish.us" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-dw-english.jpg" group-title="news world",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
+#EXTINF:-1 tvg-id="Euronews.us" tvg-name="Euronews" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-euronews.jpg" group-title="news world",Euronews
+https://cdn-euronews.akamaized.net/live/eds/euronews-en/25080/index.m3u8
+#EXTINF:-1 tvg-id="i24News.us" tvg-name="i24 News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-i24-news.jpg" group-title="news world",i24 News
+https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorld.us" tvg-name="NHK World" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-nhk-world.jpg" group-title="news world",NHK World
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+#EXTINF:-1 tvg-id="France24enEspanol.us" tvg-name="France 24 en Espanol" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-france24-espanol.jpg" group-title="news world",France 24 en Espanol
+https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="NewsmaxTV.us" tvg-name="Newsmax TV" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-newsmax-tv.jpg" group-title="news world",Newsmax TV
+https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
+#EXTINF:-1 tvg-id="ReutersTV.us" tvg-name="Reuters TV" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-reuters-tv.jpg" group-title="news world",Reuters TV
+https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8
+#EXTINF:-1 tvg-id="LiveNOWfromFOX.us" tvg-name="Live NOW from FOX" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-live-now-from-fox.jpg" group-title="news world",Live NOW from FOX
+https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ScrippsNews.us" tvg-name="Scripps News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-scripps-news.jpg" group-title="news world",Scripps News
+https://aegis-cloudfront-1.tubi.video/7e1c26b7-7975-4240-9a4f-480eaa8f3ea4/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNCCTVNews.us" tvg-name="CGTN CCTV News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-cgtn-cctv-news.jpg" group-title="news world",CGTN CCTV News
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.us" tvg-name="Al Jazeera" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-al-jazeera.jpg" group-title="news world",Al Jazeera
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+
+
+== 2. VERIFICACAO INDEPENDENTE (EPG publicado em raw.githubusercontent) ==
+Lista: lista5.m3u
+EPG:   https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz
+Header: #EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/fil
+
+[OK  ] ABC News Live
+        stream: master->variante 5641kbps | segmentos 2/3 ok | video+audio
+        epg canal=sim | 20261022=40 20261023=40 20261024=34 | logo HTTP 200 JPEG=True
+        https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/a
+
+[OK  ] ABC News Live 2
+        stream: master->variante 5641kbps | segmentos 2/3 ok | video+audio
+        epg canal=sim | 20261022=40 20261023=40 20261024=34 | logo HTTP 200 JPEG=True
+        https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/a
+
+[OK  ] CBS News 24/7
+        stream: master->variante 2561kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=28 20261023=28 20261024=30 | logo HTTP 200 JPEG=True
+        https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+
+[OK  ] Fox News Channel
+        stream: master->variante 415kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=19 20261023=19 20261024=16 | logo HTTP 200 JPEG=True
+        https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+
+[OK  ] Fox Business
+        stream: master->variante 415kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=23 20261023=29 20261024=42 | logo HTTP 200 JPEG=True
+        https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+
+[OK  ] CNN International
+        stream: master->variante 8913kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=30 20261023=29 20261024=32 | logo HTTP 200 JPEG=True
+        https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/inde
+
+[OK  ] NBC News NOW
+        stream: master->variante 5253kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=26 20261023=25 20261024=22 | logo HTTP 200 JPEG=True
+        https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
+
+[OK  ] DW English
+        stream: master->variante 5184kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=71 20261023=70 20261024=71 | logo HTTP 200 JPEG=True
+        https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
+
+[OK  ] Euronews
+        stream: master->variante 3642kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=76 20261023=78 20261024=103 | logo HTTP 200 JPEG=True
+        https://cdn-euronews.akamaized.net/live/eds/euronews-en/25080/index.m3u8
+
+[OK  ] i24 News
+        stream: master->variante 5640kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=30 20261023=28 20261024=33 | logo HTTP 200 JPEG=True
+        https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8
+
+[OK  ] NHK World
+        stream: master->variante 6740kbps | segmentos 2/3 ok | video+audio
+        epg canal=sim | 20261022=53 20261023=58 20261024=70 | logo HTTP 200 JPEG=True
+        https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+
+[OK  ] France 24 en Espanol
+        stream: playlist direta | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=107 20261023=112 20261024=111 | logo HTTP 200 JPEG=True
+        https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
+
+[OK  ] Newsmax TV
+        stream: master->variante 5377kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=20 20261023=20 20261024=22 | logo HTTP 200 JPEG=True
+        https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
+
+[OK  ] Reuters TV
+        stream: master->variante 4540kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=12 20261023=12 20261024=12 | logo HTTP 200 JPEG=True
+        https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-ra
+
+[OK  ] Live NOW from FOX
+        stream: master->variante 2780kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=6 20261023=6 20261024=6 | logo HTTP 200 JPEG=True
+        https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+
+[OK  ] Scripps News
+        stream: master->variante 4730kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=26 20261023=25 20261024=31 | logo HTTP 200 JPEG=True
+        https://aegis-cloudfront-1.tubi.video/7e1c26b7-7975-4240-9a4f-480eaa8f3ea4/playlist.m3u8
+
+[OK  ] CGTN CCTV News
+        stream: master->variante 5640kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=24 20261023=24 20261024=24 | logo HTTP 200 JPEG=True
+        https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+
+[OK  ] Al Jazeera
+        stream: master->variante 4786kbps | segmentos 3/3 ok | video+audio
+        epg canal=sim | 20261022=37 20261023=37 20261024=37 | logo HTTP 200 JPEG=True
+        https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
+
+RESULTADO: todos os canais funcionam

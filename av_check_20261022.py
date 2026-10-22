@@ -14,26 +14,74 @@ HOSTFILE = "/tmp/opencode/urlhaus_hostfile.txt"
 CSVFILE = "/tmp/opencode/urlhaus_csv.txt"
 HOST_URL = "https://urlhaus.abuse.ch/downloads/hostfile/"
 CSV_URL = "https://urlhaus.abuse.ch/downloads/csv/"
+OPENPHISH_FILE = "/tmp/opencode/openphish_feed.txt"
+OPENPHISH_URL = "https://openphish.com/feed.txt"
+STATUS = []
+
+
+def _curl(url, path):
+    import subprocess
+    subprocess.run(["curl", "-sSL", "-o", path, "--max-time", "300", url], check=True)
 
 
 def ensure_downloaded():
-    import subprocess
+    """Baixa as feeds. URLhaus pode estar indisponivel (410) sem Auth-Key:
+    nesse caso seguimos so com OpenPhish + heuristicas locais."""
     for path, url in ((HOSTFILE, HOST_URL), (CSVFILE, CSV_URL)):
         if not os.path.exists(path) or os.path.getsize(path) == 0:
             print(f"baixando {url} ...")
-            subprocess.run(["curl", "-sSL", "-o", path, "--max-time", "300", url], check=True)
+            try:
+                _curl(url, path)
+            except Exception as e:
+                STATUS.append(f"URLhaus indisponivel ({type(e).__name__})")
+    if not os.path.exists(OPENPHISH_FILE) or os.path.getsize(OPENPHISH_FILE) == 0:
+        print(f"baixando {OPENPHISH_URL} ...")
+        try:
+            _curl(OPENPHISH_URL, OPENPHISH_FILE)
+        except Exception as e:
+            STATUS.append(f"OpenPhish indisponivel ({type(e).__name__})")
+    csvpath = CSVFILE
     with open(CSVFILE, "rb") as f:
         if f.read(2) == b"PK":
             out = CSVFILE.replace(".txt", "_unzip.txt")
             with zipfile.ZipFile(CSVFILE) as z:
                 with z.open(z.namelist()[0]) as src, open(out, "wb") as dst:
                     shutil.copyfileobj(src, dst)
-            return out
-    return CSVFILE
+            csvpath = out
+    return csvpath
+
+
+def openphish_urls():
+    urls, hosts = set(), set()
+    if not os.path.exists(OPENPHISH_FILE):
+        return urls, hosts
+    with open(OPENPHISH_FILE, encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            u = line.strip()
+            if not u or u.startswith("#"):
+                continue
+            urls.add(u.lower())
+            h = urlparse(u).hostname
+            if h:
+                hosts.add(h.lower())
+    return urls, hosts
+
+
+def _is_html(path):
+    try:
+        with open(path, "rb") as f:
+            head = f.read(200).lstrip()
+    except OSError:
+        return False
+    return head.startswith(b"<")
 
 
 def load_hosts(path=HOSTFILE):
     hosts = set()
+    if not os.path.exists(path) or _is_html(path):
+        if os.path.exists(path):
+            STATUS.append(f"URLhaus hostfile indisponivel (HTTP nao-dados: {path})")
+        return hosts
     for line in open(path, encoding="utf-8", errors="ignore"):
         line = line.strip()
         if not line or line.startswith("#"):
@@ -48,6 +96,10 @@ def load_hosts(path=HOSTFILE):
 
 def load_urls(path):
     urls = set()
+    if not os.path.exists(path) or _is_html(path):
+        if os.path.exists(path):
+            STATUS.append(f"URLhaus csv indisponivel (HTTP nao-dados: {path})")
+        return urls
     with open(path, encoding="utf-8", errors="ignore") as f:
         for line in f:
             if line.startswith("#"):
@@ -113,7 +165,15 @@ def main():
     csvpath = ensure_downloaded()
     hosts = load_hosts()
     bad_urls = load_urls(csvpath)
-    print(f"URLhaus: {len(hosts)} hosts maliciosos, {len(bad_urls)} URLs maliciosas carregadas")
+    ph_urls, ph_hosts = openphish_urls()
+    bad_urls |= ph_urls
+    hosts |= ph_hosts
+    print(f"URLhaus: {len(hosts)} hosts, {len(bad_urls)} URLs maliciosas carregadas")
+    print(f"OpenPhish: {len(ph_urls)} URLs / {len(ph_hosts)} hosts")
+    for s in STATUS:
+        print(f"AVISO: {s}")
+    if not hosts and not bad_urls:
+        print("AVISO: nenhuma base maliciosa disponivel (checagem so por heuristicas)")
     urls = [l.strip() for l in open(sys.argv[1]) if l.strip()]
     bad = 0
     for u in urls:

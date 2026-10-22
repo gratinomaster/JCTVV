@@ -233,7 +233,12 @@ def main():
         import av_check_20261008 as av
     csvpath = av.ensure_downloaded()
     hosts, bad_urls = av.load_hosts(), av.load_urls(csvpath)
-    log(f"[AV] URLhaus: {len(hosts)} hosts, {len(bad_urls)} URLs maliciosas")
+    ph_urls, ph_hosts = av.openphish_urls()
+    bad_urls |= ph_urls
+    hosts |= ph_hosts
+    log(f"[AV] URLhaus+OpenPhish: {len(hosts)} hosts, {len(bad_urls)} URLs maliciosas")
+    for s in getattr(av, "STATUS", []):
+        log(f"[AV] aviso: {s}")
 
     aprovados, relatorio = [], []
     for nome, cid, grupo, url, logo in CHANNELS:
