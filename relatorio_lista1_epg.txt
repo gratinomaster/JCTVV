@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261022_021113)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261022_040310)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -7,9 +7,9 @@ Estado do header: OK
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
 SporTV | sportv -> sportv | ok (globo,vivoplay) | programas hoje=44 amanha=35 depois=51
-Globo São Paulo | tv-globo -> GLOBO SP | ok (claro) | programas hoje=24 amanha=26 depois=27
+Globo São Paulo | GLOBO SP -> GLOBO SP | ok (claro) | programas hoje=24 amanha=26 depois=27
 Globo Alagoas | tv-globo -> tv-globo | ok (globo) | programas hoje=24 amanha=26 depois=5
-ge | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=1 depois=3
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=13 amanha=1 depois=3
 G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
 G1 Caruaru | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
 G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
@@ -21,7 +21,7 @@ G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=14 
 G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
 G1 Acre | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
 G1 Pará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
-ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=1 depois=3
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=13 amanha=1 depois=3
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
@@ -30,7 +30,8 @@ Programacao presente hoje ou amanha: 16/16 canais com tvg-id.
 
 Notas:
 - id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
-  Atribuir tv-globo exibiria programacao de TV, nao de radio. Mantido sem tvg-id.
+  O CBN e radio e nao tem grade nas fontes; atribuir tv-globo mostraria a
+  programacao da TV Globo, que nao e a do CBN. Mantido sem tvg-id.
 - G1 regionais: nao ha id regional nas 3 fontes; usam globonews (globo.xml),
   que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
 - Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
