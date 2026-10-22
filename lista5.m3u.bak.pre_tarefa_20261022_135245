@@ -1,0 +1,37 @@
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz" url-tvg="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz"
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider10.jpg" group-title="news world",ABC News Live
+https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-name="ABC News Live 2" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider5.jpg" group-title="news world",ABC News Live 2
+https://abcnews-livestreams.akamaized.net/out/v1/173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/abcn-live-05-index.m3u8
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="news world",CBS News 24/7
+https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8
+#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="Fox News Channel" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="news world",Fox News Channel
+https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+#EXTINF:-1 tvg-id="FoxBusiness.us" tvg-name="Fox Business" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="news world",Fox Business
+https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+#EXTINF:-1 tvg-id="CNNinternational.us" tvg-name="CNN International" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-cnn-international.jpg" group-title="news world",CNN International
+https://d3bp6dwmpbdajl.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ury0meh5m4nzm/index.m3u8
+#EXTINF:-1 tvg-id="NBCNewsNow.us" tvg-name="NBC News NOW" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-nbc-news-now.jpg" group-title="news world",NBC News NOW
+https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
+#EXTINF:-1 tvg-id="DWEnglish.us" tvg-name="DW English" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-dw-english.jpg" group-title="news world",DW English
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
+#EXTINF:-1 tvg-id="Euronews.us" tvg-name="Euronews" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-euronews.jpg" group-title="news world",Euronews
+https://cdn-euronews.akamaized.net/live/eds/euronews-en/25080/index.m3u8
+#EXTINF:-1 tvg-id="i24News.us" tvg-name="i24 News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-i24-news.jpg" group-title="news world",i24 News
+https://i24newsenglish-cdn.encoders.immergo.tv/master.m3u8
+#EXTINF:-1 tvg-id="NHKWorld.us" tvg-name="NHK World" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-nhk-world.jpg" group-title="news world",NHK World
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
+#EXTINF:-1 tvg-id="France24enEspanol.us" tvg-name="France 24 en Espanol" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-france24-espanol.jpg" group-title="news world",France 24 en Espanol
+https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="NewsmaxTV.us" tvg-name="Newsmax TV" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-newsmax-tv.jpg" group-title="news world",Newsmax TV
+https://nmx1ota.akamaized.net/hls/live/2107010/Live_1/index.m3u8
+#EXTINF:-1 tvg-id="ReutersTV.us" tvg-name="Reuters TV" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-reuters-tv.jpg" group-title="news world",Reuters TV
+https://amg00453-reuters-amg00453c1-rakuten-uk-2110.playouts.now.amagi.tv/playlist/amg00453-reuters-reuters-rakutenuk/playlist.m3u8
+#EXTINF:-1 tvg-id="LiveNOWfromFOX.us" tvg-name="Live NOW from FOX" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-live-now-from-fox.jpg" group-title="news world",Live NOW from FOX
+https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ScrippsNews.us" tvg-name="Scripps News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-scripps-news.jpg" group-title="news world",Scripps News
+https://aegis-cloudfront-1.tubi.video/7e1c26b7-7975-4240-9a4f-480eaa8f3ea4/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNCCTVNews.us" tvg-name="CGTN CCTV News" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-cgtn-cctv-news.jpg" group-title="news world",CGTN CCTV News
+https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.us" tvg-name="Al Jazeera" tvg-logo="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/logos/l5-al-jazeera.jpg" group-title="news world",Al Jazeera
+https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8

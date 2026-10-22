@@ -153,7 +153,7 @@ def construir_epg(epg, canais, hoje):
     todos = programmes_por_canal(epg)
     contagem = {}
     for nome, cid, _grupo, _url, _logo in canais:
-        if any(c[1] == cid for c in canais_xml):
+        if any(c[0] == cid for c in canais_xml):
             continue
         m = re.search(r'<channel id="%s">(.*?)</channel>' % re.escape(cid), epg, re.S)
         display = nome
