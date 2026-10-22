@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261021_213615)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261022_021113)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -6,22 +6,22 @@ Estado do header: OK
   3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
-SporTV | sportv -> sportv | ok (globo,vivoplay) | programas hoje=51 amanha=44 depois=35
-Globo São Paulo | GLOBO SP -> GLOBO SP | ok (claro) | programas hoje=27 amanha=24 depois=26
-Globo Alagoas | tv-globo -> tv-globo | ok (globo) | programas hoje=27 amanha=24 depois=26
-ge | ge-tv -> ge-tv | ok (globo) | programas hoje=13 amanha=7 depois=1
-G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Caruaru | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Santa Catarina | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Vanguarda | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Ceará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Acre | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-G1 Pará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=14
-ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=13 amanha=7 depois=1
+SporTV | sportv -> sportv | ok (globo,vivoplay) | programas hoje=44 amanha=35 depois=51
+Globo São Paulo | tv-globo -> GLOBO SP | ok (claro) | programas hoje=24 amanha=26 depois=27
+Globo Alagoas | tv-globo -> tv-globo | ok (globo) | programas hoje=24 amanha=26 depois=5
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=1 depois=3
+G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Caruaru | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Santa Catarina | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Vanguarda | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Ceará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Acre | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+G1 Pará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=20
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=1 depois=3
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
@@ -35,4 +35,4 @@ Notas:
   que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
 - Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
   as demais afiliadas sem id proprio usam tv-globo (globo.xml).
-- Contagem de programas conferida nas 3 fontes em 2026-10-21 (hoje/amanha/depois).
+- Contagem de programas conferida nas 3 fontes em 2026-10-22 (hoje/amanha/depois).
