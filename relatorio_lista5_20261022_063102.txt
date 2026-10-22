@@ -1,0 +1,101 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-22 06:31:10
+Backup: lista5.m3u.bak.pre_teste_20261022_063102
+Entradas testadas: 35 | URLs unicas: 16 | URLs funcionais: 7
+Canais mantidos: 20 | Canais removidos: 15
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Audio: muxado no segmento ou em rendition EXT-X-MEDIA TYPE=AUDIO (validado)
+
+=== CANAIS MANTIDOS ===
+[OK] Video Coastal storm brings days of gusty winds, high waves along the East coast; wet weather returns to the West | Watch Live News on ABCNL
+     master->variante 5641kbps | segmentos 2/3 ok | video | audio_segmentos 2/3 ok
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+[OK] Fox Business Go | Fox News Video
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792654067~acl=/*~hmac=f493b14bc0f9ed91a14583d94481fad31d7f6b5b2c0f6434e1fa23a0c0bea91d
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792654067~acl=/*~hmac=f493b14bc0f9ed91a14583d94481fad31d7f6b5b2c0f6434e1fa23a0c0bea91d
+[OK] Watch CBS News 24/7, our free live news stream
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/master.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/e171be4a-bb8a-4ede-a4fc-239327f1d821:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+
+=== CANAIS REMOVIDOS (nenhuma URL funcional) ===
+[FALHA] ABC News Live - ABC News
+     master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm] | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
+[FALHA] ABC News Live - ABC News
+     protegido_drm | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     protegido_drm | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
+[FALHA] ABC News Live - ABC News
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-central-1.media.dssott.com/dvt2=exp=1792736866~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=520103f5-a0de-42f9-8f72-23a9695c56b1~did=84968450-5380-412a-8d7c-0faface1059c~country=US~kid=k02~hmac=2b7230c493f7474d8ec6d0352e8749ca3f470ef0d5eea502e3e2c7fff0b69c0e/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-128K/128_slide.m3u8
+[FALHA] Video Coastal storm brings days of gusty winds, high waves along the East coast; wet weather returns to the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | audio (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[FALHA] Video Coastal storm brings days of gusty winds, high waves along the East coast; wet weather returns to the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] Video Coastal storm brings days of gusty winds, high waves along the East coast; wet weather returns to the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | audio (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[FALHA] Video Coastal storm brings days of gusty winds, high waves along the East coast; wet weather returns to the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video (sem audio) | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_792.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
