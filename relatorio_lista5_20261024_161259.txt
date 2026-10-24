@@ -1,0 +1,135 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-24 16:13:07
+Backup: lista5.m3u.bak.pre_teste_20261024_161259
+Entradas testadas: 45 | URLs unicas: 25 | URLs funcionais: 15
+Canais mantidos: 5 | Canais removidos: 15 | URLs redundantes: 25
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Midia: fMP4 (sniff avc1/mp4a) e MPEG-TS (PAT/PMT -> stream_type)
+Audio: muxado, ou rendition EXT-X-MEDIA TYPE=AUDIO validado
+DRM (EXT-X-KEY) reprovado: nao toca em player comum
+
+=== CANAIS MANTIDOS ===
+[OK] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4809kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/cd6c8081-48b0-4e78-ba46-061522c0d16a/unenc-all-64a7daa3-6243-4b9b-976c-7ddd03db646d-2ee9b0ce-4673-442f-9c12-a9ceeb0fce16.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[OK] ABC News Live - ABC News
+     master->variante 5641kbps | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792861842~acl=/*~hmac=1343cb707ae30d399d7edcb4848825ea63e3ffd9d73e0621a614ad0627eafa63
+[OK] Fox Business Go | Fox News Video
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792861842~acl=/*~hmac=1343cb707ae30d399d7edcb4848825ea63e3ffd9d73e0621a614ad0627eafa63
+[OK] Watch CBS News 24/7, our free live news stream
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/master.m3u8
+
+=== CANAIS REMOVIDOS (nenhuma URL funcional) ===
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variantes rejeitadas [6173kbps:DRM; 4876kbps:DRM; 3136kbps:DRM] | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792944640~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=a088f6ad-2702-409c-b519-198783a5383c~did=93c37821-3806-4104-b4a0-8861fc22d59f~country=US~kid=k02~hmac=41c6956489a88e0c7ac57544c3c10e1c307a6e8b1e53ec4ca79ed9f156d2a3a6/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | so audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792944640~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=a088f6ad-2702-409c-b519-198783a5383c~did=93c37821-3806-4104-b4a0-8861fc22d59f~country=US~kid=k02~hmac=41c6956489a88e0c7ac57544c3c10e1c307a6e8b1e53ec4ca79ed9f156d2a3a6/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792944640~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=a088f6ad-2702-409c-b519-198783a5383c~did=93c37821-3806-4104-b4a0-8861fc22d59f~country=US~kid=k02~hmac=41c6956489a88e0c7ac57544c3c10e1c307a6e8b1e53ec4ca79ed9f156d2a3a6/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | sem audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/r/965a671c-2742-4513-8885-930fc472e9b7/f45c-MAIN/03/1200_complete-9c36558f-6d96-4f60-93aa-a415b5d09129.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | so audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/r/7cf5a845-26b7-4ab5-88a3-f6a0bd5f101d/f45c-MAIN/03/128_complete.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | sem audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/r/965a671c-2742-4513-8885-930fc472e9b7/f45c-MAIN/03/1800_complete-9c36558f-6d96-4f60-93aa-a415b5d09129.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | so audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792944640~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=a088f6ad-2702-409c-b519-198783a5383c~did=93c37821-3806-4104-b4a0-8861fc22d59f~country=US~kid=k02~hmac=41c6956489a88e0c7ac57544c3c10e1c307a6e8b1e53ec4ca79ed9f156d2a3a6/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/audio-aac-1-64K/64_slide.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1792944640~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=a088f6ad-2702-409c-b519-198783a5383c~did=93c37821-3806-4104-b4a0-8861fc22d59f~country=US~kid=k02~hmac=41c6956489a88e0c7ac57544c3c10e1c307a6e8b1e53ec4ca79ed9f156d2a3a6/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | so audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/ad4a7529-e367-4930-9b0c-9267b4387287/r/93f8401b-3422-45d6-aab1-dfebc73d131c/eff0-MAIN/03/128_complete.m3u8
+[FALHA] ABC News Live Weekends | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | sem audio | https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/ad4a7529-e367-4930-9b0c-9267b4387287/r/af41ccf8-5074-41c9-94cb-35dbc31df100/eff0-MAIN/03/1200_complete-c99e91f1-a4d8-483e-8f26-e7abf1886f84.m3u8
+[FALHA] ABC News Live - ABC News
+     playlist direta | segmentos 1/3 ok | sem audio | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] ABC News Live - ABC News
+     playlist direta | segmentos 1/3 ok | sem audio | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+[FALHA] Fox Business Go | Fox News Video
+     http=403 (token expirado/bloqueio) | https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+
+=== URLs REDUNDANTES (funcionais, mas nao escolhidas) ===
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4736kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/0d844012-2f49-4b82-b6f0-be7eafed17c2/unenc-all-c8d195f4-dca1-4020-aa31-2de289163fd0-b93a485e-b09b-47e9-889b-9ac667b199a1.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4351kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/22657fa9-c88a-4f35-b6b5-8498b2747d1f/unenc-all-2861fbf4-edea-4f65-ab68-59ac6805523f-5de1afb4-a2a5-4987-b0c8-f8f29d6552b2.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4310kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/b3c805ac-7ca8-4878-a195-e8df97f0a124/unenc-all-2a5efdff-d5ee-40e4-bff2-461b8a0c0335-7686c597-dda5-47ad-9253-5a0d33ce71ab.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4264kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/ad4a7529-e367-4930-9b0c-9267b4387287/unenc-all-01e7f97a-99af-4fb7-b071-09dcab91ad53-de6aeaf5-7256-4502-96a8-a0b915fdd6c8.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4240kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/aaab1977-7d9b-46d3-b1ea-bbec93c8a5ee/unenc-all-1d8547c3-6d74-4930-8849-5e89127d864e-7f421f1a-a0e1-4b4a-b8b9-9aa9c066c3bb.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4117kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/2f748a28-14c1-4ad4-b5ec-d0d5cba014d2/unenc-all-ed86cf6e-6f3d-450f-850f-d194ab1d3dad-607b76d1-40af-4774-a54c-395ecfb163b4.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live Weekends | Watch Live News on ABCNL
+     master->variante 4025kbps | segmentos 1/3 ok | video+audio
+     https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/bd2d84b0-73b5-4540-abc2-ba4fe76137bc/unenc-all-303de92f-6204-45bc-a590-fa6e7599a112-086eb480-482a-485b-b9b0-5ebfdac9e1e9.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+[DESCARTADA] ABC News Live - ABC News
+     playlist direta | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[DESCARTADA] ABC News Live - ABC News
+     playlist direta | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/731a603d-7f6a-4b19-8aba-a5bf20b7927c:DLS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
