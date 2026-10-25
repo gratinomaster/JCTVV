@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261024_155500)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261025_111810)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -6,22 +6,20 @@ Estado do header: OK
   3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
-AO VIVO: Assista ao EPTV1 | G1 | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Caruaru | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-G1 Pará | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=3 amanha=4 depois=0
-ge | ge-tv -> ge-tv | ok (globo) | programas hoje=3 amanha=4 depois=0
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=20 amanha=21 depois=0
-CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+G1 Pará | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=4 amanha=0 depois=0
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=4 amanha=0 depois=0
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=21 amanha=0 depois=0
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
-Resultado: 11/13 canais com tvg-id valido ou corretamente sem id.
-Programacao presente hoje ou amanha: 11/11 canais com tvg-id.
+Resultado: 9/11 canais com tvg-id valido ou corretamente sem id.
+Programacao presente hoje ou amanha: 9/9 canais com tvg-id.
 
 Notas:
 - id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
@@ -31,4 +29,4 @@ Notas:
   que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
 - Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
   as demais afiliadas sem id proprio usam tv-globo (globo.xml).
-- Contagem de programas conferida nas 3 fontes em 2026-10-24 (hoje/amanha/depois).
+- Contagem de programas conferida nas 3 fontes em 2026-10-25 (hoje/amanha/depois).
