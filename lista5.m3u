@@ -1,9 +1,11 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz"
-#EXTINF:-1 tvg-id="465150" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz"
+#EXTINF:-1 tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",World News Tonight with David Muir | Watch Live News on ABCNL
+https://linear-abcnews-akc-na-west-1.media.dssott.com/int/ps01/disney/0d844012-2f49-4b82-b6f0-be7eafed17c2/unenc-all-c8d195f4-dca1-4020-aa31-2de289163fd0-b93a485e-b09b-47e9-889b-9ac667b199a1.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="464766" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business HD
-https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792975946~acl=/*~hmac=a73bd06d7c247409c374315d7da88d46efce1827b0875af7112755364a398d1a
-#EXTINF:-1 tvg-id="465372" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox News Channel HD
-https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792975947~acl=/*~hmac=f77735268aa47f084c67b89ed3726ecca95a04cb32a9bca830d0c8c677fbd113
-#EXTINF:-1 tvg-id="USBA370000104" tvg-logo="https://sportshub.cbsistatic.com/i/2026/07/01/7ae22ee0-2ff8-46f5-9687-332dd2a7626f/3e1a7237-7a66-43ba-8837-466ea37bf49a.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/22a38d1c-0402-4ca8-837d-0fc439fd7a20:TUL/master.m3u8
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792984576~acl=/*~hmac=d93e19f2503b5188a38a742c9dfdf9781990a8f910ef633c5f001ea2d80f9cdc
+#EXTINF:-1 tvg-id="FoxBusiness.us" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792984576~acl=/*~hmac=d93e19f2503b5188a38a742c9dfdf9781990a8f910ef633c5f001ea2d80f9cdc
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",Watch CBS News 24/7, our free live news stream
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5d708a73-a6f1-49e8-b1fa-fe5d4abe661f:CHS/master.m3u8
