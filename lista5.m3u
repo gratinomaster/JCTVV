@@ -2,8 +2,8 @@
 #EXTINF:-1 tvg-id="465150" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
 #EXTINF:-1 tvg-id="464766" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business HD
-https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792969187~acl=/*~hmac=02c726f3869213bd48f66d3928475ec51f115e8010cf20893eb75499d8854d66
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1792975946~acl=/*~hmac=a73bd06d7c247409c374315d7da88d46efce1827b0875af7112755364a398d1a
 #EXTINF:-1 tvg-id="465372" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox News Channel HD
-https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792969188~acl=/*~hmac=a46bc78eacd8c7b511ba0638ec55820bdb4530e54733717f74c45bc703c7b59a
-#EXTINF:-1 tvg-id="USBA370000104" tvg-logo="https://sportshub.cbsistatic.com/i/2026/09/10/8c4882a8-54c5-4994-b5ee-7fe4222e00cb/p184224-b-h8-aq.jpg" group-title="NEWS WORLD",CBS News 24/7
-https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/90ff2ab0-1caf-415c-ad63-722105f05b0c:TUL/master.m3u8
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1792975947~acl=/*~hmac=f77735268aa47f084c67b89ed3726ecca95a04cb32a9bca830d0c8c677fbd113
+#EXTINF:-1 tvg-id="USBA370000104" tvg-logo="https://sportshub.cbsistatic.com/i/2026/07/01/7ae22ee0-2ff8-46f5-9687-332dd2a7626f/3e1a7237-7a66-43ba-8837-466ea37bf49a.jpg" group-title="NEWS WORLD",CBS News 24/7
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/22a38d1c-0402-4ca8-837d-0fc439fd7a20:TUL/master.m3u8
