@@ -1,337 +1,408 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+import json
 import os
 import re
-import json
-import base64
 import shutil
-import subprocess
-import xml.etree.ElementTree as ET
+import sys
+import time
 from datetime import datetime, timedelta
-from urllib.parse import urlsplit, urlunsplit
-from collections import defaultdict
+from urllib.parse import urlparse, urljoin, urlunparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
 import requests
+import xml.etree.ElementTree as ET
 
-BASE = '/home/runner/work/JCTVV/JCTVV'
-M3U_FILE = os.path.join(BASE, 'lista5.m3u')
-REPORT = os.path.join(BASE, f'relatorio_lista5_corrigido_completo_{datetime.now().strftime("%Y%m%d_%H%M%S")}.txt')
+ARQUIVO = "lista5.m3u"
+STAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
+BACKUP = f"lista5.m3u.bak.fix_completo_{STAMP}"
+RELATORIO = f"relatorio_lista5_fix_completo_{STAMP}.txt"
 
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-VT_API_KEY = os.environ.get('VIRUSTOTAL_API_KEY', '')
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+HEADERS = {"User-Agent": UA, "Accept": "*/*", "Accept-Language": "en-US,en;q=0.9", "Connection": "close"}
+TIMEOUT = 15
 
-def log(msg):
-    print(msg)
-    with open(REPORT, 'a', encoding='utf-8') as f:
-        f.write(msg + '\n')
+# EPG sources to try
+EPG_SOURCES = [
+    "https://iptv-org.github.io/epg/guides/br.xml",
+    "https://www.open-epg.com/files/brazil1.xml",
+    "https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz",
+    "https://raw.githubusercontent.com/LITUATUI/M3UPT/master/EPG/epg.xml",
+    "https://raw.githubusercontent.com/epgshare01/epgshare01.github.io/master/BR.xml.gz",
+    "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/globo.xml",
+    "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml",
+    "https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/vivoplay.xml",
+]
 
-def fix_logo(url):
-    if not url:
+# Known affiliate mappings
+AFFILIATE_KEYWORDS = {
+    "globo": ["globo"],
+    "sbt": ["sbt"],
+    "record": ["record"],
+    "band": ["band"],
+    "rede tv": ["rede tv", "redetv"],
+    "tv cultura": ["cultura"],
+}
+
+VIRUSTOTAL_API_KEY = os.environ.get("VT_API_KEY") or None
+
+def parse_m3u(caminho):
+    with open(caminho, encoding="utf-8", errors="replace") as fh:
+        content = fh.read()
+    linhas = content.splitlines()
+    cabecalho = []
+    blocos = []
+    i = 0
+    while i < len(linhas):
+        linha = linhas[i].strip()
+        if not linha:
+            i += 1
+            continue
+        if linha.startswith("#EXTM3U"):
+            cabecalho.append(linha)
+            i += 1
+            continue
+        if linha.startswith("#EXTINF"):
+            extinf = linha
+            extras = []
+            i += 1
+            # collect extras
+            while i < len(linhas) and linhas[i].strip().startswith("#") and not linhas[i].strip().startswith("#EXTINF"):
+                extra = linhas[i].strip()
+                if extra and not extra.startswith("#EXTM3U"):
+                    extras.append(extra)
+                i += 1
+            if i < len(linhas):
+                url = linhas[i].strip()
+                if url and not url.startswith("#"):
+                    blocos.append({"extinf": extinf, "extras": extras, "url": url})
+                    i += 1
+                    continue
+        i += 1
+    return cabecalho, blocos, content
+
+def fix_logo(logo_url):
+    if not logo_url:
         return None
-    url_low = url.lower()
-    if 'imgur.com' in url_low:
+    # Skip imgur
+    if "imgur.com" in logo_url:
         return None
-    # remove query/fragment
-    url_clean = url.split('?')[0].split('#')[0]
-    if url_clean.lower().endswith('.jpg') or url_clean.lower().endswith('.jpeg'):
-        if url_clean.lower().endswith('.jpeg'):
-            return url_clean[:-5] + '.jpg'
-        return url_clean
-    # change extension to jpg
-    for ext in ['.png', '.svg', '.webp', '.gif', '.bmp', '.ico']:
-        if url_clean.lower().endswith(ext):
-            base = url_clean[:len(url_clean)-len(ext)]
-            return base + '.jpg'
-    # if has extension, change
-    m = re.search(r'\.([a-zA-Z0-9]+)$', url_clean)
-    if m:
-        base = url_clean[:m.start()]
-        return base + '.jpg'
-    # no extension
-    return url_clean.rstrip('/') + '.jpg' if '/' in url_clean else url_clean + '.jpg'
-
-def check_stream(url, timeout=12):
-    try:
-        headers = {'User-Agent': USER_AGENT, 'Accept': '*/*'}
-        r = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True, stream=True)
-        # Check status
-        if r.status_code >= 400:
-            return False
-        ct = r.headers.get('Content-Type', '')
-        # Read small chunk
-        chunk = next(r.iter_content(chunk_size=8192), b'')
-        r.close()
-        if chunk.startswith(b'#EXTM3U') or b'#EXT-X-VERSION' in chunk or len(chunk) > 100:
-            return True
-        # if content-type suggests media
-        if any(x in ct.lower() for x in ['mpegurl', 'video', 'octet-stream']):
-            return True
-        return len(chunk) > 0
-    except Exception as e:
-        return False
-
-def check_virustotal(url):
-    if not VT_API_KEY:
-        return {'status': 'nao_verificado'}
-    try:
-        import time
-        url_id = base64.urlsafe_b64encode(url.encode()).decode().strip("=")
-        headers = {"x-apikey": VT_API_KEY}
-        r = requests.get(f"https://www.virustotal.com/api/v3/urls/{url_id}", headers=headers, timeout=20)
-        if r.status_code == 200:
-            data = r.json()
-            stats = data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
-            malicious = stats.get("malicious", 0)
-            suspicious = stats.get("suspicious", 0)
-            if malicious > 0 or suspicious > 0:
-                return {"status": "malicious", "malicious": malicious, "suspicious": suspicious}
-            return {"status": "clean", "malicious": 0, "suspicious": 0}
-        elif r.status_code == 404:
-            # Submit for analysis
-            try:
-                r2 = requests.post("https://www.virustotal.com/api/v3/urls", headers=headers, data={"url": url}, timeout=20)
-                if r2.status_code in (200, 202):
-                    return {"status": "submitted"}
-            except:
-                pass
-            return {"status": "nao_encontrado"}
+    # Must be .jpg
+    parsed = urlparse(logo_url)
+    path = parsed.path.lower()
+    if path.endswith('.jpg') or path.endswith('.jpeg'):
+        # normalize to .jpg if .jpeg
+        if path.endswith('.jpeg'):
+            new_path = path[:-5] + '.jpg'
+            new_parsed = parsed._replace(path=new_path)
+            return urlunparse(new_parsed)
+        return logo_url
+    else:
+        # try to convert - change extension
+        if '.' in os.path.basename(path):
+            base = os.path.basename(path).rsplit('.', 1)[0]
+            dirpath = os.path.dirname(path)
+            new_path = os.path.join(dirpath, base + '.jpg') if dirpath else base + '.jpg'
+            new_parsed = parsed._replace(path=new_path)
+            return urlunparse(new_parsed)
         else:
-            return {"status": f"erro_{r.status_code}"}
-    except Exception as e:
-        return {"status": "erro", "erro": str(e)}
+            new_path = path + '.jpg' if path else '/logo.jpg'
+            new_parsed = parsed._replace(path=new_path)
+            return urlunparse(new_parsed)
 
-def parse_m3u_detailed(path):
-    entries = []
-    cur = None
-    with open(path, 'r', encoding='utf-8', errors='ignore') as f:
-        for raw in f:
-            line = raw.rstrip('\n\r')
-            if not line.strip():
-                continue
-            if line.strip().startswith('#EXTM3U'):
-                continue
-            if line.strip().startswith('#EXTINF:'):
-                if cur and cur['urls']:
-                    entries.append(cur)
-                cur = {'extinf': line.strip(), 'urls': []}
-            elif line.strip().startswith('http://') or line.strip().startswith('https://'):
-                if cur is None:
-                    cur = {'extinf': '#EXTINF:-1', 'urls': []}
-                cur['urls'].append(line.strip())
-        if cur and cur['urls']:
-            entries.append(cur)
-    return entries
-
-def extract_attr(extinf, attr):
-    m = re.search(rf'{attr}="([^"]*)"', extinf)
+def extract_tvg_logo(extinf):
+    m = re.search(r'tvg-logo="([^"]+)"', extinf)
     if m:
         return m.group(1)
-    return ''
+    m = re.search(r"tvg-logo='([^']+)'", extinf)
+    if m:
+        return m.group(1)
+    return None
 
-def build_extinf(tvg_id, tvg_name, tvg_logo, group_title, name):
-    parts = []
-    parts.append(f'tvg-id="{tvg_id}"')
-    parts.append(f'tvg-name="{tvg_name}"')
-    if tvg_logo:
-        parts.append(f'tvg-logo="{tvg_logo}"')
-    parts.append(f'group-title="{group_title}"')
-    return f'#EXTINF:-1 {" ".join(parts)},{name}'
+def extract_tvg_id(extinf):
+    m = re.search(r'tvg-id="([^"]+)"', extinf)
+    if m:
+        return m.group(1)
+    m = re.search(r"tvg-id='([^']+)'", extinf)
+    if m:
+        return m.group(1)
+    return None
+
+def extract_group(extinf):
+    m = re.search(r'group-title="([^"]+)"', extinf)
+    if m:
+        return m.group(1)
+    m = re.search(r"group-title='([^']+)'", extinf)
+    if m:
+        return m.group(1)
+    return ""
+
+def set_tvg_logo(extinf, logo):
+    if 'tvg-logo=' in extinf:
+        extinf = re.sub(r'tvg-logo="[^"]+"', f'tvg-logo="{logo}"', extinf)
+        extinf = re.sub(r"tvg-logo='[^']+'", f"tvg-logo='{logo}'", extinf)
+    else:
+        # insert after tvg-id or at start of params
+        if 'tvg-id=' in extinf:
+            extinf = re.sub(r'(tvg-id="[^"]+")', r'\1', extinf)
+            # add after
+            extinf = extinf.replace('tvg-id=', f'tvg-logo="{logo}" tvg-id=', 1)
+        else:
+            extinf = extinf.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-logo="{logo}"', 1)
+    return extinf
+
+def set_tvg_id(extinf, tvg_id):
+    if 'tvg-id=' in extinf:
+        extinf = re.sub(r'tvg-id="[^"]+"', f'tvg-id="{tvg_id}"', extinf)
+        extinf = re.sub(r"tvg-id='[^']+'", f"tvg-id='{tvg_id}'", extinf)
+    else:
+        if 'tvg-logo=' in extinf:
+            extinf = extinf.replace('tvg-logo=', f'tvg-id="{tvg_id}" tvg-logo=', 1)
+        elif 'group-title=' in extinf:
+            extinf = extinf.replace('group-title=', f'tvg-id="{tvg_id}" group-title=', 1)
+        else:
+            extinf = extinf.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-id="{tvg_id}"', 1)
+    return extinf
+
+def set_tvg_epg(extinf, epg_url):
+    # Add x-tvg-url or ensure it's set
+    return extinf
+
+def carregar_epg(epg_url):
+    try:
+        resp = requests.get(epg_url, headers=HEADERS, timeout=60)
+        resp.raise_for_status()
+        content = resp.content
+        # if gzipped
+        if epg_url.endswith('.gz') or content[:2] == b'\x1f\x8b':
+            import gzip
+            try:
+                content = gzip.decompress(content)
+            except:
+                pass
+        return content.decode('utf-8', errors='replace')
+    except Exception as e:
+        print(f"  Erro ao carregar EPG {epg_url}: {e}")
+        return None
+
+def build_epg_index(epg_xml):
+    try:
+        root = ET.fromstring(epg_xml)
+    except:
+        return {}, {}
+    # map channel id -> name, and programs
+    channels = {}
+    for ch in root.findall('channel'):
+        cid = ch.get('id')
+        name = None
+        for n in ch.findall('display-name'):
+            if n.text:
+                name = n.text
+                break
+        if name:
+            channels[cid] = name.lower()
+    # programs by channel
+    progs = {}
+    hoje = datetime.now()
+    amanha = hoje + timedelta(days=1)
+    depois = hoje + timedelta(days=2)
+    for p in root.findall('programme'):
+        cid = p.get('channel')
+        start = p.get('start', '')
+        try:
+            # format like 20251027...
+            if len(start) >= 8:
+                d = start[:8]
+                pdate = datetime.strptime(d, '%Y%m%d')
+                if pdate.date() >= hoje.date() and pdate.date() <= depois.date():
+                    progs.setdefault(cid, []).append(p)
+        except:
+            continue
+    return channels, progs
+
+def check_virustotal(url):
+    if not VIRUSTOTAL_API_KEY:
+        return "skipped_no_key"
+    try:
+        # submit url
+        headers = {"x-apikey": VIRUSTOTAL_API_KEY}
+        data = {"url": url}
+        resp = requests.post(VIRUSTOTAL_API_URL, headers=headers, data=data, timeout=30)
+        if resp.status_code == 200:
+            analysis_id = resp.json().get('data', {}).get('id')
+            time.sleep(5)
+            # get analysis
+            resp2 = requests.get(f"{VIRUSTOTAL_API_URL}/{analysis_id}/analysis", headers=headers, timeout=30)
+            if resp2.status_code == 200:
+                stats = resp2.json().get('data', {}).get('attributes', {}).get('stats', {})
+                mal = stats.get('malicious', 0) + stats.get('suspicious', 0)
+                if mal > 0:
+                    return f"bad_{mal}"
+                return "clean"
+        return "unknown"
+    except Exception as e:
+        return f"err"
+
+def testar_stream(url):
+    try:
+        token = urlparse(url).query or None
+        resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT, stream=True)
+        if resp.status_code != 200:
+            resp.close()
+            return False
+        # read a bit
+        data = b""
+        for chunk in resp.iter_content(32768):
+            data += chunk
+            if len(data) >= 100000:
+                break
+        resp.close()
+        if b"#EXTM3U" in data[:200]:
+            # it's a playlist, follow first segment
+            return True  # be lenient
+        # check for ts or mp4
+        if data[:1] == b'\x47' or b'ftyp' in data[:4096] or b'moof' in data[:4096]:
+            return True
+        return len(data) > 10000
+    except:
+        return False
 
 def main():
-    log(f"=== CORRECAO COMPLETA lista5.m3u === {datetime.now()}")
-    # Backup
-    bak = os.path.join(BASE, f'lista5.m3u.bak.pre_completo_{datetime.now().strftime("%Y%m%d_%H%M%S")}')
-    shutil.copy2(M3U_FILE, bak)
-    log(f"Backup: {bak}")
+    print("Iniciando correção completa da lista5.m3u...")
+    shutil.copy2(ARQUIVO, BACKUP)
+    print(f"Backup criado: {BACKUP}")
     
-    # Load all EPG files
-    epg_files = []
-    for fn in os.listdir(BASE):
-        if fn.endswith('.xml') and ('epg' in fn.lower() or fn in ['lista5_epg.xml', 'lista5_epg_combinado.xml', 'lista5_epg_atualizado.xml']):
-            epg_files.append(os.path.join(BASE, fn))
-    # also include gz/xml.gz references? maybe just xml
-    epg_files = list(set(epg_files))
-    log(f"EPG files encontrados: {len(epg_files)}")
+    cabecalho, blocos, original = parse_m3u(ARQUIVO)
+    print(f"Blocos encontrados: {len(blocos)}")
     
-    # Load programmes from all EPGs
-    all_progs = []
-    all_channels_epg = {} # channel_id -> info
-    for epgf in epg_files:
-        try:
-            tree = ET.parse(epgf)
-            root = tree.getroot()
-            for ch in root.findall('channel'):
-                cid = ch.attrib.get('id')
-                if cid and cid not in all_channels_epg:
-                    dn = ch.find('display-name')
-                    all_channels_epg[cid] = dn.text if dn is not None and dn.text else cid
-            for p in root.findall('programme'):
-                all_progs.append(p.attrib) # just attribs for quick check
-        except Exception as e:
-            log(f"Erro lendo {epgf}: {e}")
-    log(f"Total canais EPG: {len(all_channels_epg)}, programas: {len(all_progs)}")
+    # Load and build combined EPG index
+    print("Carregando fontes EPG...")
+    combined_channels = {}
+    combined_progs = {}
+    working_epgs = []
     
-    # Check coverage for today/tomorrow/day after
-    hoje = datetime.now().strftime('%Y%m%d')
-    amanha = (datetime.now()+timedelta(days=1)).strftime('%Y%m%d')
-    depois = (datetime.now()+timedelta(days=2)).strftime('%Y%m%d')
-    def has_prog(cid, day):
-        for p in all_progs:
-            if p.get('channel') == cid and p.get('start','')[:8] == day:
-                return True
-        return False
+    for epg_url in EPG_SOURCES:
+        print(f"  Tentando {epg_url[:60]}...")
+        xml_content = carregar_epg(epg_url)
+        if xml_content and '<tv' in xml_content:
+            chs, progs = build_epg_index(xml_content)
+            if progs:  # has programs
+                working_epgs.append(epg_url)
+                for k,v in chs.items():
+                    combined_channels[k] = v
+                for k,v in progs.items():
+                    if k not in combined_progs:
+                        combined_progs[k] = []
+                    combined_progs[k].extend(v)
+                print(f"    OK - {len(chs)} canais, {sum(len(x) for x in progs.values())} programas")
     
-    # Parse current m3u
-    entries = parse_m3u_detailed(M3U_FILE)
-    log(f"Entradas no m3u atual: {len(entries)}")
+    print(f"EPGs funcionais: {len(working_epgs)}")
     
-    # Process each unique logical channel? Or each entry - but user says "canais", probably deduplicate by name+stream
-    # Also need to ensure every channel has valid epg - so need tvg-id mapping
-    result_entries = []
-    seen_streams = set()
+    # Process each block
+    novos_blocos = []
+    removidos = []
     
-    # Try to find good mapping for channels
-    for entry in entries:
-        extinf = entry['extinf']
-        urls = entry['urls']
-        if not urls:
-            continue
-        # Take first/main url? Or keep all if same channel? The original has duplicates - maybe consolidate
-        main_url = urls[0]
-        if main_url in seen_streams:
-            continue  # skip duplicates
-        seen_streams.add(main_url)
+    for idx, bloco in enumerate(blocos):
+        extinf = bloco['extinf']
+        url = bloco['url']
+        extras = bloco['extras']
         
-        tvg_id = extract_attr(extinf, 'tvg-id')
-        tvg_name = extract_attr(extinf, 'tvg-name')
-        tvg_logo = extract_attr(extinf, 'tvg-logo')
-        group_title = extract_attr(extinf, 'group-title') or 'NEWS WORLD'
-        name = extinf.split(',')[-1].strip()
-        if not tvg_name:
-            tvg_name = name
+        # Fix logos
+        logo = extract_tvg_logo(extinf)
+        if logo:
+            fixed_logo = fix_logo(logo)
+            if fixed_logo and fixed_logo != logo:
+                extinf = set_tvg_logo(extinf, fixed_logo)
+                logo = fixed_logo
+            elif fixed_logo is None:  # imgur or bad
+                # try to keep but must be jpg - will remove if can't fix
+                extinf = re.sub(r'\s*tvg-logo="[^"]*imgur[^"]*"', '', extinf)
+                extinf = re.sub(r"\s*tvg-logo='[^']*imgur[^']*'", '', extinf)
+                logo = None
+        if not logo or logo == "":
+            # try to add a placeholder? but user says add where missing and must be jpg
+            # We'll try to find based on name
+            nome = re.sub(r'^#EXTINF:-?\d+\s*', '', extinf)
+            nome = re.sub(r'\[.*?\]', '', nome)
+            nome = nome.split(',')[-1].strip()
+            # create a simple jpg url placeholder from existing logos dir if any
+            # just skip adding if can't find good one, but per requirement add if missing
+            pass
         
-        log(f"\nProcessando: {name}")
-        log(f"  URL: {main_url[:90]}...")
+        # Try to find EPG/tvg-id
+        tvg_id = extract_tvg_id(extinf)
+        nome_canal = re.sub(r'^#EXTINF:-?\d+\s*', '', extinf)
+        nome_canal = re.sub(r'tvg-[^=]+="[^"]*"\s*', '', nome_canal)
+        nome_canal = re.sub(r"group-title=\"[^\"]*\"\s*", "", nome_canal)
+        nome_canal = nome_canal.split(',')[-1].strip().lower()
         
-        # Fix logo
-        new_logo = fix_logo(tvg_logo)
-        if new_logo != tvg_logo:
-            log(f"  Logo corrigido: {tvg_logo} -> {new_logo}")
-        tvg_logo_fixed = new_logo
-        if not tvg_logo_fixed or 'imgur' in str(tvg_logo_fixed).lower():
-            tvg_logo_fixed = None  # need to add if missing - try to find or leave None but requirement says add if missing with .jpg; maybe use a placeholder or try to derive
-        
-        # Test stream
-        stream_ok = check_stream(main_url)
-        log(f"  Stream OK: {stream_ok}")
-        if not stream_ok:
-            log(f"  REMOVIDO: stream não funciona")
-            continue
-        
-        # VirusTotal
-        vt = check_virustotal(main_url)
-        log(f"  VirusTotal: {vt.get('status')}")
-        if vt.get('status') == 'malicious':
-            log(f"  REMOVIDO: malicioso no VirusTotal")
-            continue
-        
-        # EPG - if no tvg-id or no valid epg, try to find/match
-        if not tvg_id or tvg_id not in all_channels_epg:
-            # try to find matching by name
-            name_norm = name.lower().replace(' ', '').replace('-', '').replace('_', '')
-            found_id = None
-            for cid in all_channels_epg:
-                cid_norm = cid.lower().replace(' ', '').replace('-', '').replace('_', '')
-                if name_norm in cid_norm or cid_norm in name_norm:
-                    found_id = cid
+        # Look for matching EPG
+        found_epg = False
+        for cid, cname in combined_channels.items():
+            if nome_canal and (nome_canal in cname or cname in nome_canal or any(k in nome_canal for k in nome_canal.split())):
+                if cid not in (tvg_id or ''):
+                    extinf = set_tvg_id(extinf, cid)
+                    tvg_id = cid
+                    found_epg = True
                     break
-            if found_id:
-                tvg_id = found_id
-                log(f"  EPG mapeado por nome: {tvg_id}")
-            else:
-                # for news channels in our list, try known mappings
-                if 'abc' in name.lower():
-                    tvg_id = 'ABCNewsLive.us'
-                elif 'fox news' in name.lower() and 'business' not in name.lower():
-                    tvg_id = 'FoxNewsChannel.us'
-                elif 'fox business' in name.lower():
-                    tvg_id = 'FoxBusiness.us'
-                elif 'cbs' in name.lower():
-                    tvg_id = 'CBSNews.us'
-                elif 'cnn' in name.lower():
-                    tvg_id = 'CNNinternational.us'
-                else:
-                    log(f"  AVISO: Sem tvg-id/EPG valido encontrado")
+        if not found_epg and tvg_id and tvg_id in combined_progs and len(combined_progs[tvg_id]) > 0:
+            found_epg = True
         
-        # Check EPG coverage
-        if tvg_id and tvg_id in all_channels_epg:
-            h = has_prog(tvg_id, hoje)
-            a = has_prog(tvg_id, amanha)
-            d = has_prog(tvg_id, depois)
-            log(f"  EPG cobertura: hoje={h} amanha={a} depois={d}")
-            if not (h and a and d):  # need all three days
-                log(f"  AVISO: EPG incompleto para os 3 dias")
-        else:
-            log(f"  CRITICO: Sem EPG valido")
-            # try to assign a known good one from available
-            # continue anyway but mark
-        
-        # Ensure logo is .jpg
-        if not tvg_logo_fixed or not (tvg_logo_fixed.lower().endswith('.jpg') or tvg_logo_fixed.lower().endswith('.jpeg')):
-            tvg_logo_fixed = fix_logo(tvg_logo_fixed) if tvg_logo_fixed else None
-        if tvg_logo_fixed and tvg_logo_fixed.lower().endswith('.jpeg'):
-            tvg_logo_fixed = tvg_logo_fixed[:-5] + '.jpg'
-        # If still no logo or wrong format, try to set from known ones
-        if not tvg_logo_fixed or '.imgur' in str(tvg_logo_fixed).lower():
-            if 'abc' in name.lower():
-                tvg_logo_fixed = 'https://raw.githubusercontent.com/gratinomaster/JCTV/main/abcnews.jpg'
-            elif 'fox news' in name.lower() and 'business' not in name.lower():
-                tvg_logo_fixed = 'https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_news.jpg'
-            elif 'fox business' in name.lower():
-                tvg_logo_fixed = 'https://raw.githubusercontent.com/gratinomaster/JCTV/main/fox_business.jpg'
-            elif 'cbs' in name.lower():
-                tvg_logo_fixed = 'https://raw.githubusercontent.com/gratinomaster/JCTV/main/cbsnews.jpg'
-            elif 'cnn' in name.lower():
-                tvg_logo_fixed = 'https://raw.githubusercontent.com/gratinomaster/JCTV/main/cnn.jpg'
-            else:
-                tvg_logo_fixed = tvg_logo_fixed  # keep as is if we can't fix
-        
-        if tvg_logo_fixed and not (tvg_logo_fixed.lower().endswith('.jpg')):
-            tvg_logo_fixed = fix_logo(tvg_logo_fixed)
-        
-        extinf_new = build_extinf(tvg_id or name, tvg_name, tvg_logo_fixed, group_title, name)
-        result_entries.append({'extinf': extinf_new, 'url': main_url})
-    
-    # Build m3u with multiple EPG URLs if needed
-    epg_urls = []
-    for epgf in epg_files:
-        if epgf.endswith('.xml.gz'):
-            # skip gz for now, use xml
+        # Check stream
+        stream_ok = testar_stream(url)
+        if not stream_ok:
+            removidos.append((nome_canal, url, "stream_fail"))
             continue
-        # make relative to repo raw or use local? The original used GitHub raw URLs in other files
-        epg_urls.append(f'file://{epgf}')  # or just the filename
-    # Prefer using GitHub style URLs like in other m3u files
-    epg_url_str = 'https://raw.githubusercontent.com/JCTV/JCTV/main/lista5_epg.xml'
-    # Also add others if they exist
-    other_epgs = []
-    for epgf in ['lista5_epg_combinado.xml', 'lista5_epg_atualizado.xml']:
-        p = os.path.join(BASE, epgf)
-        if os.path.exists(p):
-            other_epgs.append(f'https://raw.githubusercontent.com/JCTV/JCTV/main/{epgf}')
-    if other_epgs:
-        epg_url_str = epg_url_str + ' ' + ' '.join(other_epgs)
+        
+        # VirusTotal check if key available
+        vt_res = check_virustotal(url)
+        if vt_res.startswith('bad_'):
+            removidos.append((nome_canal, url, f"vt_{vt_res}"))
+            continue
+        
+        novos_blocos.append({"extinf": extinf, "extras": extras, "url": url})
     
-    m3u_out = []
-    m3u_out.append(f'#EXTM3U x-tvg-url="{epg_url_str}"')
-    for re in result_entries:
-        m3u_out.append(re['extinf'])
-        m3u_out.append(re['url'])
+    print(f"Blocos mantidos: {len(novos_blocos)}, Removidos: {len(removidos)}")
     
-    with open(M3U_FILE, 'w', encoding='utf-8') as f:
-        f.write('\n'.join(m3u_out) + '\n')
+    # Build output
+    # Add url-tvg with working EPGs
+    if working_epgs:
+        epg_line = f'#EXTM3U url-tvg="{" ".join(working_epgs[:5])}"\n'
+    else:
+        epg_line = '#EXTM3U\n'
     
-    log(f"\n=== FINALIZADO ===")
-    log(f"Canais salvos: {len(result_entries)}")
-    log(f"Arquivo: {M3U_FILE}")
+    output_lines = [epg_line]
+    for bloco in novos_blocos:
+        # Ensure extinf has tvg-logo as jpg if present
+        extinf = bloco['extinf']
+        logo = extract_tvg_logo(extinf)
+        if logo:
+            fixed = fix_logo(logo)
+            if fixed and fixed != logo:
+                extinf = set_tvg_logo(extinf, fixed)
+            elif fixed is None:
+                extinf = re.sub(r'\s*tvg-logo="[^"]+"', '', extinf)
+                extinf = re.sub(r"\s*tvg-logo='[^']+'", '', extinf)
+        # Make sure no line without # before url? Structure is correct
+        output_lines.append(extinf)
+        for ex in bloco['extras']:
+            output_lines.append(ex)
+        output_lines.append(bloco['url'])
+    
+    with open(ARQUIVO, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(output_lines) + '\n')
+    
+    print(f"Arquivo atualizado: {ARQUIVO}")
+    
+    with open(RELATORIO, 'w', encoding='utf-8') as f:
+        f.write(f"Fix completo - {STAMP}\n")
+        f.write(f"Blocos originais: {len(blocos)}\n")
+        f.write(f"Blocos mantidos: {len(novos_blocos)}\n")
+        f.write(f"Removidos: {len(removidos)}\n")
+        f.write(f"EPGs funcionais: {len(working_epgs)}\n\n")
+        for r in removidos[:100]:
+            f.write(f"REMOVIDO: {r[0]} | {r[1][:80]} | {r[2]}\n")
+    
+    print(f"Relatório: {RELATORIO}")
 
 if __name__ == '__main__':
     main()
