@@ -1,193 +1,313 @@
 #!/usr/bin/env python3
-import re
 import os
-import sys
-import json
+import re
 import gzip
+import json
 import time
-import urllib.request
-import urllib.parse
-from collections import defaultdict
+from urllib.parse import urlparse
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
-EPG_BR = "https://iptv-epg.org/files/epg-br.xml.gz"
-EPG_FULL = "https://iptv-epg.org/files/epgfull.xml.gz"  # common alternative
+m3u_path = '/home/runner/work/JCTVV/JCTVV/CABOBRASIL.m3u'
+epg_path = '/tmp/br1.xml.gz'
 
-def read_file(path):
-    with open(path, 'r', encoding='utf-8', errors='replace') as f:
-        return f.read()
+session = requests.Session()
+retry = Retry(total=2, backoff_factor=0.5, status_forcelist=[500, 502, 503, 504])
+adapter = HTTPAdapter(max_retries=retry)
+session.mount('http://', adapter)
+session.mount('https://', adapter)
 
-def write_file(path, content):
-    with open(path, 'w', encoding='utf-8') as f:
-        f.write(content)
-
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': '*/*',
+}
 def parse_m3u(content):
     lines = content.splitlines()
-    header = []
+    entries = []
     i = 0
-    # Find header
-    while i < len(lines) and lines[i].strip().startswith('#EXTM3U'):
-        header.append(lines[i])
-        i += 1
-    
-    channels = []
+    header_lines = []
+    if lines and lines[0].startswith('#EXTM3U'):
+        header_lines.append(lines[0])
+        i = 1
     while i < len(lines):
-        line = lines[i].strip()
-        if not line:
+        line = lines[i].rstrip()
+        if not line.strip():
             i += 1
             continue
-        if line.startswith('#EXTINF'):
-            extinf = line
+        if line.strip().startswith('#EXTINF'):
+            extinf = line.strip()
             i += 1
-            if i < len(lines):
-                url = lines[i].strip()
+            # find next non-comment line as url
+            while i < len(lines):
+                uline = lines[i].strip()
                 i += 1
-                channels.append({
-                    'extinf': extinf,
-                    'url': url,
-                    'raw': [extinf, url]
-                })
+                if not uline:
+                    continue
+                if uline.startswith('#'):
+                    continue  # skip comments
+                entries.append((extinf, uline))
+                break
             else:
                 break
+        elif line.strip().startswith('#'):
+            header_lines.append(line.strip())
+            i += 1
         else:
             i += 1
-    
-    return header, channels
+    return header_lines, entries
 
-def has_valid_link(channels):
-    cleaned = []
-    for ch in channels:
-        if ch['url'] and re.match(r'^https?://', ch['url']):
-            cleaned.append(ch)
+def get_attr(extinf, name):
+    m = re.search(rf'{name}="([^"]*)"', extinf)
+    if m:
+        return m.group(1)
+    return ''
+
+def set_attr(extinf, name, value):
+    # remove existing
+    extinf2 = re.sub(rf'\s*{name}="[^"]*"', '', extinf)
+    # add before last comma+name
+    # simpler: insert
+    if f'{name}=' in extinf2:
+        extinf2 = re.sub(rf'{name}="[^"]*"', f'{name}="{value}"', extinf2)
+    else:
+        # add before comma before channel name
+        if ',' in extinf2:
+            # insert before the comma that separates attributes from name? attributes come before comma
+            extinf2 = extinf2.replace(',', f' {name}="{value}",', 1) if extinf2.count(',') == 1 else extinf2  # handle
+            # better general
+            pass
+    # easier approach
+    return extinf2
+
+def fix_extinf(extinf, **kwargs):
+    # rebuild
+    # get all attrs
+    m_inf = re.match(r'(#EXTINF:-?\d+)', extinf)
+    prefix = m_inf.group(1) if m_inf else '#EXTINF:-1'
+    # extract existing attrs
+    attrs = {}
+    for aname in ['tvg-id','tvg-name','tvg-logo','group-title','tvg-chno','tvg-shift']:
+        attrs[aname] = get_attr(extinf, aname)
+    # override
+    for k,v in kwargs.items():
+        if v is not None and v != '':
+            attrs[k] = v
+        elif v == '':
+            attrs.pop(k, None)
+    # build
+    parts = [prefix]
+    for k in ['tvg-id','tvg-name','tvg-logo','group-title','tvg-chno']:
+        if k in attrs and attrs[k] != '':
+            parts.append(f'{k}="{attrs[k]}"')
+    # name
+    name = extinf.split(',')[-1]
+    return ' '.join(parts) + ',' + name
+def check_url(url, timeout=8):
+    try:
+        # try HEAD first
+        r = session.head(url, headers=headers, timeout=timeout, allow_redirects=True, verify=False)
+        if r.status_code == 405 or r.status_code == 400:
+            r = session.get(url, headers=headers, timeout=timeout, allow_redirects=True, verify=False, stream=True)
+            r.close()
+        if r.status_code < 400:
+            ct = r.headers.get('Content-Type','')
+            return True, r.status_code, ct
         else:
-            print(f"Removing EXTINF without valid link: {ch['extinf'][:80]}")
-    return cleaned
+            return False, r.status_code, ''
+    except Exception as e:
+        return False, str(e), ''
 
-def extract_tvg_id(extinf):
-    m = re.search(r'tvg-id="([^"]+)"', extinf)
-    if m:
-        return m.group(1)
-    return None
-
-def extract_tvg_logo(extinf):
-    m = re.search(r'tvg-logo="([^"]+)"', extinf)
-    if m:
-        return m.group(1)
-    return None
-
-def extract_name(extinf):
-    # After comma
-    if ',' in extinf:
-        return extinf.split(',')[-1].strip()
-    return None
-
-def has_svg_logo(extinf):
-    logo = extract_tvg_logo(extinf)
-    if logo and logo.lower().endswith('.svg'):
-        return True
-    return False
-
-def fix_svg_logos(channels):
-    # Remove .svg logos or replace if possible - requirement says "não quero .svg"
-    for ch in channels:
-        if has_svg_logo(ch['extinf']):
-            # Try to find better logo from iptv-epg style or remove
-            ch['extinf'] = re.sub(r'\s+tvg-logo="[^"]*\.svg"', '', ch['extinf'])
+def load_epg_channels(epg_file):
+    channels = {}
+    try:
+        with gzip.open(epg_file, 'rt', encoding='utf-8', errors='ignore') as f:
+            data = f.read()
+    except:
+        return channels
+    # find channels
+    for m in re.finditer(r'<channel id="([^"]+)"[^>]*>(.*?)</channel>', data, re.S):
+        cid = m.group(1)
+        chblock = m.group(2)
+        dn = re.search(r'<display-name[^>]*>([^<]+)</display-name>', chblock)
+        name = dn.group(1) if dn else cid
+        # check if has programmes for today
+        channels[cid] = {'name': name, 'block': m.group(0)}
     return channels
 
-def test_url_http(url, timeout=10):
+def has_prog_today(epg_file, cid):
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            code = resp.getcode()
-            return code < 400
+        with gzip.open(epg_file, 'rt', encoding='utf-8', errors='ignore') as f:
+            data = f.read()
     except:
-        return False
+        return 0
+    # count programmes for this channel with start containing today 20261028
+    today = '20261028'
+    count = len(re.findall(rf'channel="{re.escape(cid)}"[^>]*start="{today}', data))
+    return count
+BR_MAPPINGS = {
+    'Arte 1': ['São.Paulo/SP..Arte.1.br'],
+    'Band News': ['São.Paulo/SP..Band.News.br'],
+    'Canal do Boi': ['São.Paulo/SP..Canal.do.Boi.br'],
+    'Canal Futura': ['São.Paulo/SP..Futura.br'],
+    'Canal Gov': [],
+    'Canal Rural': ['São.Paulo/SP..Canal.Rural.br'],
+    'Canal UOL': [],
+    'Canção Nova': [],
+    'CNN Brasil': ['São.Paulo/SP..CNN.Brasil.br'],
+    'CNT': [],
+    'GE TV': [],
+    'Globo': ['São.Paulo/SP..Globo.br'],
+    'Jovem Pan News': ['Jovem.Pan.News.br'],
+    'Record News': ['São.Paulo/SP.Record.News.br'],
+    'Rede Brasil': ['Rede.Brasil.HD.br'],
+    'Rede Gospel': [],
+    'Rede Vida': ['São.Paulo/SP..Rede.Vida.br'],
+    'RedeTV!': [],
+    'RIT TV': [],
+    'SBT': ['São.Paulo/SP..SBT.HD.br'],
+    'TV A Crítica': [],
+    'TV Brasil': [],
+    'TV Câmara': [],
+    'TV Cultura': ['São.Paulo/SP..Cultura.br'],
+    'TV Rá Tim Bum': [],
+    'TV Gazeta': [],
+    'TV Justiça': [],
+    'TV Novo Tempo': [],
+    'TV Senado': [],
+    'WooHoo': [],
+    'Band Sports': [],
+    'ESPN 2': ['ESPN.2.br'],
+    'ESPN 3': [],
+    'ESPN 4': [],
+    'ESPN Brasil': [],
+    'SporTV': [],
+    'AXN': ['São.Paulo/SP..AXN.br'],
+    'Cartoon Network': ['São.Paulo/SP..Cartoon.Network.br'],
+    'Discovery Channel': ['São.Paulo/SP..Discovery.Channel.br'],
+    'Animal Planet': ['São.Paulo/SP..Animal.Planet.br'],
+    'History': ['São.Paulo/SP..History.br'] if False else [],
+}
 
-def load_epg_channel_ids(epg_path):
-    ids = set()
-    try:
-        if epg_path.endswith('.gz'):
-            with gzip.open(epg_path, 'rt', encoding='utf-8', errors='ignore') as f:
-                content = f.read()
-        else:
-            with open(epg_path, 'r', encoding='utf-8', errors='ignore') as f:
-                content = f.read()
-        # Find all <channel id="...">
-        for m in re.finditer(r'<channel[^>]+id="([^"]+)"', content):
-            ids.add(m.group(1))
-    except Exception as e:
-        print(f"Error loading EPG {epg_path}: {e}")
-    return ids
-
+def find_best_epg_for_name(name, epg_channels):
+    # try direct mapping
+    if name in BR_MAPPINGS:
+        for cand in BR_MAPPINGS[name]:
+            if cand in epg_channels and has_prog_today(epg_path, cand) > 0:
+                return cand
+    # try fuzzy
+    name_clean = name.lower()
+    best = None
+    best_score = -1
+    for cid, info in epg_channels.items():
+        if not cid.endswith('.br'):
+            continue
+        if has_prog_today(epg_path, cid) == 0:
+            continue
+        score = 0
+        if name_clean in info['name'].lower() or info['name'].lower() in name_clean:
+            score += 10
+        # token match
+        for tok in name_clean.split():
+            if tok in cid.lower() or tok in info['name'].lower():
+                score += 1
+        if score > best_score:
+            best_score = score
+            best = cid
+    return best if best_score >= 2 else None
 def main():
-    input_file = 'CABOBRASIL.m3u'
-    print(f"Processing {input_file}...")
+    print('Loading...')
+    with open(m3u_path, 'r', encoding='utf-8') as f:
+        content = f.read()
     
-    content = read_file(input_file)
-    header, channels = parse_m3u(content)
+    header_lines, entries = parse_m3u(content)
+    print(f'Found {len(entries)} entries')
     
-    print(f"Found {len(channels)} channels")
+    epg_channels = load_epg_channels(epg_path)
+    print(f'Loaded {len(epg_channels)} epg channels')
     
-    # Remove EXTINF without links
-    channels = has_valid_link(channels)
-    print(f"After removing entries without valid links: {len(channels)}")
+    # Check each entry
+    new_entries = []
+    seen_urls = set()
+    removed = []
     
-    # Remove .svg logos
-    channels = fix_svg_logos(channels)
-    
-    # Load EPG channel IDs
-    epg_ids_br = load_epg_channel_ids('EPGFULL.xml.gz')  # use local one
-    # Also check if there's iptv-epg format
-    print(f"Loaded {len(epg_ids_br)} channel IDs from EPG")
-    
-    # For channels with invalid/missing tvg-id relative to EPG or missing logo
-    # Try to fix tvg-ids to match EPG real ones if possible
-    for ch in channels:
-        tvg_id = extract_tvg_id(ch['extinf'])
-        name = extract_name(ch['extinf'])
-        if tvg_id and tvg_id not in epg_ids_br and tvg_id.endswith('.br'):
-            # Maybe try without region suffix variations or find match
-            # For now keep as is if it's .br and looks reasonable
-            pass
-    
-    # Add a relevant open TV channel if missing - add TV Globo or another major one
-    # Check if we have Globo
-    has_globo = any('globo' in ch['extinf'].lower() or 'Globo' in (extract_name(ch['extinf']) or '') for ch in channels)
-    if not has_globo or True:  # Always ensure we have a strong open channel
-        # Add Rede Globo SP if not present with better logo
-        globo_extinf = '#EXTINF:-1 tvg-id="GloboSP.br" tvg-name="Globo SP" tvg-logo="https://iptv-epg.org/images/yhlQR-JexZmMl01lpndH3Hw_gD_7d-oJVvMz3bHuaeWf6IeJ-JdR2mfBLYzu5B_mT_p1SE3wAUlUCrHhaGK5wWSqFIpTKTuPAq4dNY7P9w8" group-title="TV ABERTA",Globo SP'
-        # Check if we already have similar
-        already_has = any('GloboSP.br' == extract_tvg_id(ch['extinf']) for ch in channels)
-        if not already_has:
-            # Add as a new channel - but requirement says "adcione 1 canal do mesmo estilo dos que já estão na lista, canal de mais relevancia, tv aberta caso for necessario"
-            # Maybe add TV Record or enhance existing
-            pass
-    
-    # Ensure header has https EPG
-    new_header = []
-    for h in header:
-        if h.startswith('#EXTM3U'):
-            # Force https URLs
-            h2 = re.sub(r'url-tvg="http://[^"]+"', f'url-tvg="{EPG_BR}"', h)
-            h2 = re.sub(r'x-tvg-url="http://[^"]+"', f'x-tvg-url="{EPG_BR}"', h2)
-            if 'url-tvg=' not in h2:
-                h2 = f'#EXTM3U url-tvg="{EPG_BR}" x-tvg-url="{EPG_BR}"'
-            # Make sure https
-            h2 = h2.replace('url-tvg="http://', 'url-tvg="https://').replace('x-tvg-url="http://', 'x-tvg-url="https://')
-            new_header.append(h2)
+    for extinf, url in entries:
+        name = extinf.split(',')[-1].strip()
+        tvg_id = get_attr(extinf, 'tvg-id')
+        tvg_logo = get_attr(extinf, 'tvg-logo')
+        group = get_attr(extinf, 'group-title')
+        
+        # skip if url already seen? maybe allow different qualities but user says "exclua os canais offline" - focus on removing offline ones
+        ok, status, ct = check_url(url)
+        if not ok:
+            removed.append((name, url, status))
+            continue  # remove offline
+        
+        # fix tvg-id if not working with EPG
+        new_extinf = extinf
+        # find better epg id
+        best_epg = find_best_epg_for_name(name, epg_channels)
+        if best_epg:
+            # use real epg id
+            new_extinf = fix_extinf(new_extinf, **{'tvg-id': best_epg})
+            tvg_id_new = best_epg
         else:
-            new_header.append(h)
-    if not any(h.startswith('#EXTM3U') for h in new_header):
-        new_header.insert(0, f'#EXTM3U url-tvg="{EPG_BR}" x-tvg-url="{EPG_BR}"')
+            tvg_id_new = get_attr(new_extinf, 'tvg-id')
+            # if tvg_id has weird format or no epg, try to find any br channel with today prog that matches loosely
+            # but must be real
+        
+        # fix logo - if missing or looks invalid (svg) remove or replace
+        tvg_logo_new = get_attr(new_extinf, 'tvg-logo')
+        if not tvg_logo_new or tvg_logo_new.strip() == '' or tvg_logo_new.lower().endswith('.svg'):
+            # try to get icon from epg
+            best_epg_cur = get_attr(new_extinf, 'tvg-id')
+            if best_epg_cur in epg_channels:
+                # extract icon
+                chblock = epg_channels[best_epg_cur]['block']
+                icon_m = re.search(r'<icon src="([^"]+)"', chblock)
+                if icon_m and not icon_m.group(1).lower().endswith('.svg'):
+                    new_extinf = fix_extinf(new_extinf, **{'tvg-logo': icon_m.group(1)})
+                else:
+                    # remove logo if no good one
+                    new_extinf = fix_extinf(new_extinf, **{'tvg-logo': ''})
+            else:
+                new_extinf = fix_extinf(new_extinf, **{'tvg-logo': ''})
+        
+        # remove EXTINF without links - but we have link, so ok
+        new_entries.append((new_extinf, url))
     
-    # Write output
-    output = '\n'.join(new_header) + '\n'
-    for ch in channels:
-        output += ch['extinf'] + '\n' + ch['url'] + '\n'
+    print(f'Removed: {len(removed)}')
+    for r in removed[:5]:
+        print('  ', r[0], r[2])
     
-    out_file = 'CABOBRASIL.m3u'
-    write_file(out_file, output)
-    print(f"Wrote {len(channels)} channels to {out_file}")
+    # Build new m3u
+    out_lines = []
+    out_lines.append('#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_BR1.xml.gz"')
+    for extinf, url in new_entries:
+        out_lines.append(extinf)
+        out_lines.append(url)
     
+    # Try to add 1 more relevant channel if possible (open TV) - maybe add RecordTV if missing?
+    names_present = [e[0].split(',')[-1].lower() for e in new_entries]
+    if not any('record' in n for n in names_present):
+        # try to find a working record stream
+        record_candidates = [
+            'https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8',
+            'https://5cf4a2c2512a2.streamlock.net/rbatv/rbatv/playlist.m3u8',
+        ]
+        for rcand in record_candidates:
+            ok, st, ct = check_url(rcand)
+            if ok:
+                best_epg = find_best_epg_for_name('Record', epg_channels) or 'São.Paulo/SP..Record.br'
+                extinf_new = f'#EXTINF:-1 tvg-id="{best_epg}" tvg-name="RecordTV" group-title="TV ABERTA",RecordTV'
+                out_lines.append(extinf_new)
+                out_lines.append(rcand)
+                break
+    
+    new_content = '\n'.join(out_lines) + '\n'
+    with open(m3u_path, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    print('Done writing')
+
 if __name__ == '__main__':
     main()
