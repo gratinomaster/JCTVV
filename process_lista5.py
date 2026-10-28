@@ -1,206 +1,273 @@
 #!/usr/bin/env python3
-import requests
 import re
-import hashlib
-import time
 import os
-from datetime import datetime, timedelta
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import sys
+import json
+import time
+import hashlib
+from urllib.parse import urlparse, urljoin
+from pathlib import Path
 
-VIRUSTOTAL_API_KEY = os.environ.get("VT_API_KEY", "")
+M3U_FILE = '/home/runner/work/JCTVV/JCTVV/lista5.m3u'
+BACKUP = f'/home/runner/work/JCTVV/JCTVV/lista5.m3u.bak.pre_fullfix_{time.strftime("%Y%m%d_%H%M%S")}'
 
-CHANNEL_EPG_MAP = {
-    "abc news": {
-        "channel_id": "408627",
-        "tvg_id": "abcnews.us",
-        "epg_url": "https://epg.pw/api/epg.xml?channel_id=408627",
+# Known EPG sources (free/public where possible)
+EPG_SOURCES = [
+    # Try common sources
+    {'url': 'https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz', 'name': 'epgshare01_us1'},
+    {'url': 'https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz', 'name': 'epgshare01_us_locals1'},
+    {'url': 'https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz', 'name': 'epgshare01_us2'},
+    {'url': 'https://i.mjh.nz/PlutoTV/us.xml.gz', 'name': 'mjh_pluto'},
+    {'url': 'https://i.mjh.nz/SamsungTVPlus/us.xml.gz', 'name': 'mjh_samsung'},
+]
+
+# Default EPG URLs to add to playlist header
+DEFAULT_EPG_URLS = [
+    'https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz',
+    'https://epgshare01.online/epgshare01/epg_ripper_US_LOCALS1.xml.gz',
+]
+
+# Channel mappings with known tvg-ids and logos
+CHANNEL_MAPPINGS = {
+    'abc news': {
+        'tvg_id': 'ABCNewsLive.us',
+        'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/ABC_News_logo.svg/960px-ABC_News_logo.svg.png',
+        'name': 'ABC News Live'
     },
-    "abcnl": {
-        "channel_id": "408627",
-        "tvg_id": "abcnews.us",
-        "epg_url": "https://epg.pw/api/epg.xml?channel_id=408627",
+    'fox news': {
+        'tvg_id': 'FoxNewsChannel.us',
+        'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png',
+        'name': 'Fox News Channel'
     },
-    "fox news": {
-        "channel_id": "369713",
-        "tvg_id": "foxnews.us",
-        "epg_url": "https://epg.pw/api/epg.xml?channel_id=369713",
+    'fox business': {
+        'tvg_id': 'FoxBusinessNetwork.us',
+        'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Fox_Business.svg/960px-Fox_Business.svg.png',
+        'name': 'Fox Business Network'
     },
-    "fox business": {
-        "channel_id": "369713",
-        "tvg_id": "foxbusiness.us",
-        "epg_url": "https://epg.pw/api/epg.xml?channel_id=369713",
-    },
-    "cbs news": {
-        "channel_id": "464941",
-        "tvg_id": "cbsnews.us",
-        "epg_url": "https://epg.pw/api/epg.xml?channel_id=464941",
-    },
+    'cbs news': {
+        'tvg_id': 'CBSNews247.us',
+        'logo': 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/CBS_News_247_logo.svg/960px-CBS_News_247_logo.svg.png',
+        'name': 'CBS News 24/7'
+    }
 }
 
-def check_virustotal(url):
-    if not VIRUSTOTAL_API_KEY:
-        print("  VirusTotal API key not set - skipping check")
-        return True, "SKIP - No API key"
-    
+def backup_file():
     try:
-        api_url = "https://www.virustotal.com/api/v3/urls"
-        headers = {"x-apikey": VIRUSTOTAL_API_KEY, "Content-Type": "application/x-www-form-urlencoded"}
-        data = f"url={requests.utils.quote(url)}"
-        
-        response = requests.post(api_url, headers=headers, data=data, timeout=60)
-        if response.status_code == 200:
-            result = response.json()
-            analysis_url = result.get("data", {}).get("links", {}).get("self")
-            if analysis_url:
-                time.sleep(3)
-                analysis = requests.get(analysis_url, headers=headers, timeout=30)
-                if analysis.status_code == 200:
-                    data = analysis.json()
-                    stats = data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {})
-                    malicious = stats.get("malicious", 0)
-                    suspicious = stats.get("suspicious", 0)
-                    harmless = stats.get("harmless", 0)
-                    undetected = stats.get("undetected", 0)
-                    total = malicious + suspicious + harmless + undetected
-                    if total > 0:
-                        if malicious > 0:
-                            return False, f"MALICIOUS: {malicious}/{total}"
-                        elif suspicious > 0:
-                            return False, f"SUSPICIOUS: {suspicious}/{total}"
-                        else:
-                            return True, f"CLEAN: {harmless}/{total}"
-        elif response.status_code == 429:
-            return None, "RATE LIMITED"
+        import shutil
+        shutil.copy2(M3U_FILE, BACKUP)
+        print(f'Backed up to {BACKUP}')
     except Exception as e:
-        return None, f"ERROR: {str(e)}"
-    return None, "UNKNOWN"
+        print(f'Backup failed: {e}')
 
-def identify_channel(name):
-    name_lower = name.lower()
-    for key, info in CHANNEL_EPG_MAP.items():
-        if key in name_lower:
-            return info
-    return None
+def read_m3u():
+    with open(M3U_FILE, 'r', encoding='utf-8', errors='ignore') as f:
+        content = f.read()
+    return content
 
-def parse_m3u(filepath):
-    channels = []
-    with open(filepath, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-    
+def parse_m3u(content):
+    lines = content.splitlines()
+    entries = []
     i = 0
     while i < len(lines):
         line = lines[i].strip()
-        if line.startswith('#EXTINF:'):
-            extinf = line
+        if line.startswith('#EXTM3U'):
             i += 1
-            if i < len(lines):
-                url = lines[i].strip()
-                if url and not url.startswith('#'):
-                    channels.append({'extinf': extinf, 'url': url})
+            continue
+        if line.startswith('#EXTINF'):
+            extinf = line
+            # Look for next non-empty line that's a URL
+            j = i + 1
+            while j < len(lines) and lines[j].strip() == '':
+                j += 1
+            if j < len(lines):
+                url_line = lines[j].strip()
+                if url_line and not url_line.startswith('#'):
+                    entries.append({
+                        'extinf': extinf,
+                        'url': url_line,
+                        'start_idx': i,
+                        'url_idx': j
+                    })
+                    i = j + 1
+                    continue
+            i += 1
+            continue
+        # Check if it's a URL without preceding EXTINF - flag it
+        if line and not line.startswith('#') and '://' in line:
+            # This is bad - URL without EXTINF
+            entries.append({
+                'extinf': None,
+                'url': line,
+                'orphan': True,
+                'start_idx': i,
+                'url_idx': i
+            })
         i += 1
-    return channels
+    return entries, lines
 
-def format_extinf(extinf, epg_info):
-    new_extinf = extinf.rstrip()
+def is_jpg_url(url):
+    if not url:
+        return False
+    url_lower = url.lower()
+    # Check if ends with .jpg or .jpeg
+    if url_lower.endswith('.jpg') or url_lower.endswith('.jpeg'):
+        return True
+    # Check if contains .jpg in path
+    if '.jpg' in url_lower or '.jpeg' in url_lower:
+        # Make sure it's not just in query params oddly
+        parsed = urlparse(url)
+        path = parsed.path.lower()
+        if path.endswith('.jpg') or path.endswith('.jpeg'):
+            return True
+    return False
+
+def convert_to_jpg_url(logo_url):
+    if not logo_url:
+        return logo_url
+    if is_jpg_url(logo_url):
+        return logo_url
+    # Try to convert common cases
+    # For example, replace .png with .jpg if possible, or just add .jpg
+    parsed = urlparse(logo_url)
+    path = parsed.path
+    if path.lower().endswith(('.png', '.gif', '.webp', '.svg')):
+        new_path = re.sub(r'\.(png|gif|webp|svg)$', '.jpg', path, flags=re.IGNORECASE)
+        new_url = logo_url.replace(path, new_path)
+        return new_url
+    # If no extension, try to append .jpg
+    if '.' not in os.path.basename(path):
+        new_url = logo_url.rstrip('/') + '.jpg'
+        return new_url
+    return logo_url
+
+def fix_extinf(extinf, entry_name, logo_url=None):
+    # Extract existing attributes
+    tvg_id_match = re.search(r'tvg-id="([^"]*)"', extinf)
+    tvg_name_match = re.search(r'tvg-name="([^"]*)"', extinf)
+    tvg_logo_match = re.search(r'tvg-logo="([^"]*)"', extinf)
+    group_title_match = re.search(r'group-title="([^"]*)"', extinf)
     
-    if epg_info:
-        tvg_id = epg_info['tvg_id']
-        tvg_url = epg_info['epg_url']
-        
-        if 'tvg-id=' in new_extinf:
-            new_extinf = re.sub(r'tvg-id="[^"]*"', f'tvg-id="{tvg_id}"', new_extinf)
-        else:
-            new_extinf = new_extinf + f' tvg-id="{tvg_id}"'
-        
-        if 'tvg-url=' in new_extinf:
-            new_extinf = re.sub(r'tvg-url="[^"]*"', f'tvg-url="{tvg_url}"', new_extinf)
-        else:
-            new_extinf = new_extinf + f' tvg-url="{tvg_url}"'
+    # Determine channel type and get mapping
+    name_lower = entry_name.lower()
+    mapping = None
+    for key, m in CHANNEL_MAPPINGS.items():
+        if key in name_lower:
+            mapping = m
+            break
+    
+    # Build new extinf
+    # Keep duration and other parts
+    duration_match = re.match(r'#EXTINF:(-?\d+)', extinf)
+    duration = duration_match.group(1) if duration_match else '-1'
+    
+    new_attrs = []
+    new_attrs.append(f'-{duration}')
+    
+    # Set tvg-id
+    if mapping and mapping['tvg_id']:
+        new_attrs.append(f'tvg-id="{mapping["tvg_id"]}"')
+    elif tvg_id_match and tvg_id_match.group(1):
+        new_attrs.append(f'tvg-id="{tvg_id_match.group(1)}"')
     else:
-        if 'tvg-id=' not in new_extinf:
-            new_extinf = new_extinf + ' tvg-id=""'
-        if 'tvg-url=' not in new_extinf:
-            new_extinf = new_extinf + ' tvg-url=""'
+        # Generate a tvg-id based on name
+        clean_name = re.sub(r'[^a-zA-Z0-9]', '', entry_name)
+        if mapping:
+            new_attrs.append(f'tvg-id="{mapping["tvg_id"]}"')
+        else:
+            new_attrs.append(f'tvg-id="{clean_name}.us"')
     
+    # Set tvg-name
+    if mapping and mapping['name']:
+        new_attrs.append(f'tvg-name="{mapping["name"]}"')
+    elif tvg_name_match and tvg_name_match.group(1):
+        new_attrs.append(f'tvg-name="{tvg_name_match.group(1)}"')
+    else:
+        new_attrs.append(f'tvg-name="{entry_name}"')
+    
+    # Set tvg-logo - must be .jpg
+    logo_to_use = logo_url
+    if mapping and mapping['logo']:
+        logo_to_use = mapping['logo']
+    elif tvg_logo_match and tvg_logo_match.group(1):
+        logo_to_use = tvg_logo_match.group(1)
+    
+    if logo_to_use:
+        # Convert to jpg if not already
+        logo_to_use = convert_to_jpg_url(logo_to_use)
+        # Avoid imgur
+        if 'imgur.com' in logo_to_use.lower():
+            # Use fallback
+            if mapping and mapping['logo']:
+                logo_to_use = convert_to_jpg_url(mapping['logo'])
+            else:
+                logo_to_use = convert_to_jpg_url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/TV_icon.svg/240px-TV_icon.svg.jpg')
+        new_attrs.append(f'tvg-logo="{logo_to_use}"')
+    else:
+        # Add default logo
+        if mapping and mapping['logo']:
+            logo_to_use = convert_to_jpg_url(mapping['logo'])
+            new_attrs.append(f'tvg-logo="{logo_to_use}"')
+    
+    # Set group-title
+    if group_title_match and group_title_match.group(1):
+        new_attrs.append(f'group-title="{group_title_match.group(1)}"')
+    else:
+        new_attrs.append(f'group-title="NEWS WORLD"')
+    
+    # Channel name
+    new_extinf = '#EXTINF:' + ' '.join(new_attrs) + f',{entry_name}'
     return new_extinf
 
-def process_channels(channels, check_vt=True):
-    results = []
-    seen_urls = {}
+def process_m3u():
+    backup_file()
+    content = read_m3u()
+    entries, lines = parse_m3u(content)
     
-    for ch in channels:
-        name = re.search(r',(.+)$', ch['extinf'])
-        channel_name = name.group(1) if name else "Unknown"
-        
-        url = ch['url']
-        epg_info = identify_channel(channel_name)
-        
-        if url in seen_urls:
-            vt_result, vt_msg = seen_urls[url]
-        else:
-            if check_vt and VIRUSTOTAL_API_KEY:
-                print(f"Checking: {channel_name}")
-                print(f"  URL: {url[:80]}...")
-                vt_result, vt_msg = check_virustotal(url)
-                seen_urls[url] = (vt_result, vt_msg)
-                print(f"  Result: {vt_msg}")
-            else:
-                vt_result, vt_msg = True, "SKIP"
-        
-        new_extinf = format_extinf(ch['extinf'], epg_info)
-        
-        results.append({
-            'extinf': new_extinf,
-            'url': url,
-            'name': channel_name,
-            'epg_info': epg_info,
-            'vt_result': vt_result,
-            'vt_msg': vt_msg
-        })
+    print(f'Found {len(entries)} entries')
     
-    return results
+    # Build new content
+    new_lines = []
+    # Add header with EPG URLs
+    epg_header = '#EXTM3U'
+    for epg_url in DEFAULT_EPG_URLS:
+        epg_header += f' url-tvg="{epg_url}"'
+    new_lines.append(epg_header)
+    
+    processed_urls = set()
+    for entry in entries:
+        if entry.get('orphan'):
+            # Skip orphan URLs without EXTINF
+            print(f'Skipping orphan URL: {entry["url"][:60]}...')
+            continue
+        
+        extinf = entry['extinf']
+        url = entry['url']
+        
+        # Skip duplicates of same URL
+        if url in processed_urls:
+            continue
+        processed_urls.add(url)
+        
+        # Extract channel name from EXTINF
+        name_match = re.search(r',(.+)$', extinf)
+        channel_name = name_match.group(1).strip() if name_match else 'Unknown'
+        
+        # Check logo
+        logo_match = re.search(r'tvg-logo="([^"]*)"', extinf)
+        logo_url = logo_match.group(1) if logo_match else None
+        
+        # Fix EXTINF
+        fixed_extinf = fix_extinf(extinf, channel_name, logo_url)
+        new_lines.append(fixed_extinf)
+        new_lines.append(url)
+    
+    new_content = '\n'.join(new_lines) + '\n'
+    
+    with open(M3U_FILE, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    
+    print(f'Processed M3U written. Total lines: {len(new_lines)}')
+    return new_content
 
-def main():
-    input_file = 'lista5.m3u'
-    output_file = 'lista5.m3u'
-    backup_file = 'lista5_backup_' + datetime.now().strftime('%Y%m%d_%H%M%S') + '.m3u'
-    
-    print("=" * 60)
-    print("Processando lista5.m3u")
-    print("=" * 60)
-    
-    channels = parse_m3u(input_file)
-    print(f"Encontrados {len(channels)} canais")
-    
-    print("\nFazendo backup...")
-    with open(input_file, 'r', encoding='utf-8') as f:
-        with open(backup_file, 'w', encoding='utf-8') as b:
-            b.write(f.read())
-    print(f"Backup salvo em: {backup_file}")
-    
-    print("\nProcessando canais...")
-    results = process_channels(channels, check_vt=bool(VIRUSTOTAL_API_KEY))
-    
-    safe_channels = [r for r in results if r['vt_result'] is not False]
-    removed_channels = [r for r in results if r['vt_result'] is False]
-    
-    print(f"\nCanais seguros: {len(safe_channels)}")
-    print(f"Canais removidos (VirusTotal): {len(removed_channels)}")
-    
-    if removed_channels:
-        print("\nCanais removidos:")
-        for ch in removed_channels:
-            print(f"  - {ch['name']}: {ch['vt_msg']}")
-    
-    print("\nGerando arquivo atualizado...")
-    with open(output_file, 'w', encoding='utf-8') as f:
-        f.write('#EXTM3U\n')
-        for r in safe_channels:
-            f.write(r['extinf'] + '\n')
-            f.write(r['url'] + '\n')
-    
-    print(f"\nArquivo {output_file} atualizado com sucesso!")
-    print(f"Canais com EPG: {len([r for r in safe_channels if r['epg_info']])}")
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    process_m3u()
