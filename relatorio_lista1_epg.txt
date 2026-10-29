@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261029_005750)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261029_115315)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -6,21 +6,21 @@ Estado do header: OK
   3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
-G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-G1 Pará | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
-ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=2 depois=4
-ge | ge-tv -> ge-tv | ok (globo) | programas hoje=7 amanha=2 depois=4
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=13 amanha=13 depois=4
+G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Amapá | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Pará | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=0 amanha=0 depois=0
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
 Resultado: 10/12 canais com tvg-id valido ou corretamente sem id.
-Programacao presente hoje ou amanha: 10/10 canais com tvg-id.
+Programacao presente hoje ou amanha: 0/10 canais com tvg-id.
 
 Notas:
 - id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
