@@ -1,5 +1,11 @@
-#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz" x-tvg-url="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz"
-#EXTINF:-1 tvg-id="ABC.News.Live.us2" tvg-name="ABC News Live" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD" url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",ABC News Live
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz"
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://s.abcnews.com/images/Live/abc_news_live-abc-ml-250210_1739199021469_hpMain_16x9_608.jpg" group-title="NEWS WORLD",ABC News Live Reports | Watch Live News on ABCNL
+https://linear-abcnews-akc-na-east-1.media.dssott.com/int/ps01/disney/c876d983-836e-4df1-8358-65ec1fa76f08/unenc-all-f6d6f306-5973-4a5f-abb0-c7d8de2e031c-37010791-ad50-445c-a62d-51b9e6f6ed39.m3u8?a=1&fr=60&r=720&v=1&xp=1&hash=2f882385ef9e52beaef35f38e52f543f7774aa5a
+#EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://keyframe-cdn.abcnews.com/streamprovider11.jpg" group-title="NEWS WORLD",ABC News Live - ABC News
 https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
-#EXTINF:-1 tvg-id="CBS.News.National.Stream.us2" tvg-name="CBS News 24/7" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD" url-tvg="https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",CBS News 24/7
-https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/6cbd73b3-0cc4-49c9-9b56-edbb5fb0fe77:DLS/master.m3u8
+#EXTINF:-1 tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/15de0523-3be4-4a9a-8159-7020114e7036/b6ff623a-26d6-4fd9-8bb8-0856adbf38ce/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Watch Fox News Channel Online | Stream Fox News
+https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1793403823~acl=/*~hmac=1767f8ea9c70b1e6a8e116f557fc7e63db1ae8be4e39152c818f7ac01717aa80
+#EXTINF:-1 tvg-id="FoxBusiness.us" tvg-logo="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/c9b2e2eb-7b87-435c-9510-eab2650ff944/8b584585-acf2-4c37-aa07-aaf2d077bb20/1280x720/match/676/380/image.jpg?ve=1&tl=1" group-title="NEWS WORLD",Fox Business Go | Fox News Video
+https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1793403822~acl=/*~hmac=8b9b6fd189d3af8cb15d000607e46aa29a11b3baecc446bb1776a002f2614fcc
+#EXTINF:-1 tvg-id="CBSNews.us" tvg-logo="https://assets2.cbsnewsstatic.com/hub/i/r/2024/04/16/0fb75ad2-a909-44bb-87dc-86b9d51cbeb2/thumbnail/1280x720/949f3d3fef16f9c113e3048c6aef229f/247-key-channelthumbnail-1920x1080.jpg" group-title="NEWS WORLD",Watch CBS News 24/7, our free live news stream
+https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/aa8fdd7c-7561-4b38-b368-7e6959347ade:TUL/master.m3u8
