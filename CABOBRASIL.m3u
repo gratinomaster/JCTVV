@@ -24,9 +24,9 @@ http://45.162.64.114/CNT/index.m3u8
 #EXTINF:-1 tvg-id="GETV.br" tvg-name="GE TV" tvg-logo="https://iptv-epg.org/images/780XH3jl2Z7XFvw4J5yUatI55adXe0H-GaG3DT_sDsb92nene2X4GLiA7oxtHYbvtgUISye5d9EPDa53Thytw6tLHDiY6eOMhyN7BoQ" group-title="TV ABERTA",GE TV
 https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="GloboBrasil.br" tvg-name="Globo" tvg-logo="https://iptv-epg.org/images/chPC0al374ZMvPrbvU0_d_NK2mEQ76lHLnC5fSuAXU11aDqBf6pW6ZOhOYLv6OuIPlswKle3bw38E4-lGMYUUXLNT75465vKeTQRv8tQsaOaNW4X" group-title="TV ABERTA",Globo
-http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8
-#EXTINF:-1 tvg-id="JovemPanNews.br" tvg-name="Jovem Pan News" tvg-logo="https://iptv-epg.org/images/v4bwhmiP-BUI5JWSqroZL3YWVUwHyakv6q5z4B6ElOI_9H2XMQVJfsdIYiJGGkoU4wO5_m1EBH5HxeESqfr02w1BFZmDdgAgyVv53iCtuLNTq3BbgQ" group-title="TV ABERTA",Jovem Pan News
-http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8
+http://79.127.238.228:14173/
+#EXTINF:-1 tvg-id="GloboNews.br" tvg-name="GloboNews" tvg-logo="https://iptv-epg.org/images/6VmLGSQLTCoNcHsEV9hO5y_2jgkPaNsomn7Mlt6qJ2_PTMb3e_ORoF2PoTyyDxnuIy0m69CyPpiWzLcyQ0unVrRsIRPMFLsCq1YTXJOHxMCyFg" group-title="TV ABERTA",GloboNews
+http://79.127.238.228:14093
 #EXTINF:-1 tvg-id="RecordNews.br" tvg-name="Record News" tvg-logo="https://iptv-epg.org/images/OzF7kxJ7GDpi4gIS5jhY7rTNJ6XaXw8QqUxazuN_pboR6a3cWUD3DShshABx9-O3nDbygJZiI898whmS57M4ijfaTLpLlYbaehnMSBQWsi0wirU" group-title="TV ABERTA",Record News
 http://45.162.64.114/RECORD_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RedeBrasil.br" tvg-name="Rede Brasil" tvg-logo="https://i.imgur.com/TXJKwzZ.png" group-title="TV ABERTA",Rede Brasil
@@ -41,7 +41,7 @@ http://186.219.52.187/rede_tv/index.m3u8
 http://170.83.49.66:8083/RITHD/index.m3u8
 #EXTINF:-1 tvg-id="SBTBrasil.br" tvg-name="SBT Brasil" tvg-logo="https://iptv-epg.org/images/IhBKr6if2CmQWb4O9DngapOUoo7bGtlqM3TsFCSexSMCbstvFdICum_7n2UKzhZdD6CnMQrcQb0iQ1AWgiwT8OX_FDjp31cTGaG4WolTB2wVHw" group-title="TV ABERTA",SBT
 https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8
-#EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/80/Logomarca_da_TV_A_Cr%C3%ADtica_-_2024.png" group-title="TV ABERTA",TV A Crítica
+#EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://brandlogo.org/wp-content/uploads/2024/06/TV-A-Critica-Logo.png" group-title="TV ABERTA",TV A Crítica
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://iptv-epg.org/images/nkMmDpfmwLfPJafOYbhSCCwe05CiXYdKMJtcO2oCwM62oBkKr1pv-bZoe8BoQ-vutfd6_UDx-sfoBUe2FYJyo_Q5nRhZR-JIOgm3Ey1jthrI" group-title="TV ABERTA",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
