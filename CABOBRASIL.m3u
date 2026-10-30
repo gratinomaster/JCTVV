@@ -1,6 +1,8 @@
 #EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
 #EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV ABERTA",Arte 1
 http://45.162.64.114/ARTE1/index.m3u8
+#EXTINF:-1 tvg-id="BandBrasil.br" tvg-name="Band" tvg-logo="https://iptv-epg.org/images/r8TJn3roHVpdnzdCytiUuP4uyNMv13_NgMUnHV875XL_BHU6ZdZ3gzoUuCslReBXVu2l-z_jwGfl1rzOL0m4e7qOSrADOUEB14gp3tUD7lbphsc" group-title="TV ABERTA",Band
+https://streaming.gruporba.com.br/rba.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
 http://45.162.64.114/BAND_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="CanaldoBoi.br" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
