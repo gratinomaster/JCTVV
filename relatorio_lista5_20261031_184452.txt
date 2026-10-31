@@ -1,0 +1,90 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-10-31 18:45:00
+Backup: lista5.m3u.bak.pre_teste_20261031_184452
+Entradas testadas: 37 | URLs unicas: 18 | URLs funcionais: 9
+Canais mantidos: 4 | Canais removidos: 3 | URLs redundantes: 19
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Midia: fMP4 (sniff avc1/mp4a) e MPEG-TS (PAT/PMT -> stream_type)
+Audio: muxado, ou rendition EXT-X-MEDIA TYPE=AUDIO validado
+DRM (EXT-X-KEY) reprovado: nao toca em player comum
+
+=== CANAIS MANTIDOS ===
+[OK] Video Halloween weekend forecast; flood threat in the Southwest; a new cross-country storm next week | Watch Live News on ABCNL
+     master->variante 5641kbps | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+[OK] Fox Business Go | Fox News Video
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1793475725~acl=/*~hmac=9e40dc0b7c79a388799f511cad054ea85bd8abc0949dad9fde1667e67bca71da
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1793475725~acl=/*~hmac=9e40dc0b7c79a388799f511cad054ea85bd8abc0949dad9fde1667e67bca71da
+[OK] Watch CBS News 24/7, our free live news stream
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/master.m3u8
+
+=== CANAIS REMOVIDOS (nenhuma URL funcional) ===
+[FALHA] ABC News Live - ABC News
+     master->variantes rejeitadas [6173kbps:DRM; 4876kbps:DRM; 3136kbps:DRM] | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1793558524~url=%2Flas1%2Fva01%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838%2F~psid=9c0ab7ee-b24d-4e28-b1d1-5a1617592c33~did=3ca5f7f2-1b0c-441d-a7b7-ea516614ff45~country=US~kid=k02~hmac=bbabe664d85b0fa6c8d0ba862ec0010d6e1351fcdd6c4dbb20ecb4139511b06b/las1/va01/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781164031838/ctr-all-hdri-sliding.m3u8?r=1080&v=1&hash=81fb88da5aab33fe54dc3f8d7ae5f0b2eaa56a8c
+[FALHA] Video Halloween weekend forecast; flood threat in the Southwest; a new cross-country storm next week | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | sem audio | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[FALHA] Video Halloween weekend forecast; flood threat in the Southwest; a new cross-country storm next week | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | sem audio | https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+
+=== URLs REDUNDANTES (funcionais, mas nao escolhidas) ===
+[DESCARTADA] Video Halloween weekend forecast; flood threat in the Southwest; a new cross-country storm next week | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[DESCARTADA] Video Halloween weekend forecast; flood threat in the Southwest; a new cross-country storm next week | Watch Live News on ABCNL
+     playlist direta | segmentos 1/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/e45ac8e413a627d436bba392e6f69412/bandwidth/1549000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[DESCARTADA] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/5b56919b-f5da-4ce6-83a9-81319904e824:MRN2/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
