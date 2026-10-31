@@ -41,17 +41,11 @@ def minutes(stamp):
     if not match:
         return None
     digits, offset = match.group(1), match.group(2)
-    total = (
-        int(digits[0:4]) * 525600
-        + int(digits[4:6]) * 43200
-        + int(digits[6:8]) * 1440
-        + int(digits[8:10]) * 60
-        + int(digits[10:12])
-    )
+    dt = datetime.strptime(digits, "%Y%m%d%H%M%S")
     if offset:
         sinal = 1 if offset[0] == "+" else -1
-        total -= sinal * (int(offset[1:3]) * 60 + int(offset[3:5]))
-    return total
+        dt -= sinal * timedelta(hours=int(offset[1:3]), minutes=int(offset[3:5]))
+    return int((dt - datetime(2000, 1, 1)).total_seconds() // 60)
 
 
 print("=" * 66)
