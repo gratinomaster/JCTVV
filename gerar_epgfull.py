@@ -206,6 +206,22 @@ def esc(s):
              .replace('"', "&quot;"))
 
 
+def utc_stamp(valor):
+    """Converte 'YYYYMMDDHHMMSS +HHMM' para UTC mantendo o sufixo '+0000'.
+
+    As fontes usam fusos diferentes (ex.: Epgshare CL grava '-0600'); o guia
+    final fica com um unico fuso para o player nao deslocar a grade.
+    """
+    m = re.match(r"^(\d{14})\s*([+-])(\d{2})(\d{2})$", (valor or "").strip())
+    if not m:
+        return (valor or "").strip()
+    base, sinal, hh, mm = m.groups()
+    dt = datetime.strptime(base, "%Y%m%d%H%M%S")
+    desloc = timedelta(hours=int(hh), minutes=int(mm))
+    dt = dt - desloc if sinal == "+" else dt + desloc
+    return dt.strftime("%Y%m%d%H%M%S") + " +0000"
+
+
 # ---------------------------------------------------------------- 4. FILTRAGEM
 barra("4. FILTRAGEM DOS PROGRAMAS")
 
@@ -355,10 +371,19 @@ for cc, caminho in fontes + extras:
             dentro = False
             at = dict(re_atr.findall(segs[0]))
             tvg = mapeia.get(html.unescape(at.get("channel", "")).strip())
-            st = at.get("start", "")
-            if not tvg or not st or not (inicio <= st < fim):
+            st = utc_stamp(at.get("start", ""))
+            sp = utc_stamp(at.get("stop", ""))
+            if not tvg or not at.get("start") or not (inicio <= st < fim):
                 continue
-            chave = (tvg, st, at.get("stop", ""))
+            if st != (at.get("start", "").strip()):
+                segs[0] = re.sub(
+                    r'(\bstart=")[^"]*(")',
+                    lambda m: m.group(1) + st + m.group(2), segs[0], count=1)
+            if sp != (at.get("stop", "").strip()):
+                segs[0] = re.sub(
+                    r'(\bstop=")[^"]*(")',
+                    lambda m: m.group(1) + sp + m.group(2), segs[0], count=1)
+            chave = (tvg, st, sp)
             if chave in programas:
                 continue
             segs[0] = re_chan_attr.sub(lambda m: m.group(1) + esc(tvg) + m.group(2), segs[0], count=1)
