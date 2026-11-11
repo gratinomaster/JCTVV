@@ -1,44 +1,32 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261111)
-Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
+lista1.m3u - correcao de url-tvg e tvg-ids (20261111_140537)
+Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-Estado do header: OK (inalterado)
+Estado do header: OK
   #EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
   3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
 
-Problema encontrado nesta execucao:
-- globo.xml upstream regenerado VAZIO no commit mais recente (c22347f,
-  "Atualizacao do XML de 10/11/2026 as 23:31:19"; arquivo com 150 bytes e
-  0 canais). Os ids antigos "globonews" e "ge-tv" existiam SOMENTE no
-  globo.xml, portanto nao resolviam em nenhuma das 3 fontes -> EPG morto.
-- Commit anterior com globo.xml integro (2,7 MB, 34 canais): 38ae912 (05/11).
-  Dados dele iam apenas ate 06/11, ou seja, mesmo antes de esvaziar a grade
-  ja estava expirada.
+Validacao de tvg-id (ids existentes nas 3 fontes EPG):
+G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Pará | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=0 amanha=0 depois=0
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=0 amanha=0 depois=0
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=0 amanha=0 depois=0
+CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
-Correcao aplicada (ids existentes HOJE nas fontes, com grade atual):
-G1 Rio de Janeiro          | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 ao vivo                 | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 Espirito Santo         | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 Triangulo Mineiro      | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 Triangulo Mineiro - Uberaba | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 Para                    | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-G1 Rio Grande do Sul       | globonews -> GLOBONEWS | ok (claro.xml) | 75 programas 10/11..14/11
-ge HD                      | ge-tv    -> GE TV HD  | ok (claro.xml) | 73 programas 10/11..14/11
-ge                         | ge-tv    -> GE TV HD  | ok (claro.xml) | 73 programas 10/11..14/11
-CBN Sao Paulo              | mantido sem tvg-id    | CBN nao existe em nenhuma das 3 fontes
-CBN Rio de Janeiro         | mantido sem tvg-id    | CBN nao existe em nenhuma das 3 fontes
-
-Resultado: 9/11 canais com tvg-id valido e com programacao para hoje
-(11/11) e amanha (12/11); 2 canais CBN corretamente sem id.
+Resultado: 9/11 canais com tvg-id valido ou corretamente sem id.
+Programacao presente hoje ou amanha: 0/9 canais com tvg-id.
 
 Notas:
-- Ids "GLOBONEWS" e "GE TV HD" do claro.xml sao estaveis (presentes em
-  capturas de ago/2026 e na atual) e o claro.xml tem grade de 09/11..14/11.
-  Se o globo.xml voltar a ser populado upstream, os novos ids continuam
-  validos porque claro.xml segue sendo atualizado diariamente.
-- Alternativas vivoplay.xml (tambem com grade atual 09/11..15/11):
-  "Globo News HD" (82 prog.) e "GE" (55 prog.); claro.xml foi preferido por
-  ter mais programas do ge e id sem sufixo HD no caso do Globonews.
-- CBN e radio (cbnsp24ha/cbnrj24ha): sem grade nas 3 fontes; atribuir
-  GLOBONEWS mostraria a grade da TV por assinatura, que nao e a do CBN.
-- Streams, logos, grupos e numero de canais (11) inalterados; so os
-  tvg-ids mudaram. Backup: lista1.m3u.bak.pre_urltvg_tvgids_20261111_*.
+- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
+  O CBN e radio e nao tem grade nas fontes; atribuir tv-globo mostraria a
+  programacao da TV Globo, que nao e a do CBN. Mantido sem tvg-id.
+- G1 regionais: nao ha id regional nas 3 fontes; usam globonews (globo.xml),
+  que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
+- Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
+  as demais afiliadas sem id proprio usam tv-globo (globo.xml).
+- Contagem de programas conferida nas 3 fontes em 2026-11-11 (hoje/amanha/depois).
