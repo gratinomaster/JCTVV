@@ -23,7 +23,9 @@ from urllib.parse import urljoin
 import requests
 
 PLAYLIST = "lista5.m3u"
-EPG_URLS = ["https://iptv-epg.org/files/epg-us.xml.gz"]
+EPG_PUBLISHED = "https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz"
+EPG_FULL = "https://iptv-epg.org/files/epg-us.xml.gz"
+EPG_URLS = [EPG_PUBLISHED, EPG_FULL]
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
 HEADERS = {"User-Agent": UA, "Accept": "*/*", "Accept-Language": "en-US,en;q=0.9"}
@@ -43,15 +45,6 @@ CHANNELS = [
         "url": ("https://abcnews-livestreams.akamaized.net/out/v1/"
                 "6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/"
                 "abcn-live-10-index.m3u8"),
-    },
-    {
-        "name": "ABC News Live 2",
-        "tvg_id": "ABCNewsLive.us",
-        "logo": "https://keyframe-cdn.abcnews.com/streamprovider5.jpg",
-        "group": "NEWS WORLD",
-        "url": ("https://abcnews-livestreams.akamaized.net/out/v1/"
-                "173a6e46d5c5423d9611bc7fb7899c73/abcn-live-05-cmaf-manifest/"
-                "abcn-live-05-index.m3u8"),
     },
     {
         "name": "Fox News Channel",
@@ -253,7 +246,7 @@ def main():
     ap.add_argument("--escrever", action="store_true", help="sobrescreve a lista apos validar")
     args = ap.parse_args()
 
-    epg = carregar_epg(EPG_URLS[0])
+    epg = carregar_epg(EPG_FULL)
     contagem, definidos = conferir_epg(epg)
 
     hoje = datetime.datetime.now(datetime.timezone.utc).date()

@@ -35,6 +35,7 @@ CHANNEL_IDS = {
     "ABCNewsLive.us": ["465150", "408627", "3474"],
     "CBSNews.us": ["464941"],
     "FoxBusiness.us": ["464766", "408654"],
+    "FoxNewsChannel.us": ["464910"],
 }
 DAYS = 5  # dias de programa mantidos no EPG gerado
 

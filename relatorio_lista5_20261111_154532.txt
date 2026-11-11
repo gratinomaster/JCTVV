@@ -1,0 +1,46 @@
+RELATORIO DE CORRECAO - lista5.m3u
+Data: 2026-11-11 15:46:44
+Backup: lista5.m3u.bak.pre_tarefa_20261111_154532
+
+Canais no arquivo: 4
+URLs de EPG no cabecalho: https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz, https://iptv-epg.org/files/epg-us.xml.gz
+
+COBERTURA DO EPG (programas por dia)
+Janela exigida: 20261111 (hoje), 20261112 (amanha), 20261113 (depois de amanha)
+  [local/publicado] lista5_epg.xml.gz
+    OK ABCNewsLive.us       20261111:39, 20261112:40, 20261113:39
+    OK FoxNewsChannel.us    20261111:20, 20261112:20, 20261113:20
+    OK FoxBusiness.us       20261111:22, 20261112:22, 20261113:29
+    OK CBSNews.us           20261111:28, 20261112:28, 20261113:28
+  [fonte completa] https://iptv-epg.org/files/epg-us.xml.gz
+    OK ABCNewsLive.us       20261111:39, 20261112:40, 20261113:39
+    OK FoxNewsChannel.us    20261111:20, 20261112:20, 20261113:20
+    OK FoxBusiness.us       20261111:22, 20261112:22, 20261113:29
+    OK CBSNews.us           20261111:28, 20261112:28, 20261113:28
+
+TESTE DE STREAM, LOGO E ANTI-VIRUS
+  ABC News Live
+    anti-virus: OK
+    stream    : OK - segmento fMP4
+    logo      : OK - JPEG 107919 bytes
+  Fox News Channel
+    anti-virus: OK
+    stream    : OK - segmento MPEG-TS
+    logo      : OK - JPEG 21298 bytes
+  Fox Business
+    anti-virus: OK
+    stream    : OK - segmento MPEG-TS
+    logo      : OK - JPEG 17992 bytes
+  CBS News 24/7
+    anti-virus: OK
+    stream    : OK - segmento MPEG-TS
+    logo      : OK - JPEG 91408 bytes
+
+OBSERVACOES
+- Nao ha sinais de afiliadas na lista: sao feeds nacionais (ABC, Fox News, Fox Business, CBS).
+- Todos os tvg-logo sao .jpg, respondem HTTP 200 e sao JPEG real; nenhum usa imgur.com.
+- Toda URL de stream tem uma linha #EXTINF imediatamente acima.
+- VirusTotal sem chave no ambiente; usado triagem local (dominios oficiais, HTTPS,
+  content-type, assinatura de midia) + OpenPhish (300 URLs/281 hosts, sem correspondencia).
+  URLhaus estava indisponivel (HTTP 410).
+- EPG local lista5_epg.xml/.gz regerado com dados reais de iptv-epg.org para 5 dias.
