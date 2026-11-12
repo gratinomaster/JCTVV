@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261112_174338)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261112_233817)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -14,8 +14,8 @@ G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programa
 G1 Pará | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=14 amanha=6 depois=8
 ge | ge-tv -> ge-tv | ok (globo) | programas hoje=14 amanha=6 depois=8
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
 Resultado: 9/11 canais com tvg-id valido ou corretamente sem id.
