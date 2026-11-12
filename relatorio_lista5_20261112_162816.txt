@@ -1,0 +1,36 @@
+RELATORIO DE CORRECAO - lista5.m3u
+Data: 2026-11-12 16:28:16
+EPG no cabecalho: https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz,https://iptv-epg.org/files/epg-us.xml.gz
+
+FORMATO
+  OK - toda URL tem #EXTINF acima; sem imgur; todos os logos .jpg
+
+ANTI-VIRUS / REPUTACAO
+  OpenPhish: 300 URLs, sem correspondencia
+  URLhaus: indisponivel (HTTP 410) - triagem por HTTPS/dominios oficiais/assinatura de midia
+
+TESTE DE STREAM (segmento real de midia)
+  [OK] ABC News Live: master->variante 5641kbps | segmentos 2/3 ok | video+audio
+  [OK] CBS News 24/7: master->variante 2561kbps | segmentos 3/3 ok | video+audio
+
+TESTE DE LOGO
+  [OK] ABC News Live: HTTP 200, image/jpeg, 64392 bytes
+  [OK] CBS News 24/7: HTTP 200, image/jpeg, 91408 bytes
+
+COBERTURA DO EPG (hoje / amanha / depois de amanha)
+  Janela: 20261112, 20261113, 20261114
+  [local publicado] https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz
+    ABCNewsLive.us: 20261112:40, 20261113:39, 20261114:34
+    CBSNews.us: 20261112:28, 20261113:28, 20261114:30
+
+  [publicado] https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz
+    ABCNewsLive.us: 20261112:40, 20261113:39, 20261114:34
+    CBSNews.us: 20261112:28, 20261113:28, 20261114:30
+  [iptv-epg] https://iptv-epg.org/files/epg-us.xml.gz
+    ABCNewsLive.us: 20261112:40, 20261113:39, 20261114:34
+    CBSNews.us: 20261112:28, 20261113:28, 20261114:30
+
+RESULTADO FINAL
+  Canais no arquivo: 2
+  Canais removidos: 5 do ABCNL/ABC DRM e 15 CBS com HTTP 410 (duplicados/mortos)
+  Falhas: nenhuma
