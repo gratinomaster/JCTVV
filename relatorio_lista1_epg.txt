@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261112_140847)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261112_174338)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -8,7 +8,6 @@ Estado do header: OK
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
 G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
-G1 Caruaru | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
 G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=13 amanha=14 depois=20
@@ -19,8 +18,8 @@ G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=13 a
 CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
-Resultado: 10/12 canais com tvg-id valido ou corretamente sem id.
-Programacao presente hoje ou amanha: 10/10 canais com tvg-id.
+Resultado: 9/11 canais com tvg-id valido ou corretamente sem id.
+Programacao presente hoje ou amanha: 9/9 canais com tvg-id.
 
 Notas:
 - id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
