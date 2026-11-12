@@ -1,4 +1,4 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261111_220413)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261112_043740)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
 Estado do header: OK
@@ -30,4 +30,4 @@ Notas:
   que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
 - Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
   as demais afiliadas sem id proprio usam tv-globo (globo.xml).
-- Contagem de programas conferida nas 3 fontes em 2026-11-11 (hoje/amanha/depois).
+- Contagem de programas conferida nas 3 fontes em 2026-11-12 (hoje/amanha/depois).
