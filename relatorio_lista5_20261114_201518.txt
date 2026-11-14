@@ -1,0 +1,36 @@
+RELATORIO DE CORRECAO - lista5.m3u
+Data: 2026-11-14 20:15:02
+EPG publicado: https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz
+Janela EPG exigida: 20261114 / 20261115 / 20261116
+
+TESTE DE STREAM (segmento real de midia)
+
+TESTE DE LOGO (.jpg)
+  [OK] ABC News Live: HTTP 200, image/jpeg, 78696 bytes
+  [OK] Fox News Channel: HTTP 200, image/jpeg, 21298 bytes
+  [OK] CBS News 24/7: HTTP 200, image/jpeg, 91408 bytes
+
+ANTI-VIRUS / REPUTACAO
+  OpenPhish: 300 URLs / 286 hosts
+  URLhaus: indisponivel (HTTP 410) - triagem por HTTPS/dominio oficial/assinatura de midia
+  [CLEAN] ABC News Live: host=abcnews-livestreams.akamaized.net
+  [CLEAN] Fox News Channel: host=247preview.foxnews.com
+  [CLEAN] CBS News 24/7: host=dai.google.com
+
+COBERTURA DO EPG (hoje / amanha / depois de amanha)
+  [fonte] https://raw.githubusercontent.com/gratinomaster/JCTVV/main/lista5_epg.xml.gz
+    OK ABC News Live (ABC.News.Live.us2): 20261114:34 20261115:29 20261116:6
+    OK Fox News Channel (Fox.News.Channel.HD.us2): 20261114:17 20261115:17 20261116:5
+    OK CBS News 24/7 (CBS.News.National.Stream.us2): 20261114:30 20261115:24 20261116:7
+  [fonte] https://iptv-epg.org/files/epg-us.xml.gz
+    OK ABC News Live (ABCNewsLive.us): 20261114:35 20261115:29 20261116:37
+    OK Fox News Channel (FoxNewsChannel.us): 20261114:17 20261115:17 20261116:19
+    OK CBS News 24/7 (CBSNews.us): 20261114:30 20261115:24 20261116:26
+  [fonte] https://epg.pw/xmltv/epg_US.xml.gz
+    OK ABC News Live (465150): 20261114:35 20261115:30 20261116:16
+    OK Fox News Channel (465372): 20261114:20 20261115:16 20261116:10
+    OK CBS News 24/7 (464941): 20261114:30 20261115:25 20261116:14
+
+RESULTADO FINAL
+  Canais no arquivo: 3
+  Formatacao: OK
