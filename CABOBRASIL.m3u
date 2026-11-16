@@ -33,8 +33,8 @@ https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://iptv-epg.org/images/nkMmDpfmwLfPJafOYbhSCCwe05CiXYdKMJtcO2oCwM62oBkKr1pv-bZoe8BoQ-vutfd6_UDx-sfoBUe2FYJyo_Q5nRhZR-JIOgm3Ey1jthrI" group-title="TV ABERTA",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
-#EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
-https://stream3.camara.gov.br/tv1/manifest.m3u8
+#EXTINF:-1 tvg-id="Futura.br" tvg-name="Canal Futura" tvg-logo="https://iptv-epg.org/images/FKN4lgD56Xso6jJkAEGJ2p4qtCwk9mcU9olZ2jZHYhVNrVKaVl5Zp8ezZsRpyZ1YxXMBNZykVhSI7vifmNsOsk_Px7WyFy7GlZw6LnzsGA" group-title="TV ABERTA",Canal Futura
+http://170.83.16.50/FUTURA/index.m3u8
 #EXTINF:-1 tvg-id="TVSenado.br" tvg-name="TV Senado" tvg-logo="https://iptv-epg.org/images/V-Sm0BsB8HA2rAZAH4I_FIG68eVlxXGILiaXyQKN93ug1b5h6RJVPBrExhENupUq9OgLj1YG2nZgm0pxdzbOHsuxbyTajpZjPqSwFKYOerF-" group-title="TV ABERTA",TV Senado
 http://170.83.16.50/TV_SENADO/index.m3u8
 #EXTINF:-1 tvg-id="Cultura.br" tvg-name="TV Cultura" tvg-logo="https://iptv-epg.org/images/967qTR_xsZZK1d658iBmm-NIXKXfhZENRfZzGbI4iIlTLc4bF83bjJPY8R-DkB9OdrEuYM8QN1JDet-Xhp0RvRNmcBmpFrm8rkikjn-2LNs" group-title="TV ABERTA",TV Cultura
