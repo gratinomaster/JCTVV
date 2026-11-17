@@ -15,6 +15,7 @@ import os
 import re
 import sys
 import copy
+import tempfile
 import unicodedata
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -48,7 +49,7 @@ MANUAL_SOURCE_TO_TARGET = {
 UTC = timezone.utc
 HOJE = datetime.now(UTC).date()
 DIAS_MANTER = {HOJE + timedelta(days=d) for d in range(-2, 5)}
-DIAS_PLACEHOLDER = [HOJE + timedelta(days=d) for d in range(-1, 4)]
+DIAS_PLACEHOLDER = [HOJE, HOJE + timedelta(days=1)]
 
 
 def norm(s):
@@ -179,8 +180,7 @@ def process_source(data):
                 names = [d.text.strip() for d in elem.findall("display-name") if d.text and d.text.strip()]
                 target = None
                 if cid in desired:
-                    if name_confident(desired[cid], names):
-                        target = cid
+                    target = cid
                 if target is None and cid in MANUAL_SOURCE_TO_TARGET:
                     candidate = MANUAL_SOURCE_TO_TARGET[cid]
                     if candidate in desired:
@@ -264,16 +264,30 @@ print(f"  canais no guia: {len(channels_out)}")
 print(f"  programas no guia: {len(programmes_out)}")
 
 print("\n4. Gravando EPGFULL.xml.gz...")
-root = ET.Element("tv", {"generator-info-name": "EPGFULL (NEWSWORLDNOVOS)"})
+root = ET.Element("tv", {
+    "generator-info-name": "EPGFULL (NEWSWORLDNOVOS)",
+    "source-info-name": "epgshare01 / epg.pw",
+    "date": datetime.now(UTC).strftime("%Y%m%d%H%M%S +0000"),
+})
 for ch in channels_out.values():
     root.append(ch)
-for pr in programmes_out.values():
+for pr in sorted(programmes_out.values(), key=lambda p: (p.get("channel", ""), p.get("start", ""))):
     root.append(pr)
 buf = io.BytesIO()
 ET.ElementTree(root).write(buf, encoding="utf-8", xml_declaration=True)
 xml_data = buf.getvalue()
-with gzip.open(OUTPUT, "wb", compresslevel=9) as f:
-    f.write(xml_data)
+diretorio = os.path.dirname(os.path.abspath(OUTPUT)) or "."
+fd, temporario = tempfile.mkstemp(prefix=".EPGFULL-", suffix=".tmp", dir=diretorio)
+try:
+    with os.fdopen(fd, "wb") as bruto:
+        with gzip.GzipFile(filename="", mode="wb", fileobj=bruto, compresslevel=9, mtime=0) as f:
+            f.write(xml_data)
+    os.chmod(temporario, 0o644)
+    os.replace(temporario, OUTPUT)
+except Exception:
+    if os.path.exists(temporario):
+        os.unlink(temporario)
+    raise
 print(f"  {OUTPUT}: {os.path.getsize(OUTPUT):,} bytes comprimidos / {len(xml_data):,} bytes XML")
 
 print("\n5. Verificacao rapida (hoje/amanha)...")
