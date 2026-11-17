@@ -1,0 +1,38 @@
+RELATORIO DE CORRECAO - lista5.m3u
+Data: 2026-11-17 17:20:21
+Janela EPG exigida: 20261117 / 20261118 / 20261119
+EPG usado: https://iptv-epg.org/files/epg-us.xml.gz
+Fonte unica suficiente: cobre os 4 canais nos 3 dias. Nao ha sinais de afiliadas na lista.
+
+ANTI-VIRUS / REPUTACAO
+  fonte: OpenPhish (300 URLs / 289 hosts)
+  fonte: URLhaus indisponivel (HTTP 410/401) - triagem local aplicada
+  [CLEAN] ABC News Live: host=abcnews-livestreams.akamaized.net
+  [CLEAN] Fox News Channel: host=247preview.foxnews.com
+  [CLEAN] CBS News 24/7: host=cbsn-us.cbsnstream.cbsnews.com
+  [CLEAN] Fox Business: host=247preview.foxbusiness.com
+
+TESTE DE STREAM (playlist + segmento real de midia)
+  [OK] ABC News Live: segmento fMP4 (65536+ bytes)
+  [OK] Fox News Channel: segmento MPEG-TS (65536+ bytes)
+  [OK] CBS News 24/7: segmento MPEG-TS (65536+ bytes)
+  [OK] Fox Business: segmento MPEG-TS (65536+ bytes)
+
+TESTE DE LOGO (.jpg)
+  [OK] ABC News Live: JPEG
+  [OK] Fox News Channel: JPEG
+  [OK] CBS News 24/7: JPEG
+  [OK] Fox Business: JPEG
+
+COBERTURA DO EPG (hoje / amanha / depois de amanha)
+  [fonte] https://iptv-epg.org/files/epg-us.xml.gz
+    OK ABC News Live (ABCNewsLive.us): 20261117:40 20261118:40 20261119:41
+    OK Fox News Channel (FoxNewsChannel.us): 20261117:20 20261118:20 20261119:20
+    OK CBS News 24/7 (CBSNews.us): 20261117:28 20261118:28 20261119:28
+    OK Fox Business (FoxBusiness.us): 20261117:22 20261118:22 20261119:29
+
+RESULTADO FINAL
+  Canais no arquivo: 4
+  Formatacao: OK (toda URL com #EXTINF na linha de cima; sem duplicatas)
+  Logos: todos .jpg; nenhum imgur.com
+  Backup: lista5.m3u.bak.pre_correcao_20261117_172021
