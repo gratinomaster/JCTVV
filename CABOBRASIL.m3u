@@ -47,8 +47,10 @@ https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://iptv-epg.org/images/Bet2Q6EqVR25j4cO8IfWzX5VpFMwhO0mHL4MIjuhPQiN7W02L6U5emv9zXcU8Bhz7qGkN3TQHx7Fa3S0l-CnG24Q7aqrvUpI7VZttC_bi2v7" group-title="TV ABERTA",TV Gazeta
 http://186.219.52.187/gazeta/index.m3u8
+#EXTINF:-1 tvg-id="TVJustica.br" tvg-name="TV Justiça" tvg-logo="https://i.imgur.com/8Hn1ZlH.png" group-title="TV ABERTA",TV Justiça
+http://170.83.16.50/TV_JUSTICA/index.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-camara-br.png" group-title="TV ABERTA",TV Câmara
-https://stream3.camara.gov.br/tv1/manifest.m3u8
+http://170.83.49.66:8083/TVCAMARAHD/index.m3u8
 #EXTINF:-1 tvg-id="BandSports.br" tvg-name="Band Sports" tvg-logo="https://iptv-epg.org/images/aKjFji2hePSWEkx2Jz5ZI06xBzgYSTzJYz64wKp4GDCHuWBm6dfFhAPYBy9NNRavTyfhwCS-wM9H7-QpNU4qZV7dE3KqCwyF3zwXqCpT_1U4vNQ" group-title="ESPORTES",Band Sports
 http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
 #EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
