@@ -1,0 +1,16 @@
+VALIDACAO FINAL lista5.m3u - 2026-11-18 05:02:14
+======================================================================
+Canais: 4 | URLs: 4 | duplicatas: 0 | imgur: 0
+Janela EPG: 20261118 / 20261119 / 20261120
+  EPG ABCNewsLive.us       ABC News Live      hoje=40 amanha=41 depois=40 OK
+  EPG FoxNewsChannel.us    Fox News Channel   hoje=20 amanha=20 depois=20 OK
+  EPG FoxBusiness.us       Fox Business       hoje=22 amanha=29 depois=29 OK
+  EPG CBSNews.us           CBS News 24/7      hoje=28 amanha=28 depois=28 OK
+  TESTE ABC News Live      stream=OK    (midia 3756590 bytes) logo=OK    (200 image/jpeg 42658B)
+  TESTE Fox News Channel   stream=OK    (midia 413224 bytes) logo=OK    (200 image/jpeg 21298B)
+  TESTE Fox Business       stream=OK    (midia 413788 bytes) logo=OK    (200 image/jpeg 17992B)
+  TESTE CBS News 24/7      stream=OK    (midia 249852 bytes) logo=OK    (200 image/jpeg 91408B)
+ANTIVIRUS: OpenPhish + URLhaus(410) + Phishing.Database + DNSBL -> 10/10 CLEAN (ver av_check.py)
+AFILIADAS: nenhum sinal na lista (4 canais nacionais: ABC News Live, Fox News, Fox Business, CBS News 24/7)
+======================================================================
+RESULTADO: APROVADO - todos os canais com EPG para hoje/amanha/depois de amanha, stream e logo .jpg testados
