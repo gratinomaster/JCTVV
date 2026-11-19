@@ -1,39 +1,35 @@
 RELATORIO DE TESTE - lista5.m3u
-data: 2026-10-03 17:44:53
+data: 2026-11-19 23:48:00
 ======================================================================
-canais no arquivo original : 43
-urls duplicadas             : 21
-urls testadas               : 22
-funcionando                 : 20
+canais no arquivo original : 42
+urls duplicadas             : 24
+urls testadas               : 18
+funcionando                 : 16
 removidos                   : 2
 ======================================================================
 
 FUNCIONANDO
 ----------------------------------------------------------------------
-  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
-  OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
-  OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (master, 3 variante(s) ok)
   OK   ABC News Live - ABC News                 OK (media playlist)
   OK   ABC News Live - ABC News                 OK (media playlist)
   OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
   OK   ABC News Live - ABC News                 OK (media playlist)
   OK   ABC News Live - ABC News                 OK (media playlist)
-  OK   Watch Fox News Channel Online | Stream F OK (master, 1 variante(s) ok)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (master, 1 variante(s) ok)
+  OK   ABC News Live - ABC News                 OK (media playlist)
+  OK   ABC News Live - ABC News                 OK (media playlist)
   OK   Fox Business Go | Fox News Video         OK (master, 1 variante(s) ok)
+  OK   Watch Fox News Channel Online | Stream F OK (master, 1 variante(s) ok)
   OK   Watch CBS News 24/7, our free live news  OK (master, 1 variante(s) ok)
-  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
-  OK   Watch CBS News 24/7, our free live news  OK (media playlist)
   OK   Watch CBS News 24/7, our free live news  OK (media playlist)
   OK   Watch CBS News 24/7, our free live news  OK (media playlist)
 
 REMOVIDOS
 ----------------------------------------------------------------------
-  FAIL Fox Business Go | Fox News Video         HTTP 403
-       https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_792.m3u8
-  FAIL Fox Business Go | Fox News Video         HTTP 403
-       https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/primary_2692.m3u8
+  FAIL ABC News Live - ABC News                 segmento invalido: conteudo nao e midia (nao TS/fMP4)
+       https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1795218332~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515eb
+  FAIL ABC News Live - ABC News                 segmento invalido: conteudo nao e midia (nao TS/fMP4)
+       https://linear-abcnews-ftc-na-central-1.media.dssott.com/dvt2=exp=1795218332~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515eb
