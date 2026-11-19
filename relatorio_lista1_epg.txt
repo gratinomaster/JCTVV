@@ -1,32 +1,34 @@
-lista1.m3u - correcao de url-tvg e tvg-ids (20261119_023902)
+lista1.m3u - correcao de url-tvg e tvg-ids (20261119_113526)
 Fontes: https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml, https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml
 
-Estado do header: OK
+Estado do header: OK (inalterado)
   #EXTM3U url-tvg="https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/globo.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/claro.xml https://github.com/limaalef/BrazilTVEPG/raw/refs/heads/main/vivoplay.xml"
   3 fontes XMLTV separadas por espaco, sem x-tvg-url obsoleto.
 
 Validacao de tvg-id (ids existentes nas 3 fontes EPG):
-G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-G1 Espírito Santo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-G1 Triângulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-G1 Triângulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-G1 Pará | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=4 amanha=2 depois=3
-ge | ge-tv -> ge-tv | ok (globo) | programas hoje=4 amanha=2 depois=3
-G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=19
-CBN São Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
+AO VIVO: Bom Dia Cidade | G1 | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Rio de Janeiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 ao vivo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Espirito Santo | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Triangulo Mineiro | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Triangulo Mineiro - Uberaba | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Amapa | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+G1 Para | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+ge HD | ge-tv -> ge-tv | ok (globo) | programas hoje=14 amanha=15 depois=11
+ge | ge-tv -> ge-tv | ok (globo) | programas hoje=14 amanha=15 depois=11
+G1 Rio Grande do Sul | globonews -> globonews | ok (globo) | programas hoje=14 amanha=14 depois=41
+CBN Sao Paulo | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 CBN Rio de Janeiro | (sem id) -> (sem id) | sem id (nao existe nas 3 fontes)
 
-Resultado: 9/11 canais com tvg-id valido ou corretamente sem id.
-Programacao presente hoje ou amanha: 9/9 canais com tvg-id.
+Resultado: 11/13 canais com tvg-id valido; 2/13 corretamente sem id.
+Programacao presente hoje e amanha: 11/11 canais com tvg-id.
+Reexecucao da correcao foi idempotente: nenhuma linha precisou ser alterada.
 
 Notas:
-- id CBN inexistente nas 3 fontes (grep 'cbn' = 0 ocorrencias).
-  O CBN e radio e nao tem grade nas fontes; atribuir tv-globo mostraria a
-  programacao da TV Globo, que nao e a do CBN. Mantido sem tvg-id.
-- G1 regionais: nao ha id regional nas 3 fontes; usam globonews (globo.xml),
-  que e a grade de noticias compativel com os G1, em vez da grade geral de tv-globo.
-- Globo Sao Paulo usa 'GLOBO SP' (claro.xml), que traz a grade da afiliada;
-  as demais afiliadas sem id proprio usam tv-globo (globo.xml).
-- Contagem de programas conferida nas 3 fontes em 2026-11-19 (hoje/amanha/depois).
+- id CBN inexistente nas 3 fontes (nenhuma ocorrencia de 'cbn' em globo.xml, claro.xml ou vivoplay.xml).
+  CBN e radio e nao tem grade nessas fontes; atribuir tv-globo mostraria a programacao
+  da TV Globo, que nao e a do CBN. Mantido sem tvg-id.
+- G1 regionais e "Bom Dia Cidade | G1": nao ha ids regionais nas 3 fontes; usam
+  globonews (globo.xml), grade de noticias compativel com os canais G1.
+- ge HD e ge usam ge-tv (globo.xml), unico id de canal GE nas fontes.
+- Contagem de programas conferida nas 3 fontes em 2026-11-19.
