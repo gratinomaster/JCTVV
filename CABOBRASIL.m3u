@@ -9,7 +9,9 @@ https://cdn.live.br1.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
 https://canalgov-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
 http://170.83.49.66:8083/CANALRURALHD/index.m3u8
-#EXTINF:-1 tvg-id="CNT.br" tvg-name="CNT" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rede-cnt-br.png" group-title="TV ABERTA",CNT
+#EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
+http://170.83.16.50/CANCAO_NOVA/index.m3u8
+#EXTINF:-1 tvg-id="CNT.br" tvg-name="CNT" tvg-logo="https://iptv-epg.org/images/feqInxaght-F0p6nunazoT_FEJdoaHfd_3Wby9iWwq8SCGWM-ScwUcl8cn-ai3mSJIvPkw0F1VXK2eRz5wn8J13T32FiyLKwio9W4A" group-title="TV ABERTA",CNT
 http://170.83.49.66:8083/REDECNTHD/index.m3u8
 #EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://iptv-epg.org/images/tBVpwfYcZK2qy8NBFMQX46Z6CN7sAi2HRHwTABmHCS24NTsLxOihM88JSWb7_wyEtPvghbZcQ3fdPMjNC_qbd3ZVcDaQkM_aRqdrqf7u5rI4qA" group-title="TV ABERTA",CNN Brasil
 https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8
