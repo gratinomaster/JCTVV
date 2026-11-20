@@ -1,0 +1,40 @@
+VALIDACAO FINAL lista5.m3u - 2026-11-20 16:32:25 UTC
+======================================================================
+Canais: 4 | URLs: 4 | duplicatas: 0 | URLs orfas: 0 | imgur: 0
+Janela EPG exigida: 20261120 / 20261121 / 20261122
+
+ESTRUTURA
+  header: x-tvg-url + url-tvg -> https://iptv-epg.org/files/epg-us.xml.gz
+  todos os #EXTINF com tvg-id, tvg-name, tvg-logo (.jpg) e group-title
+  toda URL de stream precedida de #EXTINF
+
+EPG (fonte unica cobre os 4 canais; HTTP 200 + gzip valido)
+  ABC News Live     ABCNewsLive.us       hoje=40 amanha=35 depois=27 OK
+  Fox News Channel  FoxNewsChannel.us    hoje=20 amanha=17 depois=17 OK
+  Fox Business      FoxBusiness.us       hoje=29 amanha=41 depois=31 OK
+  CBS News 24/7     CBSNews.us           hoje=28 amanha=30 depois=24 OK
+  Exemplos: ABCNL Prime With Linsey Davis / The Ingraham Angle /
+            Claman's Power Players / 24/7 Primetime
+
+STREAMS E LOGOS
+  ABC News Live     stream=OK (fMP4 65536B)  logo=OK (200 image/jpeg)
+  Fox News Channel  stream=OK (MPEG-TS)      logo=OK (200 image/jpeg)
+  Fox Business      stream=OK (MPEG-TS)      logo=OK (200 image/jpeg)
+  CBS News 24/7     stream=OK (MPEG-TS)      logo=OK (200 image/jpeg)
+  Streams Fox com token expirado (HTTP 403) substituidos pelos preview
+  oficiais 247preview.foxnews.com / 247preview.foxbusiness.com.
+
+ANTIVIRUS / REPUTACAO
+  Fontes: OpenPhish (300 URLs / 253 hosts), Phishing.Database (386088
+  dominios), URLhaus mirror (hosts/IP), Spamhaus DBL e Google Safe Browsing.
+  URLhaus oficial retornou HTTP 410; mirror da abuse.ch via malware-filter.
+  9/9 alvos (4 streams + 4 logos + EPG) APROVADOS: nenhum em blocklist,
+  DNSBL limpo e Safe Browsing sem ameacas. Nenhum canal removido por AV.
+
+AFILIADAS
+  Nenhum sinal de afiliada na lista (4 canais nacionais: ABC News Live,
+  Fox News, Fox Business, CBS News 24/7). Um unico EPG dos EUA cobre todos.
+
+======================================================================
+RESULTADO: APROVADO
+Backup: lista5.m3u.bak.pre_corrigir_epg_20261120_163148
