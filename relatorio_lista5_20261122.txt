@@ -1,0 +1,40 @@
+Relatorio de correcao - lista5.m3u - 2026-11-22 21:32:35
+======================================================================
+
+SITUACAO INICIAL
+24 entradas, porem apenas 9 URLs unicas (15 duplicatas) e nenhum tvg-id.
+Fox News/Fox Business: HTTP 403 (token expirado).
+CBS News (dai.google.com ...de1a467f...:DLS): HTTP 410 (stream encerrado).
+
+CORRECOES APLICADAS
+- Duplicatas removidas; 4 canais unicos.
+- x-tvg-url com 2 guias: epg-us.xml.gz e epg-br.xml.gz.
+- tvg-id, tvg-name e tvg-logo adicionados a todos os canais.
+- Todos os logos sao .jpg e responderam HTTP 200 com assinatura JPEG (ffd8).
+- Nenhum link imgur.com.
+- Todas as URL terminam com #EXTINF na linha anterior.
+
+STREAMS (teste master -> variante -> segmento de video)
+  OK  ABC News Live        https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+  OK  Fox News Channel     https://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
+  OK  Fox Business         https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary.m3u8
+  OK  CBS News 24/7        https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8
+
+EPG - PROGRAMACAO (hoje 22/11, amanha 23/11, depois de amanha 24/11)
+  ABCNewsLive.us         epg-us.xml.gz    22/11= 28  23/11= 36  24/11= 38
+  FOXNewsChannel.sxm     epg-us.xml.gz    22/11= 17  23/11= 19  24/11= 20
+  FoxBusiness.us         epg-us.xml.gz    22/11= 31  23/11= 29  24/11= 22
+  CBSNews.us             epg-us.xml.gz    22/11= 24  23/11= 26  24/11= 28
+  FoxNewsChannel.br      epg-br.xml.gz    22/11= 17  23/11= 19  24/11= 20
+
+AFILIADAS
+A lista original nao continha afiliadas. O guia epg-us.xml.gz traz programacao
+para afiliadas CBS (ex.: CBSNewsLosAngeles.pluto, CBSNewsNewYork.pluto,
+CBSNewsChicago.pluto, CBSNewsBayArea.pluto) caso venham a ser incluidas.
+Streams de afiliadas locais testados (cbsnlineup_8 / cbsnstream) retornaram
+HTTP 404 nos segmentos, por isso nao foram adicionados.
+
+ANTI-VIRUS
+VirusTotal: API publica sem chave (HTTP 401) - nao foi possivel consultar.
+Verificacao alternativa (av_check_20261022.py): OpenPhish + heurísticas locais.
+URLhaus indisponivel (HTTP nao-dados). 10/10 URLs aprovadas, 0 reprovadas.
