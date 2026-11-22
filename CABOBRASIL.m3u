@@ -5,13 +5,15 @@ https://streaming.gruporba.com.br/rba.m3u8
 http://170.83.16.50/BAND_NEWS/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="CanaldoBoi.br" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
 https://cdn.live.br1.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
+https://isaocorp.cloudecast.com/canalrural/index.m3u8
 #EXTINF:-1 tvg-id="CanalGov.br" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
 https://canalgov-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
 http://170.83.16.50/CANCAO_NOVA/index.m3u8
 #EXTINF:-1 tvg-id="CNNBrasil.br" tvg-name="CNN Brasil" tvg-logo="https://iptv-epg.org/images/tBVpwfYcZK2qy8NBFMQX46Z6CN7sAi2HRHwTABmHCS24NTsLxOihM88JSWb7_wyEtPvghbZcQ3fdPMjNC_qbd3ZVcDaQkM_aRqdrqf7u5rI4qA" group-title="TV ABERTA",CNN Brasil
 https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8
-#EXTINF:-1 tvg-id="CNT.br" tvg-name="CNT" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rede-cnt-br.png" group-title="TV ABERTA",CNT
+#EXTINF:-1 tvg-id="CNT.br" tvg-name="CNT" tvg-logo="https://iptv-epg.org/images/feqInxaght-F0p6nunazoT_FEJdoaHfd_3Wby9iWwq8SCGWM-ScwUcl8cn-ai3mSJIvPkw0F1VXK2eRz5wn8J13T32FiyLKwio9W4A" group-title="TV ABERTA",CNT
 http://186.219.52.187/cnt/index.m3u8
 #EXTINF:-1 tvg-id="GETV.br" tvg-name="GE TV" tvg-logo="https://iptv-epg.org/images/780XH3jl2Z7XFvw4J5yUatI55adXe0H-GaG3DT_sDsb92nene2X4GLiA7oxtHYbvtgUISye5d9EPDa53Thytw6tLHDiY6eOMhyN7BoQ" group-title="TV ABERTA",GE TV
 https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8
