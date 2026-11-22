@@ -1,0 +1,94 @@
+RELATORIO DE TESTE DE STREAM - lista5.m3u
+Data: 2026-11-22 23:21:23
+Backup: lista5.m3u.bak.pre_teste_20261122_232117
+Entradas testadas: 30 | URLs unicas: 15 | URLs funcionais: 10
+Canais mantidos: 23 | Canais removidos: 7
+Metodo: manifest -> master -> melhor variante -> segmento real (bytes de midia)
+Audio: muxado no segmento ou em rendition EXT-X-MEDIA TYPE=AUDIO (validado)
+
+=== CANAIS MANTIDOS ===
+[OK] Video Coastal storm impacting the East Coast this weekend and storm-after-storm in the West | Watch Live News on ABCNL
+     master->variante 5641kbps | segmentos 2/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8
+[OK] Video Coastal storm impacting the East Coast this weekend and storm-after-storm in the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[OK] Video Coastal storm impacting the East Coast this weekend and storm-after-storm in the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[OK] Video Coastal storm impacting the East Coast this weekend and storm-after-storm in the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8
+[OK] Video Coastal storm impacting the East Coast this weekend and storm-after-storm in the West | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | video+audio
+     https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8
+[OK] Watch Fox News Channel Online | Stream Fox News
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1795393108~acl=/*~hmac=48d59fa26834bcd3353cc6e55f151345c2850753f119788076b15a5452c0dedd
+[OK] Fox Business Go | Fox News Video
+     master->variante 2806kbps | segmentos 3/3 ok | video+audio
+     https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1795393108~acl=/*~hmac=48d59fa26834bcd3353cc6e55f151345c2850753f119788076b15a5452c0dedd
+[OK] Watch CBS News 24/7, our free live news stream
+     master->variante 5436kbps | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/master.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/9a27c00933e4743a3ea19ac812d5532c/bandwidth/733000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/e45ac8e413a627d436bba392e6f69412/bandwidth/1549000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+[OK] Watch CBS News 24/7, our free live news stream
+     playlist direta | segmentos 3/3 ok | video+audio
+     https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1a9f7e94-63a7-4b59-baf5-4e5d93c6ddac:CHS/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8
+
+=== CANAIS REMOVIDOS (nenhuma URL funcional) ===
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm] | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=720&v=1&hash=fe7d8cb16c2b30784e78c0101396a4d3916b4019
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     playlist direta | segmentos 2/3 ok | desconhecido (sem audio) | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-128K/128_slide.m3u8
+[FALHA] Collapse: The Forgotten Mines Under America | Watch Live News on ABCNL
+     protegido_drm | https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795475907~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=b3b671aa-7059-474d-adbf-e5d02f29caaa~did=13e3f8cf-02f6-4c41-8cc3-0a4937febd0b~country=US~kid=k02~hmac=5bf263e59680bfdba1a3b71a01c7faa756c073027ae2af56638fb5a345f61408/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-2400K/2400_hdri_slide.m3u8
