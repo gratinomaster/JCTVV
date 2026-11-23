@@ -35,8 +35,6 @@ https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8
 #EXTINF:-1 tvg-id="RedeTV.br" tvg-name="RedeTV!" tvg-logo="https://iptv-epg.org/images/wHL4M3uHZOQLY2wg1RpWKz-uBP4D6IYRk0c4rkZQhO5xQof_qrSdO5JsHPuiklEopUqodef7dLJtFebtwdOR8_Zk7LYVyXS84H6QzdIWsw" group-title="TV ABERTA",RedeTV!
 http://186.219.52.187/rede_tv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="RITtv.br" tvg-name="RIT TV" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rit-br.png" group-title="TV ABERTA",RIT TV
-http://170.83.49.66:8083/RITHD/index.m3u8
 #EXTINF:-1 tvg-id="SBTBrasil.br" tvg-name="SBT Brasil" tvg-logo="https://iptv-epg.org/images/IhBKr6if2CmQWb4O9DngapOUoo7bGtlqM3TsFCSexSMCbstvFdICum_7n2UKzhZdD6CnMQrcQb0iQ1AWgiwT8OX_FDjp31cTGaG4WolTB2wVHw" group-title="TV ABERTA",SBT
 https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://i.imgur.com/j51rBro.png" group-title="TV ABERTA",TV A Crítica
@@ -61,6 +59,8 @@ http://170.83.16.50/TV_JUSTICA/index.m3u8
 http://170.83.49.66:8083/TVCAMARAHD/index.m3u8
 #EXTINF:-1 tvg-id="BandSports.br" tvg-name="Band Sports" tvg-logo="https://iptv-epg.org/images/aKjFji2hePSWEkx2Jz5ZI06xBzgYSTzJYz64wKp4GDCHuWBm6dfFhAPYBy9NNRavTyfhwCS-wM9H7-QpNU4qZV7dE3KqCwyF3zwXqCpT_1U4vNQ" group-title="ESPORTES",Band Sports
 http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
+#EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN
+http://181.78.197.59:8000/play/a07z/index.m3u8
 #EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
 http://181.78.197.59:8000/play/a080/index.m3u8
 #EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
