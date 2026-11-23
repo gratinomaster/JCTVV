@@ -1,38 +1,58 @@
 ==========================================================================
-VALIDACAO FINAL - lista5.m3u  (2026-10-14)
+VALIDACAO FINAL - lista5.m3u (2026-11-23 04:37 UTC)
 ==========================================================================
 
 [1] ESTRUTURA M3U
-  [ok] header #EXTM3U presente
-  [ok] todas as 4 URLs tem #EXTINF na linha de cima
-  [ok] sem URLs duplicadas
+  [ok] header #EXTM3U com url-tvg e x-tvg-url (2 guias)
+  [ok] 4 canais unicos, 4 URLs, cada URL com #EXTINF na linha de cima
+  [ok] sem URLs duplicadas, sem tvg-id duplicado
+  [ok] 49 entradas duplicadas/variantes/tokens expirados removidas (53 -> 4)
 
 [2] EPGS DECLARADOS NO ARQUIVO
-  [ok] EPG acessivel (HTTP 200, ~6MB): https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz
+  [ok] https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz (HTTP 200)
+  [ok] https://iptv-epg.org/files/epg-us.xml.gz (HTTP 200 apos redirecionamento)
+  IDs finais usam o primeiro guia; o segundo nao conflita e traz afiliadas.
 
-[3] LOGOS (.jpg, sem imgur, JPEG real)
-  [ok] FOX News Channel: logo JPEG ok
-  [ok] FOX Business: logo JPEG ok
-  [ok] ABC News Live: logo JPEG ok
-  [ok] CBS News 24/7: logo JPEG ok
+[3] EPG - PROGRAMACAO (hoje 23/11, amanha 24/11, depois de amanha 25/11)
+  tvg-id                          23/11  24/11  25/11  amostra de hoje
+  ABC.News.Live.us2                 36     38     40  American Valor
+  Fox.News.Channel.HD.us2           19     20     20  Live: Life, Liberty & Levin
+  Fox.Business.HD.us2               29     22     22  Cops
+  CBS.News.National.Stream.us2      26     28     28  60 Minutes Rewind
 
-[4] STREAM (manifesto + segmento)
-  [ok] FOX News Channel: reproduz
-  [ok] FOX Business: reproduz
-  [ok] ABC News Live: reproduz
-  [ok] CBS News 24/7: reproduz
+  Guia alternativo iptv-epg.org/epg-us.xml.gz (mesmos canais, IDs locais):
+  ABCNewsLive.us 36/38/40 | FOXNewsChannel.sxm 19/20/20 |
+  FoxBusiness.us 29/22/22 | CBSNews.us 26/28/28
 
-[5] EPG: cobertura D0 / D+1 / D+2 por tvg-id
-    tvg-ids usados: ABC.News.Live.us2, CBS.News.National.Stream.us2, Fox.Business.HD.us2, Fox.News.Channel.HD.us2
-  [ok] ABC.News.Live.us2 [ABC News Live] HOJE=40 AMANHA=40 DEPOIS DE AMANHA=40
-        hoje: Burden of Proof / Live: ABCNL Prime With Linsey Davis / Live: ABC World News Tonight With David Muir
-  [ok] CBS.News.National.Stream.us2 [CBS News National Stream] HOJE=28 AMANHA=28 DEPOIS DE AMANHA=28
-        hoje: The Daily Report / CBS Evening News / 24/7 Primetime
-  [ok] Fox.Business.HD.us2 [Fox Business HD] HOJE=22 AMANHA=23 DEPOIS DE AMANHA=29
-        hoje: American Dynasty / 2026 Silver Eagle is here &amp; it is a once-in-a-lifetime coin! / Rare WWII Silver Set
-  [ok] Fox.News.Channel.HD.us2 [Fox News Channel HD] HOJE=20 AMANHA=20 DEPOIS DE AMANHA=20
-        hoje: Live: Jesse Watters Primetime / Live: Hannity / Gutfeld!
+[4] AFILIADAS
+  A lista original nao continha sinais de afiliadas (sem WABC/KABC/WCBS/KCBS
+  ou nomes de estacoes locais). O guia epg-us.xml.gz contem programacao para
+  afiliadas CBS (CBSNewsLosAngeles.pluto, CBSNewsNewYork.pluto,
+  CBSNewsChicago.pluto, CBSNewsBayArea.pluto, CBSNewsBoston.pluto,
+  CBSNewsMiami.pluto) e ABC (ABCEast_WABC.us, ABCWest_KABC.us), disponivel
+  caso esses canais venham a ser incluidos. Nenhum canal de afiliada foi
+  adicionado porque nao havia stream de afiliada na lista.
+
+[5] LOGOS (.jpg, sem imgur, JPEG real)
+  [ok] ABC News Live     keyframe-cdn.abcnews.com/streamprovider11.jpg
+  [ok] Fox News Channel  a57.foxnews.com/.../image.jpg (21298 bytes)
+  [ok] Fox Business      a57.foxnews.com/.../image.jpg (26887 bytes)
+  [ok] CBS News 24/7     assets1.cbsnewsstatic.com/.../news-slate-stream.jpg
+  Todos HTTP 200, assinatura ff d8, extensao .jpg, nenhum imgur.com.
+
+[6] STREAMS (master -> variante -> segmento de midia)
+  [ok] ABC News Live     abcnews-livestreams.akamaized.net (segmento MPEG-TS)
+  [ok] Fox News Channel  247preview.foxnews.com (segmento MPEG-TS)
+  [ok] Fox Business      247preview.foxbusiness.com (segmento MPEG-TS)
+  [ok] CBS News 24/7     dai.google.com (segmento MPEG-TS)
+
+[7] ANTI-VIRUS / REPUTACAO
+  API URLhaus retornou 401 (sem chave); VirusTotal tambem exige chave.
+  Validacao aplicada: allowlist de dominios oficiais, HTTPS obrigatorio,
+  heuristica contra IP literal/schemes suspeitos, inspecao do payload HLS e
+  consulta as listas publicas OpenPhish (269 dominios), PhishTank (16234) e
+  StevenBlack (3521). 11/11 hosts aprovados, 0 reprovados.
 
 ==========================================================================
-RESULTADO: 0 falha(s), 0 aviso(s)
+RESULTADO: 4/4 canais com EPG em D0/D1/D2, stream e logo validos. 0 falhas.
 ==========================================================================
