@@ -1,0 +1,104 @@
+{
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1795704569~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=45377a98-d522-4f2f-9420-3432231f048d~did=7dd2c935-a983-483a-bc6b-d5253ee69afe~country=US~kid=k02~hmac=e1e6b955e8bf7bfbc75873c3b373a6806d797eaae1988d3f063ec167afc96112/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "playlist direta | segmentos 2/3 ok | desconhecido (sem audio)",
+    "score": 200
+  },
+  "https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795704554~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fe5e3462-4f99-4a9e-8b9a-2829f64fb142~did=7b848507-b1fe-4640-a8ec-f03cfed0280e~country=US~kid=k02~hmac=93cf086a224e9747020b31b4e2376beb2239fee35e18ace8bdba21a8153b4b48/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/audio-aac-1-64K/64_slide.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "playlist direta | segmentos 2/3 ok | desconhecido (sem audio)",
+    "score": 200
+  },
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/master.m3u8?hdnea=exp=1795621753~acl=/*~hmac=a02dba572ea837b0a7c54fdd671d85c1df7733e7c8cc9a534243c839cfa343b0": {
+    "ok": true,
+    "audio": true,
+    "reason": "master->variante 2806kbps | segmentos 3/3 ok | video+audio",
+    "score": 2807804
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_4_0.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "playlist direta | segmentos 2/3 ok | video+audio",
+    "score": 500
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index_3.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "playlist direta | segmentos 2/3 ok | video+audio",
+    "score": 500
+  },
+  "https://247.foxbusiness.com/hls/live/2003756/FBNHLSv3/master.m3u8?hdnea=exp=1795621754~acl=/*~hmac=502bb1b891be8ff286a8b387baf7f5644d6c61af66c5a6a00f521aede4168d91": {
+    "ok": true,
+    "audio": true,
+    "reason": "master->variante 2806kbps | segmentos 3/3 ok | video+audio",
+    "score": 2807804
+  },
+  "https://abcnews-livestreams.akamaized.net/out/v1/6a597119dbd5428a82dc11a2f514a1a2/abcn-live-10-cmaf-manifest/abcn-live-10-index.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "master->variante 5641kbps | segmentos 2/3 ok | video+audio",
+    "score": 5642177
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1472a85d-c8a2-4571-b201-1d890eadcd6e:ATL/master.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "master->variante 5436kbps | segmentos 3/3 ok | video+audio",
+    "score": 5437000
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1472a85d-c8a2-4571-b201-1d890eadcd6e:ATL/variant/2ed2c78fd57ae51fb6ba5d4bbd59e953/bandwidth/441000.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "playlist direta | segmentos 3/3 ok | video+audio",
+    "score": 500
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1472a85d-c8a2-4571-b201-1d890eadcd6e:ATL/variant/c1de5c45f7968bb580d02bc76f3a9e7e/bandwidth/1083000.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "playlist direta | segmentos 3/3 ok | video+audio",
+    "score": 500
+  },
+  "https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/1472a85d-c8a2-4571-b201-1d890eadcd6e:ATL/variant/b93ad8358bd5b2b671e137cb4cd530a7/bandwidth/2249000.m3u8": {
+    "ok": true,
+    "audio": true,
+    "reason": "playlist direta | segmentos 3/3 ok | video+audio",
+    "score": 500
+  },
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1795704569~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=45377a98-d522-4f2f-9420-3432231f048d~did=7dd2c935-a983-483a-bc6b-d5253ee69afe~country=US~kid=k02~hmac=e1e6b955e8bf7bfbc75873c3b373a6806d797eaae1988d3f063ec167afc96112/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "protegido_drm",
+    "score": -1
+  },
+  "https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795704554~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fe5e3462-4f99-4a9e-8b9a-2829f64fb142~did=7b848507-b1fe-4640-a8ec-f03cfed0280e~country=US~kid=k02~hmac=93cf086a224e9747020b31b4e2376beb2239fee35e18ace8bdba21a8153b4b48/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/cmaf-cenc-ctr-1700K/1700_hdri_slide.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "protegido_drm",
+    "score": -1
+  },
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/primary_792.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "http=403 (token expirado/bloqueio)",
+    "score": -1
+  },
+  "https://linear-abcnews-ftc-na-west-1.media.dssott.com/dvt2=exp=1795704569~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=45377a98-d522-4f2f-9420-3432231f048d~did=7dd2c935-a983-483a-bc6b-d5253ee69afe~country=US~kid=k02~hmac=e1e6b955e8bf7bfbc75873c3b373a6806d797eaae1988d3f063ec167afc96112/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=720&v=1&hash=fe7d8cb16c2b30784e78c0101396a4d3916b4019": {
+    "ok": false,
+    "audio": false,
+    "reason": "master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm]",
+    "score": -1
+  },
+  "https://247.foxnews.com/hls/live/2003586/FNCHLSv3/primary_2692.m3u8": {
+    "ok": false,
+    "audio": false,
+    "reason": "http=403 (token expirado/bloqueio)",
+    "score": -1
+  },
+  "https://linear-abcnews-akc-na-west-1.media.dssott.com/dvt2=exp=1795704554~url=%2Fclt1%2Fva02%2Fdisneyplus%2Fchannel%2F79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579%2F~psid=fe5e3462-4f99-4a9e-8b9a-2829f64fb142~did=7b848507-b1fe-4640-a8ec-f03cfed0280e~country=US~kid=k02~hmac=93cf086a224e9747020b31b4e2376beb2239fee35e18ace8bdba21a8153b4b48/clt1/va02/disneyplus/channel/79449312-79dd-473d-873c-515ebf4b5e5f-1781081210579/ctr-all-hdri-sliding.m3u8?r=720&v=1&hash=fe7d8cb16c2b30784e78c0101396a4d3916b4019": {
+    "ok": false,
+    "audio": false,
+    "reason": "master->variantes rejeitadas [6173kbps:protegido_drm; 4876kbps:protegido_drm; 3136kbps:protegido_drm]",
+    "score": -1
+  }
+}
