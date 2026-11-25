@@ -1,0 +1,18 @@
+VALIDACAO FINAL lista5.m3u - 2026-11-25 06:06:12 UTC
+Janela EPG exigida (UTC): 20261125, 20261126, 20261127
+Cabecalho EPG: https://iptv-epg.org/files/epg-us.xml.gz
+Entradas: 4
+Estrutura/formatacao: OK
+EPG OK   ABCNewsLive.us         20261125:40 20261126:34 20261127:33 | ABCNL Prime With Linsey Davis / ABCNL Prime With Linsey Davis / ABCNL Prime With Linsey Davis | ultimo start=20261130
+EPG OK   FoxNewsChannel.us      20261125:20 20261126:18 20261127:20 | The Ingraham Angle / The Ingraham Angle / The Ingraham Angle | ultimo start=20261130
+EPG OK   FoxBusiness.us         20261125:22 20261126:27 20261127:28 | How America Works / Kelsey Grammer's Historic Battles for America / Cops | ultimo start=20261130
+EPG OK   CBSNews.us             20261125:28 20261126:27 20261127:28 | 24/7 Primetime / 24/7 Primetime / 60 Minutes | ultimo start=20261130
+AV: OpenPhish 300 URLs / 286 hosts; URLhaus indisponivel; VirusTotal sem chave
+CANAL OK   ABC News Live      stream=master->variante 5641kbps | segmentos 2/3 ok | video+audio | logo=HTTP 200, 99295 bytes, JPEG=True | AV=limpo
+CANAL OK   Fox News Channel   stream=master->variante 415kbps | segmentos 3/3 ok | video+audio | logo=HTTP 200, 21298 bytes, JPEG=True | AV=limpo
+CANAL OK   Fox Business       stream=master->variante 415kbps | segmentos 3/3 ok | video+audio | logo=HTTP 200, 17992 bytes, JPEG=True | AV=limpo
+CANAL OK   CBS News 24/7      stream=master->variante 2561kbps | segmentos 3/3 ok | video+audio | logo=HTTP 200, 91408 bytes, JPEG=True | AV=limpo
+
+RESULTADO: APROVADO - todos os canais com EPG, stream, logo .jpg e AV limpos
+AFILIADAS: nenhum sinal de afiliada na lista original; EPG de afiliadas CBS existe na mesma fonte, mas nao foi necessario.
+REMOCOES: variantes duplicadas e URLs com token/sessao expirado (hdnea/dvt2) foram descartadas.
