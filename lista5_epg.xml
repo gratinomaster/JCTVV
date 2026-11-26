@@ -1,211 +1,2271 @@
 <?xml version='1.0' encoding='utf-8'?>
-<tv generator-info-name="lista5-fix">
-  <channel id="ABCNewsLive.us">
-    <display-name>ABC News Live</display-name>
-    <icon src="https://abcnews.go.com/assets/dynamic/images/logos/abc-news-logo-1.0.jpg" />
+<tv generator-info-name="lista5 EPG normalizado" source-info-name="iptv-epg.org"><channel id="ABCNewsLive.us">
+    <display-name>US - ABC News Live</display-name>
+    <icon src="https://iptv-epg.org/images/UzSaPnQDACUI6Zdh1Epl3ZTQqi5K3kIE_NlRkiFEjhBn9LC_MQYf6Vf5xkxCRIrHJmB0rtBG9i_Ye3sI_jqsVkYjj7eeyFBJEvky1Wu-SbsV" />
   </channel>
-  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="ABCNewsLive.us">
-    <title lang="en">ABC News Live Live</title>
-    <desc lang="en">Live programming - ABC News Live Live</desc>
-  </programme>
-  <channel id="FoxNewsChannel.us">
-    <display-name>Fox News Channel</display-name>
-    <icon src="https://static.foxnews.com/static/orion/styles/img/fox-news/favicons/favicon-512x512.jpg" />
+  <channel id="CBSNews.us">
+    <display-name>US - CBS News</display-name>
+    <icon src="https://iptv-epg.org/images/6OFgwUd0ncrUp8J0xH__YDJZ-ZaLMU9NUZB7QvfQ7wev4gMw43IWW0eh3BvAZwIvzCugXN5WPg3j75EOhoAuocCgGPJ5SYwfVeb8k8o" />
   </channel>
-  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126000000 +0000" stop="20261126010000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+    <live />
   </programme>
-  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126010000 +0000" stop="20261126013000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <title lang="en">American Valor</title>
+    <live />
   </programme>
-  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126013000 +0000" stop="20261126020000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">South Korea
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
   </programme>
-  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126020000 +0000" stop="20261126030000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+    <live />
   </programme>
-  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126030000 +0000" stop="20261126033000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <title lang="en">ABC World News Tonight With David Muir</title>
+    <live />
   </programme>
-  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126033000 +0000" stop="20261126043000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+    <live />
   </programme>
-  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126043000 +0000" stop="20261126050000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <previously-shown />
+    <title lang="en">ABC World News Tonight With David Muir</title>
   </programme>
-  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126050000 +0000" stop="20261126053000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
   </programme>
-  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126053000 +0000" stop="20261126060000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <previously-shown />
+    <title lang="en">ABC World News Tonight With David Muir</title>
   </programme>
-  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126060000 +0000" stop="20261126063000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Interview</category>
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">In-depth reporting on one or more of the major stories in the news, with occasional segments on pop culture; journalists Juju Chang and Byron Pitts share hosting duties for this late-night program.</desc>
+    <icon src="https://iptv-epg.org/images/htVGsxGEOc_f3MPnKFdUiWQDJi7lr2GnLmYwTVDZLxf6g6lGtYb5TUbu6KRUrpkixHeCeuPIh_xNsA359B6I6l5EJBvDKkDmfdzeXdTcLC4" />
+    <title lang="en">Nightline</title>
+    <live />
   </programme>
-  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126063000 +0000" stop="20261126070000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <previously-shown />
+    <title lang="en">ABC World News Tonight With David Muir</title>
   </programme>
-  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="FoxNewsChannel.us">
-    <title lang="en">Fox News Channel Live</title>
-    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  <programme start="20261126070000 +0000" stop="20261126073000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
   </programme>
-  <channel id="FoxBusiness.us">
-    <display-name>Fox Business</display-name>
-    <icon src="https://static.foxbusiness.com/static/orion/styles/img/fox-business/favicons/favicon-512x512.jpg" />
-  </channel>
-  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126073000 +0000" stop="20261126080000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
   </programme>
-  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126080000 +0000" stop="20261126083000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
   </programme>
-  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126083000 +0000" stop="20261126090000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
   </programme>
-  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126090000 +0000" stop="20261126093000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
   </programme>
-  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126093000 +0000" stop="20261126100000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126100000 +0000" stop="20261126103000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
   </programme>
-  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126103000 +0000" stop="20261126110000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126110000 +0000" stop="20261126113000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
   </programme>
-  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126113000 +0000" stop="20261126120000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126120000 +0000" stop="20261126123000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126123000 +0000" stop="20261126130000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="FoxBusiness.us">
-    <title lang="en">Fox Business Live</title>
-    <desc lang="en">Live programming - Fox Business Live</desc>
+  <programme start="20261126130000 +0000" stop="20261126133000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <channel id="CBSNews247.us">
-    <display-name>CBS News 24/7</display-name>
-    <icon src="https://www.cbsnews.com/fly/bundles/cbsnewscore/images/favicons/favicon-512x512.jpg" />
-  </channel>
-  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126133000 +0000" stop="20261126140000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
   </programme>
-  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126140000 +0000" stop="20261126170000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <desc lang="en">The 6abc Dunkin' Thanksgiving Day Parade</desc>
+    <icon src="https://iptv-epg.org/images/FbiKDg0Be9w2eRhFzYehDa7sAMI8uzLWBH-eElP_xE2XsuqjbK-LEUKB7WRtkaP8vsc6fzmS4HMx_scUSjxygKSs9rjQiU3Myn6lzEkrES8" />
+    <title lang="en">The 6abc Dunkin' Thanksgiving Day Parade</title>
+    <live />
   </programme>
-  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126170000 +0000" stop="20261126173000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme><programme start="20261126173000 +0000" stop="20261126180000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Special</category>
+    <desc lang="en">Take a behind-the-scenes look at Disney Animation's new feature "Hexed." Plus, interviews with stars Hailee Steinfeld, Jodie Foster, Walton Goggins and more.</desc>
+    <icon src="https://iptv-epg.org/images/Er9kq0kuPhBUtsj8rCok7X1pTswztcTK1xl91khH1JczJdg-Ao_DbCYNuIaZ73t02LNxp21A_Q1GC49Dnw4rnYhElSRccRvd6NSQPOhT5rs" />
+    <title lang="en">On the Red Carpet Presents: Hexed</title>
+    <live />
   </programme>
-  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126180000 +0000" stop="20261126183000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <previously-shown />
+    <title lang="en">ABC News Live</title>
   </programme>
-  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126183000 +0000" stop="20261126190000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Documentary</category>
+    <category lang="en">Special</category>
+    <desc lang="en">In honor of National Veterans and Military Families Month, this special celebrates Disney's enduring connection to the veteran community.</desc>
+    <icon src="https://iptv-epg.org/images/WglcCYVNWJlDP-LxGzzi06odntoYzCUmUpvGx1V1lrTnIhmZxTqTR7lbK8fc8aMmh20PgzfwLuemcWjC788kuO0cjTZdrkhMyuWXrtvqEIY" />
+    <title lang="en">Disney Salutes: A Celebration of Service</title>
+    <live />
   </programme>
-  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126190000 +0000" stop="20261126193000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC News Live will bring streaming viewers the latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
   </programme>
-  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126193000 +0000" stop="20261126200000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Japan
+ABC joins Gabriel "Fluffy" Iglesias and the USO in Japan to meet American service members and their families.</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
   </programme>
-  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126200000 +0000" stop="20261126203000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">South Korea
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
   </programme>
-  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126203000 +0000" stop="20261126210000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
   </programme>
-  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126210000 +0000" stop="20261126213000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <title lang="en">ABC News Live Reports</title>
+    <live />
   </programme>
-  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126213000 +0000" stop="20261126220000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <previously-shown />
+    <title lang="en">ABC News Live Reports</title>
   </programme>
-  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="CBSNews247.us">
-    <title lang="en">CBS News 24/7 Live</title>
-    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  <programme start="20261126220000 +0000" stop="20261127000000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <desc lang="en">ABC News Live Special Programming.</desc>
+    <icon src="https://iptv-epg.org/images/VR3B1cvnawjail84qILdmApA1DPXhPZ13XP4G3kAwhtZuhgmq57RTxwmgBYMEkx_RqL85il5hQCkhJuAZ3Mc1eVdVZQh-tipuQ5OB5l_Dlw" />
+    <title lang="en">Impact X Nightline</title>
   </programme>
-</tv>
+  <programme start="20261127000000 +0000" stop="20261127010000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+    <live />
+  </programme>
+  <programme start="20261127010000 +0000" stop="20261127030000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2026</date>
+    <desc lang="en">Revisiting the 2006 Duke lacrosse rape case, a story that exposed the profound consequences of media frenzy, institutional pressure and a rush to judgment.</desc>
+    <icon src="https://iptv-epg.org/images/EsCXdHQ4HHl6_Ys3QwQkc_KY9xvr--YoC1XZXhDkejPboeenGwOQa8L6_OjkxGB_esDmB_7H9HVEET2vKoEqBEulMuBddHyy6619OHP_LTw" />
+    <title lang="en">Truth and Lies: The Accused</title>
+    <live />
+  </programme>
+  <programme start="20261127030000 +0000" stop="20261127033000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <title lang="en">ABC World News Tonight With David Muir</title>
+    <live />
+  </programme>
+  <programme start="20261127033000 +0000" stop="20261127040000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <desc lang="en">Collapse: The Forgotten Mines Under America</desc>
+    <icon src="https://iptv-epg.org/images/7jWw9l60irwBuWiPXX4UUsfFv0bYQ9-KNov0KqqM5K_0I5A7fZgqcGNWh6VjZ-3FsxdJRivCAf4R2EGY7uKIp5tv4Y4xYWn6y2WjEZHNvUI" />
+    <title lang="en">Collapse: The Forgotten Mines Under America</title>
+  </programme>
+  <programme start="20261127040000 +0000" stop="20261127050000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <previously-shown />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+  </programme>
+  <programme start="20261127050000 +0000" stop="20261127070000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E09 — Murder on the Menu
+An Ohio couple who owned multiple restaurants are found dead.</desc>
+    <episode-num>S49 E09</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261127070000 +0000" stop="20261127073000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
+  </programme>
+  <programme start="20261127073000 +0000" stop="20261127080000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
+  </programme>
+  <programme start="20261127080000 +0000" stop="20261127083000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
+  </programme>
+  <programme start="20261127083000 +0000" stop="20261127090000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
+  </programme>
+  <programme start="20261127090000 +0000" stop="20261127093000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261127093000 +0000" stop="20261127100000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261127100000 +0000" stop="20261127103000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261127103000 +0000" stop="20261127110000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261127110000 +0000" stop="20261127113000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261127113000 +0000" stop="20261127120000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261127120000 +0000" stop="20261127123000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261127123000 +0000" stop="20261127130000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261127130000 +0000" stop="20261127133000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261127133000 +0000" stop="20261127140000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261127140000 +0000" stop="20261127143000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <title lang="en">ABC News Live First</title>
+    <live />
+  </programme>
+  <programme start="20261127143000 +0000" stop="20261127150000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Special</category>
+    <desc lang="en">Take a behind-the-scenes look at Disney Animation's new feature "Hexed." Plus, interviews with stars Hailee Steinfeld, Jodie Foster, Walton Goggins and more.</desc>
+    <icon src="https://iptv-epg.org/images/Er9kq0kuPhBUtsj8rCok7X1pTswztcTK1xl91khH1JczJdg-Ao_DbCYNuIaZ73t02LNxp21A_Q1GC49Dnw4rnYhElSRccRvd6NSQPOhT5rs" />
+    <title lang="en">On the Red Carpet Presents: Hexed</title>
+  </programme>
+  <programme start="20261127150000 +0000" stop="20261127153000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <title lang="en">ABC News Live First</title>
+    <live />
+  </programme>
+  <programme start="20261127153000 +0000" stop="20261127160000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <desc lang="en">Deals and Steals with Tory Johnson: Black Friday Bonanza</desc>
+    <title lang="en">Deals and Steals with Tory Johnson: Black Friday Bonanza</title>
+    <live />
+  </programme>
+  <programme start="20261127160000 +0000" stop="20261127163000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Special</category>
+    <desc lang="en">Take a behind-the-scenes look at Disney Animation's new feature "Hexed." Plus, interviews with stars Hailee Steinfeld, Jodie Foster, Walton Goggins and more.</desc>
+    <icon src="https://iptv-epg.org/images/Er9kq0kuPhBUtsj8rCok7X1pTswztcTK1xl91khH1JczJdg-Ao_DbCYNuIaZ73t02LNxp21A_Q1GC49Dnw4rnYhElSRccRvd6NSQPOhT5rs" />
+    <title lang="en">On the Red Carpet Presents: Hexed</title>
+  </programme>
+  <programme start="20261127163000 +0000" stop="20261127170000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <previously-shown />
+    <title lang="en">ABC News Live First</title>
+  </programme>
+  <programme start="20261127170000 +0000" stop="20261127173000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261127173000 +0000" stop="20261127180000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <desc lang="en">I'm Not Ok: America's Postpartum Crisis</desc>
+    <icon src="https://iptv-epg.org/images/fnQMfrS6jO6gbbrMZLn7GYSzLYAoj707quYyhDhJsgHKhDpLgb8z493OZZdCtEVNhdMd-VcDqrcxM0YtNtWeXLw-CcnZxj_FJWEGsyFhYWk" />
+    <title lang="en">I'm Not Ok: America's Postpartum Crisis</title>
+    <live />
+  </programme>
+  <programme start="20261127180000 +0000" stop="20261127183000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261127183000 +0000" stop="20261127190000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <desc lang="en">Deals and Steals with Tory Johnson: Black Friday Bonanza</desc>
+    <title lang="en">Deals and Steals with Tory Johnson: Black Friday Bonanza</title>
+  </programme>
+  <programme start="20261127190000 +0000" stop="20261127193000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261127193000 +0000" stop="20261127200000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Japan
+ABC joins Gabriel "Fluffy" Iglesias and the USO in Japan to meet American service members and their families.</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
+  </programme>
+  <programme start="20261127200000 +0000" stop="20261127203000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">South Korea
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
+  </programme>
+  <programme start="20261127203000 +0000" stop="20261127210000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
+  </programme>
+  <programme start="20261127210000 +0000" stop="20261127213000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <title lang="en">ABC News Live Reports</title>
+    <live />
+  </programme>
+  <programme start="20261127213000 +0000" stop="20261127220000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <previously-shown />
+    <title lang="en">ABC News Live Reports</title>
+  </programme>
+  <programme start="20261127220000 +0000" stop="20261128000000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <desc lang="en">ABC News Live Special Programming.</desc>
+    <icon src="https://iptv-epg.org/images/VR3B1cvnawjail84qILdmApA1DPXhPZ13XP4G3kAwhtZuhgmq57RTxwmgBYMEkx_RqL85il5hQCkhJuAZ3Mc1eVdVZQh-tipuQ5OB5l_Dlw" />
+    <title lang="en">Impact X Nightline</title>
+  </programme>
+  <programme start="20261128000000 +0000" stop="20261128010000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Providing prime-time context and analysis of the day's top stories, as well as in-depth reporting and storytelling from around the country and the globe.</desc>
+    <icon src="https://iptv-epg.org/images/Y1zQLCcQ14bOmxCWMZU0IXsS8zPBUuOxyZe4iZ6w8w9bzF36mAdYcqlZ86UuGSLiv65PtA-ZT9m6ZZ1a8eaCvbvApQuZPmNmO_cLHA-PvfE" />
+    <title lang="en">ABCNL Prime With Linsey Davis</title>
+    <live />
+  </programme>
+  <programme start="20261128010000 +0000" stop="20261128030000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2026</date>
+    <desc lang="en">Revisiting the 2006 Duke lacrosse rape case, a story that exposed the profound consequences of media frenzy, institutional pressure and a rush to judgment.</desc>
+    <icon src="https://iptv-epg.org/images/EsCXdHQ4HHl6_Ys3QwQkc_KY9xvr--YoC1XZXhDkejPboeenGwOQa8L6_OjkxGB_esDmB_7H9HVEET2vKoEqBEulMuBddHyy6619OHP_LTw" />
+    <title lang="en">Truth and Lies: The Accused</title>
+  </programme>
+  <programme start="20261128030000 +0000" stop="20261128050000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1978</date>
+    <desc lang="en">Award-winning program featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261128050000 +0000" stop="20261128070000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E08 — Hiding Beneath the Surface: The Putnam County School Girls
+Two schoolgirls vanish from the same town; one is found murdered, and the other is missing.</desc>
+    <episode-num>S49 E08</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261128070000 +0000" stop="20261128073000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <desc lang="en">Collapse: The Forgotten Mines Under America</desc>
+    <icon src="https://iptv-epg.org/images/7jWw9l60irwBuWiPXX4UUsfFv0bYQ9-KNov0KqqM5K_0I5A7fZgqcGNWh6VjZ-3FsxdJRivCAf4R2EGY7uKIp5tv4Y4xYWn6y2WjEZHNvUI" />
+    <title lang="en">Collapse: The Forgotten Mines Under America</title>
+  </programme>
+  <programme start="20261128073000 +0000" stop="20261128080000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Interview</category>
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">In-depth reporting on one or more of the major stories in the news, with occasional segments on pop culture; journalists Juju Chang and Byron Pitts share hosting duties for this late-night program.</desc>
+    <icon src="https://iptv-epg.org/images/htVGsxGEOc_f3MPnKFdUiWQDJi7lr2GnLmYwTVDZLxf6g6lGtYb5TUbu6KRUrpkixHeCeuPIh_xNsA359B6I6l5EJBvDKkDmfdzeXdTcLC4" />
+    <title lang="en">Nightline</title>
+    <live />
+  </programme>
+  <programme start="20261128080000 +0000" stop="20261128100000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E07 — JonBenét Ramsey: Race Against Time, Who Is Unknown Male 1? -- A New Diane Sawyer Investigation
+Thirty years after JonBenét Ramsey's murder, ABC News anchor Diane Sawyer and chief investigative correspondent Aaron Katersky bring viewers a new investigation, featuring new evidence and exclusive and rare interviews with those closest to the case.</desc>
+    <episode-num>S49 E07</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261128100000 +0000" stop="20261128120000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E06 — Justice for Faith
+A college student's murder haunts a community for years; with the verdict just in, jurors, investigators and friends reveal new details.</desc>
+    <episode-num>S49 E06</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261128120000 +0000" stop="20261128123000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Special</category>
+    <desc lang="en">Take a behind-the-scenes look at Disney Animation's new feature "Hexed." Plus, interviews with stars Hailee Steinfeld, Jodie Foster, Walton Goggins and more.</desc>
+    <icon src="https://iptv-epg.org/images/Er9kq0kuPhBUtsj8rCok7X1pTswztcTK1xl91khH1JczJdg-Ao_DbCYNuIaZ73t02LNxp21A_Q1GC49Dnw4rnYhElSRccRvd6NSQPOhT5rs" />
+    <title lang="en">On the Red Carpet Presents: Hexed</title>
+  </programme>
+  <programme start="20261128123000 +0000" stop="20261128130000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <title lang="en">The Weekend View</title>
+    <live />
+  </programme>
+  <programme start="20261128130000 +0000" stop="20261128133000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <title lang="en">ABC News Live Weekend</title>
+    <live />
+  </programme>
+  <programme start="20261128133000 +0000" stop="20261128140000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <title lang="en">GMA Life</title>
+    <live />
+  </programme>
+  <programme start="20261128140000 +0000" stop="20261128143000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The stories from the GMA team - Robin Roberts, George Stephanopoulos and Michael Strahan.</desc>
+    <icon src="https://iptv-epg.org/images/L9H2kAw5CfrDLHzcgXRkVPxY469-CNUXACaLsHaV37OXQBqwikG98-XJi9ZfOhFMHp_rCo9eEaVJLgjNITAwwQrGuzG7qUAbyt7dQz8UyB8" />
+    <title lang="en">Good Morning America - Top Stories</title>
+    <live />
+  </programme>
+  <programme start="20261128143000 +0000" stop="20261128150000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <previously-shown />
+    <title lang="en">The Weekend View</title>
+  </programme>
+  <programme start="20261128150000 +0000" stop="20261128153000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <live />
+  </programme>
+  <programme start="20261128153000 +0000" stop="20261128160000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <previously-shown />
+    <title lang="en">ABC News Live Weekend</title>
+  </programme>
+  <programme start="20261128160000 +0000" stop="20261128163000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <live />
+  </programme>
+  <programme start="20261128163000 +0000" stop="20261128170000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <previously-shown />
+    <title lang="en">GMA Life</title>
+  </programme>
+  <programme start="20261128170000 +0000" stop="20261128173000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <live />
+  </programme>
+  <programme start="20261128173000 +0000" stop="20261128180000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <previously-shown />
+    <title lang="en">The Weekend View</title>
+  </programme>
+  <programme start="20261128180000 +0000" stop="20261128183000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <new />
+  </programme>
+  <programme start="20261128183000 +0000" stop="20261128190000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <previously-shown />
+    <title lang="en">GMA Life</title>
+  </programme>
+  <programme start="20261128190000 +0000" stop="20261128193000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/OE1TG9azPSrBxdRAwdPcKzm-N3NS1oyXYVzXN0DqiisXeRgA8_My7--XmYlP2vCQ1Hi3ttgPsRYCx301k2HhuL6yC4t7u7WqjpKTLnmGlos" />
+    <title lang="en">ABC News Live Weekend: Saturday</title>
+    <live />
+  </programme>
+  <programme start="20261128193000 +0000" stop="20261128200000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <previously-shown />
+    <title lang="en">The Weekend View</title>
+  </programme>
+  <programme start="20261128200000 +0000" stop="20261128203000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/OE1TG9azPSrBxdRAwdPcKzm-N3NS1oyXYVzXN0DqiisXeRgA8_My7--XmYlP2vCQ1Hi3ttgPsRYCx301k2HhuL6yC4t7u7WqjpKTLnmGlos" />
+    <previously-shown />
+    <title lang="en">ABC News Live Weekend: Saturday</title>
+  </programme>
+  <programme start="20261128203000 +0000" stop="20261128210000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
+  </programme>
+  <programme start="20261128210000 +0000" stop="20261128230000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E08 — Hiding Beneath the Surface: The Putnam County School Girls
+Two schoolgirls vanish from the same town; one is found murdered, and the other is missing.</desc>
+    <episode-num>S49 E08</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <previously-shown />
+    <title lang="en">20/20</title>
+  </programme>
+  <programme start="20261128230000 +0000" stop="20261129010000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <title lang="en">ABC News Live Weekend</title>
+    <live />
+  </programme>
+  <programme start="20261129010000 +0000" stop="20261129030000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1978</date>
+    <desc lang="en">Award-winning program featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+  </programme>
+  <programme start="20261129030000 +0000" stop="20261129040000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+    <live />
+  </programme>
+  <programme start="20261129040000 +0000" stop="20261129050000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+    <live />
+  </programme>
+  <programme start="20261129050000 +0000" stop="20261129060000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+    <live />
+  </programme>
+  <programme start="20261129060000 +0000" stop="20261129080000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1978</date>
+    <desc lang="en">Award-winning program featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+  </programme>
+  <programme start="20261129080000 +0000" stop="20261129090000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">Cameras capture people's reactions to dilemmas.</desc>
+    <icon src="https://iptv-epg.org/images/c0Kcmz9BdM3Ex74J2pnpCItaNwDvHVY9jEy4dzv4V54OD26MQHh7pH_UQfYjQe4b9nvd8_5xNtE6dxCfNlcsPTKnpz_HUHDWIedeOF-9XNQ" />
+    <title lang="en">What Would You Do?</title>
+    <new />
+  </programme>
+  <programme start="20261129090000 +0000" stop="20261129110000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1978</date>
+    <desc lang="en">Award-winning program featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+    <new />
+  </programme>
+  <programme start="20261129110000 +0000" stop="20261129113000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <title lang="en">ABC News Live Weekend</title>
+    <live />
+  </programme>
+  <programme start="20261129113000 +0000" stop="20261129120000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Special</category>
+    <desc lang="en">Take a behind-the-scenes look at Disney Animation's new feature "Hexed." Plus, interviews with stars Hailee Steinfeld, Jodie Foster, Walton Goggins and more.</desc>
+    <icon src="https://iptv-epg.org/images/Er9kq0kuPhBUtsj8rCok7X1pTswztcTK1xl91khH1JczJdg-Ao_DbCYNuIaZ73t02LNxp21A_Q1GC49Dnw4rnYhElSRccRvd6NSQPOhT5rs" />
+    <title lang="en">On the Red Carpet Presents: Hexed</title>
+  </programme>
+  <programme start="20261129120000 +0000" stop="20261129123000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <title lang="en">ABC News Live Weekend</title>
+    <live />
+  </programme>
+  <programme start="20261129123000 +0000" stop="20261129130000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <title lang="en">The Weekend View</title>
+    <live />
+  </programme>
+  <programme start="20261129130000 +0000" stop="20261129133000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <title lang="en">ABC News Live Weekend</title>
+    <new />
+  </programme>
+  <programme start="20261129133000 +0000" stop="20261129140000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <title lang="en">GMA Life</title>
+    <live />
+  </programme>
+  <programme start="20261129140000 +0000" stop="20261129143000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The stories from the GMA team - Robin Roberts, George Stephanopoulos and Michael Strahan.</desc>
+    <icon src="https://iptv-epg.org/images/L9H2kAw5CfrDLHzcgXRkVPxY469-CNUXACaLsHaV37OXQBqwikG98-XJi9ZfOhFMHp_rCo9eEaVJLgjNITAwwQrGuzG7qUAbyt7dQz8UyB8" />
+    <title lang="en">Good Morning America - Top Stories</title>
+    <live />
+  </programme>
+  <programme start="20261129143000 +0000" stop="20261129150000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Information and entertainment; discussing news and events.</desc>
+    <icon src="https://iptv-epg.org/images/AwOxBJGA1AanhRexJ9lLgF49tuPJ7dQRl9j1Z4CYY8DczrlD0O-Reo_wgVBqfZLlDu--0M-ktFbh_Incn3i35d8e5030NhGEiKTgSTYSu_s" />
+    <previously-shown />
+    <title lang="en">The Weekend View</title>
+  </programme>
+  <programme start="20261129150000 +0000" stop="20261129153000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <live />
+  </programme>
+  <programme start="20261129153000 +0000" stop="20261129160000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/v0OtMAT7sfvxJa22XDaPiw_LPhZA_J_ZnPGGYQjUa-X4cmR-Vd3A3W5HPm3wmSYEbv2olNh7i0bYguAhKy4AlWBD1gqWkexzRxJ5vIft4Vs" />
+    <previously-shown />
+    <title lang="en">ABC News Live Weekend</title>
+  </programme>
+  <programme start="20261129160000 +0000" stop="20261129163000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/5u-aK9Q3jFWGOZOdA_2yCqsSmmu-mSs5IGCAPoo7TvFg4Yd4DPgNUnn8txQe7A1nK5I5tv3fhvsIDuumlDloHkWGMfBrjyget4xpUK4v40M" />
+    <title lang="en">ABC News Live Weekends</title>
+    <live />
+  </programme>
+  <programme start="20261129163000 +0000" stop="20261129170000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <previously-shown />
+    <title lang="en">GMA Life</title>
+  </programme>
+  <programme start="20261129170000 +0000" stop="20261129180000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Public affairs</category>
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Anchor George Stephanopoulos and co-anchors Martha Raddatz and Jonathan Karl interview top newsmakers and officials, with reporting from across the country and roundtable debates over the hottest political issues.</desc>
+    <icon src="https://iptv-epg.org/images/n4xmyjpIDNRPnNmrXb1wmiPBWo66SdNUh224V2RspyPdmvIEeplHw5cQptj0zhx2i97u2dxkxsf4MD-54rPynTLqXOvG491m3OpIIoqxiGc" />
+    <title lang="en">This Week With George Stephanopoulos</title>
+    <live />
+  </programme>
+  <programme start="20261129180000 +0000" stop="20261129183000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/N1t1HI1Nk8qFyIyDi4IeplGK8XMHO84QilsrSRi4Zr756Ssh1xmm4f-7y1mGsVoJlBOpeYiB2n9PUYxBRcQoawYAU8ijEnMzU2RTbIYabEU" />
+    <title lang="en">ABC News Live Weekend: Sunday</title>
+    <live />
+  </programme>
+  <programme start="20261129183000 +0000" stop="20261129190000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Entertainment</category>
+    <category lang="en">Series</category>
+    <desc lang="en">A weekly roundup of the best lifestyle content from "Good Morning America"; includes exclusive celebrity content, savings from "Deals &amp; Steals," and interviews with authors behind some of the most anticipated books.</desc>
+    <icon src="https://iptv-epg.org/images/Sp49ZkwJJVJdaRIUU2L3L1S98rZtlJuo0i-WLfYs8-NoVKCDNm3W3Go0B9UrF-d8Gb7b4_g-ZbrZhX9n_G84hunBBw7U4TiARhzVZJ7c7gg" />
+    <previously-shown />
+    <title lang="en">GMA Life</title>
+  </programme>
+  <programme start="20261129190000 +0000" stop="20261129200000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Public affairs</category>
+    <category lang="en">Talk</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Anchor George Stephanopoulos and co-anchors Martha Raddatz and Jonathan Karl interview top newsmakers and officials, with reporting from across the country and roundtable debates over the hottest political issues.</desc>
+    <icon src="https://iptv-epg.org/images/n4xmyjpIDNRPnNmrXb1wmiPBWo66SdNUh224V2RspyPdmvIEeplHw5cQptj0zhx2i97u2dxkxsf4MD-54rPynTLqXOvG491m3OpIIoqxiGc" />
+    <previously-shown />
+    <title lang="en">This Week With George Stephanopoulos</title>
+  </programme>
+  <programme start="20261129200000 +0000" stop="20261129203000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news coverage and live video.</desc>
+    <icon src="https://iptv-epg.org/images/N1t1HI1Nk8qFyIyDi4IeplGK8XMHO84QilsrSRi4Zr756Ssh1xmm4f-7y1mGsVoJlBOpeYiB2n9PUYxBRcQoawYAU8ijEnMzU2RTbIYabEU" />
+    <previously-shown />
+    <title lang="en">ABC News Live Weekend: Sunday</title>
+  </programme>
+  <programme start="20261129203000 +0000" stop="20261129210000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Special</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Alaska
+American Valor</desc>
+    <icon src="https://iptv-epg.org/images/EZd6q_A99SLyw7DBhfRKLGMVNKszC6JH7eIOE8lDHBC4GFPVoK9g5driwEda-A6MqCoYspdVMceNtEvucvQc-PaPOjfZZ0AmbYJ8IMUwvl4" />
+    <previously-shown />
+    <title lang="en">American Valor</title>
+  </programme>
+  <programme start="20261129210000 +0000" stop="20261129230000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1978</date>
+    <desc lang="en">Award-winning program featuring unforgettable, character-driven true crime mysteries, exclusive newsmaker interviews, hard-hitting investigative reports and in-depth coverage of high profile stories.</desc>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <title lang="en">20/20</title>
+  </programme>
+  <programme start="20261129230000 +0000" stop="20261130010000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Special</category>
+    <date>2026</date>
+    <desc lang="en">Revisiting the 2006 Duke lacrosse rape case, a story that exposed the profound consequences of media frenzy, institutional pressure and a rush to judgment.</desc>
+    <icon src="https://iptv-epg.org/images/EsCXdHQ4HHl6_Ys3QwQkc_KY9xvr--YoC1XZXhDkejPboeenGwOQa8L6_OjkxGB_esDmB_7H9HVEET2vKoEqBEulMuBddHyy6619OHP_LTw" />
+    <title lang="en">Truth and Lies: The Accused</title>
+  </programme>
+  <programme start="20261130010000 +0000" stop="20261130030000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Series</category>
+    <desc lang="en">S49 E08 — Hiding Beneath the Surface: The Putnam County School Girls
+Two schoolgirls vanish from the same town; one is found murdered, and the other is missing.</desc>
+    <episode-num>S49 E08</episode-num>
+    <icon src="https://iptv-epg.org/images/MqZ0f9q_CHi6jY-tWYevK_dmJAV4HZC3tn9u0LxDrJO5wAp_IjI10s-nP4VPusXjG168VZ8a8XsvgO25u-v3qghILU0DMsTPj5L991E4ACw" />
+    <previously-shown />
+    <title lang="en">20/20</title>
+  </programme>
+  <programme start="20261130030000 +0000" stop="20261130033000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <title lang="en">ABC World News Tonight With David Muir</title>
+    <live />
+  </programme>
+  <programme start="20261130033000 +0000" stop="20261130040000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Delivering the news that matters most.</desc>
+    <icon src="https://iptv-epg.org/images/ksUzC2XFiJOD5JQAx9PrFjCVXSTvPRnvE3ZLtqP7eage_VRfj5qGnnfcUE4p2a2fxktyjQ-0tq1yWwLkN2SwqB91UBtmLjVGko-VZvnjt1A" />
+    <title lang="en">ABC World News Tonight With David Muir</title>
+    <new />
+  </programme>
+  <programme start="20261130040000 +0000" stop="20261130050000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+  </programme>
+  <programme start="20261130050000 +0000" stop="20261130060000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+  </programme>
+  <programme start="20261130060000 +0000" stop="20261130070000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Documentary</category>
+    <desc lang="en">A tale of earth-shattering discoveries, a victim's bravery and a woman's quest to reclaim her life against all odds.</desc>
+    <icon src="https://iptv-epg.org/images/hVUXnl4Dy0aGcUqb_JW2gWfzYUNFnM7dlsww_JTzZgphXnG7ICzrnzOr9qhsz10IitfNnTqH7sULYTRyCkFqYalwz2JMl5RIQ7I5piNG8OA" />
+    <title lang="en">Betrayal: The Perfect Husband</title>
+  </programme>
+  <programme start="20261130070000 +0000" stop="20261130073000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
+  </programme>
+  <programme start="20261130073000 +0000" stop="20261130080000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
+  </programme>
+  <programme start="20261130080000 +0000" stop="20261130083000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <title lang="en">ABC World News Now</title>
+    <live />
+  </programme>
+  <programme start="20261130083000 +0000" stop="20261130090000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Overnight breaking news, weather, politics, and the stories and video people will be talking about.</desc>
+    <icon src="https://iptv-epg.org/images/uCVzEZ0Dc_unkCApKywWntGQ_86U5LfX5TJBnb7H9A52Fn7kPb7leuJwKOy3_QlEf51OE4JMGc1-9m6lsrDGi1hwNCd3sj0Tduq-uNs6myM" />
+    <previously-shown />
+    <title lang="en">ABC World News Now</title>
+  </programme>
+  <programme start="20261130090000 +0000" stop="20261130093000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261130093000 +0000" stop="20261130100000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261130100000 +0000" stop="20261130103000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261130103000 +0000" stop="20261130110000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261130110000 +0000" stop="20261130113000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <title lang="en">Good Morning America First Look</title>
+    <live />
+  </programme>
+  <programme start="20261130113000 +0000" stop="20261130120000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261130120000 +0000" stop="20261130123000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261130123000 +0000" stop="20261130130000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">ABC's "Good Morning America First Look" brings one overnight breaking news, weather, politics, and the stories and video people will be talking about in the day ahead.</desc>
+    <icon src="https://iptv-epg.org/images/OzYV4yYh20KwHFFc6NRBoZ_B62AK7AQhzMe6JozzNH5YJ-9FYB6rGX-nQt5NPBcT0YXvoNaAZYBeCE4CqJkd8goUenDmuziNfKOiIMZJSb4" />
+    <previously-shown />
+    <title lang="en">Good Morning America First Look</title>
+  </programme>
+  <programme start="20261130130000 +0000" stop="20261130143000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <title lang="en">ABC News Live First</title>
+    <live />
+  </programme>
+  <programme start="20261130143000 +0000" stop="20261130150000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <previously-shown />
+    <title lang="en">ABC News Live First</title>
+  </programme>
+  <programme start="20261130150000 +0000" stop="20261130153000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <title lang="en">ABC News Live First</title>
+    <live />
+  </programme>
+  <programme start="20261130153000 +0000" stop="20261130160000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <previously-shown />
+    <title lang="en">ABC News Live First</title>
+  </programme>
+  <programme start="20261130160000 +0000" stop="20261130163000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <title lang="en">ABC News Live First</title>
+    <live />
+  </programme>
+  <programme start="20261130163000 +0000" stop="20261130170000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">The latest headlines, compelling stories, interviews and roundtable discussions.</desc>
+    <icon src="https://iptv-epg.org/images/ggz19x3BHVWW2OPKisW36c-8yDRlhexz5LJREybQvfzi35Keigw-prfYtCxNwVC7QiPgMj4Nw_y0p7Kwo1sjYVNs7d5fFwqUWUWF0vbsPUY" />
+    <previously-shown />
+    <title lang="en">ABC News Live First</title>
+  </programme>
+  <programme start="20261130170000 +0000" stop="20261130183000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261130183000 +0000" stop="20261130190000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <previously-shown />
+    <title lang="en">ABC News Live</title>
+  </programme>
+  <programme start="20261130190000 +0000" stop="20261130193000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261130193000 +0000" stop="20261130200000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <previously-shown />
+    <title lang="en">ABC News Live</title>
+  </programme>
+  <programme start="20261130200000 +0000" stop="20261130203000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <title lang="en">ABC News Live</title>
+    <live />
+  </programme>
+  <programme start="20261130203000 +0000" stop="20261130210000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">Breaking news, top stories, live interviews, press conferences and the best video from around the country and the world.</desc>
+    <icon src="https://iptv-epg.org/images/OElfEZakjJYCjv-FRU98dDse8ph574iYmqWl4oUDLWi4ZG6PvnOpJL4N1n_7M2gO4gB23kekuO_1lDYQquFlMa5YKKosup6Vs4YVPX_yKFI" />
+    <previously-shown />
+    <title lang="en">ABC News Live</title>
+  </programme>
+  <programme start="20261130210000 +0000" stop="20261130213000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <title lang="en">ABC News Live Reports</title>
+    <live />
+  </programme>
+  <programme start="20261130213000 +0000" stop="20261130220000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Series</category>
+    <desc lang="en">Searched</desc>
+    <icon src="https://iptv-epg.org/images/7ELGhgHRvqeLqgvR6mgrFjrMQiE13lEF42K8tADpSoTdfFZGkTaJjJhHpPOsP8gCxEoOEWXiwx-QYziQXpnzqiz9If_sgZhIR0u_TnLeInw" />
+    <title lang="en">Searched</title>
+    <live />
+  </programme>
+  <programme start="20261130220000 +0000" stop="20261130223000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <title lang="en">ABC News Live Reports</title>
+    <live />
+  </programme>
+  <programme start="20261130223000 +0000" stop="20261130230000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Series</category>
+    <desc lang="en">Burden of Proof</desc>
+    <icon src="https://iptv-epg.org/images/lYUr3K9XtPQwLWhQCVrZJbd9AUu8CeQsaCHVxNVH1sJs_4N6JhhDjbp7jCvESsDuF571pEdef3Jmeq_oGz1tfpiXcsRouS9Xai404DQVy3c" />
+    <title lang="en">Burden of Proof</title>
+    <live />
+  </programme>
+  <programme start="20261130230000 +0000" stop="20261130233000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">News</category>
+    <category lang="en">Series</category>
+    <desc lang="en">24/7 coverage of breaking news and live events.</desc>
+    <icon src="https://iptv-epg.org/images/B0GCZpq9i_n7qHeVITKQxiOzBJhG_UQqMQ1ZeTn9H8Znv05zVaHSltg5_vw4IN7CC2S8haYCWdwqyl9YoIfa7zjRZaumTnWuFd-6swgDWuI" />
+    <title lang="en">ABC News Live Reports</title>
+    <live />
+  </programme>
+  <programme start="20261130233000 +0000" stop="20261201000000 +0000" channel="ABCNewsLive.us">
+    <category lang="en">Series</category>
+    <desc lang="en">Searched</desc>
+    <icon src="https://iptv-epg.org/images/7ELGhgHRvqeLqgvR6mgrFjrMQiE13lEF42K8tADpSoTdfFZGkTaJjJhHpPOsP8gCxEoOEWXiwx-QYziQXpnzqiz9If_sgZhIR0u_TnLeInw" />
+    <previously-shown />
+    <title lang="en">Searched</title>
+  </programme>
+  <programme start="20261126000000 +0000" stop="20261126020000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delivering the news you need to know.</desc>
+    <icon src="https://iptv-epg.org/images/OqWwIU9BxW4GSBMRkhLYUrXdNtT6NbTqxPHsy2LX2n4spiBycIY8LMrQcshOh_gmL091oLTnX3Z6l81p1h-R0czbIsLkoxKFmr7UeqPQWko" />
+    <title lang="en">24/7 Primetime</title>
+  </programme>
+  <programme start="20261126020000 +0000" stop="20261126030000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Daily Report on CBS News features original interviews and insights on the most important, urgent and interesting stories of the day.</desc>
+    <icon src="https://iptv-epg.org/images/L17bPxQOqI6iI1sM9ebqO2wD-WQilY6kD6ppSvzcbUX-qHeX6TxT4gVB1MGrh43_2EEhslTEi26t4r6PZsWrWLw05xFTa1bDfj1su8-VQdU" />
+    <title lang="en">The Daily Report</title>
+  </programme>
+  <programme start="20261126030000 +0000" stop="20261126033000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261126033000 +0000" stop="20261126040000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delivering the news you need to know.</desc>
+    <icon src="https://iptv-epg.org/images/OqWwIU9BxW4GSBMRkhLYUrXdNtT6NbTqxPHsy2LX2n4spiBycIY8LMrQcshOh_gmL091oLTnX3Z6l81p1h-R0czbIsLkoxKFmr7UeqPQWko" />
+    <title lang="en">24/7 Primetime</title>
+  </programme>
+  <programme start="20261126040000 +0000" stop="20261126043000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261126043000 +0000" stop="20261126050000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delivering the news you need to know.</desc>
+    <icon src="https://iptv-epg.org/images/OqWwIU9BxW4GSBMRkhLYUrXdNtT6NbTqxPHsy2LX2n4spiBycIY8LMrQcshOh_gmL091oLTnX3Z6l81p1h-R0czbIsLkoxKFmr7UeqPQWko" />
+    <title lang="en">24/7 Primetime</title>
+  </programme>
+  <programme start="20261126050000 +0000" stop="20261126053000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261126053000 +0000" stop="20261126060000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delivering the news you need to know.</desc>
+    <icon src="https://iptv-epg.org/images/OqWwIU9BxW4GSBMRkhLYUrXdNtT6NbTqxPHsy2LX2n4spiBycIY8LMrQcshOh_gmL091oLTnX3Z6l81p1h-R0czbIsLkoxKFmr7UeqPQWko" />
+    <title lang="en">24/7 Primetime</title>
+  </programme>
+  <programme start="20261126060000 +0000" stop="20261126070000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261126070000 +0000" stop="20261126073000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261126073000 +0000" stop="20261126083000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261126083000 +0000" stop="20261126090000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261126090000 +0000" stop="20261126100000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261126100000 +0000" stop="20261126103000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126103000 +0000" stop="20261126110000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126110000 +0000" stop="20261126113000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126113000 +0000" stop="20261126120000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126120000 +0000" stop="20261126123000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126123000 +0000" stop="20261126130000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261126130000 +0000" stop="20261126150000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261126150000 +0000" stop="20261126170000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261126170000 +0000" stop="20261126190000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261126190000 +0000" stop="20261126200000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261126200000 +0000" stop="20261126210000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261126210000 +0000" stop="20261126220000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261126220000 +0000" stop="20261126230000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261126230000 +0000" stop="20261127000000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261127000000 +0000" stop="20261127010000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261127010000 +0000" stop="20261127020000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261127020000 +0000" stop="20261127030000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261127030000 +0000" stop="20261127033000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127033000 +0000" stop="20261127040000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127040000 +0000" stop="20261127050000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261127050000 +0000" stop="20261127053000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127053000 +0000" stop="20261127060000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127060000 +0000" stop="20261127070000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261127070000 +0000" stop="20261127073000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127073000 +0000" stop="20261127083000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261127083000 +0000" stop="20261127090000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261127090000 +0000" stop="20261127100000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261127100000 +0000" stop="20261127103000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127103000 +0000" stop="20261127110000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127110000 +0000" stop="20261127113000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127113000 +0000" stop="20261127120000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127120000 +0000" stop="20261127123000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127123000 +0000" stop="20261127130000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261127130000 +0000" stop="20261127150000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261127150000 +0000" stop="20261127170000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261127170000 +0000" stop="20261127180000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261127180000 +0000" stop="20261127190000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest headlines and top stories from CBS News.</desc>
+    <icon src="https://iptv-epg.org/images/7FfkIJCbby83t-buLeufKxZugNQ4Du_9RKjnFTGAgeaRl2CX-_ApdtWFmO1RCTlssY6DBonaiRGrXVUo7c-5dF-4E_NarYq4B-igkiwII7g" />
+    <title lang="en">CBS News Latest Headlines</title>
+  </programme>
+  <programme start="20261127190000 +0000" stop="20261127200000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest headlines and top stories from CBS News.</desc>
+    <icon src="https://iptv-epg.org/images/7FfkIJCbby83t-buLeufKxZugNQ4Du_9RKjnFTGAgeaRl2CX-_ApdtWFmO1RCTlssY6DBonaiRGrXVUo7c-5dF-4E_NarYq4B-igkiwII7g" />
+    <title lang="en">CBS News Latest Headlines</title>
+  </programme>
+  <programme start="20261127200000 +0000" stop="20261127210000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest headlines and top stories from CBS News.</desc>
+    <icon src="https://iptv-epg.org/images/7FfkIJCbby83t-buLeufKxZugNQ4Du_9RKjnFTGAgeaRl2CX-_ApdtWFmO1RCTlssY6DBonaiRGrXVUo7c-5dF-4E_NarYq4B-igkiwII7g" />
+    <title lang="en">CBS News Latest Headlines</title>
+  </programme>
+  <programme start="20261127210000 +0000" stop="20261127220000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261127220000 +0000" stop="20261127230000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261127230000 +0000" stop="20261128000000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128000000 +0000" stop="20261128010000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128010000 +0000" stop="20261128020000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128020000 +0000" stop="20261128030000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128030000 +0000" stop="20261128033000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128033000 +0000" stop="20261128040000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128040000 +0000" stop="20261128050000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128050000 +0000" stop="20261128060000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128060000 +0000" stop="20261128063000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128063000 +0000" stop="20261128070000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128070000 +0000" stop="20261128080000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128080000 +0000" stop="20261128083000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128083000 +0000" stop="20261128090000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128090000 +0000" stop="20261128100000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128100000 +0000" stop="20261128103000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128103000 +0000" stop="20261128110000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Tony Dokoupil shares the day's most important stories, delivering context and depth to bring greater understanding to one's world.</desc>
+    <icon src="https://iptv-epg.org/images/5ThNFQE_c9gorifNC136JFxgJSJXKVSjhDzjfjrMUR9fMo_S9yduz5gExzFRt_IYK8pnALKfRd5er16TEISp8iextGRBC2mH3c1bvVQJqiM" />
+    <title lang="en">CBS Evening News</title>
+  </programme>
+  <programme start="20261128110000 +0000" stop="20261128113000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261128113000 +0000" stop="20261128120000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261128120000 +0000" stop="20261128123000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261128123000 +0000" stop="20261128130000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261128130000 +0000" stop="20261128140000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories; the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://iptv-epg.org/images/4P2bBnrh-1XkJDJ9bJLF9FA6U7dp6CNDER8frby5Sy8CSAwPFnIqppARJDqXtCIrMfu__VG8YUddXq3Hn3_8H4PehYxeIR3Ff6AH-8FMgvA" />
+    <title lang="en">CBS Saturday Morning</title>
+  </programme>
+  <programme start="20261128140000 +0000" stop="20261128150000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories; the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://iptv-epg.org/images/4P2bBnrh-1XkJDJ9bJLF9FA6U7dp6CNDER8frby5Sy8CSAwPFnIqppARJDqXtCIrMfu__VG8YUddXq3Hn3_8H4PehYxeIR3Ff6AH-8FMgvA" />
+    <title lang="en">CBS Saturday Morning</title>
+  </programme>
+  <programme start="20261128150000 +0000" stop="20261128160000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories; the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://iptv-epg.org/images/4P2bBnrh-1XkJDJ9bJLF9FA6U7dp6CNDER8frby5Sy8CSAwPFnIqppARJDqXtCIrMfu__VG8YUddXq3Hn3_8H4PehYxeIR3Ff6AH-8FMgvA" />
+    <title lang="en">CBS Saturday Morning</title>
+  </programme>
+  <programme start="20261128160000 +0000" stop="20261128180000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories; the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://iptv-epg.org/images/4P2bBnrh-1XkJDJ9bJLF9FA6U7dp6CNDER8frby5Sy8CSAwPFnIqppARJDqXtCIrMfu__VG8YUddXq3Hn3_8H4PehYxeIR3Ff6AH-8FMgvA" />
+    <title lang="en">CBS Saturday Morning</title>
+  </programme>
+  <programme start="20261128180000 +0000" stop="20261128193000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Each Saturday morning, Adriana Diaz and Kelly O'Grady report on the week's top stories; the broadcast, known for its signature segments The Dish and Saturday Sessions, offers insightful conversations with artists, authors, chefs and musicians.</desc>
+    <icon src="https://iptv-epg.org/images/4P2bBnrh-1XkJDJ9bJLF9FA6U7dp6CNDER8frby5Sy8CSAwPFnIqppARJDqXtCIrMfu__VG8YUddXq3Hn3_8H4PehYxeIR3Ff6AH-8FMgvA" />
+    <title lang="en">CBS Saturday Morning</title>
+  </programme>
+  <programme start="20261128193000 +0000" stop="20261128200000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://iptv-epg.org/images/ur3Fmb9Kdoj3tqS2pmqHvWlcLshwgM3ln0RFitB-FDsZ1epnuR3Wd5Frz5Z28UxyT4rUchdG_dHSHfrNNpdgTngv_UDblrW2k2mBYXjLoPs" />
+    <title lang="en">CBS News Weekender</title>
+  </programme>
+  <programme start="20261128200000 +0000" stop="20261128203000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://iptv-epg.org/images/ur3Fmb9Kdoj3tqS2pmqHvWlcLshwgM3ln0RFitB-FDsZ1epnuR3Wd5Frz5Z28UxyT4rUchdG_dHSHfrNNpdgTngv_UDblrW2k2mBYXjLoPs" />
+    <title lang="en">CBS News Weekender</title>
+  </programme>
+  <programme start="20261128203000 +0000" stop="20261128210000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Delving into the biggest stories of the week beyond just the news of the day, featuring original reporting and exclusive interviews along with lifestyle and pop-culture coverage.</desc>
+    <icon src="https://iptv-epg.org/images/ur3Fmb9Kdoj3tqS2pmqHvWlcLshwgM3ln0RFitB-FDsZ1epnuR3Wd5Frz5Z28UxyT4rUchdG_dHSHfrNNpdgTngv_UDblrW2k2mBYXjLoPs" />
+    <title lang="en">CBS News Weekender</title>
+  </programme>
+  <programme start="20261128210000 +0000" stop="20261128220000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128220000 +0000" stop="20261128230000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261128230000 +0000" stop="20261129000000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261129000000 +0000" stop="20261129010000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261129010000 +0000" stop="20261129020000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261129020000 +0000" stop="20261129030000 +0000" channel="CBSNews.us">
+    <category lang="en">Crime</category>
+    <category lang="en">Law</category>
+    <category lang="en">Newsmagazine</category>
+    <desc lang="en">"48 Hours" investigates the most intriguing crime and justice cases that touch on all areas of the human experience, including greed and passion.</desc>
+    <icon src="https://iptv-epg.org/images/obV3Xq6sLSsV6apWNR-CK4vd9v4hscFXzzrx0n6SFQ5lI6OfOaNliiG5xFQ0v17Ta5huBAo8osPs-Qhi21HAqHMRdRIrhrAAmRk5I4-Eo_Q" />
+    <title lang="en">48 Hours</title>
+  </programme>
+  <programme start="20261129030000 +0000" stop="20261129033000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129033000 +0000" stop="20261129040000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129040000 +0000" stop="20261129050000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129050000 +0000" stop="20261129053000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129053000 +0000" stop="20261129060000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129060000 +0000" stop="20261129070000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129070000 +0000" stop="20261129073000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129073000 +0000" stop="20261129080000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129080000 +0000" stop="20261129090000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129090000 +0000" stop="20261129093000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129093000 +0000" stop="20261129100000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261129100000 +0000" stop="20261129110000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129110000 +0000" stop="20261129113000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261129113000 +0000" stop="20261129120000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261129120000 +0000" stop="20261129123000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261129123000 +0000" stop="20261129130000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Uplift spotlights stories that inspire, motivate, and tug at your heartstrings.</desc>
+    <icon src="https://iptv-epg.org/images/-nKLMSLspfR8wZkHicuBlx9lpAl7n9ar5BeoaAyUmbpM7VSJDy8Edn7fBSD0uQjHfv-AFskshMZ8HUztLeigfCZu4VLRZeDgFSfwaRB-b9E" />
+    <title lang="en">The Uplift</title>
+  </programme>
+  <programme start="20261129130000 +0000" stop="20261129143000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">News, features, weather and commentary.</desc>
+    <icon src="https://iptv-epg.org/images/HHb9IKiApVrW_WbuPhGgJKucDKbgpDbHArxPSEFtOU3WjjNr2mRmcFey6HkWe1aM5jvNFb0EqxR3wDG0C7Z-o3tiqsIFzGFzAggNaKF-zes" />
+    <title lang="en">CBS News Sunday Morning</title>
+  </programme>
+  <programme start="20261129143000 +0000" stop="20261129160000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">News, features, weather and commentary.</desc>
+    <icon src="https://iptv-epg.org/images/HHb9IKiApVrW_WbuPhGgJKucDKbgpDbHArxPSEFtOU3WjjNr2mRmcFey6HkWe1aM5jvNFb0EqxR3wDG0C7Z-o3tiqsIFzGFzAggNaKF-zes" />
+    <title lang="en">CBS News Sunday Morning</title>
+  </programme>
+  <programme start="20261129160000 +0000" stop="20261129173000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">News, features, weather and commentary.</desc>
+    <icon src="https://iptv-epg.org/images/HHb9IKiApVrW_WbuPhGgJKucDKbgpDbHArxPSEFtOU3WjjNr2mRmcFey6HkWe1aM5jvNFb0EqxR3wDG0C7Z-o3tiqsIFzGFzAggNaKF-zes" />
+    <title lang="en">CBS News Sunday Morning</title>
+  </programme>
+  <programme start="20261129173000 +0000" stop="20261129190000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">News, features, weather and commentary.</desc>
+    <icon src="https://iptv-epg.org/images/HHb9IKiApVrW_WbuPhGgJKucDKbgpDbHArxPSEFtOU3WjjNr2mRmcFey6HkWe1aM5jvNFb0EqxR3wDG0C7Z-o3tiqsIFzGFzAggNaKF-zes" />
+    <title lang="en">CBS News Sunday Morning</title>
+  </programme>
+  <programme start="20261129190000 +0000" stop="20261129200000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Public affairs</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Margaret Brennan hosts news interviews with distinguished national and foreign figures, offering insight and analysis on the top issues of the day.</desc>
+    <icon src="https://iptv-epg.org/images/PBedsTrLKM4xfd4UBSU2Jt3Oyua8vMhWWmQl2kOSA8EAGOOpMXxV1TF5YeQSoMPS2SnmOMp_hbQpZ0nhLibDoh37cK0VM7-9lDxvJZYTdS0" />
+    <title lang="en">Face the Nation</title>
+  </programme>
+  <programme start="20261129200000 +0000" stop="20261129210000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Public affairs</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Margaret Brennan hosts news interviews with distinguished national and foreign figures, offering insight and analysis on the top issues of the day.</desc>
+    <icon src="https://iptv-epg.org/images/PBedsTrLKM4xfd4UBSU2Jt3Oyua8vMhWWmQl2kOSA8EAGOOpMXxV1TF5YeQSoMPS2SnmOMp_hbQpZ0nhLibDoh37cK0VM7-9lDxvJZYTdS0" />
+    <title lang="en">Face the Nation</title>
+  </programme>
+  <programme start="20261129210000 +0000" stop="20261129220000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129220000 +0000" stop="20261129230000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261129230000 +0000" stop="20261130000000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261130000000 +0000" stop="20261130010000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Offering investigative reports, interviews, feature segments, episodes and profiles.</desc>
+    <icon src="https://iptv-epg.org/images/7wAaWwMs1rrA1cgXcl-_ga2yeODveJWGmbsgIkQ6BSRj_9phhAjGq5-ke4SHgsA8Mpjp3I4aF17CwGf32HXFTbWyXGVtPOXB6ZA22wd1upU" />
+    <title lang="en">60 Minutes Rewind</title>
+  </programme>
+  <programme start="20261130010000 +0000" stop="20261130020000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261130020000 +0000" stop="20261130030000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261130030000 +0000" stop="20261130033000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261130033000 +0000" stop="20261130040000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The latest world and national news.</desc>
+    <icon src="https://iptv-epg.org/images/BXzSXX4dFxFBQDAvjmbLQM8G_NFFQwMBGWCbqjCdSFSSG-zkTQAeMdLVi-HEkWV22eQ_g8_jXmdS1WvKLopD3waVzY1GDz_soagQIONqxSo" />
+    <title lang="en">CBS Weekend News</title>
+  </programme>
+  <programme start="20261130040000 +0000" stop="20261130050000 +0000" channel="CBSNews.us">
+    <category lang="en">Newsmagazine</category>
+    <date>1968</date>
+    <desc lang="en">Newsmagazine with features focusing on people, and events in the news and behind the headlines.</desc>
+    <icon src="https://iptv-epg.org/images/KZZH-ifXUtlO1PZKRLyxkyg-8KDIFUft1Q6grNwly6D9RBo1L9uaezTEWF6hLsW96G9sYaUVI3EITGs93eGzwSXYXW2bEI8gCEc4vIuLFFM" />
+    <title lang="en">60 Minutes</title>
+  </programme>
+  <programme start="20261130050000 +0000" stop="20261130060000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Politics</category>
+    <category lang="en">Public affairs</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Margaret Brennan hosts news interviews with distinguished national and foreign figures, offering insight and analysis on the top issues of the day.</desc>
+    <icon src="https://iptv-epg.org/images/PBedsTrLKM4xfd4UBSU2Jt3Oyua8vMhWWmQl2kOSA8EAGOOpMXxV1TF5YeQSoMPS2SnmOMp_hbQpZ0nhLibDoh37cK0VM7-9lDxvJZYTdS0" />
+    <title lang="en">Face the Nation</title>
+  </programme>
+  <programme start="20261130060000 +0000" stop="20261130070000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261130070000 +0000" stop="20261130080000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261130080000 +0000" stop="20261130090000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261130090000 +0000" stop="20261130100000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">The headlines one needs to know overnight... plus, a roundup of MoneyWatch, health, consumer and up-to-the-minute technology news, the latest weather, and inspiring stories of kindness and hope.</desc>
+    <icon src="https://iptv-epg.org/images/P1vuDo4UpYXRGHPxdn_FZlKDffkc-evvvTopC-EIAzx9V7w9KDdw1gYrskQcm1VEw2yusgppTCNNdduME7k-GIwnw-PYwONXagkgBAd6ICU" />
+    <title lang="en">CBS News Roundup</title>
+  </programme>
+  <programme start="20261130100000 +0000" stop="20261130103000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261130103000 +0000" stop="20261130110000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261130110000 +0000" stop="20261130113000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261130113000 +0000" stop="20261130120000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <date>2024</date>
+    <desc lang="en">CBS News Mornings broadcasts on weekdays and offers viewers up-to-date news, comprehensive weather forecasts, and highlights from the world of sports.</desc>
+    <icon src="https://iptv-epg.org/images/VSh0WwnnRguV7o4QzMwrl6JiXWB687KyYOMMeA9U2OCocpdNK-xEfWKLmgjiY_tmjplfMpp_El3bwQ13tKDsB3-JoBLDk8dHhOlErUPm7F8" />
+    <title lang="en">CBS News Mornings</title>
+  </programme>
+  <programme start="20261130120000 +0000" stop="20261130130000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Join Errol Barnett for the CBS Morning News weekdays at 7AM ET. Featuring the latest breaking news, in depth original reporting and news making interviews plus all the big stories impacting Americans from coast to coast.</desc>
+    <icon src="https://iptv-epg.org/images/-qr4lsnL7YxUMFcP0SvW5mLb2hWA0dAcUj6wPCcTYwdpsdmhiuzaPNgg5P4m0lcNfYiTBcI-tDTCVHFXkF2FLUHl1CC3ASCSP8FOKjHhhdw" />
+    <title lang="en">CBS Morning News</title>
+  </programme>
+  <programme start="20261130130000 +0000" stop="20261130140000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <category lang="en">Talk</category>
+    <desc lang="en">Reporting on international news stories, interviews, and in-depth pieces, covering topics from news, sports, climate and technology to race, health, parenting and personal finance.</desc>
+    <icon src="https://iptv-epg.org/images/0BdzKEfu36VwBUVVpEthYcdIIOpyhDpek6Vt4Ualo6jUopSTyeG1NWtrmWndbtO0L6l0psbChbIVzMWPSjiPChwz34UKdOhBFDAHpi4lrsw" />
+    <title lang="en">CBS Mornings</title>
+  </programme>
+  <programme start="20261130140000 +0000" stop="20261130160000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">CBS News 24/7 Mornings</desc>
+    <icon src="https://iptv-epg.org/images/GyicWMmTOC523tYfF6Xodvz5tp0RM0buPE8C0xT6wZBW0ZLXA9kykNPlFV7MGbS5djxmD9Xj248XQcfHhwHoHXYYQrqElY7Dt1nJhFvbOZw" />
+    <title lang="en">CBS News 24/7 Mornings</title>
+    <new />
+  </programme>
+  <programme start="20261130160000 +0000" stop="20261130170000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130170000 +0000" stop="20261130180000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130180000 +0000" stop="20261130190000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130190000 +0000" stop="20261130200000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130200000 +0000" stop="20261130210000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130210000 +0000" stop="20261130220000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">Coverage, reporting and storytelling from CBS News and Stations; a look at how news coverage comes together.</desc>
+    <icon src="https://iptv-epg.org/images/MqaeL78ACMZhUSpvsLzYJU1myvDee05luHmBeMwJuD3XobkCBMMEq1BJj4FzbKx_s0J0UxxySz0-O0bwS2CjgOlW2YuJA-iUVH1nbRnjgtQ" />
+    <title lang="en">CBS News 24/7</title>
+  </programme>
+  <programme start="20261130220000 +0000" stop="20261130230000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Takeout is a new spin on the widely acclaimed podcast hosted by Major Garrett; a daily streaming show that harnesses the best of CBS News' political reporting and lives comfortably in deep discussions.</desc>
+    <icon src="https://iptv-epg.org/images/TXu1xCMJghaqURpNUGgyeE99iispeGKqNcW54OOmrfmcprjys1zwOiX4e2JNqlDKbVCcwtgZZe3YFTQxSfEabJ8b2UVKBiojCaFDQo33vaU" />
+    <title lang="en">The Takeout with Major Garrett</title>
+    <new />
+  </programme>
+  <programme start="20261130230000 +0000" stop="20261201000000 +0000" channel="CBSNews.us">
+    <category lang="en">News</category>
+    <desc lang="en">The Daily Report on CBS News features original interviews and insights on the most important, urgent and interesting stories of the day.</desc>
+    <icon src="https://iptv-epg.org/images/L17bPxQOqI6iI1sM9ebqO2wD-WQilY6kD6ppSvzcbUX-qHeX6TxT4gVB1MGrh43_2EEhslTEi26t4r6PZsWrWLw05xFTa1bDfj1su8-VQdU" />
+    <title lang="en">The Daily Report</title>
+  </programme>
+  </tv>

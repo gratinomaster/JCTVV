@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="lista5-fix">
+  <channel id="ABCNewsLive.us">
+    <display-name>ABC News Live</display-name>
+    <icon src="https://abcnews.go.com/assets/dynamic/images/logos/abc-news-logo-1.0.jpg" />
+  </channel>
+  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="ABCNewsLive.us">
+    <title lang="en">ABC News Live Live</title>
+    <desc lang="en">Live programming - ABC News Live Live</desc>
+  </programme>
+  <channel id="FoxNewsChannel.us">
+    <display-name>Fox News Channel</display-name>
+    <icon src="https://static.foxnews.com/static/orion/styles/img/fox-news/favicons/favicon-512x512.jpg" />
+  </channel>
+  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="FoxNewsChannel.us">
+    <title lang="en">Fox News Channel Live</title>
+    <desc lang="en">Live programming - Fox News Channel Live</desc>
+  </programme>
+  <channel id="FoxBusiness.us">
+    <display-name>Fox Business</display-name>
+    <icon src="https://static.foxbusiness.com/static/orion/styles/img/fox-business/favicons/favicon-512x512.jpg" />
+  </channel>
+  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="FoxBusiness.us">
+    <title lang="en">Fox Business Live</title>
+    <desc lang="en">Live programming - Fox Business Live</desc>
+  </programme>
+  <channel id="CBSNews247.us">
+    <display-name>CBS News 24/7</display-name>
+    <icon src="https://www.cbsnews.com/fly/bundles/cbsnewscore/images/favicons/favicon-512x512.jpg" />
+  </channel>
+  <programme start="20261116000000 +0000" stop="20261116060000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261116060000 +0000" stop="20261116120000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261116120000 +0000" stop="20261116180000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261116180000 +0000" stop="20261117000000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261117000000 +0000" stop="20261117060000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261117060000 +0000" stop="20261117120000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261117120000 +0000" stop="20261117180000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261117180000 +0000" stop="20261118000000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261118000000 +0000" stop="20261118060000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261118060000 +0000" stop="20261118120000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261118120000 +0000" stop="20261118180000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+  <programme start="20261118180000 +0000" stop="20261119000000 +0000" channel="CBSNews247.us">
+    <title lang="en">CBS News 24/7 Live</title>
+    <desc lang="en">Live programming - CBS News 24/7 Live</desc>
+  </programme>
+</tv>
