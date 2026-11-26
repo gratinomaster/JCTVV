@@ -60,7 +60,7 @@ http://170.83.16.50/TV_JUSTICA/index.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" tvg-name="TV Câmara" tvg-logo="https://iptv-epg.org/images/lzuLmPHfYV9Lb1Jx3ZMYHJtxhUMTWxo2thwvb1u_cNXTdkaSDwuUoDuYdypdRjM3rgGst2WjjgfrVBEszM8mZTRGKkOyvlKqXMUcrSvPVWxy" group-title="TV ABERTA",TV Câmara
 https://stream3.camara.gov.br/tv1/manifest.m3u8
 #EXTINF:-1 tvg-id="BandSports.br" tvg-name="Band Sports" tvg-logo="https://iptv-epg.org/images/aKjFji2hePSWEkx2Jz5ZI06xBzgYSTzJYz64wKp4GDCHuWBm6dfFhAPYBy9NNRavTyfhwCS-wM9H7-QpNU4qZV7dE3KqCwyF3zwXqCpT_1U4vNQ" group-title="ESPORTES",Band Sports
-http://170.83.49.66:8083/BANDSPORTSHD/index.m3u8
+http://170.83.16.50/BAND_SPORTS/index.m3u8
 #EXTINF:-1 tvg-id="ESPN.br" tvg-name="ESPN" tvg-logo="https://iptv-epg.org/images/FY__tMZrZ2iFOm4YiN4vdfTywNY5fqjtldNMFvKRujd4sojfqEsUUfFKso6OYjzPf1QBDVWzoG-Q9l5U_S8--xsSxKZ21l-jrmQIj2Y" group-title="ESPORTES",ESPN
 http://181.78.197.59:8000/play/a07z/index.m3u8
 #EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
@@ -70,13 +70,15 @@ http://181.78.197.59:8000/play/a081/index.m3u8
 #EXTINF:-1 tvg-id="ESPN 4" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
-http://170.83.49.66:8083/AXNHD/index.m3u8
+http://170.83.16.50/AXN/index.m3u8
 #EXTINF:-1 tvg-id="HistoryChannel.br" tvg-name="History" tvg-logo="https://iptv-epg.org/images/8m6SBtz70xf67rDPSfE86lLbflXemQf7B-4llxXfdj2WNYagZ4HTEK8nHuoJQ_-bLDQ-KA7u7A4fr7NbBXw5V_9qUjcDiOAbxZwfQBCNh8s9EWnAeo1i" group-title="TV PAGA",History
 http://170.83.16.50/HISTORY/index.m3u8
 #EXTINF:-1 tvg-id="SonyChannel.br" tvg-name="Sony Channel" tvg-logo="https://iptv-epg.org/images/LO3qTgCeVH3ABTNJ5suw8qfY0QkmuCMAZOTl7D_UQJNnAsFkGHWlp-NfJjDgtPvhRZCMT1vMDHgTEvh0ko_28Zy2D0XMFVnRXwZcgEaXm_qNh5k0" group-title="TV PAGA",Sony Channel
 http://170.83.16.50/SONY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryKids.br" tvg-name="Discovery Kids" tvg-logo="https://iptv-epg.org/images/6yJ1WkbMYDidhOsDQp8inHZ6GMNXp6CUvMhr9f7VBBrPLl3cfSvsg6bdbfAU-gO6e5YZSVNir36NF238gD0E4jQ6SJDkeAZUacUmT9LOJ2ySu3uGPJ4" group-title="TV PAGA",Discovery Kids
-http://170.83.49.66:8083/DISCOVERYKIDSHD/index.m3u8
+http://170.83.16.50/DISCOVERY_KIDS/index.m3u8
+#EXTINF:-1 tvg-id="DiscoveryChannel.br" tvg-name="Discovery Channel" tvg-logo="https://iptv-epg.org/images/SbRrdzf5tDGVxBFJC17uE9or6cRL5CYwzHa4b1yhFVnHwg2UaVlgqW2mSpMMwkqSSoUydIMtNQm_HkWtSMpmeRznaB4v5OWxp-RYDnUS0U8wUytxlSgQLkU" group-title="TV PAGA",Discovery Channel
+http://170.83.16.50/DISCOVERY_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="TNT.br" tvg-name="TNT" tvg-logo="https://iptv-epg.org/images/nWWLRPoCRTtInqvw3ISVLFTfg067uMQn4BidbybUJzy38dhlkNa5zk2_FfC2SyrXm3ywJ0VqZAUOqeZbueUTREl5JdlcX_h7PGJRhw" group-title="TV PAGA",TNT
 http://170.83.16.50/TNT/index.m3u8
 #EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV PAGA",Arte 1
