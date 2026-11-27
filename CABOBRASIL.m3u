@@ -3,11 +3,11 @@
 https://streaming.gruporba.com.br/rba.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
 http://170.83.16.50/BAND_NEWS/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="CANAL DO BOI" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
+#EXTINF:-1 tvg-id="CanaldoBoi.br" tvg-name="Canal do Boi" tvg-logo="https://iptv-epg.org/images/F5A7RKIA8gvKw1xl5Y7o7QoaCjDC5v9qsZg5YNSP4L5HZ8Njevx2STt0iL0dfL4k65Ve3Pa21NCQ-crbIxoqNxxpzjQAxRFHq4dq-sIay9cA9-c" group-title="TV ABERTA",Canal do Boi
 https://cdn.live.br1.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
-#EXTINF:-1 tvg-id="CANAL RURAL" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
+#EXTINF:-1 tvg-id="CanalRural.br" tvg-name="Canal Rural" tvg-logo="https://iptv-epg.org/images/1Wtk2bC1wNHHu5aq541hGsmue-iySL59k8KuiNipvS0rM_BBLK1it9KFZ-SRrn4aDp2BuPqfoKKUdOiveBP3XdhfKIrypueOsa6GJvSB0fJkiB8" group-title="TV ABERTA",Canal Rural
 https://isaocorp.cloudecast.com/canalrural/index.m3u8
-#EXTINF:-1 tvg-id="Canal GOV HD" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
+#EXTINF:-1 tvg-id="CanalGov.br" tvg-name="Canal Gov" tvg-logo="https://iptv-epg.org/images/Zf-qB4ivHq3TIKupFqMO8RQDF2nU6VPr5tqY2Y7-xGhuKCRKccy06Bsu2Qa3mbWFh3ZXX0CLOLiUzMV-nkE1UBi3auKYvdejdSUUMjwsXmyY" group-title="TV ABERTA",Canal Gov
 https://canalgov-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="CancaoNova.br" tvg-name="Canção Nova" tvg-logo="https://iptv-epg.org/images/fzsM6MecCSJ0TzROxcSAJlthFY0LDJU6fElndl55LJl4-aJT64Z3BYokjiCT_JDr-EBScY94uzDoTJk7YfOTqnOVEYiqTJHSxVHDnHssH-Z3wN8" group-title="TV ABERTA",Canção Nova
 http://170.83.16.50/CANCAO_NOVA/index.m3u8
@@ -29,7 +29,7 @@ http://186.219.52.187/jp_news/index.m3u8
 http://170.83.16.50/RECORD_NEWS/index.m3u8
 #EXTINF:-1 tvg-id="RedeBrasil.br" tvg-name="Rede Brasil" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/RBTV23.png/500px-RBTV23.png" group-title="TV ABERTA",Rede Brasil
 https://redebrasil.nuvemplay.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="REDE GOSPEL" tvg-name="Rede Gospel" tvg-logo="https://iptv-epg.org/images/-1tNpn9mF3bytrIqXi_yZe_PLFbw48MS_pZWlcmXyYtR1LaPLSVO948YG0uB5RLLOAtSvaKxLHWdxgltqKH9iBHHtqZbqrTe7Rdt6FQXhBViwZU" group-title="TV ABERTA",Rede Gospel
+#EXTINF:-1 tvg-id="RedeGospel.br" tvg-name="Rede Gospel" tvg-logo="https://iptv-epg.org/images/-1tNpn9mF3bytrIqXi_yZe_PLFbw48MS_pZWlcmXyYtR1LaPLSVO948YG0uB5RLLOAtSvaKxLHWdxgltqKH9iBHHtqZbqrTe7Rdt6FQXhBViwZU" group-title="TV ABERTA",Rede Gospel
 https://redegospel-aovivo.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" tvg-name="Rede Vida" tvg-logo="https://iptv-epg.org/images/eybTqefOZEvlGk8wuoRgjr0nUyPMxv-wih3hbS44trGsuopRjfInFg83cUjzNy7nhoPAuM-SlWVLo426kJKrQslkk22OwXBynrep3eBVfCjA" group-title="TV ABERTA",Rede Vida
 https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8
@@ -39,6 +39,8 @@ http://186.219.52.187/rede_tv/tracks-v1a1/mono.m3u8
 https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8
 #EXTINF:-1 tvg-id="SBTSP.br" tvg-name="SBT SP" tvg-logo="https://iptv-epg.org/images/A0kYAfxRpwrbJAB92vhNd_vmyYXG4IEbk_01SdKSJ5LQ6OMgX6AEBiyn4Xfy1SCFPvfcNhBQ8HMuZXgEzfzgqPOFPWqb2-SfUR8Fa-s-" group-title="TV ABERTA",SBT SP
 https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTRJ.br" tvg-name="SBT RJ" tvg-logo="https://iptv-epg.org/images/pZb-3kuXYlwtLAxd6Ou3tFdEEMEh_o2fbpeTdRyozvXkd_7N37nJtEo5sHDT3jz711SvHPdqYmSjqY8FN6cQ0mxTImh13RN1K87zjtXg" group-title="TV ABERTA",SBT RJ
+https://sbt.cdnsimba.com.br/bpk-tv/SBTrj/default/index.m3u8
 #EXTINF:-1 tvg-id="TVACritica.br" tvg-name="TV A Crítica" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Logomarca_da_TV_A_Cr%C3%ADtica_-_2024.png/500px-Logomarca_da_TV_A_Cr%C3%ADtica_-_2024.png" group-title="TV ABERTA",TV A Crítica
 https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" tvg-name="TV Brasil" tvg-logo="https://iptv-epg.org/images/nkMmDpfmwLfPJafOYbhSCCwe05CiXYdKMJtcO2oCwM62oBkKr1pv-bZoe8BoQ-vutfd6_UDx-sfoBUe2FYJyo_Q5nRhZR-JIOgm3Ey1jthrI" group-title="TV ABERTA",TV Brasil
@@ -51,7 +53,7 @@ http://170.83.16.50/TV_SENADO/index.m3u8
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
 #EXTINF:-1 tvg-id="RecordTVBrasil.br" tvg-name="RecordTV" tvg-logo="https://iptv-epg.org/images/f43hW01Gq8qBhpM2lenZ8LXIxg7ygUOKz96zS0XXRUjO15nQzl3U75CRhpRQrfYvjSaIycUfPaX26QkIZfN3RENIAMavVgmMrLclwYVrz9mCIoHS9qjS" group-title="TV ABERTA",RecordTV
 https://cdn.live.br1.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
-#EXTINF:-1 tvg-id="TV APARECIDA HD" tvg-name="TV Aparecida" tvg-logo="https://iptv-epg.org/images/kYT6RRrdTnnihZU7AYqoa8_cAQifZoENzKSNOLu5Qv3KCEj1B81PY2H6xvBNFNLh-U6SDlao72P8bBF44ZWNegXukBye4Deo67Mcy8h3mnaBtQ3B" group-title="TV ABERTA",TV Aparecida
+#EXTINF:-1 tvg-id="TVAparecida.br" tvg-name="TV Aparecida" tvg-logo="https://iptv-epg.org/images/kYT6RRrdTnnihZU7AYqoa8_cAQifZoENzKSNOLu5Qv3KCEj1B81PY2H6xvBNFNLh-U6SDlao72P8bBF44ZWNegXukBye4Deo67Mcy8h3mnaBtQ3B" group-title="TV ABERTA",TV Aparecida
 https://cdn.live.br1.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br" tvg-name="TV Gazeta" tvg-logo="https://iptv-epg.org/images/Bet2Q6EqVR25j4cO8IfWzX5VpFMwhO0mHL4MIjuhPQiN7W02L6U5emv9zXcU8Bhz7qGkN3TQHx7Fa3S0l-CnG24Q7aqrvUpI7VZttC_bi2v7" group-title="TV ABERTA",TV Gazeta
 http://186.219.52.187/gazeta/index.m3u8
@@ -65,9 +67,9 @@ http://170.83.16.50/BAND_SPORTS/index.m3u8
 http://181.78.197.59:8000/play/a07z/index.m3u8
 #EXTINF:-1 tvg-id="ESPN2.br" tvg-name="ESPN 2" tvg-logo="https://iptv-epg.org/images/lzjOrRO6rOWzNDoYKklH3QHS2vDDrtbtgRdDEtq8nJ8wrk2-S_xzA0Xsa7gU7ywmZEdGALoIBb4qZj-KxmZDW05VCG6qXBYsgXdIN2VK" group-title="ESPORTES",ESPN 2
 http://181.78.197.59:8000/play/a080/index.m3u8
-#EXTINF:-1 tvg-id="ESPN 3" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
+#EXTINF:-1 tvg-id="ESPN3.br" tvg-name="ESPN 3" tvg-logo="https://iptv-epg.org/images/FccTEvz6gWxpoYHu47UMVFRqwX8zwizxR9mjriWqTewMB51GXwmqBj3UIi1gHV9jVfF3WDumX35AK9YYS3yKBPQetJcQneRKZSHsK7Ww" group-title="ESPORTES",ESPN 3
 http://181.78.197.59:8000/play/a081/index.m3u8
-#EXTINF:-1 tvg-id="ESPN 4" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4
+#EXTINF:-1 tvg-id="ESPN4.br" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4
 http://181.78.197.59:8000/play/a07n/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.16.50/AXN/index.m3u8
@@ -83,7 +85,7 @@ http://170.83.16.50/DISCOVERY_CHANNEL/index.m3u8
 http://170.83.16.50/TNT/index.m3u8
 #EXTINF:-1 tvg-id="Arte1.br" tvg-name="Arte 1" tvg-logo="https://iptv-epg.org/images/c9oweUEUoauOtrP67DpGTjKcQZiX1mp0uW01SN1x5s2lky_DUGmEU54p2url-T2sLYpl8AI5HWSfVC6dVRPSISzviMMo93DZQiNYui49" group-title="TV PAGA",Arte 1
 http://170.83.16.50/ARTE_1/index.m3u8
-#EXTINF:-1 tvg-id="TV Novo Tempo" tvg-name="TV Novo Tempo" tvg-logo="https://iptv-epg.org/images/Db0khn-OpkT3tWsIL1T9GXjCIEcCByS-nPY3Ava7gXLD2cEUMLxNdtPVtcb-a2GahLcAEjjk0raey3bsYvxmYMxELx-uqU4suMjw8BwGulPEHd0w" group-title="TV ABERTA",TV Novo Tempo
+#EXTINF:-1 tvg-id="TVNovoTempo.br" tvg-name="TV Novo Tempo" tvg-logo="https://iptv-epg.org/images/Db0khn-OpkT3tWsIL1T9GXjCIEcCByS-nPY3Ava7gXLD2cEUMLxNdtPVtcb-a2GahLcAEjjk0raey3bsYvxmYMxELx-uqU4suMjw8BwGulPEHd0w" group-title="TV ABERTA",TV Novo Tempo
 https://streamtv.novotempo.com/CDN-TV-ES/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UOL.br" tvg-name="Canal UOL" tvg-logo="https://iptv-epg.org/images/LYWORdKXYxofqLtK_BXg_y7NJhsJ6_-jvbvmfmX-bjxg_ewEm1vhS9Byb4iLXjxF7bK6nXVanIXev_lDLHTinP6IbPbNvCilHNOqYA" group-title="TV PAGA",Canal UOL
 https://video24.mais.uol.com.br/live/6146.m3u8
