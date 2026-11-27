@@ -1,0 +1,31 @@
+RELATORIO DE CORRECAO - lista5.m3u
+Data: 2026-11-27 17:43:38
+Janela EPG exigida: 20261127 / 20261128 / 20261129
+
+ANTI-VIRUS / REPUTACAO
+  fonte: OpenPhish (300 URLs / 280 hosts)
+  fonte: URLhaus indisponivel (HTTP 410/401) - triagem local aplicada
+  [CLEAN] ABC News Live: host=abcnews-livestreams.akamaized.net
+  [CLEAN] Fox News Channel: host=247preview.foxnews.com
+  [CLEAN] CBS News 24/7: host=cbsn-us.cbsnstream.cbsnews.com
+
+TESTE DE STREAM (playlist + segmento real de midia)
+  [OK] ABC News Live: segmento fMP4 (65536+ bytes)
+  [OK] Fox News Channel: segmento MPEG-TS (65536+ bytes)
+  [OK] CBS News 24/7: segmento MPEG-TS (65536+ bytes)
+
+TESTE DE LOGO (.jpg)
+  [OK] ABC News Live: JPEG 72763 bytes
+  [OK] Fox News Channel: JPEG 21298 bytes
+  [OK] CBS News 24/7: JPEG 91408 bytes
+
+COBERTURA DO EPG (hoje / amanha / depois de amanha)
+  [fonte] https://iptv-epg.org/files/epg-us.xml.gz
+    OK ABC News Live (ABCNewsLive.us): 20261127:37 20261128:28 20261129:27
+    OK Fox News Channel (FoxNewsChannel.us): 20261127:20 20261128:17 20261129:17
+    OK CBS News 24/7 (CBSNews.us): 20261127:28 20261128:30 20261129:28
+
+RESULTADO FINAL
+  Canais no arquivo: 3
+  Formatacao: OK
+  Backup: lista5.m3u.bak.pre_tarefa_20261127_174352
