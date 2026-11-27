@@ -8,6 +8,7 @@ Saida zero somente se o guia:
   - tem programas para HOJE e para AMANHA.
 """
 import gzip
+import os
 import re
 import sys
 import urllib.request
@@ -33,8 +34,19 @@ def ok(msg):
 print("=" * 70)
 print("1. LISTA .m3u (fonte da verdade)")
 print("=" * 70)
-req = urllib.request.Request(M3U_URL, headers={"User-Agent": "Mozilla/5.0"})
-m3u = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+try:
+    req = urllib.request.Request(M3U_URL, headers={"User-Agent": "Mozilla/5.0"})
+    remoto = urllib.request.urlopen(req, timeout=60).read()
+except Exception as exc:
+    print(f"  [aviso] falha ao acessar a URL: {exc}")
+    remoto = b""
+m3u = remoto.decode("utf-8", "replace")
+if os.path.exists("NEWSWORLDNOVOS.m3u"):
+    with open("NEWSWORLDNOVOS.m3u", "rb") as fh:
+        local = fh.read()
+    if local.count(b"#EXTINF") > remoto.count(b"#EXTINF"):
+        m3u = local.decode("utf-8", "replace")
+        print("  usando a lista completa do repositorio")
 ids_m3u = []
 for linha in m3u.splitlines():
     if not linha.startswith("#EXTINF"):

@@ -26,24 +26,28 @@ M3U_URL = "https://github.com/gratinomaster/JCTV/raw/refs/heads/main/NEWSWORLDNO
 OUTPUT = "EPGFULL.xml.gz"
 
 EPG_SOURCES = [
+    "https://iptv-epg.org/files/epg-cl.xml.gz",
+    "https://iptv-epg.org/files/epg-ar.xml.gz",
+    "https://iptv-epg.org/files/epg-mx.xml.gz",
+    "https://iptv-epg.org/files/epg-il.xml.gz",
+    "https://iptv-epg.org/files/epg-br.xml.gz",
+    "https://iptv-epg.org/files/epg-pt.xml.gz",
+    "https://iptv-epg.org/files/epg-fr.xml.gz",
+    "https://iptv-epg.org/files/epg-ve.xml.gz",
+    "https://raw.githubusercontent.com/matthuisman/i.mjh.nz/master/PlutoTV/us.xml",
     "https://epgshare01.online/epgshare01/epg_ripper_US2.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_PT1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_MX1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_AR1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_CL1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_CO1.xml.gz",
-    "https://epgshare01.online/epgshare01/epg_ripper_FR1.xml.gz",
-    "https://epg.pw/xmltv/epg_US.xml.gz",
 ]
 
 # IDs de origem equivalentes a um tvg-id da lista quando o id exato nao existe.
-# Ex.: a lista usa "USCapitol.us", mas as fontes publicam "CSPAN.us2"/"CSPAN.us".
 MANUAL_SOURCE_TO_TARGET = {
-    "CSPAN.us2": "USCapitol.us",
-    "CSPAN2.us2": "USCapitol.us",
-    "CSPAN.us": "USCapitol.us",
-    "CSPAN2.us": "USCapitol.us",
+    "6661f11a41af6400080e90d8": "BigBrother.us",
+    "Estrella.TV.us2": "EstrellaTV.us",
+    "EWTN.cl": "EWTN.mx",
+    "LasEstrellas.mx": "Canal.2.de.México.(Canal.Las.Estrellas.-.XEW).mx",
+    "RedeVida.br": "Rede.Vida.br",
+    "TeleSUR.pt": "Telesur.ve",
+    "TelefeInternacional.cl": "Telefe.ar",
+    "TVIReality.pt": "TVI.Reality.HD.pt",
 }
 
 UTC = timezone.utc
@@ -58,12 +62,6 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
-def tokens(s):
-    s = unicodedata.normalize("NFD", s or "")
-    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    return {t for t in re.split(r"[^a-z0-9]+", s.lower()) if len(t) >= 3}
-
-
 def download(url, timeout=180):
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -76,6 +74,12 @@ def download(url, timeout=180):
 
 print("1. Baixando NEWSWORLDNOVOS.m3u...")
 raw = download(M3U_URL, timeout=60)
+if os.path.exists("NEWSWORLDNOVOS.m3u"):
+    with open("NEWSWORLDNOVOS.m3u", "rb") as fh:
+        local = fh.read()
+    if local.count(b"#EXTINF") > (raw or b"").count(b"#EXTINF"):
+        raw = local
+        print("  usando a lista completa do repositorio")
 if not raw:
     print("  ERRO: nao foi possivel baixar a lista.")
     sys.exit(1)
@@ -107,24 +111,8 @@ if not entries:
     sys.exit(1)
 
 desired = {e["id"]: e for e in entries}
-norm_to_id = {}
-for e in entries:
-    for value in (e["display"], e["name"]):
-        if value:
-            norm_to_id.setdefault(norm(value), e["id"])
 
 print(f"  {len(entries)} canais com tvg-id: {[e['id'] for e in entries]}")
-
-
-def name_confident(entry, source_names):
-    """Evita casar um id com conteudo de outro canal (ex.: 464944)."""
-    if not source_names:
-        return True
-    want = tokens(entry["display"]) | tokens(entry["name"])
-    have = set()
-    for n in source_names:
-        have |= tokens(n)
-    return bool(want & have)
 
 
 def keep_day(start):
@@ -177,20 +165,9 @@ def process_source(data):
             tag = elem.tag
             if tag == "channel":
                 cid = (elem.get("id") or "").strip()
-                names = [d.text.strip() for d in elem.findall("display-name") if d.text and d.text.strip()]
-                target = None
-                if cid in desired:
-                    target = cid
-                if target is None and cid in MANUAL_SOURCE_TO_TARGET:
-                    candidate = MANUAL_SOURCE_TO_TARGET[cid]
-                    if candidate in desired:
-                        target = candidate
-                if target is None:
-                    for n in names:
-                        candidate = norm_to_id.get(norm(n))
-                        if candidate:
-                            target = candidate
-                            break
+                target = cid if cid in desired else MANUAL_SOURCE_TO_TARGET.get(cid)
+                if target not in desired:
+                    target = None
                 if target and target not in matched_targets:
                     id_map[cid] = target
                     matched_targets.add(target)
