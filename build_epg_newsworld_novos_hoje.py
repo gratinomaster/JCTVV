@@ -74,13 +74,13 @@ def download(url, timeout=180):
 
 print("1. Baixando NEWSWORLDNOVOS.m3u...")
 raw = download(M3U_URL, timeout=60)
-if os.path.exists("NEWSWORLDNOVOS.m3u"):
+if raw:
+    print("  usando a lista da URL indicada")
+elif os.path.exists("NEWSWORLDNOVOS.m3u"):
     with open("NEWSWORLDNOVOS.m3u", "rb") as fh:
-        local = fh.read()
-    if local.count(b"#EXTINF") > (raw or b"").count(b"#EXTINF"):
-        raw = local
-        print("  usando a lista completa do repositorio")
-if not raw:
+        raw = fh.read()
+    print("  usando a lista local (URL indisponivel)")
+else:
     print("  ERRO: nao foi possivel baixar a lista.")
     sys.exit(1)
 m3u_text = raw.decode("utf-8", errors="replace")

@@ -41,12 +41,12 @@ except Exception as exc:
     print(f"  [aviso] falha ao acessar a URL: {exc}")
     remoto = b""
 m3u = remoto.decode("utf-8", "replace")
-if os.path.exists("NEWSWORLDNOVOS.m3u"):
+if remoto:
+    print("  usando a lista da URL indicada")
+elif os.path.exists("NEWSWORLDNOVOS.m3u"):
     with open("NEWSWORLDNOVOS.m3u", "rb") as fh:
-        local = fh.read()
-    if local.count(b"#EXTINF") > remoto.count(b"#EXTINF"):
-        m3u = local.decode("utf-8", "replace")
-        print("  usando a lista completa do repositorio")
+        m3u = fh.read().decode("utf-8", "replace")
+    print("  usando a lista local (URL indisponivel)")
 ids_m3u = []
 for linha in m3u.splitlines():
     if not linha.startswith("#EXTINF"):
