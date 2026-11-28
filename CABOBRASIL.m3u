@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz https://raw.githubusercontent.com/limaalef/BrazilTVEPG/main/claro.xml"
+#EXTM3U url-tvg="https://iptv-epg.org/files/epg-br.xml.gz" x-tvg-url="https://iptv-epg.org/files/epg-br.xml.gz"
 #EXTINF:-1 tvg-id="BandBrasil.br" tvg-name="Band" tvg-logo="https://iptv-epg.org/images/r8TJn3roHVpdnzdCytiUuP4uyNMv13_NgMUnHV875XL_BHU6ZdZ3gzoUuCslReBXVu2l-z_jwGfl1rzOL0m4e7qOSrADOUEB14gp3tUD7lbphsc" group-title="TV ABERTA",Band
 https://streaming.gruporba.com.br/rba.m3u8
 #EXTINF:-1 tvg-id="BandNews.br" tvg-name="Band News" tvg-logo="https://iptv-epg.org/images/_e7pA5MlQkdV6BgkqiypgqHthjyC3Fv63Tkk_mIY_B9dnSHxRT5hxfzBklmXGxUQlKEN1EoNpezElZbrW03DiA19nV6sD8xDcx64tu9CMmiI" group-title="TV ABERTA",Band News
@@ -71,6 +71,8 @@ http://181.78.197.59:8000/play/a080/index.m3u8
 http://181.78.197.59:8000/play/a081/index.m3u8
 #EXTINF:-1 tvg-id="ESPN4.br" tvg-name="ESPN 4" tvg-logo="https://iptv-epg.org/images/zTE7MtdYanDVTfK5LhtcfwhgLxHZlnXwzuQ_8gzcDfJ_jcI5IKQik9CWP8_-TaoVxEqkDeduXmVYjK5ncl-0_K02PqCgBVlSnfiDwqFX" group-title="ESPORTES",ESPN 4
 http://181.78.197.59:8000/play/a07n/index.m3u8
+#EXTINF:-1 tvg-id="SporTV.br" tvg-name="SporTV" tvg-logo="https://iptv-epg.org/images/gpm1t_05FTVqBrttey9zTiEXctNjAqgNDl1-fSa0_8632QLBI9HKrVVab8Vqxl3Z-I8ODH1jAlGqHEJox1NzXnxi20olgcdNFQUpvK2j8g" group-title="ESPORTES",SporTV
+https://media.cdntvms.com.br/sportv_sat/index.m3u8
 #EXTINF:-1 tvg-id="AXN.br" tvg-name="AXN" tvg-logo="https://iptv-epg.org/images/S2fULxieTpLg4xnj8UZXMSj3eRyENSFsKa340SXe8e4GGdXT6JQ7gpo6gsgCkKHElYJYJFYNrmZldK7mm6pMfozgEgzksT_jHzvxbg" group-title="TV PAGA",AXN
 http://170.83.16.50/AXN/index.m3u8
 #EXTINF:-1 tvg-id="HistoryChannel.br" tvg-name="History" tvg-logo="https://iptv-epg.org/images/8m6SBtz70xf67rDPSfE86lLbflXemQf7B-4llxXfdj2WNYagZ4HTEK8nHuoJQ_-bLDQ-KA7u7A4fr7NbBXw5V_9qUjcDiOAbxZwfQBCNh8s9EWnAeo1i" group-title="TV PAGA",History
